@@ -10,7 +10,7 @@ import SearchableList from '../components/SearchableList';
 import LinearGradient from 'react-native-linear-gradient';
 
 
-const MainScreen = ({ navigation }) => {
+const MainView = ({ navigation }) => {
   const screenWidth = Dimensions.get('window').width;
   const screenHeight = Dimensions.get('window').height;
 
@@ -26,7 +26,7 @@ const MainScreen = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <TopBar title="PalPediia" />
+    <TopBar title="Main" navigation={navigation} />
       <SearchableList
         data={PalsProfilesAndBreedings}
         renderItem={({ item }) => (
@@ -51,7 +51,7 @@ const MainScreen = ({ navigation }) => {
 const App =  ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <MainScreen navigation={navigation} />
+      <MainView navigation={navigation} />
     </View>
   );
 };

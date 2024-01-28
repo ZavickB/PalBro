@@ -1,36 +1,42 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
-import * as Font from 'expo-font';
 
-const TopBar = ({ title }) => {
-  const [isFontLoaded, setIsFontLoaded] = useState(false);
-
-  useEffect(() => {
-    // Load the custom font asynchronously
-    async function loadCustomFonts() {
-      await Font.loadAsync({
-        'Winter-Drink': require('../assets/fonts/Winter-Drink.ttf'),
-        // Add more fonts here if needed
-      });
-      setIsFontLoaded(true); // Mark the font as loaded
+const TopBar = ({ title, navigation }) => {
+  const handleDrawerOpen = () => {
+    if (navigation) {
+      navigation.openDrawer();
     }
+  };
 
-    loadCustomFonts();
-  }, []);
-
-  // Render the component when the font is loaded
-  if (!isFontLoaded) {
-    return null; // You can render a loading indicator here if needed
-  }
+  const handleGoBack = () => {
+    if (navigation) {
+      navigation.goBack();
+    }
+  };
 
   return (
     <View style={styles.topBar}>
       {title ? (
-        <Text style={styles.title} fontFamily="Winter-Drink">
-          {title}
-        </Text>
-      ) : null}
+        <>
+          <TouchableOpacity style={styles.icon} onPress={handleDrawerOpen}>
+            <FontAwesome name="bars" size={24} color="black" />
+          </TouchableOpacity>
+          <Text style={styles.title}>{title}</Text>
+          <TouchableOpacity style={styles.icon}>
+            <FontAwesome name="user" size={24} color="black" />
+          </TouchableOpacity>
+        </>
+      ) : (
+        <>
+          <TouchableOpacity style={styles.icon} onPress={handleGoBack}>
+            <FontAwesome name="arrow-left" size={24} color="black" />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.icon}>
+            <FontAwesome name="user" size={24} color="black" />
+          </TouchableOpacity>
+        </>
+      )}
     </View>
   );
 };
@@ -39,10 +45,10 @@ const styles = StyleSheet.create({
   topBar: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-between', // Use space-between to separate the icons
     backgroundColor: '#f5f5f5',
     paddingHorizontal: 10,
-    height: 60,
+    height: 60, // Set a fixed height for the top bar
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
   },

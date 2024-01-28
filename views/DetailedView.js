@@ -3,41 +3,46 @@ import { View, Text, Image, ScrollView, StyleSheet } from 'react-native';
 import SuitabilityBlock from '../components/SuitabilityBlock'; // Adjust the import path as needed
 import PalBreedingInfos from '../components/PalBreedingInfos'; // Adjust the import path as needed
 import TypeBadge from '../components/TypeBadge'; // Adjust the import path as needed
-
-const DetailedView = ({ route }) => {
+import TopBar from '../components/TopBar'; // Adjust the import path as needed
+const DetailedView = ({ route, navigation }) => {
   const { palData } = route.params;
 
   return (
-    <ScrollView style={styles.container}>
-      <Image style={styles.image} source={palData.image} />
-      <View style={styles.infoContainer}>
-        <Text style={styles.name}>#{palData.key} {palData.name}</Text>
-        <View style={styles.typesContainer}>
-          <TypeBadge types={palData.types} />
-        </View>
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Description:</Text>
-          <Text style={styles.description}>{palData.description}</Text>
-        </View>
-        
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Suitabilities:</Text>
-          {/* Assuming abilities is a string or can be mapped similarly to types */}
-          <SuitabilityBlock suitabilities={palData.suitability} />
-        </View>
+    <View style={styles.container}>
+      <TopBar title="" navigation={navigation} />
+        <ScrollView style={styles.container}>
 
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Breeding Information:</Text>
-          <PalBreedingInfos palData={palData} />
+        <Image style={styles.image} source={palData.image} />
+        <View style={styles.infoContainer}>
+          <Text style={styles.name}>#{palData.key} {palData.name}</Text>
+          <View style={styles.typesContainer}>
+            <TypeBadge types={palData.types} />
+          </View>
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}>Description:</Text>
+            <Text style={styles.description}>{palData.description}</Text>
+          </View>
+          
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}>Suitabilities:</Text>
+            {/* Assuming abilities is a string or can be mapped similarly to types */}
+            <SuitabilityBlock suitabilities={palData.suitability} />
+          </View>
+
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}>Breeding Information:</Text>
+            <PalBreedingInfos palData={palData} />
+          </View>
         </View>
-      </View>
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding: 10,
   },
   image: {
     width: '100%',
