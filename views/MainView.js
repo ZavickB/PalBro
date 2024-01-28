@@ -2,13 +2,8 @@ import React from 'react';
 import { StyleSheet, TouchableOpacity, View, Dimensions } from 'react-native';
 import PalTile from '../components/PalTile';
 import TopBar from '../components/TopBar';
-import PalsProfilesAndBreedings from '../assets/data/PalsProfilesAndBreedings';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import DetailedView from './DetailedView';
+import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import SearchableList from '../components/SearchableList';
-import LinearGradient from 'react-native-linear-gradient';
-
 
 const MainView = ({ navigation }) => {
   const screenWidth = Dimensions.get('window').width;
@@ -24,11 +19,32 @@ const MainView = ({ navigation }) => {
     navigation.navigate('Details', { palData: item });
   };
 
+  // Custom sorting function
+  PalsProfilesStatsAndBreedings.sort((a, b) => {
+    const aKey = a.key.toLowerCase();
+    const bKey = b.key.toLowerCase();
+
+    // Extract the numeric part of the keys
+    const aNumeric = parseInt(aKey, 10);
+    const bNumeric = parseInt(bKey, 10);
+
+    // Extract the letter part of the keys
+    const aLetter = aKey.replace(/^\d+/g, '');
+    const bLetter = bKey.replace(/^\d+/g, '');
+
+    // Compare the numeric parts
+    if (aNumeric < bNumeric) return -1;
+    if (aNumeric > bNumeric) return 1;
+
+    // If numeric parts are equal, compare the letter parts
+    return aLetter.localeCompare(bLetter);
+  });
+
   return (
     <View style={styles.container}>
-    <TopBar title="Home" navigation={navigation} />
+      <TopBar title="Home" navigation={navigation} />
       <SearchableList
-        data={PalsProfilesAndBreedings}
+        data={PalsProfilesStatsAndBreedings}
         renderItem={({ item }) => (
           <TouchableOpacity onPress={() => handleTilePress(item)}>
             <PalTile
@@ -48,7 +64,7 @@ const MainView = ({ navigation }) => {
   );
 };
 
-const App =  ({ navigation }) => {
+const App = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <MainView navigation={navigation} />
@@ -60,7 +76,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#f5f5f5',
-    padding: 10,
+    paddingHorizontal: 5,
+    paddingTop: 20,
   },
 });
 

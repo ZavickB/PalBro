@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, Text, Image, TouchableOpacity, Modal, FlatList } from 'react-native';
-import PalsProfilesAndBreedings from '../assets/data/PalsProfilesAndBreedings'; // Import the pal data
+import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings'; // Import the pal data
+import TypeBadge from './TypeBadge'; // Import the TypeBadge component
 
 // Function to find the baby based on the selected pal's breedings
 const findBaby = (palData, selectedPalName) => {
   const breedings = palData.breedings;
   if (breedings && selectedPalName in breedings) {
     const babyName = breedings[selectedPalName];
-    return PalsProfilesAndBreedings.find((pal) => pal.name === babyName);
+    return PalsProfilesStatsAndBreedings.find((pal) => pal.name === babyName);
   }
   return null; // Aucun bébé trouvé
 };
 
 // Define the new component
-const PalBreedingInfos = ({ palData }) => {
+const PalBreedingInfosBlock = ({ palData, navigation }) => {
   const [selectedPalInfo, setSelectedPalInfo] = useState(palData); // Initialize with palData
   const [babyInfo, setBabyInfo] = useState(null); // Initial state for babyInfo
   const [isModalVisible, setModalVisible] = useState(false);
@@ -32,13 +33,20 @@ const PalBreedingInfos = ({ palData }) => {
     setModalVisible(false);
   };
 
+  const handleBabyPress = (item) => {
+    navigation.navigate('Details', { palData: item });
+  };
+
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={() => setModalVisible(true)}>
         <View style={styles.palInfo}>
+          <Text style={styles.Parent2Label}>Parent 2:</Text>
           <Image source={selectedPalInfo.image} style={styles.palImage} />
-          <Text style={styles.palName}>{selectedPalInfo.name}</Text>
-          <Text style={styles.palNumber}>Paldex Number: {selectedPalInfo.key}</Text>
+          <Text style={styles.palName}>#{selectedPalInfo.key} {selectedPalInfo.name}</Text>
+          <View style={styles.typesContainer}>
+            <TypeBadge types={selectedPalInfo.types} />
+          </View>
         </View>
       </TouchableOpacity>
 
@@ -50,14 +58,16 @@ const PalBreedingInfos = ({ palData }) => {
       >
         <View style={styles.modalContainer}>
           <FlatList
-            data={PalsProfilesAndBreedings}
+            data={PalsProfilesStatsAndBreedings}
             keyExtractor={(item) => item.name}
             renderItem={({ item }) => (
               <TouchableOpacity onPress={() => handlePalSelection(item)}>
                 <View style={styles.pickerItem}>
                   <Image source={item.image} style={styles.pickerItemImage} />
-                  <Text style={styles.pickerItemText}>{item.name}</Text>
-                  <Text style={styles.pickerItemNumber}>Paldex Number: {item.key}</Text>
+                  <Text style={styles.pickerItemText}>#{item.key} {item.name}</Text>
+                  <View style={styles.typesContainer}>
+                    <TypeBadge types={item.types} />
+                  </View>
                 </View>
               </TouchableOpacity>
             )}
@@ -66,12 +76,16 @@ const PalBreedingInfos = ({ palData }) => {
       </Modal>
 
       {babyInfo && (
-        <View style={styles.breededBabyInfo}>
-          <Text style={styles.breededBabyLabel}>Baby:</Text>
-          <Image source={babyInfo.image} style={styles.breededBabyImage} />
-          <Text style={styles.breededBabyName}>{babyInfo.name}</Text>
-          <Text style={styles.breededBabyNumber}>Paldex Number: {babyInfo.key}</Text>
-        </View>
+        <TouchableOpacity onPress={() => handleBabyPress(babyInfo)}>
+          <View style={styles.breededBabyInfo}>
+            <Text style={styles.breededBabyLabel}>Baby:</Text>
+            <Image source={babyInfo.image} style={styles.breededBabyImage} />
+            <Text style={styles.breededBabyLabel}>#{babyInfo.key} {babyInfo.name}</Text>
+            <View style={styles.typesContainer}>
+              <TypeBadge types={babyInfo.types} />
+            </View>
+          </View>
+        </TouchableOpacity>
       )}
     </View>
   );
@@ -105,6 +119,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 20,
   },
+  Parent2Label: {
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
   breededBabyLabel: {
     fontSize: 18,
     fontWeight: 'bold',
@@ -113,10 +131,6 @@ const styles = StyleSheet.create({
     width: 80,
     height: 80,
     resizeMode: 'cover',
-  },
-  breededBabyName: {
-    fontSize: 16,
-    marginTop: 5,
   },
   breededBabyNumber: {
     fontSize: 14,
@@ -148,4 +162,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PalBreedingInfos;
+export default PalBreedingInfosBlock;

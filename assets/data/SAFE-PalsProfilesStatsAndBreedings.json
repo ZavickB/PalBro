@@ -1,8 +1,9 @@
-const PalsProfilesAndBreedings = [
+[
+
     {
         "id": 1,
         "key": "001",
-        "image": "require('../images/001.png')",
+        "image": "require('..\/images\/001.png')",
         "name": "Lamball",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Lamball",
         "types": [
@@ -171,12 +172,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Arsox",
             "Frostallion Noct": "Arsox",
             "Jetragon": "Petallia"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1470",
+            "HP": "70",
+            "Melee": "70",
+            "Ranged": "70",
+            "Defence": "70",
+            "Price": "1000",
+            "Stamina": "100",
+            "Walking": "40",
+            "Running": "400",
+            "Mounted": "550",
+            "Capture Multi": "1.5",
+            "Male %": "50"
         }
     },
     {
         "id": 2,
         "key": "002",
-        "image": "require('../images/002.png')",
+        "image": "require('..\/images\/002.png')",
         "name": "Cattiva",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Cattiva",
         "types": [
@@ -348,12 +365,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Arsox",
             "Frostallion Noct": "Petallia",
             "Jetragon": "Petallia"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1460",
+            "HP": "70",
+            "Melee": "70",
+            "Ranged": "70",
+            "Defence": "70",
+            "Price": "1000",
+            "Stamina": "100",
+            "Walking": "60",
+            "Running": "400",
+            "Mounted": "550",
+            "Capture Multi": "1.5",
+            "Male %": "50"
         }
     },
     {
         "id": 3,
         "key": "003",
-        "image": "require('../images/003.png')",
+        "image": "require('..\/images\/003.png')",
         "name": "Chikipi",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Chikipi",
         "types": [
@@ -518,12 +551,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Dinossom",
             "Frostallion Noct": "Chillet",
             "Jetragon": "Arsox"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1500",
+            "HP": "60",
+            "Melee": "70",
+            "Ranged": "60",
+            "Defence": "60",
+            "Price": "1000",
+            "Stamina": "100",
+            "Walking": "50",
+            "Running": "375",
+            "Mounted": "550",
+            "Capture Multi": "1.5",
+            "Male %": "50"
         }
     },
     {
         "id": 4,
         "key": "004",
-        "image": "require('../images/004.png')",
+        "image": "require('..\/images\/004.png')",
         "name": "Lifmunk",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Lifmunk",
         "types": [
@@ -700,12 +749,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Petallia",
             "Frostallion Noct": "Foxcicle",
             "Jetragon": "Foxcicle"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1430",
+            "HP": "75",
+            "Melee": "70",
+            "Ranged": "70",
+            "Defence": "70",
+            "Price": "1010",
+            "Stamina": "100",
+            "Walking": "40",
+            "Running": "400",
+            "Mounted": "550",
+            "Capture Multi": "0.9",
+            "Male %": "50"
         }
     },
     {
         "id": 5,
         "key": "005",
-        "image": "require('../images/005.png')",
+        "image": "require('..\/images\/005.png')",
         "name": "Foxparks",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Foxparks",
         "types": [
@@ -866,12 +931,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Foxcicle",
             "Frostallion Noct": "Tombat",
             "Jetragon": "Tombat"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1400",
+            "HP": "65",
+            "Melee": "70",
+            "Ranged": "75",
+            "Defence": "70",
+            "Price": "1040",
+            "Stamina": "100",
+            "Walking": "80",
+            "Running": "400",
+            "Mounted": "550",
+            "Capture Multi": "1.1",
+            "Male %": "50"
         }
     },
     {
         "id": 6,
         "key": "006",
-        "image": "require('../images/006.png')",
+        "image": "require('..\/images\/006.png')",
         "name": "Fuack",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Fuack",
         "types": [
@@ -1040,12 +1121,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Rayhound",
             "Frostallion Noct": "Blazehowl",
             "Jetragon": "Blazehowl"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1330",
+            "HP": "60",
+            "Melee": "80",
+            "Ranged": "80",
+            "Defence": "60",
+            "Price": "1120",
+            "Stamina": "100",
+            "Walking": "105",
+            "Running": "300",
+            "Mounted": "400",
+            "Capture Multi": "1.1",
+            "Male %": "50"
         }
     },
     {
         "id": 7,
         "key": "007",
-        "image": "require('../images/007.png')",
+        "image": "require('..\/images\/007.png')",
         "name": "Sparkit",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Sparkit",
         "types": [
@@ -1213,12 +1310,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Foxcicle",
             "Frostallion Noct": "Tombat",
             "Jetragon": "Tombat"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1410",
+            "HP": "60",
+            "Melee": "60",
+            "Ranged": "75",
+            "Defence": "70",
+            "Price": "1030",
+            "Stamina": "100",
+            "Walking": "80",
+            "Running": "350",
+            "Mounted": "500",
+            "Capture Multi": "1.1",
+            "Male %": "50"
         }
     },
     {
         "id": 8,
         "key": "008",
-        "image": "require('../images/008.png')",
+        "image": "require('..\/images\/008.png')",
         "name": "Tanzee",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Tanzee",
         "types": [
@@ -1394,12 +1507,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Univolt",
             "Frostallion Noct": "Univolt",
             "Jetragon": "Univolt"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1250",
+            "HP": "80",
+            "Melee": "100",
+            "Ranged": "70",
+            "Defence": "70",
+            "Price": "1280",
+            "Stamina": "100",
+            "Walking": "48",
+            "Running": "300",
+            "Mounted": "400",
+            "Capture Multi": "1.1",
+            "Male %": "50"
         }
     },
     {
         "id": 9,
         "key": "009",
-        "image": "require('../images/009.png')",
+        "image": "require('..\/images\/009.png')",
         "name": "Rooby",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Rooby",
         "types": [
@@ -1560,12 +1689,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Bushi",
             "Frostallion Noct": "Bushi",
             "Jetragon": "Bushi"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1155",
+            "HP": "75",
+            "Melee": "100",
+            "Ranged": "70",
+            "Defence": "75",
+            "Price": "2950",
+            "Stamina": "100",
+            "Walking": "100",
+            "Running": "400",
+            "Mounted": "550",
+            "Capture Multi": "1.1",
+            "Male %": "50"
         }
     },
     {
         "id": 10,
         "key": "010",
-        "image": "require('../images/010.png')",
+        "image": "require('..\/images\/010.png')",
         "name": "Pengullet",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Pengullet",
         "types": [
@@ -1739,12 +1884,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Rayhound",
             "Frostallion Noct": "Rayhound",
             "Jetragon": "Blazehowl"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1350",
+            "HP": "70",
+            "Melee": "70",
+            "Ranged": "75",
+            "Defence": "70",
+            "Price": "1080",
+            "Stamina": "100",
+            "Walking": "60",
+            "Running": "500",
+            "Mounted": "650",
+            "Capture Multi": "0.9",
+            "Male %": "50"
         }
     },
     {
         "id": 11,
         "key": "011",
-        "image": "require('../images/011.png')",
+        "image": "require('..\/images\/011.png')",
         "name": "Penking",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Penking",
         "types": [
@@ -1922,16 +2083,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Reptyro",
             "Frostallion Noct": "Jormuntide",
             "Jetragon": "Jormuntide"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "520",
+            "HP": "95",
+            "Melee": "70",
+            "Ranged": "95",
+            "Defence": "95",
+            "Price": "5410",
+            "Stamina": "100",
+            "Walking": "110",
+            "Running": "450",
+            "Mounted": "600",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 12,
         "key": "012",
-        "image": "require('../images/012.png')",
-        "name": "Jolthog",
+        "image": "require('..\/images\/012.png')",
+        "name": "Jolthog Cryst",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Jolthog",
         "types": [
-            "Electric"
+            "Ice",
+            ""
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/5\/52\/Jolthog_menu.png\/",
         "suitability": [
@@ -2087,13 +2265,29 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Tombat",
             "Frostallion Noct": "Rayhound",
             "Jetragon": "Rayhound"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1360",
+            "HP": "70",
+            "Melee": "70",
+            "Ranged": "75",
+            "Defence": "80",
+            "Price": "1070",
+            "Stamina": "100",
+            "Walking": "60",
+            "Running": "400",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 13,
         "key": "013",
-        "image": "require('../images/013.png')",
-        "name": "Gumoss",
+        "image": "require('..\/images\/013.png')",
+        "name": "Gumoss (Special)",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Gumoss",
         "types": [
             "Grass",
@@ -2254,12 +2448,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Univolt",
             "Frostallion Noct": "Univolt",
             "Jetragon": "Vanwyrm"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1240",
+            "HP": "70",
+            "Melee": "100",
+            "Ranged": "70",
+            "Defence": "70",
+            "Price": "1310",
+            "Stamina": "100",
+            "Walking": "50",
+            "Running": "300",
+            "Mounted": "400",
+            "Capture Multi": "1.3",
+            "Male %": "50"
         }
     },
     {
         "id": 14,
         "key": "014",
-        "image": "require('../images/014.png')",
+        "image": "require('..\/images\/014.png')",
         "name": "Vixy",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Vixy",
         "types": [
@@ -2424,12 +2634,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Arsox",
             "Frostallion Noct": "Petallia",
             "Jetragon": "Foxcicle"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1450",
+            "HP": "70",
+            "Melee": "70",
+            "Ranged": "70",
+            "Defence": "70",
+            "Price": "1000",
+            "Stamina": "100",
+            "Walking": "60",
+            "Running": "350",
+            "Mounted": "450",
+            "Capture Multi": "1.3",
+            "Male %": "50"
         }
     },
     {
         "id": 15,
         "key": "015",
-        "image": "require('../images/015.png')",
+        "image": "require('..\/images\/015.png')",
         "name": "Hoocrates",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Hoocrates",
         "types": [
@@ -2590,12 +2816,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Tombat",
             "Frostallion Noct": "Tombat",
             "Jetragon": "Rayhound"
+        },
+        "variant": "",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "1390",
+            "HP": "70",
+            "Melee": "70",
+            "Ranged": "70",
+            "Defence": "80",
+            "Price": "1050",
+            "Stamina": "100",
+            "Walking": "70",
+            "Running": "380",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 16,
         "key": "016",
-        "image": "require('../images/016.png')",
+        "image": "require('..\/images\/016.png')",
         "name": "Teafant",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Teafant",
         "types": [
@@ -2755,12 +2997,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Chillet",
             "Frostallion Noct": "Arsox",
             "Jetragon": "Arsox"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1490",
+            "HP": "70",
+            "Melee": "70",
+            "Ranged": "60",
+            "Defence": "70",
+            "Price": "1000",
+            "Stamina": "100",
+            "Walking": "60",
+            "Running": "300",
+            "Mounted": "400",
+            "Capture Multi": "1.3",
+            "Male %": "50"
         }
     },
     {
         "id": 17,
         "key": "017",
-        "image": "require('../images/017.png')",
+        "image": "require('..\/images\/017.png')",
         "name": "Depresso",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Depresso",
         "types": [
@@ -2928,12 +3186,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Tombat",
             "Frostallion Noct": "Rayhound",
             "Jetragon": "Rayhound"
+        },
+        "variant": "",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "1380",
+            "HP": "70",
+            "Melee": "70",
+            "Ranged": "70",
+            "Defence": "70",
+            "Price": "1050",
+            "Stamina": "100",
+            "Walking": "10",
+            "Running": "300",
+            "Mounted": "400",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 18,
         "key": "018",
-        "image": "require('../images/018.png')",
+        "image": "require('..\/images\/018.png')",
         "name": "Cremis",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Cremis",
         "types": [
@@ -3097,12 +3371,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Arsox",
             "Frostallion Noct": "Petallia",
             "Jetragon": "Petallia"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1455",
+            "HP": "70",
+            "Melee": "100",
+            "Ranged": "70",
+            "Defence": "75",
+            "Price": "1420",
+            "Stamina": "100",
+            "Walking": "40",
+            "Running": "300",
+            "Mounted": "450",
+            "Capture Multi": "1.3",
+            "Male %": "50"
         }
     },
     {
         "id": 19,
         "key": "019",
-        "image": "require('../images/019.png')",
+        "image": "require('..\/images\/019.png')",
         "name": "Daedream",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Daedream",
         "types": [
@@ -3271,12 +3561,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Univolt",
             "Frostallion Noct": "Vanwyrm",
             "Jetragon": "Vanwyrm"
+        },
+        "variant": "",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "1230",
+            "HP": "70",
+            "Melee": "100",
+            "Ranged": "75",
+            "Defence": "60",
+            "Price": "1330",
+            "Stamina": "100",
+            "Walking": "140",
+            "Running": "300",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 20,
         "key": "020",
-        "image": "require('../images/020.png')",
+        "image": "require('..\/images\/020.png')",
         "name": "Rushoar",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Rushoar",
         "types": [
@@ -3438,12 +3744,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Bushi",
             "Frostallion Noct": "Incineram",
             "Jetragon": "Incineram"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1130",
+            "HP": "80",
+            "Melee": "100",
+            "Ranged": "70",
+            "Defence": "70",
+            "Price": "1680",
+            "Stamina": "100",
+            "Walking": "150",
+            "Running": "450",
+            "Mounted": "700",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 21,
         "key": "021",
-        "image": "require('../images/021.png')",
+        "image": "require('..\/images\/021.png')",
         "name": "Nox",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Nox",
         "types": [
@@ -3604,12 +3926,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Vanwyrm",
             "Frostallion Noct": "Bushi",
             "Jetragon": "Bushi"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1180",
+            "HP": "75",
+            "Melee": "70",
+            "Ranged": "85",
+            "Defence": "70",
+            "Price": "1480",
+            "Stamina": "100",
+            "Walking": "60",
+            "Running": "300",
+            "Mounted": "500",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 22,
         "key": "022",
-        "image": "require('../images/022.png')",
+        "image": "require('..\/images\/022.png')",
         "name": "Fuddler",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Fuddler",
         "types": [
@@ -3777,12 +4115,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Univolt",
             "Frostallion Noct": "Vanwyrm",
             "Jetragon": "Vanwyrm"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1220",
+            "HP": "65",
+            "Melee": "100",
+            "Ranged": "80",
+            "Defence": "50",
+            "Price": "1360",
+            "Stamina": "100",
+            "Walking": "60",
+            "Running": "300",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 23,
         "key": "023",
-        "image": "require('../images/023.png')",
+        "image": "require('..\/images\/023.png')",
         "name": "Killamari",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Killamari",
         "types": [
@@ -3946,16 +4300,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Blazehowl",
             "Frostallion Noct": "Katress",
             "Jetragon": "Univolt"
+        },
+        "variant": "",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "1290",
+            "HP": "60",
+            "Melee": "100",
+            "Ranged": "60",
+            "Defence": "70",
+            "Price": "1200",
+            "Stamina": "100",
+            "Walking": "120",
+            "Running": "400",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 24,
         "key": "024",
-        "image": "require('../images/024.png')",
-        "name": "Mau",
+        "image": "require('..\/images\/024.png')",
+        "name": "Mau Cryst",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Mau",
         "types": [
-            "Dark"
+            "Ice",
+            ""
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/1\/17\/Mau_menu.png\/",
         "suitability": [
@@ -4111,12 +4482,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Chillet",
             "Frostallion Noct": "Arsox",
             "Jetragon": "Arsox"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1440",
+            "HP": "70",
+            "Melee": "70",
+            "Ranged": "65",
+            "Defence": "70",
+            "Price": "1010",
+            "Stamina": "100",
+            "Walking": "105",
+            "Running": "475",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 25,
         "key": "025",
-        "image": "require('../images/025.png')",
+        "image": "require('..\/images\/025.png')",
         "name": "Celaray",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Celaray",
         "types": [
@@ -4280,12 +4667,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Azurobe",
             "Frostallion Noct": "Wumpo Botan",
             "Jetragon": "Wumpo Botan"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "870",
+            "HP": "80",
+            "Melee": "100",
+            "Ranged": "70",
+            "Defence": "80",
+            "Price": "2860",
+            "Stamina": "100",
+            "Walking": "150",
+            "Running": "550",
+            "Mounted": "700",
+            "Capture Multi": "1.1",
+            "Male %": "50"
         }
     },
     {
         "id": 26,
         "key": "026",
-        "image": "require('../images/026.png')",
+        "image": "require('..\/images\/026.png')",
         "name": "Direhowl",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Direhowl",
         "types": [
@@ -4447,12 +4850,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Incineram",
             "Frostallion Noct": "Anubis",
             "Jetragon": "Anubis"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1060",
+            "HP": "80",
+            "Melee": "110",
+            "Ranged": "90",
+            "Defence": "75",
+            "Price": "1920",
+            "Stamina": "70",
+            "Walking": "180",
+            "Running": "800",
+            "Mounted": "1050",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 27,
         "key": "027",
-        "image": "require('../images/027.png')",
+        "image": "require('..\/images\/027.png')",
         "name": "Tocotoco",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Tocotoco",
         "types": [
@@ -4613,12 +5032,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Rayhound",
             "Frostallion Noct": "Blazehowl",
             "Jetragon": "Blazehowl"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1340",
+            "HP": "60",
+            "Melee": "80",
+            "Ranged": "75",
+            "Defence": "70",
+            "Price": "1090",
+            "Stamina": "100",
+            "Walking": "60",
+            "Running": "300",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 28,
         "key": "028",
-        "image": "require('../images/028.png')",
+        "image": "require('..\/images\/028.png')",
         "name": "Flopie",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Flopie",
         "types": [
@@ -4795,12 +5230,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Katress",
             "Frostallion Noct": "Univolt",
             "Jetragon": "Univolt"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1280",
+            "HP": "75",
+            "Melee": "100",
+            "Ranged": "65",
+            "Defence": "70",
+            "Price": "1220",
+            "Stamina": "100",
+            "Walking": "100",
+            "Running": "400",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 29,
         "key": "029",
-        "image": "require('../images/029.png')",
+        "image": "require('..\/images\/029.png')",
         "name": "Mozzarina",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Mozzarina",
         "types": [
@@ -4961,12 +5412,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Penking",
             "Frostallion Noct": "Azurobe",
             "Jetragon": "Azurobe"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "910",
+            "HP": "90",
+            "Melee": "100",
+            "Ranged": "50",
+            "Defence": "80",
+            "Price": "2620",
+            "Stamina": "100",
+            "Walking": "55",
+            "Running": "580",
+            "Mounted": "700",
+            "Capture Multi": "1",
+            "Male %": "20"
         }
     },
     {
         "id": 30,
         "key": "030",
-        "image": "require('../images/030.png')",
+        "image": "require('..\/images\/030.png')",
         "name": "Bristla",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Bristla",
         "types": [
@@ -5143,16 +5610,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Blazehowl",
             "Frostallion Noct": "Blazehowl",
             "Jetragon": "Blazehowl"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1320",
+            "HP": "80",
+            "Melee": "80",
+            "Ranged": "80",
+            "Defence": "80",
+            "Price": "1140",
+            "Stamina": "100",
+            "Walking": "100",
+            "Running": "400",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 31,
         "key": "031",
-        "image": "require('../images/031.png')",
-        "name": "Gobfin",
+        "image": "require('..\/images\/031.png')",
+        "name": "Gobfin Ignis",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Gobfin",
         "types": [
-            "Water"
+            "Fire",
+            ""
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/f\/ff\/Gobfin_menu.png\/",
         "suitability": [
@@ -5316,16 +5800,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Incineram",
             "Frostallion Noct": "Incineram",
             "Jetragon": "Incineram"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1100",
+            "HP": "90",
+            "Melee": "90",
+            "Ranged": "90",
+            "Defence": "75",
+            "Price": "1800",
+            "Stamina": "100",
+            "Walking": "80",
+            "Running": "400",
+            "Mounted": "500",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 32,
         "key": "032",
-        "image": "require('../images/032.png')",
-        "name": "Hangyu",
+        "image": "require('..\/images\/032.png')",
+        "name": "Hangyu Cryst",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Hangyu",
         "types": [
-            "Ground"
+            "Ice",
+            ""
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/08\/Hangyu_menu.png\/",
         "suitability": [
@@ -5489,16 +5990,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Foxcicle",
             "Frostallion Noct": "Foxcicle",
             "Jetragon": "Tombat"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1422",
+            "HP": "80",
+            "Melee": "70",
+            "Ranged": "80",
+            "Defence": "70",
+            "Price": "1020",
+            "Stamina": "100",
+            "Walking": "100",
+            "Running": "400",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 33,
         "key": "033",
-        "image": "require('../images/033.png')",
-        "name": "Mossanda",
+        "image": "require('..\/images\/033.png')",
+        "name": "Mossanda Lux",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Mossanda",
         "types": [
-            "Grass"
+            "Electric",
+            ""
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/d\/db\/Mossanda_menu.png\/",
         "suitability": [
@@ -5668,12 +6186,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Relaxaurus",
             "Frostallion Noct": "Menasting",
             "Jetragon": "Menasting"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "390",
+            "HP": "100",
+            "Melee": "100",
+            "Ranged": "100",
+            "Defence": "100",
+            "Price": "6610",
+            "Stamina": "100",
+            "Walking": "100",
+            "Running": "500",
+            "Mounted": "700",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 34,
         "key": "034",
-        "image": "require('../images/034.png')",
+        "image": "require('..\/images\/034.png')",
         "name": "Woolipop",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Woolipop",
         "types": [
@@ -5834,12 +6368,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Vanwyrm",
             "Frostallion Noct": "Bushi",
             "Jetragon": "Bushi"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1190",
+            "HP": "70",
+            "Melee": "70",
+            "Ranged": "70",
+            "Defence": "90",
+            "Price": "1450",
+            "Stamina": "100",
+            "Walking": "100",
+            "Running": "300",
+            "Mounted": "400",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 35,
         "key": "035",
-        "image": "require('../images/035.png')",
+        "image": "require('..\/images\/035.png')",
         "name": "Caprity",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Caprity",
         "types": [
@@ -6005,12 +6555,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Penking",
             "Frostallion Noct": "Penking",
             "Jetragon": "Grintale"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "930",
+            "HP": "100",
+            "Melee": "70",
+            "Ranged": "70",
+            "Defence": "90",
+            "Price": "2510",
+            "Stamina": "100",
+            "Walking": "70",
+            "Running": "400",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 36,
         "key": "036",
-        "image": "require('../images/036.png')",
+        "image": "require('..\/images\/036.png')",
         "name": "Melpaca",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Melpaca",
         "types": [
@@ -6171,16 +6737,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Azurobe",
             "Frostallion Noct": "Azurobe",
             "Jetragon": "Cinnamoth"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "890",
+            "HP": "90",
+            "Melee": "90",
+            "Ranged": "75",
+            "Defence": "90",
+            "Price": "2740",
+            "Stamina": "100",
+            "Walking": "62",
+            "Running": "460",
+            "Mounted": "800",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 37,
         "key": "037",
-        "image": "require('../images/037.png')",
-        "name": "Eikthyrdeer",
+        "image": "require('..\/images\/037.png')",
+        "name": "Eikthyrdeer Terra",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Eikthyrdeer",
         "types": [
-            "Normal"
+            "Ground",
+            ""
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/4\/40\/Eikthyrdeer_menu.png\/",
         "suitability": [
@@ -6338,12 +6921,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Penking",
             "Frostallion Noct": "Grintale",
             "Jetragon": "Azurobe"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "900",
+            "HP": "95",
+            "Melee": "70",
+            "Ranged": "80",
+            "Defence": "80",
+            "Price": "2680",
+            "Stamina": "100",
+            "Walking": "120",
+            "Running": "700",
+            "Mounted": "900",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 38,
         "key": "038",
-        "image": "require('../images/038.png')",
+        "image": "require('..\/images\/038.png')",
         "name": "Nitewing",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Nitewing",
         "types": [
@@ -6503,16 +7102,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Relaxaurus",
             "Frostallion Noct": "Menasting",
             "Jetragon": "Menasting"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "420",
+            "HP": "100",
+            "Melee": "100",
+            "Ranged": "95",
+            "Defence": "80",
+            "Price": "6300",
+            "Stamina": "100",
+            "Walking": "150",
+            "Running": "600",
+            "Mounted": "750",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 39,
         "key": "039",
-        "image": "require('../images/039.png')",
-        "name": "Ribbuny",
+        "image": "require('..\/images\/039.png')",
+        "name": "Ribunny",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Ribbuny",
         "types": [
-            "Normal"
+            "Normal",
+            ""
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/7\/7e\/Ribbuny_menu.png\/",
         "suitability": [
@@ -6538,7 +7154,7 @@ const PalsProfilesAndBreedings = [
             "description": "While in team, increases attack power of Neutral Pals.\nWhile at a base, increases work efficiency if working at Weapon Workbench."
         },
         "description": "A Pal who's never without a bright smile. Occasionally, it gets its tentacles tied up in knots by Cattiva's pranks. During those moments, its expression changes into something altogether demonic.",
-        "breedings":  {
+        "breedings": {
             "Lamball": "Hoocrates",
             "Cattiva": "Depresso",
             "Chikipi": "Flambelle",
@@ -6677,17 +7293,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Blazehowl",
             "Frostallion Noct": "Blazehowl",
             "Jetragon": "Katress"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1310",
+            "HP": "75",
+            "Melee": "100",
+            "Ranged": "65",
+            "Defence": "70",
+            "Price": "1160",
+            "Stamina": "100",
+            "Walking": "100",
+            "Running": "245",
+            "Mounted": "350",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 40,
         "key": "040",
-        "image": "require('../images/040.png')",
-        "name": "Incineram",
+        "image": "require('..\/images\/040.png')",
+        "name": "Incineram Noct",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Incineram",
         "types": [
-            "Fire",
-            "Dark"
+            "Dark",
+            ""
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/4\/40\/Incineram_menu.png\/",
         "suitability": [
@@ -6856,12 +7488,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Pyrin",
             "Frostallion Noct": "Warsect",
             "Jetragon": "Warsect"
+        },
+        "variant": "B",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "580",
+            "HP": "95",
+            "Melee": "150",
+            "Ranged": "105",
+            "Defence": "85",
+            "Price": "4870",
+            "Stamina": "100",
+            "Walking": "160",
+            "Running": "700",
+            "Mounted": "960",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 41,
         "key": "041",
-        "image": "require('../images/041.png')",
+        "image": "require('..\/images\/041.png')",
         "name": "Cinnamoth",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Cinnamoth",
         "types": [
@@ -7027,12 +7675,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Jormuntide",
             "Frostallion Noct": "Mammorest",
             "Jetragon": "Relaxaurus"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "490",
+            "HP": "70",
+            "Melee": "100",
+            "Ranged": "80",
+            "Defence": "80",
+            "Price": "5700",
+            "Stamina": "100",
+            "Walking": "150",
+            "Running": "550",
+            "Mounted": "700",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 42,
         "key": "042",
-        "image": "require('../images/042.png')",
+        "image": "require('..\/images\/042.png')",
         "name": "Arsox",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Arsox",
         "types": [
@@ -7197,12 +7861,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Sibelyx",
             "Frostallion Noct": "Sibelyx",
             "Jetragon": "Sibelyx"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "790",
+            "HP": "85",
+            "Melee": "100",
+            "Ranged": "95",
+            "Defence": "95",
+            "Price": "3520",
+            "Stamina": "100",
+            "Walking": "87",
+            "Running": "600",
+            "Mounted": "800",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 43,
         "key": "043",
-        "image": "require('../images/043.png')",
+        "image": "require('..\/images\/043.png')",
         "name": "Dumud",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Dumud",
         "types": [
@@ -7371,12 +8051,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Grintale",
             "Frostallion Noct": "Azurobe",
             "Jetragon": "Cinnamoth"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "895",
+            "HP": "100",
+            "Melee": "100",
+            "Ranged": "70",
+            "Defence": "95",
+            "Price": "4690",
+            "Stamina": "100",
+            "Walking": "150",
+            "Running": "450",
+            "Mounted": "600",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 44,
         "key": "044",
-        "image": "require('../images/044.png')",
+        "image": "require('..\/images\/044.png')",
         "name": "Cawgnito",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Cawgnito",
         "types": [
@@ -7538,16 +8234,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Incineram",
             "Frostallion Noct": "Incineram",
             "Jetragon": "Incineram"
+        },
+        "variant": "",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "1080",
+            "HP": "75",
+            "Melee": "80",
+            "Ranged": "95",
+            "Defence": "80",
+            "Price": "1840",
+            "Stamina": "100",
+            "Walking": "170",
+            "Running": "920",
+            "Mounted": "1200",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 45,
         "key": "045",
-        "image": "require('../images/045.png')",
-        "name": "Leezpunk",
+        "image": "require('..\/images\/045.png')",
+        "name": "Leezpunk Ignis",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Leezpunk",
         "types": [
-            "Dark"
+            "Fire",
+            ""
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/09\/Leezpunk_menu.png\/",
         "suitability": [
@@ -7712,12 +8425,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Bushi",
             "Frostallion Noct": "Incineram",
             "Jetragon": "Incineram"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1140",
+            "HP": "80",
+            "Melee": "90",
+            "Ranged": "80",
+            "Defence": "50",
+            "Price": "1640",
+            "Stamina": "100",
+            "Walking": "140",
+            "Running": "400",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 46,
         "key": "046",
-        "image": "require('../images/046.png')",
+        "image": "require('..\/images\/046.png')",
         "name": "Loupmoon",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Loupmoon",
         "types": [
@@ -7877,12 +8606,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Elphidran",
             "Frostallion Noct": "Penking",
             "Jetragon": "Penking"
+        },
+        "variant": "",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "950",
+            "HP": "80",
+            "Melee": "130",
+            "Ranged": "100",
+            "Defence": "80",
+            "Price": "2400",
+            "Stamina": "100",
+            "Walking": "150",
+            "Running": "600",
+            "Mounted": "800",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 47,
         "key": "047",
-        "image": "require('../images/047.png')",
+        "image": "require('..\/images\/047.png')",
         "name": "Galeclaw",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Galeclaw",
         "types": [
@@ -8043,16 +8788,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Anubis",
             "Frostallion Noct": "Anubis",
             "Jetragon": "Surfent"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1030",
+            "HP": "75",
+            "Melee": "120",
+            "Ranged": "85",
+            "Defence": "60",
+            "Price": "2010",
+            "Stamina": "100",
+            "Walking": "200",
+            "Running": "600",
+            "Mounted": "700",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 48,
         "key": "048",
-        "image": "require('../images/048.png')",
-        "name": "Robinquill",
+        "image": "require('..\/images\/048.png')",
+        "name": "Robinquill Terra",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Robinquill",
         "types": [
-            "Grass"
+            "Grass",
+            "Ground"
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/bb\/Robinquill_menu.png\/",
         "suitability": [
@@ -8229,12 +8991,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Anubis",
             "Frostallion Noct": "Surfent",
             "Jetragon": "Surfent"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1000",
+            "HP": "90",
+            "Melee": "100",
+            "Ranged": "105",
+            "Defence": "80",
+            "Price": "2150",
+            "Stamina": "100",
+            "Walking": "100",
+            "Running": "600",
+            "Mounted": "750",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 49,
         "key": "049",
-        "image": "require('../images/049.png')",
+        "image": "require('..\/images\/049.png')",
         "name": "Gorirat",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Gorirat",
         "types": [
@@ -8403,12 +9181,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Anubis",
             "Frostallion Noct": "Anubis",
             "Jetragon": "Anubis"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1040",
+            "HP": "90",
+            "Melee": "110",
+            "Ranged": "95",
+            "Defence": "90",
+            "Price": "2010",
+            "Stamina": "100",
+            "Walking": "100",
+            "Running": "550",
+            "Mounted": "720",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 50,
         "key": "050",
-        "image": "require('../images/050.png')",
+        "image": "require('..\/images\/050.png')",
         "name": "Beegarde",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Beegarde",
         "types": [
@@ -8592,12 +9386,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Incineram",
             "Frostallion Noct": "Incineram",
             "Jetragon": "Anubis"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1070",
+            "HP": "80",
+            "Melee": "100",
+            "Ranged": "90",
+            "Defence": "90",
+            "Price": "1880",
+            "Stamina": "100",
+            "Walking": "250",
+            "Running": "450",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "10"
         }
     },
     {
         "id": 51,
         "key": "051",
-        "image": "require('../images/051.png')",
+        "image": "require('..\/images\/051.png')",
         "name": "Elizabee",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Elizabee",
         "types": [
@@ -8774,12 +9584,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Beakon",
             "Frostallion Noct": "Beakon",
             "Jetragon": "Beakon"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "330",
+            "HP": "90",
+            "Melee": "100",
+            "Ranged": "105",
+            "Defence": "100",
+            "Price": "6830",
+            "Stamina": "100",
+            "Walking": "250",
+            "Running": "450",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "10"
         }
     },
     {
         "id": 52,
         "key": "052",
-        "image": "require('../images/052.png')",
+        "image": "require('..\/images\/052.png')",
         "name": "Grintale",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Grintale",
         "types": [
@@ -8939,12 +9765,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Jormuntide",
             "Frostallion Noct": "Jormuntide",
             "Jetragon": "Mammorest"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "510",
+            "HP": "110",
+            "Melee": "100",
+            "Ranged": "80",
+            "Defence": "80",
+            "Price": "5510",
+            "Stamina": "100",
+            "Walking": "64",
+            "Running": "600",
+            "Mounted": "800",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 53,
         "key": "053",
-        "image": "require('../images/053.png')",
+        "image": "require('..\/images\/053.png')",
         "name": "Swee",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Swee",
         "types": [
@@ -9108,12 +9950,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Blazehowl",
             "Frostallion Noct": "Katress",
             "Jetragon": "Katress"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1300",
+            "HP": "60",
+            "Melee": "100",
+            "Ranged": "60",
+            "Defence": "60",
+            "Price": "1180",
+            "Stamina": "100",
+            "Walking": "100",
+            "Running": "250",
+            "Mounted": "400",
+            "Capture Multi": "1.1",
+            "Male %": "50"
         }
     },
     {
         "id": 54,
         "key": "054",
-        "image": "require('../images/054.png')",
+        "image": "require('..\/images\/054.png')",
         "name": "Sweepa",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Sweepa",
         "types": [
@@ -9277,12 +10135,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Menasting",
             "Frostallion Noct": "Menasting",
             "Jetragon": "Menasting"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "410",
+            "HP": "100",
+            "Melee": "100",
+            "Ranged": "90",
+            "Defence": "90",
+            "Price": "6400",
+            "Stamina": "100",
+            "Walking": "120",
+            "Running": "300",
+            "Mounted": "500",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 55,
         "key": "055",
-        "image": "require('../images/055.png')",
+        "image": "require('..\/images\/055.png')",
         "name": "Chillet",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Chillet",
         "types": [
@@ -9447,12 +10321,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Wumpo",
             "Frostallion Noct": "Sibelyx",
             "Jetragon": "Sibelyx"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "800",
+            "HP": "90",
+            "Melee": "100",
+            "Ranged": "80",
+            "Defence": "80",
+            "Price": "3450",
+            "Stamina": "100",
+            "Walking": "180",
+            "Running": "600",
+            "Mounted": "800",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 56,
         "key": "056",
-        "image": "require('../images/056.png')",
+        "image": "require('..\/images\/056.png')",
         "name": "Univolt",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Univolt",
         "types": [
@@ -9618,12 +10508,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Sweepa",
             "Frostallion Noct": "Ragnahawk",
             "Jetragon": "Ragnahawk"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "680",
+            "HP": "80",
+            "Melee": "110",
+            "Ranged": "105",
+            "Defence": "105",
+            "Price": "4280",
+            "Stamina": "100",
+            "Walking": "130",
+            "Running": "720",
+            "Mounted": "1100",
+            "Capture Multi": "0.9",
+            "Male %": "50"
         }
     },
     {
         "id": 57,
         "key": "057",
-        "image": "require('../images/057.png')",
+        "image": "require('..\/images\/057.png')",
         "name": "Foxcicle",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Foxcicle",
         "types": [
@@ -9784,16 +10690,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Sibelyx",
             "Frostallion Noct": "Mossanda",
             "Jetragon": "Nitewing"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "760",
+            "HP": "90",
+            "Melee": "100",
+            "Ranged": "95",
+            "Defence": "105",
+            "Price": "3730",
+            "Stamina": "100",
+            "Walking": "130",
+            "Running": "600",
+            "Mounted": "750",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 58,
         "key": "058",
-        "image": "require('../images/058.png')",
-        "name": "Pyrin",
+        "image": "require('..\/images\/058.png')",
+        "name": "Pyrin Noct",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Pyrin",
         "types": [
-            "Fire"
+            "Fire",
+            "Dark"
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/e\/e6\/Pyrin_menu.png\/",
         "suitability": [
@@ -9954,12 +10877,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Beakon",
             "Frostallion Noct": "Beakon",
             "Jetragon": "Beakon"
+        },
+        "variant": "B",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "240",
+            "HP": "100",
+            "Melee": "110",
+            "Ranged": "95",
+            "Defence": "90",
+            "Price": "7270",
+            "Stamina": "100",
+            "Walking": "150",
+            "Running": "850",
+            "Mounted": "1300",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 59,
         "key": "059",
-        "image": "require('../images/059.png')",
+        "image": "require('..\/images\/059.png')",
         "name": "Reindrix",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Reindrix",
         "types": [
@@ -10126,12 +11065,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Azurobe",
             "Frostallion Noct": "Cinnamoth",
             "Jetragon": "Wumpo Botan"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "880",
+            "HP": "100",
+            "Melee": "80",
+            "Ranged": "85",
+            "Defence": "110",
+            "Price": "2800",
+            "Stamina": "100",
+            "Walking": "70",
+            "Running": "550",
+            "Mounted": "700",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 60,
         "key": "060",
-        "image": "require('../images/060.png')",
+        "image": "require('..\/images\/060.png')",
         "name": "Rayhound",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Rayhound",
         "types": [
@@ -10291,12 +11246,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Mossanda",
             "Frostallion Noct": "Nitewing",
             "Jetragon": "Nitewing"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "740",
+            "HP": "90",
+            "Melee": "100",
+            "Ranged": "100",
+            "Defence": "80",
+            "Price": "3880",
+            "Stamina": "100",
+            "Walking": "210",
+            "Running": "700",
+            "Mounted": "1150",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 61,
         "key": "061",
-        "image": "require('../images/061.png')",
+        "image": "require('..\/images\/061.png')",
         "name": "Kitsun",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Kitsun",
         "types": [
@@ -10457,12 +11428,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Wumpo Botan",
             "Frostallion Noct": "Wumpo",
             "Jetragon": "Wumpo"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "830",
+            "HP": "100",
+            "Melee": "70",
+            "Ranged": "115",
+            "Defence": "100",
+            "Price": "3170",
+            "Stamina": "100",
+            "Walking": "130",
+            "Running": "700",
+            "Mounted": "900",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 62,
         "key": "062",
-        "image": "require('../images/062.png')",
+        "image": "require('..\/images\/062.png')",
         "name": "Dazzi",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Dazzi",
         "types": [
@@ -10630,12 +11617,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Vanwyrm",
             "Frostallion Noct": "Vanwyrm",
             "Jetragon": "Vanwyrm"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1210",
+            "HP": "70",
+            "Melee": "110",
+            "Ranged": "80",
+            "Defence": "70",
+            "Price": "1390",
+            "Stamina": "100",
+            "Walking": "200",
+            "Running": "400",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "20"
         }
     },
     {
         "id": 63,
         "key": "063",
-        "image": "require('../images/063.png')",
+        "image": "require('..\/images\/063.png')",
         "name": "Lunaris",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Lunaris",
         "types": [
@@ -10803,16 +11806,32 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Incineram",
             "Frostallion Noct": "Incineram",
             "Jetragon": "Incineram"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1110",
+            "HP": "90",
+            "Melee": "80",
+            "Ranged": "100",
+            "Defence": "90",
+            "Price": "1760",
+            "Stamina": "100",
+            "Walking": "130",
+            "Running": "500",
+            "Mounted": "650",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 64,
         "key": "064",
-        "image": "require('../images/064.png')",
-        "name": "Dinossom",
+        "image": "require('..\/images\/064.png')",
+        "name": "Dinossom Lux",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Dinossom",
         "types": [
-            "Grass",
+            "Electric",
             "Dragon"
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/b7\/Dinossom_menu.png\/",
@@ -10973,16 +11992,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Kingpaca",
             "Frostallion Noct": "Wumpo",
             "Jetragon": "Sibelyx"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "810",
+            "HP": "110",
+            "Melee": "90",
+            "Ranged": "90",
+            "Defence": "90",
+            "Price": "3380",
+            "Stamina": "100",
+            "Walking": "120",
+            "Running": "550",
+            "Mounted": "700",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 65,
         "key": "065",
-        "image": "require('../images/065.png')",
-        "name": "Surfent",
+        "image": "require('..\/images\/065.png')",
+        "name": "Surfent Terra",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Surfent",
         "types": [
-            "Water"
+            "Ground",
+            ""
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/1\/1d\/Surfent_menu.png\/",
         "suitability": [
@@ -11138,12 +12174,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Warsect",
             "Frostallion Noct": "Elizabee",
             "Jetragon": "Reptyro"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "550",
+            "HP": "90",
+            "Melee": "70",
+            "Ranged": "90",
+            "Defence": "100",
+            "Price": "5140",
+            "Stamina": "100",
+            "Walking": "200",
+            "Running": "500",
+            "Mounted": "650",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 66,
         "key": "066",
-        "image": "require('../images/066.png')",
+        "image": "require('..\/images\/066.png')",
         "name": "Maraith",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Maraith",
         "types": [
@@ -11308,12 +12360,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Bushi",
             "Frostallion Noct": "Bushi",
             "Jetragon": "Bushi"
+        },
+        "variant": "",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "1150",
+            "HP": "75",
+            "Melee": "50",
+            "Ranged": "105",
+            "Defence": "80",
+            "Price": "1570",
+            "Stamina": "100",
+            "Walking": "160",
+            "Running": "600",
+            "Mounted": "800",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 67,
         "key": "067",
-        "image": "require('../images/067.png')",
+        "image": "require('..\/images\/067.png')",
         "name": "Digtoise",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Digtoise",
         "types": [
@@ -11474,12 +12542,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Wumpo Botan",
             "Frostallion Noct": "Wumpo Botan",
             "Jetragon": "Kingpaca"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "850",
+            "HP": "80",
+            "Melee": "80",
+            "Ranged": "95",
+            "Defence": "120",
+            "Price": "2980",
+            "Stamina": "100",
+            "Walking": "120",
+            "Running": "300",
+            "Mounted": "420",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 68,
         "key": "068",
-        "image": "require('../images/068.png')",
+        "image": "require('..\/images\/068.png')",
         "name": "Tombat",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Tombat",
         "types": [
@@ -11648,12 +12732,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Mossanda",
             "Frostallion Noct": "Nitewing",
             "Jetragon": "Nitewing"
+        },
+        "variant": "",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "750",
+            "HP": "95",
+            "Melee": "100",
+            "Ranged": "95",
+            "Defence": "80",
+            "Price": "3810",
+            "Stamina": "100",
+            "Walking": "140",
+            "Running": "400",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 69,
         "key": "069",
-        "image": "require('../images/069.png')",
+        "image": "require('..\/images\/069.png')",
         "name": "Lovander",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Lovander",
         "types": [
@@ -11828,12 +12928,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Elphidran",
             "Frostallion Noct": "Penking",
             "Jetragon": "Penking"
+        },
+        "variant": "",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "940",
+            "HP": "120",
+            "Melee": "70",
+            "Ranged": "70",
+            "Defence": "70",
+            "Price": "2450",
+            "Stamina": "100",
+            "Walking": "170",
+            "Running": "750",
+            "Mounted": "850",
+            "Capture Multi": "1",
+            "Male %": "30"
         }
     },
     {
         "id": 70,
         "key": "070",
-        "image": "require('../images/070.png')",
+        "image": "require('..\/images\/070.png')",
         "name": "Flambelle",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Flambelle",
         "types": [
@@ -12006,16 +13122,32 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Foxcicle",
             "Frostallion Noct": "Tombat",
             "Jetragon": "Tombat"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1405",
+            "HP": "60",
+            "Melee": "100",
+            "Ranged": "70",
+            "Defence": "80",
+            "Price": "2500",
+            "Stamina": "100",
+            "Walking": "98",
+            "Running": "250",
+            "Mounted": "375",
+            "Capture Multi": "1.1",
+            "Male %": "50"
         }
     },
     {
         "id": 71,
         "key": "071",
-        "image": "require('../images/071.png')",
-        "name": "Vanwyrm",
+        "image": "require('..\/images\/071.png')",
+        "name": "Vanwyrm Cryst",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Vanwyrm",
         "types": [
-            "Fire",
+            "Ice",
             "Dark"
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/e\/ea\/Vanwyrm_menu.png\/",
@@ -12178,12 +13310,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Ragnahawk",
             "Frostallion Noct": "Ragnahawk",
             "Jetragon": "Ragnahawk"
+        },
+        "variant": "B",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "620",
+            "HP": "90",
+            "Melee": "100",
+            "Ranged": "120",
+            "Defence": "95",
+            "Price": "4610",
+            "Stamina": "150",
+            "Walking": "350",
+            "Running": "700",
+            "Mounted": "850",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 72,
         "key": "072",
-        "image": "require('../images/072.png')",
+        "image": "require('..\/images\/072.png')",
         "name": "Bushi",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Bushi",
         "types": [
@@ -12360,12 +13508,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Ragnahawk",
             "Frostallion Noct": "Pyrin",
             "Jetragon": "Pyrin"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "640",
+            "HP": "80",
+            "Melee": "100",
+            "Ranged": "125",
+            "Defence": "80",
+            "Price": "4520",
+            "Stamina": "100",
+            "Walking": "160",
+            "Running": "600",
+            "Mounted": "900",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 73,
         "key": "073",
-        "image": "require('../images/073.png')",
+        "image": "require('..\/images\/073.png')",
         "name": "Beakon",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Beakon",
         "types": [
@@ -12533,12 +13697,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Astegon",
             "Frostallion Noct": "Astegon",
             "Jetragon": "Astegon"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "220",
+            "HP": "105",
+            "Melee": "100",
+            "Ranged": "115",
+            "Defence": "80",
+            "Price": "7490",
+            "Stamina": "160",
+            "Walking": "200",
+            "Running": "750",
+            "Mounted": "1200",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 74,
         "key": "074",
-        "image": "require('../images/074.png')",
+        "image": "require('..\/images\/074.png')",
         "name": "Ragnahawk",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Ragnahawk",
         "types": [
@@ -12702,12 +13882,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Menasting",
             "Frostallion Noct": "Beakon",
             "Jetragon": "Beakon"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "380",
+            "HP": "95",
+            "Melee": "100",
+            "Ranged": "105",
+            "Defence": "120",
+            "Price": "6720",
+            "Stamina": "150",
+            "Walking": "200",
+            "Running": "800",
+            "Mounted": "1300",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 75,
         "key": "075",
-        "image": "require('../images/075.png')",
+        "image": "require('..\/images\/075.png')",
         "name": "Katress",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Katress",
         "types": [
@@ -12877,12 +14073,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Sweepa",
             "Frostallion Noct": "Sweepa",
             "Jetragon": "Sweepa"
+        },
+        "variant": "",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "700",
+            "HP": "90",
+            "Melee": "100",
+            "Ranged": "105",
+            "Defence": "90",
+            "Price": "4120",
+            "Stamina": "100",
+            "Walking": "145",
+            "Running": "440",
+            "Mounted": "620",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 76,
         "key": "076",
-        "image": "require('../images/076.png')",
+        "image": "require('..\/images\/076.png')",
         "name": "Wixen",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Wixen",
         "types": [
@@ -13051,12 +14263,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Bushi",
             "Frostallion Noct": "Bushi",
             "Jetragon": "Bushi"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1160",
+            "HP": "90",
+            "Melee": "50",
+            "Ranged": "110",
+            "Defence": "80",
+            "Price": "1540",
+            "Stamina": "100",
+            "Walking": "145",
+            "Running": "440",
+            "Mounted": "620",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 77,
         "key": "077",
-        "image": "require('../images/077.png')",
+        "image": "require('..\/images\/077.png')",
         "name": "Verdash",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Verdash",
         "types": [
@@ -13233,12 +14461,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Surfent",
             "Frostallion Noct": "Elphidran",
             "Jetragon": "Elphidran"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "990",
+            "HP": "90",
+            "Melee": "100",
+            "Ranged": "115",
+            "Defence": "90",
+            "Price": "2200",
+            "Stamina": "100",
+            "Walking": "195",
+            "Running": "500",
+            "Mounted": "700",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 78,
         "key": "078",
-        "image": "require('../images/078.png')",
+        "image": "require('..\/images\/078.png')",
         "name": "Vaelet",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Vaelet",
         "types": [
@@ -13415,12 +14659,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Incineram",
             "Frostallion Noct": "Anubis",
             "Jetragon": "Anubis"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1050",
+            "HP": "100",
+            "Melee": "100",
+            "Ranged": "100",
+            "Defence": "120",
+            "Price": "1960",
+            "Stamina": "100",
+            "Walking": "150",
+            "Running": "400",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 79,
         "key": "079",
-        "image": "require('../images/079.png')",
+        "image": "require('..\/images\/079.png')",
         "name": "Sibelyx",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Sibelyx",
         "types": [
@@ -13589,16 +14849,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Relaxaurus",
             "Frostallion Noct": "Relaxaurus",
             "Jetragon": "Relaxaurus"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "450",
+            "HP": "110",
+            "Melee": "90",
+            "Ranged": "90",
+            "Defence": "100",
+            "Price": "5900",
+            "Stamina": "100",
+            "Walking": "100",
+            "Running": "400",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 80,
         "key": "080",
-        "image": "require('../images/080.png')",
-        "name": "Elphidran",
+        "image": "require('..\/images\/080.png')",
+        "name": "Elphidran Aqua",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Elphidran",
         "types": [
-            "Dragon"
+            "Dragon",
+            "Water"
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/a\/a6\/Elphidran_menu.png\/",
         "suitability": [
@@ -13754,16 +15031,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Elizabee",
             "Frostallion Noct": "Reptyro",
             "Jetragon": "Jormuntide"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "530",
+            "HP": "115",
+            "Melee": "80",
+            "Ranged": "80",
+            "Defence": "95",
+            "Price": "5320",
+            "Stamina": "130",
+            "Walking": "83",
+            "Running": "630",
+            "Mounted": "800",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 81,
         "key": "081",
-        "image": "require('../images/081.png')",
-        "name": "Kelpsea",
+        "image": "require('..\/images\/081.png')",
+        "name": "Kelpsea Ignis",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Kelpsea",
         "types": [
-            "Water"
+            "Fire",
+            ""
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/1\/1b\/Kelpsea_menu.png\/",
         "suitability": [
@@ -13920,12 +15214,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Univolt",
             "Frostallion Noct": "Univolt",
             "Jetragon": "Univolt"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "1270",
+            "HP": "70",
+            "Melee": "100",
+            "Ranged": "70",
+            "Defence": "70",
+            "Price": "1240",
+            "Stamina": "100",
+            "Walking": "100",
+            "Running": "700",
+            "Mounted": "900",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 82,
         "key": "082",
-        "image": "require('../images/082.png')",
+        "image": "require('..\/images\/082.png')",
         "name": "Azurobe",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Azurobe",
         "types": [
@@ -14086,12 +15396,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Jormuntide",
             "Frostallion Noct": "Mammorest",
             "Jetragon": "Mammorest"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "500",
+            "HP": "110",
+            "Melee": "70",
+            "Ranged": "100",
+            "Defence": "100",
+            "Price": "5600",
+            "Stamina": "100",
+            "Walking": "150",
+            "Running": "600",
+            "Mounted": "800",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 83,
         "key": "083",
-        "image": "require('../images/083.png')",
+        "image": "require('..\/images\/083.png')",
         "name": "Cryolinx",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Cryolinx",
         "types": [
@@ -14259,16 +15585,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Cryolinx",
             "Frostallion Noct": "Cryolinx",
             "Jetragon": "Cryolinx"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "130",
+            "HP": "100",
+            "Melee": "140",
+            "Ranged": "100",
+            "Defence": "110",
+            "Price": "8440",
+            "Stamina": "100",
+            "Walking": "280",
+            "Running": "720",
+            "Mounted": "900",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 84,
         "key": "084",
-        "image": "require('../images/084.png')",
-        "name": "Blazehowl",
+        "image": "require('..\/images\/084.png')",
+        "name": "Blazehowl Noct",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Blazehowl",
         "types": [
-            "Fire"
+            "Fire",
+            "Dark"
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/3\/33\/Blazehowl_menu.png\/",
         "suitability": [
@@ -14428,17 +15771,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Nitewing",
             "Frostallion Noct": "Sweepa",
             "Jetragon": "Sweepa"
+        },
+        "variant": "B",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "670",
+            "HP": "105",
+            "Melee": "100",
+            "Ranged": "115",
+            "Defence": "80",
+            "Price": "4360",
+            "Stamina": "100",
+            "Walking": "90",
+            "Running": "750",
+            "Mounted": "900",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 85,
         "key": "085",
-        "image": "require('../images/085.png')",
-        "name": "Relaxaurus",
+        "image": "require('..\/images\/085.png')",
+        "name": "Relaxaurus Lux",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Relaxaurus",
         "types": [
             "Dragon",
-            "Water"
+            "Electric"
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/01\/Relaxaurus_menu.png\/",
         "suitability": [
@@ -14599,16 +15958,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Helzephyr",
             "Frostallion Noct": "Helzephyr",
             "Jetragon": "Helzephyr"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "270",
+            "HP": "110",
+            "Melee": "110",
+            "Ranged": "110",
+            "Defence": "75",
+            "Price": "10380",
+            "Stamina": "100",
+            "Walking": "60",
+            "Running": "650",
+            "Mounted": "800",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 86,
         "key": "086",
-        "image": "require('../images/086.png')",
-        "name": "Broncherry",
+        "image": "require('..\/images\/086.png')",
+        "name": "Broncherry Aqua",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Broncherry",
         "types": [
-            "Grass"
+            "Grass",
+            "Water"
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/bd\/Broncherry_menu.png\/",
         "suitability": [
@@ -14765,12 +16141,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Cinnamoth",
             "Frostallion Noct": "Wumpo Botan",
             "Jetragon": "Wumpo Botan"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "840",
+            "HP": "120",
+            "Melee": "80",
+            "Ranged": "95",
+            "Defence": "100",
+            "Price": "3110",
+            "Stamina": "100",
+            "Walking": "75",
+            "Running": "350",
+            "Mounted": "500",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 87,
         "key": "087",
-        "image": "require('../images/087.png')",
+        "image": "require('..\/images\/087.png')",
         "name": "Petallia",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Petallia",
         "types": [
@@ -14948,12 +16340,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Sibelyx",
             "Frostallion Noct": "Sibelyx",
             "Jetragon": "Mossanda"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "780",
+            "HP": "100",
+            "Melee": "100",
+            "Ranged": "95",
+            "Defence": "100",
+            "Price": "3590",
+            "Stamina": "100",
+            "Walking": "150",
+            "Running": "550",
+            "Mounted": "700",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 88,
         "key": "088",
-        "image": "require('../images/088.png')",
+        "image": "require('..\/images\/088.png')",
         "name": "Reptyro",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Reptyro",
         "types": [
@@ -15118,16 +16526,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Beakon",
             "Frostallion Noct": "Beakon",
             "Jetragon": "Beakon"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "320",
+            "HP": "110",
+            "Melee": "100",
+            "Ranged": "105",
+            "Defence": "120",
+            "Price": "6940",
+            "Stamina": "100",
+            "Walking": "80",
+            "Running": "390",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 89,
         "key": "089",
-        "image": "require('../images/089.png')",
+        "image": "require('..\/images\/089.png')",
         "name": "Kingpaca",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Kingpaca",
         "types": [
-            "Normal"
+            "Normal",
+            ""
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/9\/9d\/Kingpaca_menu.png\/",
         "suitability": [
@@ -15284,16 +16709,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Mammorest",
             "Frostallion Noct": "Relaxaurus",
             "Jetragon": "Relaxaurus"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "470",
+            "HP": "120",
+            "Melee": "100",
+            "Ranged": "85",
+            "Defence": "90",
+            "Price": "5800",
+            "Stamina": "100",
+            "Walking": "80",
+            "Running": "500",
+            "Mounted": "700",
+            "Capture Multi": "1",
+            "Male %": "90"
         }
     },
     {
         "id": 90,
         "key": "090",
-        "image": "require('../images/090.png')",
-        "name": "Mammorest",
+        "image": "require('..\/images\/090.png')",
+        "name": "Mammorest Cryst",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Mammorest",
         "types": [
-            "Grass"
+            "Ice",
+            ""
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/5\/5e\/Mammorest_menu.png\/",
         "suitability": [
@@ -15459,16 +16901,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Beakon",
             "Frostallion Noct": "Helzephyr",
             "Jetragon": "Helzephyr"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "290",
+            "HP": "150",
+            "Melee": "100",
+            "Ranged": "85",
+            "Defence": "90",
+            "Price": "9580",
+            "Stamina": "100",
+            "Walking": "135",
+            "Running": "430",
+            "Mounted": "600",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 91,
         "key": "091",
-        "image": "require('../images/091.png')",
-        "name": "Wumpo",
+        "image": "require('..\/images\/091.png')",
+        "name": "Wumpo Botan",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Wumpo",
         "types": [
-            "Ice"
+            "Grass",
+            ""
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/0e\/Wumpo_menu.png\/",
         "suitability": [
@@ -15637,12 +17096,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Relaxaurus",
             "Frostallion Noct": "Relaxaurus",
             "Jetragon": "Relaxaurus"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "480",
+            "HP": "140",
+            "Melee": "100",
+            "Ranged": "80",
+            "Defence": "110",
+            "Price": "5700",
+            "Stamina": "100",
+            "Walking": "100",
+            "Running": "365",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 92,
         "key": "092",
-        "image": "require('../images/092.png')",
+        "image": "require('..\/images\/092.png')",
         "name": "Warsect",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Warsect",
         "types": [
@@ -15815,12 +17290,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Beakon",
             "Frostallion Noct": "Beakon",
             "Jetragon": "Beakon"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "340",
+            "HP": "120",
+            "Melee": "100",
+            "Ranged": "100",
+            "Defence": "120",
+            "Price": "6830",
+            "Stamina": "100",
+            "Walking": "110",
+            "Running": "500",
+            "Mounted": "600",
+            "Capture Multi": "1",
+            "Male %": "85"
         }
     },
     {
         "id": 93,
         "key": "093",
-        "image": "require('../images/093.png')",
+        "image": "require('..\/images\/093.png')",
         "name": "Fenglope",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Fenglope",
         "types": [
@@ -15981,12 +17472,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Elphidran",
             "Frostallion Noct": "Elphidran",
             "Jetragon": "Elphidran"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "980",
+            "HP": "110",
+            "Melee": "110",
+            "Ranged": "110",
+            "Defence": "90",
+            "Price": "2250",
+            "Stamina": "100",
+            "Walking": "100",
+            "Running": "750",
+            "Mounted": "1050",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 94,
         "key": "094",
-        "image": "require('../images/094.png')",
+        "image": "require('..\/images\/094.png')",
         "name": "Felbat",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Felbat",
         "types": [
@@ -16147,12 +17654,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Anubis",
             "Frostallion Noct": "Surfent",
             "Jetragon": "Elphidran"
+        },
+        "variant": "",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "1010",
+            "HP": "100",
+            "Melee": "100",
+            "Ranged": "105",
+            "Defence": "110",
+            "Price": "2100",
+            "Stamina": "100",
+            "Walking": "100",
+            "Running": "550",
+            "Mounted": "700",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 95,
         "key": "095",
-        "image": "require('../images/095.png')",
+        "image": "require('..\/images\/095.png')",
         "name": "Quivern",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Quivern",
         "types": [
@@ -16324,12 +17847,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Beakon",
             "Frostallion Noct": "Beakon",
             "Jetragon": "Beakon"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "350",
+            "HP": "105",
+            "Melee": "100",
+            "Ranged": "100",
+            "Defence": "100",
+            "Price": "6830",
+            "Stamina": "220",
+            "Walking": "240",
+            "Running": "800",
+            "Mounted": "950",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 96,
         "key": "096",
-        "image": "require('../images/096.png')",
+        "image": "require('..\/images\/096.png')",
         "name": "Blazamut",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Blazamut",
         "types": [
@@ -16494,12 +18033,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Suzaku",
             "Frostallion Noct": "Suzaku",
             "Jetragon": "Suzaku"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "10",
+            "HP": "100",
+            "Melee": "150",
+            "Ranged": "125",
+            "Defence": "120",
+            "Price": "10520",
+            "Stamina": "100",
+            "Walking": "400",
+            "Running": "700",
+            "Mounted": "900",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 97,
         "key": "097",
-        "image": "require('../images/097.png')",
+        "image": "require('..\/images\/097.png')",
         "name": "Helzephyr",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Helzephyr",
         "types": [
@@ -16660,12 +18215,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Frostallion Noct",
             "Frostallion Noct": "Astegon",
             "Jetragon": "Cryolinx"
+        },
+        "variant": "",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "190",
+            "HP": "100",
+            "Melee": "100",
+            "Ranged": "125",
+            "Defence": "100",
+            "Price": "7840",
+            "Stamina": "170",
+            "Walking": "100",
+            "Running": "700",
+            "Mounted": "1100",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 98,
         "key": "098",
-        "image": "require('../images/098.png')",
+        "image": "require('..\/images\/098.png')",
         "name": "Astegon",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Astegon",
         "types": [
@@ -16831,12 +18402,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Cryolinx",
             "Frostallion Noct": "Cryolinx",
             "Jetragon": "Cryolinx"
+        },
+        "variant": "",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "150",
+            "HP": "100",
+            "Melee": "100",
+            "Ranged": "125",
+            "Defence": "125",
+            "Price": "8200",
+            "Stamina": "300",
+            "Walking": "150",
+            "Running": "600",
+            "Mounted": "800",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 99,
         "key": "099",
-        "image": "require('../images/099.png')",
+        "image": "require('..\/images\/099.png')",
         "name": "Menasting",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Menasting",
         "types": [
@@ -17002,12 +18589,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Helzephyr",
             "Frostallion Noct": "Helzephyr",
             "Jetragon": "Helzephyr"
+        },
+        "variant": "",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "260",
+            "HP": "100",
+            "Melee": "100",
+            "Ranged": "100",
+            "Defence": "130",
+            "Price": "7050",
+            "Stamina": "100",
+            "Walking": "200",
+            "Running": "1000",
+            "Mounted": "1200",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 100,
         "key": "100",
-        "image": "require('../images/100.png')",
+        "image": "require('..\/images\/100.png')",
         "name": "Anubis",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Anubis",
         "types": [
@@ -17177,17 +18780,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Warsect",
             "Frostallion Noct": "Elizabee",
             "Jetragon": "Elizabee"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "570",
+            "HP": "120",
+            "Melee": "130",
+            "Ranged": "130",
+            "Defence": "100",
+            "Price": "4960",
+            "Stamina": "100",
+            "Walking": "160",
+            "Running": "800",
+            "Mounted": "1000",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 101,
         "key": "101",
-        "image": "require('../images/101.png')",
-        "name": "Jormuntide",
+        "image": "require('..\/images\/101.png')",
+        "name": "Jormuntide Ignis",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Jormuntide",
         "types": [
             "Dragon",
-            "Water"
+            "Fire"
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/8\/8e\/Jormuntide_menu.png\/",
         "suitability": [
@@ -17343,16 +18962,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Beakon",
             "Frostallion Noct": "Beakon",
             "Jetragon": "Helzephyr"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "315",
+            "HP": "130",
+            "Melee": "150",
+            "Ranged": "130",
+            "Defence": "100",
+            "Price": "9500",
+            "Stamina": "100",
+            "Walking": "175",
+            "Running": "525",
+            "Mounted": "700",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 102,
         "key": "102",
-        "image": "require('../images/102.png')",
-        "name": "Suzaku",
+        "image": "require('..\/images\/102.png')",
+        "name": "Suzaku Aqua",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Suzaku",
         "types": [
-            "Fire"
+            "Water",
+            ""
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/b4\/Suzaku_menu.png\/",
         "suitability": [
@@ -17508,12 +19144,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Suzaku",
             "Frostallion Noct": "Suzaku",
             "Jetragon": "Suzaku"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "30",
+            "HP": "125",
+            "Melee": "100",
+            "Ranged": "105",
+            "Defence": "105",
+            "Price": "10110",
+            "Stamina": "350",
+            "Walking": "200",
+            "Running": "850",
+            "Mounted": "1100",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 103,
         "key": "103",
-        "image": "require('../images/103.png')",
+        "image": "require('..\/images\/103.png')",
         "name": "Grizzbolt",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Grizzbolt",
         "types": [
@@ -17686,16 +19338,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Astegon",
             "Frostallion Noct": "Astegon",
             "Jetragon": "Astegon"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "200",
+            "HP": "105",
+            "Melee": "120",
+            "Ranged": "100",
+            "Defence": "100",
+            "Price": "7720",
+            "Stamina": "100",
+            "Walking": "140",
+            "Running": "470",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 104,
         "key": "104",
-        "image": "require('../images/104.png')",
-        "name": "Lyleen",
+        "image": "require('..\/images\/104.png')",
+        "name": "Lyleen Noct",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Lyleen",
         "types": [
-            "Grass"
+            "Dark",
+            ""
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/5\/5e\/Lyleen_menu.png\/",
         "suitability": [
@@ -17865,12 +19534,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Helzephyr",
             "Frostallion Noct": "Helzephyr",
             "Jetragon": "Astegon"
+        },
+        "variant": "B",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "210",
+            "HP": "110",
+            "Melee": "100",
+            "Ranged": "110",
+            "Defence": "115",
+            "Price": "7610",
+            "Stamina": "100",
+            "Walking": "100",
+            "Running": "450",
+            "Mounted": "550",
+            "Capture Multi": "1",
+            "Male %": "30"
         }
     },
     {
         "id": 105,
         "key": "105",
-        "image": "require('../images/105.png')",
+        "image": "require('..\/images\/105.png')",
         "name": "Faleris",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Faleris",
         "types": [
@@ -18034,12 +19719,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Menasting",
             "Frostallion Noct": "Beakon",
             "Jetragon": "Beakon"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "370",
+            "HP": "100",
+            "Melee": "100",
+            "Ranged": "105",
+            "Defence": "110",
+            "Price": "6720",
+            "Stamina": "230",
+            "Walking": "200",
+            "Running": "1000",
+            "Mounted": "1400",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 106,
         "key": "106",
-        "image": "require('../images/106.png')",
+        "image": "require('..\/images\/106.png')",
         "name": "Orserk",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Orserk",
         "types": [
@@ -18208,12 +19909,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Cryolinx",
             "Frostallion Noct": "Cryolinx",
             "Jetragon": "Cryolinx"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "140",
+            "HP": "100",
+            "Melee": "100",
+            "Ranged": "130",
+            "Defence": "100",
+            "Price": "8320",
+            "Stamina": "100",
+            "Walking": "185",
+            "Running": "900",
+            "Mounted": "1200",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 107,
         "key": "107",
-        "image": "require('../images/107.png')",
+        "image": "require('..\/images\/107.png')",
         "name": "Shadowbeak",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Shadowbeak",
         "types": [
@@ -18375,12 +20092,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Suzaku",
             "Frostallion Noct": "Suzaku",
             "Jetragon": "Suzaku"
+        },
+        "variant": "",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "60",
+            "HP": "120",
+            "Melee": "130",
+            "Ranged": "120",
+            "Defence": "140",
+            "Price": "9060",
+            "Stamina": "250",
+            "Walking": "80",
+            "Running": "850",
+            "Mounted": "1200",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 108,
         "key": "108",
-        "image": "require('../images/108.png')",
+        "image": "require('..\/images\/108.png')",
         "name": "Paladius",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Paladius",
         "types": [
@@ -18545,12 +20278,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Cryolinx",
             "Frostallion Noct": "Suzaku",
             "Jetragon": "Suzaku"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "80",
+            "HP": "130",
+            "Melee": "110",
+            "Ranged": "120",
+            "Defence": "145",
+            "Price": "8810",
+            "Stamina": "100",
+            "Walking": "100",
+            "Running": "800",
+            "Mounted": "1400",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 109,
         "key": "109",
-        "image": "require('../images/109.png')",
+        "image": "require('..\/images\/109.png')",
         "name": "Necromus",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Necromus",
         "types": [
@@ -18715,16 +20464,33 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Cryolinx",
             "Frostallion Noct": "Suzaku",
             "Jetragon": "Suzaku"
+        },
+        "variant": "",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "70",
+            "HP": "130",
+            "Melee": "100",
+            "Ranged": "145",
+            "Defence": "120",
+            "Price": "8930",
+            "Stamina": "100",
+            "Walking": "350",
+            "Running": "900",
+            "Mounted": "1600",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 110,
         "key": "110",
-        "image": "require('../images/110.png')",
-        "name": "Frostallion",
+        "image": "require('..\/images\/110.png')",
+        "name": "Frostallion Noct",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Frostallion",
         "types": [
-            "Ice"
+            "Dark",
+            ""
         ],
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/00\/Frostallion_menu.png\/",
         "suitability": [
@@ -18881,12 +20647,28 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Frostallion",
             "Frostallion Noct": "Cryolinx",
             "Jetragon": "Cryolinx"
+        },
+        "variant": "B",
+        "isNightOnly": "true",
+        "stats": {
+            "BreedPWR": "100",
+            "HP": "140",
+            "Melee": "100",
+            "Ranged": "140",
+            "Defence": "135",
+            "Price": "8560",
+            "Stamina": "300",
+            "Walking": "120",
+            "Running": "1000",
+            "Mounted": "1500",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     },
     {
         "id": 111,
         "key": "111",
-        "image": "require('../images/111.png')",
+        "image": "require('..\/images\/111.png')",
         "name": "Jetragon",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Jetragon",
         "types": [
@@ -19049,7 +20831,22 @@ const PalsProfilesAndBreedings = [
             "Frostallion": "Cryolinx",
             "Frostallion Noct": "Cryolinx",
             "Jetragon": "Jetragon"
+        },
+        "variant": "",
+        "isNightOnly": "",
+        "stats": {
+            "BreedPWR": "90",
+            "HP": "110",
+            "Melee": "100",
+            "Ranged": "140",
+            "Defence": "110",
+            "Price": "8680",
+            "Stamina": "100",
+            "Walking": "800",
+            "Running": "1700",
+            "Mounted": "3300",
+            "Capture Multi": "1",
+            "Male %": "50"
         }
     }
 ]
-export default PalsProfilesAndBreedings;

@@ -1,16 +1,16 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
-import TypeBadge from './TypeBadge'; // Adjust the import path as needed
+import TypePin from './TypePin';
 
 const PalTile = ({ palName, palImageSource, palTypes, tileWidth, tileHeight, spacing }) => {
     const styles = StyleSheet.create({
         container: {
             alignItems: 'center',
-            justifyContent: 'center',
+            justifyContent: 'space-between',
             backgroundColor: 'white',
             borderRadius: 10,
             padding: 10,
-            margin: spacing, // Ajoutez la marge inférieure
+            margin: spacing,
             shadowColor: '#000',
             shadowOffset: {
                 width: 0,
@@ -24,24 +24,20 @@ const PalTile = ({ palName, palImageSource, palTypes, tileWidth, tileHeight, spa
         },
         image: {
             width: '100%',
-            height: 100,
+            height: '60%',
             borderRadius: 10,
-            marginBottom: 10,
+            marginBottom: 5,
         },
         text: {
-            fontSize: 16,
+            fontSize: 14,
             fontWeight: 'bold',
             textAlign: 'center',
         },
         typesContainer: {
             flexDirection: 'row',
+            alignItems: 'center',
             justifyContent: 'center',
             flexWrap: 'wrap',
-        },
-        typeBadge: {
-            // Styles for individual type badges
-            margin: 2,
-            // Add more styling as needed
         },
     });
 
@@ -50,7 +46,9 @@ const PalTile = ({ palName, palImageSource, palTypes, tileWidth, tileHeight, spa
             <Image style={styles.image} source={palImageSource} />
             <Text style={styles.text}>{palName}</Text>
             <View style={styles.typesContainer}>
-                <TypeBadge types={palTypes} />
+                {palTypes.map((type, index) => (
+                    <TypePin key={index} type={type} />
+                ))}
             </View>
         </View>
     );

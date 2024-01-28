@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
     height: 60, // Set a fixed height for the top bar
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
+    width: '95%',
   },
   title: {
     fontSize: 20,
@@ -64,7 +65,8 @@ const styles = StyleSheet.create({
   },
   eclipseImage: {
     width: 30, // Adjust the width as needed
-    height: 30, // Adjust the height as needed
+    height: 30,
+    // Adjust the height as needed
   },
 });
 

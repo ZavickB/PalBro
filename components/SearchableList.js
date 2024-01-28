@@ -25,12 +25,14 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns }) => {
         value={searchText}
       />
       {filteredData.length === 0 && <Text style={styles.emptyState}>{emptyStateText}</Text>}
-      <FlatList
-        data={filteredData}
-        renderItem={renderItem}
-        keyExtractor={(item) => item.id.toString()} // Use a unique key for each item
-        numColumns={numColumns}
-      />
+        <View style={styles.listContainer}>
+          <FlatList
+            data={filteredData}
+            renderItem={renderItem}
+            keyExtractor={(item) => `${item.key}`} // Use a combination of key and variant as a unique key
+            numColumns={numColumns}
+          />
+        </View>
     </View>
   );
 };
@@ -38,10 +40,16 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#f5f5f5',
+  },
+  listContainer: {
+    flex: 1,
+    backgroundColor: '#f5f5f5',
+    alignItems: 'center',
   },
   searchInput: {
     height: 40,
+    width: '100%',
     borderWidth: 1,
     borderColor: 'gray',
     borderRadius: 5,
