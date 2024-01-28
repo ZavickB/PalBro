@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, Text, Image, TouchableOpacity, Modal, FlatList } from 'react-native';
 import PalsProfilesAndBreedings from '../assets/data/PalsProfilesAndBreedings'; // Import the pal data
 
@@ -14,9 +14,15 @@ const findBaby = (palData, selectedPalName) => {
 
 // Define the new component
 const PalBreedingInfos = ({ palData }) => {
-  const [selectedPalInfo, setSelectedPalInfo] = useState(palData); // Use palData as the initial selection
+  const [selectedPalInfo, setSelectedPalInfo] = useState(palData); // Initialize with palData
   const [babyInfo, setBabyInfo] = useState(null); // Initial state for babyInfo
   const [isModalVisible, setModalVisible] = useState(false);
+
+  // Use useEffect to update selectedPalInfo when palData changes
+  useEffect(() => {
+    setSelectedPalInfo(palData);
+    setBabyInfo(palData);
+  }, [palData]);
 
   // Function to handle pal selection
   const handlePalSelection = (pal) => {

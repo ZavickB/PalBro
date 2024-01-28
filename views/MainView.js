@@ -26,7 +26,7 @@ const MainView = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-    <TopBar title="Main" navigation={navigation} />
+    <TopBar title="Home" navigation={navigation} />
       <SearchableList
         data={PalsProfilesAndBreedings}
         renderItem={({ item }) => (

@@ -12,7 +12,7 @@ export default function App() {
 
       <NavigationContainer>
         <Drawer.Navigator initialRouteName="Home" screenOptions={{headerShown: false}} >
-          <Drawer.Screen name="Main" component={MainView} />
+          <Drawer.Screen name="Home" component={MainView} />
           <Drawer.Screen name="Details" component={DetailedView} />
           {/* Add more routes as needed */}
         </Drawer.Navigator>
