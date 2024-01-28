@@ -10,7 +10,7 @@ const MainView = ({ navigation }) => {
   const screenHeight = Dimensions.get('window').height;
 
   const tileWidthPercentage = 30;
-  const tileHeightPercentage = 20;
+  const tileHeightPercentage = 25;
   const spacing = 5;
   const tileWidth = ((screenWidth * tileWidthPercentage) / 100) - spacing;
   const tileHeight = ((screenHeight * tileHeightPercentage) / 100) - spacing;

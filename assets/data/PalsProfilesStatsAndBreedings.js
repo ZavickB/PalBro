@@ -1,4 +1,5 @@
-const PalsProfilesStatsAndBreedings = [
+const PalsProfilesStatsAndBreedings = 
+[
     {
         "id": 1,
         "key": "001",
@@ -187,7 +188,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1.5",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "roly_poly",
+                "type": "normal",
+                "cooldown": 1,
+                "power": 35,
+                "description": "Lamball's special skill. Curls into a ball, rolling after any enemies in its way. Becomes dizzy and unable to move after the attack ends.\n"
+            },
+            {
+                "level": 7,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 15,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 22,
+                "name": "implode",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 180,
+                "description": "Risks its life to cause a violent explosion. Becomes incapacitated afterwards.\n"
+            },
+            {
+                "level": 30,
+                "name": "electric_ball",
+                "type": "electric",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires an electric ball that slowly pursues an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 2,
@@ -380,7 +439,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1.5",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "punch_flurry",
+                "type": "normal",
+                "cooldown": 1,
+                "power": 40,
+                "description": "Cattiva's special skill. Pursues enemies, repeatedly punching them with both its fists.\n"
+            },
+            {
+                "level": 7,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 15,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 30,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "seed_machine_gun",
+                "type": "grass",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires a volley of hard seeds at enemies in front of it.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 3,
@@ -566,7 +683,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1.5",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "chicken_rush",
+                "type": "normal",
+                "cooldown": 1,
+                "power": 30,
+                "description": "Chikipi's special skill. Flies at enemies in its sights, attacking them with its sharp beak.\n"
+            },
+            {
+                "level": 7,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 15,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 22,
+                "name": "implode",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 180,
+                "description": "Risks its life to cause a violent explosion. Becomes incapacitated afterwards.\n"
+            },
+            {
+                "level": 30,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "sand_tornado",
+                "type": "ground",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "flare_storm",
+                "type": "fire",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
+            }
+        ]
     },
     {
         "id": 4,
@@ -764,7 +939,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "0.9",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 15,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 22,
+                "name": "seed_machine_gun",
+                "type": "grass",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires a volley of hard seeds at enemies in front of it.\n"
+            },
+            {
+                "level": 30,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 40,
+                "name": "spine_vine",
+                "type": "grass",
+                "cooldown": 25,
+                "power": 95,
+                "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 5,
@@ -946,7 +1179,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1.1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "flare_arrow",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "ignis_breath",
+                "type": "fire",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Shoots flames at an enemy, dealing continuous damage.\n"
+            },
+            {
+                "level": 40,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            }
+        ]
     },
     {
         "id": 6,
@@ -1136,7 +1427,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "400",
             "Capture Bonus": "1.1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "aqua_gun",
+                "type": "water",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls a ball of water straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 15,
+                "name": "hydro_jet",
+                "type": "water",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a high speed ball of water at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 30,
+                "name": "bubble_blast",
+                "type": "water",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "aqua_burst",
+                "type": "water",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of water and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "hydro_laser",
+                "type": "water",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
+            }
+        ]
     },
     {
         "id": 7,
@@ -1325,7 +1674,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "500",
             "Capture Bonus": "1.1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "spark_blast",
+                "type": "electric",
+                "cooldown": 2,
+                "power": 30,
+                "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.\n"
+            },
+            {
+                "level": 7,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "shockwave",
+                "type": "electric",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Quickly discharges electricity, shocking those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "electric_ball",
+                "type": "electric",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires an electric ball that slowly pursues an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "tri-lightning",
+                "type": "electric",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Generates lightning that strikes an enemy three times from above.\n"
+            },
+            {
+                "level": 40,
+                "name": "lightning_streak",
+                "type": "electric",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Generates a lightning bolt that moves forward in a line.\n"
+            },
+            {
+                "level": 50,
+                "name": "lightning_bolt",
+                "type": "electric",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
+            }
+        ]
     },
     {
         "id": 8,
@@ -1522,7 +1929,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "400",
             "Capture Bonus": "1.1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "seed_machine_gun",
+                "type": "grass",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires a volley of hard seeds at enemies in front of it.\n"
+            },
+            {
+                "level": 22,
+                "name": "seed_mine",
+                "type": "grass",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
+            },
+            {
+                "level": 30,
+                "name": "stone_cannon",
+                "type": "ground",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Digs up a boulder and hurls it at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 9,
@@ -1704,7 +2169,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1.1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 15,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "flare_arrow",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "flare_storm",
+                "type": "fire",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "ignis_rage",
+                "type": "fire",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
+            },
+            {
+                "level": 50,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            }
+        ]
     },
     {
         "id": 10,
@@ -1899,7 +2422,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "650",
             "Capture Bonus": "0.9",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 7,
+                "name": "hydro_jet",
+                "type": "water",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a high speed ball of water at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "aqua_gun",
+                "type": "water",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls a ball of water straight at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 30,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "hydro_laser",
+                "type": "water",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
+            }
+        ]
     },
     {
         "id": 11,
@@ -2098,7 +2679,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "600",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "aqua_gun",
+                "type": "water",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls a ball of water straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "emperor_slide",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 70,
+                "description": "Penking's exclusive skill. Lies on its belly while generating frozen air all around it before sliding at enemies at high speed.\n"
+            },
+            {
+                "level": 22,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 30,
+                "name": "aqua_burst",
+                "type": "water",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of water and hurls it at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "hydro_laser",
+                "type": "water",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
+            }
+        ]
     },
     {
         "id": 12,
@@ -2279,7 +2918,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1.2",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "shockwave",
+                "type": "electric",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Quickly discharges electricity, shocking those around it.\n"
+            },
+            {
+                "level": 7,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 15,
+                "name": "electric_ball",
+                "type": "electric",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires an electric ball that slowly pursues an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 30,
+                "name": "tri-lightning",
+                "type": "electric",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Generates lightning that strikes an enemy three times from above.\n"
+            },
+            {
+                "level": 40,
+                "name": "lightning_streak",
+                "type": "electric",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Generates a lightning bolt that moves forward in a line.\n"
+            },
+            {
+                "level": 50,
+                "name": "lightning_bolt",
+                "type": "electric",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
+            }
+        ]
     },
     {
         "id": 13,
@@ -2462,7 +3159,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "400",
             "Capture Bonus": "1.3",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "stone_blast",
+                "type": "ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "seed_machine_gun",
+                "type": "grass",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires a volley of hard seeds at enemies in front of it.\n"
+            },
+            {
+                "level": 30,
+                "name": "seed_mine",
+                "type": "grass",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
+            },
+            {
+                "level": 40,
+                "name": "sand_tornado",
+                "type": "ground",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 14,
@@ -2648,7 +3403,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "450",
             "Capture Bonus": "1.3",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 22,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "seed_machine_gun",
+                "type": "grass",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires a volley of hard seeds at enemies in front of it.\n"
+            },
+            {
+                "level": 40,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 15,
@@ -2830,7 +3643,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "dark_ball",
+                "type": "dark",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "sand_tornado",
+                "type": "ground",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 16,
@@ -3011,7 +3882,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "400",
             "Capture Bonus": "1.3",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "aqua_gun",
+                "type": "water",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls a ball of water straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "hydro_jet",
+                "type": "water",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a high speed ball of water at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "bubble_blast",
+                "type": "water",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "acid_rain",
+                "type": "water",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Creates acidic clouds that pour down acid rain on enemies.\n"
+            },
+            {
+                "level": 40,
+                "name": "aqua_burst",
+                "type": "water",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of water and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "hydro_laser",
+                "type": "water",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
+            }
+        ]
     },
     {
         "id": 17,
@@ -3200,7 +4129,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "400",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "poison_blast",
+                "type": "dark",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls poison sludge at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "dark_ball",
+                "type": "dark",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 30,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 40,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 18,
@@ -3385,7 +4372,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "450",
             "Capture Bonus": "1.3",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "spark_blast",
+                "type": "electric",
+                "cooldown": 2,
+                "power": 30,
+                "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.\n"
+            },
+            {
+                "level": 22,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 30,
+                "name": "shockwave",
+                "type": "electric",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Quickly discharges electricity, shocking those around it.\n"
+            },
+            {
+                "level": 40,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 50,
+                "name": "lightning_bolt",
+                "type": "electric",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
+            }
+        ]
     },
     {
         "id": 19,
@@ -3575,7 +4620,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "dark_ball",
+                "type": "dark",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "poison_blast",
+                "type": "dark",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls poison sludge at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 30,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 20,
@@ -3758,7 +4861,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "700",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "reckless_charge",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 55,
+                "description": "Rushoar's special skill. Takes aim at a foe and rushes at them with a mad charge.\n"
+            },
+            {
+                "level": 7,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 22,
+                "name": "stone_blast",
+                "type": "ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 30,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 40,
+                "name": "rock_lance",
+                "type": "ground",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Generates a sharp rock spear under an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 21,
@@ -3940,7 +5101,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "500",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "dark_ball",
+                "type": "dark",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 30,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 22,
@@ -4129,7 +5348,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 15,
+                "name": "stone_blast",
+                "type": "ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "stone_cannon",
+                "type": "ground",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Digs up a boulder and hurls it at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 40,
+                "name": "sand_tornado",
+                "type": "ground",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "rock_lance",
+                "type": "ground",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Generates a sharp rock spear under an enemy.\n"
+            }
+        ]
     },
     {
         "id": 23,
@@ -4314,7 +5591,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "hydro_jet",
+                "type": "water",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a high speed ball of water at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "poison_blast",
+                "type": "dark",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls poison sludge at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "dark_ball",
+                "type": "dark",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 30,
+                "name": "acid_rain",
+                "type": "water",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Creates acidic clouds that pour down acid rain on enemies.\n"
+            },
+            {
+                "level": 40,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 24,
@@ -4495,7 +5830,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "dark_ball",
+                "type": "dark",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "sand_tornado",
+                "type": "ground",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 25,
@@ -4680,7 +6073,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "700",
             "Capture Bonus": "1.1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "hydro_jet",
+                "type": "water",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a high speed ball of water at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "aqua_gun",
+                "type": "water",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls a ball of water straight at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 22,
+                "name": "bubble_blast",
+                "type": "water",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "seed_machine_gun",
+                "type": "grass",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires a volley of hard seeds at enemies in front of it.\n"
+            },
+            {
+                "level": 40,
+                "name": "aqua_burst",
+                "type": "water",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of water and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "hydro_laser",
+                "type": "water",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
+            }
+        ]
     },
     {
         "id": 26,
@@ -4863,7 +6314,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1050",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "fierce_fang",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 45,
+                "description": "Direhowl's special skill. Swiftly leaps at an enemy and bites into them.\n"
+            },
+            {
+                "level": 7,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 22,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 30,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 27,
@@ -5045,7 +6554,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "implode",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 180,
+                "description": "Risks its life to cause a violent explosion. Becomes incapacitated afterwards.\n"
+            },
+            {
+                "level": 7,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 15,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 22,
+                "name": "megaton_implode",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 250,
+                "description": "Risks life to cause a massive explosion. Those who perish for their duty become glistening stars in the night sky.\n"
+            },
+            {
+                "level": 30,
+                "name": "sand_tornado",
+                "type": "ground",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 28,
@@ -5243,7 +6810,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 15,
+                "name": "hydro_jet",
+                "type": "water",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a high speed ball of water at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "seed_machine_gun",
+                "type": "grass",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires a volley of hard seeds at enemies in front of it.\n"
+            },
+            {
+                "level": 30,
+                "name": "bubble_blast",
+                "type": "water",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 29,
@@ -5425,7 +7050,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "700",
             "Capture Bonus": "1",
             "Male %": "20"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 7,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 22,
+                "name": "stone_blast",
+                "type": "ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 30,
+                "name": "stone_cannon",
+                "type": "ground",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Digs up a boulder and hurls it at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 30,
@@ -5623,7 +7306,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "seed_machine_gun",
+                "type": "grass",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires a volley of hard seeds at enemies in front of it.\n"
+            },
+            {
+                "level": 15,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 22,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "spine_vine",
+                "type": "grass",
+                "cooldown": 25,
+                "power": 95,
+                "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 31,
@@ -5812,7 +7553,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "500",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "hydro_jet",
+                "type": "water",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a high speed ball of water at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 15,
+                "name": "aqua_gun",
+                "type": "water",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls a ball of water straight at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "bubble_blast",
+                "type": "water",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 40,
+                "name": "aqua_burst",
+                "type": "water",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of water and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "hydro_laser",
+                "type": "water",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
+            }
+        ]
     },
     {
         "id": 32,
@@ -6001,7 +7800,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 15,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 30,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 40,
+                "name": "sand_tornado",
+                "type": "ground",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "rock_lance",
+                "type": "ground",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Generates a sharp rock spear under an enemy.\n"
+            }
+        ]
     },
     {
         "id": 33,
@@ -6196,7 +8053,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "700",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 7,
+                "name": "seed_machine_gun",
+                "type": "grass",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires a volley of hard seeds at enemies in front of it.\n"
+            },
+            {
+                "level": 15,
+                "name": "stone_cannon",
+                "type": "ground",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Digs up a boulder and hurls it at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "crushing_punch",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 85,
+                "description": "Mossanda's exclusive skill. Winds up its fist before striking an enemy with a devastating punch.\n"
+            },
+            {
+                "level": 30,
+                "name": "seed_mine",
+                "type": "grass",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
+            },
+            {
+                "level": 40,
+                "name": "spine_vine",
+                "type": "grass",
+                "cooldown": 25,
+                "power": 95,
+                "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 34,
@@ -6378,7 +8293,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "400",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 22,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "bubble_blast",
+                "type": "water",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 35,
@@ -6565,7 +8538,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 15,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 30,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "spine_vine",
+                "type": "grass",
+                "cooldown": 25,
+                "power": 95,
+                "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 36,
@@ -6747,7 +8778,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "800",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "fluffy_tackle",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Melpaca's exclusive skill. Charges forward while clad in an aura of sublime adorableness.\n"
+            },
+            {
+                "level": 15,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 30,
+                "name": "shockwave",
+                "type": "electric",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Quickly discharges electricity, shocking those around it.\n"
+            },
+            {
+                "level": 40,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 37,
@@ -6930,7 +9019,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "900",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 7,
+                "name": "antler_uppercut",
+                "type": "normal",
+                "cooldown": 5,
+                "power": 50,
+                "description": "Eikthyrdeer's exclusive skill. Charges at foes and uses antlers to launch them into the air. If used while riding, the direction of the charge can be controlled.\n"
+            },
+            {
+                "level": 15,
+                "name": "stone_blast",
+                "type": "ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "stone_cannon",
+                "type": "ground",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Digs up a boulder and hurls it at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 40,
+                "name": "rock_lance",
+                "type": "ground",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Generates a sharp rock spear under an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 38,
@@ -7111,7 +9258,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "750",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "tornado_attack",
+                "type": "normal",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Nitewing's exclusive skill. Generates a tornado before soaring towards its target.\n"
+            },
+            {
+                "level": 15,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 30,
+                "name": "sand_tornado",
+                "type": "ground",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 39,
@@ -7285,7 +9490,65 @@ const PalsProfilesStatsAndBreedings = [
             "Frostallion": "Blazehowl",
             "Frostallion Noct": "Blazehowl",
             "Jetragon": "Katress"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 15,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 22,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            },
+            {
+                "level": 30,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 40,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 40,
@@ -7480,7 +9743,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "960",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 15,
+                "name": "flare_arrow",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "hellfire_claw",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 70,
+                "description": "Incineram's exclusive skill. Draws near enemies using its left claw to slash them into the air before cutting them down with its right claw.\n"
+            },
+            {
+                "level": 30,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 40,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "ignis_rage",
+                "type": "fire",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
+            }
+        ]
     },
     {
         "id": 41,
@@ -7667,7 +9988,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "700",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "poison_fog",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 0,
+                "description": "Generates a fog of poison in front, causing the opponent to become poisoned.\n"
+            },
+            {
+                "level": 22,
+                "name": "sand_tornado",
+                "type": "ground",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "seed_mine",
+                "type": "grass",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
+            },
+            {
+                "level": 40,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 42,
@@ -7853,7 +10232,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "800",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "blazing_horn",
+                "type": "fire",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Arsox's exclusive skill. Takes aim and rushes at an enemy with a mad dash.\n"
+            },
+            {
+                "level": 15,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "flare_arrow",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "ignis_breath",
+                "type": "fire",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Shoots flames at an enemy, dealing continuous damage.\n"
+            },
+            {
+                "level": 40,
+                "name": "ignis_rage",
+                "type": "fire",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
+            },
+            {
+                "level": 50,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            }
+        ]
     },
     {
         "id": 43,
@@ -8043,7 +10480,8 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "600",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": []
     },
     {
         "id": 44,
@@ -8226,7 +10664,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1200",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "dark_ball",
+                "type": "dark",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "phantom_peck",
+                "type": "dark",
+                "cooldown": 7,
+                "power": 55,
+                "description": "Cawnito's exclusive skill. Teleports next to an enemy before attacking with its beak.\n"
+            },
+            {
+                "level": 22,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 30,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 45,
@@ -8416,7 +10912,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "800",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "poison_blast",
+                "type": "dark",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls poison sludge at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "dark_ball",
+                "type": "dark",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "ignis_breath",
+                "type": "fire",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Shoots flames at an enemy, dealing continuous damage.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 46,
@@ -8597,7 +11151,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "800",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "dark_ball",
+                "type": "dark",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "jumping_claw",
+                "type": "dark",
+                "cooldown": 7,
+                "power": 55,
+                "description": "Loupmoon's exclusive skill. Leaps forward and attacks twice with vicious claws imbued with dark energy.\n"
+            },
+            {
+                "level": 15,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 30,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 47,
@@ -8779,7 +11391,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "700",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "gale_claw",
+                "type": "normal",
+                "cooldown": 8,
+                "power": 60,
+                "description": "Galeclaw's exclusive skill. Soars through the air with its talons outstretched forward.\n"
+            },
+            {
+                "level": 7,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 15,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "sand_tornado",
+                "type": "ground",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 48,
@@ -8981,7 +11651,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "750",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 15,
+                "name": "focus_shot",
+                "type": "grass",
+                "cooldown": 9,
+                "power": 65,
+                "description": "Robinquill's exclusive skill. Takes aim while drawing its bow before loosing a powerful shot at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "seed_mine",
+                "type": "grass",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
+            },
+            {
+                "level": 30,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "spine_vine",
+                "type": "grass",
+                "cooldown": 25,
+                "power": 95,
+                "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 49,
@@ -9171,7 +11899,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "720",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 15,
+                "name": "ground_pound",
+                "type": "normal",
+                "cooldown": 14,
+                "power": 85,
+                "description": "Gorilla's exclusive skill. Pounds the ground twice before leaping into the air and unleashing a powerful punch.\n"
+            },
+            {
+                "level": 22,
+                "name": "stone_blast",
+                "type": "ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 30,
+                "name": "seed_machine_gun",
+                "type": "grass",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires a volley of hard seeds at enemies in front of it.\n"
+            },
+            {
+                "level": 40,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 50,
@@ -9376,7 +12162,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "10"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "bee_quiet",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 200,
+                "description": "Risks its life to cause a violent explosion, but receives the honor of falling in battle.\n"
+            },
+            {
+                "level": 22,
+                "name": "poison_blast",
+                "type": "dark",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls poison sludge at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "acid_rain",
+                "type": "water",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Creates acidic clouds that pour down acid rain on enemies.\n"
+            },
+            {
+                "level": 40,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 51,
@@ -9574,7 +12418,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "10"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "poison_blast",
+                "type": "dark",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls poison sludge at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "spinning_lance",
+                "type": "grass",
+                "cooldown": 9,
+                "power": 70,
+                "description": "Elizabee's exclusive skill. Channels power into its staff, and unleashes it in a whirl.\n"
+            },
+            {
+                "level": 30,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "spine_vine",
+                "type": "grass",
+                "cooldown": 25,
+                "power": 95,
+                "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 52,
@@ -9755,7 +12657,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "800",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 15,
+                "name": "cat_press",
+                "type": "normal",
+                "cooldown": 9,
+                "power": 60,
+                "description": "Grintale's exclusive skill. Grins menacingly before leaping into the air and smashing foes with its body.\n"
+            },
+            {
+                "level": 22,
+                "name": "stone_blast",
+                "type": "ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 30,
+                "name": "stone_cannon",
+                "type": "ground",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Digs up a boulder and hurls it at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 53,
@@ -9940,7 +12900,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "400",
             "Capture Bonus": "1.1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 15,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 30,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 50,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            }
+        ]
     },
     {
         "id": 54,
@@ -10125,7 +13143,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "500",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 7,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 15,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 40,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            },
+            {
+                "level": 50,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            }
+        ]
     },
     {
         "id": 55,
@@ -10311,7 +13387,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "800",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 7,
+                "name": "dragon_cannon",
+                "type": "dragon",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "dragon_burst",
+                "type": "dragon",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges draconic energy, damaging those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 30,
+                "name": "draconic_breath",
+                "type": "dragon",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
+            },
+            {
+                "level": 40,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 50,
+                "name": "dragon_meteor",
+                "type": "dragon",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
+            }
+        ]
     },
     {
         "id": 56,
@@ -10498,7 +13632,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1100",
             "Capture Bonus": "0.9",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "spark_blast",
+                "type": "electric",
+                "cooldown": 2,
+                "power": 30,
+                "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.\n"
+            },
+            {
+                "level": 7,
+                "name": "shockwave",
+                "type": "electric",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Quickly discharges electricity, shocking those around it.\n"
+            },
+            {
+                "level": 15,
+                "name": "lock-on_laser",
+                "type": "electric",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Takes aim at an enemy before firing a super high speed laser.\n"
+            },
+            {
+                "level": 22,
+                "name": "lightning_streak",
+                "type": "electric",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Generates a lightning bolt that moves forward in a line.\n"
+            },
+            {
+                "level": 30,
+                "name": "tri-lightning",
+                "type": "electric",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Generates lightning that strikes an enemy three times from above.\n"
+            },
+            {
+                "level": 40,
+                "name": "lightning_strike",
+                "type": "electric",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.\n"
+            },
+            {
+                "level": 50,
+                "name": "lightning_bolt",
+                "type": "electric",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
+            }
+        ]
     },
     {
         "id": 57,
@@ -10680,7 +13872,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "750",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 15,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 50,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            }
+        ]
     },
     {
         "id": 58,
@@ -10866,7 +14116,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1300",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "flare_arrow",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "ignis_slam",
+                "type": "fire",
+                "cooldown": 14,
+                "power": 85,
+                "description": "Pyrin's exclusive skill. Charges forward while clad in a veil of flames. Flames continue to burn in its wake.\n"
+            },
+            {
+                "level": 40,
+                "name": "ignis_rage",
+                "type": "fire",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
+            },
+            {
+                "level": 50,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            }
+        ]
     },
     {
         "id": 59,
@@ -11054,7 +14362,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "700",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 15,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "freezing_charge",
+                "type": "ice",
+                "cooldown": 9,
+                "power": 65,
+                "description": "Reindrix's exclusive skill. Charges at an enemy with antlers adorned in ice.\n"
+            },
+            {
+                "level": 30,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 50,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            }
+        ]
     },
     {
         "id": 60,
@@ -11235,7 +14601,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1150",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "shockwave",
+                "type": "electric",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Quickly discharges electricity, shocking those around it.\n"
+            },
+            {
+                "level": 15,
+                "name": "spark_blast",
+                "type": "electric",
+                "cooldown": 2,
+                "power": 30,
+                "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.\n"
+            },
+            {
+                "level": 22,
+                "name": "stone_blast",
+                "type": "ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 30,
+                "name": "electric_ball",
+                "type": "electric",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires an electric ball that slowly pursues an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "lightning_streak",
+                "type": "electric",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Generates a lightning bolt that moves forward in a line.\n"
+            },
+            {
+                "level": 50,
+                "name": "lightning_bolt",
+                "type": "electric",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
+            }
+        ]
     },
     {
         "id": 61,
@@ -11417,7 +14841,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "900",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 15,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "daring_flames",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 75,
+                "description": "Kitsun's exclusive skill. Charges forward with great speed while clad in intense blue flames.\n"
+            },
+            {
+                "level": 30,
+                "name": "flare_storm",
+                "type": "fire",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "ignis_rage",
+                "type": "fire",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
+            },
+            {
+                "level": 50,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            }
+        ]
     },
     {
         "id": 62,
@@ -11606,7 +15088,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "20"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "shockwave",
+                "type": "electric",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Quickly discharges electricity, shocking those around it.\n"
+            },
+            {
+                "level": 15,
+                "name": "acid_rain",
+                "type": "water",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Creates acidic clouds that pour down acid rain on enemies.\n"
+            },
+            {
+                "level": 22,
+                "name": "lightning_streak",
+                "type": "electric",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Generates a lightning bolt that moves forward in a line.\n"
+            },
+            {
+                "level": 30,
+                "name": "tri-lightning",
+                "type": "electric",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Generates lightning that strikes an enemy three times from above.\n"
+            },
+            {
+                "level": 40,
+                "name": "lightning_strike",
+                "type": "electric",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.\n"
+            },
+            {
+                "level": 50,
+                "name": "lightning_bolt",
+                "type": "electric",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
+            }
+        ]
     },
     {
         "id": 63,
@@ -11795,7 +15335,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "650",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 15,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "plasma_tornado",
+                "type": "electric",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Creates two balls of electric energy that fire numerous bolts of lightning at enemies.\n"
+            },
+            {
+                "level": 30,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 40,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 64,
@@ -11981,7 +15579,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "700",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "botanical_smash",
+                "type": "grass",
+                "cooldown": 8,
+                "power": 60,
+                "description": "Dinossom's exclusive skill. Uses large tail to smash the ground in front of it, damaging enemies over a wide area.\n"
+            },
+            {
+                "level": 15,
+                "name": "dragon_burst",
+                "type": "dragon",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges draconic energy, damaging those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "seed_mine",
+                "type": "grass",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
+            },
+            {
+                "level": 30,
+                "name": "draconic_breath",
+                "type": "dragon",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
+            },
+            {
+                "level": 40,
+                "name": "spine_vine",
+                "type": "grass",
+                "cooldown": 25,
+                "power": 95,
+                "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 65,
@@ -12162,7 +15818,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "650",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "hydro_jet",
+                "type": "water",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a high speed ball of water at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "dragon_cannon",
+                "type": "dragon",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "aqua_gun",
+                "type": "water",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls a ball of water straight at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "bubble_blast",
+                "type": "water",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "dragon_burst",
+                "type": "dragon",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges draconic energy, damaging those around it.\n"
+            },
+            {
+                "level": 40,
+                "name": "draconic_breath",
+                "type": "dragon",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
+            },
+            {
+                "level": 50,
+                "name": "hydro_laser",
+                "type": "water",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
+            }
+        ]
     },
     {
         "id": 66,
@@ -12348,7 +16062,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "800",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "dark_ball",
+                "type": "dark",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "flare_arrow",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 30,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 67,
@@ -12530,7 +16302,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "420",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "aqua_gun",
+                "type": "water",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls a ball of water straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "stone_blast",
+                "type": "ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 15,
+                "name": "shell_spin",
+                "type": "ground",
+                "cooldown": 9,
+                "power": 65,
+                "description": "Digtoise's exclusive skill. Moves while spinning its whole body at high speeds. Drills through enemies, dealing continuous damage.\n"
+            },
+            {
+                "level": 22,
+                "name": "stone_cannon",
+                "type": "ground",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Digs up a boulder and hurls it at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "sand_tornado",
+                "type": "ground",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "aqua_burst",
+                "type": "water",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of water and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "rock_lance",
+                "type": "ground",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Generates a sharp rock spear under an enemy.\n"
+            }
+        ]
     },
     {
         "id": 68,
@@ -12720,7 +16550,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "poison_blast",
+                "type": "dark",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls poison sludge at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "dark_ball",
+                "type": "dark",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 30,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 69,
@@ -12916,7 +16804,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "850",
             "Capture Bonus": "1",
             "Male %": "30"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 7,
+                "name": "poison_blast",
+                "type": "dark",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls poison sludge at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "acid_rain",
+                "type": "water",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Creates acidic clouds that pour down acid rain on enemies.\n"
+            },
+            {
+                "level": 30,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 40,
+                "name": "implode",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 180,
+                "description": "Risks its life to cause a violent explosion. Becomes incapacitated afterwards.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 70,
@@ -13110,7 +17056,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "375",
             "Capture Bonus": "1.1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 15,
+                "name": "flare_arrow",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "flare_storm",
+                "type": "fire",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "ignis_rage",
+                "type": "fire",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
+            },
+            {
+                "level": 50,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            }
+        ]
     },
     {
         "id": 71,
@@ -13298,7 +17302,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "850",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "ignis_breath",
+                "type": "fire",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Shoots flames at an enemy, dealing continuous damage.\n"
+            },
+            {
+                "level": 30,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 72,
@@ -13496,7 +17558,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "900",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "iaigiri",
+                "type": "fire",
+                "cooldown": 9,
+                "power": 65,
+                "description": "Bushi's exclusive skill. After Holding the sword, he appears in front of the enemy in an instant and unleashes a Ultra-fast sword draw attack.\n"
+            },
+            {
+                "level": 30,
+                "name": "ignis_breath",
+                "type": "fire",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Shoots flames at an enemy, dealing continuous damage.\n"
+            },
+            {
+                "level": 40,
+                "name": "lightning_strike",
+                "type": "electric",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.\n"
+            },
+            {
+                "level": 50,
+                "name": "ignis_rage",
+                "type": "fire",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
+            }
+        ]
     },
     {
         "id": 73,
@@ -13685,7 +17805,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1200",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "spark_blast",
+                "type": "electric",
+                "cooldown": 2,
+                "power": 30,
+                "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.\n"
+            },
+            {
+                "level": 15,
+                "name": "shockwave",
+                "type": "electric",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Quickly discharges electricity, shocking those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "lightning_streak",
+                "type": "electric",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Generates a lightning bolt that moves forward in a line.\n"
+            },
+            {
+                "level": 30,
+                "name": "tri-lightning",
+                "type": "electric",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Generates lightning that strikes an enemy three times from above.\n"
+            },
+            {
+                "level": 40,
+                "name": "sand_tornado",
+                "type": "ground",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "lightning_bolt",
+                "type": "electric",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
+            }
+        ]
     },
     {
         "id": 74,
@@ -13870,7 +18048,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1300",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 15,
+                "name": "flare_arrow",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "sand_tornado",
+                "type": "ground",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "flare_storm",
+                "type": "fire",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "ignis_breath",
+                "type": "fire",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Shoots flames at an enemy, dealing continuous damage.\n"
+            },
+            {
+                "level": 50,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            }
+        ]
     },
     {
         "id": 75,
@@ -14061,7 +18297,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "620",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "dark_ball",
+                "type": "dark",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "flare_arrow",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 30,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 76,
@@ -14251,7 +18545,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "620",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 15,
+                "name": "flare_arrow",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "flare_storm",
+                "type": "fire",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "dragon_meteor",
+                "type": "dragon",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
+            }
+        ]
     },
     {
         "id": 77,
@@ -14449,7 +18801,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "700",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "stone_cannon",
+                "type": "ground",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Digs up a boulder and hurls it at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "seed_machine_gun",
+                "type": "grass",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires a volley of hard seeds at enemies in front of it.\n"
+            },
+            {
+                "level": 22,
+                "name": "stone_blast",
+                "type": "ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 30,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "spine_vine",
+                "type": "grass",
+                "cooldown": 25,
+                "power": 95,
+                "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 78,
@@ -14647,7 +19057,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "poison_fog",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 0,
+                "description": "Generates a fog of poison in front, causing the opponent to become poisoned.\n"
+            },
+            {
+                "level": 7,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "poison_blast",
+                "type": "dark",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls poison sludge at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "seed_mine",
+                "type": "grass",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
+            },
+            {
+                "level": 30,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 79,
@@ -14837,7 +19305,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 7,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 15,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 30,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "aqua_burst",
+                "type": "water",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of water and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            }
+        ]
     },
     {
         "id": 80,
@@ -15018,7 +19544,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "800",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "dragon_cannon",
+                "type": "dragon",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "dragon_burst",
+                "type": "dragon",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges draconic energy, damaging those around it.\n"
+            },
+            {
+                "level": 15,
+                "name": "flare_arrow",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "mystic_whirlwind",
+                "type": "dragon",
+                "cooldown": 10,
+                "power": 70,
+                "description": "Elphidran's exclusive skill. Generates twin whirlwinds imbued with a mysterious power that pursues enemies.\n"
+            },
+            {
+                "level": 30,
+                "name": "draconic_breath",
+                "type": "dragon",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
+            },
+            {
+                "level": 40,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            },
+            {
+                "level": 50,
+                "name": "dragon_meteor",
+                "type": "dragon",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
+            }
+        ]
     },
     {
         "id": 81,
@@ -15200,7 +19784,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "900",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "hydro_jet",
+                "type": "water",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a high speed ball of water at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "dragon_cannon",
+                "type": "dragon",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "aqua_gun",
+                "type": "water",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls a ball of water straight at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "bubble_blast",
+                "type": "water",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 40,
+                "name": "aqua_burst",
+                "type": "water",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of water and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "hydro_laser",
+                "type": "water",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
+            }
+        ]
     },
     {
         "id": 82,
@@ -15382,7 +20024,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "800",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "aqua_gun",
+                "type": "water",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls a ball of water straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "dragon_cannon",
+                "type": "dragon",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "bubble_blast",
+                "type": "water",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "dragon_burst",
+                "type": "dragon",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges draconic energy, damaging those around it.\n"
+            },
+            {
+                "level": 30,
+                "name": "draconic_breath",
+                "type": "dragon",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
+            },
+            {
+                "level": 40,
+                "name": "hydro_laser",
+                "type": "water",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
+            },
+            {
+                "level": 50,
+                "name": "dragon_meteor",
+                "type": "dragon",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
+            }
+        ]
     },
     {
         "id": 83,
@@ -15571,7 +20271,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "900",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 7,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 15,
+                "name": "stone_cannon",
+                "type": "ground",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Digs up a boulder and hurls it at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 30,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 50,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            }
+        ]
     },
     {
         "id": 84,
@@ -15756,7 +20514,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "900",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 15,
+                "name": "flare_arrow",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "ignis_breath",
+                "type": "fire",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Shoots flames at an enemy, dealing continuous damage.\n"
+            },
+            {
+                "level": 30,
+                "name": "ignis_rage",
+                "type": "fire",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
+            },
+            {
+                "level": 40,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 85,
@@ -15943,7 +20759,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "800",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "dragon_cannon",
+                "type": "dragon",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "aqua_gun",
+                "type": "water",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls a ball of water straight at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "dragon_burst",
+                "type": "dragon",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges draconic energy, damaging those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "bubble_blast",
+                "type": "water",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "draconic_breath",
+                "type": "dragon",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
+            },
+            {
+                "level": 40,
+                "name": "aqua_burst",
+                "type": "water",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of water and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "dragon_meteor",
+                "type": "dragon",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
+            }
+        ]
     },
     {
         "id": 86,
@@ -16125,7 +20999,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "500",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "muscle_slam",
+                "type": "normal",
+                "cooldown": 12,
+                "power": 80,
+                "description": "Broncherry's exclusive skill. Turns sideways before tackling enemies in front of it, sending them flying into the air.\n"
+            },
+            {
+                "level": 22,
+                "name": "seed_mine",
+                "type": "grass",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
+            },
+            {
+                "level": 30,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "spine_vine",
+                "type": "grass",
+                "cooldown": 25,
+                "power": 95,
+                "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 87,
@@ -16324,7 +21256,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "700",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "aqua_gun",
+                "type": "water",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls a ball of water straight at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "seed_machine_gun",
+                "type": "grass",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires a volley of hard seeds at enemies in front of it.\n"
+            },
+            {
+                "level": 22,
+                "name": "bubble_blast",
+                "type": "water",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "spine_vine",
+                "type": "grass",
+                "cooldown": 25,
+                "power": 95,
+                "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 88,
@@ -16510,7 +21500,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "stone_blast",
+                "type": "ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 15,
+                "name": "stone_cannon",
+                "type": "ground",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Digs up a boulder and hurls it at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "ignis_breath",
+                "type": "fire",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Shoots flames at an enemy, dealing continuous damage.\n"
+            },
+            {
+                "level": 30,
+                "name": "volcanic_burst",
+                "type": "fire",
+                "cooldown": 45,
+                "power": 100,
+                "description": "Reptyro's exclusive skill. Raises its front legs before slamming them into the ground, causing volcanic eruptions under its enemies. It simultaneously bombards them with volcanic bombs from above.\n"
+            },
+            {
+                "level": 40,
+                "name": "ignis_rage",
+                "type": "fire",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
+            },
+            {
+                "level": 50,
+                "name": "rock_lance",
+                "type": "ground",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Generates a sharp rock spear under an enemy.\n"
+            }
+        ]
     },
     {
         "id": 89,
@@ -16692,7 +21740,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "700",
             "Capture Bonus": "1",
             "Male %": "90"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 15,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 22,
+                "name": "kingly_slam",
+                "type": "normal",
+                "cooldown": 21,
+                "power": 100,
+                "description": "Kingpaca's exclusive skill. Leaps high into the air before smashing into an enemy with its massive body.\n"
+            },
+            {
+                "level": 30,
+                "name": "tri-lightning",
+                "type": "electric",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Generates lightning that strikes an enemy three times from above.\n"
+            },
+            {
+                "level": 40,
+                "name": "rock_lance",
+                "type": "ground",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Generates a sharp rock spear under an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 90,
@@ -16883,7 +21989,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "600",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "seed_machine_gun",
+                "type": "grass",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires a volley of hard seeds at enemies in front of it.\n"
+            },
+            {
+                "level": 15,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 22,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "earth_impact",
+                "type": "ground",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Mammorest's exclusive skill. Uses massive body to shake the earth, dealing damage over a wide area.\n"
+            },
+            {
+                "level": 40,
+                "name": "spine_vine",
+                "type": "grass",
+                "cooldown": 25,
+                "power": 95,
+                "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 91,
@@ -17077,7 +22241,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 7,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 40,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 92,
@@ -17271,7 +22493,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "600",
             "Capture Bonus": "1",
             "Male %": "85"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "seed_machine_gun",
+                "type": "grass",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires a volley of hard seeds at enemies in front of it.\n"
+            },
+            {
+                "level": 15,
+                "name": "stone_blast",
+                "type": "ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "stone_cannon",
+                "type": "ground",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Digs up a boulder and hurls it at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "giga_horn",
+                "type": "ground",
+                "cooldown": 11,
+                "power": 75,
+                "description": "Warsect's exclusive skill. Skewers enemies with its four sturdy horns.\n"
+            },
+            {
+                "level": 40,
+                "name": "rock_lance",
+                "type": "ground",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Generates a sharp rock spear under an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 93,
@@ -17453,7 +22733,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1050",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "aqua_gun",
+                "type": "water",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls a ball of water straight at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "cloud_tempest",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 90,
+                "description": "Fenglope's exclusive skill. Charges forward while manipulating the atmosphere to create a pressurized wind tunnel around itself.\n"
+            },
+            {
+                "level": 22,
+                "name": "acid_rain",
+                "type": "water",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Creates acidic clouds that pour down acid rain on enemies.\n"
+            },
+            {
+                "level": 30,
+                "name": "aqua_burst",
+                "type": "water",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of water and hurls it at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 94,
@@ -17635,7 +22973,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "700",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "poison_blast",
+                "type": "dark",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls poison sludge at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "dark_ball",
+                "type": "dark",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "ignis_rage",
+                "type": "fire",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 95,
@@ -17828,7 +23224,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "950",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "dragon_cannon",
+                "type": "dragon",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 15,
+                "name": "acid_rain",
+                "type": "water",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Creates acidic clouds that pour down acid rain on enemies.\n"
+            },
+            {
+                "level": 22,
+                "name": "draconic_breath",
+                "type": "dragon",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
+            },
+            {
+                "level": 30,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "aqua_burst",
+                "type": "water",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of water and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "dragon_meteor",
+                "type": "dragon",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
+            }
+        ]
     },
     {
         "id": 96,
@@ -18014,7 +23468,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "900",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 7,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "stone_blast",
+                "type": "ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "ignis_breath",
+                "type": "fire",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Shoots flames at an enemy, dealing continuous damage.\n"
+            },
+            {
+                "level": 30,
+                "name": "ignis_rage",
+                "type": "fire",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
+            },
+            {
+                "level": 40,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "rock_lance",
+                "type": "ground",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Generates a sharp rock spear under an enemy.\n"
+            }
+        ]
     },
     {
         "id": 97,
@@ -18196,7 +23708,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1100",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 7,
+                "name": "dark_ball",
+                "type": "dark",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "flare_storm",
+                "type": "fire",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 98,
@@ -18383,7 +23953,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "800",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "dragon_cannon",
+                "type": "dragon",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "dragon_burst",
+                "type": "dragon",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges draconic energy, damaging those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "draconic_breath",
+                "type": "dragon",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
+            },
+            {
+                "level": 40,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            },
+            {
+                "level": 50,
+                "name": "dragon_meteor",
+                "type": "dragon",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
+            }
+        ]
     },
     {
         "id": 99,
@@ -18570,7 +24198,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1200",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "poison_blast",
+                "type": "dark",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls poison sludge at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "stone_cannon",
+                "type": "ground",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Digs up a boulder and hurls it at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "rock_lance",
+                "type": "ground",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Generates a sharp rock spear under an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 100,
@@ -18761,7 +24447,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1000",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "stone_blast",
+                "type": "ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 7,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 15,
+                "name": "sand_tornado",
+                "type": "ground",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "spinning_roundhouse",
+                "type": "ground",
+                "cooldown": 21,
+                "power": 100,
+                "description": "Anubis's special skill. Performs a spin kick with its strong legs, cutting down enemies over a wide area.\n"
+            },
+            {
+                "level": 30,
+                "name": "forceful_charge",
+                "type": "ground",
+                "cooldown": 28,
+                "power": 120,
+                "description": "Anubis's special skill. Pursues its foe with a high speed dash while releasing energy and unleashes a powerful punch.\n"
+            },
+            {
+                "level": 40,
+                "name": "ground_smash",
+                "type": "ground",
+                "cooldown": 35,
+                "power": 140,
+                "description": "Anubis's special skill. Leaps high into the air before diving to the ground with a punch. The force of the impact deals damage over a wide area.\n"
+            },
+            {
+                "level": 50,
+                "name": "rock_lance",
+                "type": "ground",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Generates a sharp rock spear under an enemy.\n"
+            }
+        ]
     },
     {
         "id": 101,
@@ -18943,7 +24687,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "700",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "aqua_gun",
+                "type": "water",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls a ball of water straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "dragon_cannon",
+                "type": "dragon",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "draconic_breath",
+                "type": "dragon",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
+            },
+            {
+                "level": 22,
+                "name": "aqua_burst",
+                "type": "water",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of water and hurls it at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "tri-lightning",
+                "type": "electric",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Generates lightning that strikes an enemy three times from above.\n"
+            },
+            {
+                "level": 40,
+                "name": "hydro_laser",
+                "type": "water",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
+            },
+            {
+                "level": 50,
+                "name": "dragon_meteor",
+                "type": "dragon",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
+            }
+        ]
     },
     {
         "id": 102,
@@ -19124,7 +24926,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1100",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "flare_arrow",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "ignis_breath",
+                "type": "fire",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Shoots flames at an enemy, dealing continuous damage.\n"
+            },
+            {
+                "level": 40,
+                "name": "flare_storm",
+                "type": "fire",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            }
+        ]
     },
     {
         "id": 103,
@@ -19318,7 +25178,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "spark_blast",
+                "type": "electric",
+                "cooldown": 2,
+                "power": 30,
+                "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.\n"
+            },
+            {
+                "level": 7,
+                "name": "shockwave",
+                "type": "electric",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Quickly discharges electricity, shocking those around it.\n"
+            },
+            {
+                "level": 15,
+                "name": "lightning_claw",
+                "type": "electric",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Grizzbolt's special skill. After leaping at an enemy and tearing at it twice with its electrically charged claws, it attacks the ground, sending an electric shock throughout the area.\n"
+            },
+            {
+                "level": 22,
+                "name": "lightning_streak",
+                "type": "electric",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Generates a lightning bolt that moves forward in a line.\n"
+            },
+            {
+                "level": 30,
+                "name": "tri-lightning",
+                "type": "electric",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Generates lightning that strikes an enemy three times from above.\n"
+            },
+            {
+                "level": 40,
+                "name": "lightning_strike",
+                "type": "electric",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.\n"
+            },
+            {
+                "level": 50,
+                "name": "lightning_bolt",
+                "type": "electric",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
+            }
+        ]
     },
     {
         "id": 104,
@@ -19513,7 +25431,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "30"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "seed_machine_gun",
+                "type": "grass",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires a volley of hard seeds at enemies in front of it.\n"
+            },
+            {
+                "level": 15,
+                "name": "seed_mine",
+                "type": "grass",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
+            },
+            {
+                "level": 22,
+                "name": "aqua_burst",
+                "type": "water",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of water and hurls it at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "spine_vine",
+                "type": "grass",
+                "cooldown": 25,
+                "power": 95,
+                "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 105,
@@ -19698,7 +25674,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1400",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "flare_arrow",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "ignis_breath",
+                "type": "fire",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Shoots flames at an enemy, dealing continuous damage.\n"
+            },
+            {
+                "level": 30,
+                "name": "phoenix_flare",
+                "type": "fire",
+                "cooldown": 28,
+                "power": 135,
+                "description": "Faleris's special skill. Covers its body in a tornado of flames before charging forward.\n"
+            },
+            {
+                "level": 40,
+                "name": "ignis_rage",
+                "type": "fire",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
+            },
+            {
+                "level": 50,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            }
+        ]
     },
     {
         "id": 106,
@@ -19888,7 +25922,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1200",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "kerauno",
+                "type": "electric",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Orserk's exclusive skill. Summons a blade of lightning while leaping into the air before throwing it at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "lightning_strike",
+                "type": "electric",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.\n"
+            },
+            {
+                "level": 15,
+                "name": "spark_blast",
+                "type": "electric",
+                "cooldown": 2,
+                "power": 30,
+                "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.\n"
+            },
+            {
+                "level": 22,
+                "name": "draconic_breath",
+                "type": "dragon",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
+            },
+            {
+                "level": 30,
+                "name": "lightning_streak",
+                "type": "electric",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Generates a lightning bolt that moves forward in a line.\n"
+            },
+            {
+                "level": 40,
+                "name": "tri-lightning",
+                "type": "electric",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Generates lightning that strikes an enemy three times from above.\n"
+            },
+            {
+                "level": 50,
+                "name": "lightning_bolt",
+                "type": "electric",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
+            }
+        ]
     },
     {
         "id": 107,
@@ -20071,7 +26163,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1200",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "dark_ball",
+                "type": "dark",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "divine_disaster",
+                "type": "dark",
+                "cooldown": 45,
+                "power": 160,
+                "description": "Shadowbeak's exclusive skill. Charges forward while generating orbs of light that automatically capture enemies. The orbs automatically capture enemies, before releasing a barrage of lasers.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 108,
@@ -20257,7 +26407,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1400",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 7,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 15,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 30,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            },
+            {
+                "level": 40,
+                "name": "spear_thrust",
+                "type": "normal",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Paladius' exclusive skill. Clads itself in holy power before charging forward with its spear. The shield in its other hand protects from attacks during the charge.\n"
+            },
+            {
+                "level": 50,
+                "name": "pal_blast",
+                "type": "normal",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
+            }
+        ]
     },
     {
         "id": 109,
@@ -20443,7 +26651,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1600",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 7,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 15,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "rock_lance",
+                "type": "ground",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Generates a sharp rock spear under an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "twin_spears",
+                "type": "dark",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Necromus' exclusive skill. Clads its twin spears with vicious whirlwinds and charges forward, thrusting them one after the other.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "id": 110,
@@ -20625,7 +26891,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1500",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 15,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "crystal_wing",
+                "type": "ice",
+                "cooldown": 24,
+                "power": 110,
+                "description": "Frostallion's exclusive skill. Dashes forward while creating frigid air around its wings, using them to slash enemies.\n"
+            },
+            {
+                "level": 40,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 50,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            }
+        ]
     },
     {
         "id": 111,
@@ -20809,14 +27133,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "3300",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 7,
+                "name": "dragon_burst",
+                "type": "dragon",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges draconic energy, damaging those around it.\n"
+            },
+            {
+                "level": 15,
+                "name": "flare_storm",
+                "type": "fire",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "draconic_breath",
+                "type": "dragon",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
+            },
+            {
+                "level": 30,
+                "name": "beam_comet",
+                "type": "dark",
+                "cooldown": 50,
+                "power": 140,
+                "description": "Jetragon's exclusive skill. Flies at enemies on illuminated wings while firing innumerable beams. The beams explode on impact.\n"
+            },
+            {
+                "level": 40,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "dragon_meteor",
+                "type": "dragon",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
+            }
+        ]
     },
     {
         "key": "084B",
         "name": "Blazehowl Noct",
         "variant": "B",
         "isNightOnly": "true",
-        "image": require("..\/images\/084.png"),
+        "image": require("..\/images\/084B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/3\/33\/Blazehowl_menu.png\/",
         "suitability": [
             {
@@ -20993,14 +27375,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "900",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 7,
+                "name": "flare_arrow",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "ignis_breath",
+                "type": "fire",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Shoots flames at an enemy, dealing continuous damage.\n"
+            },
+            {
+                "level": 22,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "ignis_rage",
+                "type": "fire",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
+            },
+            {
+                "level": 40,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "key": "086B",
         "name": "Broncherry Aqua",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/086.png"),
+        "image": require("..\/images\/086B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/bd\/Broncherry_menu.png\/",
         "suitability": [
             {
@@ -21174,14 +27614,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "500",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "aqua_gun",
+                "type": "water",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls a ball of water straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "bubble_blast",
+                "type": "water",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "muscle_slam",
+                "type": "normal",
+                "cooldown": 12,
+                "power": 80,
+                "description": "Broncherry's exclusive skill. Turns sideways before tackling enemies in front of it, sending them flying into the air.\n"
+            },
+            {
+                "level": 22,
+                "name": "seed_mine",
+                "type": "grass",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
+            },
+            {
+                "level": 30,
+                "name": "spine_vine",
+                "type": "grass",
+                "cooldown": 25,
+                "power": 95,
+                "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
+            },
+            {
+                "level": 40,
+                "name": "aqua_burst",
+                "type": "water",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of water and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "hydro_laser",
+                "type": "water",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
+            }
+        ]
     },
     {
         "key": "064B",
         "name": "Dinossom Lux",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/064.png"),
+        "image": require("..\/images\/064B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/b7\/Dinossom_menu.png\/",
         "suitability": [
             {
@@ -21358,14 +27856,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "700",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "shockwave",
+                "type": "electric",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Quickly discharges electricity, shocking those around it.\n"
+            },
+            {
+                "level": 7,
+                "name": "plasma_tornado",
+                "type": "electric",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Creates two balls of electric energy that fire numerous bolts of lightning at enemies.\n"
+            },
+            {
+                "level": 15,
+                "name": "botanical_smash",
+                "type": "grass",
+                "cooldown": 8,
+                "power": 60,
+                "description": "Dinossom's exclusive skill. Uses large tail to smash the ground in front of it, damaging enemies over a wide area.\n"
+            },
+            {
+                "level": 22,
+                "name": "draconic_breath",
+                "type": "dragon",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
+            },
+            {
+                "level": 30,
+                "name": "tri-lightning",
+                "type": "electric",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Generates lightning that strikes an enemy three times from above.\n"
+            },
+            {
+                "level": 40,
+                "name": "lightning_strike",
+                "type": "electric",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.\n"
+            },
+            {
+                "level": 50,
+                "name": "lightning_bolt",
+                "type": "electric",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
+            }
+        ]
     },
     {
         "key": "037B",
         "name": "Eikthyrdeer Terra",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/037.png"),
+        "image": require("..\/images\/037B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/4\/40\/Eikthyrdeer_menu.png\/",
         "suitability": [
             {
@@ -21524,7 +28080,8 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Azurobe"
         },
         "types": [
-            "Ground"        ],
+            "Ground"
+        ],
         "stats": {
             "BreedPWR": "900",
             "HP": "95",
@@ -21538,14 +28095,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "900",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 7,
+                "name": "antler_uppercut",
+                "type": "normal",
+                "cooldown": 5,
+                "power": 50,
+                "description": "Eikthyrdeer's exclusive skill. Charges at foes and uses antlers to launch them into the air. If used while riding, the direction of the charge can be controlled.\n"
+            },
+            {
+                "level": 15,
+                "name": "stone_blast",
+                "type": "ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "stone_cannon",
+                "type": "ground",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Digs up a boulder and hurls it at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 40,
+                "name": "sand_tornado",
+                "type": "ground",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "rock_lance",
+                "type": "ground",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Generates a sharp rock spear under an enemy.\n"
+            }
+        ]
     },
     {
         "key": "080B",
         "name": "Elphidran Aqua",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/080.png"),
+        "image": require("..\/images\/080B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/a\/a6\/Elphidran_menu.png\/",
         "suitability": [
             {
@@ -21718,14 +28333,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "800",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "aqua_gun",
+                "type": "water",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls a ball of water straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "dragon_cannon",
+                "type": "dragon",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "dragon_burst",
+                "type": "dragon",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges draconic energy, damaging those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "mystic_whirlwind",
+                "type": "dragon",
+                "cooldown": 10,
+                "power": 70,
+                "description": "Elphidran's exclusive skill. Generates twin whirlwinds imbued with a mysterious power that pursues enemies.\n"
+            },
+            {
+                "level": 30,
+                "name": "acid_rain",
+                "type": "water",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Creates acidic clouds that pour down acid rain on enemies.\n"
+            },
+            {
+                "level": 40,
+                "name": "hydro_laser",
+                "type": "water",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
+            },
+            {
+                "level": 50,
+                "name": "dragon_meteor",
+                "type": "dragon",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
+            }
+        ]
     },
     {
         "key": "110B",
         "name": "Frostallion Noct",
         "variant": "B",
         "isNightOnly": "true",
-        "image": require("..\/images\/110.png"),
+        "image": require("..\/images\/110B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/00\/Frostallion_menu.png\/",
         "suitability": [
             {
@@ -21883,7 +28556,8 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Cryolinx"
         },
         "types": [
-            "Dark"        ],
+            "Dark"
+        ],
         "stats": {
             "BreedPWR": "100",
             "HP": "140",
@@ -21897,14 +28571,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1500",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "dark_ball",
+                "type": "dark",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "crystal_wing",
+                "type": "ice",
+                "cooldown": 24,
+                "power": 110,
+                "description": "Frostallion's exclusive skill. Dashes forward while creating frigid air around its wings, using them to slash enemies.\n"
+            },
+            {
+                "level": 40,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "key": "031B",
         "name": "Gobfin Ignis",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/031.png"),
+        "image": require("..\/images\/031B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/f\/ff\/Gobfin_menu.png\/",
         "suitability": [
             {
@@ -22069,7 +28801,8 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Incineram"
         },
         "types": [
-            "Fire"        ],
+            "Fire"
+        ],
         "stats": {
             "BreedPWR": "1100",
             "HP": "90",
@@ -22083,195 +28816,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "500",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
-    },
-    {
-        "key": "013B",
-        "name": "Gumoss (Special)",
-        "variant": "B",
-        "isNightOnly": "",
-        "image": require("..\/images\/013.png"),
-        "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/2\/2e\/Gumoss_menu.png\/",
-        "suitability": [
+        },
+        "skills": [
             {
-                "type": "Planting",
-                "level": 1
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 15,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "flare_arrow",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "lightning_streak",
+                "type": "electric",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Generates a lightning bolt that moves forward in a line.\n"
+            },
+            {
+                "level": 40,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "ignis_rage",
+                "type": "fire",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             }
-        ],
-        "drops": [
-            "Berry Seeds",
-            "Gumoss Leaf"
-        ],
-        "specialCapacity": {
-            "name": "Logging Assistance",
-            "description": "While in team, improves efficiency of cutting trees."
-        },
-        "description": "A strange Pal with a body resembling tree sap. It gradually loses strength if it has nothing to cover its body with, eventually rotting away.",
-        "breedings": {
-            "Lamball": "Pengullet",
-            "Cattiva": "Pengullet",
-            "Chikipi": "Jolthog",
-            "Lifmunk": "Tocotoco",
-            "Foxparks": "Bristla",
-            "Fuack": "Killamari",
-            "Sparkit": "Bristla",
-            "Tanzee": "Tanzee",
-            "Rooby": "Woolipop",
-            "Pengullet": "Killamari",
-            "Penking": "Reindrix",
-            "Jolthog": "Swee",
-            "Jolthog Cryst": "Swee",
-            "Gumoss": "Gumoss",
-            "Gumoss (Special)": "Gumoss",
-            "Vixy": "Tocotoco",
-            "Hoocrates": "Bristla",
-            "Teafant": "Jolthog",
-            "Depresso": "Ribunny",
-            "Cremis": "Pengullet",
-            "Daedream": "Daedream",
-            "Rushoar": "Woolipop",
-            "Nox": "Dazzi",
-            "Fuddler": "Daedream",
-            "Killamari": "Kelpsea",
-            "Mau": "Jolthog",
-            "Mau Cryst": "Tocotoco",
-            "Celaray": "Direhowl",
-            "Direhowl": "Maraith",
-            "Tocotoco": "Killamari",
-            "Flopie": "Kelpsea",
-            "Mozzarina": "Cawgnito",
-            "Bristla": "Flopie",
-            "Gobfin": "Wixen",
-            "Gobfin Ignis": "Wixen",
-            "Hangyu": "Fuack",
-            "Hangyu Cryst": "Fuack",
-            "Mossanda": "Kitsun",
-            "Mossanda Lux": "Dinossom",
-            "Woolipop": "Dazzi",
-            "Caprity": "Gobfin",
-            "Melpaca": "Direhowl",
-            "Eikthyrdeer": "Cawgnito",
-            "Eikthyrdeer Terra": "Beegarde",
-            "Nitewing": "Kitsun",
-            "Ribunny": "Kelpsea Ignis",
-            "Incineram": "Eikthyrdeer",
-            "Incineram Noct": "Mozzarina",
-            "Cinnamoth": "Broncherry",
-            "Arsox": "Robinquill",
-            "Dumud": "Beegarde",
-            "Cawgnito": "Wixen",
-            "Leezpunk": "Nox",
-            "Leezpunk Ignis": "Woolipop",
-            "Loupmoon": "Gobfin",
-            "Galeclaw": "Rushoar",
-            "Robinquill": "Rushoar",
-            "Robinquill Terra": "Leezpunk",
-            "Gorirat": "Rushoar",
-            "Beegarde": "Rooby",
-            "Elizabee": "Arsox",
-            "Grintale": "Reindrix",
-            "Swee": "Kelpsea Ignis",
-            "Sweepa": "Kitsun",
-            "Chillet": "Robinquill",
-            "Univolt": "Loupmoon",
-            "Foxcicle": "Felbat",
-            "Pyrin": "Chillet",
-            "Pyrin Noct": "Rayhound",
-            "Reindrix": "Direhowl",
-            "Rayhound": "Verdash",
-            "Kitsun": "Galeclaw",
-            "Dazzi": "Fuddler",
-            "Lunaris": "Nox",
-            "Dinossom": "Galeclaw",
-            "Dinossom Lux": "Galeclaw",
-            "Surfent": "Dumud",
-            "Surfent Terra": "Dumud",
-            "Maraith": "Woolipop",
-            "Digtoise": "Gorirat",
-            "Tombat": "Verdash",
-            "Lovander": "Gobfin",
-            "Flambelle": "Bristla",
-            "Vanwyrm": "Loupmoon",
-            "Vanwyrm Cryst": "Caprity",
-            "Bushi": "Lovander",
-            "Beakon": "Rayhound",
-            "Ragnahawk": "Dinossom",
-            "Katress": "Fenglope",
-            "Wixen": "Dazzi",
-            "Verdash": "Lunaris",
-            "Vaelet": "Maraith",
-            "Sibelyx": "Digtoise",
-            "Elphidran": "Melpaca",
-            "Elphidran Aqua": "Melpaca",
-            "Kelpsea": "Tanzee",
-            "Kelpsea Ignis": "Kelpsea",
-            "Azurobe": "Celaray",
-            "Cryolinx": "Univolt",
-            "Blazehowl": "Fenglope",
-            "Blazehowl Noct": "Loupmoon",
-            "Relaxaurus": "Foxcicle",
-            "Relaxaurus Lux": "Tombat",
-            "Broncherry": "Vaelet",
-            "Broncherry Aqua": "Gorirat",
-            "Petallia": "Felbat",
-            "Reptyro": "Petallia",
-            "Ice Reptyro": "Rayhound",
-            "Kingpaca": "Digtoise",
-            "Ice Kingpaca": "Digtoise",
-            "Mammorest": "Foxcicle",
-            "Mammorest Cryst": "Foxcicle",
-            "Wumpo": "Digtoise",
-            "Wumpo Botan": "Broncherry",
-            "Warsect": "Arsox",
-            "Fenglope": "Lunaris",
-            "Felbat": "Rushoar",
-            "Quivern": "Arsox",
-            "Blazamut": "Bushi",
-            "Helzephyr": "Blazehowl",
-            "Astegon": "Katress",
-            "Menasting": "Tombat",
-            "Anubis": "Mozzarina",
-            "Jormuntide": "Petallia",
-            "Jormuntide Ignis": "Petallia",
-            "Suzaku": "Bushi",
-            "Suzaku Aqua": "Bushi",
-            "Grizzbolt": "Blazehowl",
-            "Lyleen": "Tombat",
-            "Lyleen Noct": "Rayhound",
-            "Faleris": "Chillet",
-            "Orserk": "Univolt",
-            "Shadowbeak": "Vanwyrm",
-            "Paladius": "Vanwyrm",
-            "Necromus": "Vanwyrm",
-            "Frostallion": "Univolt",
-            "Frostallion Noct": "Univolt",
-            "Jetragon": "Vanwyrm"
-        },
-        "types": [
-            "Grass",
-            "Ground"
-        ],
-        "stats": {
-            "BreedPWR": "1240",
-            "HP": "70",
-            "Melee": "100",
-            "Ranged": "70",
-            "Defence": "70",
-            "Price": "1310",
-            "Stamina": "100",
-            "Walking": "50",
-            "Running": "300",
-            "Mounted": "400",
-            "Capture Bonus": "1.3",
-            "Male %": "50"
-        }
+        ]
     },
     {
         "key": "032B",
         "name": "Hangyu Cryst",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/032.png"),
+        "image": require("..\/images\/032B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/08\/Hangyu_menu.png\/",
         "suitability": [
             {
@@ -22436,7 +29046,8 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Tombat"
         },
         "types": [
-            "Ice"        ],
+            "Ice"
+        ],
         "stats": {
             "BreedPWR": "1422",
             "HP": "80",
@@ -22450,14 +29061,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 15,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 22,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 30,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 50,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            }
+        ]
     },
     {
         "key": "089B",
         "name": "Ice Kingpaca",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/089.png"),
+        "image": require("..\/images\/089B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/9\/9d\/Kingpaca_menu.png\/",
         "suitability": [
             {
@@ -22615,7 +29284,8 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Relaxaurus"
         },
         "types": [
-            "Ice"        ],
+            "Ice"
+        ],
         "stats": {
             "BreedPWR": "440",
             "HP": "120",
@@ -22629,14 +29299,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "700",
             "Capture Bonus": "1",
             "Male %": "90"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 7,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 15,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "kingly_slam",
+                "type": "normal",
+                "cooldown": 21,
+                "power": 100,
+                "description": "Kingpaca's exclusive skill. Leaps high into the air before smashing into an enemy with its massive body.\n"
+            },
+            {
+                "level": 30,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 40,
+                "name": "aqua_burst",
+                "type": "water",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of water and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            }
+        ]
     },
     {
         "key": "088B",
         "name": "Ice Reptyro",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/088.png"),
+        "image": require("..\/images\/088B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/d\/d0\/Reptyro_menu.png\/",
         "suitability": [
             {
@@ -22813,14 +29541,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 7,
+                "name": "stone_blast",
+                "type": "ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 15,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 30,
+                "name": "frost_burst",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 100,
+                "description": "Ice Reptyro's exclusive skill. Raises its front legs and slams them into the ground causing frozen blasts under its enemies. It simultaneously pounds them with snow balls from above.\n"
+            },
+            {
+                "level": 40,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "rock_lance",
+                "type": "ground",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Generates a sharp rock spear under an enemy.\n"
+            }
+        ]
     },
     {
         "key": "040B",
         "name": "Incineram Noct",
         "variant": "B",
         "isNightOnly": "true",
-        "image": require("..\/images\/040.png"),
+        "image": require("..\/images\/040B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/4\/40\/Incineram_menu.png\/",
         "suitability": [
             {
@@ -22990,7 +29776,8 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Warsect"
         },
         "types": [
-            "Dark"        ],
+            "Dark"
+        ],
         "stats": {
             "BreedPWR": "580",
             "HP": "95",
@@ -23004,14 +29791,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "960",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 15,
+                "name": "flare_arrow",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "hellfire_claw",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 70,
+                "description": "Incineram's exclusive skill. Draws near enemies using its left claw to slash them into the air before cutting them down with its right claw.\n"
+            },
+            {
+                "level": 30,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 40,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "ignis_rage",
+                "type": "fire",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
+            }
+        ]
     },
     {
         "key": "012B",
         "name": "Jolthog Cryst",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/012.png"),
+        "image": require("..\/images\/012B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/5\/52\/Jolthog_menu.png\/",
         "suitability": [
             {
@@ -23168,7 +30013,8 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Rayhound"
         },
         "types": [
-            "Ice"        ],
+            "Ice"
+        ],
         "stats": {
             "BreedPWR": "1360",
             "HP": "70",
@@ -23182,14 +30028,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 7,
+                "name": "power_shot",
+                "type": "normal",
+                "cooldown": 4,
+                "power": 35,
+                "description": "Charges energy into a focused blast.\n"
+            },
+            {
+                "level": 15,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 30,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 40,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 50,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            }
+        ]
     },
     {
         "key": "101B",
         "name": "Jormuntide Ignis",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/101.png"),
+        "image": require("..\/images\/101B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/8\/8e\/Jormuntide_menu.png\/",
         "suitability": [
             {
@@ -23362,14 +30266,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "700",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "dragon_cannon",
+                "type": "dragon",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "flare_storm",
+                "type": "fire",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "ignis_breath",
+                "type": "fire",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Shoots flames at an enemy, dealing continuous damage.\n"
+            },
+            {
+                "level": 30,
+                "name": "tri-lightning",
+                "type": "electric",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Generates lightning that strikes an enemy three times from above.\n"
+            },
+            {
+                "level": 40,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "dragon_meteor",
+                "type": "dragon",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
+            }
+        ]
     },
     {
         "key": "081B",
         "name": "Kelpsea Ignis",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/081.png"),
+        "image": require("..\/images\/081B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/1\/1b\/Kelpsea_menu.png\/",
         "suitability": [
             {
@@ -23527,7 +30489,8 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Univolt"
         },
         "types": [
-            "Fire"        ],
+            "Fire"
+        ],
         "stats": {
             "BreedPWR": "1270",
             "HP": "70",
@@ -23541,14 +30504,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "900",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "dragon_cannon",
+                "type": "dragon",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "flare_arrow",
+                "type": "fire",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "dragon_burst",
+                "type": "dragon",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges draconic energy, damaging those around it.\n"
+            },
+            {
+                "level": 40,
+                "name": "ignis_breath",
+                "type": "fire",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Shoots flames at an enemy, dealing continuous damage.\n"
+            },
+            {
+                "level": 50,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            }
+        ]
     },
     {
         "key": "045B",
         "name": "Leezpunk Ignis",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/045.png"),
+        "image": require("..\/images\/045B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/09\/Leezpunk_menu.png\/",
         "suitability": [
             {
@@ -23714,7 +30735,8 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Incineram"
         },
         "types": [
-            "Fire"        ],
+            "Fire"
+        ],
         "stats": {
             "BreedPWR": "1140",
             "HP": "80",
@@ -23728,14 +30750,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "poison_blast",
+                "type": "dark",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls poison sludge at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "spirit_fire",
+                "type": "fire",
+                "cooldown": 7,
+                "power": 45,
+                "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "ignis_breath",
+                "type": "fire",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Shoots flames at an enemy, dealing continuous damage.\n"
+            },
+            {
+                "level": 30,
+                "name": "flare_storm",
+                "type": "fire",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "ignis_rage",
+                "type": "fire",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
+            },
+            {
+                "level": 50,
+                "name": "fire_ball",
+                "type": "fire",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
+            }
+        ]
     },
     {
         "key": "104B",
         "name": "Lyleen Noct",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/104.png"),
+        "image": require("..\/images\/104B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/5\/5e\/Lyleen_menu.png\/",
         "suitability": [
             {
@@ -23906,7 +30986,8 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Astegon"
         },
         "types": [
-            "Dark"        ],
+            "Dark"
+        ],
         "stats": {
             "BreedPWR": "210",
             "HP": "110",
@@ -23920,14 +31001,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "30"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "dark_ball",
+                "type": "dark",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 15,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 30,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "key": "090B",
         "name": "Mammorest Cryst",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/090.png"),
+        "image": require("..\/images\/090B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/5\/5e\/Mammorest_menu.png\/",
         "suitability": [
             {
@@ -24094,7 +31233,8 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Helzephyr"
         },
         "types": [
-            "Ice"        ],
+            "Ice"
+        ],
         "stats": {
             "BreedPWR": "290",
             "HP": "150",
@@ -24108,14 +31248,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "600",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "stone_cannon",
+                "type": "ground",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Digs up a boulder and hurls it at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 15,
+                "name": "power_bomb",
+                "type": "normal",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
+            },
+            {
+                "level": 22,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "earth_impact",
+                "type": "ground",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Mammorest's exclusive skill. Uses massive body to shake the earth, dealing damage over a wide area.\n"
+            },
+            {
+                "level": 40,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 50,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            }
+        ]
     },
     {
         "key": "024B",
         "name": "Mau Cryst",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/024.png"),
+        "image": require("..\/images\/024B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/1\/17\/Mau_menu.png\/",
         "suitability": [
             {
@@ -24272,7 +31470,8 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Arsox"
         },
         "types": [
-            "Ice"        ],
+            "Ice"
+        ],
         "stats": {
             "BreedPWR": "1440",
             "HP": "70",
@@ -24286,14 +31485,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 7,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 15,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 30,
+                "name": "iceberg",
+                "type": "ice",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Summons a sharp ice lance under an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 50,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            }
+        ]
     },
     {
         "key": "033B",
         "name": "Mossanda Lux",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/033.png"),
+        "image": require("..\/images\/033B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/d\/db\/Mossanda_menu.png\/",
         "suitability": [
             {
@@ -24464,7 +31721,8 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Menasting"
         },
         "types": [
-            "Electric"        ],
+            "Electric"
+        ],
         "stats": {
             "BreedPWR": "390",
             "HP": "100",
@@ -24478,14 +31736,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "700",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "spark_blast",
+                "type": "electric",
+                "cooldown": 2,
+                "power": 30,
+                "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.\n"
+            },
+            {
+                "level": 7,
+                "name": "shockwave",
+                "type": "electric",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Quickly discharges electricity, shocking those around it.\n"
+            },
+            {
+                "level": 15,
+                "name": "lightning_streak",
+                "type": "electric",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Generates a lightning bolt that moves forward in a line.\n"
+            },
+            {
+                "level": 22,
+                "name": "blast_punch",
+                "type": "electric",
+                "cooldown": 14,
+                "power": 85,
+                "description": "Mossanda Lux's exclusive skill. Winds up its fist before pummeling an enemy with a flurry of electrically charged punches.\n"
+            },
+            {
+                "level": 30,
+                "name": "tri-lightning",
+                "type": "electric",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Generates lightning that strikes an enemy three times from above.\n"
+            },
+            {
+                "level": 40,
+                "name": "lightning_strike",
+                "type": "electric",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.\n"
+            },
+            {
+                "level": 50,
+                "name": "lightning_bolt",
+                "type": "electric",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
+            }
+        ]
     },
     {
         "key": "058B",
         "name": "Pyrin Noct",
         "variant": "B",
         "isNightOnly": "true",
-        "image": require("..\/images\/058.png"),
+        "image": require("..\/images\/058B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/e\/e6\/Pyrin_menu.png\/",
         "suitability": [
             {
@@ -24663,14 +31979,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1300",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "ignis_blast",
+                "type": "fire",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a ball of fire straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "shadow_burst",
+                "type": "dark",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Quickly discharges dark energy, damaging those around it.\n"
+            },
+            {
+                "level": 15,
+                "name": "ignis_breath",
+                "type": "fire",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Shoots flames at an enemy, dealing continuous damage.\n"
+            },
+            {
+                "level": 22,
+                "name": "spirit_flame",
+                "type": "dark",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "dark_charge",
+                "type": "dark",
+                "cooldown": 14,
+                "power": 85,
+                "description": "Pyrin Noct's exclusive skill. Charges forward while clad in a veil of dark flames. Flames continue to burn in its trajectory.\n"
+            },
+            {
+                "level": 40,
+                "name": "ignis_rage",
+                "type": "fire",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "key": "085B",
         "name": "Relaxaurus Lux",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/085.png"),
+        "image": require("..\/images\/085B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/01\/Relaxaurus_menu.png\/",
         "suitability": [
             {
@@ -24848,7 +32222,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "800",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "spark_blast",
+                "type": "electric",
+                "cooldown": 2,
+                "power": 30,
+                "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.\n"
+            },
+            {
+                "level": 7,
+                "name": "dragon_cannon",
+                "type": "dragon",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "shockwave",
+                "type": "electric",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Quickly discharges electricity, shocking those around it.\n"
+            },
+            {
+                "level": 22,
+                "name": "lightning_streak",
+                "type": "electric",
+                "cooldown": 16,
+                "power": 75,
+                "description": "Generates a lightning bolt that moves forward in a line.\n"
+            },
+            {
+                "level": 30,
+                "name": "draconic_breath",
+                "type": "dragon",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
+            },
+            {
+                "level": 40,
+                "name": "lightning_strike",
+                "type": "electric",
+                "cooldown": 40,
+                "power": 120,
+                "description": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.\n"
+            },
+            {
+                "level": 50,
+                "name": "lightning_bolt",
+                "type": "electric",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
+            }
+        ]
     },
     {
         "key": "039",
@@ -25021,7 +32453,8 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Katress"
         },
         "types": [
-            "Normal"        ],
+            "Normal"
+        ],
         "stats": {
             "BreedPWR": "1310",
             "HP": "75",
@@ -25042,7 +32475,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Robinquill Terra",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/048.png"),
+        "image": require("..\/images\/048B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/bb\/Robinquill_menu.png\/",
         "suitability": [
             {
@@ -25236,14 +32669,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "750",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "focus_shot",
+                "type": "grass",
+                "cooldown": 9,
+                "power": 65,
+                "description": "Robinquill's exclusive skill. Takes aim while drawing its bow before loosing a powerful shot at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "stone_blast",
+                "type": "ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 30,
+                "name": "sand_tornado",
+                "type": "ground",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            },
+            {
+                "level": 50,
+                "name": "rock_lance",
+                "type": "ground",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Generates a sharp rock spear under an enemy.\n"
+            }
+        ]
     },
     {
         "key": "065B",
         "name": "Surfent Terra",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/065.png"),
+        "image": require("..\/images\/065B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/1\/1d\/Surfent_menu.png\/",
         "suitability": [
             {
@@ -25400,7 +32891,8 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Reptyro"
         },
         "types": [
-            "Ground"        ],
+            "Ground"
+        ],
         "stats": {
             "BreedPWR": "550",
             "HP": "90",
@@ -25414,14 +32906,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "650",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "sand_blast",
+                "type": "ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "dragon_cannon",
+                "type": "dragon",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "stone_blast",
+                "type": "ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "stone_cannon",
+                "type": "ground",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Digs up a boulder and hurls it at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "sand_tornado",
+                "type": "ground",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "draconic_breath",
+                "type": "dragon",
+                "cooldown": 15,
+                "power": 70,
+                "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
+            },
+            {
+                "level": 50,
+                "name": "rock_lance",
+                "type": "ground",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Generates a sharp rock spear under an enemy.\n"
+            }
+        ]
     },
     {
         "key": "102B",
         "name": "Suzaku Aqua",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/102.png"),
+        "image": require("..\/images\/102B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/b4\/Suzaku_menu.png\/",
         "suitability": [
             {
@@ -25578,7 +33128,8 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Suzaku"
         },
         "types": [
-            "Water"        ],
+            "Water"
+        ],
         "stats": {
             "BreedPWR": "30",
             "HP": "125",
@@ -25592,14 +33143,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "1100",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "hydro_jet",
+                "type": "water",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Hurls a high speed ball of water at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 15,
+                "name": "aqua_gun",
+                "type": "water",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls a ball of water straight at an enemy.\n"
+            },
+            {
+                "level": 22,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 30,
+                "name": "aqua_burst",
+                "type": "water",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of water and hurls it at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "hydro_laser",
+                "type": "water",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
+            }
+        ]
     },
     {
         "key": "071B",
         "name": "Vanwyrm Cryst",
         "variant": "B",
         "isNightOnly": "true",
-        "image": require("..\/images\/071.png"),
+        "image": require("..\/images\/071B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/e\/ea\/Vanwyrm_menu.png\/",
         "suitability": [
             {
@@ -25778,14 +33387,72 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "850",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "air_cannon",
+                "type": "normal",
+                "cooldown": 2,
+                "power": 25,
+                "description": "Quickly fires a burst of highly pressurized air.\n"
+            },
+            {
+                "level": 7,
+                "name": "ice_missile",
+                "type": "ice",
+                "cooldown": 3,
+                "power": 30,
+                "description": "Creates ice lances in the air that fly towards enemies.\n"
+            },
+            {
+                "level": 15,
+                "name": "icicle_cutter",
+                "type": "ice",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Creates a crescent blade of ice and hurls it forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "cryst_breath",
+                "type": "ice",
+                "cooldown": 22,
+                "power": 90,
+                "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
+            },
+            {
+                "level": 30,
+                "name": "nightmare_ball",
+                "type": "dark",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
+            },
+            {
+                "level": 40,
+                "name": "blizzard_spike",
+                "type": "ice",
+                "cooldown": 45,
+                "power": 130,
+                "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
+            },
+            {
+                "level": 50,
+                "name": "dark_laser",
+                "type": "dark",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     },
     {
         "key": "091B",
         "name": "Wumpo Botan",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/091.png"),
+        "image": require("..\/images\/091B.png"),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/0e\/Wumpo_menu.png\/",
         "suitability": [
             {
@@ -25955,7 +33622,8 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Relaxaurus"
         },
         "types": [
-            "Grass"        ],
+            "Grass"
+        ],
         "stats": {
             "BreedPWR": "480",
             "HP": "140",
@@ -25969,8 +33637,65 @@ const PalsProfilesStatsAndBreedings = [
             "Mounted": "550",
             "Capture Bonus": "1",
             "Male %": "50"
-        }
+        },
+        "skills": [
+            {
+                "level": 1,
+                "name": "wind_cutter",
+                "type": "grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "aqua_gun",
+                "type": "water",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls a ball of water straight at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "seed_mine",
+                "type": "grass",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
+            },
+            {
+                "level": 22,
+                "name": "grass_tornado",
+                "type": "grass",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 30,
+                "name": "spine_vine",
+                "type": "grass",
+                "cooldown": 25,
+                "power": 95,
+                "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
+            },
+            {
+                "level": 40,
+                "name": "aqua_burst",
+                "type": "water",
+                "cooldown": 30,
+                "power": 100,
+                "description": "Creates a giant ball of water and hurls it at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ]
     }
 ]
-
 export default PalsProfilesStatsAndBreedings;
