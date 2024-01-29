@@ -54,6 +54,7 @@ const MainView = ({ navigation }) => {
               tileWidth={tileWidth}
               tileHeight={tileHeight}
               spacing={spacing}
+              rarity={item.rarity}
             />
           </TouchableOpacity>
         )}

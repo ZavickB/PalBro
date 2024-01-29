@@ -1,9 +1,8 @@
-const PalsProfilesStatsAndBreedings = 
-[
+const PalsProfilesStatsAndBreedings = [
     {
         "id": 1,
         "key": "001",
-        "image": require("..\/images\/001.png"),
+        "image": require('..\/images\/001.png'),
         "name": "Lamball",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Lamball",
         "types": [
@@ -246,12 +245,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 2,
         "key": "002",
-        "image": require("..\/images\/002.png"),
+        "image": require('..\/images\/002.png'),
         "name": "Cattiva",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Cattiva",
         "types": [
@@ -497,12 +497,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 3,
         "key": "003",
-        "image": require("..\/images\/003.png"),
+        "image": require('..\/images\/003.png'),
         "name": "Chikipi",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Chikipi",
         "types": [
@@ -741,12 +742,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 4,
         "key": "004",
-        "image": require("..\/images\/004.png"),
+        "image": require('..\/images\/004.png'),
         "name": "Lifmunk",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Lifmunk",
         "types": [
@@ -997,12 +999,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 5,
         "key": "005",
-        "image": require("..\/images\/005.png"),
+        "image": require('..\/images\/005.png'),
         "name": "Foxparks",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Foxparks",
         "types": [
@@ -1237,12 +1240,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 6,
         "key": "006",
-        "image": require("..\/images\/006.png"),
+        "image": require('..\/images\/006.png'),
         "name": "Fuack",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Fuack",
         "types": [
@@ -1485,12 +1489,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 7,
         "key": "007",
-        "image": require("..\/images\/007.png"),
+        "image": require('..\/images\/007.png'),
         "name": "Sparkit",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Sparkit",
         "types": [
@@ -1732,12 +1737,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 8,
         "key": "008",
-        "image": require("..\/images\/008.png"),
+        "image": require('..\/images\/008.png'),
         "name": "Tanzee",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Tanzee",
         "types": [
@@ -1987,12 +1993,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 9,
         "key": "009",
-        "image": require("..\/images\/009.png"),
+        "image": require('..\/images\/009.png'),
         "name": "Rooby",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Rooby",
         "types": [
@@ -2227,12 +2234,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 2
     },
     {
         "id": 10,
         "key": "010",
-        "image": require("..\/images\/010.png"),
+        "image": require('..\/images\/010.png'),
         "name": "Pengullet",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Pengullet",
         "types": [
@@ -2480,12 +2488,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 11,
         "key": "011",
-        "image": require("..\/images\/011.png"),
+        "image": require('..\/images\/011.png'),
         "name": "Penking",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Penking",
         "types": [
@@ -2737,12 +2746,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
-        ]
+        ],
+        "rarity": 6
     },
     {
         "id": 12,
         "key": "012",
-        "image": require("..\/images\/012.png"),
+        "image": require('..\/images\/012.png'),
         "name": "Jolthog",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Jolthog",
         "types": [
@@ -2976,12 +2986,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 13,
         "key": "013",
-        "image": require("..\/images\/013.png"),
+        "image": require('..\/images\/013.png'),
         "name": "Gumoss",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Gumoss",
         "types": [
@@ -3217,12 +3228,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 14,
         "key": "014",
-        "image": require("..\/images\/014.png"),
+        "image": require('..\/images\/014.png'),
         "name": "Vixy",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Vixy",
         "types": [
@@ -3461,12 +3473,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 2
     },
     {
         "id": 15,
         "key": "015",
-        "image": require("..\/images\/015.png"),
+        "image": require('..\/images\/015.png'),
         "name": "Hoocrates",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Hoocrates",
         "types": [
@@ -3701,12 +3714,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 16,
         "key": "016",
-        "image": require("..\/images\/016.png"),
+        "image": require('..\/images\/016.png'),
         "name": "Teafant",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Teafant",
         "types": [
@@ -3940,12 +3954,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 17,
         "key": "017",
-        "image": require("..\/images\/017.png"),
+        "image": require('..\/images\/017.png'),
         "name": "Depresso",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Depresso",
         "types": [
@@ -4187,12 +4202,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 18,
         "key": "018",
-        "image": require("..\/images\/018.png"),
+        "image": require('..\/images\/018.png'),
         "name": "Cremis",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Cremis",
         "types": [
@@ -4430,12 +4446,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 19,
         "key": "019",
-        "image": require("..\/images\/019.png"),
+        "image": require('..\/images\/019.png'),
         "name": "Daedream",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Daedream",
         "types": [
@@ -4678,12 +4695,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 20,
         "key": "020",
-        "image": require("..\/images\/020.png"),
+        "image": require('..\/images\/020.png'),
         "name": "Rushoar",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Rushoar",
         "types": [
@@ -4919,12 +4937,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 21,
         "key": "021",
-        "image": require("..\/images\/021.png"),
+        "image": require('..\/images\/021.png'),
         "name": "Nox",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Nox",
         "types": [
@@ -5159,12 +5178,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 6
     },
     {
         "id": 22,
         "key": "022",
-        "image": require("..\/images\/022.png"),
+        "image": require('..\/images\/022.png'),
         "name": "Fuddler",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Fuddler",
         "types": [
@@ -5406,12 +5426,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 23,
         "key": "023",
-        "image": require("..\/images\/023.png"),
+        "image": require('..\/images\/023.png'),
         "name": "Killamari",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Killamari",
         "types": [
@@ -5649,12 +5670,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 24,
         "key": "024",
-        "image": require("..\/images\/024.png"),
+        "image": require('..\/images\/024.png'),
         "name": "Mau",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Mau",
         "types": [
@@ -5888,12 +5910,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 25,
         "key": "025",
-        "image": require("..\/images\/025.png"),
+        "image": require('..\/images\/025.png'),
         "name": "Celaray",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Celaray",
         "types": [
@@ -6131,12 +6154,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
-        ]
+        ],
+        "rarity": 3
     },
     {
         "id": 26,
         "key": "026",
-        "image": require("..\/images\/026.png"),
+        "image": require('..\/images\/026.png'),
         "name": "Direhowl",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Direhowl",
         "types": [
@@ -6372,12 +6396,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 2
     },
     {
         "id": 27,
         "key": "027",
-        "image": require("..\/images\/027.png"),
+        "image": require('..\/images\/027.png'),
         "name": "Tocotoco",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Tocotoco",
         "types": [
@@ -6612,12 +6637,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 28,
         "key": "028",
-        "image": require("..\/images\/028.png"),
+        "image": require('..\/images\/028.png'),
         "name": "Flopie",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Flopie",
         "types": [
@@ -6868,12 +6894,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 29,
         "key": "029",
-        "image": require("..\/images\/029.png"),
+        "image": require('..\/images\/029.png'),
         "name": "Mozzarina",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Mozzarina",
         "types": [
@@ -7108,12 +7135,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 2
     },
     {
         "id": 30,
         "key": "030",
-        "image": require("..\/images\/030.png"),
+        "image": require('..\/images\/030.png'),
         "name": "Bristla",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Bristla",
         "types": [
@@ -7364,12 +7392,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 31,
         "key": "031",
-        "image": require("..\/images\/031.png"),
+        "image": require('..\/images\/031.png'),
         "name": "Gobfin",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Gobfin",
         "types": [
@@ -7611,12 +7640,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
-        ]
+        ],
+        "rarity": 2
     },
     {
         "id": 32,
         "key": "032",
-        "image": require("..\/images\/032.png"),
+        "image": require('..\/images\/032.png'),
         "name": "Hangyu",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Hangyu",
         "types": [
@@ -7858,12 +7888,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 33,
         "key": "033",
-        "image": require("..\/images\/033.png"),
+        "image": require('..\/images\/033.png'),
         "name": "Mossanda",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Mossanda",
         "types": [
@@ -8111,12 +8142,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 6
     },
     {
         "id": 34,
         "key": "034",
-        "image": require("..\/images\/034.png"),
+        "image": require('..\/images\/034.png'),
         "name": "Woolipop",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Woolipop",
         "types": [
@@ -8351,12 +8383,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 3
     },
     {
         "id": 35,
         "key": "035",
-        "image": require("..\/images\/035.png"),
+        "image": require('..\/images\/035.png'),
         "name": "Caprity",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Caprity",
         "types": [
@@ -8596,12 +8629,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 3
     },
     {
         "id": 36,
         "key": "036",
-        "image": require("..\/images\/036.png"),
+        "image": require('..\/images\/036.png'),
         "name": "Melpaca",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Melpaca",
         "types": [
@@ -8836,12 +8870,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 3
     },
     {
         "id": 37,
         "key": "037",
-        "image": require("..\/images\/037.png"),
+        "image": require('..\/images\/037.png'),
         "name": "Eikthyrdeer",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Eikthyrdeer",
         "types": [
@@ -9077,12 +9112,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 4
     },
     {
         "id": 38,
         "key": "038",
-        "image": require("..\/images\/038.png"),
+        "image": require('..\/images\/038.png'),
         "name": "Nitewing",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Nitewing",
         "types": [
@@ -9316,12 +9352,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 3
     },
     {
         "id": 39,
         "key": "039",
-        "image": require("..\/images\/039.png"),
+        "image": require('..\/images\/039.png'),
         "name": "Ribbuny",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Ribbuny",
         "types": [
@@ -9548,12 +9585,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 40,
         "key": "040",
-        "image": require("..\/images\/040.png"),
+        "image": require('..\/images\/040.png'),
         "name": "Incineram",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Incineram",
         "types": [
@@ -9801,12 +9839,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             }
-        ]
+        ],
+        "rarity": 4
     },
     {
         "id": 41,
         "key": "041",
-        "image": require("..\/images\/041.png"),
+        "image": require('..\/images\/041.png'),
         "name": "Cinnamoth",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Cinnamoth",
         "types": [
@@ -10046,12 +10085,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 4
     },
     {
         "id": 42,
         "key": "042",
-        "image": require("..\/images\/042.png"),
+        "image": require('..\/images\/042.png'),
         "name": "Arsox",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Arsox",
         "types": [
@@ -10290,12 +10330,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 4
     },
     {
         "id": 43,
         "key": "043",
-        "image": require("..\/images\/043.png"),
+        "image": require('..\/images\/043.png'),
         "name": "Dumud",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Dumud",
         "types": [
@@ -10481,12 +10522,13 @@ const PalsProfilesStatsAndBreedings =
             "Capture Bonus": "1",
             "Male %": "50"
         },
-        "skills": []
+        "skills": [],
+        "rarity": 4
     },
     {
         "id": 44,
         "key": "044",
-        "image": require("..\/images\/044.png"),
+        "image": require('..\/images\/044.png'),
         "name": "Cawgnito",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Cawgnito",
         "types": [
@@ -10722,12 +10764,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 3
     },
     {
         "id": 45,
         "key": "045",
-        "image": require("..\/images\/045.png"),
+        "image": require('..\/images\/045.png'),
         "name": "Leezpunk",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Leezpunk",
         "types": [
@@ -10970,12 +11013,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 2
     },
     {
         "id": 46,
         "key": "046",
-        "image": require("..\/images\/046.png"),
+        "image": require('..\/images\/046.png'),
         "name": "Loupmoon",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Loupmoon",
         "types": [
@@ -11209,12 +11253,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 3
     },
     {
         "id": 47,
         "key": "047",
-        "image": require("..\/images\/047.png"),
+        "image": require('..\/images\/047.png'),
         "name": "Galeclaw",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Galeclaw",
         "types": [
@@ -11449,12 +11494,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 2
     },
     {
         "id": 48,
         "key": "048",
-        "image": require("..\/images\/048.png"),
+        "image": require('..\/images\/048.png'),
         "name": "Robinquill",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Robinquill",
         "types": [
@@ -11709,12 +11755,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 5
     },
     {
         "id": 49,
         "key": "049",
-        "image": require("..\/images\/049.png"),
+        "image": require('..\/images\/049.png'),
         "name": "Gorirat",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Gorirat",
         "types": [
@@ -11957,12 +12004,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 5
     },
     {
         "id": 50,
         "key": "050",
-        "image": require("..\/images\/050.png"),
+        "image": require('..\/images\/050.png'),
         "name": "Beegarde",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Beegarde",
         "types": [
@@ -12220,12 +12268,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 4
     },
     {
         "id": 51,
         "key": "051",
-        "image": require("..\/images\/051.png"),
+        "image": require('..\/images\/051.png'),
         "name": "Elizabee",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Elizabee",
         "types": [
@@ -12476,12 +12525,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 8
     },
     {
         "id": 52,
         "key": "052",
-        "image": require("..\/images\/052.png"),
+        "image": require('..\/images\/052.png'),
         "name": "Grintale",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Grintale",
         "types": [
@@ -12715,12 +12765,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 6
     },
     {
         "id": 53,
         "key": "053",
-        "image": require("..\/images\/053.png"),
+        "image": require('..\/images\/053.png'),
         "name": "Swee",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Swee",
         "types": [
@@ -12958,12 +13009,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 54,
         "key": "054",
-        "image": require("..\/images\/054.png"),
+        "image": require('..\/images\/054.png'),
         "name": "Sweepa",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Sweepa",
         "types": [
@@ -13201,12 +13253,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 6
     },
     {
         "id": 55,
         "key": "055",
-        "image": require("..\/images\/055.png"),
+        "image": require('..\/images\/055.png'),
         "name": "Chillet",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Chillet",
         "types": [
@@ -13445,12 +13498,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 4
     },
     {
         "id": 56,
         "key": "056",
-        "image": require("..\/images\/056.png"),
+        "image": require('..\/images\/056.png'),
         "name": "Univolt",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Univolt",
         "types": [
@@ -13690,12 +13744,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
-        ]
+        ],
+        "rarity": 5
     },
     {
         "id": 57,
         "key": "057",
-        "image": require("..\/images\/057.png"),
+        "image": require('..\/images\/057.png'),
         "name": "Foxcicle",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Foxcicle",
         "types": [
@@ -13930,12 +13985,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 5
     },
     {
         "id": 58,
         "key": "058",
-        "image": require("..\/images\/058.png"),
+        "image": require('..\/images\/058.png'),
         "name": "Pyrin",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Pyrin",
         "types": [
@@ -14174,12 +14230,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 6
     },
     {
         "id": 59,
         "key": "059",
-        "image": require("..\/images\/059.png"),
+        "image": require('..\/images\/059.png'),
         "name": "Reindrix",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Reindrix",
         "types": [
@@ -14420,12 +14477,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 4
     },
     {
         "id": 60,
         "key": "060",
-        "image": require("..\/images\/060.png"),
+        "image": require('..\/images\/060.png'),
         "name": "Rayhound",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Rayhound",
         "types": [
@@ -14659,12 +14717,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
-        ]
+        ],
+        "rarity": 5
     },
     {
         "id": 61,
         "key": "061",
-        "image": require("..\/images\/061.png"),
+        "image": require('..\/images\/061.png'),
         "name": "Kitsun",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Kitsun",
         "types": [
@@ -14899,12 +14958,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 6
     },
     {
         "id": 62,
         "key": "062",
-        "image": require("..\/images\/062.png"),
+        "image": require('..\/images\/062.png'),
         "name": "Dazzi",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Dazzi",
         "types": [
@@ -15146,12 +15206,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
-        ]
+        ],
+        "rarity": 2
     },
     {
         "id": 63,
         "key": "063",
-        "image": require("..\/images\/063.png"),
+        "image": require('..\/images\/063.png'),
         "name": "Lunaris",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Lunaris",
         "types": [
@@ -15393,12 +15454,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 6
     },
     {
         "id": 64,
         "key": "064",
-        "image": require("..\/images\/064.png"),
+        "image": require('..\/images\/064.png'),
         "name": "Dinossom",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Dinossom",
         "types": [
@@ -15637,12 +15699,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 6
     },
     {
         "id": 65,
         "key": "065",
-        "image": require("..\/images\/065.png"),
+        "image": require('..\/images\/065.png'),
         "name": "Surfent",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Surfent",
         "types": [
@@ -15876,12 +15939,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
-        ]
+        ],
+        "rarity": 4
     },
     {
         "id": 66,
         "key": "066",
-        "image": require("..\/images\/066.png"),
+        "image": require('..\/images\/066.png'),
         "name": "Maraith",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Maraith",
         "types": [
@@ -16120,12 +16184,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 6
     },
     {
         "id": 67,
         "key": "067",
-        "image": require("..\/images\/067.png"),
+        "image": require('..\/images\/067.png'),
         "name": "Digtoise",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Digtoise",
         "types": [
@@ -16360,12 +16425,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 5
     },
     {
         "id": 68,
         "key": "068",
-        "image": require("..\/images\/068.png"),
+        "image": require('..\/images\/068.png'),
         "name": "Tombat",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Tombat",
         "types": [
@@ -16608,12 +16674,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 5
     },
     {
         "id": 69,
         "key": "069",
-        "image": require("..\/images\/069.png"),
+        "image": require('..\/images\/069.png'),
         "name": "Lovander",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Lovander",
         "types": [
@@ -16862,12 +16929,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 5
     },
     {
         "id": 70,
         "key": "070",
-        "image": require("..\/images\/070.png"),
+        "image": require('..\/images\/070.png'),
         "name": "Flambelle",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Flambelle",
         "types": [
@@ -17114,12 +17182,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 71,
         "key": "071",
-        "image": require("..\/images\/071.png"),
+        "image": require('..\/images\/071.png'),
         "name": "Vanwyrm",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Vanwyrm",
         "types": [
@@ -17360,12 +17429,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 4
     },
     {
         "id": 72,
         "key": "072",
-        "image": require("..\/images\/072.png"),
+        "image": require('..\/images\/072.png'),
         "name": "Bushi",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Bushi",
         "types": [
@@ -17616,12 +17686,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             }
-        ]
+        ],
+        "rarity": 7
     },
     {
         "id": 73,
         "key": "073",
-        "image": require("..\/images\/073.png"),
+        "image": require('..\/images\/073.png'),
         "name": "Beakon",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Beakon",
         "types": [
@@ -17863,12 +17934,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
-        ]
+        ],
+        "rarity": 6
     },
     {
         "id": 74,
         "key": "074",
-        "image": require("..\/images\/074.png"),
+        "image": require('..\/images\/074.png'),
         "name": "Ragnahawk",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Ragnahawk",
         "types": [
@@ -18106,12 +18178,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 7
     },
     {
         "id": 75,
         "key": "075",
-        "image": require("..\/images\/075.png"),
+        "image": require('..\/images\/075.png'),
         "name": "Katress",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Katress",
         "types": [
@@ -18355,12 +18428,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 6
     },
     {
         "id": 76,
         "key": "076",
-        "image": require("..\/images\/076.png"),
+        "image": require('..\/images\/076.png'),
         "name": "Wixen",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Wixen",
         "types": [
@@ -18603,12 +18677,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 6
     },
     {
         "id": 77,
         "key": "077",
-        "image": require("..\/images\/077.png"),
+        "image": require('..\/images\/077.png'),
         "name": "Verdash",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Verdash",
         "types": [
@@ -18859,12 +18934,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 8
     },
     {
         "id": 78,
         "key": "078",
-        "image": require("..\/images\/078.png"),
+        "image": require('..\/images\/078.png'),
         "name": "Vaelet",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Vaelet",
         "types": [
@@ -19115,12 +19191,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 8
     },
     {
         "id": 79,
         "key": "079",
-        "image": require("..\/images\/079.png"),
+        "image": require('..\/images\/079.png'),
         "name": "Sibelyx",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Sibelyx",
         "types": [
@@ -19363,12 +19440,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 7
     },
     {
         "id": 80,
         "key": "080",
-        "image": require("..\/images\/080.png"),
+        "image": require('..\/images\/080.png'),
         "name": "Elphidran",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Elphidran",
         "types": [
@@ -19602,12 +19680,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 7
     },
     {
         "id": 81,
         "key": "081",
-        "image": require("..\/images\/081.png"),
+        "image": require('..\/images\/081.png'),
         "name": "Kelpsea",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Kelpsea",
         "types": [
@@ -19842,12 +19921,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
-        ]
+        ],
+        "rarity": 1
     },
     {
         "id": 82,
         "key": "082",
-        "image": require("..\/images\/082.png"),
+        "image": require('..\/images\/082.png'),
         "name": "Azurobe",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Azurobe",
         "types": [
@@ -20082,12 +20162,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 7
     },
     {
         "id": 83,
         "key": "083",
-        "image": require("..\/images\/083.png"),
+        "image": require('..\/images\/083.png'),
         "name": "Cryolinx",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Cryolinx",
         "types": [
@@ -20329,12 +20410,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 7
     },
     {
         "id": 84,
         "key": "084",
-        "image": require("..\/images\/084.png"),
+        "image": require('..\/images\/084.png'),
         "name": "Blazehowl",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Blazehowl",
         "types": [
@@ -20572,12 +20654,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 7
     },
     {
         "id": 85,
         "key": "085",
-        "image": require("..\/images\/085.png"),
+        "image": require('..\/images\/085.png'),
         "name": "Relaxaurus",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Relaxaurus",
         "types": [
@@ -20817,12 +20900,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 8
     },
     {
         "id": 86,
         "key": "086",
-        "image": require("..\/images\/086.png"),
+        "image": require('..\/images\/086.png'),
         "name": "Broncherry",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Broncherry",
         "types": [
@@ -21057,12 +21141,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 7
     },
     {
         "id": 87,
         "key": "087",
-        "image": require("..\/images\/087.png"),
+        "image": require('..\/images\/087.png'),
         "name": "Petallia",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Petallia",
         "types": [
@@ -21314,12 +21399,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 8
     },
     {
         "id": 88,
         "key": "088",
-        "image": require("..\/images\/088.png"),
+        "image": require('..\/images\/088.png'),
         "name": "Reptyro",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Reptyro",
         "types": [
@@ -21558,12 +21644,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 6
     },
     {
         "id": 89,
         "key": "089",
-        "image": require("..\/images\/089.png"),
+        "image": require('..\/images\/089.png'),
         "name": "Kingpaca",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Kingpaca",
         "types": [
@@ -21798,12 +21885,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 8
     },
     {
         "id": 90,
         "key": "090",
-        "image": require("..\/images\/090.png"),
+        "image": require('..\/images\/090.png'),
         "name": "Mammorest",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Mammorest",
         "types": [
@@ -22047,12 +22135,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 8
     },
     {
         "id": 91,
         "key": "091",
-        "image": require("..\/images\/091.png"),
+        "image": require('..\/images\/091.png'),
         "name": "Wumpo",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Wumpo",
         "types": [
@@ -22299,12 +22388,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 7
     },
     {
         "id": 92,
         "key": "092",
-        "image": require("..\/images\/092.png"),
+        "image": require('..\/images\/092.png'),
         "name": "Warsect",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Warsect",
         "types": [
@@ -22551,12 +22641,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 7
     },
     {
         "id": 93,
         "key": "093",
-        "image": require("..\/images\/093.png"),
+        "image": require('..\/images\/093.png'),
         "name": "Fenglope",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Fenglope",
         "types": [
@@ -22791,12 +22882,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 3
     },
     {
         "id": 94,
         "key": "094",
-        "image": require("..\/images\/094.png"),
+        "image": require('..\/images\/094.png'),
         "name": "Felbat",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Felbat",
         "types": [
@@ -23031,12 +23123,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 6
     },
     {
         "id": 95,
         "key": "095",
-        "image": require("..\/images\/095.png"),
+        "image": require('..\/images\/095.png'),
         "name": "Quivern",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Quivern",
         "types": [
@@ -23282,12 +23375,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 7
     },
     {
         "id": 96,
         "key": "096",
-        "image": require("..\/images\/096.png"),
+        "image": require('..\/images\/096.png'),
         "name": "Blazamut",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Blazamut",
         "types": [
@@ -23526,12 +23620,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 9
     },
     {
         "id": 97,
         "key": "097",
-        "image": require("..\/images\/097.png"),
+        "image": require('..\/images\/097.png'),
         "name": "Helzephyr",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Helzephyr",
         "types": [
@@ -23766,12 +23861,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 7
     },
     {
         "id": 98,
         "key": "098",
-        "image": require("..\/images\/098.png"),
+        "image": require('..\/images\/098.png'),
         "name": "Astegon",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Astegon",
         "types": [
@@ -24011,12 +24107,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 9
     },
     {
         "id": 99,
         "key": "099",
-        "image": require("..\/images\/099.png"),
+        "image": require('..\/images\/099.png'),
         "name": "Menasting",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Menasting",
         "types": [
@@ -24256,12 +24353,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 9
     },
     {
         "id": 100,
         "key": "100",
-        "image": require("..\/images\/100.png"),
+        "image": require('..\/images\/100.png'),
         "name": "Anubis",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Anubis",
         "types": [
@@ -24505,12 +24603,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 10
     },
     {
         "id": 101,
         "key": "101",
-        "image": require("..\/images\/101.png"),
+        "image": require('..\/images\/101.png'),
         "name": "Jormuntide",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Jormuntide",
         "types": [
@@ -24745,12 +24844,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 8
     },
     {
         "id": 102,
         "key": "102",
-        "image": require("..\/images\/102.png"),
+        "image": require('..\/images\/102.png'),
         "name": "Suzaku",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Suzaku",
         "types": [
@@ -24984,12 +25084,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 8
     },
     {
         "id": 103,
         "key": "103",
-        "image": require("..\/images\/103.png"),
+        "image": require('..\/images\/103.png'),
         "name": "Grizzbolt",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Grizzbolt",
         "types": [
@@ -25236,12 +25337,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
-        ]
+        ],
+        "rarity": 8
     },
     {
         "id": 104,
         "key": "104",
-        "image": require("..\/images\/104.png"),
+        "image": require('..\/images\/104.png'),
         "name": "Lyleen",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Lyleen",
         "types": [
@@ -25489,12 +25591,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 9
     },
     {
         "id": 105,
         "key": "105",
-        "image": require("..\/images\/105.png"),
+        "image": require('..\/images\/105.png'),
         "name": "Faleris",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Faleris",
         "types": [
@@ -25732,12 +25835,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 9
     },
     {
         "id": 106,
         "key": "106",
-        "image": require("..\/images\/106.png"),
+        "image": require('..\/images\/106.png'),
         "name": "Orserk",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Orserk",
         "types": [
@@ -25980,12 +26084,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
-        ]
+        ],
+        "rarity": 9
     },
     {
         "id": 107,
         "key": "107",
-        "image": require("..\/images\/107.png"),
+        "image": require('..\/images\/107.png'),
         "name": "Shadowbeak",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Shadowbeak",
         "types": [
@@ -26221,12 +26326,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 10
     },
     {
         "id": 108,
         "key": "108",
-        "image": require("..\/images\/108.png"),
+        "image": require('..\/images\/108.png'),
         "name": "Paladius",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Paladius",
         "types": [
@@ -26465,12 +26571,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
-        ]
+        ],
+        "rarity": 20
     },
     {
         "id": 109,
         "key": "109",
-        "image": require("..\/images\/109.png"),
+        "image": require('..\/images\/109.png'),
         "name": "Necromus",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Necromus",
         "types": [
@@ -26709,12 +26816,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 20
     },
     {
         "id": 110,
         "key": "110",
-        "image": require("..\/images\/110.png"),
+        "image": require('..\/images\/110.png'),
         "name": "Frostallion",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Frostallion",
         "types": [
@@ -26949,12 +27057,13 @@ const PalsProfilesStatsAndBreedings =
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 20
     },
     {
         "id": 111,
         "key": "111",
-        "image": require("..\/images\/111.png"),
+        "image": require('..\/images\/111.png'),
         "name": "Jetragon",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Jetragon",
         "types": [
@@ -27191,14 +27300,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 20
     },
     {
         "key": "084B",
         "name": "Blazehowl Noct",
         "variant": "B",
         "isNightOnly": "true",
-        "image": require("..\/images\/084B.png"),
+        "image": require('..\/images\/084B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/3\/33\/Blazehowl_menu.png\/",
         "suitability": [
             {
@@ -27433,14 +27543,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 8
     },
     {
         "key": "086B",
         "name": "Broncherry Aqua",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/086B.png"),
+        "image": require('..\/images\/086B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/bd\/Broncherry_menu.png\/",
         "suitability": [
             {
@@ -27672,14 +27783,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
-        ]
+        ],
+        "rarity": 8
     },
     {
         "key": "064B",
         "name": "Dinossom Lux",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/064B.png"),
+        "image": require('..\/images\/064B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/b7\/Dinossom_menu.png\/",
         "suitability": [
             {
@@ -27914,14 +28026,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
-        ]
+        ],
+        "rarity": 7
     },
     {
         "key": "037B",
         "name": "Eikthyrdeer Terra",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/037B.png"),
+        "image": require('..\/images\/037.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/4\/40\/Eikthyrdeer_menu.png\/",
         "suitability": [
             {
@@ -28153,14 +28266,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 6
     },
     {
         "key": "080B",
         "name": "Elphidran Aqua",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/080B.png"),
+        "image": require('..\/images\/080B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/a\/a6\/Elphidran_menu.png\/",
         "suitability": [
             {
@@ -28391,14 +28505,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 8
     },
     {
         "key": "110B",
         "name": "Frostallion Noct",
         "variant": "B",
         "isNightOnly": "true",
-        "image": require("..\/images\/110B.png"),
+        "image": require('..\/images\/110B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/00\/Frostallion_menu.png\/",
         "suitability": [
             {
@@ -28629,14 +28744,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 20
     },
     {
         "key": "031B",
         "name": "Gobfin Ignis",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/031B.png"),
+        "image": require('..\/images\/031B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/f\/ff\/Gobfin_menu.png\/",
         "suitability": [
             {
@@ -28874,14 +28990,197 @@ const PalsProfilesStatsAndBreedings =
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             }
-        ]
+        ],
+        "rarity": 3
+    },
+    {
+        "key": "013B",
+        "name": "Gumoss (Special)",
+        "variant": "B",
+        "isNightOnly": "",
+        "image": require('..\/images\/013.png'),
+        "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/2\/2e\/Gumoss_menu.png\/",
+        "suitability": [
+            {
+                "type": "Planting",
+                "level": 1
+            }
+        ],
+        "drops": [
+            "Berry Seeds",
+            "Gumoss Leaf"
+        ],
+        "specialCapacity": {
+            "name": "Logging Assistance",
+            "description": "While in team, improves efficiency of cutting trees."
+        },
+        "description": "A strange Pal with a body resembling tree sap. It gradually loses strength if it has nothing to cover its body with, eventually rotting away.",
+        "breedings": {
+            "Lamball": "Pengullet",
+            "Cattiva": "Pengullet",
+            "Chikipi": "Jolthog",
+            "Lifmunk": "Tocotoco",
+            "Foxparks": "Bristla",
+            "Fuack": "Killamari",
+            "Sparkit": "Bristla",
+            "Tanzee": "Tanzee",
+            "Rooby": "Woolipop",
+            "Pengullet": "Killamari",
+            "Penking": "Reindrix",
+            "Jolthog": "Swee",
+            "Jolthog Cryst": "Swee",
+            "Gumoss": "Gumoss",
+            "Gumoss (Special)": "Gumoss",
+            "Vixy": "Tocotoco",
+            "Hoocrates": "Bristla",
+            "Teafant": "Jolthog",
+            "Depresso": "Ribunny",
+            "Cremis": "Pengullet",
+            "Daedream": "Daedream",
+            "Rushoar": "Woolipop",
+            "Nox": "Dazzi",
+            "Fuddler": "Daedream",
+            "Killamari": "Kelpsea",
+            "Mau": "Jolthog",
+            "Mau Cryst": "Tocotoco",
+            "Celaray": "Direhowl",
+            "Direhowl": "Maraith",
+            "Tocotoco": "Killamari",
+            "Flopie": "Kelpsea",
+            "Mozzarina": "Cawgnito",
+            "Bristla": "Flopie",
+            "Gobfin": "Wixen",
+            "Gobfin Ignis": "Wixen",
+            "Hangyu": "Fuack",
+            "Hangyu Cryst": "Fuack",
+            "Mossanda": "Kitsun",
+            "Mossanda Lux": "Dinossom",
+            "Woolipop": "Dazzi",
+            "Caprity": "Gobfin",
+            "Melpaca": "Direhowl",
+            "Eikthyrdeer": "Cawgnito",
+            "Eikthyrdeer Terra": "Beegarde",
+            "Nitewing": "Kitsun",
+            "Ribunny": "Kelpsea Ignis",
+            "Incineram": "Eikthyrdeer",
+            "Incineram Noct": "Mozzarina",
+            "Cinnamoth": "Broncherry",
+            "Arsox": "Robinquill",
+            "Dumud": "Beegarde",
+            "Cawgnito": "Wixen",
+            "Leezpunk": "Nox",
+            "Leezpunk Ignis": "Woolipop",
+            "Loupmoon": "Gobfin",
+            "Galeclaw": "Rushoar",
+            "Robinquill": "Rushoar",
+            "Robinquill Terra": "Leezpunk",
+            "Gorirat": "Rushoar",
+            "Beegarde": "Rooby",
+            "Elizabee": "Arsox",
+            "Grintale": "Reindrix",
+            "Swee": "Kelpsea Ignis",
+            "Sweepa": "Kitsun",
+            "Chillet": "Robinquill",
+            "Univolt": "Loupmoon",
+            "Foxcicle": "Felbat",
+            "Pyrin": "Chillet",
+            "Pyrin Noct": "Rayhound",
+            "Reindrix": "Direhowl",
+            "Rayhound": "Verdash",
+            "Kitsun": "Galeclaw",
+            "Dazzi": "Fuddler",
+            "Lunaris": "Nox",
+            "Dinossom": "Galeclaw",
+            "Dinossom Lux": "Galeclaw",
+            "Surfent": "Dumud",
+            "Surfent Terra": "Dumud",
+            "Maraith": "Woolipop",
+            "Digtoise": "Gorirat",
+            "Tombat": "Verdash",
+            "Lovander": "Gobfin",
+            "Flambelle": "Bristla",
+            "Vanwyrm": "Loupmoon",
+            "Vanwyrm Cryst": "Caprity",
+            "Bushi": "Lovander",
+            "Beakon": "Rayhound",
+            "Ragnahawk": "Dinossom",
+            "Katress": "Fenglope",
+            "Wixen": "Dazzi",
+            "Verdash": "Lunaris",
+            "Vaelet": "Maraith",
+            "Sibelyx": "Digtoise",
+            "Elphidran": "Melpaca",
+            "Elphidran Aqua": "Melpaca",
+            "Kelpsea": "Tanzee",
+            "Kelpsea Ignis": "Kelpsea",
+            "Azurobe": "Celaray",
+            "Cryolinx": "Univolt",
+            "Blazehowl": "Fenglope",
+            "Blazehowl Noct": "Loupmoon",
+            "Relaxaurus": "Foxcicle",
+            "Relaxaurus Lux": "Tombat",
+            "Broncherry": "Vaelet",
+            "Broncherry Aqua": "Gorirat",
+            "Petallia": "Felbat",
+            "Reptyro": "Petallia",
+            "Ice Reptyro": "Rayhound",
+            "Kingpaca": "Digtoise",
+            "Ice Kingpaca": "Digtoise",
+            "Mammorest": "Foxcicle",
+            "Mammorest Cryst": "Foxcicle",
+            "Wumpo": "Digtoise",
+            "Wumpo Botan": "Broncherry",
+            "Warsect": "Arsox",
+            "Fenglope": "Lunaris",
+            "Felbat": "Rushoar",
+            "Quivern": "Arsox",
+            "Blazamut": "Bushi",
+            "Helzephyr": "Blazehowl",
+            "Astegon": "Katress",
+            "Menasting": "Tombat",
+            "Anubis": "Mozzarina",
+            "Jormuntide": "Petallia",
+            "Jormuntide Ignis": "Petallia",
+            "Suzaku": "Bushi",
+            "Suzaku Aqua": "Bushi",
+            "Grizzbolt": "Blazehowl",
+            "Lyleen": "Tombat",
+            "Lyleen Noct": "Rayhound",
+            "Faleris": "Chillet",
+            "Orserk": "Univolt",
+            "Shadowbeak": "Vanwyrm",
+            "Paladius": "Vanwyrm",
+            "Necromus": "Vanwyrm",
+            "Frostallion": "Univolt",
+            "Frostallion Noct": "Univolt",
+            "Jetragon": "Vanwyrm"
+        },
+        "types": [
+            "Grass",
+            "Ground"
+        ],
+        "stats": {
+            "BreedPWR": "1240",
+            "HP": "70",
+            "Melee": "100",
+            "Ranged": "70",
+            "Defence": "70",
+            "Price": "1310",
+            "Stamina": "100",
+            "Walking": "50",
+            "Running": "300",
+            "Mounted": "400",
+            "Capture Bonus": "1.3",
+            "Male %": "50"
+        },
+        "rarity": 5
     },
     {
         "key": "032B",
         "name": "Hangyu Cryst",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/032B.png"),
+        "image": require('..\/images\/032B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/08\/Hangyu_menu.png\/",
         "suitability": [
             {
@@ -29119,14 +29418,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 2
     },
     {
         "key": "089B",
         "name": "Ice Kingpaca",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/089B.png"),
+        "image": require('..\/images\/089B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/9\/9d\/Kingpaca_menu.png\/",
         "suitability": [
             {
@@ -29357,14 +29657,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 9
     },
     {
         "key": "088B",
         "name": "Ice Reptyro",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/088B.png"),
+        "image": require('..\/images\/088B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/d\/d0\/Reptyro_menu.png\/",
         "suitability": [
             {
@@ -29599,14 +29900,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 7
     },
     {
         "key": "040B",
         "name": "Incineram Noct",
         "variant": "B",
         "isNightOnly": "true",
-        "image": require("..\/images\/040B.png"),
+        "image": require('..\/images\/040B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/4\/40\/Incineram_menu.png\/",
         "suitability": [
             {
@@ -29849,14 +30151,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             }
-        ]
+        ],
+        "rarity": 5
     },
     {
         "key": "012B",
         "name": "Jolthog Cryst",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/012B.png"),
+        "image": require('..\/images\/012B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/5\/52\/Jolthog_menu.png\/",
         "suitability": [
             {
@@ -30086,14 +30389,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 2
     },
     {
         "key": "101B",
         "name": "Jormuntide Ignis",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/101B.png"),
+        "image": require('..\/images\/101B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/8\/8e\/Jormuntide_menu.png\/",
         "suitability": [
             {
@@ -30324,14 +30628,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 9
     },
     {
         "key": "081B",
         "name": "Kelpsea Ignis",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/081B.png"),
+        "image": require('..\/images\/081B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/1\/1b\/Kelpsea_menu.png\/",
         "suitability": [
             {
@@ -30562,14 +30867,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 2
     },
     {
         "key": "045B",
         "name": "Leezpunk Ignis",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/045B.png"),
+        "image": require('..\/images\/045B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/09\/Leezpunk_menu.png\/",
         "suitability": [
             {
@@ -30808,14 +31114,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 3
     },
     {
         "key": "104B",
         "name": "Lyleen Noct",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/104B.png"),
+        "image": require('..\/images\/104B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/5\/5e\/Lyleen_menu.png\/",
         "suitability": [
             {
@@ -31059,14 +31366,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 10
     },
     {
         "key": "090B",
         "name": "Mammorest Cryst",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/090B.png"),
+        "image": require('..\/images\/090B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/5\/5e\/Mammorest_menu.png\/",
         "suitability": [
             {
@@ -31306,14 +31614,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 9
     },
     {
         "key": "024B",
         "name": "Mau Cryst",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/024B.png"),
+        "image": require('..\/images\/024B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/1\/17\/Mau_menu.png\/",
         "suitability": [
             {
@@ -31543,14 +31852,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
-        ]
+        ],
+        "rarity": 2
     },
     {
         "key": "033B",
         "name": "Mossanda Lux",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/033B.png"),
+        "image": require('..\/images\/033B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/d\/db\/Mossanda_menu.png\/",
         "suitability": [
             {
@@ -31794,14 +32104,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
-        ]
+        ],
+        "rarity": 7
     },
     {
         "key": "058B",
         "name": "Pyrin Noct",
         "variant": "B",
         "isNightOnly": "true",
-        "image": require("..\/images\/058B.png"),
+        "image": require('..\/images\/058B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/e\/e6\/Pyrin_menu.png\/",
         "suitability": [
             {
@@ -32037,14 +32348,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 7
     },
     {
         "key": "085B",
         "name": "Relaxaurus Lux",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/085B.png"),
+        "image": require('..\/images\/085B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/01\/Relaxaurus_menu.png\/",
         "suitability": [
             {
@@ -32280,202 +32592,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
-        ]
-    },
-    {
-        "key": "039",
-        "name": "Ribunny",
-        "variant": "",
-        "isNightOnly": "",
-        "image": require("..\/images\/039.png"),
-        "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/7\/7e\/Ribbuny_menu.png\/",
-        "suitability": [
-            {
-                "type": "Handiwork",
-                "level": 1
-            },
-            {
-                "type": "Transporting",
-                "level": 1
-            },
-            {
-                "type": "Gathering",
-                "level": 1
-            }
         ],
-        "drops": [
-            "Leather",
-            "Beautiful Flower"
-        ],
-        "specialCapacity": {
-            "name": "Skilled Fingers",
-            "description": "While in team, increases attack power of Neutral Pals.\nWhile at a base, increases work efficiency if working at Weapon Workbench."
-        },
-        "description": "A Pal who's never without a bright smile. Occasionally, it gets its tentacles tied up in knots by Cattiva's pranks. During those moments, its expression changes into something altogether demonic.",
-        "breedings": {
-            "Lamball": "Hoocrates",
-            "Cattiva": "Depresso",
-            "Chikipi": "Flambelle",
-            "Lifmunk": "Jolthog",
-            "Foxparks": "Pengullet",
-            "Fuack": "Bristla",
-            "Sparkit": "Jolthog",
-            "Tanzee": "Flopie",
-            "Rooby": "Daedream",
-            "Pengullet": "Fuack",
-            "Penking": "Eikthyrdeer",
-            "Jolthog": "Tocotoco",
-            "Jolthog Cryst": "Tocotoco",
-            "Gumoss": "Kelpsea Ignis",
-            "Gumoss (Special)": "Kelpsea Ignis",
-            "Vixy": "Depresso",
-            "Hoocrates": "Pengullet",
-            "Teafant": "Foxparks",
-            "Depresso": "Tocotoco",
-            "Cremis": "Depresso",
-            "Daedream": "Kelpsea Ignis",
-            "Rushoar": "Fuddler",
-            "Nox": "Tanzee",
-            "Fuddler": "Kelpsea",
-            "Killamari": "Swee",
-            "Mau": "Foxparks",
-            "Mau Cryst": "Jolthog",
-            "Celaray": "Gobfin",
-            "Direhowl": "Woolipop",
-            "Tocotoco": "Bristla",
-            "Flopie": "Killamari",
-            "Mozzarina": "Lunaris",
-            "Bristla": "Bristla",
-            "Gobfin": "Dazzi",
-            "Gobfin Ignis": "Dazzi",
-            "Hangyu": "Jolthog",
-            "Hangyu Cryst": "Jolthog",
-            "Mossanda": "Celaray",
-            "Mossanda Lux": "Digtoise",
-            "Woolipop": "Tanzee",
-            "Caprity": "Leezpunk",
-            "Melpaca": "Lunaris",
-            "Eikthyrdeer": "Lunaris",
-            "Eikthyrdeer Terra": "Lunaris",
-            "Nitewing": "Broncherry",
-            "Ribunny": "Ribunny",
-            "Incineram": "Loupmoon",
-            "Incineram Noct": "Loupmoon",
-            "Cinnamoth": "Dumud",
-            "Arsox": "Vaelet",
-            "Dumud": "Lunaris",
-            "Cawgnito": "Woolipop",
-            "Leezpunk": "Dazzi",
-            "Leezpunk Ignis": "Fuddler",
-            "Loupmoon": "Rushoar",
-            "Galeclaw": "Wixen",
-            "Robinquill": "Wixen",
-            "Robinquill Terra": "Rooby",
-            "Gorirat": "Nox",
-            "Beegarde": "Woolipop",
-            "Elizabee": "Dinossom",
-            "Grintale": "Mozzarina",
-            "Swee": "Swee",
-            "Sweepa": "Broncherry",
-            "Chillet": "Direhowl",
-            "Univolt": "Verdash",
-            "Foxcicle": "Galeclaw",
-            "Pyrin": "Kitsun",
-            "Pyrin Noct": "Petallia",
-            "Reindrix": "Gobfin",
-            "Rayhound": "Galeclaw",
-            "Kitsun": "Beegarde",
-            "Dazzi": "Kelpsea",
-            "Lunaris": "Dazzi",
-            "Dinossom": "Direhowl",
-            "Dinossom Lux": "Direhowl",
-            "Surfent": "Caprity",
-            "Surfent Terra": "Caprity",
-            "Maraith": "Daedream",
-            "Digtoise": "Cawgnito",
-            "Tombat": "Galeclaw",
-            "Lovander": "Rushoar",
-            "Flambelle": "Pengullet",
-            "Vanwyrm": "Fenglope",
-            "Vanwyrm Cryst": "Loupmoon",
-            "Bushi": "Fenglope",
-            "Beakon": "Foxcicle",
-            "Ragnahawk": "Digtoise",
-            "Katress": "Felbat",
-            "Wixen": "Daedream",
-            "Verdash": "Maraith",
-            "Vaelet": "Nox",
-            "Sibelyx": "Reindrix",
-            "Elphidran": "Eikthyrdeer",
-            "Elphidran Aqua": "Eikthyrdeer",
-            "Kelpsea": "Killamari",
-            "Kelpsea Ignis": "Killamari",
-            "Azurobe": "Mozzarina",
-            "Cryolinx": "Blazehowl",
-            "Blazehowl": "Felbat",
-            "Blazehowl Noct": "Verdash",
-            "Relaxaurus": "Arsox",
-            "Relaxaurus Lux": "Arsox",
-            "Broncherry": "Gobfin",
-            "Broncherry Aqua": "Cawgnito",
-            "Petallia": "Gorirat",
-            "Reptyro": "Dinossom",
-            "Ice Reptyro": "Foxcicle",
-            "Kingpaca": "Melpaca",
-            "Ice Kingpaca": "Reindrix",
-            "Mammorest": "Chillet",
-            "Mammorest Cryst": "Chillet",
-            "Wumpo": "Melpaca",
-            "Wumpo Botan": "Dumud",
-            "Warsect": "Kitsun",
-            "Fenglope": "Maraith",
-            "Felbat": "Wixen",
-            "Quivern": "Kitsun",
-            "Blazamut": "Vanwyrm",
-            "Helzephyr": "Tombat",
-            "Astegon": "Rayhound",
-            "Menasting": "Arsox",
-            "Anubis": "Lovander",
-            "Jormuntide": "Dinossom",
-            "Jormuntide Ignis": "Dinossom",
-            "Suzaku": "Univolt",
-            "Suzaku Aqua": "Univolt",
-            "Grizzbolt": "Tombat",
-            "Lyleen": "Petallia",
-            "Lyleen Noct": "Foxcicle",
-            "Faleris": "Digtoise",
-            "Orserk": "Rayhound",
-            "Shadowbeak": "Univolt",
-            "Paladius": "Katress",
-            "Necromus": "Univolt",
-            "Frostallion": "Blazehowl",
-            "Frostallion Noct": "Blazehowl",
-            "Jetragon": "Katress"
-        },
-        "types": [
-            "Normal"
-        ],
-        "stats": {
-            "BreedPWR": "1310",
-            "HP": "75",
-            "Melee": "100",
-            "Ranged": "65",
-            "Defence": "70",
-            "Price": "1160",
-            "Stamina": "100",
-            "Walking": "100",
-            "Running": "245",
-            "Mounted": "350",
-            "Capture Bonus": "1",
-            "Male %": "50"
-        }
+        "rarity": 9
     },
     {
         "key": "048B",
         "name": "Robinquill Terra",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/048B.png"),
+        "image": require('..\/images\/048B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/bb\/Robinquill_menu.png\/",
         "suitability": [
             {
@@ -32727,14 +32852,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 6
     },
     {
         "key": "065B",
         "name": "Surfent Terra",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/065B.png"),
+        "image": require('..\/images\/065B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/1\/1d\/Surfent_menu.png\/",
         "suitability": [
             {
@@ -32964,14 +33090,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
-        ]
+        ],
+        "rarity": 5
     },
     {
         "key": "102B",
         "name": "Suzaku Aqua",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/102B.png"),
+        "image": require('..\/images\/102B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/b4\/Suzaku_menu.png\/",
         "suitability": [
             {
@@ -33201,14 +33328,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
-        ]
+        ],
+        "rarity": 9
     },
     {
         "key": "071B",
         "name": "Vanwyrm Cryst",
         "variant": "B",
         "isNightOnly": "true",
-        "image": require("..\/images\/071B.png"),
+        "image": require('..\/images\/071B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/e\/ea\/Vanwyrm_menu.png\/",
         "suitability": [
             {
@@ -33445,14 +33573,15 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 5
     },
     {
         "key": "091B",
         "name": "Wumpo Botan",
         "variant": "B",
         "isNightOnly": "",
-        "image": require("..\/images\/091B.png"),
+        "image": require('..\/images\/091B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/0e\/Wumpo_menu.png\/",
         "suitability": [
             {
@@ -33695,7 +33824,9 @@ const PalsProfilesStatsAndBreedings =
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
-        ]
+        ],
+        "rarity": 8
     }
 ]
+
 export default PalsProfilesStatsAndBreedings;
