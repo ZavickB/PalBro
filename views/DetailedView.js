@@ -6,15 +6,16 @@ import TypeBadge from '../components/TypeBadge';
 import TopBar from '../components/TopBar';
 import PalStatsBlock from '../components/PalStatsBlock'; // Import the PalStatsBlock component
 import { statsOrder } from '../components/configs/PalsStatsOrderConfig'; // Import statsOrder
-
+import { useTheme } from '../components/ThemeContext'; // Import the useTheme hook
 
 const DetailedView = ({ route, navigation }) => {
   const { palData } = route.params;
+  const { currentTheme } = useTheme();
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
       <TopBar title="" navigation={navigation} />
-      <ScrollView style={styles.container}>
+      <ScrollView style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
         <Image style={styles.image} source={palData.image} />
         <View style={styles.infoContainer}>
           <Text style={styles.name}>#{palData.key} {palData.name}</Text>

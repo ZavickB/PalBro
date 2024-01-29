@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, Text, Image, TouchableOpacity, Modal, FlatList } from 'react-native';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings'; // Import the pal data
 import TypeBadge from './TypeBadge'; // Import the TypeBadge component
+import { useTheme } from './ThemeContext'; // Import the useTheme hook
 
 // Function to find the baby based on the selected pal's breedings
 const findBaby = (palData, selectedPalName) => {
@@ -15,6 +16,8 @@ const findBaby = (palData, selectedPalName) => {
 
 // Define the new component
 const PalBreedingInfosBlock = ({ palData, navigation }) => {
+  const { currentTheme } = useTheme();
+
   const [selectedPalInfo, setSelectedPalInfo] = useState(palData); // Initialize with palData
   const [babyInfo, setBabyInfo] = useState(null); // Initial state for babyInfo
   const [isModalVisible, setModalVisible] = useState(false);
@@ -38,7 +41,7 @@ const PalBreedingInfosBlock = ({ palData, navigation }) => {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
       <TouchableOpacity onPress={() => setModalVisible(true)}>
         <View style={styles.palInfo}>
           <Text style={styles.Parent2Label}>Parent 2:</Text>

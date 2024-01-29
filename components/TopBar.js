@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import SolarEclipseImage from '../assets/full-solar-eclipse.png'; // Adjust the path as needed
+import { useTheme } from './ThemeContext';
 
 const TopBar = ({ title, navigation }) => {
+  
   const handleDrawerOpen = () => {
     if (navigation) {
       navigation.openDrawer();
@@ -16,15 +18,19 @@ const TopBar = ({ title, navigation }) => {
     }
   };
 
+  const { toggleTheme, currentTheme } = useTheme(); // Get current theme
+
   return (
-    <View style={styles.topBar}>
+    <View
+      style={[styles.topBar, { backgroundColor: currentTheme.backgroundColor }]}
+    >
       {title ? (
         <>
           <TouchableOpacity style={styles.icon} onPress={handleDrawerOpen}>
             <FontAwesome name="bars" size={24} color="black" />
           </TouchableOpacity>
           <Text style={styles.title}>{title}</Text>
-          <TouchableOpacity style={styles.icon}>
+          <TouchableOpacity style={styles.icon} onPress={toggleTheme}>
             <Image source={SolarEclipseImage} style={styles.eclipseImage} />
           </TouchableOpacity>
         </>
@@ -33,7 +39,7 @@ const TopBar = ({ title, navigation }) => {
           <TouchableOpacity style={styles.icon} onPress={handleGoBack}>
             <FontAwesome name="arrow-left" size={24} color="black" />
           </TouchableOpacity>
-          <TouchableOpacity style={styles.icon}>
+          <TouchableOpacity style={styles.icon}  onPress={toggleTheme}>
             <Image source={SolarEclipseImage} style={styles.eclipseImage} />
           </TouchableOpacity>
         </>

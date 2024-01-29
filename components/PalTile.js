@@ -1,8 +1,11 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 import TypePin from './TypePin';
+import { useTheme } from './ThemeContext';
 
 const PalTile = ({ palName, palImageSource, palTypes, rarity, tileWidth, tileHeight, spacing }) => {
+    const { currentTheme } = useTheme();
+
     const getRarityColor = (rarity) => {
         if (rarity > 10) {
             return '#ff9557';

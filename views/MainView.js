@@ -1,11 +1,15 @@
-import React from 'react';
-import { StyleSheet, TouchableOpacity, View, Dimensions } from 'react-native';
+import React, { useContext } from 'react';
+import { StyleSheet, TouchableOpacity, View, Dimensions, Text } from 'react-native';
 import PalTile from '../components/PalTile';
 import TopBar from '../components/TopBar';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import SearchableList from '../components/SearchableList';
+import { useTheme } from '../components/ThemeContext';
 
 const MainView = ({ navigation }) => {
+  // Use the useTheme hook to get the current theme
+  const { currentTheme } = useTheme();
+
   const screenWidth = Dimensions.get('window').width;
   const screenHeight = Dimensions.get('window').height;
 
@@ -41,29 +45,35 @@ const MainView = ({ navigation }) => {
   });
 
   return (
-    <View style={styles.container}>
-      <TopBar title="Home" navigation={navigation} />
-      <SearchableList
-        data={PalsProfilesStatsAndBreedings}
-        renderItem={({ item }) => (
-          <TouchableOpacity onPress={() => handleTilePress(item)}>
-            <PalTile
-              palName={item.name}
-              palImageSource={item.image}
-              palTypes={item.types}
-              tileWidth={tileWidth}
-              tileHeight={tileHeight}
-              spacing={spacing}
-              rarity={item.rarity}
-            />
-          </TouchableOpacity>
-        )}
-        numColumns={3} // Set the number of columns to 3
-        emptyStateText="No matching Pals found."
-      />
+    <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
+      <View style={styles.appContainer}>
+        <TopBar title="Home" navigation={navigation} theme={currentTheme} />
+          <SearchableList
+            data={PalsProfilesStatsAndBreedings}
+            renderItem={({ item }) => (
+              <View style={styles.listContainer}>
+              <TouchableOpacity onPress={() => handleTilePress(item)}>
+                <PalTile
+                  palName={item.name}
+                  palImageSource={item.image}
+                  palTypes={item.types}
+                  tileWidth={tileWidth}
+                  tileHeight={tileHeight}
+                  spacing={spacing}
+                  rarity={item.rarity}
+                  theme={currentTheme} // Pass the theme to PalTile
+                />
+              </TouchableOpacity>
+            </View>
+            )}
+            numColumns={3} // Set the number of columns to 3
+            emptyStateText="No matching Pals found."
+          />
+      </View>
     </View>
   );
 };
+
 
 const App = ({ navigation }) => {
   return (
@@ -77,9 +87,16 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#f5f5f5',
-    paddingHorizontal: 5,
-    paddingTop: 20,
   },
+  appContainer: {
+    flex: 1,
+    paddingTop: 20,
+    paddingHorizontal: 10,
+  },
+  listContainer:{
+    flex: 1,
+    alignItems: 'center',
+  }
 });
 
 export default App;

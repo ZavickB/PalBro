@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { FlatList, Text, TextInput, View, StyleSheet } from 'react-native';
+import { useTheme } from './ThemeContext';
 
 const SearchableList = ({ data, renderItem, emptyStateText, numColumns }) => {
+  const { currentTheme } = useTheme();
+
   const [searchText, setSearchText] = useState('');
   const [filteredData, setFilteredData] = useState(data);
 
@@ -17,15 +20,16 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns }) => {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
       <TextInput
         placeholder="Search..."
         style={styles.searchInput}
         onChangeText={setSearchText}
         value={searchText}
       />
+      
       {filteredData.length === 0 && <Text style={styles.emptyState}>{emptyStateText}</Text>}
-        <View style={styles.listContainer}>
+        <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
           <FlatList
             data={filteredData}
             renderItem={renderItem}

@@ -1,12 +1,15 @@
 import React from 'react';
 import { View, StyleSheet, Image, Text } from 'react-native';
 import SuitabilitiesProfiles from '../assets/data/SuitabilitiesProfiles'; // Import the icon data
+import { useTheme } from './ThemeContext'; // Import the useTheme hook
 
 const SuitabilityBlock = ({ suitabilities }) => {
+  const { currentTheme } = useTheme();
+
   const iconSize = 30;
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
       {suitabilities.map((profile, index) => {
         const suitabilityProfile = SuitabilitiesProfiles.find(
           (sp) => sp.workName === profile.type

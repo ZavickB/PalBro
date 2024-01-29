@@ -1,7 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { useTheme } from './ThemeContext';
 
 const PalStatsBlock = ({ stats, statsOrder }) => {
+  const { currentTheme } = useTheme();
+
   // Create a mapping of stat labels to emojis
   const statEmojis = {
     "BreedPWR": "🥚",
@@ -38,7 +41,7 @@ const PalStatsBlock = ({ stats, statsOrder }) => {
   const statEntries = statsOrder.map((key) => [key, stats[key]]);
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
       <Text style={styles.title}>Statistics:</Text>
       <View style={styles.columnsContainer}>
         {statEntries.map(([key, value], index) => (
