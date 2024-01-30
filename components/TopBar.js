@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     height: 60, // Set a fixed height for the top bar
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
-    width: '95%',
+    width: '100%',
   },
   title: {
     fontSize: 20,

@@ -1,14 +1,15 @@
-import React, { useContext } from 'react';
-import { StyleSheet, TouchableOpacity, View, Dimensions, Text } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { StyleSheet, TouchableOpacity, View, Dimensions } from 'react-native';
 import PalTile from '../components/PalTile';
 import TopBar from '../components/TopBar';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import SearchableList from '../components/SearchableList';
+import AsyncStorage from '@react-native-async-storage/async-storage'; // Import AsyncStorage
 import { useTheme } from '../components/ThemeContext';
 
 const MainView = ({ navigation }) => {
-  // Use the useTheme hook to get the current theme
   const { currentTheme } = useTheme();
+  const [capturedPals, setCapturedPals] = useState([]); // State to store captured Pals
 
   const screenWidth = Dimensions.get('window').width;
   const screenHeight = Dimensions.get('window').height;
@@ -21,6 +22,25 @@ const MainView = ({ navigation }) => {
 
   const handleTilePress = (item) => {
     navigation.navigate('Details', { palData: item });
+  };
+
+  const toggleCapture = (palKey) => {
+    let updatedCapturedPals;
+
+    // Check if the Pal is already captured
+    if (capturedPals.includes(palKey)) {
+      // Pal is captured, release it
+      updatedCapturedPals = capturedPals.filter((key) => key !== palKey);
+    } else {
+      // Pal is not captured, capture it
+      updatedCapturedPals = [...capturedPals, palKey];
+    }
+
+    // Update the state
+    setCapturedPals(updatedCapturedPals);
+
+    // Store the updated capturedPals array in AsyncStorage
+    storeData(STORAGE_KEY, updatedCapturedPals);
   };
 
   // Custom sorting function
@@ -44,41 +64,65 @@ const MainView = ({ navigation }) => {
     return aLetter.localeCompare(bLetter);
   });
 
+  // Define the storage key for captured Pals
+  const STORAGE_KEY = 'capturedPals';
+
+  // Function to store data in AsyncStorage
+  const storeData = async (key, value) => {
+    try {
+      await AsyncStorage.setItem(key, JSON.stringify(value));
+    } catch (error) {
+      // Handle AsyncStorage errors here
+      console.error('Error storing data:', error);
+    }
+  };
+
+  // Function to retrieve data from AsyncStorage
+  const getData = async (key) => {
+    try {
+      const value = await AsyncStorage.getItem(key);
+      return value !== null ? JSON.parse(value) : null;
+    } catch (error) {
+      // Handle AsyncStorage errors here
+      console.error('Error retrieving data:', error);
+      return null;
+    }
+  };
+
+  useEffect(() => {
+    // Load captured Pals from AsyncStorage
+    getData(STORAGE_KEY).then((storedCapturedPals) => {
+      if (storedCapturedPals !== null) {
+        // Data found, set it in the state
+        setCapturedPals(storedCapturedPals);
+      }
+    });
+  }, []); // Empty dependency array ensures this runs only once when the component mounts
+
   return (
     <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
       <View style={styles.appContainer}>
         <TopBar title="Home" navigation={navigation} theme={currentTheme} />
-          <SearchableList
-            data={PalsProfilesStatsAndBreedings}
-            renderItem={({ item }) => (
-              <View style={styles.listContainer}>
+        <SearchableList
+          data={PalsProfilesStatsAndBreedings}
+          renderItem={({ item }) => (
+            <View style={styles.listContainer}>
               <TouchableOpacity onPress={() => handleTilePress(item)}>
                 <PalTile
-                  palName={item.name}
-                  palImageSource={item.image}
-                  palTypes={item.types}
+                  pal={item}
                   tileWidth={tileWidth}
                   tileHeight={tileHeight}
                   spacing={spacing}
-                  rarity={item.rarity}
-                  theme={currentTheme} // Pass the theme to PalTile
+                  onCapturePress={() => toggleCapture(item.key)} // Pass the toggleCapture function
+                  isCaptured={capturedPals.includes(item.key)} // Check if the Pal is captured
                 />
               </TouchableOpacity>
             </View>
-            )}
-            numColumns={3} // Set the number of columns to 3
-            emptyStateText="No matching Pals found."
-          />
+          )}
+          numColumns={3} // Set the number of columns to 3
+          emptyStateText="No matching Pals found."
+        />
       </View>
-    </View>
-  );
-};
-
-
-const App = ({ navigation }) => {
-  return (
-    <View style={styles.container}>
-      <MainView navigation={navigation} />
     </View>
   );
 };
@@ -93,10 +137,10 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     paddingHorizontal: 10,
   },
-  listContainer:{
+  listContainer: {
     flex: 1,
     alignItems: 'center',
-  }
+  },
 });
 
-export default App;
+export default MainView;

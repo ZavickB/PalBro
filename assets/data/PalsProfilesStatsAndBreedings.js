@@ -192,39 +192,35 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "roly_poly",
-                "type": "normal",
-                "cooldown": 1,
+                "type": "Normal",                "cooldown": 1,
                 "power": 35,
                 "description": "Lamball's special skill. Curls into a ball, rolling after any enemies in its way. Becomes dizzy and unable to move after the attack ends.\n"
             },
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 15,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 22,
                 "name": "implode",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 180,
                 "description": "Risks its life to cause a violent explosion. Becomes incapacitated afterwards.\n"
             },
             {
                 "level": 30,
                 "name": "electric_ball",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires an electric ball that slowly pursues an enemy.\n"
@@ -232,16 +228,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -444,23 +438,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "punch_flurry",
-                "type": "normal",
-                "cooldown": 1,
+                "type": "Normal",                "cooldown": 1,
                 "power": 40,
                 "description": "Cattiva's special skill. Pursues enemies, repeatedly punching them with both its fists.\n"
             },
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 15,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -468,15 +460,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 30,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -484,7 +475,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "seed_machine_gun",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires a volley of hard seeds at enemies in front of it.\n"
@@ -492,8 +483,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -689,39 +679,35 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "chicken_rush",
-                "type": "normal",
-                "cooldown": 1,
+                "type": "Normal",                "cooldown": 1,
                 "power": 30,
                 "description": "Chikipi's special skill. Flies at enemies in its sights, attacking them with its sharp beak.\n"
             },
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 15,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 22,
                 "name": "implode",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 180,
                 "description": "Risks its life to cause a violent explosion. Becomes incapacitated afterwards.\n"
             },
             {
                 "level": 30,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -729,7 +715,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "sand_tornado",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
@@ -737,7 +723,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "flare_storm",
-                "type": "fire",
+                "type": "Fire",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
@@ -946,7 +932,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -954,23 +940,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 15,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 22,
                 "name": "seed_machine_gun",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires a volley of hard seeds at enemies in front of it.\n"
@@ -978,15 +962,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 40,
                 "name": "spine_vine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 25,
                 "power": 95,
                 "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
@@ -994,7 +977,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -1187,15 +1170,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -1203,31 +1185,28 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "flare_arrow",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 30,
                 "name": "ignis_breath",
-                "type": "fire",
-                "cooldown": 15,
+                "type": "Fire",                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 40,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -1235,8 +1214,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
@@ -1436,7 +1414,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "aqua_gun",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls a ball of water straight at an enemy.\n"
@@ -1444,15 +1422,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "hydro_jet",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a high speed ball of water at an enemy.\n"
@@ -1460,7 +1437,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -1468,7 +1445,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "bubble_blast",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
@@ -1476,7 +1453,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "aqua_burst",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of water and hurls it at an enemy.\n"
@@ -1484,7 +1461,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "hydro_laser",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
@@ -1684,7 +1661,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "spark_blast",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 2,
                 "power": 30,
                 "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.\n"
@@ -1692,7 +1669,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -1700,7 +1677,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "shockwave",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Quickly discharges electricity, shocking those around it.\n"
@@ -1708,7 +1685,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "electric_ball",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires an electric ball that slowly pursues an enemy.\n"
@@ -1716,7 +1693,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "tri-lightning",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Generates lightning that strikes an enemy three times from above.\n"
@@ -1724,7 +1701,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "lightning_streak",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Generates a lightning bolt that moves forward in a line.\n"
@@ -1732,7 +1709,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "lightning_bolt",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
@@ -1940,7 +1917,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -1948,7 +1925,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -1956,7 +1933,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "seed_machine_gun",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires a volley of hard seeds at enemies in front of it.\n"
@@ -1964,7 +1941,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "seed_mine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
@@ -1972,7 +1949,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "stone_cannon",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Digs up a boulder and hurls it at an enemy.\n"
@@ -1980,7 +1957,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -1988,7 +1965,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -2181,56 +2158,49 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "flare_arrow",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 30,
                 "name": "flare_storm",
-                "type": "fire",
-                "cooldown": 18,
+                "type": "Fire",                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "fire",
-                "cooldown": 40,
+                "type": "Fire",                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
@@ -2435,7 +2405,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -2443,7 +2413,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "hydro_jet",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a high speed ball of water at an enemy.\n"
@@ -2451,7 +2421,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "aqua_gun",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls a ball of water straight at an enemy.\n"
@@ -2459,7 +2429,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -2467,7 +2437,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -2475,7 +2445,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -2483,7 +2453,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "hydro_laser",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
@@ -2693,7 +2663,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "aqua_gun",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls a ball of water straight at an enemy.\n"
@@ -2701,7 +2671,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -2709,7 +2679,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "emperor_slide",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 70,
                 "description": "Penking's exclusive skill. Lies on its belly while generating frozen air all around it before sliding at enemies at high speed.\n"
@@ -2717,7 +2687,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -2725,7 +2695,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "aqua_burst",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of water and hurls it at an enemy.\n"
@@ -2733,7 +2703,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -2741,7 +2711,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "hydro_laser",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
@@ -2933,7 +2903,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "shockwave",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Quickly discharges electricity, shocking those around it.\n"
@@ -2941,15 +2911,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "electric_ball",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires an electric ball that slowly pursues an enemy.\n"
@@ -2957,15 +2926,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 30,
                 "name": "tri-lightning",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Generates lightning that strikes an enemy three times from above.\n"
@@ -2973,7 +2941,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "lightning_streak",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Generates a lightning bolt that moves forward in a line.\n"
@@ -2981,7 +2949,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "lightning_bolt",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
@@ -3175,7 +3143,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -3183,7 +3151,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -3191,7 +3159,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "stone_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Fires a barrage of stones forward.\n"
@@ -3199,7 +3167,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "seed_machine_gun",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires a volley of hard seeds at enemies in front of it.\n"
@@ -3207,7 +3175,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "seed_mine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
@@ -3215,7 +3183,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "sand_tornado",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
@@ -3223,7 +3191,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -3420,15 +3388,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -3436,15 +3403,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 22,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -3452,7 +3418,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "seed_machine_gun",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires a volley of hard seeds at enemies in front of it.\n"
@@ -3460,16 +3426,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -3661,15 +3625,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "dark_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
@@ -3677,7 +3640,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -3685,7 +3648,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "sand_tornado",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
@@ -3693,7 +3656,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -3701,7 +3664,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -3709,7 +3672,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -3901,7 +3864,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "aqua_gun",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls a ball of water straight at an enemy.\n"
@@ -3909,7 +3872,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "hydro_jet",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a high speed ball of water at an enemy.\n"
@@ -3917,7 +3880,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -3925,7 +3888,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "bubble_blast",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
@@ -3933,7 +3896,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "acid_rain",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Creates acidic clouds that pour down acid rain on enemies.\n"
@@ -3941,7 +3904,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "aqua_burst",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of water and hurls it at an enemy.\n"
@@ -3949,7 +3912,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "hydro_laser",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
@@ -4149,7 +4112,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "poison_blast",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls poison sludge at an enemy.\n"
@@ -4157,7 +4120,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -4165,7 +4128,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "dark_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
@@ -4173,7 +4136,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -4181,7 +4144,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -4189,7 +4152,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -4197,7 +4160,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -4393,15 +4356,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -4409,7 +4371,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "spark_blast",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 2,
                 "power": 30,
                 "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.\n"
@@ -4417,15 +4379,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 30,
                 "name": "shockwave",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Quickly discharges electricity, shocking those around it.\n"
@@ -4433,15 +4394,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "lightning_bolt",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
@@ -4642,7 +4602,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "dark_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
@@ -4650,7 +4610,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "poison_blast",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls poison sludge at an enemy.\n"
@@ -4658,7 +4618,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -4666,7 +4626,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -4674,7 +4634,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -4682,7 +4642,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -4690,7 +4650,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -4884,15 +4844,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "reckless_charge",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 55,
                 "description": "Rushoar's special skill. Takes aim at a foe and rushes at them with a mad charge.\n"
             },
             {
                 "level": 7,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -4900,15 +4859,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 22,
                 "name": "stone_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Fires a barrage of stones forward.\n"
@@ -4916,15 +4874,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 40,
                 "name": "rock_lance",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
@@ -4932,8 +4889,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -5125,15 +5081,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "dark_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
@@ -5141,7 +5096,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -5149,15 +5104,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 30,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -5165,7 +5119,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -5173,7 +5127,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -5373,7 +5327,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -5381,15 +5335,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "stone_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Fires a barrage of stones forward.\n"
@@ -5397,7 +5350,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "stone_cannon",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Digs up a boulder and hurls it at an enemy.\n"
@@ -5405,15 +5358,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 40,
                 "name": "sand_tornado",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
@@ -5421,7 +5373,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "rock_lance",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
@@ -5617,7 +5569,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "hydro_jet",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a high speed ball of water at an enemy.\n"
@@ -5625,7 +5577,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "poison_blast",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls poison sludge at an enemy.\n"
@@ -5633,7 +5585,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "dark_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
@@ -5641,7 +5593,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -5649,7 +5601,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "acid_rain",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Creates acidic clouds that pour down acid rain on enemies.\n"
@@ -5657,7 +5609,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -5665,7 +5617,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -5857,7 +5809,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -5865,7 +5817,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "dark_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
@@ -5873,7 +5825,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -5881,7 +5833,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "sand_tornado",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
@@ -5889,7 +5841,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -5897,7 +5849,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -5905,7 +5857,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -6101,7 +6053,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "hydro_jet",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a high speed ball of water at an enemy.\n"
@@ -6109,7 +6061,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "aqua_gun",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls a ball of water straight at an enemy.\n"
@@ -6117,15 +6069,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 22,
                 "name": "bubble_blast",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
@@ -6133,7 +6084,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "seed_machine_gun",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires a volley of hard seeds at enemies in front of it.\n"
@@ -6141,7 +6092,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "aqua_burst",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of water and hurls it at an enemy.\n"
@@ -6149,7 +6100,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "hydro_laser",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
@@ -6343,15 +6294,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "fierce_fang",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 45,
                 "description": "Direhowl's special skill. Swiftly leaps at an enemy and bites into them.\n"
             },
             {
                 "level": 7,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -6359,40 +6309,35 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 22,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 30,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -6584,39 +6529,35 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "implode",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 180,
                 "description": "Risks its life to cause a violent explosion. Becomes incapacitated afterwards.\n"
             },
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 15,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 22,
                 "name": "megaton_implode",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 250,
                 "description": "Risks life to cause a massive explosion. Those who perish for their duty become glistening stars in the night sky.\n"
             },
             {
                 "level": 30,
                 "name": "sand_tornado",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
@@ -6624,16 +6565,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -6841,7 +6780,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -6849,15 +6788,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 15,
                 "name": "hydro_jet",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a high speed ball of water at an enemy.\n"
@@ -6865,7 +6803,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "seed_machine_gun",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires a volley of hard seeds at enemies in front of it.\n"
@@ -6873,7 +6811,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "bubble_blast",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
@@ -6881,7 +6819,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -6889,7 +6827,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -7082,15 +7020,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 7,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -7098,15 +7035,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 22,
                 "name": "stone_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Fires a barrage of stones forward.\n"
@@ -7114,7 +7050,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "stone_cannon",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Digs up a boulder and hurls it at an enemy.\n"
@@ -7122,16 +7058,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -7339,7 +7273,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -7347,7 +7281,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "seed_machine_gun",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires a volley of hard seeds at enemies in front of it.\n"
@@ -7355,7 +7289,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -7363,7 +7297,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -7371,7 +7305,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -7379,7 +7313,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "spine_vine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 25,
                 "power": 95,
                 "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
@@ -7387,7 +7321,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -7587,7 +7521,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "hydro_jet",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a high speed ball of water at an enemy.\n"
@@ -7595,15 +7529,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "aqua_gun",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls a ball of water straight at an enemy.\n"
@@ -7611,7 +7544,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "bubble_blast",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
@@ -7619,7 +7552,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -7627,7 +7560,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "aqua_burst",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of water and hurls it at an enemy.\n"
@@ -7635,7 +7568,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "hydro_laser",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
@@ -7835,7 +7768,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -7843,15 +7776,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 15,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -7859,23 +7791,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 40,
                 "name": "sand_tornado",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
@@ -7883,7 +7813,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "rock_lance",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
@@ -8089,15 +8019,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 7,
                 "name": "seed_machine_gun",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires a volley of hard seeds at enemies in front of it.\n"
@@ -8105,7 +8034,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "stone_cannon",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Digs up a boulder and hurls it at an enemy.\n"
@@ -8113,7 +8042,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "crushing_punch",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 85,
                 "description": "Mossanda's exclusive skill. Winds up its fist before striking an enemy with a devastating punch.\n"
@@ -8121,7 +8050,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "seed_mine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
@@ -8129,7 +8058,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "spine_vine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 25,
                 "power": 95,
                 "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
@@ -8137,7 +8066,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -8330,15 +8259,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -8346,15 +8274,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 22,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -8362,7 +8289,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "bubble_blast",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
@@ -8370,16 +8297,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -8576,7 +8501,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -8584,15 +8509,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 15,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -8600,15 +8524,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 30,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -8616,7 +8539,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "spine_vine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 25,
                 "power": 95,
                 "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
@@ -8624,7 +8547,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -8817,23 +8740,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "fluffy_tackle",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 40,
                 "description": "Melpaca's exclusive skill. Charges forward while clad in an aura of sublime adorableness.\n"
             },
             {
                 "level": 15,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -8841,15 +8762,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 30,
                 "name": "shockwave",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Quickly discharges electricity, shocking those around it.\n"
@@ -8857,16 +8777,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -9059,23 +8977,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 7,
                 "name": "antler_uppercut",
-                "type": "normal",
-                "cooldown": 5,
+                "type": "Normal",                "cooldown": 5,
                 "power": 50,
                 "description": "Eikthyrdeer's exclusive skill. Charges at foes and uses antlers to launch them into the air. If used while riding, the direction of the charge can be controlled.\n"
             },
             {
                 "level": 15,
                 "name": "stone_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Fires a barrage of stones forward.\n"
@@ -9083,7 +8999,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "stone_cannon",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Digs up a boulder and hurls it at an enemy.\n"
@@ -9091,15 +9007,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 40,
                 "name": "rock_lance",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
@@ -9107,8 +9022,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -9299,23 +9213,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "tornado_attack",
-                "type": "normal",
-                "cooldown": 13,
+                "type": "Normal",                "cooldown": 13,
                 "power": 65,
                 "description": "Nitewing's exclusive skill. Generates a tornado before soaring towards its target.\n"
             },
             {
                 "level": 15,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -9323,15 +9235,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 30,
                 "name": "sand_tornado",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
@@ -9339,7 +9250,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -9347,8 +9258,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -9532,23 +9442,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -9556,7 +9464,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -9564,15 +9472,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 40,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -9580,8 +9487,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -9786,39 +9692,35 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 15,
                 "name": "flare_arrow",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 22,
                 "name": "hellfire_claw",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 70,
                 "description": "Incineram's exclusive skill. Draws near enemies using its left claw to slash them into the air before cutting them down with its right claw.\n"
             },
             {
                 "level": 30,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -9826,16 +9728,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
             {
                 "level": 50,
                 "name": "ignis_rage",
-                "type": "fire",
-                "cooldown": 40,
+                "type": "Fire",                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             }
@@ -10032,15 +9932,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -10048,7 +9947,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "poison_fog",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 0,
                 "description": "Generates a fog of poison in front, causing the opponent to become poisoned.\n"
@@ -10056,7 +9955,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "sand_tornado",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
@@ -10064,7 +9963,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "seed_mine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
@@ -10072,7 +9971,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -10080,7 +9979,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -10277,56 +10176,49 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "blazing_horn",
-                "type": "fire",
-                "cooldown": 9,
+                "type": "Fire",                "cooldown": 9,
                 "power": 50,
                 "description": "Arsox's exclusive skill. Takes aim and rushes at an enemy with a mad dash.\n"
             },
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "flare_arrow",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 30,
                 "name": "ignis_breath",
-                "type": "fire",
-                "cooldown": 15,
+                "type": "Fire",                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "fire",
-                "cooldown": 40,
+                "type": "Fire",                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
@@ -10711,15 +10603,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "dark_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
@@ -10727,7 +10618,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "phantom_peck",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 7,
                 "power": 55,
                 "description": "Cawnito's exclusive skill. Teleports next to an enemy before attacking with its beak.\n"
@@ -10735,7 +10626,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -10743,7 +10634,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -10751,7 +10642,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -10759,7 +10650,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -10960,7 +10851,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "poison_blast",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls poison sludge at an enemy.\n"
@@ -10968,7 +10859,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "dark_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
@@ -10976,7 +10867,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -10984,7 +10875,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -10992,7 +10883,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -11000,15 +10891,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "ignis_breath",
-                "type": "fire",
-                "cooldown": 15,
+                "type": "Fire",                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -11200,7 +11090,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "dark_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
@@ -11208,7 +11098,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "jumping_claw",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 7,
                 "power": 55,
                 "description": "Loupmoon's exclusive skill. Leaps forward and attacks twice with vicious claws imbued with dark energy.\n"
@@ -11216,7 +11106,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -11224,7 +11114,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -11232,7 +11122,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -11240,7 +11130,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -11248,7 +11138,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -11441,23 +11331,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "gale_claw",
-                "type": "normal",
-                "cooldown": 8,
+                "type": "Normal",                "cooldown": 8,
                 "power": 60,
                 "description": "Galeclaw's exclusive skill. Soars through the air with its talons outstretched forward.\n"
             },
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 15,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -11465,7 +11353,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -11473,7 +11361,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "sand_tornado",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
@@ -11481,7 +11369,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -11489,8 +11377,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -11702,7 +11589,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -11710,15 +11597,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "focus_shot",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 9,
                 "power": 65,
                 "description": "Robinquill's exclusive skill. Takes aim while drawing its bow before loosing a powerful shot at an enemy.\n"
@@ -11726,7 +11612,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "seed_mine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
@@ -11734,7 +11620,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -11742,7 +11628,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "spine_vine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 25,
                 "power": 95,
                 "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
@@ -11750,7 +11636,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -11951,7 +11837,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -11959,23 +11845,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "ground_pound",
-                "type": "normal",
-                "cooldown": 14,
+                "type": "Normal",                "cooldown": 14,
                 "power": 85,
                 "description": "Gorilla's exclusive skill. Pounds the ground twice before leaping into the air and unleashing a powerful punch.\n"
             },
             {
                 "level": 22,
                 "name": "stone_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Fires a barrage of stones forward.\n"
@@ -11983,7 +11867,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "seed_machine_gun",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires a volley of hard seeds at enemies in front of it.\n"
@@ -11991,16 +11875,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -12215,15 +12097,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -12231,15 +12112,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "bee_quiet",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 200,
                 "description": "Risks its life to cause a violent explosion, but receives the honor of falling in battle.\n"
             },
             {
                 "level": 22,
                 "name": "poison_blast",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls poison sludge at an enemy.\n"
@@ -12247,7 +12127,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "acid_rain",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Creates acidic clouds that pour down acid rain on enemies.\n"
@@ -12255,7 +12135,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -12263,7 +12143,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -12472,15 +12352,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -12488,7 +12367,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "poison_blast",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls poison sludge at an enemy.\n"
@@ -12496,7 +12375,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "spinning_lance",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 9,
                 "power": 70,
                 "description": "Elizabee's exclusive skill. Channels power into its staff, and unleashes it in a whirl.\n"
@@ -12504,7 +12383,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -12512,7 +12391,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "spine_vine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 25,
                 "power": 95,
                 "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
@@ -12520,7 +12399,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -12712,7 +12591,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -12720,23 +12599,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "cat_press",
-                "type": "normal",
-                "cooldown": 9,
+                "type": "Normal",                "cooldown": 9,
                 "power": 60,
                 "description": "Grintale's exclusive skill. Grins menacingly before leaping into the air and smashing foes with its body.\n"
             },
             {
                 "level": 22,
                 "name": "stone_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Fires a barrage of stones forward.\n"
@@ -12744,7 +12621,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "stone_cannon",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Digs up a boulder and hurls it at an enemy.\n"
@@ -12752,16 +12629,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -12956,15 +12831,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -12972,7 +12846,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -12980,15 +12854,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 30,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -12996,7 +12869,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -13004,7 +12877,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -13200,15 +13073,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 7,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -13216,7 +13088,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -13224,7 +13096,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -13232,7 +13104,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -13240,15 +13112,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             },
             {
                 "level": 50,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -13445,7 +13316,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -13453,7 +13324,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "dragon_cannon",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
@@ -13461,7 +13332,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "dragon_burst",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges draconic energy, damaging those around it.\n"
@@ -13469,7 +13340,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -13477,7 +13348,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "draconic_breath",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
@@ -13485,7 +13356,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -13493,7 +13364,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dragon_meteor",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
@@ -13691,7 +13562,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "spark_blast",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 2,
                 "power": 30,
                 "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.\n"
@@ -13699,7 +13570,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "shockwave",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Quickly discharges electricity, shocking those around it.\n"
@@ -13707,7 +13578,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "lock-on_laser",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Takes aim at an enemy before firing a super high speed laser.\n"
@@ -13715,7 +13586,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "lightning_streak",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Generates a lightning bolt that moves forward in a line.\n"
@@ -13723,7 +13594,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "tri-lightning",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Generates lightning that strikes an enemy three times from above.\n"
@@ -13731,7 +13602,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "lightning_strike",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 40,
                 "power": 120,
                 "description": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.\n"
@@ -13739,7 +13610,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "lightning_bolt",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
@@ -13932,15 +13803,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -13948,7 +13818,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -13956,7 +13826,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -13964,7 +13834,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -13972,7 +13842,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -13980,7 +13850,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -14177,7 +14047,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -14185,48 +14055,42 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "flare_arrow",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 30,
                 "name": "ignis_slam",
-                "type": "fire",
-                "cooldown": 14,
+                "type": "Fire",                "cooldown": 14,
                 "power": 85,
                 "description": "Pyrin's exclusive skill. Charges forward while clad in a veil of flames. Flames continue to burn in its wake.\n"
             },
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "fire",
-                "cooldown": 40,
+                "type": "Fire",                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
@@ -14424,15 +14288,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -14440,7 +14303,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -14448,7 +14311,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "freezing_charge",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 9,
                 "power": 65,
                 "description": "Reindrix's exclusive skill. Charges at an enemy with antlers adorned in ice.\n"
@@ -14456,7 +14319,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -14464,7 +14327,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -14472,7 +14335,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -14664,7 +14527,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -14672,7 +14535,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "shockwave",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Quickly discharges electricity, shocking those around it.\n"
@@ -14680,7 +14543,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "spark_blast",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 2,
                 "power": 30,
                 "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.\n"
@@ -14688,7 +14551,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "stone_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Fires a barrage of stones forward.\n"
@@ -14696,7 +14559,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "electric_ball",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires an electric ball that slowly pursues an enemy.\n"
@@ -14704,7 +14567,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "lightning_streak",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Generates a lightning bolt that moves forward in a line.\n"
@@ -14712,7 +14575,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "lightning_bolt",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
@@ -14905,23 +14768,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 15,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -14929,32 +14790,28 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "daring_flames",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 75,
                 "description": "Kitsun's exclusive skill. Charges forward with great speed while clad in intense blue flames.\n"
             },
             {
                 "level": 30,
                 "name": "flare_storm",
-                "type": "fire",
-                "cooldown": 18,
+                "type": "Fire",                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "fire",
-                "cooldown": 40,
+                "type": "Fire",                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
@@ -15153,15 +15010,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "shockwave",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Quickly discharges electricity, shocking those around it.\n"
@@ -15169,7 +15025,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "acid_rain",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Creates acidic clouds that pour down acid rain on enemies.\n"
@@ -15177,7 +15033,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "lightning_streak",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Generates a lightning bolt that moves forward in a line.\n"
@@ -15185,7 +15041,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "tri-lightning",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Generates lightning that strikes an enemy three times from above.\n"
@@ -15193,7 +15049,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "lightning_strike",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 40,
                 "power": 120,
                 "description": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.\n"
@@ -15201,7 +15057,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "lightning_bolt",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
@@ -15401,23 +15257,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -15425,7 +15279,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "plasma_tornado",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Creates two balls of electric energy that fire numerous bolts of lightning at enemies.\n"
@@ -15433,15 +15287,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 40,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -15449,8 +15302,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -15646,7 +15498,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -15654,7 +15506,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "botanical_smash",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 8,
                 "power": 60,
                 "description": "Dinossom's exclusive skill. Uses large tail to smash the ground in front of it, damaging enemies over a wide area.\n"
@@ -15662,7 +15514,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "dragon_burst",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges draconic energy, damaging those around it.\n"
@@ -15670,7 +15522,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "seed_mine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
@@ -15678,7 +15530,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "draconic_breath",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
@@ -15686,7 +15538,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "spine_vine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 25,
                 "power": 95,
                 "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
@@ -15694,7 +15546,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -15886,7 +15738,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "hydro_jet",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a high speed ball of water at an enemy.\n"
@@ -15894,7 +15746,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "dragon_cannon",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
@@ -15902,7 +15754,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "aqua_gun",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls a ball of water straight at an enemy.\n"
@@ -15910,7 +15762,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "bubble_blast",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
@@ -15918,7 +15770,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "dragon_burst",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges draconic energy, damaging those around it.\n"
@@ -15926,7 +15778,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "draconic_breath",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
@@ -15934,7 +15786,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "hydro_laser",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
@@ -16131,15 +15983,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "dark_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
@@ -16147,15 +15998,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "flare_arrow",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 22,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -16163,7 +16013,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -16171,7 +16021,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -16179,7 +16029,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -16372,7 +16222,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "aqua_gun",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls a ball of water straight at an enemy.\n"
@@ -16380,7 +16230,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "stone_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Fires a barrage of stones forward.\n"
@@ -16388,7 +16238,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "shell_spin",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 9,
                 "power": 65,
                 "description": "Digtoise's exclusive skill. Moves while spinning its whole body at high speeds. Drills through enemies, dealing continuous damage.\n"
@@ -16396,7 +16246,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "stone_cannon",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Digs up a boulder and hurls it at an enemy.\n"
@@ -16404,7 +16254,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "sand_tornado",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
@@ -16412,7 +16262,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "aqua_burst",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of water and hurls it at an enemy.\n"
@@ -16420,7 +16270,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "rock_lance",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
@@ -16621,15 +16471,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "poison_blast",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls poison sludge at an enemy.\n"
@@ -16637,7 +16486,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "dark_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
@@ -16645,7 +16494,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -16653,7 +16502,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -16661,7 +16510,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -16669,7 +16518,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -16876,15 +16725,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 7,
                 "name": "poison_blast",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls poison sludge at an enemy.\n"
@@ -16892,7 +16740,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -16900,7 +16748,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "acid_rain",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Creates acidic clouds that pour down acid rain on enemies.\n"
@@ -16908,24 +16756,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 40,
                 "name": "implode",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 180,
                 "description": "Risks its life to cause a violent explosion. Becomes incapacitated afterwards.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -17129,31 +16974,28 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 15,
                 "name": "flare_arrow",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 22,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -17161,24 +17003,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "flare_storm",
-                "type": "fire",
-                "cooldown": 18,
+                "type": "Fire",                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "fire",
-                "cooldown": 40,
+                "type": "Fire",                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
@@ -17376,39 +17215,35 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "ignis_breath",
-                "type": "fire",
-                "cooldown": 15,
+                "type": "Fire",                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 30,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -17416,15 +17251,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -17633,15 +17467,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -17649,7 +17482,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -17657,23 +17490,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "iaigiri",
-                "type": "fire",
-                "cooldown": 9,
+                "type": "Fire",                "cooldown": 9,
                 "power": 65,
                 "description": "Bushi's exclusive skill. After Holding the sword, he appears in front of the enemy in an instant and unleashes a Ultra-fast sword draw attack.\n"
             },
             {
                 "level": 30,
                 "name": "ignis_breath",
-                "type": "fire",
-                "cooldown": 15,
+                "type": "Fire",                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 40,
                 "name": "lightning_strike",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 40,
                 "power": 120,
                 "description": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.\n"
@@ -17681,8 +17512,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "ignis_rage",
-                "type": "fire",
-                "cooldown": 40,
+                "type": "Fire",                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             }
@@ -17881,15 +17711,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "spark_blast",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 2,
                 "power": 30,
                 "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.\n"
@@ -17897,7 +17726,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "shockwave",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Quickly discharges electricity, shocking those around it.\n"
@@ -17905,7 +17734,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "lightning_streak",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Generates a lightning bolt that moves forward in a line.\n"
@@ -17913,7 +17742,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "tri-lightning",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Generates lightning that strikes an enemy three times from above.\n"
@@ -17921,7 +17750,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "sand_tornado",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
@@ -17929,7 +17758,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "lightning_bolt",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
@@ -18125,31 +17954,28 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 15,
                 "name": "flare_arrow",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 22,
                 "name": "sand_tornado",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
@@ -18157,24 +17983,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "flare_storm",
-                "type": "fire",
-                "cooldown": 18,
+                "type": "Fire",                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
             {
                 "level": 40,
                 "name": "ignis_breath",
-                "type": "fire",
-                "cooldown": 15,
+                "type": "Fire",                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
@@ -18375,15 +18198,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "dark_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
@@ -18391,15 +18213,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "flare_arrow",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 22,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -18407,7 +18228,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -18415,7 +18236,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -18423,7 +18244,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -18624,31 +18445,28 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 15,
                 "name": "flare_arrow",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 22,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -18656,23 +18474,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "flare_storm",
-                "type": "fire",
-                "cooldown": 18,
+                "type": "Fire",                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
             {
                 "level": 50,
                 "name": "dragon_meteor",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
@@ -18881,7 +18697,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -18889,7 +18705,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "stone_cannon",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Digs up a boulder and hurls it at an enemy.\n"
@@ -18897,7 +18713,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "seed_machine_gun",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires a volley of hard seeds at enemies in front of it.\n"
@@ -18905,7 +18721,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "stone_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Fires a barrage of stones forward.\n"
@@ -18913,7 +18729,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -18921,7 +18737,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "spine_vine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 25,
                 "power": 95,
                 "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
@@ -18929,7 +18745,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -19138,7 +18954,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "poison_fog",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 0,
                 "description": "Generates a fog of poison in front, causing the opponent to become poisoned.\n"
@@ -19146,7 +18962,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -19154,7 +18970,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "poison_blast",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls poison sludge at an enemy.\n"
@@ -19162,7 +18978,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "seed_mine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
@@ -19170,7 +18986,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -19178,7 +18994,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -19186,7 +19002,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -19387,7 +19203,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -19395,7 +19211,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -19403,7 +19219,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -19411,7 +19227,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -19419,7 +19235,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -19427,7 +19243,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "aqua_burst",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of water and hurls it at an enemy.\n"
@@ -19435,7 +19251,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -19627,7 +19443,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "dragon_cannon",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
@@ -19635,7 +19451,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "dragon_burst",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges draconic energy, damaging those around it.\n"
@@ -19643,15 +19459,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "flare_arrow",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 22,
                 "name": "mystic_whirlwind",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 10,
                 "power": 70,
                 "description": "Elphidran's exclusive skill. Generates twin whirlwinds imbued with a mysterious power that pursues enemies.\n"
@@ -19659,7 +19474,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "draconic_breath",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
@@ -19667,15 +19482,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             },
             {
                 "level": 50,
                 "name": "dragon_meteor",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
@@ -19868,7 +19682,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "hydro_jet",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a high speed ball of water at an enemy.\n"
@@ -19876,7 +19690,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "dragon_cannon",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
@@ -19884,7 +19698,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "aqua_gun",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls a ball of water straight at an enemy.\n"
@@ -19892,7 +19706,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "bubble_blast",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
@@ -19900,15 +19714,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 40,
                 "name": "aqua_burst",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of water and hurls it at an enemy.\n"
@@ -19916,7 +19729,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "hydro_laser",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
@@ -20109,7 +19922,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "aqua_gun",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls a ball of water straight at an enemy.\n"
@@ -20117,7 +19930,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "dragon_cannon",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
@@ -20125,7 +19938,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "bubble_blast",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
@@ -20133,7 +19946,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "dragon_burst",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges draconic energy, damaging those around it.\n"
@@ -20141,7 +19954,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "draconic_breath",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
@@ -20149,7 +19962,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "hydro_laser",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
@@ -20157,7 +19970,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dragon_meteor",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
@@ -20357,15 +20170,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 7,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -20373,7 +20185,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "stone_cannon",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Digs up a boulder and hurls it at an enemy.\n"
@@ -20381,7 +20193,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -20389,7 +20201,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -20397,7 +20209,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -20405,7 +20217,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -20601,56 +20413,49 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "flare_arrow",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 22,
                 "name": "ignis_breath",
-                "type": "fire",
-                "cooldown": 15,
+                "type": "Fire",                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 30,
                 "name": "ignis_rage",
-                "type": "fire",
-                "cooldown": 40,
+                "type": "Fire",                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -20847,7 +20652,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "dragon_cannon",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
@@ -20855,7 +20660,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "aqua_gun",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls a ball of water straight at an enemy.\n"
@@ -20863,7 +20668,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "dragon_burst",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges draconic energy, damaging those around it.\n"
@@ -20871,7 +20676,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "bubble_blast",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
@@ -20879,7 +20684,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "draconic_breath",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
@@ -20887,7 +20692,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "aqua_burst",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of water and hurls it at an enemy.\n"
@@ -20895,7 +20700,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dragon_meteor",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
@@ -21088,7 +20893,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -21096,7 +20901,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -21104,15 +20909,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "muscle_slam",
-                "type": "normal",
-                "cooldown": 12,
+                "type": "Normal",                "cooldown": 12,
                 "power": 80,
                 "description": "Broncherry's exclusive skill. Turns sideways before tackling enemies in front of it, sending them flying into the air.\n"
             },
             {
                 "level": 22,
                 "name": "seed_mine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
@@ -21120,7 +20924,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -21128,7 +20932,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "spine_vine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 25,
                 "power": 95,
                 "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
@@ -21136,7 +20940,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -21346,7 +21150,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -21354,7 +21158,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "aqua_gun",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls a ball of water straight at an enemy.\n"
@@ -21362,7 +21166,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "seed_machine_gun",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires a volley of hard seeds at enemies in front of it.\n"
@@ -21370,7 +21174,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "bubble_blast",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
@@ -21378,7 +21182,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -21386,7 +21190,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "spine_vine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 25,
                 "power": 95,
                 "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
@@ -21394,7 +21198,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -21591,15 +21395,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "stone_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Fires a barrage of stones forward.\n"
@@ -21607,7 +21410,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "stone_cannon",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Digs up a boulder and hurls it at an enemy.\n"
@@ -21615,31 +21418,28 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "ignis_breath",
-                "type": "fire",
-                "cooldown": 15,
+                "type": "Fire",                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 30,
                 "name": "volcanic_burst",
-                "type": "fire",
-                "cooldown": 45,
+                "type": "Fire",                "cooldown": 45,
                 "power": 100,
                 "description": "Reptyro's exclusive skill. Raises its front legs before slamming them into the ground, causing volcanic eruptions under its enemies. It simultaneously bombards them with volcanic bombs from above.\n"
             },
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "fire",
-                "cooldown": 40,
+                "type": "Fire",                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 50,
                 "name": "rock_lance",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
@@ -21832,7 +21632,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -21840,31 +21640,28 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 22,
                 "name": "kingly_slam",
-                "type": "normal",
-                "cooldown": 21,
+                "type": "Normal",                "cooldown": 21,
                 "power": 100,
                 "description": "Kingpaca's exclusive skill. Leaps high into the air before smashing into an enemy with its massive body.\n"
             },
             {
                 "level": 30,
                 "name": "tri-lightning",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Generates lightning that strikes an enemy three times from above.\n"
@@ -21872,7 +21669,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "rock_lance",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
@@ -21880,8 +21677,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -22082,7 +21878,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -22090,7 +21886,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "seed_machine_gun",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires a volley of hard seeds at enemies in front of it.\n"
@@ -22098,15 +21894,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 22,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -22114,7 +21909,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "earth_impact",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Mammorest's exclusive skill. Uses massive body to shake the earth, dealing damage over a wide area.\n"
@@ -22122,7 +21917,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "spine_vine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 25,
                 "power": 95,
                 "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
@@ -22130,7 +21925,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -22335,7 +22130,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -22343,7 +22138,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -22351,7 +22146,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -22359,7 +22154,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -22367,7 +22162,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -22375,7 +22170,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -22383,7 +22178,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -22588,7 +22383,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -22596,7 +22391,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "seed_machine_gun",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires a volley of hard seeds at enemies in front of it.\n"
@@ -22604,7 +22399,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "stone_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Fires a barrage of stones forward.\n"
@@ -22612,7 +22407,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "stone_cannon",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Digs up a boulder and hurls it at an enemy.\n"
@@ -22620,7 +22415,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "giga_horn",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 11,
                 "power": 75,
                 "description": "Warsect's exclusive skill. Skewers enemies with its four sturdy horns.\n"
@@ -22628,7 +22423,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "rock_lance",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
@@ -22636,7 +22431,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -22829,15 +22624,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "aqua_gun",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls a ball of water straight at an enemy.\n"
@@ -22845,15 +22639,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "cloud_tempest",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 90,
                 "description": "Fenglope's exclusive skill. Charges forward while manipulating the atmosphere to create a pressurized wind tunnel around itself.\n"
             },
             {
                 "level": 22,
                 "name": "acid_rain",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Creates acidic clouds that pour down acid rain on enemies.\n"
@@ -22861,7 +22654,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "aqua_burst",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of water and hurls it at an enemy.\n"
@@ -22869,7 +22662,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -22877,8 +22670,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -23070,7 +22862,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "poison_blast",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls poison sludge at an enemy.\n"
@@ -23078,7 +22870,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "dark_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
@@ -23086,7 +22878,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -23094,7 +22886,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -23102,7 +22894,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -23110,15 +22902,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "fire",
-                "cooldown": 40,
+                "type": "Fire",                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -23322,7 +23113,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "dragon_cannon",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
@@ -23330,15 +23121,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 15,
                 "name": "acid_rain",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Creates acidic clouds that pour down acid rain on enemies.\n"
@@ -23346,7 +23136,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "draconic_breath",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
@@ -23354,7 +23144,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -23362,7 +23152,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "aqua_burst",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of water and hurls it at an enemy.\n"
@@ -23370,7 +23160,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dragon_meteor",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
@@ -23567,23 +23357,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 7,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 15,
                 "name": "stone_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Fires a barrage of stones forward.\n"
@@ -23591,31 +23379,28 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "ignis_breath",
-                "type": "fire",
-                "cooldown": 15,
+                "type": "Fire",                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 30,
                 "name": "ignis_rage",
-                "type": "fire",
-                "cooldown": 40,
+                "type": "Fire",                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
             {
                 "level": 50,
                 "name": "rock_lance",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
@@ -23808,15 +23593,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 7,
                 "name": "dark_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
@@ -23824,7 +23608,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -23832,15 +23616,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "flare_storm",
-                "type": "fire",
-                "cooldown": 18,
+                "type": "Fire",                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
             {
                 "level": 30,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -23848,7 +23631,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -23856,7 +23639,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -24054,7 +23837,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "dragon_cannon",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
@@ -24062,7 +23845,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -24070,7 +23853,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "dragon_burst",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges draconic energy, damaging those around it.\n"
@@ -24078,7 +23861,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -24086,7 +23869,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "draconic_breath",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
@@ -24094,7 +23877,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -24102,7 +23885,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dragon_meteor",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
@@ -24300,7 +24083,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -24308,7 +24091,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "poison_blast",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls poison sludge at an enemy.\n"
@@ -24316,7 +24099,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -24324,7 +24107,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "stone_cannon",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Digs up a boulder and hurls it at an enemy.\n"
@@ -24332,7 +24115,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -24340,7 +24123,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "rock_lance",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
@@ -24348,7 +24131,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -24550,7 +24333,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "stone_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Fires a barrage of stones forward.\n"
@@ -24558,15 +24341,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 15,
                 "name": "sand_tornado",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
@@ -24574,7 +24356,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "spinning_roundhouse",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 21,
                 "power": 100,
                 "description": "Anubis's special skill. Performs a spin kick with its strong legs, cutting down enemies over a wide area.\n"
@@ -24582,7 +24364,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "forceful_charge",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 28,
                 "power": 120,
                 "description": "Anubis's special skill. Pursues its foe with a high speed dash while releasing energy and unleashes a powerful punch.\n"
@@ -24590,7 +24372,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "ground_smash",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 35,
                 "power": 140,
                 "description": "Anubis's special skill. Leaps high into the air before diving to the ground with a punch. The force of the impact deals damage over a wide area.\n"
@@ -24598,7 +24380,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "rock_lance",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
@@ -24791,7 +24573,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "aqua_gun",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls a ball of water straight at an enemy.\n"
@@ -24799,7 +24581,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "dragon_cannon",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
@@ -24807,7 +24589,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "draconic_breath",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
@@ -24815,7 +24597,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "aqua_burst",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of water and hurls it at an enemy.\n"
@@ -24823,7 +24605,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "tri-lightning",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Generates lightning that strikes an enemy three times from above.\n"
@@ -24831,7 +24613,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "hydro_laser",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
@@ -24839,7 +24621,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dragon_meteor",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
@@ -25031,56 +24813,49 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "flare_arrow",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 30,
                 "name": "ignis_breath",
-                "type": "fire",
-                "cooldown": 15,
+                "type": "Fire",                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 40,
                 "name": "flare_storm",
-                "type": "fire",
-                "cooldown": 18,
+                "type": "Fire",                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
@@ -25284,7 +25059,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "spark_blast",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 2,
                 "power": 30,
                 "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.\n"
@@ -25292,7 +25067,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "shockwave",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Quickly discharges electricity, shocking those around it.\n"
@@ -25300,7 +25075,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "lightning_claw",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Grizzbolt's special skill. After leaping at an enemy and tearing at it twice with its electrically charged claws, it attacks the ground, sending an electric shock throughout the area.\n"
@@ -25308,7 +25083,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "lightning_streak",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Generates a lightning bolt that moves forward in a line.\n"
@@ -25316,7 +25091,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "tri-lightning",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Generates lightning that strikes an enemy three times from above.\n"
@@ -25324,7 +25099,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "lightning_strike",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 40,
                 "power": 120,
                 "description": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.\n"
@@ -25332,7 +25107,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "lightning_bolt",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
@@ -25538,7 +25313,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -25546,7 +25321,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "seed_machine_gun",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 9,
                 "power": 50,
                 "description": "Fires a volley of hard seeds at enemies in front of it.\n"
@@ -25554,7 +25329,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "seed_mine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
@@ -25562,7 +25337,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "aqua_burst",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of water and hurls it at an enemy.\n"
@@ -25570,7 +25345,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -25578,7 +25353,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "spine_vine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 25,
                 "power": 95,
                 "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
@@ -25586,7 +25361,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -25782,56 +25557,49 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "flare_arrow",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "ignis_breath",
-                "type": "fire",
-                "cooldown": 15,
+                "type": "Fire",                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 30,
                 "name": "phoenix_flare",
-                "type": "fire",
-                "cooldown": 28,
+                "type": "Fire",                "cooldown": 28,
                 "power": 135,
                 "description": "Faleris's special skill. Covers its body in a tornado of flames before charging forward.\n"
             },
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "fire",
-                "cooldown": 40,
+                "type": "Fire",                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
@@ -26031,7 +25799,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "kerauno",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Orserk's exclusive skill. Summons a blade of lightning while leaping into the air before throwing it at an enemy.\n"
@@ -26039,7 +25807,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "lightning_strike",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 40,
                 "power": 120,
                 "description": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.\n"
@@ -26047,7 +25815,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "spark_blast",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 2,
                 "power": 30,
                 "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.\n"
@@ -26055,7 +25823,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "draconic_breath",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
@@ -26063,7 +25831,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "lightning_streak",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Generates a lightning bolt that moves forward in a line.\n"
@@ -26071,7 +25839,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "tri-lightning",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Generates lightning that strikes an enemy three times from above.\n"
@@ -26079,7 +25847,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "lightning_bolt",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
@@ -26273,15 +26041,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "dark_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
@@ -26289,7 +26056,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -26297,7 +26064,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -26305,7 +26072,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -26313,7 +26080,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "divine_disaster",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 45,
                 "power": 160,
                 "description": "Shadowbeak's exclusive skill. Charges forward while generating orbs of light that automatically capture enemies. The orbs automatically capture enemies, before releasing a barrage of lasers.\n"
@@ -26321,7 +26088,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -26518,15 +26285,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 7,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -26534,7 +26300,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -26542,15 +26308,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 30,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -26558,16 +26323,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "spear_thrust",
-                "type": "normal",
-                "cooldown": 40,
+                "type": "Normal",                "cooldown": 40,
                 "power": 120,
                 "description": "Paladius' exclusive skill. Clads itself in holy power before charging forward with its spear. The shield in its other hand protects from attacks during the charge.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "normal",
-                "cooldown": 55,
+                "type": "Normal",                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -26763,7 +26526,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -26771,15 +26534,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 15,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -26787,7 +26549,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -26795,7 +26557,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "rock_lance",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
@@ -26803,7 +26565,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "twin_spears",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 40,
                 "power": 120,
                 "description": "Necromus' exclusive skill. Clads its twin spears with vicious whirlwinds and charges forward, thrusting them one after the other.\n"
@@ -26811,7 +26573,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -27004,15 +26766,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -27020,7 +26781,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -27028,7 +26789,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -27036,7 +26797,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "crystal_wing",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 24,
                 "power": 110,
                 "description": "Frostallion's exclusive skill. Dashes forward while creating frigid air around its wings, using them to slash enemies.\n"
@@ -27044,7 +26805,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -27052,7 +26813,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -27247,15 +27008,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 7,
                 "name": "dragon_burst",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges draconic energy, damaging those around it.\n"
@@ -27263,15 +27023,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "flare_storm",
-                "type": "fire",
-                "cooldown": 18,
+                "type": "Fire",                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
             {
                 "level": 22,
                 "name": "draconic_breath",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
@@ -27279,7 +27038,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "beam_comet",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 50,
                 "power": 140,
                 "description": "Jetragon's exclusive skill. Flies at enemies on illuminated wings while firing innumerable beams. The beams explode on impact.\n"
@@ -27287,15 +27046,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
             {
                 "level": 50,
                 "name": "dragon_meteor",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
@@ -27490,7 +27248,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -27498,23 +27256,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "flare_arrow",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 15,
                 "name": "ignis_breath",
-                "type": "fire",
-                "cooldown": 15,
+                "type": "Fire",                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 22,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -27522,23 +27278,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "ignis_rage",
-                "type": "fire",
-                "cooldown": 40,
+                "type": "Fire",                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -27730,7 +27484,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "aqua_gun",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls a ball of water straight at an enemy.\n"
@@ -27738,7 +27492,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "bubble_blast",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Fires numerous bubbles that slowly pursue an enemy.\n"
@@ -27746,15 +27500,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "muscle_slam",
-                "type": "normal",
-                "cooldown": 12,
+                "type": "Normal",                "cooldown": 12,
                 "power": 80,
                 "description": "Broncherry's exclusive skill. Turns sideways before tackling enemies in front of it, sending them flying into the air.\n"
             },
             {
                 "level": 22,
                 "name": "seed_mine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
@@ -27762,7 +27515,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "spine_vine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 25,
                 "power": 95,
                 "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
@@ -27770,7 +27523,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "aqua_burst",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of water and hurls it at an enemy.\n"
@@ -27778,7 +27531,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "hydro_laser",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
@@ -27973,7 +27726,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "shockwave",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Quickly discharges electricity, shocking those around it.\n"
@@ -27981,7 +27734,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "plasma_tornado",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Creates two balls of electric energy that fire numerous bolts of lightning at enemies.\n"
@@ -27989,7 +27742,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "botanical_smash",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 8,
                 "power": 60,
                 "description": "Dinossom's exclusive skill. Uses large tail to smash the ground in front of it, damaging enemies over a wide area.\n"
@@ -27997,7 +27750,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "draconic_breath",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
@@ -28005,7 +27758,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "tri-lightning",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Generates lightning that strikes an enemy three times from above.\n"
@@ -28013,7 +27766,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "lightning_strike",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 40,
                 "power": 120,
                 "description": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.\n"
@@ -28021,7 +27774,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "lightning_bolt",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
@@ -28213,23 +27966,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 7,
                 "name": "antler_uppercut",
-                "type": "normal",
-                "cooldown": 5,
+                "type": "Normal",                "cooldown": 5,
                 "power": 50,
                 "description": "Eikthyrdeer's exclusive skill. Charges at foes and uses antlers to launch them into the air. If used while riding, the direction of the charge can be controlled.\n"
             },
             {
                 "level": 15,
                 "name": "stone_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Fires a barrage of stones forward.\n"
@@ -28237,7 +27988,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "stone_cannon",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Digs up a boulder and hurls it at an enemy.\n"
@@ -28245,15 +27996,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 40,
                 "name": "sand_tornado",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
@@ -28261,7 +28011,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "rock_lance",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
@@ -28452,7 +28202,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "aqua_gun",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls a ball of water straight at an enemy.\n"
@@ -28460,7 +28210,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "dragon_cannon",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
@@ -28468,7 +28218,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "dragon_burst",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges draconic energy, damaging those around it.\n"
@@ -28476,7 +28226,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "mystic_whirlwind",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 10,
                 "power": 70,
                 "description": "Elphidran's exclusive skill. Generates twin whirlwinds imbued with a mysterious power that pursues enemies.\n"
@@ -28484,7 +28234,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "acid_rain",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Creates acidic clouds that pour down acid rain on enemies.\n"
@@ -28492,7 +28242,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "hydro_laser",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
@@ -28500,7 +28250,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dragon_meteor",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
@@ -28691,15 +28441,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "dark_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
@@ -28707,7 +28456,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -28715,7 +28464,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -28723,7 +28472,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "crystal_wing",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 24,
                 "power": 110,
                 "description": "Frostallion's exclusive skill. Dashes forward while creating frigid air around its wings, using them to slash enemies.\n"
@@ -28731,7 +28480,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -28739,7 +28488,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -28937,39 +28686,35 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "flare_arrow",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 30,
                 "name": "lightning_streak",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Generates a lightning bolt that moves forward in a line.\n"
@@ -28977,16 +28722,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
             {
                 "level": 50,
                 "name": "ignis_rage",
-                "type": "fire",
-                "cooldown": 40,
+                "type": "Fire",                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             }
@@ -29365,15 +29108,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -29381,15 +29123,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 22,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -29397,7 +29138,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -29405,7 +29146,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -29413,7 +29154,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -29604,7 +29345,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -29612,7 +29353,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -29620,7 +29361,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -29628,15 +29369,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "kingly_slam",
-                "type": "normal",
-                "cooldown": 21,
+                "type": "Normal",                "cooldown": 21,
                 "power": 100,
                 "description": "Kingpaca's exclusive skill. Leaps high into the air before smashing into an enemy with its massive body.\n"
             },
             {
                 "level": 30,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -29644,7 +29384,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "aqua_burst",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of water and hurls it at an enemy.\n"
@@ -29652,7 +29392,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -29847,7 +29587,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -29855,7 +29595,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "stone_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Fires a barrage of stones forward.\n"
@@ -29863,7 +29603,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -29871,7 +29611,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -29879,7 +29619,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "frost_burst",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 100,
                 "description": "Ice Reptyro's exclusive skill. Raises its front legs and slams them into the ground causing frozen blasts under its enemies. It simultaneously pounds them with snow balls from above.\n"
@@ -29887,7 +29627,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -29895,7 +29635,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "rock_lance",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
@@ -30098,39 +29838,35 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 15,
                 "name": "flare_arrow",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 22,
                 "name": "hellfire_claw",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 70,
                 "description": "Incineram's exclusive skill. Draws near enemies using its left claw to slash them into the air before cutting them down with its right claw.\n"
             },
             {
                 "level": 30,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -30138,16 +29874,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
             {
                 "level": 50,
                 "name": "ignis_rage",
-                "type": "fire",
-                "cooldown": 40,
+                "type": "Fire",                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             }
@@ -30336,7 +30070,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -30344,15 +30078,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "normal",
-                "cooldown": 4,
+                "type": "Normal",                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -30360,15 +30093,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 30,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -30376,7 +30108,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -30384,7 +30116,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -30575,15 +30307,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "dragon_cannon",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
@@ -30591,23 +30322,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "flare_storm",
-                "type": "fire",
-                "cooldown": 18,
+                "type": "Fire",                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
             {
                 "level": 22,
                 "name": "ignis_breath",
-                "type": "fire",
-                "cooldown": 15,
+                "type": "Fire",                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 30,
                 "name": "tri-lightning",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Generates lightning that strikes an enemy three times from above.\n"
@@ -30615,15 +30344,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
             {
                 "level": 50,
                 "name": "dragon_meteor",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
@@ -30814,15 +30542,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "dragon_cannon",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
@@ -30830,23 +30557,21 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "flare_arrow",
-                "type": "fire",
-                "cooldown": 10,
+                "type": "Fire",                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 30,
                 "name": "dragon_burst",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges draconic energy, damaging those around it.\n"
@@ -30854,16 +30579,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "ignis_breath",
-                "type": "fire",
-                "cooldown": 15,
+                "type": "Fire",                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
@@ -31061,15 +30784,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "poison_blast",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls poison sludge at an enemy.\n"
@@ -31077,40 +30799,35 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "fire",
-                "cooldown": 7,
+                "type": "Fire",                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "ignis_breath",
-                "type": "fire",
-                "cooldown": 15,
+                "type": "Fire",                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 30,
                 "name": "flare_storm",
-                "type": "fire",
-                "cooldown": 18,
+                "type": "Fire",                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "fire",
-                "cooldown": 40,
+                "type": "Fire",                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "fire",
-                "cooldown": 55,
+                "type": "Fire",                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
@@ -31313,7 +31030,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "dark_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Unleashes a sphere of darkness that slowly tracks down the enemy.\n"
@@ -31321,7 +31038,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -31329,7 +31046,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -31337,7 +31054,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -31345,7 +31062,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -31353,7 +31070,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -31361,7 +31078,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -31561,7 +31278,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "stone_cannon",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Digs up a boulder and hurls it at an enemy.\n"
@@ -31569,7 +31286,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -31577,15 +31294,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "power_bomb",
-                "type": "normal",
-                "cooldown": 15,
+                "type": "Normal",                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 22,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -31593,7 +31309,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "earth_impact",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Mammorest's exclusive skill. Uses massive body to shake the earth, dealing damage over a wide area.\n"
@@ -31601,7 +31317,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -31609,7 +31325,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -31799,7 +31515,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -31807,15 +31523,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 15,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -31823,7 +31538,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -31831,7 +31546,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "iceberg",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Summons a sharp ice lance under an enemy.\n"
@@ -31839,7 +31554,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -31847,7 +31562,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -32051,7 +31766,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "spark_blast",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 2,
                 "power": 30,
                 "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.\n"
@@ -32059,7 +31774,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "shockwave",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Quickly discharges electricity, shocking those around it.\n"
@@ -32067,7 +31782,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "lightning_streak",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Generates a lightning bolt that moves forward in a line.\n"
@@ -32075,7 +31790,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "blast_punch",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 14,
                 "power": 85,
                 "description": "Mossanda Lux's exclusive skill. Winds up its fist before pummeling an enemy with a flurry of electrically charged punches.\n"
@@ -32083,7 +31798,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "tri-lightning",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Generates lightning that strikes an enemy three times from above.\n"
@@ -32091,7 +31806,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "lightning_strike",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 40,
                 "power": 120,
                 "description": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.\n"
@@ -32099,7 +31814,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "lightning_bolt",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
@@ -32295,15 +32010,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "fire",
-                "cooldown": 2,
+                "type": "Fire",                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "shadow_burst",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Quickly discharges dark energy, damaging those around it.\n"
@@ -32311,15 +32025,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "ignis_breath",
-                "type": "fire",
-                "cooldown": 15,
+                "type": "Fire",                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 22,
                 "name": "spirit_flame",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Fires three balls of malice that relentlessly pursue an enemy.\n"
@@ -32327,7 +32040,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "dark_charge",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 14,
                 "power": 85,
                 "description": "Pyrin Noct's exclusive skill. Charges forward while clad in a veil of dark flames. Flames continue to burn in its trajectory.\n"
@@ -32335,15 +32048,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "fire",
-                "cooldown": 40,
+                "type": "Fire",                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -32539,7 +32251,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "spark_blast",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 2,
                 "power": 30,
                 "description": "The user releases a lightning ball that expands outward in a forward, circular pattern.\n"
@@ -32547,7 +32259,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "dragon_cannon",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
@@ -32555,7 +32267,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "shockwave",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Quickly discharges electricity, shocking those around it.\n"
@@ -32563,7 +32275,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "lightning_streak",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 16,
                 "power": 75,
                 "description": "Generates a lightning bolt that moves forward in a line.\n"
@@ -32571,7 +32283,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "draconic_breath",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
@@ -32579,7 +32291,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "lightning_strike",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 40,
                 "power": 120,
                 "description": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.\n"
@@ -32587,7 +32299,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "lightning_bolt",
-                "type": "electric",
+                "type": "Electric",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
@@ -32799,7 +32511,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -32807,7 +32519,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -32815,7 +32527,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "focus_shot",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 9,
                 "power": 65,
                 "description": "Robinquill's exclusive skill. Takes aim while drawing its bow before loosing a powerful shot at an enemy.\n"
@@ -32823,7 +32535,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "stone_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Fires a barrage of stones forward.\n"
@@ -32831,7 +32543,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "sand_tornado",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
@@ -32839,7 +32551,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
@@ -32847,7 +32559,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "rock_lance",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
@@ -33037,7 +32749,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "sand_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls sticky mud at an enemy.\n"
@@ -33045,7 +32757,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "dragon_cannon",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls an energy ball imbued with draconic energy at an enemy.\n"
@@ -33053,7 +32765,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "stone_blast",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Fires a barrage of stones forward.\n"
@@ -33061,7 +32773,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "stone_cannon",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Digs up a boulder and hurls it at an enemy.\n"
@@ -33069,7 +32781,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "sand_tornado",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
@@ -33077,7 +32789,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "draconic_breath",
-                "type": "dragon",
+                "type": "Dragon",
                 "cooldown": 15,
                 "power": 70,
                 "description": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.\n"
@@ -33085,7 +32797,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "rock_lance",
-                "type": "ground",
+                "type": "Ground",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Generates a sharp rock spear under an enemy.\n"
@@ -33275,7 +32987,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "hydro_jet",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a high speed ball of water at an enemy.\n"
@@ -33283,7 +32995,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -33291,7 +33003,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "aqua_gun",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls a ball of water straight at an enemy.\n"
@@ -33299,7 +33011,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -33307,7 +33019,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "aqua_burst",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of water and hurls it at an enemy.\n"
@@ -33315,7 +33027,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -33323,7 +33035,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "hydro_laser",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
@@ -33520,15 +33232,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "normal",
-                "cooldown": 2,
+                "type": "Normal",                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "ice_missile",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 3,
                 "power": 30,
                 "description": "Creates ice lances in the air that fly towards enemies.\n"
@@ -33536,7 +33247,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "icicle_cutter",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 10,
                 "power": 55,
                 "description": "Creates a crescent blade of ice and hurls it forward.\n"
@@ -33544,7 +33255,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "cryst_breath",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 22,
                 "power": 90,
                 "description": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.\n"
@@ -33552,7 +33263,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "nightmare_ball",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of darkness and hurls it at an enemy.\n"
@@ -33560,7 +33271,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "blizzard_spike",
-                "type": "ice",
+                "type": "Ice",
                 "cooldown": 45,
                 "power": 130,
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
@@ -33568,7 +33279,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "dark_laser",
-                "type": "dark",
+                "type": "Dark",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
@@ -33771,7 +33482,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "wind_cutter",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 2,
                 "power": 30,
                 "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
@@ -33779,7 +33490,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "aqua_gun",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 4,
                 "power": 40,
                 "description": "Hurls a ball of water straight at an enemy.\n"
@@ -33787,7 +33498,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "seed_mine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 13,
                 "power": 65,
                 "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
@@ -33795,7 +33506,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "grass_tornado",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 18,
                 "power": 80,
                 "description": "Generates two tornadoes on either side before launching them at an enemy.\n"
@@ -33803,7 +33514,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "spine_vine",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 25,
                 "power": 95,
                 "description": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.\n"
@@ -33811,7 +33522,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "aqua_burst",
-                "type": "water",
+                "type": "Water",
                 "cooldown": 30,
                 "power": 100,
                 "description": "Creates a giant ball of water and hurls it at an enemy.\n"
@@ -33819,7 +33530,7 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "solar_blast",
-                "type": "grass",
+                "type": "Grass",
                 "cooldown": 55,
                 "power": 150,
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
