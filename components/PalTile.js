@@ -70,11 +70,11 @@ const PalTile = ({ pal, tileWidth, tileHeight, spacing, isCaptured, onCapturePre
     },
     captureButton: {
       position: 'absolute',
-      top: 10, // Adjust the top position
-      left: 10, // Adjust the left position
+      top: 5, // Set top to 0 to align with the top edge
+      left: 5, // Set left to 0 to align with the left edge
       width: 30,
       height: 30,
-    },
+    },    
   });
 
   return (
@@ -89,7 +89,7 @@ const PalTile = ({ pal, tileWidth, tileHeight, spacing, isCaptured, onCapturePre
         <Text style={styles.rarityText}>{pal.rarity}</Text>
       </View>
       <Text style={styles.text}>{pal.name}</Text>
-      <TouchableOpacity onPress={onCapturePress} style={styles.captureButton}>
+      <TouchableOpacity onPress={onCapturePress} style={[styles.captureButton]}>
         <Image
           source={require('../assets/images/Sphere_icon.png')}
           style={[
