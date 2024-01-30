@@ -1,22 +1,59 @@
 import React, { useState, useEffect } from 'react';
-import { FlatList, Text, TextInput, View, StyleSheet } from 'react-native';
+import { FlatList, Text, TextInput, View, StyleSheet, TouchableOpacity, CheckBox, Image } from 'react-native';
 import { useTheme } from './ThemeContext';
+import TypesList from '../assets/data/TypesList';
+import SuitabilitiesProfiles from '../assets/data/SuitabilitiesProfiles';
+import FiltersModal from './FiltersModal'; // Import the FilterModal component
 
 const SearchableList = ({ data, renderItem, emptyStateText, numColumns }) => {
   const { currentTheme } = useTheme();
 
   const [searchText, setSearchText] = useState('');
   const [filteredData, setFilteredData] = useState(data);
+  const [isFilterModalVisible, setFilterModalVisible] = useState(false);
+  const [selectedTypes, setSelectedTypes] = useState([]);
+  const [selectedSuitabilities, setSelectedSuitabilities] = useState([]);
 
   useEffect(() => {
-    filterData(searchText);
-  }, [searchText]);
+    filterData(searchText, selectedTypes, selectedSuitabilities);
+  }, [searchText, selectedTypes, selectedSuitabilities]);
 
-  const filterData = (text) => {
-    const filtered = data.filter((item) =>
-      item.name.toLowerCase().includes(text.toLowerCase())
-    );
+  const filterData = (text, types, suitabilities) => {
+    const filtered = data.filter((item) => {
+      const nameMatch = item.name.toLowerCase().includes(text.toLowerCase());
+      
+      // Check if all selected types are present in the pal's types array.
+      const typeMatch =
+        types.length === 0 ||
+        types.every((type) => item.types.includes(type));
+  
+      // Check if all selected suitabilities are present in the pal's suitabilities array.
+      const suitabilityMatch =
+        suitabilities.length === 0 ||
+        suitabilities.every((suitability) =>
+          item.suitability.some((s) => s.type === suitability)
+        );
+  
+      return nameMatch && typeMatch && suitabilityMatch;
+    });
     setFilteredData(filtered);
+  };
+  
+
+  const toggleTypeFilter = (type) => {
+    if (selectedTypes.includes(type)) {
+      setSelectedTypes(selectedTypes.filter((t) => t !== type));
+    } else {
+      setSelectedTypes([...selectedTypes, type]);
+    }
+  };
+
+  const toggleSuitabilityFilter = (suitability) => {
+    if (selectedSuitabilities.includes(suitability)) {
+      setSelectedSuitabilities(selectedSuitabilities.filter((s) => s !== suitability));
+    } else {
+      setSelectedSuitabilities([...selectedSuitabilities, suitability]);
+    }
   };
 
   return (
@@ -27,16 +64,62 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns }) => {
         onChangeText={setSearchText}
         value={searchText}
       />
-      
-      {filteredData.length === 0 && <Text style={styles.emptyState}>{emptyStateText}</Text>}
-        <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
-          <FlatList
-            data={filteredData}
-            renderItem={renderItem}
-            keyExtractor={(item) => `${item.key}`} // Use a combination of key and variant as a unique key
-            numColumns={numColumns}
-          />
+
+      <TouchableOpacity
+        style={styles.filterButton}
+        onPress={() => setFilterModalVisible(true)}
+      >
+        <Text>Filter</Text>
+      </TouchableOpacity>
+
+      <FiltersModal // Use the FilterModal component
+        isVisible={isFilterModalVisible}
+        onClose={() => setFilterModalVisible(false)}
+      >
+        <View style={styles.filterSection}>
+          <Text style={styles.sectionTitle}>Types:</Text>
+          <View style={styles.filterOptionRow}>
+            {TypesList.map((type) => (
+              <View key={type.type} style={styles.filterOption}>
+                <CheckBox
+                  value={selectedTypes.includes(type.type)}
+                  onValueChange={() => toggleTypeFilter(type.type)}
+                />
+                <Image source={type.iconFileName} style={styles.icon} />
+                <Text>{type.type}</Text>
+              </View>
+            ))}
+          </View>
         </View>
+
+        <View style={styles.filterSection}>
+          <Text style={styles.sectionTitle}>Suitabilities:</Text>
+          <View style={styles.filterOptionRow}>
+            {SuitabilitiesProfiles.map((suitability) => (
+              <View key={suitability.workName} style={styles.filterOption}>
+                <CheckBox
+                  value={selectedSuitabilities.includes(suitability.workName)}
+                  onValueChange={() => toggleSuitabilityFilter(suitability.workName)}
+                />
+                {suitability.iconFileName && (
+                  <Image source={suitability.iconFileName} style={styles.icon} />
+                )}
+                <Text>{suitability.workName}</Text>
+              </View>
+            ))}
+          </View>
+        </View>
+      </FiltersModal>
+
+      {filteredData.length === 0 && <Text style={styles.emptyState}>{emptyStateText}</Text>}
+      <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
+        <FlatList
+          data={filteredData}
+          renderItem={renderItem}
+          keyExtractor={(item) => `${item.key}`}
+          numColumns={numColumns}
+        />
+      </View>
     </View>
   );
 };
@@ -65,6 +148,50 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginTop: 20,
     color: 'gray',
+  },
+  filterButton: {
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    marginHorizontal: 10,
+    borderWidth: 1,
+    borderColor: 'gray',
+    borderRadius: 5,
+    alignSelf: 'flex-end',
+  },
+  filterModal: {
+    backgroundColor: 'white',
+    padding: 20,
+    height: '80%',
+    marginTop: '20%',
+  },
+  closeFilterButton: {
+    padding: 10,
+  },
+  closeButtonText: {
+    color: 'blue',
+  },
+  filterSection: {
+    marginBottom: 20,
+  },
+  sectionTitle: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+  filterOptionRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+  },
+  filterOption: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 10,
+    marginRight: 20,
+  },
+  icon: {
+    width: 20,
+    height: 20,
+    marginRight: 10,
   },
 });
 

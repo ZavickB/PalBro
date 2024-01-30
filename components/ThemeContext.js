@@ -5,20 +5,23 @@ const ThemeContext = createContext();
 // Define your theme variables with additional properties
 const themes = {
   light: {
-    backgroundColor: '#F5F5F5', // Light gray
+    backgroundColor: '#FFFFFF', // White
     textColor: '#333333', // Dark gray
-    primaryColor: '#3498db', // Light blue
-    secondaryColor: '#27ae60', // Light green
-    // Add other theme variables here
+    primaryColor: '#007BFF', // Blue
+    secondaryColor: '#28A745', // Green
+    modalBackground: 'rgba(0, 0, 0, 0.5)', // Semi-transparent black
+    modalContentBackground: '#FFFFFF', // White
   },
   dark: {
-    backgroundColor: '#222222', // Dark gray
+    backgroundColor: '#333333', // Dark gray
     textColor: '#FFFFFF', // White
     primaryColor: '#1E90FF', // Dark blue
-    secondaryColor: '#8A2BE2', // Dark purple
-    // Add other theme variables here
+    secondaryColor: '#FF6B6B', // Red
+    modalBackground: 'rgba(0, 0, 0, 0.7)', // Semi-transparent black
+    modalContentBackground: '#333333', // Dark gray
   },
 };
+
 
 export const ThemeProvider = ({ children }) => {
   const [currentTheme, setCurrentTheme] = useState(themes.light);

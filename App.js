@@ -4,6 +4,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import MainView from './views/MainView';
 import DetailedView from './views/DetailedView';
 import { ThemeProvider } from './components/ThemeContext'; // Make sure the import path is correct
+import MyPalsView from './views/MyPalsView';
 
 const Drawer = createDrawerNavigator();
 
@@ -14,6 +15,7 @@ export default function App() {
         <Drawer.Navigator initialRouteName="Home" screenOptions={{headerShown: false}} >
           <Drawer.Screen name="Home" component={MainView} />
           <Drawer.Screen name="Details" component={DetailedView} />
+          <Drawer.Screen name="My Pals" component={MyPalsView} />
           {/* Add more routes as needed */}
         </Drawer.Navigator>
       </NavigationContainer>

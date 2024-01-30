@@ -63,7 +63,7 @@ const getTypeIcon = (type) => {
         "Water": require('../assets/images/types/Water_icon_small.png'),
         "Electric": require('../assets/images/types/Electric_icon_small.png'),
         "Grass": require('../assets/images/types/Grass_icon_small.png'),
-        "Normal": require('../assets/images/types/Neutral_icon_small.png'),
+        "Normal": require('../assets/images/types/Normal_icon_small.png'),
         "Dark": require('../assets/images/types/Dark_icon_small.png'),
         "Ice": require('../assets/images/types/Ice_icon_small.png'),
     };
