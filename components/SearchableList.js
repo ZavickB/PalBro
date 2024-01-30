@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { FlatList, Text, TextInput, View, StyleSheet, TouchableOpacity, CheckBox, Image } from 'react-native';
+import { FlatList, Text, TextInput, View, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { useTheme } from './ThemeContext';
 import TypesList from '../assets/data/TypesList';
 import SuitabilitiesProfiles from '../assets/data/SuitabilitiesProfiles';
 import FiltersModal from './FiltersModal'; // Import the FilterModal component
+import CheckBox from 'expo-checkbox';
 
 const SearchableList = ({ data, renderItem, emptyStateText, numColumns }) => {
   const { currentTheme } = useTheme();
