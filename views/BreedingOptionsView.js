@@ -1,48 +1,121 @@
-import React from 'react';
-import { View, Text, Image, ScrollView, StyleSheet } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, Text, Image, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
 import TypeBadge from '../components/TypeBadge';
 import TopBar from '../components/TopBar';
-import { useTheme } from '../components/ThemeContext'; // Import the useTheme hook
+import { useTheme } from '../components/ThemeContext';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
+import SwitchButton from '../components/SwitchButton'; // Import the SwitchButton component
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { ActivityIndicator } from 'react-native';
 
 const BreedingOptionsView = ({ route, navigation }) => {
   const { palData } = route.params;
-  const { currentTheme } = useTheme(); // Get the current theme from the context
+  const { currentTheme } = useTheme();
+  const [capturedPals, setCapturedPals] = useState([]);
+  const [isUsingCapturedPals, setIsUsingCapturedPals] = useState(false); // State to toggle between using captured pals or default list
+  const [potentialParentsData, setPotentialParentsData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true); // State to track loading
 
-  // Function to calculate potential parent couples
-  const calculatePotentialParents = (selectedPal) => {
-    const potentialParents = [];
+  const STORAGE_KEY = 'capturedPals';
 
-    // Iterate through all pals
-    for (const pal of PalsProfilesStatsAndBreedings) {
-      const { breedings } = pal;
+  // Define capturedPalsData outside of useEffect
+  const capturedPalsData = PalsProfilesStatsAndBreedings.filter((pal) =>
+    capturedPals.includes(pal.key)
+  );
 
-      // Check if the pal has breedings
-      if (breedings) {
-        for (const key in breedings) {
-          if (breedings[key] === selectedPal.name) {
+// Function to calculate potential parent couples
+const calculatePotentialParents = (selectedPal, useCapturedPals) => {
+  const palsList = useCapturedPals ? capturedPalsData : PalsProfilesStatsAndBreedings;
+  const potentialParents = [];
+
+  // Add logging to check the value of selectedPal
+  console.log('Selected Pal:', selectedPal);
+
+  // Iterate through all pals
+  for (const pal of palsList) {
+    const { breedings } = pal;
+
+    // Check if the pal has breedings
+    if (breedings) {
+      for (const key in breedings) {
+        if (breedings[key] === selectedPal.name) {
+          // Find the parent pal by name
+          const parent = palsList.find((p) => p.name === key);
+
+          // Check if the parent is not undefined
+          if (parent) {
             // Found a potential parent couple
-            const parentCouple = [pal, PalsProfilesStatsAndBreedings.find((p) => p.name === key)];
-            console.log('Found a potential parent couple:', pal.name, 'and', key);
-            //check if the couple is already in the array
+            const parentCouple = [pal, parent];
+
+            // Add logging to check the value of parentCouple
+            console.log('Parent Couple:', parentCouple);
+
+            // Check if the couple is already in the array
             let alreadyInArray = false;
             for (const couple of potentialParents) {
-                if (couple[0].name === parentCouple[0].name && couple[1].name === parentCouple[1].name || couple[0].name === parentCouple[1].name && couple[1].name === parentCouple[0].name) {
-                    alreadyInArray = true;
-                }
+              if (
+                (couple[0].name === parentCouple[0].name &&
+                  couple[1].name === parentCouple[1].name) ||
+                (couple[0].name === parentCouple[1].name &&
+                  couple[1].name === parentCouple[0].name)
+              ) {
+                alreadyInArray = true;
+              }
             }
-            if (!alreadyInArray){
-                potentialParents.push(parentCouple);
+            if (!alreadyInArray) {
+              potentialParents.push(parentCouple);
             }
           }
         }
       }
     }
-    return potentialParents;
+  }
+  return potentialParents;
+};
+
+  const getData = async (key) => {
+    try {
+      const value = await AsyncStorage.getItem(key);
+      console.log('Retrieved data:', value); // Add this line
+      return value !== null ? JSON.parse(value) : [];
+    } catch (error) {
+      console.error('Error retrieving data:', error);
+      return [];
+    }
   };
 
-  const potentialParentsData = calculatePotentialParents(palData);
-  console.log(potentialParentsData);
+  useEffect(() => {
+    setIsUsingCapturedPals(false);
+  }, [palData]);
+  
+  useEffect(() => {
+    getData(STORAGE_KEY)
+      .then((storedCapturedPals) => {
+        if (storedCapturedPals !== null) {
+          // Data found, set it in the state
+          setCapturedPals(storedCapturedPals);
+        }
+        setIsLoading(false); // Mark loading as complete
+      })
+      .catch((error) => {
+        console.error('Error loading data:', error);
+        setIsLoading(false); // Mark loading as complete even in case of error
+      });
+  }, []); // Run this effect only once on component mount
+
+  // Calculate potential parents data when the capturedPals or isUsingCapturedPals state changes
+  useEffect(() => {
+    const updatedPotentialParentsData = calculatePotentialParents(
+      palData,
+      isUsingCapturedPals
+    );
+    setPotentialParentsData(updatedPotentialParentsData);
+  }, [palData, isUsingCapturedPals]);
+
+  // Toggle between using captured pals or default list
+  const toggleList = () => {
+    setIsUsingCapturedPals((prev) => !prev);
+  };
 
   const styles = StyleSheet.create({
     container: {
@@ -109,24 +182,29 @@ const BreedingOptionsView = ({ route, navigation }) => {
             <TypeBadge types={palData.types} />
           </View>
 
-          {/* Display potential parent couples */}
+          <SwitchButton onPress={toggleList} isUsingCapturedPals={isUsingCapturedPals} />
+
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Potential Parent Couples:</Text>
-            {potentialParentsData.map((couple, index) => (
-              <View key={index} style={styles.palListItem}>
-                {couple.map((pal, palIndex) => (
-                  <React.Fragment key={palIndex}>
-                    {pal.image ? (
-                      <Image source={pal.image} style={styles.palImage} />
-                    ) : (
-                      console.log('No image available for', pal.name)
-                    )}
-                    <Text style={styles.description}>{pal.name}</Text>
-                    {palIndex === 0 && <Text style={styles.description}> + </Text>}
-                  </React.Fragment>
-                ))}
-              </View>
-            ))}
+            {potentialParentsData.length > 0 ? (
+              potentialParentsData.map((couple, index) => (
+                <View key={index} style={styles.palListItem}>
+                  {couple.map((pal, palIndex) => (
+                    <React.Fragment key={palIndex}>
+                      {pal.image ? (
+                        <Image source={pal.image} style={styles.palImage} />
+                      ) : (
+                        console.log('No image available for', pal.name)
+                      )}
+                      <Text style={styles.description}>{pal.name}</Text>
+                      {palIndex === 0 && <Text style={styles.description}> + </Text>}
+                    </React.Fragment>
+                  ))}
+                </View>
+              ))
+            ) : (
+              <Text style={styles.description}>Not available</Text>
+            )}
           </View>
         </View>
       </ScrollView>
