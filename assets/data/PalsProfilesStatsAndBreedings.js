@@ -9269,12 +9269,12 @@ const PalsProfilesStatsAndBreedings = [
         "id": 39,
         "key": "039",
         "image": require('..\/images\/039.png'),
-        "name": "Ribbuny",
-        "wiki": "https:\/\/palworld.fandom.com\/wiki\/Ribbuny",
+        "name": "Ribunny",
+        "wiki": "https:\/\/palworld.fandom.com\/wiki\/Ribunny",
         "types": [
             "Normal"
         ],
-        "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/7\/7e\/Ribbuny_menu.png\/",
+        "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/7\/7e\/Ribunny_menu.png\/",
         "suitability": [
             {
                 "type": "Handiwork",
