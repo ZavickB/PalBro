@@ -4,10 +4,12 @@ import TopBar from '../components/TopBar';
 import { useTheme } from '../components/ThemeContext';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import { FlatList } from 'react-native-gesture-handler';
+import ItemsList from '../assets/data/ItemsList';
 
 const DropsView = ({ route, navigation }) => {
   const { currentTheme } = useTheme();
 
+  
   // Function to extract unique drops from PalsProfilesStatsAndBreedings data
   const getUniqueDrops = () => {
     const uniqueDrops = new Set();
@@ -19,6 +21,7 @@ const DropsView = ({ route, navigation }) => {
         });
       }
     });
+
     return Array.from(uniqueDrops);
   };
 
@@ -56,6 +59,10 @@ const DropsView = ({ route, navigation }) => {
         keyExtractor={(item) => item}
         renderItem={({ item }) => (
           <View style={styles.dropItem}>
+            <Image
+              source={ ItemsList.find((itemObject) => itemObject.name === item)?.icon }
+              style={{ width: 30, height: 30, marginRight: 10 }}
+            />
             <Text style={styles.dropText}>{item}</Text>
           </View>
         )}
