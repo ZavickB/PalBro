@@ -3,6 +3,7 @@ import { View, StyleSheet, Text, Image, TouchableOpacity, Modal, FlatList } from
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings'; // Import the pal data
 import TypeBadge from './TypeBadge'; // Import the TypeBadge component
 import { useTheme } from './ThemeContext'; // Import the useTheme hook
+import PalSelectionModal from './PalSelectionModal';
 
 // Function to find the baby based on the selected pal's breedings
 const findBaby = (palData, selectedPalName) => {
@@ -53,31 +54,13 @@ const PalBreedingInfosBlock = ({ palData, navigation }) => {
         </View>
       </TouchableOpacity>
 
-      <Modal
-        animationType="slide"
-        transparent={true}
-        visible={isModalVisible}
-        onRequestClose={() => setModalVisible(false)}
-      >
-        <View style={styles.modalContainer}>
-          <FlatList
-            data={PalsProfilesStatsAndBreedings}
-            keyExtractor={(item) => item.name}
-            renderItem={({ item }) => (
-              <TouchableOpacity onPress={() => handlePalSelection(item)}>
-                <View style={styles.pickerItem}>
-                  <Image source={item.image} style={styles.pickerItemImage} />
-                  <Text style={styles.pickerItemText}>#{item.key} {item.name}</Text>
-                  <View style={styles.typesContainer}>
-                    <TypeBadge types={item.types} />
-                  </View>
-                </View>
-              </TouchableOpacity>
-            )}
-          />
-        </View>
-      </Modal>
-
+      <PalSelectionModal
+        isModalVisible={isModalVisible}
+        setModalVisible={setModalVisible}
+        PalsProfilesStatsAndBreedings={PalsProfilesStatsAndBreedings}
+        handlePalSelection={handlePalSelection}
+      />
+      
       {babyInfo && (
         <TouchableOpacity onPress={() => handleBabyPress(babyInfo)}>
           <View style={styles.breededBabyInfo}>
@@ -139,30 +122,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     marginTop: 5,
   },
-  modalContainer: {
-    flex: 1,
-    backgroundColor: 'white',
-    paddingTop: 50,
-  },
-  pickerItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-  },
-  pickerItemImage: {
-    width: 30,
-    height: 30,
-    resizeMode: 'cover',
-    marginRight: 10,
-  },
-  pickerItemText: {
-    fontSize: 16,
-  },
-  pickerItemNumber: {
-    fontSize: 14,
-    marginLeft: 10,
-  },
+  
 });
 
 export default PalBreedingInfosBlock;

@@ -42,7 +42,6 @@ const PalStatsBlock = ({ stats, statsOrder }) => {
 
   return (
     <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
-      <Text style={[styles.title, { color: currentTheme.textColor } ]}>Statistics:</Text>
       <View style={styles.columnsContainer}>
         {statEntries.map(([key, value], index) => (
           <View

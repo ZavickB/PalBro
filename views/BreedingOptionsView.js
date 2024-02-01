@@ -28,9 +28,6 @@ const calculatePotentialParents = (selectedPal, useCapturedPals) => {
   const palsList = useCapturedPals ? capturedPalsData : PalsProfilesStatsAndBreedings;
   const potentialParents = [];
 
-  // Add logging to check the value of selectedPal
-  console.log('Selected Pal:', selectedPal);
-
   // Iterate through all pals
   for (const pal of palsList) {
     const { breedings } = pal;
@@ -46,9 +43,6 @@ const calculatePotentialParents = (selectedPal, useCapturedPals) => {
           if (parent) {
             // Found a potential parent couple
             const parentCouple = [pal, parent];
-
-            // Add logging to check the value of parentCouple
-            console.log('Parent Couple:', parentCouple);
 
             // Check if the couple is already in the array
             let alreadyInArray = false;
@@ -76,7 +70,6 @@ const calculatePotentialParents = (selectedPal, useCapturedPals) => {
   const getData = async (key) => {
     try {
       const value = await AsyncStorage.getItem(key);
-      console.log('Retrieved data:', value); // Add this line
       return value !== null ? JSON.parse(value) : [];
     } catch (error) {
       console.error('Error retrieving data:', error);
@@ -173,7 +166,7 @@ const calculatePotentialParents = (selectedPal, useCapturedPals) => {
 
   return (
     <View style={styles.container}>
-      <TopBar title="Breeding Options" navigation={navigation} />
+      <TopBar title="" navigation={navigation} />
       <ScrollView style={styles.container}>
         <Image style={styles.image} source={palData.image} />
         <View style={styles.infoContainer}>

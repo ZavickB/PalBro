@@ -51,7 +51,6 @@ const MyPalsView = ({ navigation }) => {
   const getData = async (key) => {
     try {
       const value = await AsyncStorage.getItem(key);
-      console.log('Retrieved data:', value); // Add this line
       return value !== null ? JSON.parse(value) : [];
     } catch (error) {
       console.error('Error retrieving data:', error);
@@ -88,8 +87,6 @@ const MyPalsView = ({ navigation }) => {
   const capturedPalsData = PalsProfilesStatsAndBreedings.filter((pal) =>
     capturedPals.includes(pal.key)
   );
-
-  console.log('Captured pals data:', capturedPalsData); // Add this line
 
   return (
     <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>

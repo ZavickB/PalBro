@@ -1,44 +1,58 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
-import { useTheme } from './ThemeContext'; // Import the theme context
+import { View, Text, StyleSheet, Image, FlatList } from 'react-native';
+import { useTheme } from './ThemeContext';
+import ItemsList from '../assets/data/ItemsList';
 
 const PalDropsBlock = ({ drops }) => {
-  const { currentTheme } = useTheme(); // Get the current theme from context
+  const { currentTheme } = useTheme();
 
   const styles = StyleSheet.create({
     container: {
       padding: 10,
-      backgroundColor: currentTheme.backgroundColor, // Use theme-aware background color
+      backgroundColor: currentTheme.backgroundColor,
       borderRadius: 10,
       marginVertical: 10,
     },
     dropItem: {
       flexDirection: 'row',
       alignItems: 'center',
-      marginBottom: 5,
+      marginBottom: 10,
+      borderWidth: 1,
+      borderColor: currentTheme.borderColor || 'black',
+      borderRadius: 5,
+      padding: 10,
+      backgroundColor: currentTheme.itemBackgroundColor || '#fff', // Assuming your theme has this
+      justifyContent: 'space-between',
     },
     dropIcon: {
-      width: 20,
-      height: 20,
-      marginRight: 5,
-      tintColor: currentTheme.textColor, // Tint the icon based on the theme
+      width: 30,
+      height: 30,
+      marginRight: 10,
     },
     dropText: {
-      color: currentTheme.textColor, // Set text color based on the theme
+      color: currentTheme.textColor,
+      flex: 1,
+      fontWeight: 'bold',
+      fontSize: 16,
+      marginLeft: 10, // Space between icon and text
     },
   });
 
   return (
     <View style={styles.container}>
-      <Text style={{ fontSize: 18, fontWeight: 'bold', color: currentTheme.textColor }}>
-        Potential Drops:
-      </Text>
-      {drops.map((drop, index) => (
-        <View key={index} style={styles.dropItem}>
-          <Image source={drop.icon} style={styles.dropIcon} />
-          <Text style={styles.dropText}>{drop.name}</Text>
-        </View>
-      ))}
+      <FlatList
+        data={drops}
+        keyExtractor={(item) => item}
+        renderItem={({ item }) => (
+          <View style={styles.dropItem}>
+            <Image
+              source={ ItemsList.find((itemObject) => itemObject.name === item)?.icon }
+              style={styles.dropIcon}
+            />
+            <Text style={styles.dropText}>{item}</Text>
+          </View>
+        )}
+      />
     </View>
   );
 };

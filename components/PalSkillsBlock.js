@@ -57,9 +57,6 @@ const PalSkillsBlock = ({ skills }) => {
 
   return (
     <View style={styles.container}>
-      <Text style={{ fontSize: 18, fontWeight: 'bold', color: currentTheme.textColor }}>
-        Skills:
-      </Text>
       <View>
         {skills.map((skill, index) => (
           <TouchableOpacity

@@ -2,7 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import MainView from './views/MainView';
-import DetailedView from './views/DetailedView';
+import PalDetailedView from './views/PalDetailedView';
 import { ThemeProvider } from './components/ThemeContext';
 import MyPalsView from './views/MyPalsView';
 import BreedersSearchView from './views/BreedersSearchView';
@@ -17,7 +17,7 @@ export default function App() {
       <NavigationContainer>
         <Drawer.Navigator initialRouteName="Home" screenOptions={{headerShown: false}} >
           <Drawer.Screen name="Home" component={MainView} />
-          <Drawer.Screen name="Details" component={DetailedView} options={{ drawerItemStyle: { display: "none" }} }/>
+          <Drawer.Screen name="Details" component={PalDetailedView} options={{ drawerItemStyle: { display: "none" }} }/>
           <Drawer.Screen name="My Pals" component={MyPalsView} />
           <Drawer.Screen name="Breeders Search" component={BreedersSearchView} />
           <Drawer.Screen name="BreedingOptions" component={BreedingOptionsView} options={{ drawerItemStyle: { display: "none" }} }/>
