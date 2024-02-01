@@ -8,7 +8,7 @@ import MyPalsView from './views/MyPalsView';
 import BreedersSearchView from './views/BreedersSearchView';
 import BreedingOptionsView from './views/BreedingOptionsView';
 import DropsView from './views/DropsView';
-
+import MyPossibleBreedingsView from './views/MyPossibleBreedingsView';
 const Drawer = createDrawerNavigator();
 
 export default function App() {
@@ -21,7 +21,9 @@ export default function App() {
           <Drawer.Screen name="My Pals" component={MyPalsView} />
           <Drawer.Screen name="Breeders Search" component={BreedersSearchView} />
           <Drawer.Screen name="BreedingOptions" component={BreedingOptionsView} options={{ drawerItemStyle: { display: "none" }} }/>
-          <Drawer.Screen name="Items" component={DropsView} />
+          <Drawer.Screen name="Drops" component={DropsView} />
+          <Drawer.Screen name="MyPossibleBreedingsView" component={MyPossibleBreedingsView} />
+
         </Drawer.Navigator>
       </NavigationContainer>
     </ThemeProvider>

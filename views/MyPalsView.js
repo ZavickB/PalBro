@@ -7,6 +7,8 @@ import SearchableList from '../components/SearchableList';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useTheme } from '../components/ThemeContext';
 import { ActivityIndicator } from 'react-native';   
+
+
 const MyPalsView = ({ navigation }) => {
   const { currentTheme } = useTheme();
   const [capturedPals, setCapturedPals] = useState([]);
