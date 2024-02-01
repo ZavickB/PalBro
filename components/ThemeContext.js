@@ -11,6 +11,7 @@ const themes = {
     secondaryColor: '#28A745', // Green
     modalBackground: 'rgba(0, 0, 0, 0.5)', // Semi-transparent black
     modalContentBackground: '#FFFFFF', // White
+    backgroundGradient: ['purple', 'white'], // Gradient colors
   },
   dark: {
     backgroundColor: '#333333', // Dark gray
@@ -19,9 +20,9 @@ const themes = {
     secondaryColor: '#FF6B6B', // Red
     modalBackground: 'rgba(0, 0, 0, 0.7)', // Semi-transparent black
     modalContentBackground: '#333333', // Dark gray
+    backgroundGradient: ['purple', 'white'], // Gradient colors
   },
 };
-
 
 export const ThemeProvider = ({ children }) => {
   const [currentTheme, setCurrentTheme] = useState(themes.light);

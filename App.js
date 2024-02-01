@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; // Import the createBottomTabNavigator
 import MainView from './views/MainView';
 import PalDetailedView from './views/PalDetailedView';
 import { ThemeProvider } from './components/ThemeContext';
@@ -9,23 +9,26 @@ import BreedersSearchView from './views/BreedersSearchView';
 import BreedingOptionsView from './views/BreedingOptionsView';
 import DropsView from './views/DropsView';
 import MyPossibleBreedingsView from './views/MyPossibleBreedingsView';
-const Drawer = createDrawerNavigator();
+import GradientBackground from './components/GradientBackground';
+
+const Tab = createBottomTabNavigator(); // Create a Tab Navigator
 
 export default function App() {
   return (
     <ThemeProvider>
-      <NavigationContainer>
-        <Drawer.Navigator initialRouteName="Home" screenOptions={{headerShown: false}} >
-          <Drawer.Screen name="Home" component={MainView} />
-          <Drawer.Screen name="Details" component={PalDetailedView} options={{ drawerItemStyle: { display: "none" }} }/>
-          <Drawer.Screen name="My Pals" component={MyPalsView} />
-          <Drawer.Screen name="Breeders Search" component={BreedersSearchView} />
-          <Drawer.Screen name="BreedingOptions" component={BreedingOptionsView} options={{ drawerItemStyle: { display: "none" }} }/>
-          <Drawer.Screen name="Drops" component={DropsView} />
-          <Drawer.Screen name="MyPossibleBreedingsView" component={MyPossibleBreedingsView} />
-
-        </Drawer.Navigator>
-      </NavigationContainer>
+      <GradientBackground>
+        <NavigationContainer>
+          <Tab.Navigator initialRouteName="Home" screenOptions={{ headerShown: false }}>
+            <Tab.Screen name="Home" component={MainView} />
+            <Tab.Screen name="Details" component={PalDetailedView} options={{ tabBarButton: () => null }} />
+            <Tab.Screen name="My Pals" component={MyPalsView} />
+            <Tab.Screen name="Breeders Search" component={BreedersSearchView} />
+            <Tab.Screen name="BreedingOptions" component={BreedingOptionsView} options={{ tabBarButton: () => null }} />
+            <Tab.Screen name="Drops" component={DropsView} />
+            <Tab.Screen name="MyPossibleBreedingsView" component={MyPossibleBreedingsView} />
+          </Tab.Navigator>
+        </NavigationContainer>
+      </GradientBackground>
     </ThemeProvider>
   );
 }

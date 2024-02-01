@@ -131,8 +131,7 @@ const MyPossibleBreedingsView = ({ navigation }) => {
         <ActivityIndicator size="large" color="#0000ff" />
       </View>
     );
-  }
-
+  } 
     const calculatePotentialParentsForSelectedPal = (selectedPal) => {
     return calculatePotentialParents(selectedPal, capturedPalsData);
   };
