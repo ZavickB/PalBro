@@ -5,6 +5,8 @@ import { useTheme } from '../components/ThemeContext';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import ItemsList from '../assets/data/ItemsList';
 import { useMemo } from 'react';
+import GradientBackground from '../components/GradientBackground';
+
 
 const DropsView = ({ route, navigation }) => {
   const { currentTheme } = useTheme();
@@ -30,8 +32,8 @@ const DropsView = ({ route, navigation }) => {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: currentTheme.backgroundColor,
-      padding: 16,
+      paddingHorizontal: 16,
+      paddingTop: 20,
     },
     title: {
       fontSize: 24,
@@ -40,12 +42,24 @@ const DropsView = ({ route, navigation }) => {
       color: currentTheme.textColor,
     },
     dropItem: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginBottom: 10,
+      borderWidth: 1,
+      borderColor: currentTheme.borderColor,
+      borderRadius: 10,
       padding: 10,
-      borderBottomWidth: 1,
-      borderBottomColor: '#ddd',
+      backgroundColor: currentTheme.backgroundColor,
+      shadowColor: "black",
+      shadowOffset: {
+        width: 4,
+        height: 6,
+      },
+      shadowOpacity: 0.8,
+      shadowRadius: 8,
     },
     dropText: {
-      fontSize: 16,
+      fontSize: 20,
       color: currentTheme.textColor,
     },
     searchInput: {
@@ -55,32 +69,36 @@ const DropsView = ({ route, navigation }) => {
       borderRadius: 5,
       paddingHorizontal: 10,
       marginBottom: 10,
+      color: currentTheme.textColor,
     },
   });
 
   return (
-    <View style={styles.container}>
-      <TopBar title="Index of Drops" navigation={navigation} theme={currentTheme} />
-      <TextInput
-        placeholder="Search Drops..."
-        style={styles.searchInput}
-        onChangeText={setSearchText}
-        value={searchText}
-      />
-      <FlatList
-        data={filteredDrops}
-        keyExtractor={(item) => item}
-        renderItem={({ item }) => (
-          <View style={styles.dropItem}>
-            <Image
-              source={ItemsList.find((itemObject) => itemObject.name === item)?.icon}
-              style={{ width: 30, height: 30, marginRight: 10 }}
-            />
-            <Text style={styles.dropText}>{item}</Text>
-          </View>
-        )}
-      />
-    </View>
+    <GradientBackground>
+      <View style={styles.container}>
+        <TopBar title="Index of Drops" navigation={navigation} theme={currentTheme} />
+        <TextInput
+          placeholder="Search Drops..."
+          placeholderTextColor={currentTheme.textColor}
+          style={styles.searchInput}
+          onChangeText={setSearchText}
+          value={searchText}
+        />
+        <FlatList
+          data={filteredDrops}
+          keyExtractor={(item) => item}
+          renderItem={({ item }) => (
+            <View style={styles.dropItem}>
+              <Image
+                source={ItemsList.find((itemObject) => itemObject.name === item)?.icon}
+                style={{ width: 50, height: 50, marginRight: 10 }}
+              />
+              <Text style={styles.dropText}>{item}</Text>
+            </View>
+          )}
+        />
+      </View>
+    </GradientBackground>
   );
 };
 

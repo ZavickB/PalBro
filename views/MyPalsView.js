@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, TouchableOpacity, View, Dimensions } from 'react-native';
+import { StyleSheet, TouchableOpacity, View, Dimensions, RefreshControl, ActivityIndicator, ScrollView } from 'react-native';
 import PalTile from '../components/PalTile';
 import TopBar from '../components/TopBar';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import SearchableList from '../components/SearchableList';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useTheme } from '../components/ThemeContext';
-import { ActivityIndicator } from 'react-native';   
-
+import GradientBackground from '../components/GradientBackground';
 
 const MyPalsView = ({ navigation }) => {
   const { currentTheme } = useTheme();
   const [capturedPals, setCapturedPals] = useState([]);
   const [isLoading, setIsLoading] = useState(true); // State to track loading
+  const [refreshing, setRefreshing] = useState(false); // State to track refreshing
 
   const screenWidth = Dimensions.get('window').width;
   const screenHeight = Dimensions.get('window').height;
@@ -60,21 +60,31 @@ const MyPalsView = ({ navigation }) => {
     }
   };
 
-  useEffect(() => {
-    // Load captured Pals from AsyncStorage
+  const loadData = () => {
     getData(STORAGE_KEY)
       .then((storedCapturedPals) => {
         if (storedCapturedPals !== null) {
-          // Data found, set it in the state
           setCapturedPals(storedCapturedPals);
         }
-        setIsLoading(false); // Mark loading as complete
+        setIsLoading(false);
+        setRefreshing(false); // Stop the refresh indicator
       })
       .catch((error) => {
         console.error('Error loading data:', error);
-        setIsLoading(false); // Mark loading as complete even in case of error
+        setIsLoading(false);
+        setRefreshing(false); // Stop the refresh indicator in case of error
       });
-  }, []); // Empty dependency array ensures this runs only once when the component mounts
+  };
+
+  useEffect(() => {
+    loadData();
+  }, []); // Initial data load when the component mounts
+
+  const onRefresh = React.useCallback(() => {
+    setRefreshing(true);
+    // Perform your data refresh logic here
+    loadData(); // Reload the data
+  }, []);
 
   // Render a loading indicator while data is loading
   if (isLoading) {
@@ -91,37 +101,46 @@ const MyPalsView = ({ navigation }) => {
   );
 
   return (
-    <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
-      <View style={styles.appContainer}>
-        <TopBar title="My Pals" navigation={navigation} theme={currentTheme} />
-        <SearchableList
-          data={capturedPalsData} // Pass the capturedPalsData as data
-          renderItem={({ item }) => (
-            <View style={styles.listContainer}>
-              <TouchableOpacity onPress={() => handleTilePress(item)}>
-                <PalTile
-                  pal={item}
-                  tileWidth={tileWidth}
-                  tileHeight={tileHeight}
-                  spacing={spacing}
-                  onCapturePress={() => toggleCapture(item.key)}
-                  isCaptured={capturedPals.includes(item.key)}
-                />
-              </TouchableOpacity>
-            </View>
-          )}
-          numColumns={3}
-          emptyStateText="No captured Pals found."
-        />
+    <GradientBackground>
+      <View style={styles.container}>
+        <View style={styles.appContainer}>
+          <TopBar title="My Pals" navigation={navigation} theme={currentTheme} />
+          <ScrollView
+            contentContainerStyle={styles.scrollView}
+            refreshControl={
+              <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+            }
+          >
+            <SearchableList
+              data={capturedPalsData}
+              key={refreshing ? 'refreshing' : 'not_refreshing'} // Add a unique key to force re-render when refreshing
+              renderItem={({ item }) => (
+                <View style={styles.listContainer}>
+                  <TouchableOpacity onPress={() => handleTilePress(item)}>
+                    <PalTile
+                      pal={item}
+                      tileWidth={tileWidth}
+                      tileHeight={tileHeight}
+                      spacing={spacing}
+                      onCapturePress={() => toggleCapture(item.key)}
+                      isCaptured={capturedPals.includes(item.key)}
+                    />
+                  </TouchableOpacity>
+                </View>
+              )}
+              numColumns={3}
+              emptyStateText="No captured Pals found."
+            />
+          </ScrollView>
+        </View>
       </View>
-    </View>
+    </GradientBackground>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
   },
   appContainer: {
     flex: 1,
@@ -131,6 +150,14 @@ const styles = StyleSheet.create({
   listContainer: {
     flex: 1,
     alignItems: 'center',
+  },
+  loadingContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  scrollView: {
+    flexGrow: 1, // Add this to allow the ScrollView to grow with content
   },
 });
 

@@ -6,6 +6,7 @@ import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBr
 import SearchableList from '../components/SearchableList';
 import AsyncStorage from '@react-native-async-storage/async-storage'; // Import AsyncStorage
 import { useTheme } from '../components/ThemeContext';
+import GradientBackground from '../components/GradientBackground';
 
 const BreedersSearchView = ({ navigation }) => {
   const { currentTheme } = useTheme();
@@ -100,37 +101,38 @@ const BreedersSearchView = ({ navigation }) => {
   }, []); // Empty dependency array ensures this runs only once when the component mounts
 
   return (
-    <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
-      <View style={styles.appContainer}>
-        <TopBar title="Breeders Search" navigation={navigation} theme={currentTheme} />
-        <SearchableList
-          data={PalsProfilesStatsAndBreedings}
-          renderItem={({ item }) => (
-            <View style={styles.listContainer}>
-              <TouchableOpacity onPress={() => handleTilePress(item)}>
-                <PalTile
-                  pal={item}
-                  tileWidth={tileWidth}
-                  tileHeight={tileHeight}
-                  spacing={spacing}
-                  onCapturePress={() => toggleCapture(item.key)} // Pass the toggleCapture function
-                  isCaptured={capturedPals.includes(item.key)} // Check if the Pal is captured
-                />
-              </TouchableOpacity>
-            </View>
-          )}
-          numColumns={3} // Set the number of columns to 3
-          emptyStateText="No matching Pals found."
-        />
+    <GradientBackground>
+      <View style={[styles.container]}>
+        <View style={styles.appContainer}>
+          <TopBar title="Breeders Search" navigation={navigation} theme={currentTheme} />
+          <SearchableList
+            data={PalsProfilesStatsAndBreedings}
+            renderItem={({ item }) => (
+              <View style={styles.listContainer}>
+                <TouchableOpacity onPress={() => handleTilePress(item)}>
+                  <PalTile
+                    pal={item}
+                    tileWidth={tileWidth}
+                    tileHeight={tileHeight}
+                    spacing={spacing}
+                    onCapturePress={() => toggleCapture(item.key)} // Pass the toggleCapture function
+                    isCaptured={capturedPals.includes(item.key)} // Check if the Pal is captured
+                  />
+                </TouchableOpacity>
+              </View>
+            )}
+            numColumns={3} // Set the number of columns to 3
+            emptyStateText="No matching Pals found."
+          />
+        </View>
       </View>
-    </View>
+    </GradientBackground>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
   },
   appContainer: {
     flex: 1,

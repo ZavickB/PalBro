@@ -9,15 +9,23 @@ import { statsOrder } from '../components/configs/PalsStatsOrderConfig';
 import { useTheme } from '../components/ThemeContext';
 import PalSkillsBlock from '../components/PalSkillsBlock';
 import PalDropsBlock from '../components/PalDropsBlock';
+import GradientBackground from '../components/GradientBackground';
 
 const PalDetailedView = ({ route, navigation }) => {
   const { palData } = route.params;
   const { currentTheme } = useTheme();
-
+  
   const renderItem = ({ item }) => {
     switch (item.type) {
       case 'header':
         return <Image source={palData.image} style={styles.image} />;
+      case 'name':
+        return (
+          <View style={styles.section}>
+            <Text style={styles.sectionPalTitle}>#{palData.key} {palData.name}</Text>
+            <TypeBadge types={palData.types} />
+          </View>
+        );
       case 'description':
         return (
           <View style={styles.section}>
@@ -67,6 +75,7 @@ const PalDetailedView = ({ route, navigation }) => {
 
   const sections = [
     { type: 'header' },
+    { type: 'name' },
     { type: 'description' },
     { type: 'suitabilities' },
     { type: 'stats' },
@@ -86,8 +95,14 @@ const PalDetailedView = ({ route, navigation }) => {
       resizeMode: 'cover',
     },
     section: {
-      marginBottom: 16,
-      padding: 16,
+      paddingHorizontal: 16,
+      paddingVertical: 12,
+    },
+    sectionPalTitle: {
+      fontSize: 22,
+      fontWeight: 'bold',
+      marginBottom: 8,
+      color: currentTheme.textColor,
     },
     sectionTitle: {
       fontSize: 18,
@@ -100,18 +115,19 @@ const PalDetailedView = ({ route, navigation }) => {
       textAlign: 'justify',
       color: currentTheme.textColor,
     },
-    // ... add other styles as needed
   });
 
   return (
-    <View style={styles.container}>
-      <TopBar title="" navigation={navigation} />
-      <FlatList
-        data={sections}
-        renderItem={renderItem}
-        keyExtractor={(item, index) => item.type + index}
-      />
-    </View>
+    <GradientBackground>
+      <View style={styles.container}>
+        <TopBar title="" navigation={navigation} />
+        <FlatList
+          data={sections}
+          renderItem={renderItem}
+          keyExtractor={(item, index) => item.type + index}
+        />
+      </View>
+    </GradientBackground>
   );
 };
 

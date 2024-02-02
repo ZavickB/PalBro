@@ -5,42 +5,24 @@ import SolarEclipseImage from '../assets/full-solar-eclipse.png'; // Adjust the 
 import { useTheme } from './ThemeContext';
 
 const TopBar = ({ title, navigation }) => {
-  
-  const handleDrawerOpen = () => {
-    if (navigation) {
-      navigation.openDrawer();
-    }
-  };
-
-  const handleGoBack = () => {
-    if (navigation) {
-      navigation.goBack();
-    }
-  };
 
   const { toggleTheme, currentTheme } = useTheme(); // Get current theme
 
   return (
     <View
-      style={[styles.topBar, { backgroundColor: currentTheme.backgroundColor }]}
+      style={[styles.topBar]}
     >
       {title ? (
         <>
-          <TouchableOpacity style={styles.icon} onPress={handleDrawerOpen}>
-            <FontAwesome name="bars" size={24} color="black" />
-          </TouchableOpacity>
-          <Text style={styles.title}>{title}</Text>
+          <Text style={[styles.title, {color:currentTheme.textColor} ]}>{title}</Text>
           <TouchableOpacity style={styles.icon} onPress={toggleTheme}>
-            <Image source={SolarEclipseImage} style={styles.eclipseImage} />
+            <Image source={SolarEclipseImage} style={[styles.eclipseImage, {tintColor:currentTheme.textColor}]} />
           </TouchableOpacity>
         </>
       ) : (
         <>
-          <TouchableOpacity style={styles.icon} onPress={handleGoBack}>
-            <FontAwesome name="arrow-left" size={24} color="black" />
-          </TouchableOpacity>
           <TouchableOpacity style={styles.icon}  onPress={toggleTheme}>
-            <Image source={SolarEclipseImage} style={styles.eclipseImage} />
+            <Image source={SolarEclipseImage} style={[styles.eclipseImage, {tintColor:currentTheme.textColor}]} />
           </TouchableOpacity>
         </>
       )}
@@ -54,16 +36,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between', // Use space-between to separate the icons
-    backgroundColor: '#f5f5f5',
     height: 60, // Set a fixed height for the top bar
-    borderBottomWidth: 1,
-    borderBottomColor: '#ccc',
     width: '100%',
   },
   title: {
+    alignContent: 'center',
     fontSize: 20,
     fontWeight: 'bold',
-    fontFamily: 'Winter-Drink',
   },
   icon: {
     marginLeft: 10,

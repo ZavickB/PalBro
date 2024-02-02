@@ -5,7 +5,8 @@ import { useTheme } from '../components/ThemeContext';
 
 import TopBar from '../components/TopBar';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
-import { ScrollView } from 'react-native-gesture-handler';
+import { ScrollView } from 'react-native';
+import GradientBackground from '../components/GradientBackground';
 
 const MyPossibleBreedingsView = ({ navigation }) => {
   const { currentTheme } = useTheme();
@@ -144,9 +145,9 @@ const MyPossibleBreedingsView = ({ navigation }) => {
       if (potentialParents.length > 0) {
         return (
           <View key={index} style={styles.groupContainer}>
-            <Text style={styles.groupTitle}>Potential Parents for {selectedPal.name}</Text>
+            <Text style={[styles.groupTitle, {color:currentTheme.textColor}]}>Potential Parents for {selectedPal.name}</Text>
             {potentialParents.map((couple, i) => (
-              <Text key={i} style={styles.palName}>
+              <Text key={i} style={[styles.palName, {color:currentTheme.textColor}]}>
                 - {couple[0].name} x {couple[1].name}
               </Text>
             ))}
@@ -169,12 +170,14 @@ const MyPossibleBreedingsView = ({ navigation }) => {
   }
 
   return (
-    <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
-      <TopBar title="List of possible breedings" navigation={navigation} theme={currentTheme} />
-      <ScrollView style={styles.listContainer}>
-        {renderPotentialParents()}
-      </ScrollView>
-    </View>
+    <GradientBackground>
+      <View style={[styles.container]}>
+        <TopBar title="List of possible breedings" theme={currentTheme} />
+        <ScrollView style={styles.listContainer}>
+          {renderPotentialParents()}
+        </ScrollView>
+      </View>
+    </GradientBackground>
   );
 };
 
@@ -182,7 +185,6 @@ const MyPossibleBreedingsView = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
   },
   loadingContainer: {
     flex: 1,

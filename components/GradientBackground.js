@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import { useTheme } from './ThemeContext';
-import LinearGradient from 'react-native-linear-gradient';
+import {LinearGradient} from 'expo-linear-gradient';
 
 const GradientBackground = ({ children }) => {
   const { currentTheme } = useTheme();
@@ -11,7 +11,8 @@ const GradientBackground = ({ children }) => {
         colors={currentTheme.backgroundGradient}
         style={styles.gradient}
         start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 1 }}
+        end={{ x: 0, y: 1 }}
+        locations={[0.95, 1]} // Use the locations prop to control color transitions
       >
         {children}
       </LinearGradient>

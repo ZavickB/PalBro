@@ -58,10 +58,11 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns }) => {
   };
 
   return (
-    <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
+    <View style={[styles.container]}>
       <TextInput
         placeholder="Search..."
-        style={styles.searchInput}
+        placeholderTextColor={currentTheme.textColor}
+        style={[styles.searchInput, {color: currentTheme.textColor}]}
         onChangeText={setSearchText}
         value={searchText}
       />
@@ -70,7 +71,7 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns }) => {
         style={styles.filterButton}
         onPress={() => setFilterModalVisible(true)}
       >
-        <Text>Filter</Text>
+        <Text style={{color: currentTheme.textColor}}>Filter</Text>
       </TouchableOpacity>
 
       <FiltersModal // Use the FilterModal component
@@ -113,7 +114,7 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns }) => {
       </FiltersModal>
 
       {filteredData.length === 0 && <Text style={styles.emptyState}>{emptyStateText}</Text>}
-      <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
+      <View style={[styles.container]}>
         <FlatList
           data={filteredData}
           renderItem={renderItem}
@@ -128,11 +129,9 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
   },
   listContainer: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
     alignItems: 'center',
   },
   searchInput: {

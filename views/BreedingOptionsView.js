@@ -7,6 +7,8 @@ import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBr
 import SwitchButton from '../components/SwitchButton'; // Import the SwitchButton component
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { ActivityIndicator } from 'react-native';
+import GradientBackground from '../components/GradientBackground';
+import { grayscale } from 'react-native-color-matrix-image-filters';
 
 const BreedingOptionsView = ({ route, navigation }) => {
   const { palData } = route.params;
@@ -113,8 +115,9 @@ const calculatePotentialParents = (selectedPal, useCapturedPals) => {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: currentTheme.backgroundColor, // Use theme-aware background color
-    },
+      backgroundColor: currentTheme.backgroundColor,
+      width: '100%',
+     },
     image: {
       width: '100%',
       height: 300,
@@ -165,43 +168,45 @@ const calculatePotentialParents = (selectedPal, useCapturedPals) => {
   });
 
   return (
-    <View style={styles.container}>
-      <TopBar title="" navigation={navigation} />
-      <ScrollView style={styles.container}>
-        <Image style={styles.image} source={palData.image} />
-        <View style={styles.infoContainer}>
-          <Text style={styles.name}>#{palData.key} {palData.name}</Text>
-          <View style={styles.typesContainer}>
-            <TypeBadge types={palData.types} />
-          </View>
+    <GradientBackground>
+      <View style={styles.container}>
+        <TopBar title="" navigation={navigation} />
+        <ScrollView style={styles.container}>
+          <Image style={styles.image} source={palData.image} />
+          <View style={styles.infoContainer}>
+            <Text style={styles.name}>#{palData.key} {palData.name}</Text>
+            <View style={styles.typesContainer}>
+              <TypeBadge types={palData.types} />
+            </View>
 
-          <SwitchButton onPress={toggleList} isUsingCapturedPals={isUsingCapturedPals} />
+            <SwitchButton onPress={toggleList} isUsingCapturedPals={isUsingCapturedPals} />
 
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Potential Parent Couples:</Text>
-            {potentialParentsData.length > 0 ? (
-              potentialParentsData.map((couple, index) => (
-                <View key={index} style={styles.palListItem}>
-                  {couple.map((pal, palIndex) => (
-                    <React.Fragment key={palIndex}>
-                      {pal.image ? (
-                        <Image source={pal.image} style={styles.palImage} />
-                      ) : (
-                        console.log('No image available for', pal.name)
-                      )}
-                      <Text style={styles.description}>{pal.name}</Text>
-                      {palIndex === 0 && <Text style={styles.description}> + </Text>}
-                    </React.Fragment>
-                  ))}
-                </View>
-              ))
-            ) : (
-              <Text style={styles.description}>Not available</Text>
-            )}
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>Potential Parent Couples:</Text>
+              {potentialParentsData.length > 0 ? (
+                potentialParentsData.map((couple, index) => (
+                  <View key={index} style={styles.palListItem}>
+                    {couple.map((pal, palIndex) => (
+                      <React.Fragment key={palIndex}>
+                        {pal.image ? (
+                          <Image source={pal.image} style={styles.palImage} />
+                        ) : (
+                          console.log('No image available for', pal.name)
+                        )}
+                        <Text style={styles.description}>{pal.name}</Text>
+                        {palIndex === 0 && <Text style={styles.description}> + </Text>}
+                      </React.Fragment>
+                    ))}
+                  </View>
+                ))
+              ) : (
+                <Text style={styles.description}>Not available</Text>
+              )}
+            </View>
           </View>
-        </View>
-      </ScrollView>
-    </View>
+        </ScrollView>
+      </View>
+    </GradientBackground>
   );
 };
 
