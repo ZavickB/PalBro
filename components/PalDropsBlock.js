@@ -9,7 +9,6 @@ const PalDropsBlock = ({ drops }) => {
   const styles = StyleSheet.create({
     container: {
       padding: 10,
-      backgroundColor: currentTheme.backgroundColor,
       borderRadius: 10,
       marginVertical: 10,
     },
@@ -21,7 +20,6 @@ const PalDropsBlock = ({ drops }) => {
       borderColor: currentTheme.borderColor || 'black',
       borderRadius: 5,
       padding: 10,
-      backgroundColor: currentTheme.itemBackgroundColor || '#fff', // Assuming your theme has this
       justifyContent: 'space-between',
     },
     dropIcon: {

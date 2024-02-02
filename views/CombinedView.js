@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Dimensions, ActivityIndicator, ScrollView } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useTheme } from '../components/ThemeContext';
@@ -8,12 +8,15 @@ import PalTile from '../components/PalTile';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import SearchableList from '../components/SearchableList';
 import SwitchSelector from "react-native-switch-selector";
-
+import { useDispatch, useSelector } from 'react-redux';
+import { updateCapturedPals } from '../redux/capturedPals'; // Import the Redux action
 
 const CombinedView = ({ navigation }) => {
   const { currentTheme } = useTheme();
   const [isCapturedPals, setIsCapturedPals] = useState(true);
-  const [capturedPals, setCapturedPals] = useState([]);
+  const capturedPals = useSelector((state) => state.capturedPals); // Get capturedPals from Redux store
+  const dispatch = useDispatch(); // Get the dispatch function from Redux
+
   const [isLoadingBreedings, setIsLoadingBreedings] = useState(false);
   const [potentialBreedings, setPotentialBreedings] = useState([]);
 
@@ -34,7 +37,8 @@ const CombinedView = ({ navigation }) => {
       const value = await AsyncStorage.getItem(STORAGE_KEY);
       if (value !== null) {
         const storedCapturedPals = JSON.parse(value);
-        setCapturedPals(storedCapturedPals);
+        // Use the Redux action to update capturedPals in the Redux store
+        dispatch(updateCapturedPals(storedCapturedPals));
         calculatePossibleBreedings(storedCapturedPals);
       }
     } catch (error) {
@@ -177,7 +181,6 @@ const CombinedView = ({ navigation }) => {
     navigation.navigate('BreedingOptionsView', { palData: item });
   };
 
-  // Function to toggle capture state of a pal
   const toggleCapture = async (palKey) => {
     let updatedCapturedPals;
     if (capturedPals.includes(palKey)) {
@@ -185,7 +188,10 @@ const CombinedView = ({ navigation }) => {
     } else {
       updatedCapturedPals = [...capturedPals, palKey];
     }
-    setCapturedPals(updatedCapturedPals);
+
+    // Use the Redux action to update capturedPals in the Redux store
+    dispatch(updateCapturedPals(updatedCapturedPals));
+
     try {
       await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(updatedCapturedPals));
     } catch (error) {
@@ -193,34 +199,33 @@ const CombinedView = ({ navigation }) => {
     }
   };
 
-
- // Main render method
- return (
+  return (
     <GradientBackground>
       <View style={styles.container}>
         <View style={styles.appContainer}>
-        <TopBar title="Combined View" navigation={navigation} theme={currentTheme} />
-        <SwitchSelector
+          <TopBar title="Combined View" navigation={navigation} theme={currentTheme} />
+          <SwitchSelector
             initial={0}
             onPress={setIsCapturedPals}
-            textColor={currentTheme.textColor} //'#7a44cf'
+            textColor={currentTheme.textColor}
             selectedColor={currentTheme.textColor}
-            buttonColor={currentTheme.textColor}
+            backgroundColor={currentTheme.backgroundColor}
+            buttonColor={currentTheme.secondaryColor}
             borderColor={currentTheme.textColor}
             hasPadding
             options={[
-                { label: "My Pals only", value: {isCapturedPals} , imageIcon: '' }, //images.feminino = require('./path_to/assets/img/feminino.png')
-                { label: "Use all Pals", value: null , imageIcon: '' } //images.masculino = require('./path_to/assets/img/masculino.png')
+              { label: "Show my possibilities", value: { isCapturedPals }, imageIcon: '' },
+              { label: "Show all possibilities", value: null, imageIcon: '' }
             ]}
-        />
+          />
           {isCapturedPals ? (
             // Potential parents section
             <ScrollView style={styles.scrollView}>
               {isLoadingBreedings ? (
                 <ActivityIndicator size="large" color="#0000ff" />
               ) : (
-                    renderPotentialParents()   
-             )}
+                renderPotentialParents()
+              )}
             </ScrollView>
           ) : (
             // Pal tiles section
@@ -249,7 +254,6 @@ const CombinedView = ({ navigation }) => {
   );
 };
 
-// Adjusted styles to match MainView
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -266,10 +270,10 @@ const styles = StyleSheet.create({
   scrollView: {
     flexGrow: 1,
   },
-  switchButton:{
+  switchButton: {
     alignSelf: 'center',
     margin: 10,
   }
-})
+});
 
 export default CombinedView;

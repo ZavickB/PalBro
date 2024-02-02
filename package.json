@@ -28,13 +28,17 @@
     "react-dom": "18.2.0",
     "react-native": "0.73.2",
     "react-native-color-matrix-image-filters": "^6.0.7",
+    "react-native-floating-action": "^1.22.0",
+    "react-native-floating-action-menu": "^2.0.0",
     "react-native-gesture-handler": "^2.14.1",
     "react-native-image-loader": "^1.1.1",
     "react-native-linear-gradient": "^2.8.3",
     "react-native-svg": "^14.1.0",
     "react-native-switch": "^1.5.1",
     "react-native-switch-selector": "^2.3.0",
-    "react-native-web": "~0.19.6"
+    "react-native-web": "~0.19.6",
+    "react-redux": "^9.1.0",
+    "redux": "^5.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

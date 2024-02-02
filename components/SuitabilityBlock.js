@@ -8,8 +8,46 @@ const SuitabilityBlock = ({ suitabilities }) => {
 
   const iconSize = 30;
 
+  const styles = StyleSheet.create({
+    container: {
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+      paddingHorizontal: 10,
+    },
+    suitabilityContainer: {
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+      marginBottom: 10,
+      width: "100%", // Fixed width for the rectangles
+    },
+    rectangle: {
+      borderWidth: 1,
+      borderColor: currentTheme.textColor,
+      padding: 10,
+      borderRadius: 5,
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      width: '100%',
+    },
+    suitabilityName: {
+      marginLeft: 10,
+      color: currentTheme.textColor,
+    },
+    palLevelText: {
+      textAlign: 'center',
+      fontWeight: 'bold',
+      color: currentTheme.textColor,
+    },
+    icon: {
+      width: 30,
+      height: 30,
+    },
+  });
+
+
   return (
-    <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
+    <View style={[styles.container]}>
       {suitabilities.map((profile, index) => {
         const suitabilityProfile = SuitabilitiesProfiles.find(
           (sp) => sp.workName === profile.type
@@ -37,39 +75,5 @@ const SuitabilityBlock = ({ suitabilities }) => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'column',
-    alignItems: 'flex-start',
-    paddingHorizontal: 10,
-  },
-  suitabilityContainer: {
-    flexDirection: 'column',
-    alignItems: 'flex-start',
-    marginBottom: 10,
-    width: "100%", // Fixed width for the rectangles
-  },
-  rectangle: {
-    borderWidth: 1,
-    borderColor: 'black',
-    padding: 10,
-    borderRadius: 5,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    width: '100%', // Make the rectangle take full width
-  },
-  suitabilityName: {
-    marginLeft: 10, // Add margin to separate the name from the icon
-  },
-  palLevelText: {
-    textAlign: 'center',
-    fontWeight: 'bold',
-  },
-  icon: {
-    width: 30,
-    height: 30,
-  },
-});
 
 export default SuitabilityBlock;

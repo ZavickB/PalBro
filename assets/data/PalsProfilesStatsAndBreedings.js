@@ -28916,6 +28916,64 @@ const PalsProfilesStatsAndBreedings = [
             "Capture Bonus": "1.3",
             "Male %": "50"
         },
+        "skills": [
+            {
+                "level": 1,
+                "name": "sand_blast",
+                "type": "Ground",
+                "cooldown": 4,
+                "power": 40,
+                "description": "Hurls sticky mud at an enemy.\n"
+            },
+            {
+                "level": 7,
+                "name": "wind_cutter",
+                "type": "Grass",
+                "cooldown": 2,
+                "power": 30,
+                "description": "Fires a high speed blade of wind that flies straight at an enemy.\n"
+            },
+            {
+                "level": 15,
+                "name": "stone_blast",
+                "type": "Ground",
+                "cooldown": 10,
+                "power": 55,
+                "description": "Fires a barrage of stones forward.\n"
+            },
+            {
+                "level": 22,
+                "name": "seed_machine_gun",
+                "type": "Grass",
+                "cooldown": 9,
+                "power": 50,
+                "description": "Fires a volley of hard seeds at enemies in front of it.\n"
+            },
+            {
+                "level": 30,
+                "name": "seed_mine",
+                "type": "Grass",
+                "cooldown": 13,
+                "power": 65,
+                "description": "Launches a deadly seed. If it hits an enemy, the seed explodes.\n"
+            },
+            {
+                "level": 40,
+                "name": "sand_tornado",
+                "type": "Ground",
+                "cooldown": 18,
+                "power": 80,
+                "description": "Generates two sand tornadoes on either side before launching them at an enemy.\n"
+            },
+            {
+                "level": 50,
+                "name": "solar_blast",
+                "type": "Grass",
+                "cooldown": 55,
+                "power": 150,
+                "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
+            }
+        ],
         "rarity": 5
     },
     {

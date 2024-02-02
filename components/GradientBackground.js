@@ -12,7 +12,7 @@ const GradientBackground = ({ children }) => {
         style={styles.gradient}
         start={{ x: 0, y: 0 }}
         end={{ x: 0, y: 1 }}
-        locations={[0.95, 1]} // Use the locations prop to control color transitions
+        locations={[0.5, 1]} // Use the locations prop to control color transitions
       >
         {children}
       </LinearGradient>

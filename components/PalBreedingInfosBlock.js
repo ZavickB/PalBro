@@ -41,8 +41,61 @@ const PalBreedingInfosBlock = ({ palData, navigation }) => {
     navigation.navigate('Details', { palData: item });
   };
 
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    palInfo: {
+      alignItems: 'center',
+    },
+    palImage: {
+      width: 100,
+      height: 100,
+      resizeMode: 'cover',
+    },
+    palName: {
+      fontSize: 20,
+      fontWeight: 'bold',
+      marginTop: 10,
+      color: currentTheme.textColor,
+    },
+    palNumber: {
+      fontSize: 16,
+      marginTop: 5,
+      color: currentTheme.textColor,
+    },
+    breededBabyInfo: {
+      alignItems: 'center',
+      marginTop: 20,
+      color: currentTheme.textColor,
+    },
+    Parent2Label: {
+      fontSize: 18,
+      fontWeight: 'bold',
+      color: currentTheme.textColor,
+    },
+    breededBabyLabel: {
+      fontSize: 18,
+      fontWeight: 'bold',
+      color: currentTheme.textColor,
+    },
+    breededBabyImage: {
+      width: 80,
+      height: 80,
+      resizeMode: 'cover',
+    },
+    breededBabyNumber: {
+      fontSize: 14,
+      marginTop: 5,
+      color: currentTheme.textColor,
+    },
+    
+  });
+
   return (
-    <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
+    <View style={[styles.container]}>
       <TouchableOpacity onPress={() => setModalVisible(true)}>
         <View style={styles.palInfo}>
           <Text style={styles.Parent2Label}>Parent 2:</Text>
@@ -77,52 +130,6 @@ const PalBreedingInfosBlock = ({ palData, navigation }) => {
   );
 };
 
-// Define styles
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  palInfo: {
-    alignItems: 'center',
-  },
-  palImage: {
-    width: 100,
-    height: 100,
-    resizeMode: 'cover',
-  },
-  palName: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginTop: 10,
-  },
-  palNumber: {
-    fontSize: 16,
-    marginTop: 5,
-  },
-  breededBabyInfo: {
-    alignItems: 'center',
-    marginTop: 20,
-  },
-  Parent2Label: {
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
-  breededBabyLabel: {
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
-  breededBabyImage: {
-    width: 80,
-    height: 80,
-    resizeMode: 'cover',
-  },
-  breededBabyNumber: {
-    fontSize: 14,
-    marginTop: 5,
-  },
-  
-});
+
 
 export default PalBreedingInfosBlock;

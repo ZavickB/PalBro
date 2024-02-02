@@ -87,7 +87,6 @@ const PalDetailedView = ({ route, navigation }) => {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: currentTheme.backgroundColor,
     },
     image: {
       width: '100%',

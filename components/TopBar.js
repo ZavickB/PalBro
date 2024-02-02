@@ -14,7 +14,7 @@ const TopBar = ({ title, navigation }) => {
     >
       {title ? (
         <>
-          <Text style={[styles.title, {color:currentTheme.textColor} ]}>{title}</Text>
+          <Text style={[styles.title, {color:currentTheme.textColor} ]}>PALPEDIIA</Text>
           <TouchableOpacity style={styles.icon} onPress={toggleTheme}>
             <Image source={SolarEclipseImage} style={[styles.eclipseImage, {tintColor:currentTheme.textColor}]} />
           </TouchableOpacity>

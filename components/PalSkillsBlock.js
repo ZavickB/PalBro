@@ -11,7 +11,6 @@ const PalSkillsBlock = ({ skills }) => {
     container: {
       flexDirection: 'column',
       paddingHorizontal: 10,
-      backgroundColor: currentTheme.backgroundColor,
       borderRadius: 10,
       marginVertical: 10,
     },

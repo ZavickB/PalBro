@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { FlatList, Text, TextInput, View, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { FlatList, Text, View, StyleSheet, Modal, TextInput, Button, Image, TouchableOpacity } from 'react-native';
 import { useTheme } from './ThemeContext';
 import TypesList from '../assets/data/TypesList';
 import SuitabilitiesProfiles from '../assets/data/SuitabilitiesProfiles';
-import FiltersModal from './FiltersModal'; // Import the FilterModal component
+import FiltersModal from './FiltersModal';
 import CheckBox from 'expo-checkbox';
+import { FloatingAction } from "react-native-floating-action"; // Import the FloatingAction component
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const SearchableList = ({ data, renderItem, emptyStateText, numColumns }) => {
   const { currentTheme } = useTheme();
@@ -14,6 +16,17 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns }) => {
   const [isFilterModalVisible, setFilterModalVisible] = useState(false);
   const [selectedTypes, setSelectedTypes] = useState([]);
   const [selectedSuitabilities, setSelectedSuitabilities] = useState([]);
+
+  // Define the actions for the FloatingAction button
+  const actions = [
+    {
+      text: "Filter",
+      icon: <Icon name="filter" size={25} color="#fff" />,
+      name: "bt_filter",
+      position: 1,
+      color: currentTheme.primaryColor,
+    },
+  ];
 
   useEffect(() => {
     filterData(searchText, selectedTypes, selectedSuitabilities);
@@ -57,24 +70,95 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns }) => {
     }
   };
 
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+    },
+    listContainer: {
+      flex: 1,
+      alignItems: 'center',
+    },
+    actionButtonContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
+    modalContainer: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: currentTheme.modalBackground, // Using modalBackground from theme
+    },
+    searchContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      paddingHorizontal: 10,
+      marginBottom: 20,
+    },
+    searchInput: {
+      flex: 1,
+      height: 40,
+      borderWidth: 1,
+      borderRadius: 20,
+      paddingHorizontal: 15,
+      backgroundColor: '#fff', // Ensuring input is visibly distinct
+      color: currentTheme.textColor, // Text color adapted to theme
+    },
+    emptyState: {
+      fontSize: 18,
+      textAlign: 'center',
+      marginTop: 20,
+      color: 'gray',
+    },
+    filterButton: {
+      paddingHorizontal: 10,
+      paddingVertical: 5,
+      marginHorizontal: 10,
+      marginBottom: 10,
+      borderWidth: 1,
+      borderColor: 'gray',
+      borderRadius: 5,
+      alignSelf: 'flex-end',
+    },
+    filterModal: {
+      padding: 20,
+      height: '80%',
+      marginTop: '20%',
+    },
+    closeFilterButton: {
+      padding: 10,
+    },
+    closeButtonText: {
+      color: 'blue',
+    },
+    filterSection: {
+      marginBottom: 20,
+    },
+    sectionTitle: {
+      fontSize: 16,
+      fontWeight: 'bold',
+      marginBottom: 10,
+    },
+    filterOptionRow: {
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+    },
+    filterOption: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginBottom: 10,
+      marginRight: 20,
+    },
+    icon: {
+      width: 20,
+      height: 20,
+      marginRight: 10,
+    },
+  });
+
   return (
     <View style={[styles.container]}>
-      <TextInput
-        placeholder="Search..."
-        placeholderTextColor={currentTheme.textColor}
-        style={[styles.searchInput, {color: currentTheme.textColor}]}
-        onChangeText={setSearchText}
-        value={searchText}
-      />
-
-      <TouchableOpacity
-        style={styles.filterButton}
-        onPress={() => setFilterModalVisible(true)}
-      >
-        <Text style={{color: currentTheme.textColor}}>Filter</Text>
-      </TouchableOpacity>
-
-      <FiltersModal // Use the FilterModal component
+      <FiltersModal
         isVisible={isFilterModalVisible}
         onClose={() => setFilterModalVisible(false)}
       >
@@ -113,6 +197,19 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns }) => {
         </View>
       </FiltersModal>
 
+      <View style={styles.searchContainer}>
+        <TextInput
+          placeholder="Search..."
+          placeholderTextColor={currentTheme.textColor}
+          style={[styles.searchInput, { borderColor: currentTheme.borderColor }]}
+          onChangeText={setSearchText}
+          value={searchText}
+        />
+        <TouchableOpacity onPress={() => setSearchModalVisible(true)}>
+          <Icon name="search" size={20} color={currentTheme.primaryColor} />
+        </TouchableOpacity>
+      </View>
+
       {filteredData.length === 0 && <Text style={styles.emptyState}>{emptyStateText}</Text>}
       <View style={[styles.container]}>
         <FlatList
@@ -122,77 +219,19 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns }) => {
           numColumns={numColumns}
         />
       </View>
+
+      <FloatingAction
+        actions={actions}
+        onPressItem={name => {
+          if (name === "bt_filter") {
+            setFilterModalVisible(true);
+          }
+        }}
+        color={currentTheme.backgroundColor}
+        overlayColor='rgba(0, 0, 0, 0.0)'
+      />
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  listContainer: {
-    flex: 1,
-    alignItems: 'center',
-  },
-  searchInput: {
-    height: 40,
-    width: '100%',
-    borderWidth: 1,
-    borderColor: 'gray',
-    borderRadius: 5,
-    paddingHorizontal: 10,
-    marginBottom: 10,
-  },
-  emptyState: {
-    fontSize: 18,
-    textAlign: 'center',
-    marginTop: 20,
-    color: 'gray',
-  },
-  filterButton: {
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    marginHorizontal: 10,
-    borderWidth: 1,
-    borderColor: 'gray',
-    borderRadius: 5,
-    alignSelf: 'flex-end',
-  },
-  filterModal: {
-    backgroundColor: 'white',
-    padding: 20,
-    height: '80%',
-    marginTop: '20%',
-  },
-  closeFilterButton: {
-    padding: 10,
-  },
-  closeButtonText: {
-    color: 'blue',
-  },
-  filterSection: {
-    marginBottom: 20,
-  },
-  sectionTitle: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    marginBottom: 10,
-  },
-  filterOptionRow: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-  },
-  filterOption: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 10,
-    marginRight: 20,
-  },
-  icon: {
-    width: 20,
-    height: 20,
-    marginRight: 10,
-  },
-});
 
 export default SearchableList;
