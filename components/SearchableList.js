@@ -208,6 +208,10 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
         onSearchSubmit={() => filterData(searchText, selectedTypes, selectedSuitabilities)}
         currentTheme={currentTheme}
         placeholder={searchBarPlaceholder}
+        resetFilters={() => {
+          setSelectedTypes([]);
+          setSelectedSuitabilities([]);
+        }}
       />
 
       {filteredData.length === 0 && <Text style={styles.emptyState}>{emptyStateText}</Text>}

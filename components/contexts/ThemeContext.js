@@ -5,36 +5,38 @@ const ThemeContext = createContext();
 // Define your theme variables with additional properties
 const themes = {
   light: {
-    "backgroundColor": "#F0E68C", // Khaki
-    "textColor": "#556B2F", // Dark Olive Green
-    "primaryColor": "#6B8E23", // Olive Drab
-    "secondaryColor": "#FFDAB9", // Peach Puff
-    "modalBackground": "rgba(240, 230, 140, 0.5)", // Semi-transparent khaki
-    "modalContentBackground": "#FFFFFF", // White
-    "backgroundGradient": ["#F0E68C", "#FFDAB9"], // Gradient from khaki to peach puff
-    "borderColor": "#556B2F", // Dark Olive Green
-    "palTileBackgroundColor": "#F5F5DC", // Warm and slightly beige background.
-    "palTileBorderColor": "#556B2F",
-    "palTileTextColor": "#556B2F",
-    "searchBarBackgroundColor": "#F5F5DC",
-    "searchBarTextColor": "#556B2F",
+    backgroundColor: "#F0D4AE", // Peach as the base background color for light theme
+    textColor: "#1F3B34", // Dark Green for text to ensure good contrast on light background
+    primaryColor: "#8C994F", // Lighter Than Lighter Green for primary actions and buttons for vibrant contrast
+    secondaryColor: "#3A5534", // Lighter Green for secondary elements and accents
+    modalBackground: "rgba(240, 212, 174, 0.5)", // Semi-transparent Peach for modal backgrounds
+    modalContentBackground: "#F4AB5D", // White for modal content to ensure readability
+    backgroundGradient: ["#F0D4AE", "#EC8639"], // Gradient from Peach to Lighter Than Lighter Orange
+    borderColor: "#8C994F", // Lighter Than Lighter Green for borders and outlines
+    palTileBackgroundColor: "#EC8639", // Lighter Orange for tile or card backgrounds
+    palTileBorderColor: "#1F3B34", // Dark Green for tile or card borders
+    palTileTextColor: "#1F3B34", // Dark Green for tile or card text for consistency
+    searchBarBackgroundColor: "#F4AB5D", // Lighter Than Lighter Orange for search bar background
+    searchBarTextColor: "#1F3B34", // Dark Green for search bar text for readability
   },
   dark: {
-    "backgroundColor": "#13305B", // Deep navy blue, as the base
-    "textColor": "#E0E0E0", // Light gray for high contrast text
-    "primaryColor": "#4E9ACF", // Sky blue, for a vibrant contrast
-    "secondaryColor": "#76B947", // Olive green, for accentuating elements
-    "modalBackground": "rgba(19, 48, 91, 0.8)", // Slightly more opaque navy for modals
-    "modalContentBackground": "#1E4168", // A slightly lighter shade of navy for modal content background
-    "backgroundGradient": ["#13305B", "#5078A0"], // Gradient from deep navy blue to a serene teal blue
-    "borderColor": "#E0E0E0", // Light gray, to ensure elements are well-defined
-    "palTileBackgroundColor": "#36454F", // A deep navy blue background for dark theme
-    "palTileBorderColor": "#556B2F",
-    "palTileTextColor": "#E0E0E0",
-    "searchBarBackgroundColor": "#36454F",
-    "searchBarTextColor": "#E0E0E0",
+    backgroundColor: "#1F3B34", // Dark Green as the base background color for dark theme
+    textColor: "#F0D4AE", // Peach for text to ensure readability on dark background
+    primaryColor: "#F4AB5D", // Lighter Than Lighter Orange for primary actions and buttons
+    secondaryColor: "#8C994F", // Lighter Than Lighter Green for secondary elements and accents
+    modalBackground: "rgba(31, 59, 52, 0.8)", // Darker, more opaque Dark Green for modals
+    modalContentBackground: "#3A5534", // Lighter Green for modal content background
+    backgroundGradient: ["#1F3B34", "#3A5534"], // Gradient from Dark Green to Lighter Green
+    borderColor: "#DE6D36", // Orange for borders and outlines to add vibrancy
+    palTileBackgroundColor: "#3A5534", // Lighter Orange for tile or card backgrounds
+    palTileBorderColor: "#F4AB5D", // Lighter Than Lighter Orange for tile or card borders
+    palTileTextColor: "#F0D4AE", // Peach for tile or card text for contrast and readability
+    searchBarBackgroundColor: "#8C994F", // Lighter Than Lighter Green for search bar background
+    searchBarTextColor: "#F0D4AE", // Peach for search bar text for visibility
   },
 };
+
+
 
 export const ThemeProvider = ({ children }) => {
   const [currentTheme, setCurrentTheme] = useState(themes.light);

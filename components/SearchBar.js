@@ -3,7 +3,7 @@ import { View, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { useTheme } from './contexts/ThemeContext';
 
-const SearchBar = ({ searchText, onSearchChange, placeholder }) => {
+const SearchBar = ({ searchText, onSearchChange, placeholder, resetFilters }) => {
   
   const { currentTheme } = useTheme();
 
@@ -56,9 +56,10 @@ const SearchBar = ({ searchText, onSearchChange, placeholder }) => {
         />
       </View>
       <TouchableOpacity 
-        onPress={
-          () => onSearchChange('')
-        }
+        onPress={() => {
+          resetFilters(); // Call resetFilters to reset the types, suitability, etc.
+          onSearchChange(''); // Set the searchText state to an empty string
+        }}
         style={styles.emptyButton}>
         <Icon name="close" size={20} color={currentTheme.primaryColor} />
       </TouchableOpacity>

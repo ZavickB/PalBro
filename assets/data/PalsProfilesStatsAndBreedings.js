@@ -2,7 +2,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 1,
         "key": "001",
-        "image": require('..\/images\/001.png'),
+        "image": require('..\/images\/pals\/001.png'),
         "name": "Lamball",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Lamball",
         "types": [
@@ -245,7 +245,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 2,
         "key": "002",
-        "image": require('..\/images\/002.png'),
+        "image": require('..\/images\/pals\/002.png'),
         "name": "Cattiva",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Cattiva",
         "types": [
@@ -493,7 +493,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 3,
         "key": "003",
-        "image": require('..\/images\/003.png'),
+        "image": require('..\/images\/pals\/003.png'),
         "name": "Chikipi",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Chikipi",
         "types": [
@@ -734,7 +734,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 4,
         "key": "004",
-        "image": require('..\/images\/004.png'),
+        "image": require('..\/images\/pals\/004.png'),
         "name": "Lifmunk",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Lifmunk",
         "types": [
@@ -988,7 +988,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 5,
         "key": "005",
-        "image": require('..\/images\/005.png'),
+        "image": require('..\/images\/pals\/005.png'),
         "name": "Foxparks",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Foxparks",
         "types": [
@@ -1224,7 +1224,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 6,
         "key": "006",
-        "image": require('..\/images\/006.png'),
+        "image": require('..\/images\/pals\/006.png'),
         "name": "Fuack",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Fuack",
         "types": [
@@ -1472,7 +1472,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 7,
         "key": "007",
-        "image": require('..\/images\/007.png'),
+        "image": require('..\/images\/pals\/007.png'),
         "name": "Sparkit",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Sparkit",
         "types": [
@@ -1720,7 +1720,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 8,
         "key": "008",
-        "image": require('..\/images\/008.png'),
+        "image": require('..\/images\/pals\/008.png'),
         "name": "Tanzee",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Tanzee",
         "types": [
@@ -1976,7 +1976,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 9,
         "key": "009",
-        "image": require('..\/images\/009.png'),
+        "image": require('..\/images\/pals\/009.png'),
         "name": "Rooby",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Rooby",
         "types": [
@@ -2210,7 +2210,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 10,
         "key": "010",
-        "image": require('..\/images\/010.png'),
+        "image": require('..\/images\/pals\/010.png'),
         "name": "Pengullet",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Pengullet",
         "types": [
@@ -2464,7 +2464,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 11,
         "key": "011",
-        "image": require('..\/images\/011.png'),
+        "image": require('..\/images\/pals\/011.png'),
         "name": "Penking",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Penking",
         "types": [
@@ -2722,7 +2722,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 12,
         "key": "012",
-        "image": require('..\/images\/012.png'),
+        "image": require('..\/images\/pals\/012.png'),
         "name": "Jolthog",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Jolthog",
         "types": [
@@ -2960,7 +2960,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 13,
         "key": "013",
-        "image": require('..\/images\/013.png'),
+        "image": require('..\/images\/pals\/013.png'),
         "name": "Gumoss",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Gumoss",
         "types": [
@@ -3202,7 +3202,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 14,
         "key": "014",
-        "image": require('..\/images\/014.png'),
+        "image": require('..\/images\/pals\/014.png'),
         "name": "Vixy",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Vixy",
         "types": [
@@ -3443,7 +3443,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 15,
         "key": "015",
-        "image": require('..\/images\/015.png'),
+        "image": require('..\/images\/pals\/015.png'),
         "name": "Hoocrates",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Hoocrates",
         "types": [
@@ -3683,7 +3683,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 16,
         "key": "016",
-        "image": require('..\/images\/016.png'),
+        "image": require('..\/images\/pals\/016.png'),
         "name": "Teafant",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Teafant",
         "types": [
@@ -3923,7 +3923,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 17,
         "key": "017",
-        "image": require('..\/images\/017.png'),
+        "image": require('..\/images\/pals\/017.png'),
         "name": "Depresso",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Depresso",
         "types": [
@@ -4171,7 +4171,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 18,
         "key": "018",
-        "image": require('..\/images\/018.png'),
+        "image": require('..\/images\/pals\/018.png'),
         "name": "Cremis",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Cremis",
         "types": [
@@ -4412,7 +4412,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 19,
         "key": "019",
-        "image": require('..\/images\/019.png'),
+        "image": require('..\/images\/pals\/019.png'),
         "name": "Daedream",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Daedream",
         "types": [
@@ -4661,7 +4661,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 20,
         "key": "020",
-        "image": require('..\/images\/020.png'),
+        "image": require('..\/images\/pals\/020.png'),
         "name": "Rushoar",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Rushoar",
         "types": [
@@ -4899,7 +4899,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 21,
         "key": "021",
-        "image": require('..\/images\/021.png'),
+        "image": require('..\/images\/pals\/021.png'),
         "name": "Nox",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Nox",
         "types": [
@@ -5138,7 +5138,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 22,
         "key": "022",
-        "image": require('..\/images\/022.png'),
+        "image": require('..\/images\/pals\/022.png'),
         "name": "Fuddler",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Fuddler",
         "types": [
@@ -5384,7 +5384,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 23,
         "key": "023",
-        "image": require('..\/images\/023.png'),
+        "image": require('..\/images\/pals\/023.png'),
         "name": "Killamari",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Killamari",
         "types": [
@@ -5628,7 +5628,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 24,
         "key": "024",
-        "image": require('..\/images\/024.png'),
+        "image": require('..\/images\/pals\/024.png'),
         "name": "Mau",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Mau",
         "types": [
@@ -5868,7 +5868,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 25,
         "key": "025",
-        "image": require('..\/images\/025.png'),
+        "image": require('..\/images\/pals\/025.png'),
         "name": "Celaray",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Celaray",
         "types": [
@@ -6111,7 +6111,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 26,
         "key": "026",
-        "image": require('..\/images\/026.png'),
+        "image": require('..\/images\/pals\/026.png'),
         "name": "Direhowl",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Direhowl",
         "types": [
@@ -6347,7 +6347,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 27,
         "key": "027",
-        "image": require('..\/images\/027.png'),
+        "image": require('..\/images\/pals\/027.png'),
         "name": "Tocotoco",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Tocotoco",
         "types": [
@@ -6582,7 +6582,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 28,
         "key": "028",
-        "image": require('..\/images\/028.png'),
+        "image": require('..\/images\/pals\/028.png'),
         "name": "Flopie",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Flopie",
         "types": [
@@ -6838,7 +6838,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 29,
         "key": "029",
-        "image": require('..\/images\/029.png'),
+        "image": require('..\/images\/pals\/029.png'),
         "name": "Mozzarina",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Mozzarina",
         "types": [
@@ -7075,7 +7075,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 30,
         "key": "030",
-        "image": require('..\/images\/030.png'),
+        "image": require('..\/images\/pals\/030.png'),
         "name": "Bristla",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Bristla",
         "types": [
@@ -7332,7 +7332,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 31,
         "key": "031",
-        "image": require('..\/images\/031.png'),
+        "image": require('..\/images\/pals\/031.png'),
         "name": "Gobfin",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Gobfin",
         "types": [
@@ -7579,7 +7579,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 32,
         "key": "032",
-        "image": require('..\/images\/032.png'),
+        "image": require('..\/images\/pals\/032.png'),
         "name": "Hangyu",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Hangyu",
         "types": [
@@ -7824,7 +7824,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 33,
         "key": "033",
-        "image": require('..\/images\/033.png'),
+        "image": require('..\/images\/pals\/033.png'),
         "name": "Mossanda",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Mossanda",
         "types": [
@@ -8077,7 +8077,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 34,
         "key": "034",
-        "image": require('..\/images\/034.png'),
+        "image": require('..\/images\/pals\/034.png'),
         "name": "Woolipop",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Woolipop",
         "types": [
@@ -8314,7 +8314,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 35,
         "key": "035",
-        "image": require('..\/images\/035.png'),
+        "image": require('..\/images\/pals\/035.png'),
         "name": "Caprity",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Caprity",
         "types": [
@@ -8558,7 +8558,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 36,
         "key": "036",
-        "image": require('..\/images\/036.png'),
+        "image": require('..\/images\/pals\/036.png'),
         "name": "Melpaca",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Melpaca",
         "types": [
@@ -8794,7 +8794,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 37,
         "key": "037",
-        "image": require('..\/images\/037.png'),
+        "image": require('..\/images\/pals\/037.png'),
         "name": "Eikthyrdeer",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Eikthyrdeer",
         "types": [
@@ -9032,7 +9032,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 38,
         "key": "038",
-        "image": require('..\/images\/038.png'),
+        "image": require('..\/images\/pals\/038.png'),
         "name": "Nitewing",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Nitewing",
         "types": [
@@ -9268,7 +9268,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 39,
         "key": "039",
-        "image": require('..\/images\/039.png'),
+        "image": require('..\/images\/pals\/039.png'),
         "name": "Ribbuny",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Ribbuny",
         "types": [
@@ -9511,7 +9511,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 40,
         "key": "040",
-        "image": require('..\/images\/040.png'),
+        "image": require('..\/images\/pals\/040.png'),
         "name": "Incineram",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Incineram",
         "types": [
@@ -9759,7 +9759,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 41,
         "key": "041",
-        "image": require('..\/images\/041.png'),
+        "image": require('..\/images\/pals\/041.png'),
         "name": "Cinnamoth",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Cinnamoth",
         "types": [
@@ -10004,7 +10004,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 42,
         "key": "042",
-        "image": require('..\/images\/042.png'),
+        "image": require('..\/images\/pals\/042.png'),
         "name": "Arsox",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Arsox",
         "types": [
@@ -10242,7 +10242,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 43,
         "key": "043",
-        "image": require('..\/images\/043.png'),
+        "image": require('..\/images\/pals\/043.png'),
         "name": "Dumud",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Dumud",
         "types": [
@@ -10434,7 +10434,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 44,
         "key": "044",
-        "image": require('..\/images\/044.png'),
+        "image": require('..\/images\/pals\/044.png'),
         "name": "Cawgnito",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Cawgnito",
         "types": [
@@ -10675,7 +10675,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 45,
         "key": "045",
-        "image": require('..\/images\/045.png'),
+        "image": require('..\/images\/pals\/045.png'),
         "name": "Leezpunk",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Leezpunk",
         "types": [
@@ -10923,7 +10923,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 46,
         "key": "046",
-        "image": require('..\/images\/046.png'),
+        "image": require('..\/images\/pals\/046.png'),
         "name": "Loupmoon",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Loupmoon",
         "types": [
@@ -11163,7 +11163,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 47,
         "key": "047",
-        "image": require('..\/images\/047.png'),
+        "image": require('..\/images\/pals\/047.png'),
         "name": "Galeclaw",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Galeclaw",
         "types": [
@@ -11401,7 +11401,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 48,
         "key": "048",
-        "image": require('..\/images\/048.png'),
+        "image": require('..\/images\/pals\/048.png'),
         "name": "Robinquill",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Robinquill",
         "types": [
@@ -11661,7 +11661,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 49,
         "key": "049",
-        "image": require('..\/images\/049.png'),
+        "image": require('..\/images\/pals\/049.png'),
         "name": "Gorirat",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Gorirat",
         "types": [
@@ -11906,7 +11906,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 50,
         "key": "050",
-        "image": require('..\/images\/050.png'),
+        "image": require('..\/images\/pals\/050.png'),
         "name": "Beegarde",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Beegarde",
         "types": [
@@ -12168,7 +12168,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 51,
         "key": "051",
-        "image": require('..\/images\/051.png'),
+        "image": require('..\/images\/pals\/051.png'),
         "name": "Elizabee",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Elizabee",
         "types": [
@@ -12424,7 +12424,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 52,
         "key": "052",
-        "image": require('..\/images\/052.png'),
+        "image": require('..\/images\/pals\/052.png'),
         "name": "Grintale",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Grintale",
         "types": [
@@ -12660,7 +12660,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 53,
         "key": "053",
-        "image": require('..\/images\/053.png'),
+        "image": require('..\/images\/pals\/053.png'),
         "name": "Swee",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Swee",
         "types": [
@@ -12902,7 +12902,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 54,
         "key": "054",
-        "image": require('..\/images\/054.png'),
+        "image": require('..\/images\/pals\/054.png'),
         "name": "Sweepa",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Sweepa",
         "types": [
@@ -13144,7 +13144,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 55,
         "key": "055",
-        "image": require('..\/images\/055.png'),
+        "image": require('..\/images\/pals\/055.png'),
         "name": "Chillet",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Chillet",
         "types": [
@@ -13389,7 +13389,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 56,
         "key": "056",
-        "image": require('..\/images\/056.png'),
+        "image": require('..\/images\/pals\/056.png'),
         "name": "Univolt",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Univolt",
         "types": [
@@ -13635,7 +13635,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 57,
         "key": "057",
-        "image": require('..\/images\/057.png'),
+        "image": require('..\/images\/pals\/057.png'),
         "name": "Foxcicle",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Foxcicle",
         "types": [
@@ -13875,7 +13875,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 58,
         "key": "058",
-        "image": require('..\/images\/058.png'),
+        "image": require('..\/images\/pals\/058.png'),
         "name": "Pyrin",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Pyrin",
         "types": [
@@ -14114,7 +14114,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 59,
         "key": "059",
-        "image": require('..\/images\/059.png'),
+        "image": require('..\/images\/pals\/059.png'),
         "name": "Reindrix",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Reindrix",
         "types": [
@@ -14360,7 +14360,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 60,
         "key": "060",
-        "image": require('..\/images\/060.png'),
+        "image": require('..\/images\/pals\/060.png'),
         "name": "Rayhound",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Rayhound",
         "types": [
@@ -14600,7 +14600,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 61,
         "key": "061",
-        "image": require('..\/images\/061.png'),
+        "image": require('..\/images\/pals\/061.png'),
         "name": "Kitsun",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Kitsun",
         "types": [
@@ -14835,7 +14835,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 62,
         "key": "062",
-        "image": require('..\/images\/062.png'),
+        "image": require('..\/images\/pals\/062.png'),
         "name": "Dazzi",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Dazzi",
         "types": [
@@ -15082,7 +15082,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 63,
         "key": "063",
-        "image": require('..\/images\/063.png'),
+        "image": require('..\/images\/pals\/063.png'),
         "name": "Lunaris",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Lunaris",
         "types": [
@@ -15326,7 +15326,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 64,
         "key": "064",
-        "image": require('..\/images\/064.png'),
+        "image": require('..\/images\/pals\/064.png'),
         "name": "Dinossom",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Dinossom",
         "types": [
@@ -15571,7 +15571,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 65,
         "key": "065",
-        "image": require('..\/images\/065.png'),
+        "image": require('..\/images\/pals\/065.png'),
         "name": "Surfent",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Surfent",
         "types": [
@@ -15811,7 +15811,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 66,
         "key": "066",
-        "image": require('..\/images\/066.png'),
+        "image": require('..\/images\/pals\/066.png'),
         "name": "Maraith",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Maraith",
         "types": [
@@ -16054,7 +16054,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 67,
         "key": "067",
-        "image": require('..\/images\/067.png'),
+        "image": require('..\/images\/pals\/067.png'),
         "name": "Digtoise",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Digtoise",
         "types": [
@@ -16295,7 +16295,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 68,
         "key": "068",
-        "image": require('..\/images\/068.png'),
+        "image": require('..\/images\/pals\/068.png'),
         "name": "Tombat",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Tombat",
         "types": [
@@ -16543,7 +16543,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 69,
         "key": "069",
-        "image": require('..\/images\/069.png'),
+        "image": require('..\/images\/pals\/069.png'),
         "name": "Lovander",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Lovander",
         "types": [
@@ -16794,7 +16794,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 70,
         "key": "070",
-        "image": require('..\/images\/070.png'),
+        "image": require('..\/images\/pals\/070.png'),
         "name": "Flambelle",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Flambelle",
         "types": [
@@ -17041,7 +17041,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 71,
         "key": "071",
-        "image": require('..\/images\/071.png'),
+        "image": require('..\/images\/pals\/071.png'),
         "name": "Vanwyrm",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Vanwyrm",
         "types": [
@@ -17283,7 +17283,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 72,
         "key": "072",
-        "image": require('..\/images\/072.png'),
+        "image": require('..\/images\/pals\/072.png'),
         "name": "Bushi",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Bushi",
         "types": [
@@ -17536,7 +17536,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 73,
         "key": "073",
-        "image": require('..\/images\/073.png'),
+        "image": require('..\/images\/pals\/073.png'),
         "name": "Beakon",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Beakon",
         "types": [
@@ -17783,7 +17783,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 74,
         "key": "074",
-        "image": require('..\/images\/074.png'),
+        "image": require('..\/images\/pals\/074.png'),
         "name": "Ragnahawk",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Ragnahawk",
         "types": [
@@ -18021,7 +18021,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 75,
         "key": "075",
-        "image": require('..\/images\/075.png'),
+        "image": require('..\/images\/pals\/075.png'),
         "name": "Katress",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Katress",
         "types": [
@@ -18269,7 +18269,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 76,
         "key": "076",
-        "image": require('..\/images\/076.png'),
+        "image": require('..\/images\/pals\/076.png'),
         "name": "Wixen",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Wixen",
         "types": [
@@ -18513,7 +18513,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 77,
         "key": "077",
-        "image": require('..\/images\/077.png'),
+        "image": require('..\/images\/pals\/077.png'),
         "name": "Verdash",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Verdash",
         "types": [
@@ -18770,7 +18770,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 78,
         "key": "078",
-        "image": require('..\/images\/078.png'),
+        "image": require('..\/images\/pals\/078.png'),
         "name": "Vaelet",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Vaelet",
         "types": [
@@ -19027,7 +19027,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 79,
         "key": "079",
-        "image": require('..\/images\/079.png'),
+        "image": require('..\/images\/pals\/079.png'),
         "name": "Sibelyx",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Sibelyx",
         "types": [
@@ -19276,7 +19276,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 80,
         "key": "080",
-        "image": require('..\/images\/080.png'),
+        "image": require('..\/images\/pals\/080.png'),
         "name": "Elphidran",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Elphidran",
         "types": [
@@ -19514,7 +19514,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 81,
         "key": "081",
-        "image": require('..\/images\/081.png'),
+        "image": require('..\/images\/pals\/081.png'),
         "name": "Kelpsea",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Kelpsea",
         "types": [
@@ -19754,7 +19754,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 82,
         "key": "082",
-        "image": require('..\/images\/082.png'),
+        "image": require('..\/images\/pals\/082.png'),
         "name": "Azurobe",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Azurobe",
         "types": [
@@ -19995,7 +19995,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 83,
         "key": "083",
-        "image": require('..\/images\/083.png'),
+        "image": require('..\/images\/pals\/083.png'),
         "name": "Cryolinx",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Cryolinx",
         "types": [
@@ -20242,7 +20242,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 84,
         "key": "084",
-        "image": require('..\/images\/084.png'),
+        "image": require('..\/images\/pals\/084.png'),
         "name": "Blazehowl",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Blazehowl",
         "types": [
@@ -20479,7 +20479,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 85,
         "key": "085",
-        "image": require('..\/images\/085.png'),
+        "image": require('..\/images\/pals\/085.png'),
         "name": "Relaxaurus",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Relaxaurus",
         "types": [
@@ -20725,7 +20725,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 86,
         "key": "086",
-        "image": require('..\/images\/086.png'),
+        "image": require('..\/images\/pals\/086.png'),
         "name": "Broncherry",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Broncherry",
         "types": [
@@ -20965,7 +20965,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 87,
         "key": "087",
-        "image": require('..\/images\/087.png'),
+        "image": require('..\/images\/pals\/087.png'),
         "name": "Petallia",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Petallia",
         "types": [
@@ -21223,7 +21223,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 88,
         "key": "088",
-        "image": require('..\/images\/088.png'),
+        "image": require('..\/images\/pals\/088.png'),
         "name": "Reptyro",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Reptyro",
         "types": [
@@ -21464,7 +21464,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 89,
         "key": "089",
-        "image": require('..\/images\/089.png'),
+        "image": require('..\/images\/pals\/089.png'),
         "name": "Kingpaca",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Kingpaca",
         "types": [
@@ -21701,7 +21701,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 90,
         "key": "090",
-        "image": require('..\/images\/090.png'),
+        "image": require('..\/images\/pals\/090.png'),
         "name": "Mammorest",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Mammorest",
         "types": [
@@ -21950,7 +21950,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 91,
         "key": "091",
-        "image": require('..\/images\/091.png'),
+        "image": require('..\/images\/pals\/091.png'),
         "name": "Wumpo",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Wumpo",
         "types": [
@@ -22203,7 +22203,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 92,
         "key": "092",
-        "image": require('..\/images\/092.png'),
+        "image": require('..\/images\/pals\/092.png'),
         "name": "Warsect",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Warsect",
         "types": [
@@ -22456,7 +22456,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 93,
         "key": "093",
-        "image": require('..\/images\/093.png'),
+        "image": require('..\/images\/pals\/093.png'),
         "name": "Fenglope",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Fenglope",
         "types": [
@@ -22694,7 +22694,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 94,
         "key": "094",
-        "image": require('..\/images\/094.png'),
+        "image": require('..\/images\/pals\/094.png'),
         "name": "Felbat",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Felbat",
         "types": [
@@ -22934,7 +22934,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 95,
         "key": "095",
-        "image": require('..\/images\/095.png'),
+        "image": require('..\/images\/pals\/095.png'),
         "name": "Quivern",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Quivern",
         "types": [
@@ -23185,7 +23185,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 96,
         "key": "096",
-        "image": require('..\/images\/096.png'),
+        "image": require('..\/images\/pals\/096.png'),
         "name": "Blazamut",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Blazamut",
         "types": [
@@ -23425,7 +23425,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 97,
         "key": "097",
-        "image": require('..\/images\/097.png'),
+        "image": require('..\/images\/pals\/097.png'),
         "name": "Helzephyr",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Helzephyr",
         "types": [
@@ -23664,7 +23664,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 98,
         "key": "098",
-        "image": require('..\/images\/098.png'),
+        "image": require('..\/images\/pals\/098.png'),
         "name": "Astegon",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Astegon",
         "types": [
@@ -23910,7 +23910,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 99,
         "key": "099",
-        "image": require('..\/images\/099.png'),
+        "image": require('..\/images\/pals\/099.png'),
         "name": "Menasting",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Menasting",
         "types": [
@@ -24156,7 +24156,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 100,
         "key": "100",
-        "image": require('..\/images\/100.png'),
+        "image": require('..\/images\/pals\/100.png'),
         "name": "Anubis",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Anubis",
         "types": [
@@ -24405,7 +24405,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 101,
         "key": "101",
-        "image": require('..\/images\/101.png'),
+        "image": require('..\/images\/pals\/101.png'),
         "name": "Jormuntide",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Jormuntide",
         "types": [
@@ -24646,7 +24646,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 102,
         "key": "102",
-        "image": require('..\/images\/102.png'),
+        "image": require('..\/images\/pals\/102.png'),
         "name": "Suzaku",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Suzaku",
         "types": [
@@ -24879,7 +24879,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 103,
         "key": "103",
-        "image": require('..\/images\/103.png'),
+        "image": require('..\/images\/pals\/103.png'),
         "name": "Grizzbolt",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Grizzbolt",
         "types": [
@@ -25132,7 +25132,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 104,
         "key": "104",
-        "image": require('..\/images\/104.png'),
+        "image": require('..\/images\/pals\/104.png'),
         "name": "Lyleen",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Lyleen",
         "types": [
@@ -25386,7 +25386,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 105,
         "key": "105",
-        "image": require('..\/images\/105.png'),
+        "image": require('..\/images\/pals\/105.png'),
         "name": "Faleris",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Faleris",
         "types": [
@@ -25623,7 +25623,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 106,
         "key": "106",
-        "image": require('..\/images\/106.png'),
+        "image": require('..\/images\/pals\/106.png'),
         "name": "Orserk",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Orserk",
         "types": [
@@ -25872,7 +25872,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 107,
         "key": "107",
-        "image": require('..\/images\/107.png'),
+        "image": require('..\/images\/pals\/107.png'),
         "name": "Shadowbeak",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Shadowbeak",
         "types": [
@@ -26113,7 +26113,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 108,
         "key": "108",
-        "image": require('..\/images\/108.png'),
+        "image": require('..\/images\/pals\/108.png'),
         "name": "Paladius",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Paladius",
         "types": [
@@ -26354,7 +26354,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 109,
         "key": "109",
-        "image": require('..\/images\/109.png'),
+        "image": require('..\/images\/pals\/109.png'),
         "name": "Necromus",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Necromus",
         "types": [
@@ -26598,7 +26598,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 110,
         "key": "110",
-        "image": require('..\/images\/110.png'),
+        "image": require('..\/images\/pals\/110.png'),
         "name": "Frostallion",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Frostallion",
         "types": [
@@ -26838,7 +26838,7 @@ const PalsProfilesStatsAndBreedings = [
     {
         "id": 111,
         "key": "111",
-        "image": require('..\/images\/111.png'),
+        "image": require('..\/images\/pals\/111.png'),
         "name": "Jetragon",
         "wiki": "https:\/\/palworld.fandom.com\/wiki\/Jetragon",
         "types": [
@@ -27080,7 +27080,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Blazehowl Noct",
         "variant": "B",
         "isNightOnly": "true",
-        "image": require('..\/images\/084B.png'),
+        "image": require('..\/images\/pals\/084B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/3\/33\/Blazehowl_menu.png\/",
         "suitability": [
             {
@@ -27319,7 +27319,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Broncherry Aqua",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/086B.png'),
+        "image": require('..\/images\/pals\/086B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/bd\/Broncherry_menu.png\/",
         "suitability": [
             {
@@ -27558,7 +27558,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Dinossom Lux",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/064B.png'),
+        "image": require('..\/images\/pals\/064B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/b7\/Dinossom_menu.png\/",
         "suitability": [
             {
@@ -27801,7 +27801,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Eikthyrdeer Terra",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/037.png'),
+        "image": require('..\/images\/pals\/037.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/4\/40\/Eikthyrdeer_menu.png\/",
         "suitability": [
             {
@@ -28038,7 +28038,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Elphidran Aqua",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/080B.png'),
+        "image": require('..\/images\/pals\/080B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/a\/a6\/Elphidran_menu.png\/",
         "suitability": [
             {
@@ -28277,7 +28277,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Frostallion Noct",
         "variant": "B",
         "isNightOnly": "true",
-        "image": require('..\/images\/110B.png'),
+        "image": require('..\/images\/pals\/110B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/00\/Frostallion_menu.png\/",
         "suitability": [
             {
@@ -28515,7 +28515,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Gobfin Ignis",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/031B.png'),
+        "image": require('..\/images\/pals\/031B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/f\/ff\/Gobfin_menu.png\/",
         "suitability": [
             {
@@ -28755,7 +28755,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Gumoss (Special)",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/013.png'),
+        "image": require('..\/images\/pals\/013.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/2\/2e\/Gumoss_menu.png\/",
         "suitability": [
             {
@@ -28995,7 +28995,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Hangyu Cryst",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/032B.png'),
+        "image": require('..\/images\/pals\/032B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/08\/Hangyu_menu.png\/",
         "suitability": [
             {
@@ -29239,7 +29239,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Ice Kingpaca",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/089B.png'),
+        "image": require('..\/images\/pals\/089B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/9\/9d\/Kingpaca_menu.png\/",
         "suitability": [
             {
@@ -29477,7 +29477,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Ice Reptyro",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/088B.png'),
+        "image": require('..\/images\/pals\/088B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/d\/d0\/Reptyro_menu.png\/",
         "suitability": [
             {
@@ -29720,7 +29720,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Incineram Noct",
         "variant": "B",
         "isNightOnly": "true",
-        "image": require('..\/images\/040B.png'),
+        "image": require('..\/images\/pals\/040B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/4\/40\/Incineram_menu.png\/",
         "suitability": [
             {
@@ -29965,7 +29965,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Jolthog Cryst",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/012B.png'),
+        "image": require('..\/images\/pals\/012B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/5\/52\/Jolthog_menu.png\/",
         "suitability": [
             {
@@ -30201,7 +30201,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Jormuntide Ignis",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/101B.png'),
+        "image": require('..\/images\/pals\/101B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/8\/8e\/Jormuntide_menu.png\/",
         "suitability": [
             {
@@ -30436,7 +30436,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Kelpsea Ignis",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/081B.png'),
+        "image": require('..\/images\/pals\/081B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/1\/1b\/Kelpsea_menu.png\/",
         "suitability": [
             {
@@ -30670,7 +30670,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Leezpunk Ignis",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/045B.png'),
+        "image": require('..\/images\/pals\/045B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/09\/Leezpunk_menu.png\/",
         "suitability": [
             {
@@ -30911,7 +30911,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Lyleen Noct",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/104B.png'),
+        "image": require('..\/images\/pals\/104B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/5\/5e\/Lyleen_menu.png\/",
         "suitability": [
             {
@@ -31163,7 +31163,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Mammorest Cryst",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/090B.png'),
+        "image": require('..\/images\/pals\/090B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/5\/5e\/Mammorest_menu.png\/",
         "suitability": [
             {
@@ -31410,7 +31410,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Mau Cryst",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/024B.png'),
+        "image": require('..\/images\/pals\/024B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/1\/17\/Mau_menu.png\/",
         "suitability": [
             {
@@ -31647,7 +31647,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Mossanda Lux",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/033B.png'),
+        "image": require('..\/images\/pals\/033B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/d\/db\/Mossanda_menu.png\/",
         "suitability": [
             {
@@ -31899,7 +31899,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Pyrin Noct",
         "variant": "B",
         "isNightOnly": "true",
-        "image": require('..\/images\/058B.png'),
+        "image": require('..\/images\/pals\/058B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/e\/e6\/Pyrin_menu.png\/",
         "suitability": [
             {
@@ -32140,7 +32140,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Relaxaurus Lux",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/085B.png'),
+        "image": require('..\/images\/pals\/085B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/01\/Relaxaurus_menu.png\/",
         "suitability": [
             {
@@ -32384,7 +32384,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Robinquill Terra",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/048B.png'),
+        "image": require('..\/images\/pals\/048B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/bb\/Robinquill_menu.png\/",
         "suitability": [
             {
@@ -32644,7 +32644,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Surfent Terra",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/065B.png'),
+        "image": require('..\/images\/pals\/065B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/1\/1d\/Surfent_menu.png\/",
         "suitability": [
             {
@@ -32882,7 +32882,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Suzaku Aqua",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/102B.png'),
+        "image": require('..\/images\/pals\/102B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/b4\/Suzaku_menu.png\/",
         "suitability": [
             {
@@ -33120,7 +33120,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Vanwyrm Cryst",
         "variant": "B",
         "isNightOnly": "true",
-        "image": require('..\/images\/071B.png'),
+        "image": require('..\/images\/pals\/071B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/e\/ea\/Vanwyrm_menu.png\/",
         "suitability": [
             {
@@ -33364,7 +33364,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Wumpo Botan",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/091B.png'),
+        "image": require('..\/images\/pals\/091B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/0e\/Wumpo_menu.png\/",
         "suitability": [
             {
