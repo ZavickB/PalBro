@@ -92,16 +92,18 @@ const MyPossibleBreedingsView = ({ navigation }) => {
         searchBarPlaceholder={'Browse potential breedings...'}
         data={dataForSearchableList}
         renderItem={({ item }) => (
-          <TouchableOpacity onPress={() => handleTilePress(item)}>
-            <PalTile
-              pal={item}
-              tileWidth={tileWidth}
-              tileHeight={tileHeight}
-              spacing={5}
-              onCapturePress={() => toggleCapture(item.key)}
-              isCaptured={capturedPals.includes(item.key)}
-            />
-          </TouchableOpacity>
+          <View style={styles.listContainer}>
+            <TouchableOpacity onPress={() => handleTilePress(item)}>
+              <PalTile
+                pal={item}
+                tileWidth={tileWidth}
+                tileHeight={tileHeight}
+                spacing={5}
+                onCapturePress={() => toggleCapture(item.key)}
+                isCaptured={capturedPals.includes(item.key)}
+              />
+            </TouchableOpacity>
+          </View>
         )}
         numColumns={3}
         emptyStateText="No possible breeding found."
@@ -117,7 +119,7 @@ const MyPossibleBreedingsView = ({ navigation }) => {
     <GradientBackground>
       <View style={styles.container}>
         <View style={styles.appContainer}>
-          <TopBar title="Breeding Options" navigation={navigation} theme={currentTheme} />
+          <TopBar title="Breeding Catalog" navigation={navigation} theme={currentTheme} />
             {renderPotentialParents()}
         </View>
       </View>
