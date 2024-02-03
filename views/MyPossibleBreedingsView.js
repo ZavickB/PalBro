@@ -1,18 +1,29 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, Text, View, Dimensions, ActivityIndicator } from 'react-native';
+import { StyleSheet, Text, View, RefreshControl, Dimensions, TouchableOpacity, ScrollView, ActivityIndicator } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useTheme } from '../components/ThemeContext';
 
 import TopBar from '../components/TopBar';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
-import { ScrollView } from 'react-native';
 import GradientBackground from '../components/GradientBackground';
+import SearchableList from '../components/SearchableList';
+import PalTile from '../components/PalTile';
 
 const MyPossibleBreedingsView = ({ navigation }) => {
   const { currentTheme } = useTheme();
 
   const [capturedPals, setCapturedPals] = useState([]);
   const [isLoadingBreedings, setIsLoadingBreedings] = useState(true); // State to track loading of breedings
+  const [refreshing, setRefreshing] = useState(false); // State to track refreshing
+
+  const screenWidth = Dimensions.get('window').width;
+  const screenHeight = Dimensions.get('window').height;
+
+  const tileWidthPercentage = 30;
+  const tileHeightPercentage = 25;
+  const spacing = 5;
+  const tileWidth = ((screenWidth * tileWidthPercentage) / 100) - spacing;
+  const tileHeight = ((screenHeight * tileHeightPercentage) / 100) - spacing;
 
   const STORAGE_KEY = 'capturedPals';
 
@@ -30,24 +41,41 @@ const MyPossibleBreedingsView = ({ navigation }) => {
     }
   };
 
-  useEffect(() => {
-    console.log('Fetching data from AsyncStorage...');
+  const loadData = () => {
     getData(STORAGE_KEY)
       .then((storedCapturedPals) => {
-        console.log('Stored Captured Pals:', storedCapturedPals);
         if (storedCapturedPals !== null) {
           // Data found, set it in the state
-          console.log('Setting Captured Pals in state...');
           setCapturedPals(storedCapturedPals);
         }
         setIsLoadingBreedings(false); // Mark loading as complete
-        console.log('Loading complete.');
+        setRefreshing(false); // Stop the refresh indicator
       })
       .catch((error) => {
         console.error('Error loading data:', error);
         setIsLoadingBreedings(false); // Mark loading as complete even in case of error
-        console.log('Loading complete with error.');
+        setRefreshing(false); // Stop the refresh indicator in case of error
       });
+  };
+
+  const toggleCapture = (palKey) => {
+    let updatedCapturedPals;
+  
+    if (capturedPals.includes(palKey)) {
+      updatedCapturedPals = capturedPals.filter((key) => key !== palKey);
+    } else {
+      updatedCapturedPals = [...capturedPals, palKey];
+    }
+  
+    setCapturedPals(updatedCapturedPals);
+    storeData(STORAGE_KEY, updatedCapturedPals);
+  
+    // Trigger a refresh
+    setRefreshing(true);
+  };
+
+  useEffect(() => {
+    loadData();
   }, []); // Run this effect only once on component mount
 
   const calculatePotentialParents = (selectedPal, palsList) => {
@@ -92,73 +120,51 @@ const MyPossibleBreedingsView = ({ navigation }) => {
     return potentialParents;
   };
 
-  const calculatePossibleBreedings = () => {
-    const breedingsMap = new Map(); // Use a Map to group results by breed
-
-    // Iterate through all pals in PalsProfilesStatsAndBreedings
-    for (const pal of PalsProfilesStatsAndBreedings) {
-      const { breedings } = pal;
-      // Check if the pal has breedings
-      if (breedings) {
-        for (const key in breedings) {
-          // Check if both parents exist in capturedPalsData
-          const parent1 = capturedPalsData.find((pal1) => pal1.name === key);
-          const parent2 = capturedPalsData.find((pal2) => pal2.name === breedings[key]);
-          if (parent1 && parent2) {
-            // Calculate the breed produced by this couple
-            const breed = `${pal.name}`;
-            // Check if the breed already exists in the map
-            if (!breedingsMap.has(breed)) {
-              // If it doesn't exist, create a new group with this breed
-              breedingsMap.set(breed, { breed, couples: [] });
-            }
-            // Add the couple to the breed
-            breedingsMap.get(breed).couples.push([parent1.name, parent2.name]);
-          }
-        }
-      }
-    }
-
-    // Convert the map values to an array of groups
-    const palListWithParentsGroups = Array.from(breedingsMap.values());
-
-    return palListWithParentsGroups; // Return the array of groups
-  };
-
-  // Conditional rendering based on isLoadingBreedings
-  if (isLoadingBreedings) {
-    return (
-      <View style={styles.loadingContainer}>
-        <ActivityIndicator size="large" color="#0000ff" />
-      </View>
-    );
-  } 
-    const calculatePotentialParentsForSelectedPal = (selectedPal) => {
+  const calculatePotentialParentsForSelectedPal = (selectedPal) => {
     return calculatePotentialParents(selectedPal, capturedPalsData);
   };
 
   const renderPotentialParents = () => {
-    return PalsProfilesStatsAndBreedings.map((selectedPal, index) => {
-      const potentialParents = calculatePotentialParentsForSelectedPal(selectedPal);
+    // Assuming calculatePotentialParentsForSelectedPal returns an array of pals
+    // Prepare data for SearchableList
+    const dataForSearchableList = PalsProfilesStatsAndBreedings.map(pal => {
+      const potentialParents = calculatePotentialParentsForSelectedPal(pal);
+      return {
+        ...pal,
+        potentialParents: potentialParents.length > 0 ? potentialParents : null
+      };
+    }).filter(pal => pal.potentialParents); // Filter out pals with no potential parents
 
-      // Check if the selectedPal has potential parents
-      if (potentialParents.length > 0) {
-        return (
-          <View key={index} style={styles.groupContainer}>
-            <Text style={[styles.groupTitle, {color:currentTheme.textColor}]}>Potential Parents for {selectedPal.name}</Text>
-            {potentialParents.map((couple, i) => (
-              <Text key={i} style={[styles.palName, {color:currentTheme.textColor}]}>
-                - {couple[0].name} x {couple[1].name}
-              </Text>
-            ))}
-          </View>
-        );
-      }
-
-      // If there are no potential parents, don't render this pal
-      return null;
-    });
+    return (
+      <SearchableList
+        data={dataForSearchableList}
+        renderItem={({ item }) => (
+          <TouchableOpacity onPress={() => handleTilePress(item)}>
+            <PalTile
+              pal={item}
+              tileWidth={tileWidth}
+              tileHeight={tileHeight}
+              spacing={5}
+              onCapturePress={() => toggleCapture(item.key)}
+              isCaptured={capturedPals.includes(item.key)}
+            />
+          </TouchableOpacity>
+        )}
+        numColumns={3}
+        // Include other necessary props for SearchableList, such as search functionality
+      />
+    );
   };
+
+  const handleTilePress = (item) => {
+    navigation.navigate('BreedingOptionsView', { palData: item });
+  };
+
+  const onRefresh = React.useCallback(() => {
+    setRefreshing(true);
+    // Perform your data refresh logic here
+    loadData(); // Reload the data
+  }, []);
 
   // Conditional rendering based on isLoadingBreedings
   if (isLoadingBreedings) {
@@ -171,11 +177,19 @@ const MyPossibleBreedingsView = ({ navigation }) => {
 
   return (
     <GradientBackground>
-      <View style={[styles.container]}>
-        <TopBar title="List of possible breedings" theme={currentTheme} />
-        <ScrollView style={styles.listContainer}>
-          {renderPotentialParents()}
-        </ScrollView>
+      <View style={styles.container}>
+        <View style={styles.appContainer}>
+          <TopBar title="My Pals" navigation={navigation} theme={currentTheme} />
+          <ScrollView
+            contentContainerStyle={styles.scrollView}
+            refreshControl={
+              <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+            }
+          >
+            {renderPotentialParents()}
+          </ScrollView>
+
+        </View>
       </View>
     </GradientBackground>
   );
@@ -185,6 +199,11 @@ const MyPossibleBreedingsView = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  appContainer: {
+    flex: 1,
+    paddingTop: 20,
+    paddingHorizontal: 10,
   },
   loadingContainer: {
     flex: 1,

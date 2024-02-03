@@ -5,12 +5,10 @@ import { createStackNavigator } from '@react-navigation/stack';
 import MainView from './views/MainView';
 import PalDetailedView from './views/PalDetailedView';
 import MyPalsView from './views/MyPalsView';
-import CombinedView from './views/CombinedView';
+import MyPossibleBreedingsView from './views/MyPossibleBreedingsView';
 import BreedingOptionsView from './views/BreedingOptionsView';
 import DropsView from './views/DropsView';
 import { ThemeProvider } from './components/ThemeContext';
-import { Provider } from 'react-redux';
-import store from './store'; // Import your Redux store
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const Tab = createBottomTabNavigator();
@@ -37,7 +35,7 @@ function MyPalsStack() {
 function BreedingStack() {
   return (
     <Stack.Navigator initialRouteName="CombinedView" screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="CombinedView" component={CombinedView} />
+      <Stack.Screen name="CombinedView" component={MyPossibleBreedingsView} />
       <Stack.Screen name="BreedingOptionsView" component={BreedingOptionsView} />
     </Stack.Navigator>
   );
@@ -45,7 +43,6 @@ function BreedingStack() {
 
 export default function App() {
   return (
-    <Provider store={store}>
         <ThemeProvider>
 
         <NavigationContainer>
@@ -83,7 +80,6 @@ export default function App() {
           </Tab.Navigator>
         </NavigationContainer>
       </ThemeProvider>
-    </Provider>
 
   );
 }

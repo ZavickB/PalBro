@@ -1,17 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, TouchableOpacity, View, Dimensions } from 'react-native';
 import PalTile from '../components/PalTile';
 import TopBar from '../components/TopBar';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import SearchableList from '../components/SearchableList';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useTheme } from '../components/ThemeContext';
 import GradientBackground from '../components/GradientBackground';
 
-// Import Redux related functions
-import { connect } from 'react-redux';
-import { updateCapturedPals } from '../redux/capturedPals'; // Replace with the correct path to your action
-
-const MainView = ({ navigation, capturedPals, updateCapturedPals }) => {
+const MainView = ({ navigation }) => {
   const { currentTheme } = useTheme();
 
   const screenWidth = Dimensions.get('window').width;
@@ -22,6 +19,9 @@ const MainView = ({ navigation, capturedPals, updateCapturedPals }) => {
   const spacing = 5;
   const tileWidth = ((screenWidth * tileWidthPercentage) / 100) - spacing;
   const tileHeight = ((screenHeight * tileHeightPercentage) / 100) - spacing;
+
+  const [capturedPals, setCapturedPals] = useState([]);
+  const STORAGE_KEY = 'capturedPals';
 
   const handleTilePress = (item) => {
     navigation.navigate('PalsDetails', { palData: item });
@@ -36,11 +36,37 @@ const MainView = ({ navigation, capturedPals, updateCapturedPals }) => {
       updatedCapturedPals = [...capturedPals, palKey];
     }
 
-    // Use the updateCapturedPals function from Redux to update the state
-    updateCapturedPals(updatedCapturedPals);
-
-    // You can remove the AsyncStorage part since Redux will handle state persistence
+    setCapturedPals(updatedCapturedPals);
+    storeData(STORAGE_KEY, updatedCapturedPals);
   };
+
+  const storeData = async (key, value) => {
+    try {
+      await AsyncStorage.setItem(key, JSON.stringify(value));
+    } catch (error) {
+      console.error('Error storing data:', error);
+    }
+  };
+
+  const getData = async (key) => {
+    try {
+      const value = await AsyncStorage.getItem(key);
+      return value !== null ? JSON.parse(value) : [];
+    } catch (error) {
+      console.error('Error retrieving data:', error);
+      return [];
+    }
+  };
+
+  useEffect(() => {
+    // Load data from local storage when the component mounts
+    const loadData = async () => {
+      const storedCapturedPals = await getData(STORAGE_KEY);
+      setCapturedPals(storedCapturedPals);
+    };
+
+    loadData();
+  }, []); // Initial data load when the component mounts
 
   PalsProfilesStatsAndBreedings.sort((a, b) => {
     const aKey = a.key.toLowerCase();
@@ -103,10 +129,4 @@ const styles = StyleSheet.create({
   },
 });
 
-// Map Redux state to component props
-const mapStateToProps = (state) => ({
-  capturedPals: state.capturedPals,
-});
-
-// Connect the component to Redux and updateCapturedPals action
-export default connect(mapStateToProps, { updateCapturedPals })(MainView);
+export default MainView;
