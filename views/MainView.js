@@ -4,9 +4,9 @@ import PalTile from '../components/PalTile';
 import TopBar from '../components/TopBar';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import SearchableList from '../components/SearchableList';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useTheme } from '../components/ThemeContext';
 import GradientBackground from '../components/GradientBackground';
+import { useCapturedPals } from '../components/CapturedPalsContext'; // Import the context hook
 
 const MainView = ({ navigation }) => {
   const { currentTheme } = useTheme();
@@ -20,53 +20,11 @@ const MainView = ({ navigation }) => {
   const tileWidth = ((screenWidth * tileWidthPercentage) / 100) - spacing;
   const tileHeight = ((screenHeight * tileHeightPercentage) / 100) - spacing;
 
-  const [capturedPals, setCapturedPals] = useState([]);
-  const STORAGE_KEY = 'capturedPals';
-
+  const { capturedPals, toggleCapture } = useCapturedPals(); // Use the context hook
+ 
   const handleTilePress = (item) => {
     navigation.navigate('PalsDetails', { palData: item });
   };
-
-  const toggleCapture = (palKey) => {
-    let updatedCapturedPals;
-
-    if (capturedPals.includes(palKey)) {
-      updatedCapturedPals = capturedPals.filter((key) => key !== palKey);
-    } else {
-      updatedCapturedPals = [...capturedPals, palKey];
-    }
-
-    setCapturedPals(updatedCapturedPals);
-    storeData(STORAGE_KEY, updatedCapturedPals);
-  };
-
-  const storeData = async (key, value) => {
-    try {
-      await AsyncStorage.setItem(key, JSON.stringify(value));
-    } catch (error) {
-      console.error('Error storing data:', error);
-    }
-  };
-
-  const getData = async (key) => {
-    try {
-      const value = await AsyncStorage.getItem(key);
-      return value !== null ? JSON.parse(value) : [];
-    } catch (error) {
-      console.error('Error retrieving data:', error);
-      return [];
-    }
-  };
-
-  useEffect(() => {
-    // Load data from local storage when the component mounts
-    const loadData = async () => {
-      const storedCapturedPals = await getData(STORAGE_KEY);
-      setCapturedPals(storedCapturedPals);
-    };
-
-    loadData();
-  }, []); // Initial data load when the component mounts
 
   PalsProfilesStatsAndBreedings.sort((a, b) => {
     const aKey = a.key.toLowerCase();
@@ -99,7 +57,7 @@ const MainView = ({ navigation }) => {
                     tileWidth={tileWidth}
                     tileHeight={tileHeight}
                     spacing={spacing}
-                    onCapturePress={() => toggleCapture(item.key)}
+                    onCapturePress={() => toggleCapture(item.key)} // Use the context function
                     isCaptured={capturedPals.includes(item.key)}
                   />
                 </TouchableOpacity>

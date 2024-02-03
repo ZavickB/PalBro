@@ -8,8 +8,9 @@ import CheckBox from 'expo-checkbox';
 import { FloatingAction } from "react-native-floating-action"; // Import the FloatingAction component
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-const SearchableList = ({ data, renderItem, emptyStateText, numColumns }) => {
+const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey }) => {
   const { currentTheme } = useTheme();
+  console.log('Received data:', data); // Add this line to check received data
 
   const [searchText, setSearchText] = useState('');
   const [filteredData, setFilteredData] = useState(data);
@@ -31,6 +32,10 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns }) => {
   useEffect(() => {
     filterData(searchText, selectedTypes, selectedSuitabilities);
   }, [searchText, selectedTypes, selectedSuitabilities]);
+
+  useEffect(() => {
+    setFilteredData(data);
+  }, [data]);
 
   const filterData = (text, types, suitabilities) => {
     const filtered = data.filter((item) => {

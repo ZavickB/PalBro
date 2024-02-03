@@ -10,6 +10,7 @@ import BreedingOptionsView from './views/BreedingOptionsView';
 import DropsView from './views/DropsView';
 import { ThemeProvider } from './components/ThemeContext';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { CapturedPalsProvider } from './components/CapturedPalsContext';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -43,35 +44,35 @@ function BreedingStack() {
 
 export default function App() {
   return (
-        <ThemeProvider>
+    <ThemeProvider>
+      <CapturedPalsProvider>
+          <NavigationContainer>
+            <Tab.Navigator initialRouteName="Home" screenOptions={({ route }) => ({
+              headerShown: false,
+              tabBarActiveTintColor: "darkgray",
+              tabBarInactiveTintColor: "gray",
+              tabBarStyle: [
+                {
+                  "display": "flex"
+                },
+                null
+              ],
+              tabBarIcon: ({ focused, color, size }) => {
+                let iconName;
 
-        <NavigationContainer>
-          <Tab.Navigator initialRouteName="Home" screenOptions={({ route }) => ({
-            headerShown: false,
-            tabBarActiveTintColor: "darkgray",
-            tabBarInactiveTintColor: "gray",
-            tabBarStyle: [
-              {
-                "display": "flex"
+                if (route.name === 'Home') {
+                  iconName = focused ? 'home' : 'home-outline';
+                } else if (route.name === 'My Pals') {
+                  iconName = focused ? 'paw' : 'paw-outline';
+                } else if (route.name === 'Breedings') {
+                  iconName = focused ? 'egg' : 'egg-outline';
+                } else if (route.name === 'Drops') {
+                  iconName = focused ? 'cube' : 'cube-outline';
+                } 
+                // Return the appropriate icon component
+                return <Ionicons name={iconName} size={size} color={color} />;
               },
-              null
-            ],
-            tabBarIcon: ({ focused, color, size }) => {
-              let iconName;
-
-              if (route.name === 'Home') {
-                iconName = focused ? 'home' : 'home-outline';
-              } else if (route.name === 'My Pals') {
-                iconName = focused ? 'paw' : 'paw-outline';
-              } else if (route.name === 'Breedings') {
-                iconName = focused ? 'egg' : 'egg-outline';
-              } else if (route.name === 'Drops') {
-                iconName = focused ? 'cube' : 'cube-outline';
-              } 
-              // Return the appropriate icon component
-              return <Ionicons name={iconName} size={size} color={color} />;
-            },
-          })}
+            })}
           >
             <Tab.Screen name="Home" component={MainStack} />
             <Tab.Screen name="My Pals" component={MyPalsStack} />
@@ -79,7 +80,7 @@ export default function App() {
             <Tab.Screen name="Drops" component={DropsView} />
           </Tab.Navigator>
         </NavigationContainer>
-      </ThemeProvider>
-
+      </CapturedPalsProvider>
+    </ThemeProvider>
   );
 }
