@@ -38,7 +38,7 @@ const PalBreedingInfosBlock = ({ palData, navigation }) => {
   };
 
   const handleBabyPress = (item) => {
-    navigation.navigate('Details', { palData: item });
+    navigation.navigate('PalsDetails', { palData: item });
   };
 
   const styles = StyleSheet.create({
