@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { FlatList, Text, View, StyleSheet, Modal, TextInput, Button, Image, TouchableOpacity } from 'react-native';
-import { useTheme } from './ThemeContext';
+import { useTheme } from './contexts/ThemeContext';
 import TypesList from '../assets/data/TypesList';
 import SuitabilitiesProfiles from '../assets/data/SuitabilitiesProfiles';
 import FiltersModal from './FiltersModal';
 import CheckBox from 'expo-checkbox';
 import { FloatingAction } from "react-native-floating-action"; // Import the FloatingAction component
 import Icon from 'react-native-vector-icons/FontAwesome';
+import SearchBar from './SearchBar';
 
-const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey }) => {
+const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey, searchBarPlaceholder }) => {
   const { currentTheme } = useTheme();
-  console.log('Received data:', data); // Add this line to check received data
 
   const [searchText, setSearchText] = useState('');
   const [filteredData, setFilteredData] = useState(data);
@@ -202,18 +202,13 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
         </View>
       </FiltersModal>
 
-      <View style={styles.searchContainer}>
-        <TextInput
-          placeholder="Search..."
-          placeholderTextColor={currentTheme.textColor}
-          style={[styles.searchInput, { borderColor: currentTheme.borderColor }]}
-          onChangeText={setSearchText}
-          value={searchText}
-        />
-        <TouchableOpacity onPress={() => setSearchModalVisible(true)}>
-          <Icon name="search" size={20} color={currentTheme.primaryColor} />
-        </TouchableOpacity>
-      </View>
+      <SearchBar
+        searchText={searchText}
+        onSearchChange={setSearchText}
+        onSearchSubmit={() => filterData(searchText, selectedTypes, selectedSuitabilities)}
+        currentTheme={currentTheme}
+        placeholder={searchBarPlaceholder}
+      />
 
       {filteredData.length === 0 && <Text style={styles.emptyState}>{emptyStateText}</Text>}
       <View style={[styles.container]}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, FlatList } from 'react-native';
-import { useTheme } from './ThemeContext';
+import { useTheme } from './contexts/ThemeContext';
 import ItemsList from '../assets/data/ItemsList';
 
 const PalDropsBlock = ({ drops }) => {

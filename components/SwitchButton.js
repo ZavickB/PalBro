@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
-import { useTheme } from './ThemeContext';
+import { useTheme } from './contexts/ThemeContext';
 
 const SwitchButton = ({ onPress, isUsingCapturedPals }) => {
   const { currentTheme } = useTheme();

@@ -1,17 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity, FlatList } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity, FlatList, ActivityIndicator } from 'react-native';
 import TopBar from '../components/TopBar';
-import { useTheme } from '../components/ThemeContext';
+import { useTheme } from '../components/contexts/ThemeContext';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import ItemsList from '../assets/data/ItemsList';
 import { useMemo } from 'react';
 import GradientBackground from '../components/GradientBackground';
-
+import SearchBar from '../components/SearchBar';
+import PalDropsModal from '../components/PalDropsModal'; // Import the DropsModal component
 
 const DropsView = ({ route, navigation }) => {
   const { currentTheme } = useTheme();
   const [searchText, setSearchText] = useState('');
   const [filteredDrops, setFilteredDrops] = useState([]);
+  const [selectedItem, setSelectedItem] = useState(null); // State for selected item
+  const [modalVisible, setModalVisible] = useState(false); // State for modal visibility
+  const [loading, setLoading] = useState(false); // State for loading indicator
+  const [palsWithItem, setPalsWithItem] = useState([]); // State for pals with the selected item
 
   // useMemo to memoize uniqueDropsData
   const uniqueDropsData = useMemo(() => {
@@ -20,7 +25,7 @@ const DropsView = ({ route, navigation }) => {
       pal.drops?.forEach((drop) => uniqueDrops.add(drop));
     });
     return Array.from(uniqueDrops);
-  }, []); // Empty dependency array means it only calculates on initial render
+  }, []);
 
   useEffect(() => {
     const filtered = uniqueDropsData.filter((drop) =>
@@ -29,11 +34,33 @@ const DropsView = ({ route, navigation }) => {
     setFilteredDrops(filtered);
   }, [searchText, uniqueDropsData]);
 
+  useEffect(() => {
+    if (selectedItem) {
+      setLoading(true); // Set loading state to true when fetching palsWithItem
+      // Simulate an asynchronous API call (replace with your actual data fetching logic)
+      setTimeout(() => {
+        const pals = PalsProfilesStatsAndBreedings.filter((pal) =>
+          pal.drops?.includes(selectedItem)
+        );
+        setPalsWithItem(pals);
+        setLoading(false); // Set loading state to false when data is loaded
+      }, 1000); // Simulate a 1-second delay (adjust as needed)
+    }
+  }, [selectedItem]);
+
+  const handleItemPress = (item) => {
+    setSelectedItem(item);
+    setModalVisible(true);
+  };
+
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      paddingHorizontal: 16,
+    },
+    appContainer: {
+      flex: 1,
       paddingTop: 20,
+      paddingHorizontal: 10,
     },
     title: {
       fontSize: 24,
@@ -62,41 +89,50 @@ const DropsView = ({ route, navigation }) => {
       fontSize: 20,
       color: currentTheme.textColor,
     },
-    searchInput: {
-      height: 40,
-      borderWidth: 1,
-      borderColor: 'gray',
-      borderRadius: 5,
-      paddingHorizontal: 10,
-      marginBottom: 10,
-      color: currentTheme.textColor,
+    loadingIndicator: {
+      marginTop: 20,
     },
   });
 
+  const closeModal = () => {
+    setSelectedItem(null);
+    setModalVisible(false);
+    setPalsWithItem([]); // Reset palsWithItem when modal is closed
+  };
+
   return (
     <GradientBackground>
-      <View style={styles.container}>
-        <TopBar title="Index of Drops" navigation={navigation} theme={currentTheme} />
-        <TextInput
-          placeholder="Search Drops..."
-          placeholderTextColor={currentTheme.textColor}
-          style={styles.searchInput}
-          onChangeText={setSearchText}
-          value={searchText}
-        />
-        <FlatList
-          data={filteredDrops}
-          keyExtractor={(item) => item}
-          renderItem={({ item }) => (
-            <View style={styles.dropItem}>
-              <Image
-                source={ItemsList.find((itemObject) => itemObject.name === item)?.icon}
-                style={{ width: 50, height: 50, marginRight: 10 }}
-              />
-              <Text style={styles.dropText}>{item}</Text>
-            </View>
-          )}
-        />
+      <View style={[styles.container ]}>
+        <View style={styles.appContainer}>
+          <TopBar title="Index of Drops" navigation={navigation} theme={currentTheme} />
+          <SearchBar
+            searchText={searchText}
+            onSearchChange={setSearchText}
+            placeholder={'Search for drops...'}
+          />
+          <FlatList
+            data={filteredDrops}
+            keyExtractor={(item) => item}
+            renderItem={({ item }) => (
+              <TouchableOpacity onPress={() => handleItemPress(item)}>
+                <View style={styles.dropItem}>
+                  <Image
+                    source={ItemsList.find((itemObject) => itemObject.name === item)?.icon}
+                    style={{ width: 50, height: 50, marginRight: 10 }}
+                  />
+                  <Text style={styles.dropText}>{item}</Text>
+                </View>
+              </TouchableOpacity>
+            )}
+          />
+          <PalDropsModal
+            visible={modalVisible}
+            onClose={closeModal}
+            item={selectedItem}
+            pals={palsWithItem}
+            loading={loading} // Pass loading state to PalDropsModal
+          />
+        </View>
       </View>
     </GradientBackground>
   );

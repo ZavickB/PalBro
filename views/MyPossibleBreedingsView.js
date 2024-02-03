@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, RefreshControl, Dimensions, TouchableOpacity, ScrollView, ActivityIndicator } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useTheme } from '../components/ThemeContext';
-import { useCapturedPals } from '../components/CapturedPalsContext'; // Import the context hook
+import { useTheme } from '../components/contexts/ThemeContext';
+import { useCapturedPals } from '../components/contexts/CapturedPalsContext'; // Import the context hook
 
 import TopBar from '../components/TopBar';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
@@ -89,6 +89,7 @@ const MyPossibleBreedingsView = ({ navigation }) => {
 
     return (
       <SearchableList
+        searchBarPlaceholder={'Browse potential breedings...'}
         data={dataForSearchableList}
         renderItem={({ item }) => (
           <TouchableOpacity onPress={() => handleTilePress(item)}>
@@ -103,7 +104,7 @@ const MyPossibleBreedingsView = ({ navigation }) => {
           </TouchableOpacity>
         )}
         numColumns={3}
-        // Include other necessary props for SearchableList, such as search functionality
+        emptyStateText="No possible breeding found."
       />
     );
   };
@@ -116,7 +117,7 @@ const MyPossibleBreedingsView = ({ navigation }) => {
     <GradientBackground>
       <View style={styles.container}>
         <View style={styles.appContainer}>
-          <TopBar title="My Pals" navigation={navigation} theme={currentTheme} />
+          <TopBar title="Breeding Options" navigation={navigation} theme={currentTheme} />
             {renderPotentialParents()}
         </View>
       </View>
@@ -133,27 +134,9 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     paddingHorizontal: 10,
   },
-  loadingContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   listContainer: {
     flex: 1,
-    paddingHorizontal: 20,
-    paddingTop: 20,
-  },
-  groupContainer: {
-    marginBottom: 20,
-  },
-  groupTitle: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginBottom: 10,
-  },
-  palName: {
-    fontSize: 16,
-    marginLeft: 20,
+    alignItems: 'center',
   },
 });
 

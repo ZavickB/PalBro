@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, Image, Text } from 'react-native';
 import SuitabilitiesProfiles from '../assets/data/SuitabilitiesProfiles'; // Import the icon data
-import { useTheme } from './ThemeContext'; // Import the useTheme hook
+import { useTheme } from './contexts/ThemeContext'; // Import the useTheme hook
 
 const SuitabilityBlock = ({ suitabilities }) => {
   const { currentTheme } = useTheme();

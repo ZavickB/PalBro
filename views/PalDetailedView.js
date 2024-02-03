@@ -6,7 +6,7 @@ import TypeBadge from '../components/TypeBadge';
 import TopBar from '../components/TopBar';
 import PalStatsBlock from '../components/PalStatsBlock';
 import { statsOrder } from '../components/configs/PalsStatsOrderConfig';
-import { useTheme } from '../components/ThemeContext';
+import { useTheme } from '../components/contexts/ThemeContext';
 import PalSkillsBlock from '../components/PalSkillsBlock';
 import PalDropsBlock from '../components/PalDropsBlock';
 import GradientBackground from '../components/GradientBackground';

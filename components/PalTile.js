@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import TypePin from './TypePin';
-import { useTheme } from './ThemeContext';
+import { useTheme } from './contexts/ThemeContext';
 
 const PalTile = ({ pal, tileWidth, tileHeight, spacing, isCaptured, onCapturePress }) => {
 
@@ -23,8 +23,9 @@ const PalTile = ({ pal, tileWidth, tileHeight, spacing, isCaptured, onCapturePre
     container: {
       alignItems: 'center',
       justifyContent: 'space-between',
-      backgroundColor: 'white',
+      backgroundColor: currentTheme.palTileBackgroundColor, // Using palTileBackground from theme
       borderRadius: 10,
+      borderColor: currentTheme.palTileBorderColor, // Using palTileBorderColor from theme
       padding: 10,
       margin: spacing,
       shadowColor: getRarityColor(pal.rarity),
@@ -49,6 +50,7 @@ const PalTile = ({ pal, tileWidth, tileHeight, spacing, isCaptured, onCapturePre
       fontSize: 14,
       fontWeight: 'bold',
       textAlign: 'center',
+      color: currentTheme.palTileTextColor, // Using palTileTextColor from theme
     },
     typesContainer: {
       flexDirection: 'row',

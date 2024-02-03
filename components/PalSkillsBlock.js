@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import TypePin from './TypePin';
-import { useTheme } from './ThemeContext';
+import { useTheme } from './contexts/ThemeContext';
 
 const PalSkillsBlock = ({ skills }) => {
   const { currentTheme } = useTheme();

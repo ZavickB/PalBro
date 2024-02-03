@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { useTheme } from './ThemeContext';
+import { useTheme } from './contexts/ThemeContext';
 
 const PalStatsBlock = ({ stats, statsOrder }) => {
   const { currentTheme } = useTheme();

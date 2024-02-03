@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import { useTheme } from './ThemeContext';
+import { useTheme } from './contexts/ThemeContext';
 import {LinearGradient} from 'expo-linear-gradient';
 
 const GradientBackground = ({ children }) => {

@@ -8,9 +8,9 @@ import MyPalsView from './views/MyPalsView';
 import MyPossibleBreedingsView from './views/MyPossibleBreedingsView';
 import BreedingOptionsView from './views/BreedingOptionsView';
 import DropsView from './views/DropsView';
-import { ThemeProvider } from './components/ThemeContext';
+import { ThemeProvider } from './components/contexts/ThemeContext';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { CapturedPalsProvider } from './components/CapturedPalsContext';
+import { CapturedPalsProvider } from './components/contexts/CapturedPalsContext';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();

@@ -4,9 +4,9 @@ import PalTile from '../components/PalTile';
 import TopBar from '../components/TopBar';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import SearchableList from '../components/SearchableList';
-import { useTheme } from '../components/ThemeContext';
+import { useTheme } from '../components/contexts/ThemeContext';
 import GradientBackground from '../components/GradientBackground';
-import { useCapturedPals } from '../components/CapturedPalsContext'; // Import the context hook
+import { useCapturedPals } from '../components/contexts/CapturedPalsContext'; // Import the context hook
 
 const MainView = ({ navigation }) => {
   const { currentTheme } = useTheme();
@@ -44,10 +44,11 @@ const MainView = ({ navigation }) => {
 
   return (
     <GradientBackground>
-      <View style={[styles.container ]}>
+      <View style={styles.container}>
         <View style={styles.appContainer}>
           <TopBar title="Home" navigation={navigation} theme={currentTheme} />
           <SearchableList
+            searchBarPlaceholder={'Browse all Pals...'}
             data={PalsProfilesStatsAndBreedings}
             renderItem={({ item }) => (
               <View style={styles.listContainer}>

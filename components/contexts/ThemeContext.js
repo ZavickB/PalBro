@@ -12,7 +12,12 @@ const themes = {
     "modalBackground": "rgba(240, 230, 140, 0.5)", // Semi-transparent khaki
     "modalContentBackground": "#FFFFFF", // White
     "backgroundGradient": ["#F0E68C", "#FFDAB9"], // Gradient from khaki to peach puff
-    "borderColor": "#556B2F" // Dark Olive Green
+    "borderColor": "#556B2F", // Dark Olive Green
+    "palTileBackgroundColor": "#F5F5DC", // Warm and slightly beige background.
+    "palTileBorderColor": "#556B2F",
+    "palTileTextColor": "#556B2F",
+    "searchBarBackgroundColor": "#F5F5DC",
+    "searchBarTextColor": "#556B2F",
   },
   dark: {
     "backgroundColor": "#13305B", // Deep navy blue, as the base
@@ -22,7 +27,12 @@ const themes = {
     "modalBackground": "rgba(19, 48, 91, 0.8)", // Slightly more opaque navy for modals
     "modalContentBackground": "#1E4168", // A slightly lighter shade of navy for modal content background
     "backgroundGradient": ["#13305B", "#5078A0"], // Gradient from deep navy blue to a serene teal blue
-    "borderColor": "#E0E0E0" // Light gray, to ensure elements are well-defined
+    "borderColor": "#E0E0E0", // Light gray, to ensure elements are well-defined
+    "palTileBackgroundColor": "#36454F", // A deep navy blue background for dark theme
+    "palTileBorderColor": "#556B2F",
+    "palTileTextColor": "#E0E0E0",
+    "searchBarBackgroundColor": "#36454F",
+    "searchBarTextColor": "#E0E0E0",
   },
 };
 

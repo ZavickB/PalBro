@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, Image, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
 import TypeBadge from '../components/TypeBadge';
 import TopBar from '../components/TopBar';
-import { useTheme } from '../components/ThemeContext';
+import { useTheme } from '../components/contexts/ThemeContext';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import SwitchButton from '../components/SwitchButton'; // Import the SwitchButton component
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -29,7 +29,6 @@ const calculatePotentialParents = (selectedPal, useCapturedPals) => {
   const potentialParents = [];
 
   // Add logging to check the value of selectedPal
-  console.log('Selected Pal:', selectedPal);
 
   // Iterate through all pals
   for (const pal of palsList) {
@@ -47,8 +46,6 @@ const calculatePotentialParents = (selectedPal, useCapturedPals) => {
             // Found a potential parent couple
             const parentCouple = [pal, parent];
 
-            // Add logging to check the value of parentCouple
-            console.log('Parent Couple:', parentCouple);
 
             // Check if the couple is already in the array
             let alreadyInArray = false;
@@ -76,7 +73,6 @@ const calculatePotentialParents = (selectedPal, useCapturedPals) => {
   const getData = async (key) => {
     try {
       const value = await AsyncStorage.getItem(key);
-      console.log('Retrieved data:', value); // Add this line
       return value !== null ? JSON.parse(value) : [];
     } catch (error) {
       console.error('Error retrieving data:', error);
