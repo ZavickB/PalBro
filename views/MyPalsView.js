@@ -10,7 +10,7 @@ import { useCapturedPals } from '../components/contexts/CapturedPalsContext'; //
 
 const MyPalsView = ({ navigation }) => {
   const { currentTheme } = useTheme();
-  const { capturedPals, toggleCapture, refreshKey } = useCapturedPals(); // Use the context hook to access state and functions
+  const { capturedPals, toggleCapture } = useCapturedPals(); // Use the context hook to access state and functions
 
   const screenWidth = Dimensions.get('window').width;
   const screenHeight = Dimensions.get('window').height;
@@ -22,7 +22,7 @@ const MyPalsView = ({ navigation }) => {
   const tileHeight = ((screenHeight * tileHeightPercentage) / 100) - spacing;
 
   const handleTilePress = (item) => {
-    navigation.navigate('Details', { palData: item });
+    navigation.navigate('MyPalsDetails', { palData: item });
   };
 
   // Filter the newly captured pals directly here

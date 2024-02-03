@@ -50,7 +50,7 @@ const TopBar = ({ title, navigation }) => {
 
 const styles = StyleSheet.create({
   topBar: {
-    marginTop: 20, // Adjust the marginTop to account for the status bar
+    marginTop: 40, // Adjust the marginTop to account for the status bar
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between', // Use space-between to separate the icons
@@ -67,8 +67,8 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   eclipseImage: {
-    width: 30, // Adjust the width as needed
-    height: 30, // Adjust the height as needed
+    width: 40, // Adjust the width as needed
+    height: 40, // Adjust the height as needed
   },
 });
 

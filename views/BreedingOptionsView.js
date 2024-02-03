@@ -1,105 +1,68 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, Image, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
 import TypeBadge from '../components/TypeBadge';
 import TopBar from '../components/TopBar';
 import { useTheme } from '../components/contexts/ThemeContext';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import SwitchButton from '../components/SwitchButton'; // Import the SwitchButton component
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useCapturedPals } from '../components/contexts/CapturedPalsContext'; // Import the useCapturedPals hook
 import { ActivityIndicator } from 'react-native';
 
 const BreedingOptionsView = ({ route, navigation }) => {
   const { palData } = route.params;
   const { currentTheme } = useTheme();
-  const [capturedPals, setCapturedPals] = useState([]);
-  const [isUsingCapturedPals, setIsUsingCapturedPals] = useState(false); // State to toggle between using captured pals or default list
+  const { capturedPals } = useCapturedPals(); // Use the hook to access captured pals
+  const [isUsingCapturedPals, setIsUsingCapturedPals] = useState(false);
   const [potentialParentsData, setPotentialParentsData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true); // State to track loading
 
-  const STORAGE_KEY = 'capturedPals';
 
-  // Define capturedPalsData outside of useEffect
-  const capturedPalsData = PalsProfilesStatsAndBreedings.filter((pal) =>
+  const newlyCapturedPals = PalsProfilesStatsAndBreedings.filter((pal) =>
     capturedPals.includes(pal.key)
   );
 
-// Function to calculate potential parent couples
-const calculatePotentialParents = (selectedPal, useCapturedPals) => {
-  const palsList = useCapturedPals ? capturedPalsData : PalsProfilesStatsAndBreedings;
-  const potentialParents = [];
 
-  // Add logging to check the value of selectedPal
+  // Function to calculate potential parent couples
+  const calculatePotentialParents = (selectedPal, useCapturedPals) => {
+    const palsList = useCapturedPals ? newlyCapturedPals : PalsProfilesStatsAndBreedings;
+    const potentialParents = [];
 
-  // Iterate through all pals
-  for (const pal of palsList) {
-    const { breedings } = pal;
+    for (const pal of palsList) {
+      const { breedings } = pal;
 
-    // Check if the pal has breedings
-    if (breedings) {
-      for (const key in breedings) {
-        if (breedings[key] === selectedPal.name) {
-          // Find the parent pal by name
-          const parent = palsList.find((p) => p.name === key);
+      if (breedings) {
+        for (const key in breedings) {
+          if (breedings[key] === selectedPal.name) {
+            const parent = palsList.find((p) => p.name === key);
 
-          // Check if the parent is not undefined
-          if (parent) {
-            // Found a potential parent couple
-            const parentCouple = [pal, parent];
+            if (parent) {
+              const parentCouple = [pal, parent];
 
-
-            // Check if the couple is already in the array
-            let alreadyInArray = false;
-            for (const couple of potentialParents) {
-              if (
-                (couple[0].name === parentCouple[0].name &&
-                  couple[1].name === parentCouple[1].name) ||
-                (couple[0].name === parentCouple[1].name &&
-                  couple[1].name === parentCouple[0].name)
-              ) {
-                alreadyInArray = true;
+              let alreadyInArray = false;
+              for (const couple of potentialParents) {
+                if (
+                  (couple[0].name === parentCouple[0].name &&
+                    couple[1].name === parentCouple[1].name) ||
+                  (couple[0].name === parentCouple[1].name &&
+                    couple[1].name === parentCouple[0].name)
+                ) {
+                  alreadyInArray = true;
+                }
               }
-            }
-            if (!alreadyInArray) {
-              potentialParents.push(parentCouple);
+              if (!alreadyInArray) {
+                potentialParents.push(parentCouple);
+              }
             }
           }
         }
       }
     }
-  }
-  return potentialParents;
-};
-
-  const getData = async (key) => {
-    try {
-      const value = await AsyncStorage.getItem(key);
-      return value !== null ? JSON.parse(value) : [];
-    } catch (error) {
-      console.error('Error retrieving data:', error);
-      return [];
-    }
+    return potentialParents;
   };
 
   useEffect(() => {
     setIsUsingCapturedPals(false);
   }, [palData]);
-  
-  useEffect(() => {
-    getData(STORAGE_KEY)
-      .then((storedCapturedPals) => {
-        if (storedCapturedPals !== null) {
-          // Data found, set it in the state
-          setCapturedPals(storedCapturedPals);
-        }
-        setIsLoading(false); // Mark loading as complete
-      })
-      .catch((error) => {
-        console.error('Error loading data:', error);
-        setIsLoading(false); // Mark loading as complete even in case of error
-      });
-  }, []); // Run this effect only once on component mount
 
-  // Calculate potential parents data when the capturedPals or isUsingCapturedPals state changes
   useEffect(() => {
     const updatedPotentialParentsData = calculatePotentialParents(
       palData,
@@ -108,7 +71,6 @@ const calculatePotentialParents = (selectedPal, useCapturedPals) => {
     setPotentialParentsData(updatedPotentialParentsData);
   }, [palData, isUsingCapturedPals]);
 
-  // Toggle between using captured pals or default list
   const toggleList = () => {
     setIsUsingCapturedPals((prev) => !prev);
   };
@@ -116,7 +78,7 @@ const calculatePotentialParents = (selectedPal, useCapturedPals) => {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: currentTheme.backgroundColor, // Use theme-aware background color
+      backgroundColor: currentTheme.backgroundColor,
     },
     image: {
       width: '100%',
@@ -131,7 +93,7 @@ const calculatePotentialParents = (selectedPal, useCapturedPals) => {
       fontWeight: 'bold',
       textAlign: 'left',
       marginBottom: 8,
-      color: currentTheme.textColor, // Set text color based on the theme
+      color: currentTheme.textColor,
     },
     section: {
       marginBottom: 16,
@@ -140,20 +102,12 @@ const calculatePotentialParents = (selectedPal, useCapturedPals) => {
       fontSize: 18,
       fontWeight: 'bold',
       marginBottom: 8,
-      color: currentTheme.textColor, // Set text color based on the theme
+      color: currentTheme.textColor,
     },
     description: {
       fontSize: 16,
       textAlign: 'justify',
-      color: currentTheme.textColor, // Set text color based on the theme
-    },
-    abilities: {
-      fontSize: 16,
-      marginBottom: 8,
-      color: currentTheme.textColor, // Set text color based on the theme
-    },
-    breedPicker: {
-      // Style for the picker
+      color: currentTheme.textColor,
     },
     palListItem: {
       flexDirection: 'row',
@@ -161,15 +115,15 @@ const calculatePotentialParents = (selectedPal, useCapturedPals) => {
       marginBottom: 8,
     },
     palImage: {
-      width: 24, // Adjust the width as needed
-      height: 24, // Adjust the height as needed
+      width: 24,
+      height: 24,
       marginRight: 8,
     },
   });
 
   return (
     <View style={styles.container}>
-      <TopBar title="Breeding Options" navigation={navigation} />
+      <TopBar navigation={navigation} />
       <ScrollView style={styles.container}>
         <Image style={styles.image} source={palData.image} />
         <View style={styles.infoContainer}>
