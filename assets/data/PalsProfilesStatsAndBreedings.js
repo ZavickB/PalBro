@@ -27329,7 +27329,7 @@ const PalsProfilesStatsAndBreedings = [
         ],
         "drops": [
             "Broncherry Meat",
-            "Tomato Seeds"
+            "Lettuce Seeds"
         ],
         "specialCapacity": {
             "name": "Overaffectionate",
@@ -27571,7 +27571,7 @@ const PalsProfilesStatsAndBreedings = [
             }
         ],
         "drops": [
-            "Wheat Seeds"
+            "Tomato Seeds"
         ],
         "specialCapacity": {
             "name": "Fragrant Dragon",
@@ -28290,8 +28290,8 @@ const PalsProfilesStatsAndBreedings = [
             }
         ],
         "drops": [
-            "Ice Organ",
-            "Diamond"
+            "Large Pal Soul",
+            "Pure Quartz"
         ],
         "specialCapacity": {
             "name": "Ice Steed",
@@ -28536,7 +28536,7 @@ const PalsProfilesStatsAndBreedings = [
             }
         ],
         "drops": [
-            "Pal Fluids"
+            "Flame Organ"
         ],
         "specialCapacity": {
             "name": "Angry Shark",
@@ -29016,7 +29016,8 @@ const PalsProfilesStatsAndBreedings = [
             }
         ],
         "drops": [
-            "Fiber"
+            "Fiber",
+            "Ice Organ"
         ],
         "specialCapacity": {
             "name": "Flying Trapeze",
@@ -29257,7 +29258,7 @@ const PalsProfilesStatsAndBreedings = [
         ],
         "drops": [
             "Wool",
-            "Egg"
+            "Ice Organ"
         ],
         "specialCapacity": {
             "name": "King of Muscles",
@@ -29498,7 +29499,7 @@ const PalsProfilesStatsAndBreedings = [
             }
         ],
         "drops": [
-            "Flame Organ"
+            "Ice Organ"
         ],
         "specialCapacity": {
             "name": "Ore-loving Beast",
@@ -29978,7 +29979,7 @@ const PalsProfilesStatsAndBreedings = [
             }
         ],
         "drops": [
-            "Electric Organ"
+            "Ice Organ"
         ],
         "specialCapacity": {
             "name": "Jolt Bomb",
@@ -30214,7 +30215,8 @@ const PalsProfilesStatsAndBreedings = [
             }
         ],
         "drops": [
-            "Pal Fluids"
+            "High Quality Pal Oil",
+            "Flame Organ"
         ],
         "specialCapacity": {
             "name": "Stormbringer Sea Dragon",
@@ -30450,7 +30452,7 @@ const PalsProfilesStatsAndBreedings = [
         ],
         "drops": [
             "Raw Kelpsea",
-            "Pal Fluids"
+            "Flame Organ"
         ],
         "specialCapacity": {
             "name": "Aqua Spout",
@@ -31427,7 +31429,8 @@ const PalsProfilesStatsAndBreedings = [
             }
         ],
         "drops": [
-            "Gold Coin"
+            "Ice Organ", 
+            "Sapphire"
         ],
         "specialCapacity": {
             "name": "Gold Digger",
@@ -32162,7 +32165,8 @@ const PalsProfilesStatsAndBreedings = [
         ],
         "drops": [
             "High Quality Pal Oil",
-            "Ruby"
+            "Sapphire",
+            "Electric Organ"
         ],
         "specialCapacity": {
             "name": "Hungry Missile",
@@ -32895,7 +32899,7 @@ const PalsProfilesStatsAndBreedings = [
             }
         ],
         "drops": [
-            "Flame Organ"
+            "Pal Fluids"
         ],
         "specialCapacity": {
             "name": "Wings of Flame",
@@ -33138,8 +33142,8 @@ const PalsProfilesStatsAndBreedings = [
         ],
         "drops": [
             "Bone",
-            "Ruby",
-            "Gold Coin"
+            "Sapphire",
+            "Ice Organ"
         ],
         "specialCapacity": {
             "name": "Aerial Marauder",
@@ -33389,7 +33393,8 @@ const PalsProfilesStatsAndBreedings = [
             }
         ],
         "drops": [
-            "Ice Organ",
+            "Lettuce Seeds",
+            "Tomato Seeds",
             "Beautiful Flower"
         ],
         "specialCapacity": {
