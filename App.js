@@ -35,8 +35,8 @@ function MyPalsStack() {
 
 function BreedingStack() {
   return (
-    <Stack.Navigator initialRouteName="CombinedView" screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="CombinedView" component={MyPossibleBreedingsView} />
+    <Stack.Navigator initialRouteName="BreedingCatalog" screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="BreedingCatalog" component={MyPossibleBreedingsView} />
       <Stack.Screen name="BreedingOptionsView" component={BreedingOptionsView} />
     </Stack.Navigator>
   );

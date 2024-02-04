@@ -18,6 +18,9 @@ const themes = {
     palTileTextColor: "#1F3B34", // Dark Green for tile or card text for consistency
     searchBarBackgroundColor: "#F4AB5D", // Lighter Than Lighter Orange for search bar background
     searchBarTextColor: "#1F3B34", // Dark Green for search bar text for readability
+    switchThumbColor: "#6B8E23", // Olive Drab
+    switchTrackColorOn: "#3A5534", // Dark Green
+    switchTrackColorOff: "#DADADA", // Light Gray
   },
   dark: {
     backgroundColor: "#1F3B34", // Dark Green as the base background color for dark theme
@@ -33,6 +36,9 @@ const themes = {
     palTileTextColor: "#F0D4AE", // Peach for tile or card text for contrast and readability
     searchBarBackgroundColor: "#8C994F", // Lighter Than Lighter Green for search bar background
     searchBarTextColor: "#F0D4AE", // Peach for search bar text for visibility
+    switchThumbColor: "#F4AB5D", // Lighter Than Lighter Orange 
+    switchTrackColorOn: "#DE6D36", // Orange
+    switchTrackColorOff: "#3A3A3C", // Dark Gray
   },
 };
 

@@ -1,8 +1,9 @@
-// FiltersModal.js
 import React from 'react';
-import { Modal, Text, TouchableOpacity, View, StyleSheet } from 'react-native';
-import { useTheme } from './contexts/ThemeContext'; // Import the context hook
+import { Modal, Text, TouchableOpacity, View, StyleSheet, ScrollView, Dimensions } from 'react-native';
+import { useTheme } from './contexts/ThemeContext';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
+const { height } = Dimensions.get('window'); // Get the screen height
 
 const FiltersModal = ({ isVisible, onClose, children }) => {
   const { currentTheme } = useTheme();
@@ -19,6 +20,7 @@ const FiltersModal = ({ isVisible, onClose, children }) => {
       padding: 20,
       width: '80%',
       borderRadius: 10,
+      maxHeight: height * 0.8, // Set max height to 80% of screen height
     },
     modalHeader: {
       flexDirection: 'row',
@@ -29,6 +31,7 @@ const FiltersModal = ({ isVisible, onClose, children }) => {
     modalTitle: {
       fontSize: 20,
       fontWeight: 'bold',
+      color: currentTheme.textColor,
     },
   });
 
@@ -41,18 +44,19 @@ const FiltersModal = ({ isVisible, onClose, children }) => {
     >
       <View style={styles.modalContainer}>
         <View style={styles.modalContent}>
-          <View style={styles.modalHeader}>
-            <Text style={styles.modalTitle}>Filter Options</Text>
-            <TouchableOpacity onPress={onClose}>
-                <Text>✖️</Text>
-            </TouchableOpacity>
-          </View>
-          {children}
+          <ScrollView showsVerticalScrollIndicator={false}>
+            <View style={styles.modalHeader}>
+              <Text style={styles.modalTitle}>Filter Options</Text>
+              <TouchableOpacity onPress={onClose} >
+                <Icon name="close" size={24} color={currentTheme.textColor} />
+              </TouchableOpacity>
+            </View>
+            {children}
+          </ScrollView>
         </View>
       </View>
     </Modal>
   );
 };
-
 
 export default FiltersModal;

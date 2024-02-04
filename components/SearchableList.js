@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { FlatList, Text, View, StyleSheet, Modal, TextInput, Button, Image, TouchableOpacity } from 'react-native';
+import { FlatList, Text, View, StyleSheet, Image } from 'react-native';
 import { useTheme } from './contexts/ThemeContext';
 import TypesList from '../assets/data/TypesList';
 import SuitabilitiesProfiles from '../assets/data/SuitabilitiesProfiles';
 import FiltersModal from './FiltersModal';
-import CheckBox from 'expo-checkbox';
 import { FloatingAction } from "react-native-floating-action"; // Import the FloatingAction component
 import Icon from 'react-native-vector-icons/FontAwesome';
 import SearchBar from './SearchBar';
+
+import { Switch } from 'react-native';
+
 
 const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey, searchBarPlaceholder }) => {
   const { currentTheme } = useTheme();
@@ -143,21 +145,28 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
       fontSize: 16,
       fontWeight: 'bold',
       marginBottom: 10,
+      color: currentTheme.textColor,
     },
     filterOptionRow: {
       flexDirection: 'row',
       flexWrap: 'wrap',
+      justifyContent: 'space-evenly', // This helps distribute space evenly around items.
     },
     filterOption: {
       flexDirection: 'row',
       alignItems: 'center',
-      marginBottom: 10,
-      marginRight: 20,
+      marginBottom: 5,
+      marginRight: 5, // Adjust as needed to fit three items per row comfortably.
+      flex: 1, // Allows the option to flexibly expand but might need adjustment.
+      minWidth: '30%', // Adjusted from 45% to fit 3 items per row.
     },
     icon: {
-      width: 20,
-      height: 20,
+      width: 35,
+      height: 35,
       marginRight: 10,
+    },
+    switchButton: {
+      marginRight: 5,
     },
   });
 
@@ -172,12 +181,14 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
           <View style={styles.filterOptionRow}>
             {TypesList.map((type) => (
               <View key={type.type} style={styles.filterOption}>
-                <CheckBox
-                  value={selectedTypes.includes(type.type)}
-                  onValueChange={() => toggleTypeFilter(type.type)}
+                <Switch
+                  value={selectedSuitabilities.includes(type.type)}
+                  onValueChange={() => toggleSuitabilityFilter(type.type)}
+                  thumbColor={currentTheme.switchThumbColor} // Using the new theme prop for thumb color
+                  trackColor={{ false: currentTheme.switchTrackColorOff, true: currentTheme.switchTrackColorOn }} // Using the new theme props for track color
+                  style={styles.switchButton}
                 />
                 <Image source={type.iconFileName} style={styles.icon} />
-                <Text>{type.type}</Text>
               </View>
             ))}
           </View>
@@ -188,14 +199,16 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
           <View style={styles.filterOptionRow}>
             {SuitabilitiesProfiles.map((suitability) => (
               <View key={suitability.workName} style={styles.filterOption}>
-                <CheckBox
+                <Switch
                   value={selectedSuitabilities.includes(suitability.workName)}
                   onValueChange={() => toggleSuitabilityFilter(suitability.workName)}
+                  thumbColor={currentTheme.switchThumbColor} // Using the new theme prop for thumb color
+                  trackColor={{ false: currentTheme.switchTrackColorOff, true: currentTheme.switchTrackColorOn }} // Using the new theme props for track color
+                  style={styles.switchButton}
                 />
                 {suitability.iconFileName && (
                   <Image source={suitability.iconFileName} style={styles.icon} />
                 )}
-                <Text>{suitability.workName}</Text>
               </View>
             ))}
           </View>
