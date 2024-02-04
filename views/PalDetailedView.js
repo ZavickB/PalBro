@@ -124,6 +124,7 @@ const PalDetailedView = ({ route, navigation }) => {
           data={sections}
           renderItem={renderItem}
           keyExtractor={(item, index) => item.type + index}
+          showsVerticalScrollIndicator={true}
         />
       </View>
     </GradientBackground>

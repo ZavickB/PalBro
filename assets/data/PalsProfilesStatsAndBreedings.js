@@ -15581,7 +15581,7 @@ const PalsProfilesStatsAndBreedings = [
         "suitability": [
             {
                 "type": "Watering",
-                "level": 1
+                "level": 2
             }
         ],
         "drops": [
@@ -27323,7 +27323,7 @@ const PalsProfilesStatsAndBreedings = [
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/bd\/Broncherry_menu.png\/",
         "suitability": [
             {
-                "type": "Planting",
+                "type": "Watering",
                 "level": 3
             }
         ],
@@ -27562,7 +27562,7 @@ const PalsProfilesStatsAndBreedings = [
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/b7\/Dinossom_menu.png\/",
         "suitability": [
             {
-                "type": "Planting",
+                "type": "Generating Electricity",
                 "level": 2
             },
             {
@@ -27801,7 +27801,7 @@ const PalsProfilesStatsAndBreedings = [
         "name": "Eikthyrdeer Terra",
         "variant": "B",
         "isNightOnly": "",
-        "image": require('..\/images\/pals\/037.png'),
+        "image": require('..\/images\/pals\/037B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/4\/40\/Eikthyrdeer_menu.png\/",
         "suitability": [
             {
@@ -28042,6 +28042,10 @@ const PalsProfilesStatsAndBreedings = [
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/a\/a6\/Elphidran_menu.png\/",
         "suitability": [
             {
+                "type": "Watering",
+                "level": 3
+            },
+            {
                 "type": "Lumbering",
                 "level": 2
             }
@@ -28281,7 +28285,7 @@ const PalsProfilesStatsAndBreedings = [
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/00\/Frostallion_menu.png\/",
         "suitability": [
             {
-                "type": "Cooling",
+                "type": "Gathering",
                 "level": 4
             }
         ],
@@ -28527,7 +28531,7 @@ const PalsProfilesStatsAndBreedings = [
                 "level": 1
             },
             {
-                "type": "Watering",
+                "type": "Kindling",
                 "level": 2
             }
         ],
@@ -29003,8 +29007,8 @@ const PalsProfilesStatsAndBreedings = [
                 "level": 1
             },
             {
-                "type": "Transporting",
-                "level": 2
+                "type": "Cooling",
+                "level": 1
             },
             {
                 "type": "Gathering",
@@ -29245,6 +29249,10 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "type": "Gathering",
                 "level": 1
+            },
+            {
+                "type": "Cooling",
+                "level": 3
             }
         ],
         "drops": [
@@ -29481,7 +29489,7 @@ const PalsProfilesStatsAndBreedings = [
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/d\/d0\/Reptyro_menu.png\/",
         "suitability": [
             {
-                "type": "Kindling",
+                "type": "Cooling",
                 "level": 3
             },
             {
@@ -29724,10 +29732,6 @@ const PalsProfilesStatsAndBreedings = [
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/4\/40\/Incineram_menu.png\/",
         "suitability": [
             {
-                "type": "Kindling",
-                "level": 1
-            },
-            {
                 "type": "Handiwork",
                 "level": 2
             },
@@ -29969,7 +29973,7 @@ const PalsProfilesStatsAndBreedings = [
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/5\/52\/Jolthog_menu.png\/",
         "suitability": [
             {
-                "type": "Generating Electricity",
+                "type": "Cooling",
                 "level": 1
             }
         ],
@@ -30205,7 +30209,7 @@ const PalsProfilesStatsAndBreedings = [
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/8\/8e\/Jormuntide_menu.png\/",
         "suitability": [
             {
-                "type": "Watering",
+                "type": "Kindling",
                 "level": 4
             }
         ],
@@ -30440,7 +30444,7 @@ const PalsProfilesStatsAndBreedings = [
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/1\/1b\/Kelpsea_menu.png\/",
         "suitability": [
             {
-                "type": "Watering",
+                "type": "Kindling",
                 "level": 1
             }
         ],
@@ -30673,6 +30677,10 @@ const PalsProfilesStatsAndBreedings = [
         "image": require('..\/images\/pals\/045B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/09\/Leezpunk_menu.png\/",
         "suitability": [
+            {
+                "type": "Kindling",
+                "level": 1
+            },
             {
                 "type": "Handiwork",
                 "level": 1
@@ -30914,10 +30922,6 @@ const PalsProfilesStatsAndBreedings = [
         "image": require('..\/images\/pals\/104B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/5\/5e\/Lyleen_menu.png\/",
         "suitability": [
-            {
-                "type": "Planting",
-                "level": 4
-            },
             {
                 "type": "Handiwork",
                 "level": 3
@@ -31167,7 +31171,7 @@ const PalsProfilesStatsAndBreedings = [
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/5\/5e\/Mammorest_menu.png\/",
         "suitability": [
             {
-                "type": "Planting",
+                "type": "Cooling",
                 "level": 2
             },
             {
@@ -31414,6 +31418,10 @@ const PalsProfilesStatsAndBreedings = [
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/1\/17\/Mau_menu.png\/",
         "suitability": [
             {
+                "type": "Cooling",
+                "level": 1
+            },
+            {
                 "type": "Farming",
                 "level": 1
             }
@@ -31651,7 +31659,7 @@ const PalsProfilesStatsAndBreedings = [
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/d\/db\/Mossanda_menu.png\/",
         "suitability": [
             {
-                "type": "Planting",
+                "type": "Generating Electricity",
                 "level": 2
             },
             {
@@ -32144,8 +32152,8 @@ const PalsProfilesStatsAndBreedings = [
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/01\/Relaxaurus_menu.png\/",
         "suitability": [
             {
-                "type": "Watering",
-                "level": 2
+                "type": "Generating Electricity",
+                "level": 3
             },
             {
                 "type": "Transporting",
@@ -32387,10 +32395,6 @@ const PalsProfilesStatsAndBreedings = [
         "image": require('..\/images\/pals\/048B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/bb\/Robinquill_menu.png\/",
         "suitability": [
-            {
-                "type": "Planting",
-                "level": 1
-            },
             {
                 "type": "Handiwork",
                 "level": 2
@@ -32648,7 +32652,7 @@ const PalsProfilesStatsAndBreedings = [
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/1\/1d\/Surfent_menu.png\/",
         "suitability": [
             {
-                "type": "Watering",
+                "type": "Gathering",
                 "level": 1
             }
         ],
@@ -32886,7 +32890,7 @@ const PalsProfilesStatsAndBreedings = [
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/b\/b4\/Suzaku_menu.png\/",
         "suitability": [
             {
-                "type": "Kindling",
+                "type": "Watering",
                 "level": 3
             }
         ],
@@ -33124,8 +33128,8 @@ const PalsProfilesStatsAndBreedings = [
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/e\/ea\/Vanwyrm_menu.png\/",
         "suitability": [
             {
-                "type": "Kindling",
-                "level": 1
+                "type": "Cooling",
+                "level": 2
             },
             {
                 "type": "Transporting",
@@ -33376,8 +33380,8 @@ const PalsProfilesStatsAndBreedings = [
                 "level": 3
             },
             {
-                "type": "Cooling",
-                "level": 2
+                "type": "Planting",
+                "level": 1
             },
             {
                 "type": "Transporting",

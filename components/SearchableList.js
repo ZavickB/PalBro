@@ -28,6 +28,10 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
       name: "bt_filter",
       position: 1,
       color: currentTheme.primaryColor,
+      textStyle: { 
+        fontSize: 16,
+       },
+      justifyContent: 'center',
     },
   ];
 
@@ -182,8 +186,8 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
             {TypesList.map((type) => (
               <View key={type.type} style={styles.filterOption}>
                 <Switch
-                  value={selectedSuitabilities.includes(type.type)}
-                  onValueChange={() => toggleSuitabilityFilter(type.type)}
+                  value={selectedTypes.includes(type.type)}
+                  onValueChange={() => toggleTypeFilter(type.type)}
                   thumbColor={currentTheme.switchThumbColor} // Using the new theme prop for thumb color
                   trackColor={{ false: currentTheme.switchTrackColorOff, true: currentTheme.switchTrackColorOn }} // Using the new theme props for track color
                   style={styles.switchButton}
