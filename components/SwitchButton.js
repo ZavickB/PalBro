@@ -21,10 +21,12 @@ const SwitchButton = ({ onPress, isUsingCapturedPals }) => {
     },
   });
   
+  const buttonText = isUsingCapturedPals ? "Switch to All Pals" : "Switch to My Pals";
+
   return (
     <TouchableOpacity onPress={onPress} style={styles.button}>
     <Text style={styles.buttonText}>
-      {isUsingCapturedPals ? 'Switch to Potential Parents' : 'Switch to My Couples' }
+      {buttonText}
     </Text>
     </TouchableOpacity>
     

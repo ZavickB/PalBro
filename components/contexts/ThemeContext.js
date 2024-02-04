@@ -26,7 +26,7 @@ const themes = {
     backgroundColor: "#1F3B34", // Dark Green as the base background color for dark theme
     textColor: "#F0D4AE", // Peach for text to ensure readability on dark background
     primaryColor: "#F4AB5D", // Lighter Than Lighter Orange for primary actions and buttons
-    secondaryColor: "#8C994F", // Lighter Than Lighter Green for secondary elements and accents
+    secondaryColor: "#EC8639", // Lighter Orange for secondary elements and accents
     modalBackground: "rgba(31, 59, 52, 0.8)", // Darker, more opaque Dark Green for modals
     modalContentBackground: "#3A5534", // Lighter Green for modal content background
     backgroundGradient: ["#1F3B34", "#3A5534"], // Gradient from Dark Green to Lighter Green

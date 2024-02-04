@@ -1,53 +1,42 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Image, ScrollView, StyleSheet } from 'react-native';
+import { View, Text, Image, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
 import TypeBadge from '../components/TypeBadge';
 import TopBar from '../components/TopBar';
 import { useTheme } from '../components/contexts/ThemeContext';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
-import SwitchButton from '../components/SwitchButton'; // Import the SwitchButton component
-import { useCapturedPals } from '../components/contexts/CapturedPalsContext'; // Import the useCapturedPals hook
+import SwitchButton from '../components/SwitchButton';
+import { useCapturedPals } from '../components/contexts/CapturedPalsContext';
 
 const BreedingOptionsView = ({ route, navigation }) => {
-  const { palData } = route.params;
+  const { palData, palsUsed } = route.params;
   const { currentTheme } = useTheme();
-  const { capturedPals } = useCapturedPals(); // Use the hook to access captured pals
-  const [isUsingCapturedPals, setIsUsingCapturedPals] = useState(false);
+  const { capturedPals } = useCapturedPals();
+  const [isUsingCapturedPals, setIsUsingCapturedPals] = useState(palsUsed === "MyPals");
   const [potentialParentsData, setPotentialParentsData] = useState([]);
 
+  // Debugging
+  console.log("palsUsed:", palsUsed, "isUsingCapturedPals:", isUsingCapturedPals);
 
-  const newlyCapturedPals = PalsProfilesStatsAndBreedings.filter((pal) =>
+  const newlyCapturedPals = PalsProfilesStatsAndBreedings.filter(pal =>
     capturedPals.includes(pal.key)
   );
 
-
-  // Function to calculate potential parent couples
   const calculatePotentialParents = (selectedPal, useCapturedPals) => {
     const palsList = useCapturedPals ? newlyCapturedPals : PalsProfilesStatsAndBreedings;
     const potentialParents = [];
 
     for (const pal of palsList) {
       const { breedings } = pal;
-
       if (breedings) {
         for (const key in breedings) {
           if (breedings[key] === selectedPal.name) {
-            const parent = palsList.find((p) => p.name === key);
-
+            const parent = palsList.find(p => p.name === key);
             if (parent) {
               const parentCouple = [pal, parent];
-
-              let alreadyInArray = false;
-              for (const couple of potentialParents) {
-                if (
-                  (couple[0].name === parentCouple[0].name &&
-                    couple[1].name === parentCouple[1].name) ||
-                  (couple[0].name === parentCouple[1].name &&
-                    couple[1].name === parentCouple[0].name)
-                ) {
-                  alreadyInArray = true;
-                }
-              }
-              if (!alreadyInArray) {
+              if (!potentialParents.some(couple =>
+                (couple[0].name === parentCouple[0].name && couple[1].name === parentCouple[1].name) ||
+                (couple[0].name === parentCouple[1].name && couple[1].name === parentCouple[0].name)
+              )) {
                 potentialParents.push(parentCouple);
               }
             }
@@ -59,20 +48,11 @@ const BreedingOptionsView = ({ route, navigation }) => {
   };
 
   useEffect(() => {
-    setIsUsingCapturedPals(false);
-  }, [palData]);
-
-  useEffect(() => {
-    const updatedPotentialParentsData = calculatePotentialParents(
-      palData,
-      isUsingCapturedPals
-    );
+    const updatedPotentialParentsData = calculatePotentialParents(palData, isUsingCapturedPals);
     setPotentialParentsData(updatedPotentialParentsData);
   }, [palData, isUsingCapturedPals]);
 
-  const toggleList = () => {
-    setIsUsingCapturedPals((prev) => !prev);
-  };
+  const toggleList = () => setIsUsingCapturedPals(prev => !prev);
 
   const styles = StyleSheet.create({
     container: {
