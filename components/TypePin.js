@@ -57,15 +57,15 @@ const getTypeColor = (type) => {
 
 const getTypeIcon = (type) => {
     const typeIcons = {
-        "Ground": require('../assets/images/types/Ground_icon_small.png'),
-        "Fire": require('../assets/images/types/Fire_icon_small.png'),
-        "Dragon": require('../assets/images/types/Dragon_icon_small.png'),
-        "Water": require('../assets/images/types/Water_icon_small.png'),
-        "Electric": require('../assets/images/types/Electric_icon_small.png'),
-        "Grass": require('../assets/images/types/Grass_icon_small.png'),
-        "Normal": require('../assets/images/types/Normal_icon_small.png'),
-        "Dark": require('../assets/images/types/Dark_icon_small.png'),
-        "Ice": require('../assets/images/types/Ice_icon_small.png'),
+        "Ground": require('../assets/images/types/Ground_icon.png'),
+        "Fire": require('../assets/images/types/Fire_icon.png'),
+        "Dragon": require('../assets/images/types/Dragon_icon.png'),
+        "Water": require('../assets/images/types/Water_icon.png'),
+        "Electric": require('../assets/images/types/Electric_icon.png'),
+        "Grass": require('../assets/images/types/Grass_icon.png'),
+        "Normal": require('../assets/images/types/Normal_icon.png'),
+        "Dark": require('../assets/images/types/Dark_icon.png'),
+        "Ice": require('../assets/images/types/Ice_icon.png'),
     };
 
     return typeIcons[type];
