@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, Image, StyleSheet, ActivityIndicator, Modal, TouchableOpacity } from 'react-native';
+import { View, Text, Image, StyleSheet, ActivityIndicator, Modal, TouchableOpacity, ScrollView, Dimensions } from 'react-native';
 import { useTheme } from './contexts/ThemeContext';
 
 
 const PalDropsModal = ({ visible, onClose, item, pals, loading }) => {
   const [displayedPals, setDisplayedPals] = useState([]);
   const { currentTheme } = useTheme();
-  
+  const screenHeight = Dimensions.get('window').height;
+
   useEffect(() => {
     if (item && !loading) {
       // Reset displayedPals when a new item is selected
@@ -32,6 +33,10 @@ const PalDropsModal = ({ visible, onClose, item, pals, loading }) => {
       fontWeight: 'bold',
       marginBottom: 10,
       color: currentTheme.textColor,
+    },
+    listContainer: {
+      maxHeight: screenHeight / 2,
+      marginBottom: 10,
     },
     modalText: {
       fontSize: 16,
@@ -75,13 +80,16 @@ const PalDropsModal = ({ visible, onClose, item, pals, loading }) => {
           {loading ? (
             <ActivityIndicator size="large" color={currentTheme.textColor} />
           ) : (
-            pals.map((pal, index) => (
-              <View style={styles.palListItem} key={index}>
-                <Image source={ pal.image } style={styles.palImage} />
-                <Text style={styles.modalText}>#{pal.key} {pal.name}</Text>
-              </View>
-            ))
-          )}
+            <ScrollView persistentScrollbar={true}  style={styles.listContainer}>
+              {pals.map((pal, index) => (
+                <View style={styles.palListItem} key={index}>
+                  <Image source={ pal.image } style={styles.palImage} />
+                  <Text style={styles.modalText}>#{pal.key} {pal.name}</Text>
+                </View>
+                ))
+              }
+            </ScrollView>
+            )}
             <TouchableOpacity style={styles.closeButton} onPress={onClose}>
               <Text style={styles.closeButtonText}>Close</Text>
             </TouchableOpacity>

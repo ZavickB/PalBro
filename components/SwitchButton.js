@@ -9,7 +9,7 @@ const SwitchButton = ({ onPress, isUsingCapturedPals }) => {
 
   const styles = StyleSheet.create({
     button: {
-      backgroundColor: currentTheme.secondaryColor, // You can change the color as needed
+      backgroundColor: currentTheme.modalContentBackground, // You can change the color as needed
       padding: 10,
       borderRadius: 5,
       alignItems: 'center',

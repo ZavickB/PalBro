@@ -28,7 +28,7 @@ const PalTile = ({ pal, tileWidth, tileHeight, spacing, isCaptured, onCapturePre
       borderColor: currentTheme.palTileBorderColor, // Using palTileBorderColor from theme
       padding: 10,
       margin: spacing,
-      shadowColor: getRarityColor(pal.rarity),
+      shadowColor: currentTheme.palTileShadowColor,
       shadowOffset: {
         width: 4,
         height: 6,

@@ -6,6 +6,7 @@ import { useTheme } from '../components/contexts/ThemeContext';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import SwitchButton from '../components/SwitchButton';
 import { useCapturedPals } from '../components/contexts/CapturedPalsContext';
+import GradientBackground from '../components/GradientBackground';
 
 const BreedingOptionsView = ({ route, navigation }) => {
   const { palData, palsUsed } = route.params;
@@ -57,7 +58,6 @@ const BreedingOptionsView = ({ route, navigation }) => {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: currentTheme.backgroundColor,
     },
     image: {
       width: '100%',
@@ -101,43 +101,45 @@ const BreedingOptionsView = ({ route, navigation }) => {
   });
 
   return (
-    <View style={styles.container}>
-      <TopBar navigation={navigation} />
-      <ScrollView style={styles.container}>
-        <Image style={styles.image} source={palData.image} />
-        <View style={styles.infoContainer}>
-          <Text style={styles.name}>#{palData.key} {palData.name}</Text>
-          <View style={styles.typesContainer}>
-            <TypeBadge types={palData.types} />
-          </View>
+    <GradientBackground>
+      <View style={styles.container}>
+        <TopBar navigation={navigation} />
+        <ScrollView style={styles.container}>
+          <Image style={styles.image} source={palData.image} />
+          <View style={styles.infoContainer}>
+            <Text style={styles.name}>#{palData.key} {palData.name}</Text>
+            <View style={styles.typesContainer}>
+              <TypeBadge types={palData.types} />
+            </View>
 
-          <SwitchButton onPress={toggleList} isUsingCapturedPals={isUsingCapturedPals} />
+            <SwitchButton onPress={toggleList} isUsingCapturedPals={isUsingCapturedPals} />
 
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Potential Parent Couples:</Text>
-            {potentialParentsData.length > 0 ? (
-              potentialParentsData.map((couple, index) => (
-                <View key={index} style={styles.palListItem}>
-                  {couple.map((pal, palIndex) => (
-                    <React.Fragment key={palIndex}>
-                      {pal.image ? (
-                        <Image source={pal.image} style={styles.palImage} />
-                      ) : (
-                        console.log('No image available for', pal.name)
-                      )}
-                      <Text style={styles.description}>{pal.name}</Text>
-                      {palIndex === 0 && <Text style={styles.description}> + </Text>}
-                    </React.Fragment>
-                  ))}
-                </View>
-              ))
-            ) : (
-              <Text style={styles.description}>Not available</Text>
-            )}
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>Potential Parent Couples:</Text>
+              {potentialParentsData.length > 0 ? (
+                potentialParentsData.map((couple, index) => (
+                  <View key={index} style={styles.palListItem}>
+                    {couple.map((pal, palIndex) => (
+                      <React.Fragment key={palIndex}>
+                        {pal.image ? (
+                          <Image source={pal.image} style={styles.palImage} />
+                        ) : (
+                          console.log('No image available for', pal.name)
+                        )}
+                        <Text style={styles.description}>{pal.name}</Text>
+                        {palIndex === 0 && <Text style={styles.description}> + </Text>}
+                      </React.Fragment>
+                    ))}
+                  </View>
+                ))
+              ) : (
+                <Text style={styles.description}>Not available</Text>
+              )}
+            </View>
           </View>
-        </View>
-      </ScrollView>
-    </View>
+        </ScrollView>
+      </View>
+    </GradientBackground>
   );
 };
 

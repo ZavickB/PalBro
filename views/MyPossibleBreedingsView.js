@@ -104,7 +104,7 @@ const MyPossibleBreedingsView = ({ navigation }) => {
         data={dataForSearchableList}
         renderItem={({ item }) => (
           <View style={styles.listContainer}>
-            <TouchableOpacity onPress={() => handleTilePress(item)}>
+            <TouchableOpacity onPress={() => handleTilePress(item, "MyPals")}>
               <PalTile
                 pal={item}
                 tileWidth={tileWidth}
@@ -122,8 +122,38 @@ const MyPossibleBreedingsView = ({ navigation }) => {
     );
   };
 
-  const handleTilePress = (item) => {
-    navigation.navigate('BreedingOptionsView', { palData: item, palsUsed: "MyPals"});
+  const renderAllPals = () => {
+    // Assuming calculatePotentialParentsForSelectedPal returns an array of pals
+    // Prepare data for SearchableList
+    const dataForSearchableList = PalsProfilesStatsAndBreedings
+
+    return (
+      <SearchableList
+        searchBarPlaceholder={'Browse potential breedings...'}
+        data={dataForSearchableList}
+        renderItem={({ item }) => (
+          <View style={styles.listContainer}>
+            <TouchableOpacity onPress={() => handleTilePress(item, "AllPals")}>
+              <PalTile
+                pal={item}
+                tileWidth={tileWidth}
+                tileHeight={tileHeight}
+                spacing={5}
+                onCapturePress={() => toggleCapture(item.key)}
+                isCaptured={capturedPals.includes(item.key)}
+              />
+            </TouchableOpacity>
+          </View>
+        )}
+        numColumns={3}
+        emptyStateText="No possible breeding found."
+      />
+    );
+  };
+
+
+  const handleTilePress = (item, palsUsed ) => {
+    navigation.navigate('BreedingOptionsView', { palData: item, palsUsed});
   };
 
   const renderDotIndicators = () => {
@@ -162,6 +192,7 @@ const MyPossibleBreedingsView = ({ navigation }) => {
       flexDirection: 'row',
       justifyContent: 'center',
       paddingVertical: 10,
+      backgroundColor: "transparent"
     },
     dot: {
       height: 8,
@@ -195,7 +226,7 @@ const MyPossibleBreedingsView = ({ navigation }) => {
               {renderPotentialParents()}
             </View>
             <View key="2">
-              {renderPotentialParents()}
+              {renderAllPals()}
             </View>
           </PagerView>
           {renderDotIndicators()}
