@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { StyleSheet, Text, View, RefreshControl, Dimensions, TouchableOpacity, ScrollView, ActivityIndicator } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import React from 'react';
+import { StyleSheet, View,  Dimensions, TouchableOpacity } from 'react-native';
 import { useTheme } from '../components/contexts/ThemeContext';
 import { useCapturedPals } from '../components/contexts/CapturedPalsContext'; // Import the context hook
-
 import TopBar from '../components/TopBar';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import GradientBackground from '../components/GradientBackground';
@@ -14,8 +12,6 @@ const MyPossibleBreedingsView = ({ navigation }) => {
   const { currentTheme } = useTheme();
 
   const { capturedPals, toggleCapture, refreshKey } = useCapturedPals(); // Use the context hook to access state and functions
-  const [isLoadingBreedings, setIsLoadingBreedings] = useState(true); // State to track loading of breedings
-  const [refreshing, setRefreshing] = useState(false); // State to track refreshing
 
   const screenWidth = Dimensions.get('window').width;
   const screenHeight = Dimensions.get('window').height;

@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import { StyleSheet, TouchableOpacity, View, Dimensions } from 'react-native';
 import PalTile from '../components/PalTile';
 import TopBar from '../components/TopBar';

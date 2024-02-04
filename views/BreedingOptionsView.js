@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Image, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, Image, ScrollView, StyleSheet } from 'react-native';
 import TypeBadge from '../components/TypeBadge';
 import TopBar from '../components/TopBar';
 import { useTheme } from '../components/contexts/ThemeContext';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import SwitchButton from '../components/SwitchButton'; // Import the SwitchButton component
 import { useCapturedPals } from '../components/contexts/CapturedPalsContext'; // Import the useCapturedPals hook
-import { ActivityIndicator } from 'react-native';
 
 const BreedingOptionsView = ({ route, navigation }) => {
   const { palData } = route.params;

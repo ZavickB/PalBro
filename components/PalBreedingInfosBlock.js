@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, StyleSheet, Text, Image, TouchableOpacity, Modal, FlatList } from 'react-native';
+import { View, StyleSheet, Text, Image, TouchableOpacity } from 'react-native';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings'; // Import the pal data
 import TypeBadge from './TypeBadge'; // Import the TypeBadge component
 import { useTheme } from './contexts/ThemeContext'; // Import the useTheme hook
