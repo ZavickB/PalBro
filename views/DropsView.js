@@ -109,6 +109,9 @@ const DropsView = ({ route, navigation }) => {
             searchText={searchText}
             onSearchChange={setSearchText}
             placeholder={'Search for drops...'}
+            resetFilters={() => {
+              setSearchText('');
+            }}
           />
           <FlatList
             data={filteredDrops}
