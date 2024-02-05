@@ -11,7 +11,9 @@ import DropsView from './views/DropsView';
 import { ThemeProvider } from './components/contexts/ThemeContext';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { CapturedPalsProvider } from './components/contexts/CapturedPalsContext';
+import { enableScreens } from 'react-native-screens';
 
+enableScreens();
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
