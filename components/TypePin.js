@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
 
-const TypePin = ({ type }) => {
+const TypePin = ({ type, tileWidth }) => {
     const styles = StyleSheet.create({
         container: {
             alignItems: 'center',
@@ -11,8 +11,8 @@ const TypePin = ({ type }) => {
         badge: {
             alignItems: 'center',
             justifyContent: 'center', // Center content vertically and horizontally
-            width: 36, // Adjust the size as needed
-            height: 36, // Adjust the size as needed
+            width: tileWidth ? tileWidth / 4 : 30, // Adjust the size as needed
+            height: tileWidth ? tileWidth / 4 : 30, // Adjust the size as needed
             borderRadius: 18, // Make it round
             backgroundColor: getTypeColor(type),
             margin: 4,

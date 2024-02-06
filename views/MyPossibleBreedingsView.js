@@ -7,7 +7,6 @@ import GradientBackground from '../components/GradientBackground';
 import SearchableList from '../components/SearchableList';
 import PalTile from '../components/PalTile';
 import PagerView from 'react-native-pager-view';
-import { ExpandingDot } from 'react-native-animated-pagination-dots';
 
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 

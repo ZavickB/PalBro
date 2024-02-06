@@ -22,6 +22,7 @@ const themes = {
     switchThumbColor: "#6B8E23", // Olive Drab
     switchTrackColorOn: "#3A5534", // Dark Green
     switchTrackColorOff: "#DADADA", // Light Gray
+    statusbarStyle: "dark",
   },
   dark: {
     backgroundColor: "#1F3B34", // Dark Green as the base background color for light theme
@@ -41,6 +42,7 @@ const themes = {
     switchThumbColor: "#F4AB5D", // Lighter Than Lighter Orange
     switchTrackColorOn: "#DE6D36", // Orange
     switchTrackColorOff: "#3A3A3C", // Dark Gray
+    statusbarStyle: "light",
   },
 };
 

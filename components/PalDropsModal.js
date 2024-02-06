@@ -57,11 +57,12 @@ const PalDropsModal = ({ visible, onClose, item, pals, loading }) => {
     palListItem: {
       flexDirection: 'row',
       alignItems: 'center',
-      marginBottom: 8,
+      paddingHorizontal: 10,
+      paddingVertical: 10,
     },
     palImage: {
-      width: 30,
-      height: 30,
+      width: 35,
+      height: 35,
       marginRight: 8,
     },
 

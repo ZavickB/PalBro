@@ -89,6 +89,12 @@ const DropsView = ({ route, navigation }) => {
       fontSize: 20,
       color: currentTheme.textColor,
     },
+    emptyState: {
+      fontSize: 18,
+      textAlign: 'center',
+      marginTop: 20,
+      color: 'gray',
+    },
     loadingIndicator: {
       marginTop: 20,
     },
@@ -108,11 +114,13 @@ const DropsView = ({ route, navigation }) => {
           <SearchBar
             searchText={searchText}
             onSearchChange={setSearchText}
-            placeholder={'Search for drops...'}
+            placeholder={'Browse Pals drops...'}
             resetFilters={() => {
               setSearchText('');
             }}
           />
+
+          {filteredDrops.length === 0 && <Text style={styles.emptyState}>{"No matching drops found."}</Text>}
           <FlatList
             data={filteredDrops}
             keyExtractor={(item) => item}

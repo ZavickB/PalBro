@@ -12,6 +12,7 @@ import { ThemeProvider } from './components/contexts/ThemeContext';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { CapturedPalsProvider } from './components/contexts/CapturedPalsContext';
 import { enableScreens } from 'react-native-screens';
+import { StatusBar } from 'react-native';
 
 enableScreens();
 const Tab = createBottomTabNavigator();
@@ -45,10 +46,12 @@ function BreedingStack() {
 }
 
 export default function App() {
+
   return (
     <ThemeProvider>
       <CapturedPalsProvider>
           <NavigationContainer>
+          <StatusBar translucent backgroundColor="transparent" style="auto"  />
             <Tab.Navigator initialRouteName="Home" screenOptions={({ route }) => ({
               headerShown: false,
               tabBarActiveTintColor: "darkgray",

@@ -22,7 +22,7 @@ const SuitabilityBlock = ({ suitabilities }) => {
     },
     rectangle: {
       borderWidth: 1,
-      borderColor: currentTheme.textColor,
+      borderColor: currentTheme.borderColor,
       padding: 10,
       borderRadius: 5,
       flexDirection: 'row',

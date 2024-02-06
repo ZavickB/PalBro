@@ -39,9 +39,59 @@ const PalStatsBlock = ({ stats, statsOrder }) => {
 
   // Create an array of keys and values from the stats object
   const statEntries = statsOrder.map((key) => [key, stats[key]]);
+  
+  const styles = StyleSheet.create({
+    container: {
+      marginBottom: 10,
+    },
+    title: {
+      fontSize: 18,
+      fontWeight: 'bold',
+      marginBottom: 8,
+    },
+    columnsContainer: {
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      justifyContent: 'space-between',
+    },
+    statColumn: {
+      flexBasis: '49%', // Adjust the width as needed for two columns
+      padding: 5,
+      marginBottom: 5,
+      borderWidth: 1,
+      borderColor: currentTheme.borderColor ,
+      borderRadius: 8,
+    },
+    columnWrapper: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+    },
+    emojiColumn: {
+      flex: 1,
+      alignItems: 'center',
+    },
+    valueColumn: {
+      flex: 1,
+      alignItems: 'center',
+    },
+    statEmoji: {
+      fontSize: 45,
+      marginBottom: 8,
+    },
+    statValue: {
+      fontSize: 16,
+      fontWeight: 'bold',
+    },
+    statLabel: {
+      fontSize: 16,
+      textAlign: 'center',
+    },
+  });
+
 
   return (
-    <View style={[styles.container, { backgroundColor: currentTheme.backgroundColor }]}>
+    <View style={styles.container}>
       <View style={styles.columnsContainer}>
         {statEntries.map(([key, value], index) => (
           <View
@@ -75,53 +125,5 @@ const PalStatsBlock = ({ stats, statsOrder }) => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    marginBottom: 10,
-  },
-  title: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginBottom: 8,
-  },
-  columnsContainer: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
-  },
-  statColumn: {
-    flexBasis: '49%', // Adjust the width as needed for two columns
-    padding: 5,
-    marginBottom: 5,
-    borderWidth: 1,
-    borderColor: '#ccc',
-    borderRadius: 8,
-  },
-  columnWrapper: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  emojiColumn: {
-    flex: 1,
-    alignItems: 'center',
-  },
-  valueColumn: {
-    flex: 1,
-    alignItems: 'center',
-  },
-  statEmoji: {
-    fontSize: 45,
-    marginBottom: 8,
-  },
-  statValue: {
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
-  statLabel: {
-    fontSize: 16,
-    textAlign: 'center',
-  },
-});
 
 export default PalStatsBlock;

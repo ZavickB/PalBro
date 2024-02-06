@@ -80,11 +80,11 @@ const PalTile = ({ pal, tileWidth, tileHeight, spacing, isCaptured, onCapturePre
   });
 
   return (
-    <View style={[styles.container, { shadowColor: getRarityColor(pal.rarity) }]}>
+    <View style={styles.container}>
       <Image style={styles.image} source={pal.image} />
       <View style={styles.typesContainer}>
         {pal.types.map((type, index) => (
-          <TypePin key={index} type={type} />
+          <TypePin key={index} type={type} tileWidth={tileWidth} />
         ))}
       </View>
       <View style={[styles.rarityBadge, { backgroundColor: getRarityColor(pal.rarity) }]}>
