@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, Image, FlatList, StyleSheet } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, Text, Image, FlatList, StyleSheet, ActivityIndicator } from 'react-native';
 import SuitabilityBlock from '../components/SuitabilityBlock';
 import PalBreedingInfosBlock from '../components/PalBreedingInfosBlock';
 import TypeBadge from '../components/TypeBadge';
@@ -10,20 +10,31 @@ import { useTheme } from '../components/contexts/ThemeContext';
 import PalSkillsBlock from '../components/PalSkillsBlock';
 import PalDropsBlock from '../components/PalDropsBlock';
 import GradientBackground from '../components/GradientBackground';
+import PalHeatMap from '../components/PalHeatMap';
 
 const PalDetailedView = ({ route, navigation }) => {
   const { palData } = route.params;
   const { currentTheme } = useTheme();
-  
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading delay
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
+
   const renderItem = ({ item }) => {
     switch (item.type) {
       case 'header':
-        return <Image source={palData.image} style={styles.image} />;
-      case 'name':
         return (
-          <View style={styles.section}>
-            <Text style={styles.sectionPalTitle}>#{palData.key} {palData.name}</Text>
-            <TypeBadge types={palData.types} />
+          <View style={styles.imageContainer}>
+            <Image source={palData.image} style={styles.image} />
+            <View style={styles.overlayText}>
+              <Text style={styles.sectionPalTitle}>#{palData.key} {palData.name}</Text>
+              <TypeBadge types={palData.types} />
+            </View>
           </View>
         );
       case 'description':
@@ -68,6 +79,13 @@ const PalDetailedView = ({ route, navigation }) => {
             <PalBreedingInfosBlock palData={palData} navigation={navigation} />
           </View>
         );
+      case 'map':
+        return (
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>Pal Location:</Text>
+              <PalHeatMap palName={palData.name} loading={loading} />
+            </View>
+        );
       default:
         return null;
     }
@@ -82,26 +100,42 @@ const PalDetailedView = ({ route, navigation }) => {
     { type: 'skills' },
     { type: 'drops' },
     { type: 'breeding' },
+    { type: 'map' }, 
   ];
 
   const styles = StyleSheet.create({
     container: {
       flex: 1,
     },
-    image: {
+    imageContainer: {
       width: '100%',
       height: 300,
+      position: 'relative',
+    },
+    image: {
+      width: '100%',
+      height: '100%',
       resizeMode: 'cover',
     },
     section: {
       paddingHorizontal: 16,
       paddingVertical: 12,
     },
+    overlayText: {
+      position: 'absolute',
+      bottom: 0,
+      left: 0,
+      right: 0,
+      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      paddingHorizontal: 16,
+      paddingBottom: 12,
+      paddingTop: 24, // Adjust based on content
+    },
     sectionPalTitle: {
-      fontSize: 22,
+      fontSize: 24, // Larger font size
       fontWeight: 'bold',
-      marginBottom: 8,
-      color: currentTheme.textColor,
+      color: currentTheme.palDetailsName,
+      marginBottom: 4, // Adjust spacing
     },
     sectionTitle: {
       fontSize: 18,
@@ -113,6 +147,12 @@ const PalDetailedView = ({ route, navigation }) => {
       fontSize: 16,
       textAlign: 'justify',
       color: currentTheme.textColor,
+    },
+    loadingIndicator: {
+      position: 'absolute',
+      alignSelf: 'center',
+      top: '50%',
+      color: currentTheme.primaryColor,
     },
   });
 

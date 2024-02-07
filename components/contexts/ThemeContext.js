@@ -23,6 +23,7 @@ const themes = {
     switchTrackColorOn: "#3A5534", // Dark Green
     switchTrackColorOff: "#DADADA", // Light Gray
     statusbarStyle: "dark",
+    palDetailsName: "#F0D4AE",
   },
   dark: {
     backgroundColor: "#1F3B34", // Dark Green as the base background color for light theme
@@ -43,6 +44,7 @@ const themes = {
     switchTrackColorOn: "#DE6D36", // Orange
     switchTrackColorOff: "#3A3A3C", // Dark Gray
     statusbarStyle: "light",
+    palDetailsName: "#F0D4AE",
   },
 };
 
