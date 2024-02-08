@@ -11,6 +11,7 @@ import PalSkillsBlock from '../components/PalSkillsBlock';
 import PalDropsBlock from '../components/PalDropsBlock';
 import GradientBackground from '../components/GradientBackground';
 import PalHeatMap from '../components/PalHeatMap';
+import ProgressBar from '../components/ProgressBar';
 
 const PalDetailedView = ({ route, navigation }) => {
   const { palData } = route.params;
@@ -35,6 +36,12 @@ const PalDetailedView = ({ route, navigation }) => {
               <Text style={styles.sectionPalTitle}>#{palData.key} {palData.name}</Text>
               <TypeBadge types={palData.types} />
             </View>
+          </View>
+        );
+      case 'progress':
+        return (
+          <View style={styles.section}>
+            <ProgressBar progress={10} />
           </View>
         );
       case 'description':
@@ -93,7 +100,7 @@ const PalDetailedView = ({ route, navigation }) => {
 
   const sections = [
     { type: 'header' },
-    { type: 'name' },
+    { type: 'progress' },
     { type: 'description' },
     { type: 'suitabilities' },
     { type: 'stats' },

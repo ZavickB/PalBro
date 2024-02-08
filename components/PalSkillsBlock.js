@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import TypePin from './TypePin';
 import { useTheme } from './contexts/ThemeContext';
+import Icon from 'react-native-vector-icons/Ionicons'; // Import icons
 
 const PalSkillsBlock = ({ skills }) => {
   const { currentTheme } = useTheme();
@@ -37,6 +38,11 @@ const PalSkillsBlock = ({ skills }) => {
     skillCooldownPower: {
       fontSize: 14,
       color: currentTheme.textColor,
+      marginTop: 5,
+      flexDirection: 'row', // Align icons and text horizontally
+    },
+    cooldownIcon: {
+      marginRight: 5, // Add some space between icon and text
     },
     skillDescription: {
       marginTop: 5,
@@ -72,9 +78,14 @@ const PalSkillsBlock = ({ skills }) => {
                 <Text style={styles.skillLevel}>{`Lv ${skill.level}`}</Text>
               </View>
               <View style={styles.skillRow}>
-                <Text style={styles.skillCooldownPower}>
-                  Cooldown: {skill.cooldown} Power: {skill.power}
-                </Text>
+                <View style={styles.skillCooldownPower}>
+                  <Icon name="stopwatch-outline" size={16} color={currentTheme.textColor} style={styles.cooldownIcon} />
+                  <Text>Cooldown: {skill.cooldown} seconds</Text>
+                </View>
+                <View style={styles.skillCooldownPower}>
+                  <Icon name="flash" size={16} color={currentTheme.textColor} style={styles.cooldownIcon} />
+                  <Text>Power: {skill.power}</Text>
+                </View>
               </View>
               {selectedSkill === skill && (
                 <Text style={styles.skillDescription}>{skill.description}</Text>

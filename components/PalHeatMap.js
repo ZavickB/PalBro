@@ -94,7 +94,7 @@ export const PalHeatMap = ({ palName, loading }) => {
     return convertPalsCoordinates(palData, inGameMapSize, containerSize.width, containerSize.height);
   }, [palData, containerSize, nightMode]);
 
-  const mapImageSource = require('../assets/images/WorldMap-1024.png');
+  const mapImageSource = require('../assets/images/WorldMap-512.png');
 
   const styles = StyleSheet.create({
     mapContainer: {
