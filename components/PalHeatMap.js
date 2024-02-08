@@ -1,96 +1,30 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Image, StyleSheet, ActivityIndicator, Switch } from 'react-native';
-import { palsLocation } from '../assets/data/PalsLocation';
 import { useTheme } from './contexts/ThemeContext';
-import Icon from 'react-native-vector-icons/Ionicons'; // Import the icon component
+import Icon from 'react-native-vector-icons/Ionicons';
+import { PalsLocation } from '../assets/data/PalsLocation';
 
-export const PalHeatMap = ({ palName, loading }) => {
-  const [containerSize, setContainerSize] = useState({ width: 0, height: 0 });
-  const [isMapLoaded, setIsMapLoaded] = useState(false);
-  const [palData, setPalData] = useState(null);
-  const [nightMode, setNightMode] = useState(false); // State for night mode toggle
-
+export const PalHeatMap = ({ palName, loading, isNightOnly }) => {
   const { currentTheme } = useTheme();
+  const [imageSource, setImageSource] = useState(null);
 
-  const [finalPalName, setFinalPalName] = useState(null);
+  // Set initial nightMode based on isNightOnly prop
+  const [nightMode, setNightMode] = useState(isNightOnly === "true");
 
   useEffect(() => {
-    loadPalData(palName);
-  }, [palName]);
+    const formattedPalName = palName.replace(/\s/g, '_');
+    const source = PalsLocation(formattedPalName, nightMode);
+    if (source) {
+      setImageSource(source);
+    }
+  }, [palName, nightMode]);
 
-  const loadPalData = (palName) => {
-    try {
-      let formattedPalName = palName.replace(/ /g, '_');
-      let data = palsLocation[formattedPalName];
-      setFinalPalName(formattedPalName);
-      // If data not found, try with "BOSS_" prefix
-
-      if (!data) {
-        formattedPalName = `BOSS_${formattedPalName}`;
-        data = palsLocation[formattedPalName];
-        setFinalPalName(formattedPalName);
-      }
-      
-      if (data) {
-        setPalData(data);
-      } else {
-      }
-    } catch (error) {
-      console.error('Error loading pal data:', error);
+  // Disable toggle function if isNightOnly is true
+  const toggleNightMode = () => {
+    if (isNightOnly !== "true") {
+      setNightMode(prevMode => !prevMode);
     }
   };
-
-  const toggleNightMode = () => {
-    setNightMode(prevMode => !prevMode);
-    // Reload pal data to update with appropriate mode (night or day)
-    loadPalData(palName);
-  };
-
-  const inGameMapSize = {
-    max: {
-      x: 335112.0,
-      y: 617000.0,
-    },
-    min: {
-      x: -582888.0,
-      y: -301000.0,
-    },
-  };
-
-  const convertPalsCoordinates = (palData, mapsize, imageWidth, imageHeight) => {
-    if (!palData) return [];
-
-    const coordinates = nightMode ? palData.nightTimeLocations.locations : palData.dayTimeLocations.locations;
-
-    return coordinates.map(coord =>
-      convertCoordinate(coord, mapsize, imageWidth, imageHeight)
-    );
-  };
-
-  const convertCoordinate = (coord, mapsize, imageWidth, imageHeight) => {
-    const rangeX = mapsize.max.x - mapsize.min.x;
-    const rangeY = mapsize.max.y - mapsize.min.y;
-
-    const normalizedX = (coord.X - mapsize.min.x) / rangeX;
-    const normalizedY = (coord.Y - mapsize.min.y) / rangeY;
-
-    const scaledX = normalizedX * imageWidth;
-    const scaledY = (1 - normalizedY) * imageHeight;
-
-    return { x: scaledX, y: scaledY };
-  };
-
-  const onLayout = (event) => {
-    const { width, height } = event.nativeEvent.layout;
-    setContainerSize({ width, height });
-  };
-
-  const nodes = useMemo(() => {
-    if (!palData) return [];
-    return convertPalsCoordinates(palData, inGameMapSize, containerSize.width, containerSize.height);
-  }, [palData, containerSize, nightMode]);
-
-  const mapImageSource = require('../assets/images/WorldMap-512.png');
 
   const styles = StyleSheet.create({
     mapContainer: {
@@ -101,13 +35,6 @@ export const PalHeatMap = ({ palName, loading }) => {
     mapImage: {
       width: '100%',
       height: '100%',
-    },
-    node: {
-      position: 'absolute',
-      width: 10,
-      height: 10,
-      borderRadius: 5,
-      backgroundColor: currentTheme.palDetailsName
     },
     activityIndicator: {
       ...StyleSheet.absoluteFillObject,
@@ -121,10 +48,6 @@ export const PalHeatMap = ({ palName, loading }) => {
       flexDirection: 'row',
       alignItems: 'center',
     },
-    toggleText: {
-      color: 'white',
-      marginRight: 5,
-    },
   });
 
   return (
@@ -133,27 +56,22 @@ export const PalHeatMap = ({ palName, loading }) => {
         <ActivityIndicator style={styles.activityIndicator} size="large" color={currentTheme.primaryColor} />
       ) : (
         <>
-          <Image onLayout={onLayout} source={mapImageSource} style={styles.mapImage} />
-          {nodes.map((node, index) => (
-            <View
-              key={index}
-              style={[
-                styles.node,
-                {
-                  top: node.y,
-                  left: node.x,
-                },
-              ]}
-            />
-          ))}
+          {imageSource ? (
+            <Image source={imageSource} style={styles.mapImage} resizeMode="cover" />
+          ) : (
+            <View style={styles.activityIndicator}>
+              <ActivityIndicator size="small" color={currentTheme.primaryColor} />
+            </View>
+          )}
           <View style={styles.toggleContainer}>
             <Icon name="sunny" size={24} color="white" />
             <Switch
-              trackColor={{ false: "#767577", true: "#81b0ff" }}
+              trackColor="#767577"
               thumbColor={nightMode ? "#f5dd4b" : "#f4f3f4"}
               ios_backgroundColor="#3e3e3e"
               onValueChange={toggleNightMode}
               value={nightMode}
+              disabled={isNightOnly === "true"} // Disable switch if isNightOnly is true
             />
             <Icon name="moon" size={24} color="white" />
           </View>

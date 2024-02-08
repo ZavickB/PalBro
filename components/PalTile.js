@@ -9,6 +9,22 @@ const PalTile = ({ pal, tileWidth, tileHeight, spacing, captureCount, onCaptureP
 
   const isGold = captureCount >= 10; // Determine if the tile should be golden
 
+  const getTypeColor = (type) => {
+    const typeColors = {
+        "Ground": '#E0C068',
+        "Fire": '#F08030',
+        "Dragon": '#7038F8',
+        "Water": '#6890F0',
+        "Electric": '#F8D030',
+        "Grass": '#78C850',
+        "Normal": '#A8A878',
+        "Dark": '#705848',
+        "Ice": '#98D8D8',
+    };
+
+    return typeColors[type] || 'gray';
+  };
+
   const getRarityColor = (rarity) => {
     if (rarity > 10) {
       return '#ff9557';
@@ -35,12 +51,22 @@ const PalTile = ({ pal, tileWidth, tileHeight, spacing, captureCount, onCaptureP
       height: tileHeight,
       position: 'relative',
     },
-    gradient: {
-      borderRadius: 10,
-      flex: 1,
-      width: '100%',
+    completedBanner: {
+      position: 'absolute',
+      top: '50%',
+      left: 0,
+      transform: [{ translateY: 10 }],
+      width: tileWidth,
+      backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent black
+      height: 30,
       alignItems: 'center',
       justifyContent: 'center',
+      zIndex: 1,
+    },
+    bannerText: {
+      color: '#FFFFFF',
+      fontWeight: 'bold',
+      fontSize: 14,
     },
     contentContainer: {
       padding: 10,
@@ -58,7 +84,7 @@ const PalTile = ({ pal, tileWidth, tileHeight, spacing, captureCount, onCaptureP
       fontSize: 14,
       fontWeight: 'bold',
       textAlign: 'center',
-      color: currentTheme.palTileTextColor,
+      color: currentTheme.goldenPalTileTextColor,
     },
     typesContainer: {
       flexDirection: 'row',
@@ -90,34 +116,20 @@ const PalTile = ({ pal, tileWidth, tileHeight, spacing, captureCount, onCaptureP
 
   return (
     <View style={styles.container}>
-      {isGold ? (
-        <LinearGradient
-          colors={['#FFD700', '#FFA500', '#FFD700']}
-          start={{ x: 0, y: 0 }}
-          end={{ x: 1, y: 1 }}
-          style={styles.gradient}
-        >
-          <View style={styles.contentContainer}>
-            <Image style={styles.image} source={pal.image} />
-            <View style={styles.typesContainer}>
-              {pal.types.map((type, index) => (
-                <TypePin key={index} type={type} tileWidth={tileWidth} />
-              ))}
-            </View>
-            <Text style={[styles.text, {color: currentTheme.goldenPalTileTextColor}]}>{pal.name}</Text>
+      <View style={[styles.contentContainer, { backgroundColor: getTypeColor(pal.types[0]) }]}>
+        <Image style={styles.image} source={pal.image} />
+        {isGold && (
+          <View style={styles.completedBanner}>
+            <Text style={styles.bannerText}>COMPLETED</Text>
           </View>
-        </LinearGradient>
-      ) : (
-        <View style={[styles.contentContainer, { backgroundColor: currentTheme.palTileBackgroundColor }]}>
-          <Image style={styles.image} source={pal.image} />
-          <View style={styles.typesContainer}>
-            {pal.types.map((type, index) => (
-              <TypePin key={index} type={type} tileWidth={tileWidth} />
-            ))}
-          </View>
-          <Text style={styles.text}>{pal.name}</Text>
+        )}
+        <View style={styles.typesContainer}>
+          {pal.types.map((type, index) => (
+            <TypePin key={index} type={type} tileWidth={tileWidth} />
+          ))}
         </View>
-      )}
+        <Text style={styles.text}>{pal.name}</Text>
+      </View>
       <TouchableOpacity onPress={onCapturePress} style={styles.captureButton}>
         <Image
           source={require('../assets/images/Sphere_icon.png')} // Update the path to your actual capture icon

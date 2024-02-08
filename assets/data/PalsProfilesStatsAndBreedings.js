@@ -5062,7 +5062,7 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Bushi"
         },
         "variant": "",
-        "isNightOnly": "",
+        "isNightOnly": "true",
         "stats": {
             "BreedPWR": "1180",
             "HP": "75",
@@ -5550,7 +5550,7 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Univolt"
         },
         "variant": "",
-        "isNightOnly": "true",
+        "isNightOnly": "",
         "stats": {
             "BreedPWR": "1290",
             "HP": "60",
@@ -5790,7 +5790,7 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Arsox"
         },
         "variant": "",
-        "isNightOnly": "true",
+        "isNightOnly": "",
         "stats": {
             "BreedPWR": "1480",
             "HP": "70",
@@ -9687,7 +9687,7 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Warsect"
         },
         "variant": "",
-        "isNightOnly": "true",
+        "isNightOnly": "",
         "stats": {
             "BreedPWR": "590",
             "HP": "95",
@@ -10846,7 +10846,7 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Incineram"
         },
         "variant": "",
-        "isNightOnly": "true",
+        "isNightOnly": "",
         "stats": {
             "BreedPWR": "1120",
             "HP": "80",
@@ -17210,7 +17210,7 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Ragnahawk"
         },
         "variant": "",
-        "isNightOnly": "true",
+        "isNightOnly": "",
         "stats": {
             "BreedPWR": "660",
             "HP": "90",
@@ -22857,7 +22857,7 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Elphidran"
         },
         "variant": "",
-        "isNightOnly": "true",
+        "isNightOnly": "",
         "stats": {
             "BreedPWR": "1010",
             "HP": "100",
@@ -23832,7 +23832,7 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Cryolinx"
         },
         "variant": "",
-        "isNightOnly": "true",
+        "isNightOnly": "",
         "stats": {
             "BreedPWR": "150",
             "HP": "100",
@@ -24078,7 +24078,7 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Helzephyr"
         },
         "variant": "",
-        "isNightOnly": "true",
+        "isNightOnly": "",
         "stats": {
             "BreedPWR": "260",
             "HP": "100",
@@ -26036,7 +26036,7 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Suzaku"
         },
         "variant": "",
-        "isNightOnly": "true",
+        "isNightOnly": "",
         "stats": {
             "BreedPWR": "60",
             "HP": "120",
@@ -26521,7 +26521,7 @@ const PalsProfilesStatsAndBreedings = [
             "Jetragon": "Suzaku"
         },
         "variant": "",
-        "isNightOnly": "true",
+        "isNightOnly": "",
         "stats": {
             "BreedPWR": "70",
             "HP": "130",
@@ -28280,7 +28280,8 @@ const PalsProfilesStatsAndBreedings = [
         "key": "110B",
         "name": "Frostallion Noct",
         "variant": "B",
-        "isNightOnly": "true",
+        "isNightOnly": "",
+        "isBreedingOnly": "true",
         "image": require('..\/images\/pals\/110B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/00\/Frostallion_menu.png\/",
         "suitability": [
@@ -28998,7 +28999,7 @@ const PalsProfilesStatsAndBreedings = [
         "key": "032B",
         "name": "Hangyu Cryst",
         "variant": "B",
-        "isNightOnly": "",
+        "isNightOnly": "true",
         "image": require('..\/images\/pals\/032B.png'),
         "imageWiki": "https:\/\/static.wikia.nocookie.net\/palworld\/images\/0\/08\/Hangyu_menu.png\/",
         "suitability": [

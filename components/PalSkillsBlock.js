@@ -54,6 +54,9 @@ const PalSkillsBlock = ({ skills }) => {
       justifyContent: 'space-between',
       minWidth: '100%',
     },
+    skillData: {
+      color: currentTheme.textColor,
+    }
   });
 
   const handleSkillPress = (skill) => {
@@ -80,11 +83,11 @@ const PalSkillsBlock = ({ skills }) => {
               <View style={styles.skillRow}>
                 <View style={styles.skillCooldownPower}>
                   <Icon name="stopwatch-outline" size={16} color={currentTheme.textColor} style={styles.cooldownIcon} />
-                  <Text>Cooldown: {skill.cooldown} seconds</Text>
+                  <Text style={styles.skillData}>Cooldown: {skill.cooldown} seconds</Text>
                 </View>
                 <View style={styles.skillCooldownPower}>
                   <Icon name="flash" size={16} color={currentTheme.textColor} style={styles.cooldownIcon} />
-                  <Text>Power: {skill.power}</Text>
+                  <Text style={styles.skillData}>Power: {skill.power}</Text>
                 </View>
               </View>
               {selectedSkill === skill && (

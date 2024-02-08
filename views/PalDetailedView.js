@@ -90,7 +90,7 @@ const PalDetailedView = ({ route, navigation }) => {
         return (
             <View style={styles.section}>
               <Text style={styles.sectionTitle}>Pal Location:</Text>
-              <PalHeatMap palName={palData.name} loading={loading} />
+              <PalHeatMap palName={palData.name} isNightOnly={palData.isNightOnly} loading={loading} />
             </View>
         );
       default:

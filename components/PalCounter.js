@@ -56,6 +56,7 @@ const PalCounter = ({ palKey }) => {
       fontSize: 18,
       fontWeight: 'bold',
       marginBottom: 10,
+      color: currentTheme.textColor,
     },
     progressBarContainer: {
       width: '100%',
@@ -96,8 +97,8 @@ const PalCounter = ({ palKey }) => {
         </LinearGradient>
       </View>
       <View style={styles.buttonContainer}>
-        <Button title="-" color={currentTheme.progressBarButtonBackgroundColor} onPress={handleDecrease} disabled={isLoading || count <= 0} />
-        <Button title="+" color={currentTheme.progressBarButtonBackgroundColor} onPress={handleIncrease} disabled={isLoading} />
+        <Button title="-" color={currentTheme.backgroundColor} onPress={handleDecrease} disabled={isLoading || count <= 0} />
+        <Button title="+" color={currentTheme.backgroundColor} onPress={handleIncrease} disabled={isLoading} />
         {isLoading && <ActivityIndicator size="small" color="#0000ff" />}
       </View>
     </View>
