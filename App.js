@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -13,6 +13,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import { CapturedPalsProvider } from './components/contexts/CapturedPalsContext';
 import { enableScreens } from 'react-native-screens';
 import { StatusBar } from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
 
 enableScreens();
 const Tab = createBottomTabNavigator();
@@ -47,6 +48,11 @@ function BreedingStack() {
 
 export default function App() {
 
+  // Uncomment this block before building the app
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
+  
   return (
     <ThemeProvider>
       <CapturedPalsProvider>
