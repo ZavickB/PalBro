@@ -11,7 +11,7 @@ import PalSkillsBlock from '../components/PalSkillsBlock';
 import PalDropsBlock from '../components/PalDropsBlock';
 import GradientBackground from '../components/GradientBackground';
 import PalHeatMap from '../components/PalHeatMap';
-import ProgressBar from '../components/ProgressBar';
+import PalCounter from '../components/PalCounter';
 
 const PalDetailedView = ({ route, navigation }) => {
   const { palData } = route.params;
@@ -41,7 +41,7 @@ const PalDetailedView = ({ route, navigation }) => {
       case 'progress':
         return (
           <View style={styles.section}>
-            <ProgressBar progress={10} />
+            <PalCounter palKey={palData.key} />
           </View>
         );
       case 'description':

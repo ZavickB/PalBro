@@ -24,6 +24,10 @@ const themes = {
     switchTrackColorOff: "#DADADA", // Light Gray
     statusbarStyle: "dark",
     palDetailsName: "#F0D4AE",
+    progressBarBackgroundColor: "#F4AB5D", // Lighter Than Lighter Orange for the progress bar background
+    progressBarButtonBackgroundColor: "#8C994F", // Lighter Than Lighter Green for button backgrounds
+    progressBarButtonTextColor: "#1F3B34", // Dark Green for button text
+    goldenPalTileTextColor: "#1F3B34", // Dark Green for golden Pal tile text
   },
   dark: {
     backgroundColor: "#1F3B34", // Dark Green as the base background color for light theme
@@ -45,6 +49,10 @@ const themes = {
     switchTrackColorOff: "#3A3A3C", // Dark Gray
     statusbarStyle: "light",
     palDetailsName: "#F0D4AE",
+    progressBarBackgroundColor: "#8C994F", // Lighter Than Lighter Green for the progress bar background
+    progressBarButtonBackgroundColor: "#F4AB5D", // Lighter Than Lighter Orange for primary actions and buttons for vibrant contrast
+    progressBarButtonTextColor: "#F0D4AE",
+    goldenPalTileTextColor: "#1F3B34", // Dark Green for golden Pal tile text
   },
 };
 

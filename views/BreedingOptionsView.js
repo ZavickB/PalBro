@@ -16,10 +16,9 @@ const BreedingOptionsView = ({ route, navigation }) => {
   const [potentialParentsData, setPotentialParentsData] = useState([]);
 
   // Debugging
-  console.log("palsUsed:", palsUsed, "isUsingCapturedPals:", isUsingCapturedPals);
 
   const newlyCapturedPals = PalsProfilesStatsAndBreedings.filter(pal =>
-    capturedPals.includes(pal.key)
+    !!capturedPals[pal.key] // Adjusted check for captured status
   );
 
   const calculatePotentialParents = (selectedPal, useCapturedPals) => {
@@ -123,9 +122,7 @@ const BreedingOptionsView = ({ route, navigation }) => {
                       <React.Fragment key={palIndex}>
                         {pal.image ? (
                           <Image source={pal.image} style={styles.palImage} />
-                        ) : (
-                          console.log('No image available for', pal.name)
-                        )}
+                        ) : (null) }
                         <Text style={styles.description}>{pal.name}</Text>
                         {palIndex === 0 && <Text style={styles.description}> + </Text>}
                       </React.Fragment>

@@ -4,30 +4,19 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const CapturedPalsContext = createContext();
 
 export const useCapturedPals = () => {
-  const { capturedPals, capturePal, releasePal, refreshKey } = useContext(CapturedPalsContext);
-
-  const toggleCapture = (palKey) => {
-    if (capturedPals.includes(palKey)) {
-      releasePal(palKey);
-    } else {
-      capturePal(palKey);
-    }
-  };
-
-  return {
-    capturedPals,
-    toggleCapture,
-    refreshKey, // Add refreshKey to get the current key value
-  };
+  const context = useContext(CapturedPalsContext);
+  if (!context) {
+    throw new Error('useCapturedPals must be used within a CapturedPalsProvider');
+  }
+  return context;
 };
 
 export const CapturedPalsProvider = ({ children }) => {
-  const [capturedPals, setCapturedPals] = useState([]);
-  const [refreshKey, setRefreshKey] = useState(0); // Initialize with a key of 0
+  const [capturedPals, setCapturedPals] = useState({});
+  const [refreshKey, setRefreshKey] = useState(0);
 
-  const STORAGE_KEY = 'capturedPals'; // Key for AsyncStorage
+  const STORAGE_KEY = 'capturedPals';
 
-  // Load captured pals from local storage when the component mounts
   useEffect(() => {
     const loadCapturedPals = async () => {
       try {
@@ -43,7 +32,6 @@ export const CapturedPalsProvider = ({ children }) => {
     loadCapturedPals();
   }, []);
 
-  // Save captured pals to local storage whenever the capturedPals state changes
   useEffect(() => {
     const saveCapturedPals = async () => {
       try {
@@ -56,25 +44,48 @@ export const CapturedPalsProvider = ({ children }) => {
     saveCapturedPals();
   }, [capturedPals]);
 
-  const capturePal = (palKey) => {
-    setCapturedPals((prevCapturedPals) => [...prevCapturedPals, palKey]);
-    setRefreshKey((prevKey) => prevKey + 1); // Update the key to trigger a re-render
+  const toggleCapture = (palKey) => {
+    if (capturedPals.hasOwnProperty(palKey)) {
+      const updatedPals = { ...capturedPals };
+      delete updatedPals[palKey];
+      setCapturedPals(updatedPals);
+    } else {
+      setCapturedPals(prevPals => ({ ...prevPals, [palKey]: 1 }));
+    }
+    setRefreshKey(prevKey => prevKey + 1);
   };
 
-  const releasePal = (palKey) => {
-    setCapturedPals((prevCapturedPals) =>
-      prevCapturedPals.filter((key) => key !== palKey)
-    );
-    setRefreshKey((prevKey) => prevKey + 1); // Update the key to trigger a re-render
+  const increaseCapture = (palKey) => {
+    setCapturedPals(prevPals => ({
+      ...prevPals,
+      [palKey]: (prevPals[palKey] || 0) + 1
+    }));
+    setRefreshKey(prevKey => prevKey + 1);
+  };
+
+  const decreaseCapture = (palKey) => {
+    if (capturedPals[palKey] > 1) {
+      setCapturedPals(prevPals => ({
+        ...prevPals,
+        [palKey]: prevPals[palKey] - 1
+      }));
+    } else {
+      // Effectively releases the pal if its count goes to 1 and then decremented
+      const updatedPals = { ...capturedPals };
+      delete updatedPals[palKey];
+      setCapturedPals(updatedPals);
+    }
+    setRefreshKey(prevKey => prevKey + 1);
   };
 
   return (
     <CapturedPalsContext.Provider
       value={{
         capturedPals,
-        capturePal,
-        releasePal,
-        refreshKey, // Provide the key value to the context
+        toggleCapture,
+        increaseCapture,
+        decreaseCapture,
+        refreshKey,
       }}
     >
       {children}

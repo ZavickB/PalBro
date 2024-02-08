@@ -37,7 +37,7 @@ const MyPossibleBreedingsView = ({ navigation }) => {
   };
 
   const capturedPalsData = PalsProfilesStatsAndBreedings.filter((pal) =>
-    capturedPals.includes(pal.key)
+    !!capturedPals[pal.key]
   );
 
   const calculatePotentialParents = (selectedPal, palsList) => {
@@ -109,9 +109,10 @@ const MyPossibleBreedingsView = ({ navigation }) => {
                 tileWidth={tileWidth}
                 tileHeight={tileHeight}
                 spacing={5}
+                captureCount={capturedPals[item.key] || 0} // Adjusted count for captured status
                 onCapturePress={() => toggleCapture(item.key)}
-                isCaptured={capturedPals.includes(item.key)}
-              />
+                isCaptured={!!capturedPals[item.key]} // Adjusted check for captured status
+                />
             </TouchableOpacity>
           </View>
         )}
@@ -138,9 +139,10 @@ const MyPossibleBreedingsView = ({ navigation }) => {
                 tileWidth={tileWidth}
                 tileHeight={tileHeight}
                 spacing={5}
+                captureCount={capturedPals[item.key] || 0} // Adjusted count for captured status
                 onCapturePress={() => toggleCapture(item.key)}
-                isCaptured={capturedPals.includes(item.key)}
-              />
+                isCaptured={!!capturedPals[item.key]} // Adjusted check for captured status
+                />
             </TouchableOpacity>
           </View>
         )}

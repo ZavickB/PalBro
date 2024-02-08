@@ -22,11 +22,20 @@ const MyPalsView = ({ navigation }) => {
   const tileWidth = ((screenWidth * tileWidthPercentage) / 100) - spacing;
   const tileHeight = ((screenHeight * tileHeightPercentage) / 100) - spacing;
 
+  // Filter the newly captured pals directly here
+  const newlyCapturedPals = PalsProfilesStatsAndBreedings.filter((pal) =>
+    !!capturedPals[pal.key] // Adjusted check for captured status
+  );
+
+  const missingPals = PalsProfilesStatsAndBreedings.filter((pal) =>
+    !capturedPals[pal.key] // Adjusted check for captured status
+  );
+
   const [pageIndex, setPageIndex] = useState(0);
   const PAGES = [1, 2];
   const pageNames = [
-    'Captured Pals', // Reflects potential pals from captured pals only
-    'Missing Pals' // Reflects potential pals from all pals
+    'Captured Pals ('+ newlyCapturedPals.length +')', // Reflects potential pals from captured pals only
+    'Missing Pals ('+ missingPals.length +')' // Reflects potential pals from all pals
   ];
   const currentPageName = pageNames[pageIndex];
 
@@ -38,15 +47,6 @@ const MyPalsView = ({ navigation }) => {
   const handleTilePress = (item) => {
     navigation.navigate('MyPalsDetails', { palData: item });
   };
-
-  // Filter the newly captured pals directly here
-  const newlyCapturedPals = PalsProfilesStatsAndBreedings.filter((pal) =>
-    capturedPals.includes(pal.key)
-  );
-
-  const missingPals = PalsProfilesStatsAndBreedings.filter((pal) =>
-    !capturedPals.includes(pal.key)
-  );
 
   const renderCapturedPals = () => {
     return (
@@ -61,8 +61,9 @@ const MyPalsView = ({ navigation }) => {
                 tileWidth={tileWidth}
                 tileHeight={tileHeight}
                 spacing={spacing}
+                captureCount={capturedPals[item.key] || 0} // Adjusted count for captured status
                 onCapturePress={() => toggleCapture(item.key)}
-                isCaptured={capturedPals.includes(item.key)}
+                isCaptured={!!capturedPals[item.key]} // Adjusted check for captured status
                 capturedPals={capturedPals}
               />
             </TouchableOpacity>
@@ -87,8 +88,9 @@ const MyPalsView = ({ navigation }) => {
                 tileWidth={tileWidth}
                 tileHeight={tileHeight}
                 spacing={spacing}
+                captureCount={capturedPals[item.key] || 0} // Adjusted count for captured status
                 onCapturePress={() => toggleCapture(item.key)}
-                isCaptured={capturedPals.includes(item.key)}
+                isCaptured={!!capturedPals[item.key]} // Adjusted check for captured status
                 capturedPals={capturedPals}
               />
             </TouchableOpacity>

@@ -21,7 +21,6 @@ export const PalHeatMap = ({ palName, loading }) => {
   const loadPalData = (palName) => {
     try {
       let formattedPalName = palName.replace(/ /g, '_');
-      console.log('Loading pal data for:', formattedPalName);
       let data = palsLocation[formattedPalName];
       setFinalPalName(formattedPalName);
       // If data not found, try with "BOSS_" prefix
@@ -33,10 +32,8 @@ export const PalHeatMap = ({ palName, loading }) => {
       }
       
       if (data) {
-        console.log('Pal data loaded successfully:', formattedPalName); // New log: Check if pal data is loaded successfully
         setPalData(data);
       } else {
-        console.log('Pal data not found for:', formattedPalName);
       }
     } catch (error) {
       console.error('Error loading pal data:', error);
@@ -44,7 +41,6 @@ export const PalHeatMap = ({ palName, loading }) => {
   };
 
   const toggleNightMode = () => {
-    console.log('Toggling night mode...'); // New log: Check if toggleNightMode function is called
     setNightMode(prevMode => !prevMode);
     // Reload pal data to update with appropriate mode (night or day)
     loadPalData(palName);

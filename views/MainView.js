@@ -57,8 +57,9 @@ const MainView = ({ navigation }) => {
                     tileWidth={tileWidth}
                     tileHeight={tileHeight}
                     spacing={spacing}
+                    captureCount={capturedPals[item.key] || 0} // Adjusted count for captured status
                     onCapturePress={() => toggleCapture(item.key)} // Use the context function
-                    isCaptured={capturedPals.includes(item.key)}
+                    isCaptured={!!capturedPals[item.key]} // Adjusted check for captured status
                   />
                 </TouchableOpacity>
               </View>
