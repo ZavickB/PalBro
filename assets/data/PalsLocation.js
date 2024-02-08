@@ -192,10 +192,6 @@ export const PalsLocation = (palName, nightMode) => {
         day: require('../images/maps/Grizzbolt_Day_Habitat.webp'),
         night: require('../images/maps/Grizzbolt_Night_Habitat.webp'),
     },
-    "Gumoss_(Special)": {
-        day: require('../images/maps/Gumoss_(Special)_Day_Habitat.webp'),
-        night: require('../images/maps/Gumoss_(Special)_Night_Habitat.png - Copie.webp'),
-    },
     "Gumoss": {
         day: require('../images/maps/Gumoss_Day_Habitat.webp'),
         night: require('../images/maps/Gumoss_Night_Habitat.webp'),
