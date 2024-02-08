@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { View, Image, StyleSheet, ActivityIndicator } from 'react-native';
+import { View, Image, StyleSheet, ActivityIndicator, Switch } from 'react-native';
 import { palsLocation } from '../assets/data/PalsLocation';
 import { useTheme } from './contexts/ThemeContext';
 import Icon from 'react-native-vector-icons/Ionicons'; // Import the icon component
@@ -8,7 +8,8 @@ export const PalHeatMap = ({ palName, loading }) => {
   const [containerSize, setContainerSize] = useState({ width: 0, height: 0 });
   const [isMapLoaded, setIsMapLoaded] = useState(false);
   const [palData, setPalData] = useState(null);
-  
+  const [nightMode, setNightMode] = useState(false); // State for night mode toggle
+
   const { currentTheme } = useTheme();
 
   const [finalPalName, setFinalPalName] = useState(null);
@@ -32,6 +33,7 @@ export const PalHeatMap = ({ palName, loading }) => {
       }
       
       if (data) {
+        console.log('Pal data loaded successfully:', formattedPalName); // New log: Check if pal data is loaded successfully
         setPalData(data);
       } else {
         console.log('Pal data not found for:', formattedPalName);
@@ -39,6 +41,13 @@ export const PalHeatMap = ({ palName, loading }) => {
     } catch (error) {
       console.error('Error loading pal data:', error);
     }
+  };
+
+  const toggleNightMode = () => {
+    console.log('Toggling night mode...'); // New log: Check if toggleNightMode function is called
+    setNightMode(prevMode => !prevMode);
+    // Reload pal data to update with appropriate mode (night or day)
+    loadPalData(palName);
   };
 
   const inGameMapSize = {
@@ -55,15 +64,11 @@ export const PalHeatMap = ({ palName, loading }) => {
   const convertPalsCoordinates = (palData, mapsize, imageWidth, imageHeight) => {
     if (!palData) return [];
 
-    const dayTimeCoordinates = palData.dayTimeLocations.locations.map(coord =>
+    const coordinates = nightMode ? palData.nightTimeLocations.locations : palData.dayTimeLocations.locations;
+
+    return coordinates.map(coord =>
       convertCoordinate(coord, mapsize, imageWidth, imageHeight)
     );
-
-    const nightTimeCoordinates = palData.nightTimeLocations.locations.map(coord =>
-      convertCoordinate(coord, mapsize, imageWidth, imageHeight)
-    );
-
-    return [...dayTimeCoordinates, ...nightTimeCoordinates];
   };
 
   const convertCoordinate = (coord, mapsize, imageWidth, imageHeight) => {
@@ -81,16 +86,15 @@ export const PalHeatMap = ({ palName, loading }) => {
 
   const onLayout = (event) => {
     const { width, height } = event.nativeEvent.layout;
-    console.log('Container size:', { width, height });
     setContainerSize({ width, height });
   };
 
   const nodes = useMemo(() => {
     if (!palData) return [];
     return convertPalsCoordinates(palData, inGameMapSize, containerSize.width, containerSize.height);
-  }, [palData, containerSize]);
+  }, [palData, containerSize, nightMode]);
 
-  const mapImageSource = require('../assets/images/WorldMap-512.png');
+  const mapImageSource = require('../assets/images/WorldMap-1024.png');
 
   const styles = StyleSheet.create({
     mapContainer: {
@@ -114,6 +118,17 @@ export const PalHeatMap = ({ palName, loading }) => {
       justifyContent: 'center',
       alignItems: 'center',
     },
+    toggleContainer: {
+      position: 'absolute',
+      top: 10,
+      right: 10,
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
+    toggleText: {
+      color: 'white',
+      marginRight: 5,
+    },
   });
 
   return (
@@ -133,9 +148,19 @@ export const PalHeatMap = ({ palName, loading }) => {
                   left: node.x,
                 },
               ]}
-            >
-            </View>
+            />
           ))}
+          <View style={styles.toggleContainer}>
+            <Icon name="sunny" size={24} color="white" />
+            <Switch
+              trackColor={{ false: "#767577", true: "#81b0ff" }}
+              thumbColor={nightMode ? "#f5dd4b" : "#f4f3f4"}
+              ios_backgroundColor="#3e3e3e"
+              onValueChange={toggleNightMode}
+              value={nightMode}
+            />
+            <Icon name="moon" size={24} color="white" />
+          </View>
         </>
       )}
     </View>
