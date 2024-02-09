@@ -35,7 +35,6 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
       name: "sort_name_asc",
       position: 2,
       color: currentTheme.primaryColor,
-
     },
     {
       text: "Sort by Name Z-A",
@@ -73,6 +72,34 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
   
       return nameMatch && typeMatch && suitabilityMatch;
     });
+  
+    // Sort filtered data by suitability level if a single suitability is selected
+    if (suitabilities.length === 1) {
+      const selectedSuitability = suitabilities[0];
+      filtered.sort((a, b) => {
+        const suitabilityA = a.suitability.find((s) => s.type === selectedSuitability);
+        const suitabilityB = b.suitability.find((s) => s.type === selectedSuitability);
+        const levelA = suitabilityA ? suitabilityA.level : 0;
+        const levelB = suitabilityB ? suitabilityB.level : 0;
+        return levelB - levelA;
+      });
+    }
+  
+    // Sort filtered data by combined suitability level if multiple suitabilities are selected
+    if (suitabilities.length > 1) {
+      filtered.sort((a, b) => {
+        const combinedLevelA = suitabilities.reduce((totalLevel, suitability) => {
+          const palSuitability = a.suitability.find((s) => s.type === suitability);
+          return totalLevel + (palSuitability ? palSuitability.level : 0);
+        }, 0);
+        const combinedLevelB = suitabilities.reduce((totalLevel, suitability) => {
+          const palSuitability = b.suitability.find((s) => s.type === suitability);
+          return totalLevel + (palSuitability ? palSuitability.level : 0);
+        }, 0);
+        return combinedLevelB - combinedLevelA;
+      });
+    }
+  
     setFilteredData(filtered);
   };
   

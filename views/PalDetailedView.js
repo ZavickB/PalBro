@@ -89,7 +89,7 @@ const PalDetailedView = ({ route, navigation }) => {
       case 'map':
         return (
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Pal Location:</Text>
+              <Text style={styles.sectionTitle}>Habitat:</Text>
               <PalHeatMap palName={palData.name} isNightOnly={palData.isNightOnly} loading={loading} />
             </View>
         );
