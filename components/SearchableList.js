@@ -23,7 +23,7 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
   // Define the actions for the FloatingAction button
   const actions = [
     {
-      text: "Filter",
+      text: "Filters",
       icon: <Icon name="filter" size={25} color="#fff" />,
       name: "bt_filter",
       position: 1,
@@ -42,7 +42,13 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
       name: "sort_name_desc",
       position: 3,
       color: currentTheme.primaryColor,
-
+    },
+    {
+      text: "Reset Filters & Sort",
+      icon: <Icon name="refresh" size={25} color="#fff" />,
+      name: "reset_all",
+      position: 4,
+      color: currentTheme.primaryColor,
     },
   ];
 
@@ -302,6 +308,11 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
         onPressItem={name => {
           if (name === "bt_filter") {
             setFilterModalVisible(true);
+          } else if (name === "reset_all") {
+            setSearchText(''); // Reset search text
+            setSelectedTypes([]); // Reset selected types
+            setSelectedSuitabilities([]); // Reset selected suitabilities
+            sortData(''); // Reset sorting (you can pass an empty string or any default sorting option)
           } else {
             sortData(name); // Call the sort function with the action name
           }
