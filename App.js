@@ -49,9 +49,9 @@ function BreedingStack() {
 export default function App() {
 
   // Uncomment this block before building the app
-  useEffect(() => {
-    SplashScreen.hide();
-  }, []);
+  //useEffect(() => {
+  //  SplashScreen.hide();
+  //}, []);
   
   return (
     <ThemeProvider>

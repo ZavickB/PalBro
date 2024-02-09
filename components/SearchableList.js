@@ -28,10 +28,22 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
       name: "bt_filter",
       position: 1,
       color: currentTheme.primaryColor,
-      textStyle: { 
-        fontSize: 16,
-       },
-      justifyContent: 'center',
+    },
+    {
+      text: "Sort by Name A-Z",
+      icon: <Icon name="sort-alpha-asc" size={25} color="#fff" />,
+      name: "sort_name_asc",
+      position: 2,
+      color: currentTheme.primaryColor,
+
+    },
+    {
+      text: "Sort by Name Z-A",
+      icon: <Icon name="sort-alpha-desc" size={25} color="#fff" />,
+      name: "sort_name_desc",
+      position: 3,
+      color: currentTheme.primaryColor,
+
     },
   ];
 
@@ -64,6 +76,23 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
     setFilteredData(filtered);
   };
   
+  const sortData = (sortOption) => {
+    const sortedData = [...filteredData]; // Create a copy to avoid direct state mutation
+  
+    switch (sortOption) {
+      case 'sort_name_asc':
+        sortedData.sort((a, b) => a.name.localeCompare(b.name));
+        break;
+      case 'sort_name_desc':
+        sortedData.sort((a, b) => b.name.localeCompare(a.name));
+        break;
+      default:
+        // No default sorting
+        break;
+    }
+  
+    setFilteredData(sortedData); // Update the state with the sorted data
+  };
 
   const toggleTypeFilter = (type) => {
     if (selectedTypes.includes(type)) {
@@ -246,6 +275,8 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
         onPressItem={name => {
           if (name === "bt_filter") {
             setFilterModalVisible(true);
+          } else {
+            sortData(name); // Call the sort function with the action name
           }
         }}
         color={currentTheme.backgroundColor}

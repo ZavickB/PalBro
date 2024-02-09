@@ -28,10 +28,10 @@ const DropsView = ({ route, navigation }) => {
   }, []);
 
   useEffect(() => {
-    const filtered = uniqueDropsData.filter((drop) =>
-      drop.toLowerCase().includes(searchText.toLowerCase())
-    );
-    setFilteredDrops(filtered);
+    const filteredAndSorted = uniqueDropsData
+      .filter(drop => drop.toLowerCase().includes(searchText.toLowerCase()))
+      .sort((a, b) => a.localeCompare(b)); // Sort alphabetically
+    setFilteredDrops(filteredAndSorted);
   }, [searchText, uniqueDropsData]);
 
   useEffect(() => {
