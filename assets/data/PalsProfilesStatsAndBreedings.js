@@ -191,28 +191,32 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "roly_poly",
-                "type": "Normal",                "cooldown": 1,
+                "type": "Normal",
+                "cooldown": 1,
                 "power": 35,
                 "description": "Lamball's special skill. Curls into a ball, rolling after any enemies in its way. Becomes dizzy and unable to move after the attack ends.\n"
             },
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 15,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 22,
                 "name": "implode",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 180,
                 "description": "Risks its life to cause a violent explosion. Becomes incapacitated afterwards.\n"
             },
@@ -227,19 +231,22 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "SheepBall"
     },
     {
         "id": 2,
@@ -436,14 +443,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "punch_flurry",
-                "type": "Normal",                "cooldown": 1,
+                "type": "Normal",
+                "cooldown": 1,
                 "power": 40,
                 "description": "Cattiva's special skill. Pursues enemies, repeatedly punching them with both its fists.\n"
             },
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -458,7 +467,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -481,12 +491,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "PinkCat"
     },
     {
         "id": 3,
@@ -676,28 +688,32 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "chicken_rush",
-                "type": "Normal",                "cooldown": 1,
+                "type": "Normal",
+                "cooldown": 1,
                 "power": 30,
                 "description": "Chikipi's special skill. Flies at enemies in its sights, attacking them with its sharp beak.\n"
             },
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 15,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 22,
                 "name": "implode",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 180,
                 "description": "Risks its life to cause a violent explosion. Becomes incapacitated afterwards.\n"
             },
@@ -726,7 +742,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "ChickenPal"
     },
     {
         "id": 4,
@@ -936,14 +953,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 15,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -958,7 +977,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -979,7 +999,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "Carbunclo"
     },
     {
         "id": 5,
@@ -1165,7 +1186,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
@@ -1180,21 +1202,24 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "flare_arrow",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 30,
                 "name": "ignis_breath",
-                "type": "Fire",                "cooldown": 15,
+                "type": "Fire",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
@@ -1209,12 +1234,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "Kitsunebi"
     },
     {
         "id": 6,
@@ -1416,7 +1443,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -1461,7 +1489,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "BluePlatypus"
     },
     {
         "id": 7,
@@ -1708,7 +1737,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "ElecCat"
     },
     {
         "id": 8,
@@ -1963,7 +1993,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "Monkey"
     },
     {
         "id": 9,
@@ -2149,54 +2180,62 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "flare_arrow",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 30,
                 "name": "flare_storm",
-                "type": "Fire",                "cooldown": 18,
+                "type": "Fire",
+                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "Fire",                "cooldown": 40,
+                "type": "Fire",
+                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
         ],
-        "rarity": 2
+        "rarity": 2,
+        "pal_dev_name": "FlameBambi"
     },
     {
         "id": 10,
@@ -2449,7 +2488,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "Penguin"
     },
     {
         "id": 11,
@@ -2706,7 +2746,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
         ],
-        "rarity": 6
+        "rarity": 6,
+        "pal_dev_name": "CaptainPenguin"
     },
     {
         "id": 12,
@@ -2899,7 +2940,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -2914,7 +2956,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -2943,7 +2986,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "Hedgehog"
     },
     {
         "id": 13,
@@ -3184,7 +3228,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "PlantSlime"
     },
     {
         "id": 14,
@@ -3374,7 +3419,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -3389,7 +3435,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -3412,19 +3459,22 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 2
+        "rarity": 2,
+        "pal_dev_name": "CuteFox"
     },
     {
         "id": 15,
@@ -3610,7 +3660,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -3663,7 +3714,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "WizardOwl"
     },
     {
         "id": 16,
@@ -3902,7 +3954,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "Ganesha"
     },
     {
         "id": 17,
@@ -4149,7 +4202,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "NegativeKoala"
     },
     {
         "id": 18,
@@ -4338,7 +4392,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -4361,7 +4416,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -4376,7 +4432,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -4389,7 +4446,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "WoolFox"
     },
     {
         "id": 19,
@@ -4637,7 +4695,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "DreamDemon"
     },
     {
         "id": 20,
@@ -4824,7 +4883,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "reckless_charge",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 55,
                 "description": "Rushoar's special skill. Takes aim at a foe and rushes at them with a mad charge.\n"
             },
@@ -4839,7 +4899,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -4854,7 +4915,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -4869,12 +4931,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "Boar"
     },
     {
         "id": 21,
@@ -5060,7 +5124,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -5083,7 +5148,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -5112,7 +5178,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 6
+        "rarity": 6,
+        "pal_dev_name": "NightFox"
     },
     {
         "id": 22,
@@ -5313,7 +5380,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -5336,7 +5404,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -5357,7 +5426,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "CuteMole"
     },
     {
         "id": 23,
@@ -5600,7 +5670,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "NegativeOctopus"
     },
     {
         "id": 24,
@@ -5839,7 +5910,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "Bastet"
     },
     {
         "id": 25,
@@ -6044,7 +6116,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -6081,7 +6154,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
         ],
-        "rarity": 3
+        "rarity": 3,
+        "pal_dev_name": "FlyingManta"
     },
     {
         "id": 26,
@@ -6268,7 +6342,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "fierce_fang",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 45,
                 "description": "Direhowl's special skill. Swiftly leaps at an enemy and bites into them.\n"
             },
@@ -6283,40 +6358,46 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 22,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 30,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 2
+        "rarity": 2,
+        "pal_dev_name": "Garm"
     },
     {
         "id": 27,
@@ -6502,28 +6583,32 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "implode",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 180,
                 "description": "Risks its life to cause a violent explosion. Becomes incapacitated afterwards.\n"
             },
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 15,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 22,
                 "name": "megaton_implode",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 250,
                 "description": "Risks life to cause a massive explosion. Those who perish for their duty become glistening stars in the night sky.\n"
             },
@@ -6538,19 +6623,22 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "ColorfulBird"
     },
     {
         "id": 28,
@@ -6760,7 +6848,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -6805,7 +6894,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "FlowerRabbit"
     },
     {
         "id": 29,
@@ -6991,7 +7081,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -7006,7 +7097,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -7029,19 +7121,22 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 2
+        "rarity": 2,
+        "pal_dev_name": "CowPal"
     },
     {
         "id": 30,
@@ -7297,7 +7392,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "LittleBriarRose"
     },
     {
         "id": 31,
@@ -7498,7 +7594,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -7543,7 +7640,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
         ],
-        "rarity": 2
+        "rarity": 2,
+        "pal_dev_name": "SharkKid"
     },
     {
         "id": 32,
@@ -7744,7 +7842,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -7759,14 +7858,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -7787,7 +7888,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "WindChimes"
     },
     {
         "id": 33,
@@ -7986,7 +8088,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -8039,7 +8142,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 6
+        "rarity": 6,
+        "pal_dev_name": "GrassPanda"
     },
     {
         "id": 34,
@@ -8225,7 +8329,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -8240,7 +8345,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -8263,19 +8369,22 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 3
+        "rarity": 3,
+        "pal_dev_name": "SweetsSheep"
     },
     {
         "id": 35,
@@ -8474,7 +8583,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -8489,7 +8599,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -8518,7 +8629,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 3
+        "rarity": 3,
+        "pal_dev_name": "BerryGoat"
     },
     {
         "id": 36,
@@ -8704,14 +8816,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "fluffy_tackle",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 40,
                 "description": "Melpaca's exclusive skill. Charges forward while clad in an aura of sublime adorableness.\n"
             },
@@ -8726,7 +8840,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -8741,19 +8856,22 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 3
+        "rarity": 3,
+        "pal_dev_name": "Alpaca"
     },
     {
         "id": 37,
@@ -8940,14 +9058,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 7,
                 "name": "antler_uppercut",
-                "type": "Normal",                "cooldown": 5,
+                "type": "Normal",
+                "cooldown": 5,
                 "power": 50,
                 "description": "Eikthyrdeer's exclusive skill. Charges at foes and uses antlers to launch them into the air. If used while riding, the direction of the charge can be controlled.\n"
             },
@@ -8970,7 +9090,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -8985,12 +9106,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 4
+        "rarity": 4,
+        "pal_dev_name": "Deer"
     },
     {
         "id": 38,
@@ -9175,14 +9298,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "tornado_attack",
-                "type": "Normal",                "cooldown": 13,
+                "type": "Normal",
+                "cooldown": 13,
                 "power": 65,
                 "description": "Nitewing's exclusive skill. Generates a tornado before soaring towards its target.\n"
             },
@@ -9197,7 +9322,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -9220,12 +9346,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 3
+        "rarity": 3,
+        "pal_dev_name": "HawkBird"
     },
     {
         "id": 39,
@@ -9403,14 +9531,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -9433,7 +9563,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -9448,7 +9579,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
@@ -9467,7 +9599,8 @@ const PalsProfilesStatsAndBreedings = [
             "Capture Multi": "1",
             "Male %": "50"
         },
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "PinkRabbit"
     },
     {
         "id": 40,
@@ -9666,28 +9799,32 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 15,
                 "name": "flare_arrow",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 22,
                 "name": "hellfire_claw",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 70,
                 "description": "Incineram's exclusive skill. Draws near enemies using its left claw to slash them into the air before cutting them down with its right claw.\n"
             },
@@ -9702,19 +9839,22 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
             {
                 "level": 50,
                 "name": "ignis_rage",
-                "type": "Fire",                "cooldown": 40,
+                "type": "Fire",
+                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             }
         ],
-        "rarity": 4
+        "rarity": 4,
+        "pal_dev_name": "Baphomet"
     },
     {
         "id": 41,
@@ -9905,7 +10045,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -9958,7 +10099,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 4
+        "rarity": 4,
+        "pal_dev_name": "CuteButterfly"
     },
     {
         "id": 42,
@@ -10148,54 +10290,62 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "blazing_horn",
-                "type": "Fire",                "cooldown": 9,
+                "type": "Fire",
+                "cooldown": 9,
                 "power": 50,
                 "description": "Arsox's exclusive skill. Takes aim and rushes at an enemy with a mad dash.\n"
             },
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "flare_arrow",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 30,
                 "name": "ignis_breath",
-                "type": "Fire",                "cooldown": 15,
+                "type": "Fire",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "Fire",                "cooldown": 40,
+                "type": "Fire",
+                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
         ],
-        "rarity": 4
+        "rarity": 4,
+        "pal_dev_name": "FlameBuffalo"
     },
     {
         "id": 43,
@@ -10386,7 +10536,8 @@ const PalsProfilesStatsAndBreedings = [
             "Male %": "50"
         },
         "skills": [],
-        "rarity": 4
+        "rarity": 4,
+        "pal_dev_name": "LazyCatfish"
     },
     {
         "id": 44,
@@ -10573,7 +10724,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -10626,7 +10778,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 3
+        "rarity": 3,
+        "pal_dev_name": "DarkCrow"
     },
     {
         "id": 45,
@@ -10860,7 +11013,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "ignis_breath",
-                "type": "Fire",                "cooldown": 15,
+                "type": "Fire",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
@@ -10873,7 +11027,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 2
+        "rarity": 2,
+        "pal_dev_name": "LizardMan"
     },
     {
         "id": 46,
@@ -11112,7 +11267,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 3
+        "rarity": 3,
+        "pal_dev_name": "Werewolf"
     },
     {
         "id": 47,
@@ -11298,14 +11454,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "gale_claw",
-                "type": "Normal",                "cooldown": 8,
+                "type": "Normal",
+                "cooldown": 8,
                 "power": 60,
                 "description": "Galeclaw's exclusive skill. Soars through the air with its talons outstretched forward.\n"
             },
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -11344,12 +11502,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 2
+        "rarity": 2,
+        "pal_dev_name": "Eagle"
     },
     {
         "id": 48,
@@ -11563,7 +11723,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -11608,7 +11769,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 5
+        "rarity": 5,
+        "pal_dev_name": "RobinHood"
     },
     {
         "id": 49,
@@ -11810,14 +11972,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "ground_pound",
-                "type": "Normal",                "cooldown": 14,
+                "type": "Normal",
+                "cooldown": 14,
                 "power": 85,
                 "description": "Gorilla's exclusive skill. Pounds the ground twice before leaping into the air and unleashing a powerful punch.\n"
             },
@@ -11840,19 +12004,22 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 5
+        "rarity": 5,
+        "pal_dev_name": "Gorilla"
     },
     {
         "id": 50,
@@ -12061,7 +12228,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -12076,7 +12244,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "bee_quiet",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 200,
                 "description": "Risks its life to cause a violent explosion, but receives the honor of falling in battle.\n"
             },
@@ -12113,7 +12282,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 4
+        "rarity": 4,
+        "pal_dev_name": "SoldierBee"
     },
     {
         "id": 51,
@@ -12315,7 +12485,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -12368,7 +12539,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 8
+        "rarity": 8,
+        "pal_dev_name": "QueenBee"
     },
     {
         "id": 52,
@@ -12561,14 +12733,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "cat_press",
-                "type": "Normal",                "cooldown": 9,
+                "type": "Normal",
+                "cooldown": 9,
                 "power": 60,
                 "description": "Grintale's exclusive skill. Grins menacingly before leaping into the air and smashing foes with its body.\n"
             },
@@ -12591,19 +12765,22 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 6
+        "rarity": 6,
+        "pal_dev_name": "NaughtyCat"
     },
     {
         "id": 53,
@@ -12792,7 +12969,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -12815,7 +12993,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -12844,7 +13023,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "MopBaby"
     },
     {
         "id": 54,
@@ -13033,7 +13213,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -13072,7 +13253,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             },
@@ -13085,7 +13267,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
         ],
-        "rarity": 6
+        "rarity": 6,
+        "pal_dev_name": "MopKing"
     },
     {
         "id": 55,
@@ -13329,7 +13512,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
         ],
-        "rarity": 4
+        "rarity": 4,
+        "pal_dev_name": "WeaselDragon"
     },
     {
         "id": 56,
@@ -13574,7 +13758,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
         ],
-        "rarity": 5
+        "rarity": 5,
+        "pal_dev_name": "Kirin"
     },
     {
         "id": 57,
@@ -13760,7 +13945,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -13813,7 +13999,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
         ],
-        "rarity": 5
+        "rarity": 5,
+        "pal_dev_name": "IceFox"
     },
     {
         "id": 58,
@@ -14011,47 +14198,54 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "flare_arrow",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 30,
                 "name": "ignis_slam",
-                "type": "Fire",                "cooldown": 14,
+                "type": "Fire",
+                "cooldown": 14,
                 "power": 85,
                 "description": "Pyrin's exclusive skill. Charges forward while clad in a veil of flames. Flames continue to burn in its wake.\n"
             },
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "Fire",                "cooldown": 40,
+                "type": "Fire",
+                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
         ],
-        "rarity": 6
+        "rarity": 6,
+        "pal_dev_name": "FireKirin"
     },
     {
         "id": 59,
@@ -14243,7 +14437,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -14296,7 +14491,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
         ],
-        "rarity": 4
+        "rarity": 4,
+        "pal_dev_name": "IceDeer"
     },
     {
         "id": 60,
@@ -14535,7 +14731,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
         ],
-        "rarity": 5
+        "rarity": 5,
+        "pal_dev_name": "ThunderDog"
     },
     {
         "id": 61,
@@ -14721,14 +14918,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
@@ -14743,33 +14942,38 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "daring_flames",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 75,
                 "description": "Kitsun's exclusive skill. Charges forward with great speed while clad in intense blue flames.\n"
             },
             {
                 "level": 30,
                 "name": "flare_storm",
-                "type": "Fire",                "cooldown": 18,
+                "type": "Fire",
+                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "Fire",                "cooldown": 40,
+                "type": "Fire",
+                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
         ],
-        "rarity": 6
+        "rarity": 6,
+        "pal_dev_name": "AmaterasuWolf"
     },
     {
         "id": 62,
@@ -14962,7 +15166,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -15015,7 +15220,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
         ],
-        "rarity": 2
+        "rarity": 2,
+        "pal_dev_name": "RaijinDaughter"
     },
     {
         "id": 63,
@@ -15208,14 +15414,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -15238,7 +15446,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -15253,12 +15462,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 6
+        "rarity": 6,
+        "pal_dev_name": "Mutant"
     },
     {
         "id": 64,
@@ -15502,7 +15713,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 6
+        "rarity": 6,
+        "pal_dev_name": "FlowerDinosaur"
     },
     {
         "id": 65,
@@ -15741,7 +15953,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
         ],
-        "rarity": 4
+        "rarity": 4,
+        "pal_dev_name": "Serpent"
     },
     {
         "id": 66,
@@ -15931,7 +16144,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
@@ -15946,7 +16160,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "flare_arrow",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
@@ -15983,7 +16198,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 6
+        "rarity": 6,
+        "pal_dev_name": "GhostBeast"
     },
     {
         "id": 67,
@@ -16223,7 +16439,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
         ],
-        "rarity": 5
+        "rarity": 5,
+        "pal_dev_name": "DrillGame"
     },
     {
         "id": 68,
@@ -16417,7 +16634,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -16470,7 +16688,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 5
+        "rarity": 5,
+        "pal_dev_name": "CatBat"
     },
     {
         "id": 69,
@@ -16670,7 +16889,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -16701,26 +16921,30 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 40,
                 "name": "implode",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 180,
                 "description": "Risks its life to cause a violent explosion. Becomes incapacitated afterwards.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 5
+        "rarity": 5,
+        "pal_dev_name": "PinkLizard"
     },
     {
         "id": 70,
@@ -16918,21 +17142,24 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 15,
                 "name": "flare_arrow",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
@@ -16947,26 +17174,30 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "flare_storm",
-                "type": "Fire",                "cooldown": 18,
+                "type": "Fire",
+                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "Fire",                "cooldown": 40,
+                "type": "Fire",
+                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "LavaGirl"
     },
     {
         "id": 71,
@@ -17158,28 +17389,32 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "ignis_breath",
-                "type": "Fire",                "cooldown": 15,
+                "type": "Fire",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
@@ -17194,7 +17429,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
@@ -17207,7 +17443,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 4
+        "rarity": 4,
+        "pal_dev_name": "BirdDragon"
     },
     {
         "id": 72,
@@ -17409,7 +17646,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
@@ -17432,14 +17670,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "iaigiri",
-                "type": "Fire",                "cooldown": 9,
+                "type": "Fire",
+                "cooldown": 9,
                 "power": 65,
                 "description": "Bushi's exclusive skill. After Holding the sword, he appears in front of the enemy in an instant and unleashes a Ultra-fast sword draw attack.\n"
             },
             {
                 "level": 30,
                 "name": "ignis_breath",
-                "type": "Fire",                "cooldown": 15,
+                "type": "Fire",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
@@ -17454,12 +17694,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "ignis_rage",
-                "type": "Fire",                "cooldown": 40,
+                "type": "Fire",
+                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             }
         ],
-        "rarity": 7
+        "rarity": 7,
+        "pal_dev_name": "Ronin"
     },
     {
         "id": 73,
@@ -17652,7 +17894,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -17705,7 +17948,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
         ],
-        "rarity": 6
+        "rarity": 6,
+        "pal_dev_name": "ThunderBird"
     },
     {
         "id": 74,
@@ -17894,21 +18138,24 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 15,
                 "name": "flare_arrow",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
@@ -17923,26 +18170,30 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "flare_storm",
-                "type": "Fire",                "cooldown": 18,
+                "type": "Fire",
+                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
             {
                 "level": 40,
                 "name": "ignis_breath",
-                "type": "Fire",                "cooldown": 15,
+                "type": "Fire",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
         ],
-        "rarity": 7
+        "rarity": 7,
+        "pal_dev_name": "RedArmorBird"
     },
     {
         "id": 75,
@@ -18137,7 +18388,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
@@ -18152,7 +18404,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "flare_arrow",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
@@ -18189,7 +18442,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 6
+        "rarity": 6,
+        "pal_dev_name": "CatMage"
     },
     {
         "id": 76,
@@ -18383,21 +18637,24 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 15,
                 "name": "flare_arrow",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
@@ -18412,14 +18669,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "flare_storm",
-                "type": "Fire",                "cooldown": 18,
+                "type": "Fire",
+                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
@@ -18432,7 +18691,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
         ],
-        "rarity": 6
+        "rarity": 6,
+        "pal_dev_name": "FoxMage"
     },
     {
         "id": 77,
@@ -18688,7 +18948,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 8
+        "rarity": 8,
+        "pal_dev_name": "GrassRabbitMan"
     },
     {
         "id": 78,
@@ -18944,7 +19205,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 8
+        "rarity": 8,
+        "pal_dev_name": "VioletFairy"
     },
     {
         "id": 79,
@@ -19192,7 +19454,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
         ],
-        "rarity": 7
+        "rarity": 7,
+        "pal_dev_name": "WhiteMoth"
     },
     {
         "id": 80,
@@ -19393,7 +19656,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "flare_arrow",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
@@ -19416,7 +19680,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             },
@@ -19429,7 +19694,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
         ],
-        "rarity": 7
+        "rarity": 7,
+        "pal_dev_name": "FairyDragon"
     },
     {
         "id": 81,
@@ -19647,7 +19913,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -19668,7 +19935,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
         ],
-        "rarity": 1
+        "rarity": 1,
+        "pal_dev_name": "Kelpie"
     },
     {
         "id": 82,
@@ -19908,7 +20176,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
         ],
-        "rarity": 7
+        "rarity": 7,
+        "pal_dev_name": "BlueDragon"
     },
     {
         "id": 83,
@@ -20101,7 +20370,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -20154,7 +20424,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
         ],
-        "rarity": 7
+        "rarity": 7,
+        "pal_dev_name": "WhiteTiger"
     },
     {
         "id": 84,
@@ -20343,54 +20614,62 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "flare_arrow",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 22,
                 "name": "ignis_breath",
-                "type": "Fire",                "cooldown": 15,
+                "type": "Fire",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 30,
                 "name": "ignis_rage",
-                "type": "Fire",                "cooldown": 40,
+                "type": "Fire",
+                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 7
+        "rarity": 7,
+        "pal_dev_name": "Manticore"
     },
     {
         "id": 85,
@@ -20635,7 +20914,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
         ],
-        "rarity": 8
+        "rarity": 8,
+        "pal_dev_name": "LazyDragon"
     },
     {
         "id": 86,
@@ -20837,7 +21117,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "muscle_slam",
-                "type": "Normal",                "cooldown": 12,
+                "type": "Normal",
+                "cooldown": 12,
                 "power": 80,
                 "description": "Broncherry's exclusive skill. Turns sideways before tackling enemies in front of it, sending them flying into the air.\n"
             },
@@ -20874,7 +21155,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 7
+        "rarity": 7,
+        "pal_dev_name": "SakuraSaurus"
     },
     {
         "id": 87,
@@ -21131,7 +21413,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 8
+        "rarity": 8,
+        "pal_dev_name": "FlowerDoll"
     },
     {
         "id": 88,
@@ -21321,7 +21604,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
@@ -21344,21 +21628,24 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "ignis_breath",
-                "type": "Fire",                "cooldown": 15,
+                "type": "Fire",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 30,
                 "name": "volcanic_burst",
-                "type": "Fire",                "cooldown": 45,
+                "type": "Fire",
+                "cooldown": 45,
                 "power": 100,
                 "description": "Reptyro's exclusive skill. Raises its front legs before slamming them into the ground, causing volcanic eruptions under its enemies. It simultaneously bombards them with volcanic bombs from above.\n"
             },
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "Fire",                "cooldown": 40,
+                "type": "Fire",
+                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
@@ -21371,7 +21658,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
         ],
-        "rarity": 6
+        "rarity": 6,
+        "pal_dev_name": "VolcanicMonster"
     },
     {
         "id": 89,
@@ -21565,21 +21853,24 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
             {
                 "level": 22,
                 "name": "kingly_slam",
-                "type": "Normal",                "cooldown": 21,
+                "type": "Normal",
+                "cooldown": 21,
                 "power": 100,
                 "description": "Kingpaca's exclusive skill. Leaps high into the air before smashing into an enemy with its massive body.\n"
             },
@@ -21602,12 +21893,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 8
+        "rarity": 8,
+        "pal_dev_name": "KingAlpaca"
     },
     {
         "id": 90,
@@ -21818,7 +22111,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -21855,7 +22149,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 8
+        "rarity": 8,
+        "pal_dev_name": "GrassMammoth"
     },
     {
         "id": 91,
@@ -22107,7 +22402,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 7
+        "rarity": 7,
+        "pal_dev_name": "Yeti"
     },
     {
         "id": 92,
@@ -22359,6 +22655,7 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
+        "pal_dev_name": "HerculesBeetle",
         "rarity": 7
     },
     {
@@ -22545,7 +22842,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -22560,7 +22858,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "cloud_tempest",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 90,
                 "description": "Fenglope's exclusive skill. Charges forward while manipulating the atmosphere to create a pressurized wind tunnel around itself.\n"
             },
@@ -22591,12 +22890,14 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 3
+        "rarity": 3,
+        "pal_dev_name": "FengyunDeeper"
     },
     {
         "id": 94,
@@ -22822,7 +23123,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "Fire",                "cooldown": 40,
+                "type": "Fire",
+                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
@@ -22835,7 +23137,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 6
+        "rarity": 6,
+        "pal_dev_name": "CatVampire"
     },
     {
         "id": 95,
@@ -23040,7 +23343,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
@@ -23085,7 +23389,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
         ],
-        "rarity": 7
+        "rarity": 7,
+        "pal_dev_name": "SkyDragon"
     },
     {
         "id": 96,
@@ -23275,14 +23580,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 7,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
@@ -23297,21 +23604,24 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "ignis_breath",
-                "type": "Fire",                "cooldown": 15,
+                "type": "Fire",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 30,
                 "name": "ignis_rage",
-                "type": "Fire",                "cooldown": 40,
+                "type": "Fire",
+                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
@@ -23324,7 +23634,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
         ],
-        "rarity": 9
+        "rarity": 9,
+        "pal_dev_name": "KingBahamut"
     },
     {
         "id": 97,
@@ -23510,7 +23821,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
@@ -23533,7 +23845,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "flare_storm",
-                "type": "Fire",                "cooldown": 18,
+                "type": "Fire",
+                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
@@ -23562,7 +23875,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 7
+        "rarity": 7,
+        "pal_dev_name": "HadesBird"
     },
     {
         "id": 98,
@@ -23807,7 +24121,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
         ],
-        "rarity": 9
+        "rarity": 9,
+        "pal_dev_name": "BlackMetalDragon"
     },
     {
         "id": 99,
@@ -24052,7 +24367,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 9
+        "rarity": 9,
+        "pal_dev_name": "DarkScorpion"
     },
     {
         "id": 100,
@@ -24255,7 +24571,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -24300,7 +24617,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
         ],
-        "rarity": 10
+        "rarity": 10,
+        "pal_dev_name": "Anubis"
     },
     {
         "id": 101,
@@ -24540,7 +24858,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
         ],
-        "rarity": 8
+        "rarity": 8,
+        "pal_dev_name": "Umihebi"
     },
     {
         "id": 102,
@@ -24725,54 +25044,62 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
             {
                 "level": 7,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "flare_arrow",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 30,
                 "name": "ignis_breath",
-                "type": "Fire",                "cooldown": 15,
+                "type": "Fire",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 40,
                 "name": "flare_storm",
-                "type": "Fire",                "cooldown": 18,
+                "type": "Fire",
+                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
         ],
-        "rarity": 8
+        "rarity": 8,
+        "pal_dev_name": "Suzaku"
     },
     {
         "id": 103,
@@ -25024,7 +25351,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
         ],
-        "rarity": 8
+        "rarity": 8,
+        "pal_dev_name": "ElecPanda"
     },
     {
         "id": 104,
@@ -25277,7 +25605,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 9
+        "rarity": 9,
+        "pal_dev_name": "LilyQueen"
     },
     {
         "id": 105,
@@ -25466,54 +25795,62 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "flare_arrow",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "ignis_breath",
-                "type": "Fire",                "cooldown": 15,
+                "type": "Fire",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 30,
                 "name": "phoenix_flare",
-                "type": "Fire",                "cooldown": 28,
+                "type": "Fire",
+                "cooldown": 28,
                 "power": 135,
                 "description": "Faleris's special skill. Covers its body in a tornado of flames before charging forward.\n"
             },
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "Fire",                "cooldown": 40,
+                "type": "Fire",
+                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
         ],
-        "rarity": 9
+        "rarity": 9,
+        "pal_dev_name": "Horus"
     },
     {
         "id": 106,
@@ -25761,7 +26098,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
         ],
-        "rarity": 9
+        "rarity": 9,
+        "pal_dev_name": "ThunderDragonMan"
     },
     {
         "id": 107,
@@ -25948,7 +26286,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -26001,7 +26340,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 10
+        "rarity": 10,
+        "pal_dev_name": "BlackGriffon"
     },
     {
         "id": 108,
@@ -26191,7 +26531,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -26214,7 +26555,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -26229,19 +26571,22 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "spear_thrust",
-                "type": "Normal",                "cooldown": 40,
+                "type": "Normal",
+                "cooldown": 40,
                 "power": 120,
                 "description": "Paladius' exclusive skill. Clads itself in holy power before charging forward with its spear. The shield in its other hand protects from attacks during the charge.\n"
             },
             {
                 "level": 50,
                 "name": "pal_blast",
-                "type": "Normal",                "cooldown": 55,
+                "type": "Normal",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Charges destructive energy before firing a high-powered beam forward across a wide area.\n"
             }
         ],
-        "rarity": 20
+        "rarity": 20,
+        "pal_dev_name": "SaintCentaur"
     },
     {
         "id": 109,
@@ -26439,7 +26784,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
@@ -26484,7 +26830,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 20
+        "rarity": 20,
+        "pal_dev_name": "BlackCentaur"
     },
     {
         "id": 110,
@@ -26670,7 +27017,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -26723,7 +27071,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
         ],
-        "rarity": 20
+        "rarity": 20,
+        "pal_dev_name": "IceHorse"
     },
     {
         "id": 111,
@@ -26911,7 +27260,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
@@ -26926,7 +27276,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "flare_storm",
-                "type": "Fire",                "cooldown": 18,
+                "type": "Fire",
+                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
@@ -26949,7 +27300,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
@@ -26962,7 +27314,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
         ],
-        "rarity": 20
+        "rarity": 20,
+        "pal_dev_name": "JetDragon"
     },
     {
         "key": "084B",
@@ -27158,14 +27511,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "flare_arrow",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 15,
                 "name": "ignis_breath",
-                "type": "Fire",                "cooldown": 15,
+                "type": "Fire",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
@@ -27180,14 +27535,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "ignis_rage",
-                "type": "Fire",                "cooldown": 40,
+                "type": "Fire",
+                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
@@ -27200,7 +27557,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 8
+        "rarity": 8,
+        "pal_dev_name": "Manticore_Dark"
     },
     {
         "key": "086B",
@@ -27401,7 +27759,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "muscle_slam",
-                "type": "Normal",                "cooldown": 12,
+                "type": "Normal",
+                "cooldown": 12,
                 "power": 80,
                 "description": "Broncherry's exclusive skill. Turns sideways before tackling enemies in front of it, sending them flying into the air.\n"
             },
@@ -27438,7 +27797,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
         ],
-        "rarity": 8
+        "rarity": 8,
+        "pal_dev_name": "SakuraSaurus_Water"
     },
     {
         "key": "064B",
@@ -27680,7 +28040,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
         ],
-        "rarity": 7
+        "rarity": 7,
+        "pal_dev_name": "FlowerDinosaur_Electric"
     },
     {
         "key": "037B",
@@ -27865,14 +28226,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 7,
                 "name": "antler_uppercut",
-                "type": "Normal",                "cooldown": 5,
+                "type": "Normal",
+                "cooldown": 5,
                 "power": 50,
                 "description": "Eikthyrdeer's exclusive skill. Charges at foes and uses antlers to launch them into the air. If used while riding, the direction of the charge can be controlled.\n"
             },
@@ -27895,7 +28258,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 30,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -27916,7 +28280,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
         ],
-        "rarity": 6
+        "rarity": 6,
+        "pal_dev_name": "Deer_Ground"
     },
     {
         "key": "080B",
@@ -28158,7 +28523,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
         ],
-        "rarity": 8
+        "rarity": 8,
+        "pal_dev_name": "FairyDragon_Water"
     },
     {
         "key": "110B",
@@ -28343,7 +28709,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -28396,7 +28763,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 20
+        "rarity": 20,
+        "pal_dev_name": "IceHorse_Dark"
     },
     {
         "key": "031B",
@@ -28587,28 +28955,32 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "flare_arrow",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
@@ -28623,19 +28995,22 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
             {
                 "level": 50,
                 "name": "ignis_rage",
-                "type": "Fire",                "cooldown": 40,
+                "type": "Fire",
+                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             }
         ],
-        "rarity": 3
+        "rarity": 3,
+        "pal_dev_name": "SharkKid_Fire"
     },
     {
         "key": "032B",
@@ -28827,7 +29202,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -28842,7 +29218,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -28879,7 +29256,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
         ],
-        "rarity": 2
+        "rarity": 2,
+        "pal_dev_name": "WindChimes_Ice"
     },
     {
         "key": "089B",
@@ -29091,7 +29469,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "kingly_slam",
-                "type": "Normal",                "cooldown": 21,
+                "type": "Normal",
+                "cooldown": 21,
                 "power": 100,
                 "description": "Kingpaca's exclusive skill. Leaps high into the air before smashing into an enemy with its massive body.\n"
             },
@@ -29120,7 +29499,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
         ],
-        "rarity": 9
+        "rarity": 9,
+        "pal_dev_name": "KingAlpaca_Ice"
     },
     {
         "key": "088B",
@@ -29362,7 +29742,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
         ],
-        "rarity": 7
+        "rarity": 7,
+        "pal_dev_name": "VolcanicMonster_Ice"
     },
     {
         "key": "040B",
@@ -29554,28 +29935,32 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
             {
                 "level": 7,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 15,
                 "name": "flare_arrow",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
             {
                 "level": 22,
                 "name": "hellfire_claw",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 70,
                 "description": "Incineram's exclusive skill. Draws near enemies using its left claw to slash them into the air before cutting them down with its right claw.\n"
             },
@@ -29590,19 +29975,22 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
             {
                 "level": 50,
                 "name": "ignis_rage",
-                "type": "Fire",                "cooldown": 40,
+                "type": "Fire",
+                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             }
         ],
-        "rarity": 5
+        "rarity": 5,
+        "pal_dev_name": "Baphomet_Dark"
     },
     {
         "key": "012B",
@@ -29793,7 +30181,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "power_shot",
-                "type": "Normal",                "cooldown": 4,
+                "type": "Normal",
+                "cooldown": 4,
                 "power": 35,
                 "description": "Charges energy into a focused blast.\n"
             },
@@ -29808,7 +30197,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 22,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -29837,7 +30227,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
         ],
-        "rarity": 2
+        "rarity": 2,
+        "pal_dev_name": "Hedgehog_Ice"
     },
     {
         "key": "101B",
@@ -30022,7 +30413,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
@@ -30037,14 +30429,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "flare_storm",
-                "type": "Fire",                "cooldown": 18,
+                "type": "Fire",
+                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
             {
                 "level": 22,
                 "name": "ignis_breath",
-                "type": "Fire",                "cooldown": 15,
+                "type": "Fire",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
@@ -30059,7 +30453,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             },
@@ -30072,7 +30467,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Calls down numerous small meteorites and launches them at an enemy.\n"
             }
         ],
-        "rarity": 9
+        "rarity": 9,
+        "pal_dev_name": "Umihebi_Fire"
     },
     {
         "key": "081B",
@@ -30256,7 +30652,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
@@ -30271,14 +30668,16 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "flare_arrow",
-                "type": "Fire",                "cooldown": 10,
+                "type": "Fire",
+                "cooldown": 10,
                 "power": 55,
                 "description": "Fires three flaming arrows in succession that home in on an enemy.\n"
             },
@@ -30293,19 +30692,22 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "ignis_breath",
-                "type": "Fire",                "cooldown": 15,
+                "type": "Fire",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
         ],
-        "rarity": 2
+        "rarity": 2,
+        "pal_dev_name": "Kelpie_Fire"
     },
     {
         "key": "045B",
@@ -30501,7 +30903,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
@@ -30516,40 +30919,46 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "spirit_fire",
-                "type": "Fire",                "cooldown": 7,
+                "type": "Fire",
+                "cooldown": 7,
                 "power": 45,
                 "description": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.\n"
             },
             {
                 "level": 22,
                 "name": "ignis_breath",
-                "type": "Fire",                "cooldown": 15,
+                "type": "Fire",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
             {
                 "level": 30,
                 "name": "flare_storm",
-                "type": "Fire",                "cooldown": 18,
+                "type": "Fire",
+                "cooldown": 18,
                 "power": 80,
                 "description": "Generates two flaming tornadoes on either side before launching them at an enemy.\n"
             },
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "Fire",                "cooldown": 40,
+                "type": "Fire",
+                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
             {
                 "level": 50,
                 "name": "fire_ball",
-                "type": "Fire",                "cooldown": 55,
+                "type": "Fire",
+                "cooldown": 55,
                 "power": 150,
                 "description": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.\n"
             }
         ],
-        "rarity": 3
+        "rarity": 3,
+        "pal_dev_name": "LizardMan_Fire"
     },
     {
         "key": "104B",
@@ -30796,7 +31205,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 10
+        "rarity": 10,
+        "pal_dev_name": "LilyQueen_Dark"
     },
     {
         "key": "090B",
@@ -31005,7 +31415,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "power_bomb",
-                "type": "Normal",                "cooldown": 15,
+                "type": "Normal",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Charges a massive amount of energy before firing a large destructive ball.\n"
             },
@@ -31042,7 +31453,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
         ],
-        "rarity": 9
+        "rarity": 9,
+        "pal_dev_name": "GrassMammoth_Ice"
     },
     {
         "key": "024B",
@@ -31062,7 +31474,7 @@ const PalsProfilesStatsAndBreedings = [
             }
         ],
         "drops": [
-            "Ice Organ", 
+            "Ice Organ",
             "Sapphire"
         ],
         "specialCapacity": {
@@ -31238,7 +31650,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 7,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -31283,7 +31696,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.\n"
             }
         ],
-        "rarity": 2
+        "rarity": 2,
+        "pal_dev_name": "Bastet_Ice"
     },
     {
         "key": "033B",
@@ -31534,7 +31948,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
         ],
-        "rarity": 7
+        "rarity": 7,
+        "pal_dev_name": "GrassPanda_Electric"
     },
     {
         "key": "058B",
@@ -31723,7 +32138,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "ignis_blast",
-                "type": "Fire",                "cooldown": 2,
+                "type": "Fire",
+                "cooldown": 2,
                 "power": 30,
                 "description": "Hurls a ball of fire straight at an enemy.\n"
             },
@@ -31738,7 +32154,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 15,
                 "name": "ignis_breath",
-                "type": "Fire",                "cooldown": 15,
+                "type": "Fire",
+                "cooldown": 15,
                 "power": 70,
                 "description": "Shoots flames at an enemy, dealing continuous damage.\n"
             },
@@ -31761,7 +32178,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 40,
                 "name": "ignis_rage",
-                "type": "Fire",                "cooldown": 40,
+                "type": "Fire",
+                "cooldown": 40,
                 "power": 120,
                 "description": "Energizes the surrounding ground, causing it to explode after a set amount of time.\n"
             },
@@ -31774,7 +32192,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 7
+        "rarity": 7,
+        "pal_dev_name": "FireKirin_Dark"
     },
     {
         "key": "085B",
@@ -32018,7 +32437,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges electric energy before blasting enemies with a powerful shock.\n"
             }
         ],
-        "rarity": 9
+        "rarity": 9,
+        "pal_dev_name": "LazyDragon_Electric"
     },
     {
         "key": "048B",
@@ -32273,7 +32693,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
         ],
-        "rarity": 6
+        "rarity": 6,
+        "pal_dev_name": "RobinHood_Ground"
     },
     {
         "key": "065B",
@@ -32510,7 +32931,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Generates a sharp rock spear under an enemy.\n"
             }
         ],
-        "rarity": 5
+        "rarity": 5,
+        "pal_dev_name": "Serpent_Ground"
     },
     {
         "key": "102B",
@@ -32747,7 +33169,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.\n"
             }
         ],
-        "rarity": 9
+        "rarity": 9,
+        "pal_dev_name": "Suzaku_Water"
     },
     {
         "key": "071B",
@@ -32937,7 +33360,8 @@ const PalsProfilesStatsAndBreedings = [
             {
                 "level": 1,
                 "name": "air_cannon",
-                "type": "Normal",                "cooldown": 2,
+                "type": "Normal",
+                "cooldown": 2,
                 "power": 25,
                 "description": "Quickly fires a burst of highly pressurized air.\n"
             },
@@ -32990,7 +33414,8 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges dark energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 5
+        "rarity": 5,
+        "pal_dev_name": "BirdDragon_Ice"
     },
     {
         "key": "091B",
@@ -33241,8 +33666,10 @@ const PalsProfilesStatsAndBreedings = [
                 "description": "Charges solar energy before blasting enemies with a powerful beam.\n"
             }
         ],
-        "rarity": 8
+        "rarity": 8,
+        "pal_dev_name": "Yeti_Grass"
     }
 ]
+
 
 export default PalsProfilesStatsAndBreedings;
