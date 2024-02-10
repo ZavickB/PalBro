@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, Image, FlatList, StyleSheet, ActivityIndicator } from 'react-native';
 import SuitabilityBlock from '../components/SuitabilityBlock';
 import PalBreedingInfosBlock from '../components/PalBreedingInfosBlock';
+import PalSpecialCapacityBlock from '../components/PalSpecialCapacityBlock';
 import TypeBadge from '../components/TypeBadge';
 import TopBar from '../components/TopBar';
 import PalStatsBlock from '../components/PalStatsBlock';
@@ -42,6 +43,13 @@ const PalDetailedView = ({ route, navigation }) => {
         return (
           <View style={styles.section}>
             <PalCounter palKey={palData.key} />
+          </View>
+        );
+      case 'specialCapacity':
+        return (
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}>Special Capacity: </Text>
+            <PalSpecialCapacityBlock specialCapacity={palData.specialCapacity} />
           </View>
         );
       case 'description':
@@ -101,6 +109,7 @@ const PalDetailedView = ({ route, navigation }) => {
   const sections = [
     { type: 'header' },
     { type: 'progress' },
+    { type: 'specialCapacity' },
     { type: 'description' },
     { type: 'suitabilities' },
     { type: 'stats' },
@@ -161,6 +170,40 @@ const PalDetailedView = ({ route, navigation }) => {
       top: '50%',
       color: currentTheme.primaryColor,
     },
+    specialCapacitySection: {
+      paddingHorizontal: 16,
+      paddingVertical: 12,
+      marginBottom: 12,
+      backgroundColor: "transparent", // Example background color
+      borderRadius: 8, // Rounded corners
+      borderWidth: 1,
+      borderColor: currentTheme.borderColor, // Light border for definition
+    },
+    specialCapacityTitle: {
+      fontSize: 18,
+      fontWeight: 'bold',
+      marginBottom: 8,
+      color: '#333', // Example title color
+    },
+    specialCapacityContent: {
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
+    specialCapacityIcon: {
+      width: 30,
+      height: 30,
+      marginRight: 10,
+    },
+    specialCapacityName: {
+      fontSize: 16,
+      fontWeight: 'bold',
+      color: '#333',
+    },
+    specialCapacityDescription: {
+      fontSize: 14,
+      color: '#666', // Lighter text for the description
+    },
+    
   });
 
   return (
