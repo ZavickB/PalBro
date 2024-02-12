@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Dimensions, TouchableOpacity, SafeAreaView, Text } from 'react-native';
+import { StyleSheet, View, Dimensions, TouchableOpacity, SafeAreaView, Text, Pressable } from 'react-native';
 import { useTheme } from '../components/contexts/ThemeContext';
 import { useCapturedPals } from '../components/contexts/CapturedPalsContext';
 import TopBar from '../components/TopBar';
@@ -221,7 +221,9 @@ const MyPossibleBreedingsView = ({ navigation }) => {
       <SafeAreaView style={styles.container}>
         <View style={styles.appContainer}>
           <TopBar title="Breeding Catalog" navigation={navigation} />
-          <Text style={styles.pageName}>{currentPageName}</Text>
+          <Pressable onLongPress={() => navigation.navigate('SaveFileBreedingsOptions')}>
+            <Text style={styles.pageName}>{currentPageName}</Text>
+          </Pressable>
           <PagerView style={styles.pagerView} initialPage={0} onPageSelected={onPageSelected}>
             <View key="1">
               {renderPotentialParents()}
