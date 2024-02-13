@@ -42,6 +42,7 @@ function BreedingStack() {
     <Stack.Navigator initialRouteName="BreedingCatalog" screenOptions={{ headerShown: false }}>
       <Stack.Screen name="BreedingCatalog" component={BreedingCatalogView} />
       <Stack.Screen name="BreedingOptionsView" component={BreedingOptionsView} />
+      <Stack.Screen name="SaveFileBreedingsOptions" component={SaveFileBreedingsOptions} />
     </Stack.Navigator>
   );
 }
