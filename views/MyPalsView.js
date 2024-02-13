@@ -157,7 +157,6 @@ const MyPalsView = ({ navigation }) => {
     listContainer: {
       flex: 1,
       alignItems: 'center',
-      marginBottom: 10,
     },
     scrollView: {
       flexGrow: 1, // Add this to allow the ScrollView to grow with content

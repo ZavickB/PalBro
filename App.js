@@ -5,8 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import MainView from './views/MainView';
 import PalDetailedView from './views/PalDetailedView';
 import MyPalsView from './views/MyPalsView';
-import MyPossibleBreedingsView from './views/MyPossibleBreedingsView';
-import SaveFileBreedingsOptions from './views/SaveFileBreedingsOptions';
+import BreedingCatalogView from './views/BreedingCatalogView';
 import BreedingOptionsView from './views/BreedingOptionsView';
 import DropsView from './views/DropsView';
 import { ThemeProvider } from './components/contexts/ThemeContext';
@@ -41,7 +40,7 @@ function MyPalsStack() {
 function BreedingStack() {
   return (
     <Stack.Navigator initialRouteName="BreedingCatalog" screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="BreedingCatalog" component={MyPossibleBreedingsView} />
+      <Stack.Screen name="BreedingCatalog" component={BreedingCatalogView} />
       <Stack.Screen name="BreedingOptionsView" component={BreedingOptionsView} />
       <Stack.Screen name="SaveFileBreedingsOptions" component={SaveFileBreedingsOptions} />
     </Stack.Navigator>

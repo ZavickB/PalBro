@@ -2,29 +2,18 @@ import React, { useEffect, useState } from 'react';
 import { View, Image, StyleSheet, ActivityIndicator, Switch } from 'react-native';
 import { useTheme } from './contexts/ThemeContext';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { PalsLocation } from '../assets/data/PalsLocation';
 
-export const PalHeatMap = ({ palName, loading, isNightOnly }) => {
+export const PalHeatMap = ({ palData }) => {
   const { currentTheme } = useTheme();
-  const [imageSource, setImageSource] = useState(null);
+  const [containerSize, setContainerSize] = useState({ width: 0, height: 0 });
+  const [nightMode, setNightMode] = useState(false); // State for night mode toggle
 
-  // Set initial nightMode based on isNightOnly prop
-  const [nightMode, setNightMode] = useState(isNightOnly === "true");
-
-  useEffect(() => {
-    const formattedPalName = palName.replace(/\s/g, '_');
-    const source = PalsLocation(formattedPalName, nightMode);
-    if (source) {
-      setImageSource(source);
-    }
-  }, [palName, nightMode]);
-
-  // Disable toggle function if isNightOnly is true
   const toggleNightMode = () => {
-    if (isNightOnly !== "true") {
-      setNightMode(prevMode => !prevMode);
-    }
+    setNightMode(prevMode => !prevMode);
+    // Reload pal data to update with appropriate mode (night or day)
   };
+
+  const mapImageSource = nightMode ? (palData.maps.night) : (palData && palData.maps.day);
 
   const styles = StyleSheet.create({
     mapContainer: {
@@ -52,31 +41,18 @@ export const PalHeatMap = ({ palName, loading, isNightOnly }) => {
 
   return (
     <View style={styles.mapContainer}>
-      {loading ? (
-        <ActivityIndicator style={styles.activityIndicator} size="large" color={currentTheme.primaryColor} />
-      ) : (
-        <>
-          {imageSource ? (
-            <Image source={imageSource} style={styles.mapImage} resizeMode="cover" />
-          ) : (
-            <View style={styles.activityIndicator}>
-              <ActivityIndicator size="small" color={currentTheme.primaryColor} />
-            </View>
-          )}
-          <View style={styles.toggleContainer}>
-            <Icon name="sunny" size={24} color="white" />
-            <Switch
-              trackColor="#767577"
-              thumbColor={nightMode ? "#f5dd4b" : "#f4f3f4"}
-              ios_backgroundColor="#3e3e3e"
-              onValueChange={toggleNightMode}
-              value={nightMode}
-              disabled={isNightOnly === "true"} // Disable switch if isNightOnly is true
-            />
-            <Icon name="moon" size={24} color="white" />
-          </View>
-        </>
-      )}
+      <Image source={mapImageSource} style={styles.mapImage} resizeMode="cover" />
+      <View style={styles.toggleContainer}>
+        <Icon name="sunny" size={24} color="white" />
+        <Switch
+          trackColor={{ false: "#767577", true: "#81b0ff" }}
+          thumbColor={nightMode ? "#f5dd4b" : "#f4f3f4"}
+          ios_backgroundColor="#3e3e3e"
+          onValueChange={toggleNightMode}
+          value={nightMode}
+        />
+        <Icon name="moon" size={24} color="white" />
+      </View>
     </View>
   );
 };

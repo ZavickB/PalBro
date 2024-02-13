@@ -41,6 +41,7 @@ const MainView = ({ navigation }) => {
     return aLetter.localeCompare(bLetter);
   });
 
+  const resetKey = 0;
   return (
     <GradientBackground>
       <View style={styles.container}>
@@ -49,6 +50,7 @@ const MainView = ({ navigation }) => {
           <SearchableList
             searchBarPlaceholder={'Browse all Pals...'}
             data={PalsProfilesStatsAndBreedings}
+            resetKey={resetKey+1}
             renderItem={({ item }) => (
               <View style={styles.listContainer}>
                 <TouchableOpacity onPress={() => handleTilePress(item)}>

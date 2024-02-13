@@ -8,8 +8,14 @@ const PalTile = ({ pal, tileWidth, tileHeight, spacing, captureCount, onCaptureP
   const { currentTheme } = useTheme();
 
   const isGold = captureCount >= 10; // Determine if the tile should be golden
+  
+  const capitalize = (str) => {
+    if (typeof str !== 'string' || str.length === 0) return ''; // Check if str is not a string or is an empty string
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
 
   const getTypeColor = (type) => {
+    type = capitalize(type);
     const typeColors = {
         "Ground": '#E0C068',
         "Fire": '#F08030',

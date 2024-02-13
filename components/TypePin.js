@@ -2,6 +2,8 @@ import React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
 
 const TypePin = ({ type, tileWidth }) => {
+    type = capitalize(type);
+    
     const styles = StyleSheet.create({
         container: {
             alignItems: 'center',
@@ -38,6 +40,11 @@ const TypePin = ({ type, tileWidth }) => {
     );
 };
 
+const capitalize = (str) => {
+    if (typeof str !== 'string' || str.length === 0) return ''; // Check if str is not a string or is an empty string
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 const getTypeColor = (type) => {
     const typeColors = {
         "Ground": '#E0C068',
@@ -54,6 +61,7 @@ const getTypeColor = (type) => {
 
     return typeColors[type] || 'gray';
 };
+
 
 const getTypeIcon = (type) => {
     const typeIcons = {

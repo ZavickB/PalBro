@@ -1,39 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, Text, Image, TouchableOpacity } from 'react-native';
-import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings'; // Import the pal data
 import TypeBadge from './TypeBadge'; // Import the TypeBadge component
 import { useTheme } from './contexts/ThemeContext'; // Import the useTheme hook
 import PalSelectionModal from './PalSelectionModal';
-
-// Function to find the baby based on the selected pal's breedings
-const findBaby = (palData, selectedPalName) => {
-  const breedings = palData.breedings;
-  if (breedings && selectedPalName in breedings) {
-    const babyName = breedings[selectedPalName];
-    return PalsProfilesStatsAndBreedings.find((pal) => pal.name === babyName);
-  }
-  return null; // Aucun bébé trouvé
-};
+import { findSpecificBreeding } from '../utils/BreedingsCalculator'; // Import the utility functions
+import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings'; // Import the PalsProfilesStatsAndBreedings data
 
 // Define the new component
 const PalBreedingInfosBlock = ({ palData, navigation }) => {
   const { currentTheme } = useTheme();
 
   const [selectedPalInfo, setSelectedPalInfo] = useState(palData); // Initialize with palData
-  const [babyInfo, setBabyInfo] = useState(null); // Initial state for babyInfo
+  const [babyInfo, setBabyInfo] = useState(palData); // Initial state for babyInfo
   const [isModalVisible, setModalVisible] = useState(false);
 
-  // Use useEffect to update selectedPalInfo when palData changes
-  useEffect(() => {
-    setSelectedPalInfo(palData);
-    setBabyInfo(palData);
-  }, [palData]);
-
   // Function to handle pal selection
-  const handlePalSelection = (pal) => {
-    setSelectedPalInfo(pal);
-    const babyInfo = findBaby(palData, pal.name);
-    setBabyInfo(babyInfo);
+  const handlePalSelection = (parent2) => {
+    setSelectedPalInfo(parent2);
+    const possibleBreedings = findSpecificBreeding(palData, parent2);
+    if (possibleBreedings.length > 0) {
+      const baby = possibleBreedings[0]; // For simplicity, assuming only one baby is possible
+      setBabyInfo(baby);
+    }
     setModalVisible(false);
   };
 
@@ -102,7 +90,7 @@ const PalBreedingInfosBlock = ({ palData, navigation }) => {
           <Image source={selectedPalInfo.image} style={styles.palImage} />
           <Text style={styles.palName}>#{selectedPalInfo.key} {selectedPalInfo.name}</Text>
           <View style={styles.typesContainer}>
-            <TypeBadge types={selectedPalInfo.types} />
+            <TypeBadge types={[selectedPalInfo.types]} />
           </View>
         </View>
       </TouchableOpacity>
@@ -121,7 +109,7 @@ const PalBreedingInfosBlock = ({ palData, navigation }) => {
             <Image source={babyInfo.image} style={styles.breededBabyImage} />
             <Text style={styles.breededBabyLabel}>#{babyInfo.key} {babyInfo.name}</Text>
             <View style={styles.typesContainer}>
-              <TypeBadge types={babyInfo.types} />
+              <TypeBadge types={[babyInfo.types]} />
             </View>
           </View>
         </TouchableOpacity>
@@ -129,7 +117,5 @@ const PalBreedingInfosBlock = ({ palData, navigation }) => {
     </View>
   );
 };
-
-
 
 export default PalBreedingInfosBlock;
