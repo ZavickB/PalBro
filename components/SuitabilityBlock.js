@@ -1,12 +1,19 @@
 import React from 'react';
 import { View, StyleSheet, Image, Text } from 'react-native';
-import SuitabilitiesProfiles from '../assets/data/SuitabilitiesProfiles'; // Import the icon data
 import { useTheme } from './contexts/ThemeContext'; // Import the useTheme hook
 
 const SuitabilityBlock = ({ suitabilities }) => {
   const { currentTheme } = useTheme();
 
   const iconSize = 30;
+
+  // Utility function to format drop names for display and matching
+  const formatName = (dropName) => {
+    return dropName
+      .split('_')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  };
 
   const styles = StyleSheet.create({
     container: {
@@ -33,6 +40,7 @@ const SuitabilityBlock = ({ suitabilities }) => {
     suitabilityName: {
       marginLeft: 10,
       color: currentTheme.textColor,
+      fontWeight: 'bold',
     },
     palLevelText: {
       textAlign: 'center',
@@ -49,20 +57,17 @@ const SuitabilityBlock = ({ suitabilities }) => {
   return (
     <View style={[styles.container]}>
       {suitabilities.map((profile, index) => {
-        const suitabilityProfile = SuitabilitiesProfiles.find(
-          (sp) => sp.workName === profile.type
-        );
-        if (!suitabilityProfile) {
+        if (!profile) {
           return null; // Skip if no matching suitability profile found
         }
-        const leftText = suitabilityProfile.workName;
+        const leftText = formatName(profile.type);
         const palLevel = profile.level || 0; // Extract the level from suitability or default to 0
 
         return (
           <View key={index} style={styles.suitabilityContainer}>
             <View style={styles.rectangle}>
               <Image
-                source={suitabilityProfile.iconFileName}
+                source={profile.image}
                 style={styles.icon} // Render the icon here
               />
               <Text style={styles.suitabilityName}>{leftText}</Text>

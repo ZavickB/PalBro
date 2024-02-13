@@ -1,12 +1,18 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
+const capitalize = (str) => {
+  if (typeof str !== 'string' || str.length === 0) return ''; // Check if str is not a string or is an empty string
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+
 const TypeBadge = ({ types }) => {
   return (
     <View style={styles.container}>
-      {types.map((type, index) => (
-        <View key={index} style={[styles.badge, { backgroundColor: getTypeColor(type) }]}>
-          <Text style={styles.text}>{type}</Text>
+      {types[0].map((type, index) => (
+        <View key={index} style={[styles.badge, { backgroundColor: getTypeColor(capitalize(type)) }]}>
+          <Text style={styles.text}>{capitalize(type)}</Text>
         </View>
       ))}
     </View>

@@ -2,52 +2,41 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { useTheme } from './contexts/ThemeContext';
 
-const PalStatsBlock = ({ stats, statsOrder }) => {
+const PalStatsBlock = ({ stats }) => {
   const { currentTheme } = useTheme();
 
-  // Create a mapping of stat labels to emojis
   const statEmojis = {
-    "BreedPWR": "🥚",
-    "HP": "❤️",
-    "Melee": "⚔️",
-    "Ranged": "🏹",
-    "Defence": "🛡️",
-    "Price": "💰",
-    "Stamina": "⚡",
-    "Walking": "🚶‍♂️",
-    "Running": "🏃‍♂️",
-    "Mounted": "🐎",
-    "Capture Bonus": "✖️",
-    "Male %": "♂️",
+    "hp": "❤️",
+    "attack": "⚔️", // Assuming you want to keep a general emoji for attack
+    "defense": "🛡️",
+    "speed": "🏃‍♂️",
+    "stamina": "⚡",
+    "melee": "⚔️", // Specific emoji for melee
+    "ranged": "🏹", // Specific emoji for ranged
+    "walk": "🚶‍♂️",
+    "run": "🏃‍♂️",
+    "ride": "🐎",
+    // Add more mappings as needed
   };
-  
-  // Define an array of background colors
-  const backgroundPastelColors = [
-    "#FFC3A0", // Light Coral (Corresponds to "BreedPWR")
-    "#A0E7E5", // Light Cyan (Corresponds to "HP")
-    "#FFDFD3", // Light Salmon (Corresponds to "Melee")
-    "#FFCA80", // Light Orange (Corresponds to "Ranged")
-    "#D8BFD8", // Thistle (Corresponds to "Defence")
-    "#FFB6C1", // Light Pink (Corresponds to "Price")
-    "#A8D8E0", // Light Blue (Corresponds to "Stamina")
-    "#B2F7EF", // Light Turquoise (Corresponds to "Walking")
-    "#B0E57C", // Light Green (Corresponds to "Running")
-    "#FFD700", // Gold (Corresponds to "Mounted")
-    "#D2B48C", // Tan (Corresponds to "Capture Bonus")
-    "#D3D3D3", // Light Gray (Corresponds to "Male %")
-  ];
 
-  // Create an array of keys and values from the stats object
-  const statEntries = statsOrder.map((key) => [key, stats[key]]);
-  
+  // Function to recursively flatten stats, including nested objects
+  const flattenStats = (stats, prefix = '') => {
+    return Object.entries(stats).reduce((acc, [key, value]) => {
+      const newKey = prefix ? `${prefix} (${key})` : key; // Add prefix for nested stats
+      if (typeof value === 'object' && !Array.isArray(value) && value !== null) {
+        acc.push(...flattenStats(value, key)); // Recurse into nested object
+      } else {
+        acc.push([newKey, value]);
+      }
+      return acc;
+    }, []);
+  };
+
+  const statEntries = flattenStats(stats);
+
   const styles = StyleSheet.create({
     container: {
       marginBottom: 10,
-    },
-    title: {
-      fontSize: 18,
-      fontWeight: 'bold',
-      marginBottom: 8,
     },
     columnsContainer: {
       flexDirection: 'row',
@@ -55,11 +44,11 @@ const PalStatsBlock = ({ stats, statsOrder }) => {
       justifyContent: 'space-between',
     },
     statColumn: {
-      flexBasis: '49%', // Adjust the width as needed for two columns
+      flexBasis: '49%',
       padding: 5,
       marginBottom: 5,
       borderWidth: 1,
-      borderColor: currentTheme.borderColor ,
+      borderColor: currentTheme.borderColor,
       borderRadius: 8,
     },
     columnWrapper: {
@@ -68,54 +57,32 @@ const PalStatsBlock = ({ stats, statsOrder }) => {
       alignItems: 'center',
     },
     emojiColumn: {
-      flex: 1,
-      alignItems: 'center',
-    },
-    valueColumn: {
-      flex: 1,
-      alignItems: 'center',
+      marginRight: 10,
     },
     statEmoji: {
-      fontSize: 45,
-      marginBottom: 8,
+      fontSize: 24,
     },
     statValue: {
       fontSize: 16,
       fontWeight: 'bold',
+      color: currentTheme.textColor,
     },
     statLabel: {
-      fontSize: 16,
-      textAlign: 'center',
+      fontSize: 14,
+      color: currentTheme.textColor,
     },
   });
-
 
   return (
     <View style={styles.container}>
       <View style={styles.columnsContainer}>
         {statEntries.map(([key, value], index) => (
-          <View
-            key={key}
-            style={[
-              styles.statColumn,
-              {
-                backgroundColor: backgroundPastelColors[index % backgroundPastelColors.length],
-              },
-            ]}
-          >
+          <View key={index} style={styles.statColumn}> 
             <View style={styles.columnWrapper}>
-              <View style={styles.emojiColumn}>
-                <Text style={styles.statEmoji}>
-                  {statEmojis[key]}
-                </Text>
-              </View>
-              <View style={styles.valueColumn}>
-                <Text style={styles.statValue}>
-                  {value}
-                </Text>
-                <Text style={styles.statLabel}>
-                  {key}
-                </Text>
+              <Text style={styles.statEmoji}>{statEmojis[key.split(' ')[0].toLowerCase()] || "❓"}</Text>
+              <View>
+                <Text style={styles.statValue}>{value}</Text>
+                <Text style={styles.statLabel}>{key}</Text>
               </View>
             </View>
           </View>
@@ -124,6 +91,5 @@ const PalStatsBlock = ({ stats, statsOrder }) => {
     </View>
   );
 };
-
 
 export default PalStatsBlock;

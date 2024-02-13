@@ -248,8 +248,8 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
             {TypesList.map((type) => (
               <View key={type.type} style={styles.filterOption}>
                 <Switch
-                  value={selectedTypes.includes(type.type)}
-                  onValueChange={() => toggleTypeFilter(type.type)}
+                  value={selectedTypes.includes(type.type.toLowerCase())}
+                  onValueChange={() => toggleTypeFilter(type.type.toLowerCase())}
                   thumbColor={currentTheme.switchThumbColor} // Using the new theme prop for thumb color
                   trackColor={{ false: currentTheme.switchTrackColorOff, true: currentTheme.switchTrackColorOn }} // Using the new theme props for track color
                   style={styles.switchButton}
@@ -266,8 +266,8 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
             {SuitabilitiesProfiles.map((suitability) => (
               <View key={suitability.workName} style={styles.filterOption}>
                 <Switch
-                  value={selectedSuitabilities.includes(suitability.workName)}
-                  onValueChange={() => toggleSuitabilityFilter(suitability.workName)}
+                  value={selectedSuitabilities.includes(suitability.workName.toLowerCase())}
+                  onValueChange={() => toggleSuitabilityFilter(suitability.workName.toLowerCase())}
                   thumbColor={currentTheme.switchThumbColor} // Using the new theme prop for thumb color
                   trackColor={{ false: currentTheme.switchTrackColorOff, true: currentTheme.switchTrackColorOn }} // Using the new theme props for track color
                   style={styles.switchButton}

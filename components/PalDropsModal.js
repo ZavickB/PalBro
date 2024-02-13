@@ -8,6 +8,16 @@ const PalDropsModal = ({ visible, onClose, item, pals, loading }) => {
   const { currentTheme } = useTheme();
   const screenHeight = Dimensions.get('window').height;
 
+  // Utility function to format drop names for display and matching
+  const formatName = (dropName) => {
+    if (!dropName) return ''; // Return empty string if dropName is null or undefined
+    return dropName
+      .split('_')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  };
+  
+
   useEffect(() => {
     if (item && !loading) {
       // Reset displayedPals when a new item is selected
@@ -77,7 +87,7 @@ const PalDropsModal = ({ visible, onClose, item, pals, loading }) => {
     >
       <View style={styles.modalContainer}>
       <View style={styles.modalContent}>
-      <Text style={styles.modalTitle}>Pals who can drop {item}:</Text>
+      <Text style={styles.modalTitle}>Pals who can drop {formatName(item)} :</Text>
           {loading ? (
             <ActivityIndicator size="large" color={currentTheme.textColor} />
           ) : (

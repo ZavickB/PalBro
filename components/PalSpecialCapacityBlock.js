@@ -3,7 +3,8 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons'; // Import icons
 import { useTheme } from './contexts/ThemeContext';
 
-const PalSpecialCapacityBlock = ({ specialCapacity }) => {
+// Rename `specialCapacity` prop to `aura`
+const PalSpecialCapacityBlock = ({ aura }) => {
   const { currentTheme } = useTheme();
   const [expanded, setExpanded] = useState(false);
 
@@ -11,6 +12,15 @@ const PalSpecialCapacityBlock = ({ specialCapacity }) => {
     setExpanded(!expanded);
   };
 
+  // Utility function to format drop names for display and matching
+  const formatName = (dropName) => {
+    return dropName
+      .split('_')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  };
+
+    
   const styles = StyleSheet.create({
     container: {
       flexDirection: 'column',
@@ -47,11 +57,11 @@ const PalSpecialCapacityBlock = ({ specialCapacity }) => {
     <TouchableOpacity onPress={toggleExpand} activeOpacity={0.7}>
       <View style={styles.container}>
         <View style={styles.titleRow}>
-          <Text style={styles.titleText}>{specialCapacity.name}</Text>
+          <Text style={styles.titleText}>{formatName(aura.name)}</Text>
           <Icon name={expanded ? "chevron-up-outline" : "chevron-down-outline"} size={20} color={currentTheme.textColor} />
         </View>
         {expanded && (
-          <Text style={styles.description}>{specialCapacity.description}</Text>
+          <Text style={styles.description}>{aura.description}</Text>
         )}
       </View>
     </TouchableOpacity>

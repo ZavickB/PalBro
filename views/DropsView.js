@@ -53,6 +53,14 @@ const DropsView = ({ route, navigation }) => {
     setModalVisible(true);
   };
 
+    // Utility function to format drop names for display and matching
+    const formatName = (dropName) => {
+      return dropName
+        .split('_')
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+    };
+
   const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -128,10 +136,10 @@ const DropsView = ({ route, navigation }) => {
               <TouchableOpacity onPress={() => handleItemPress(item)}>
                 <View style={styles.dropItem}>
                   <Image
-                    source={ItemsList.find((itemObject) => itemObject.name === item)?.icon}
+                    source={ItemsList.find((itemObject) => itemObject.name === formatName(item))?.icon}
                     style={{ width: 50, height: 50, marginRight: 10 }}
                   />
-                  <Text style={styles.dropText}>{item}</Text>
+                  <Text style={styles.dropText}>{formatName(item)}</Text>
                 </View>
               </TouchableOpacity>
             )}

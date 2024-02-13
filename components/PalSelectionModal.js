@@ -51,7 +51,7 @@ const MemoizedPalsList = React.memo(({ data, handlePalSelection }) => {
             <Image source={item.image} style={styles.pickerItemImage} />
             <Text style={styles.pickerItemText}>{item.name}</Text>
             <View style={styles.typesContainer}>
-              <TypeBadge types={item.types} />
+              <TypeBadge types={[item.types]} />
             </View>
           </View>
         </TouchableOpacity>

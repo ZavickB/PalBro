@@ -11,16 +11,17 @@ import { useTheme } from '../components/contexts/ThemeContext';
 import PalSkillsBlock from '../components/PalSkillsBlock';
 import PalDropsBlock from '../components/PalDropsBlock';
 import GradientBackground from '../components/GradientBackground';
-import PalHeatMap from '../components/PalHeatMap';
 import PalCounter from '../components/PalCounter';
+import PalHeatMap from '../components/PalHeatMap';
 
 const PalDetailedView = ({ route, navigation }) => {
   const { palData } = route.params;
   const { currentTheme } = useTheme();
   const [loading, setLoading] = useState(true);
 
+  const palIsNightOnly = palData.maps.night && palData.maps.night.length > 0 && palData.maps.day.length === 0;
+
   useEffect(() => {
-    // Simulate loading delay
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1000);
@@ -32,10 +33,10 @@ const PalDetailedView = ({ route, navigation }) => {
       case 'header':
         return (
           <View style={styles.imageContainer}>
-            <Image source={palData.image} style={styles.image} />
+            <Image source={ palData.image } style={styles.image} />
             <View style={styles.overlayText}>
               <Text style={styles.sectionPalTitle}>#{palData.key} {palData.name}</Text>
-              <TypeBadge types={palData.types} />
+              <TypeBadge types={[palData.types]} />
             </View>
           </View>
         );
@@ -45,11 +46,11 @@ const PalDetailedView = ({ route, navigation }) => {
             <PalCounter palKey={palData.key} />
           </View>
         );
-      case 'specialCapacity':
+      case 'aura':
         return (
           <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Special Capacity: </Text>
-            <PalSpecialCapacityBlock specialCapacity={palData.specialCapacity} />
+            <Text style={styles.sectionTitle}>Aura:</Text>
+            <PalSpecialCapacityBlock aura={palData.aura} />
           </View>
         );
       case 'description':
@@ -66,13 +67,6 @@ const PalDetailedView = ({ route, navigation }) => {
             <SuitabilityBlock suitabilities={palData.suitability} />
           </View>
         );
-      case 'stats':
-        return (
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Statistics:</Text>
-            <PalStatsBlock stats={palData.stats} statsOrder={statsOrder} />
-          </View>
-        );
       case 'skills':
         return (
           <View style={styles.section}>
@@ -87,19 +81,19 @@ const PalDetailedView = ({ route, navigation }) => {
             <PalDropsBlock drops={palData.drops} />
           </View>
         );
-      case 'breeding':
-        return (
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Breeding Information:</Text>
-            <PalBreedingInfosBlock palData={palData} navigation={navigation} />
-          </View>
-        );
       case 'map':
         return (
             <View style={styles.section}>
               <Text style={styles.sectionTitle}>Habitat:</Text>
-              <PalHeatMap palName={palData.name} isNightOnly={palData.isNightOnly} loading={loading} />
+              <PalHeatMap palData={palData} />
             </View>
+        );
+      case 'breedings':
+        return (
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}>Breeding:</Text>
+            <PalBreedingInfosBlock palData={palData} navigation={navigation}/>
+          </View>
         );
       default:
         return null;
@@ -109,15 +103,15 @@ const PalDetailedView = ({ route, navigation }) => {
   const sections = [
     { type: 'header' },
     { type: 'progress' },
-    { type: 'specialCapacity' },
+    { type: 'aura' },
     { type: 'description' },
     { type: 'suitabilities' },
-    { type: 'stats' },
     { type: 'skills' },
     { type: 'drops' },
-    { type: 'breeding' },
-    { type: 'map' }, 
+    { type: 'map' },
+    { type: 'breedings' },
   ];
+
 
   const styles = StyleSheet.create({
     container: {
