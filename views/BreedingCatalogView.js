@@ -7,10 +7,11 @@ import GradientBackground from '../components/GradientBackground';
 import SearchableList from '../components/SearchableList';
 import PalTile from '../components/PalTile';
 import PagerView from 'react-native-pager-view';
-
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 
-const MyPossibleBreedingsView = ({ navigation }) => {
+import { findAllBreedingPossibilities  } from '../utils/BreedingsCalculator';
+
+const BreedingCatalogView = ({ navigation }) => {
   const { currentTheme } = useTheme();
 
   const { capturedPals, toggleCapture, refreshKey } = useCapturedPals(); // Use the context hook to access state and functions
@@ -25,7 +26,10 @@ const MyPossibleBreedingsView = ({ navigation }) => {
   const tileHeight = ((screenHeight * tileHeightPercentage) / 100) - spacing;
 
   const [pageIndex, setPageIndex] = useState(0);
-  const PAGES = [1, 2];
+  const PAGES = [
+    1, 
+    2
+  ];
   const pageNames = [
     'Captured Outcomes', // Reflects potential pals from captured pals only
     'All Outcomes' // Reflects potential pals from all pals
@@ -36,66 +40,16 @@ const MyPossibleBreedingsView = ({ navigation }) => {
     setPageIndex(e.nativeEvent.position);
   };
 
-  const capturedPalsData = PalsProfilesStatsAndBreedings.filter((pal) =>
+  const capturedPalsData = [...PalsProfilesStatsAndBreedings].filter((pal) =>
     !!capturedPals[pal.key]
   );
 
-  const calculatePotentialParents = (selectedPal, palsList) => {
-    const potentialParents = [];
-
-    // Iterate through all pals
-    for (const pal of palsList) {
-      const { breedings } = pal;
-
-      // Check if the pal has breedings
-      if (breedings) {
-        for (const key in breedings) {
-          if (breedings[key] === selectedPal.name) {
-            // Find the parent pal by name
-            const parent = palsList.find((p) => p.name === key);
-
-            // Check if the parent is not undefined
-            if (parent) {
-              // Found a potential parent couple
-              const parentCouple = [pal, parent];
-
-              // Check if the couple is already in the array
-              let alreadyInArray = false;
-              for (const couple of potentialParents) {
-                if (
-                  (couple[0].name === parentCouple[0].name &&
-                    couple[1].name === parentCouple[1].name) ||
-                  (couple[0].name === parentCouple[1].name &&
-                    couple[1].name === parentCouple[0].name)
-                ) {
-                  alreadyInArray = true;
-                }
-              }
-              if (!alreadyInArray) {
-                potentialParents.push(parentCouple);
-              }
-            }
-          }
-        }
-      }
-    }
-    return potentialParents;
-  };
-
-  const calculatePotentialParentsForSelectedPal = (selectedPal) => {
-    return calculatePotentialParents(selectedPal, capturedPalsData);
-  };
-
   const renderPotentialParents = () => {
-    // Assuming calculatePotentialParentsForSelectedPal returns an array of pals
+    const capturedPalsBreedingPossibilities = findAllBreedingPossibilities(capturedPalsData);
     // Prepare data for SearchableList
-    const dataForSearchableList = PalsProfilesStatsAndBreedings.map(pal => {
-      const potentialParents = calculatePotentialParentsForSelectedPal(pal);
-      return {
-        ...pal,
-        potentialParents: potentialParents.length > 0 ? potentialParents : null
-      };
-    }).filter(pal => pal.potentialParents); // Filter out pals with no potential parents
+    const dataForSearchableList = PalsProfilesStatsAndBreedings.filter((pal) =>
+      capturedPalsBreedingPossibilities.find((breeding) => breeding.key === pal.key)
+    );
 
     return (
       <SearchableList
@@ -112,7 +66,7 @@ const MyPossibleBreedingsView = ({ navigation }) => {
                 captureCount={capturedPals[item.key] || 0} // Adjusted count for captured status
                 onCapturePress={() => toggleCapture(item.key)}
                 isCaptured={!!capturedPals[item.key]} // Adjusted check for captured status
-                />
+              />
             </TouchableOpacity>
           </View>
         )}
@@ -123,10 +77,7 @@ const MyPossibleBreedingsView = ({ navigation }) => {
   };
 
   const renderAllPals = () => {
-    // Assuming calculatePotentialParentsForSelectedPal returns an array of pals
-    // Prepare data for SearchableList
-    const dataForSearchableList = PalsProfilesStatsAndBreedings
-
+    const dataForSearchableList = PalsProfilesStatsAndBreedings;
     return (
       <SearchableList
         searchBarPlaceholder={'Browse potential breedings...'}
@@ -142,7 +93,7 @@ const MyPossibleBreedingsView = ({ navigation }) => {
                 captureCount={capturedPals[item.key] || 0} // Adjusted count for captured status
                 onCapturePress={() => toggleCapture(item.key)}
                 isCaptured={!!capturedPals[item.key]} // Adjusted check for captured status
-                />
+              />
             </TouchableOpacity>
           </View>
         )}
@@ -211,7 +162,6 @@ const MyPossibleBreedingsView = ({ navigation }) => {
     listContainer: {
       flex: 1,
       alignItems: 'center',
-      marginBottom: 10,
     },
   });
 
@@ -238,4 +188,4 @@ const MyPossibleBreedingsView = ({ navigation }) => {
 };
 
 
-export default MyPossibleBreedingsView;
+export default BreedingCatalogView;

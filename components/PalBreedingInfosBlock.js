@@ -3,7 +3,7 @@ import { View, StyleSheet, Text, Image, TouchableOpacity } from 'react-native';
 import TypeBadge from './TypeBadge'; // Import the TypeBadge component
 import { useTheme } from './contexts/ThemeContext'; // Import the useTheme hook
 import PalSelectionModal from './PalSelectionModal';
-import { findPossibleBreedings } from '../utils/BreedingsBrowser'; // Import the utility functions
+import { findSpecificBreeding } from '../utils/BreedingsCalculator'; // Import the utility functions
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings'; // Import the PalsProfilesStatsAndBreedings data
 
 // Define the new component
@@ -17,7 +17,7 @@ const PalBreedingInfosBlock = ({ palData, navigation }) => {
   // Function to handle pal selection
   const handlePalSelection = (parent2) => {
     setSelectedPalInfo(parent2);
-    const possibleBreedings = findPossibleBreedings(selectedPalInfo, parent2);
+    const possibleBreedings = findSpecificBreeding(palData, parent2);
     if (possibleBreedings.length > 0) {
       const baby = possibleBreedings[0]; // For simplicity, assuming only one baby is possible
       setBabyInfo(baby);
