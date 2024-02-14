@@ -140,13 +140,9 @@ const AdvancedBreedingsView = ({ navigation }) => {
                                         multiple: false, // Ensure only one file can be picked
                                     });
 
-                                    // Log the full result to understand its structure
-                                    console.log('Document Picker Result:', JSON.stringify(result));
-
                                     // Check if the file picking was successful by ensuring 'canceled' is false and 'assets' exists
                                     if (!result.canceled && result.assets && result.assets.length > 0) {
                                         const { uri, name, size } = result.assets[0]; // Extract file details from the first asset
-                                        console.log('File picked:', { uri, name, size });
                                         setResult({ uri, name, size });
                                     } else {
                                         console.log('File picking was canceled or no file was selected');

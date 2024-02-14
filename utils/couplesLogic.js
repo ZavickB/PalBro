@@ -5,7 +5,6 @@ async function readFileContent(uri) {
     try {
         const content = await FileSystem.readAsStringAsync(uri);
         const jsonData = JSON.parse(content);
-        console.log('File content read');
         return jsonData; // Ensure jsonData is returned here
     } catch (error) {
         console.error('Error reading file content:', error);
@@ -15,9 +14,7 @@ async function readFileContent(uri) {
 
 // async function to get the UID of a player from its name
 async function getPlayerUID(playerName, inGameData) {
-    console.log('Searching for players UIDS...');
     const playersList = inGameData['players'];
-    console.log(`Found ${playersList.length} players in game`);
     let playerUID = '';
     for (let i = 0; i < playersList.length; i++) {
         if (playersList[i]['Nickname'] === playerName) {
@@ -31,7 +28,6 @@ async function getPlayerUID(playerName, inGameData) {
 // async function to get the pals captured by a player
 async function getPlayerCapturedPals(playerName, inGameData) {
     const playerUID = await getPlayerUID(playerName, inGameData);
-    console.log(`Player UID for ${playerName}: ${playerUID}`);
     const playerPals = [];
     for (let i = 0; i < inGameData['characters'].length; i++) {
         if (inGameData['characters'][i]['OwnerID'] === playerUID) {
@@ -62,7 +58,6 @@ async function calculatePotentialParents(babyKey, palsOfficialProfiles) {
 }
 
 async function removeUnbreedableCouples(couples) {
-    console.log('Searching for valid couples...');
     return couples.filter(couple => couple['parent1']['Gender'] !== couple['parent2']['Gender']);
 }
 
@@ -71,8 +66,6 @@ async function checkPlayersInGamePalsForCouples(potentialParents, playerName, in
 
     const couplesInGame = [];
     const palsCapturedByPlayer = await getPlayerCapturedPals(playerName, inGameData);
-
-    console.log(`Found ${palsCapturedByPlayer.length} pals captured by player: ${playerName}`);
 
     // Group captured pals by their dev name for easy access
     const palsGroupedByDevName = {};
@@ -120,9 +113,7 @@ async function getCouplesWithPassives(couples, passives) {
     couples.forEach(couple => {
         // Ensure parent1Passives and parent2Passives are arrays
         const parent1Passives = Array.isArray(couple['parent1']['PassiveSkillList']["values"]) ? couple['parent1']['PassiveSkillList']["values"] : [];
-        console.log('Parent 1 passives:', parent1Passives);
         const parent2Passives = Array.isArray(couple['parent2']['PassiveSkillList']["values"]) ? couple['parent2']['PassiveSkillList']["values"] : [];
-        console.log('Parent 2 passives:', parent2Passives);
 
         // The rest of your function remains unchanged
         const matchedPassives = [];
@@ -159,19 +150,15 @@ async function getProbability(couplesWithPassives, desiredPassives) {
     const maxCapacity = 4; // Max capacity of a pal is 4
 
     couplesWithPassives.forEach((couple, index) => {
-        console.log(`Processing couple #${index}`);
 
         // Ensure these arrays are defined outside of any try-catch or conditional scopes
         const parent1Passives = couple['parent1']['PassiveSkillList'] ? couple['parent1']['PassiveSkillList']["values"] : [];
-        console.log(`Parent 1 passives:`, couple['parent1']);
         
         const parent2Passives = couple['parent2']['PassiveSkillList'] ? couple['parent2']['PassiveSkillList']["values"] : [];
-        console.log(`Parent 2 passives:`, couple['parent2']);
 
         let combinedUniquePassives = [];
         try {
             combinedUniquePassives = [...new Set([...parent1Passives, ...parent2Passives])];
-            console.log(`Combined Unique Passives:`, combinedUniquePassives);
         } catch (error) {
             console.error(`Error combining passives for couple #${index}:`, error);
             // The catch block ensures any errors in combining passives are logged, but doesn't interrupt the flow
@@ -180,8 +167,6 @@ async function getProbability(couplesWithPassives, desiredPassives) {
         const totalUniquePassives = combinedUniquePassives.length;
         //numberDesiredPassives is the number not empty passives in the desiredPassives array
         const numberDesiredPassives = desiredPassives.filter(passive => passive !== '').length;
-
-        console.log(`Total Unique Passives: ${totalUniquePassives}, Number of Desired Passives: ${numberDesiredPassives}`);
 
         let allDesiredPresent = true;
         desiredPassives.forEach(desiredPassive => {
@@ -251,26 +236,19 @@ async function calculateMatchScore(couple, desiredPassives) {
 async function getPotentialsCouplesForBabyWithPassives(baby, playerName, passives, inGameDataURI) {
     try {
         const palsProfiles = require("../assets/data/palsData.json");
-        console.log(`Calculating potential couples for baby: ${baby.name} for player: ${playerName} with passives:`, passives);
         
         const inGameData = await readFileContent(inGameDataURI); 
         if (!inGameData) {
             console.error('Game data is undefined. Check file path and content.');
             return;
         }
-        const potentialParents = await calculatePotentialParents(baby.key, palsProfiles);
-        console.log(`Found ${potentialParents.length} potential parent couples for ${baby.name}`);
-        
+
+        const potentialParents = await calculatePotentialParents(baby.key, palsProfiles); 
         const couplesInGame = await checkPlayersInGamePalsForCouples(potentialParents, playerName, inGameData);
-        console.log(`Found ${couplesInGame.length} couples in game for player: ${playerName}`);
-
         const couplesWithPassives = await getCouplesWithPassives(couplesInGame, passives);
-        console.log(`Found ${couplesWithPassives.length} couples with specified passives`);
-
-
         const couplesProbabilities = await getProbability(couplesWithPassives, passives);
+        
         await sortCouples(couplesProbabilities, passives);
-        console.log(`Couples sorted by probabilities and matching passives`);
         
         return couplesProbabilities;
     } catch (error) {

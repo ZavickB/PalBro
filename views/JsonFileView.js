@@ -6,7 +6,6 @@ export default function App() {
   const [result, setResult] = useState(null);
 
   useEffect(() => {
-    console.log(JSON.stringify(result, null, 2));
   }, [result]);
 
   return (
