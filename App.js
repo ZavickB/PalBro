@@ -6,7 +6,7 @@ import MainView from './views/MainView';
 import PalDetailedView from './views/PalDetailedView';
 import MyPalsView from './views/MyPalsView';
 import BreedingCatalogView from './views/BreedingCatalogView';
-import BreedingOptionsView from './views/BreedingOptionsView';
+import BreedingDetailsView from './views/BreedingDetailsView';
 import DropsView from './views/DropsView';
 import { ThemeProvider } from './components/contexts/ThemeContext';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -14,6 +14,7 @@ import { CapturedPalsProvider } from './components/contexts/CapturedPalsContext'
 import { enableScreens } from 'react-native-screens';
 import { StatusBar } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
+import AdvancedBreedingsView from './views/AdvancedBreedingsView';
 
 enableScreens();
 const Tab = createBottomTabNavigator();
@@ -41,8 +42,8 @@ function BreedingStack() {
   return (
     <Stack.Navigator initialRouteName="BreedingCatalog" screenOptions={{ headerShown: false }}>
       <Stack.Screen name="BreedingCatalog" component={BreedingCatalogView} />
-      <Stack.Screen name="BreedingOptionsView" component={BreedingOptionsView} />
-      <Stack.Screen name="SaveFileBreedingsOptions" component={SaveFileBreedingsOptions} />
+      <Stack.Screen name="BreedingDetailsView" component={BreedingDetailsView} />
+      <Stack.Screen name="AdvancedBreedingsView" component={AdvancedBreedingsView} />
     </Stack.Navigator>
   );
 }

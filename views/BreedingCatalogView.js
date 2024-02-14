@@ -105,7 +105,7 @@ const BreedingCatalogView = ({ navigation }) => {
 
 
   const handleTilePress = (item, palsUsed ) => {
-    navigation.navigate('BreedingOptionsView', { palData: item, palsUsed});
+    navigation.navigate('BreedingDetailsView', { palData: item, palsUsed});
   };
 
   const renderDotIndicators = () => {
@@ -171,7 +171,7 @@ const BreedingCatalogView = ({ navigation }) => {
       <SafeAreaView style={styles.container}>
         <View style={styles.appContainer}>
           <TopBar title="Breeding Catalog" navigation={navigation} />
-          <Pressable onLongPress={() => navigation.navigate('SaveFileBreedingsOptions')}>
+          <Pressable onLongPress={() => navigation.navigate('AdvancedBreedingsView')}>
             <Text style={styles.pageName}>{currentPageName}</Text>
           </Pressable>
           <PagerView style={styles.pagerView} initialPage={0} onPageSelected={onPageSelected}>

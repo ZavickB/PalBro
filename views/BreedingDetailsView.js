@@ -16,7 +16,7 @@ import { useCapturedPals } from '../components/contexts/CapturedPalsContext';
 import GradientBackground from '../components/GradientBackground';
 import { findPotentialParentsForPal } from '../utils/BreedingsCalculator';
 
-const BreedingOptionsView = ({ route, navigation }) => {
+const BreedingDetailsView = ({ route, navigation }) => {
   const { palData, palsUsed } = route.params;
   const { currentTheme } = useTheme();
   const { capturedPals } = useCapturedPals();
@@ -111,14 +111,13 @@ const BreedingOptionsView = ({ route, navigation }) => {
     },
   });
 
-  const renderParentPair = ({ item: parentsPair }) => {
-    const [parent1, parent2] = parentsPair;
+  const renderParentPair = ({ item }) => {
+    const { parent1, parent2 } = item;
 
     if (!parent1 || !parent2) {
       console.error('Missing parent data');
       return null;
     }
-
     return (
       <View style={styles.parentPairContainer}>
         <View style={styles.parentDetails}>
@@ -167,4 +166,4 @@ const BreedingOptionsView = ({ route, navigation }) => {
   );
 };
 
-export default BreedingOptionsView;
+export default BreedingDetailsView;

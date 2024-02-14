@@ -168,7 +168,7 @@ import PalsProfilesStatsAndBreedings from "../assets/data/PalsProfilesStatsAndBr
           const pairIdentifier = [parent1.key, parent2.key].sort().join('-');
           if (!seenPairs.has(pairIdentifier)) {
             seenPairs.add(pairIdentifier); // Mark this pair as seen
-            potentialParents.push([parent1, parent2]);
+            potentialParents.push({parent1: parent1, parent2: parent2});
           }
         }
       }
