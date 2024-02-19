@@ -78,17 +78,32 @@ export const CapturedPalsProvider = ({ children }) => {
     setRefreshKey(prevKey => prevKey + 1);
   };
 
-  return (
-    <CapturedPalsContext.Provider
-      value={{
-        capturedPals,
-        toggleCapture,
-        increaseCapture,
-        decreaseCapture,
-        refreshKey,
-      }}
-    >
-      {children}
-    </CapturedPalsContext.Provider>
-  );
+ // Define setCaptureCount function
+ const setCaptureCount = (palKey, count) => {
+  if (count > 0) {
+    setCapturedPals(prevPals => ({
+      ...prevPals,
+      [palKey]: count,
+    }));
+  } else {
+    // Remove the palKey if count is 0 or less
+    const { [palKey]: _, ...rest } = capturedPals;
+    setCapturedPals(rest);
+  }
+};
+
+return (
+  <CapturedPalsContext.Provider
+    value={{
+      capturedPals,
+      toggleCapture,
+      increaseCapture,
+      decreaseCapture,
+      setCaptureCount, // Include setCaptureCount in the context value
+    }}
+  >
+    {children}
+  </CapturedPalsContext.Provider>
+);
+
 };

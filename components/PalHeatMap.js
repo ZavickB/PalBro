@@ -5,15 +5,19 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 export const PalHeatMap = ({ palData }) => {
   const { currentTheme } = useTheme();
-  const [containerSize, setContainerSize] = useState({ width: 0, height: 0 });
-  const [nightMode, setNightMode] = useState(false); // State for night mode toggle
+  // Determine the initial state of nightMode based on the availability of palData.maps.day
+  const [nightMode, setNightMode] = useState(!palData.maps.day);
 
   const toggleNightMode = () => {
-    setNightMode(prevMode => !prevMode);
-    // Reload pal data to update with appropriate mode (night or day)
+    if (palData.maps.day) {
+      setNightMode(prevMode => !prevMode);
+      // Reload pal data to update with appropriate mode (night or day)
+    }
   };
 
-  const mapImageSource = nightMode ? (palData.maps.night) : (palData && palData.maps.day);
+  // Determine if the switch should be disabled based on the availability of palData.maps.day
+  const switchDisabled = !palData.maps.day;
+  const mapImageSource = nightMode ? palData.maps.night : palData.maps.day;
 
   const styles = StyleSheet.create({
     mapContainer: {
@@ -41,7 +45,11 @@ export const PalHeatMap = ({ palData }) => {
 
   return (
     <View style={styles.mapContainer}>
-      <Image source={mapImageSource} style={styles.mapImage} resizeMode="cover" />
+      {mapImageSource ? (
+        <Image source={mapImageSource} style={styles.mapImage} resizeMode="cover" />
+      ) : (
+        <ActivityIndicator style={styles.activityIndicator} />
+      )}
       <View style={styles.toggleContainer}>
         <Icon name="sunny" size={24} color="white" />
         <Switch
@@ -50,6 +58,7 @@ export const PalHeatMap = ({ palData }) => {
           ios_backgroundColor="#3e3e3e"
           onValueChange={toggleNightMode}
           value={nightMode}
+          disabled={switchDisabled}
         />
         <Icon name="moon" size={24} color="white" />
       </View>

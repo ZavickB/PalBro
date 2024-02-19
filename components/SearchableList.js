@@ -266,8 +266,9 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
             {SuitabilitiesProfiles.map((suitability) => (
               <View key={suitability.workName} style={styles.filterOption}>
                 <Switch
-                  value={selectedSuitabilities.includes(suitability.workName.toLowerCase())}
-                  onValueChange={() => toggleSuitabilityFilter(suitability.workName.toLowerCase())}
+                
+                  value={selectedSuitabilities.includes(suitability.workName.toLowerCase().replace(" ", "_"))}
+                  onValueChange={() => toggleSuitabilityFilter(suitability.workName.toLowerCase().replace(" ", "_"))}
                   thumbColor={currentTheme.switchThumbColor} // Using the new theme prop for thumb color
                   trackColor={{ false: currentTheme.switchTrackColorOff, true: currentTheme.switchTrackColorOn }} // Using the new theme props for track color
                   style={styles.switchButton}
