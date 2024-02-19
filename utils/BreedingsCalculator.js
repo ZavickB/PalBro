@@ -114,8 +114,18 @@ import PalsProfilesStatsAndBreedings from "../assets/data/PalsProfilesStatsAndBr
   
   
   const findSpecificBreeding = (parent1, parent2) => {
-    const offspringPower = calculateOffspringPower(parent1.breeding.rank, parent2.breeding.rank);
     let possibleBreedings = [];
+    
+    if (parent1.key === parent2.key) {
+      // Directly return the pal corresponding to the parents without any further checks
+      const baby = PalsProfilesStatsAndBreedings.find(pal => pal.key === parent1.key);
+      if (baby) {
+        possibleBreedings.push(baby);
+      }
+      return possibleBreedings;
+    }
+
+    const offspringPower = calculateOffspringPower(parent1.breeding.rank, parent2.breeding.rank);
   
     const specialCaseKey = `${parent1.key}+${parent2.key}`;
     const inverseSpecialCaseKey = `${parent2.key}+${parent1.key}`;
@@ -156,7 +166,7 @@ import PalsProfilesStatsAndBreedings from "../assets/data/PalsProfilesStatsAndBr
   const findPotentialParentsForPal = (babyKey, pals) => {
     const potentialParents = [];
     const seenPairs = new Set(); // Use a Set to track seen parent pairs
-  
+    
     for (let i = 0; i < pals.length; i++) {
       for (let j = 0; j < pals.length; j++) { // Start from i + 1 to avoid comparing a pal with itself
         const parent1 = pals[i];

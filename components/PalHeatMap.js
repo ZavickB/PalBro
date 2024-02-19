@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { View, Image, StyleSheet, ActivityIndicator, Switch } from 'react-native';
+import React, { useState } from 'react';
+import { View, Image, StyleSheet, ActivityIndicator, Switch, Text } from 'react-native'; // Import Text from react-native
 import { useTheme } from './contexts/ThemeContext';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 export const PalHeatMap = ({ palData }) => {
   const { currentTheme } = useTheme();
-  // Determine the initial state of nightMode based on the availability of palData.maps.day
   const [nightMode, setNightMode] = useState(!palData.maps.day);
 
   const toggleNightMode = () => {
@@ -15,7 +14,6 @@ export const PalHeatMap = ({ palData }) => {
     }
   };
 
-  // Determine if the switch should be disabled based on the availability of palData.maps.day
   const switchDisabled = !palData.maps.day;
   const mapImageSource = nightMode ? palData.maps.night : palData.maps.day;
 
@@ -41,7 +39,20 @@ export const PalHeatMap = ({ palData }) => {
       flexDirection: 'row',
       alignItems: 'center',
     },
+    notAvailableText: { // New style for the not available text
+      textAlign: 'center',
+      marginTop: 20,
+    },
   });
+
+  // Check if both maps are not defined and display a message accordingly
+  if (!palData.maps.day && !palData.maps.night) {
+    return (
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <Text style={styles.notAvailableText}>This pal is not widely available.</Text>
+      </View>
+    );
+  }
 
   return (
     <View style={styles.mapContainer}>

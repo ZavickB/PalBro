@@ -1,48 +1,56 @@
-import React, { useState } from 'react';
-import { StyleSheet, TouchableOpacity, View, Dimensions, Text } from 'react-native';
+import React, { useState, useEffect, useRef } from 'react';
+import { Animated, StyleSheet, TouchableOpacity, View, Dimensions, Text } from 'react-native';
 import PalTile from '../components/PalTile';
 import TopBar from '../components/TopBar';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import SearchableList from '../components/SearchableList';
 import { useTheme } from '../components/contexts/ThemeContext';
 import GradientBackground from '../components/GradientBackground';
-import { useCapturedPals } from '../components/contexts/CapturedPalsContext'; // Import the context hook
+import { useCapturedPals } from '../components/contexts/CapturedPalsContext';
 import PagerView from 'react-native-pager-view';
 
 const MyPalsView = ({ navigation }) => {
   const { currentTheme } = useTheme();
-  const { capturedPals, toggleCapture } = useCapturedPals(); // Use the context hook to access state and functions
-
+  const { capturedPals, toggleCapture } = useCapturedPals();
   const screenWidth = Dimensions.get('window').width;
   const screenHeight = Dimensions.get('window').height;
-
   const tileWidthPercentage = 30;
   const tileHeightPercentage = 25;
   const spacing = 5;
   const tileWidth = ((screenWidth * tileWidthPercentage) / 100) - spacing;
   const tileHeight = ((screenHeight * tileHeightPercentage) / 100) - spacing;
-
-  // Filter the newly captured pals directly here
-  const newlyCapturedPals = PalsProfilesStatsAndBreedings.filter((pal) =>
-    !!capturedPals[pal.key] // Adjusted check for captured status
-  );
-
-  const missingPals = PalsProfilesStatsAndBreedings.filter((pal) =>
-    !capturedPals[pal.key] // Adjusted check for captured status
-  );
-
+  const newlyCapturedPals = PalsProfilesStatsAndBreedings.filter(pal => !!capturedPals[pal.key]);
+  const missingPals = PalsProfilesStatsAndBreedings.filter(pal => !capturedPals[pal.key]);
+  const pageIndexAnimatedValue = useRef(new Animated.Value(0)).current;
   const [pageIndex, setPageIndex] = useState(0);
-  const PAGES = [1, 2];
+
+  const PAGES = [0,1];
   const pageNames = [
-    'Captured Pals ('+ newlyCapturedPals.length +')', // Reflects potential pals from captured pals only
-    'Missing Pals ('+ missingPals.length +')' // Reflects potential pals from all pals
+    `Captured Pals (${newlyCapturedPals.length})`,
+    `Missing Pals (${missingPals.length})`
   ];
-  const currentPageName = pageNames[pageIndex];
+  const TICKER_HEIGHT = 30;
 
-  const onPageSelected = (e) => {
-    setPageIndex(e.nativeEvent.position);
+  useEffect(() => {
+    pageIndexAnimatedValue.setValue(pageIndex); // Directly set to pageIndex for immediate response
+  }, [pageIndex]);
+
+  const PageNameTicker = ({ pageIndex }) => {
+    const translateY = pageIndexAnimatedValue.interpolate({
+      inputRange: pageNames.map((_, index) => index),
+      outputRange: pageNames.map((_, index) => index * -TICKER_HEIGHT),
+    });
+
+    return (
+      <View style={styles.tickerContainer}>
+        <Animated.View style={{ transform: [{ translateY }] }}>
+          {pageNames.map((name, index) => (
+            <Text key={index} style={styles.tickerText}>{name}</Text>
+          ))}
+        </Animated.View>
+      </View>
+    );
   };
-
 
   const handleTilePress = (item) => {
     navigation.navigate('MyPalsDetails', { palData: item });
@@ -52,7 +60,7 @@ const MyPalsView = ({ navigation }) => {
     return (
       <SearchableList
         searchBarPlaceholder={'Browse captured Pals...'}
-        data={newlyCapturedPals} // Use newlyCapturedPals here
+        data={newlyCapturedPals}
         renderItem={({ item }) => (
           <View style={styles.listContainer}>
             <TouchableOpacity onPress={() => handleTilePress(item)}>
@@ -61,9 +69,9 @@ const MyPalsView = ({ navigation }) => {
                 tileWidth={tileWidth}
                 tileHeight={tileHeight}
                 spacing={spacing}
-                captureCount={capturedPals[item.key] || 0} // Adjusted count for captured status
+                captureCount={capturedPals[item.key] || 0}
                 onCapturePress={() => toggleCapture(item.key)}
-                isCaptured={!!capturedPals[item.key]} // Adjusted check for captured status
+                isCaptured={!!capturedPals[item.key]}
                 capturedPals={capturedPals}
               />
             </TouchableOpacity>
@@ -72,14 +80,14 @@ const MyPalsView = ({ navigation }) => {
         numColumns={3}
         emptyStateText="No captured Pals found."
       />
-    )
+    );
   };
 
   const renderMissingPals = () => {
     return (
       <SearchableList
         searchBarPlaceholder={'Browse missing Pals...'}
-        data={missingPals} // Use newlyCapturedPals here
+        data={missingPals}
         renderItem={({ item }) => (
           <View style={styles.listContainer}>
             <TouchableOpacity onPress={() => handleTilePress(item)}>
@@ -88,9 +96,9 @@ const MyPalsView = ({ navigation }) => {
                 tileWidth={tileWidth}
                 tileHeight={tileHeight}
                 spacing={spacing}
-                captureCount={capturedPals[item.key] || 0} // Adjusted count for captured status
+                captureCount={capturedPals[item.key] || 0}
                 onCapturePress={() => toggleCapture(item.key)}
-                isCaptured={!!capturedPals[item.key]} // Adjusted check for captured status
+                isCaptured={!!capturedPals[item.key]}
                 capturedPals={capturedPals}
               />
             </TouchableOpacity>
@@ -99,30 +107,33 @@ const MyPalsView = ({ navigation }) => {
         numColumns={3}
         emptyStateText="No matching Pals found."
       />
-    )
+    );
   };
 
   const renderDotIndicators = () => {
-    const theme = useTheme(); // Assuming this hook returns the current theme object
-    const activeDotColor = theme.currentTheme.primaryColor; // Active dot color
-    const inactiveDotColor = theme.currentTheme.secondaryColor; // Inactive dot color
-    
     return (
       <View style={styles.dotIndicatorContainer}>
-        {PAGES.map((_, index) => (
-          <View
+        {PAGES.map(index => (
+          <Animated.View
             key={index}
             style={[
               styles.dot,
-              { backgroundColor: pageIndex === index ? activeDotColor : inactiveDotColor, width: pageIndex === index ? 24 : 8 },
+              {
+                // Interpolate the background color of each dot based on the pageIndexAnimatedValue
+                backgroundColor: pageIndexAnimatedValue.interpolate({
+                  inputRange: PAGES,
+                  outputRange: PAGES.map(i => (i === index ? currentTheme.primaryColor : currentTheme.backgroundColor)),
+                }),
+
+              },
             ]}
           />
         ))}
       </View>
     );
   };
+  
 
-    
   const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -139,27 +150,27 @@ const MyPalsView = ({ navigation }) => {
       flexDirection: 'row',
       justifyContent: 'center',
       paddingVertical: 10,
-      backgroundColor: "transparent"
     },
     dot: {
       height: 8,
-      width: 8,
+      width: 24,
       borderRadius: 4,
       marginHorizontal: 5,
+      backgroundColor: currentTheme.backgroundColor,
     },
-    pageName: {
-      fontSize: 20,
-      fontWeight: 'bold',
-      textAlign: 'left',
-      marginBottom: 10,
-      color: currentTheme.textColor,
-    },
+
     listContainer: {
       flex: 1,
       alignItems: 'center',
     },
-    scrollView: {
-      flexGrow: 1, // Add this to allow the ScrollView to grow with content
+    tickerContainer: {
+      height: TICKER_HEIGHT, // Set a fixed height for the ticker container
+      overflow: 'hidden',
+    },
+    tickerText: {
+      fontSize: 20,
+      fontWeight: 'bold',
+      color: currentTheme.textColor,
     },
   });
 
@@ -168,13 +179,22 @@ const MyPalsView = ({ navigation }) => {
       <View style={styles.container}>
         <View style={styles.appContainer}>
           <TopBar title="My Pals" navigation={navigation} theme={currentTheme} />
-          <Text style={styles.pageName}>{currentPageName}</Text>
-          <PagerView style={styles.pagerView} initialPage={0} onPageSelected={onPageSelected}>
-            <View key="1">
-                {renderCapturedPals()}
-              </View>
-              <View key="2">
-                {renderMissingPals()}
+          <PageNameTicker pageIndexAnimatedValue={pageIndexAnimatedValue} />
+          <PagerView
+            initialPage={0}
+            style={styles.pagerView}
+            onPageSelected={e => {
+              Animated.spring(pageIndexAnimatedValue, {
+                toValue: e.nativeEvent.position,
+                useNativeDriver: true,
+              }).start();
+            }}
+          >
+            <View key="1" style={{flex: 1}}>
+              {renderCapturedPals()}
+            </View>
+            <View key="2" style={{flex: 1}}>
+              {renderMissingPals()}
             </View>
           </PagerView>
           {renderDotIndicators()}
@@ -183,6 +203,5 @@ const MyPalsView = ({ navigation }) => {
     </GradientBackground>
   );
 };
-
 
 export default MyPalsView;

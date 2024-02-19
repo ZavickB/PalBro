@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { StyleSheet, View, Dimensions, TouchableOpacity, SafeAreaView, Text, Pressable } from 'react-native';
+import React, { useState, useRef, useEffect } from 'react';
+import { Animated, StyleSheet, View, Dimensions, TouchableOpacity, SafeAreaView, Text, Pressable } from 'react-native';
 import { useTheme } from '../components/contexts/ThemeContext';
 import { useCapturedPals } from '../components/contexts/CapturedPalsContext';
 import TopBar from '../components/TopBar';
@@ -8,13 +8,11 @@ import SearchableList from '../components/SearchableList';
 import PalTile from '../components/PalTile';
 import PagerView from 'react-native-pager-view';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
-
-import { findAllBreedingPossibilities  } from '../utils/BreedingsCalculator';
+import { findAllBreedingPossibilities } from '../utils/BreedingsCalculator';
 
 const BreedingCatalogView = ({ navigation }) => {
   const { currentTheme } = useTheme();
-
-  const { capturedPals, toggleCapture, refreshKey } = useCapturedPals(); // Use the context hook to access state and functions
+  const { capturedPals, toggleCapture } = useCapturedPals();
 
   const screenWidth = Dimensions.get('window').width;
   const screenHeight = Dimensions.get('window').height;
@@ -24,20 +22,32 @@ const BreedingCatalogView = ({ navigation }) => {
   const spacing = 5;
   const tileWidth = ((screenWidth * tileWidthPercentage) / 100) - spacing;
   const tileHeight = ((screenHeight * tileHeightPercentage) / 100) - spacing;
+  const TICKER_HEIGHT = 30;
 
   const [pageIndex, setPageIndex] = useState(0);
-  const PAGES = [
-    1, 
-    2
-  ];
-  const pageNames = [
-    'Captured Outcomes', // Reflects potential pals from captured pals only
-    'All Outcomes' // Reflects potential pals from all pals
-  ];
-  const currentPageName = pageNames[pageIndex];
+  const pageIndexAnimatedValue = useRef(new Animated.Value(0)).current;
+  const PAGES = [0, 1];
+  const pageNames = ['Captured Outcomes', 'All Outcomes'];
 
-  const onPageSelected = (e) => {
-    setPageIndex(e.nativeEvent.position);
+  useEffect(() => {
+    pageIndexAnimatedValue.setValue(pageIndex); // Directly set to pageIndex for immediate response
+  }, [pageIndex]);
+
+  const PageNameTicker = ({ pageIndex }) => {
+    const translateY = pageIndexAnimatedValue.interpolate({
+      inputRange: pageNames.map((_, index) => index),
+      outputRange: pageNames.map((_, index) => index * - TICKER_HEIGHT),
+    });
+
+    return (
+      <View style={styles.tickerContainer}>
+        <Animated.View style={{ transform: [{ translateY }] }}>
+          {pageNames.map((name, index) => (
+            <Text key={index} style={styles.tickerText}>{name}</Text>
+          ))}
+        </Animated.View>
+      </View>
+    );
   };
 
   const capturedPalsData = [...PalsProfilesStatsAndBreedings].filter((pal) =>
@@ -103,24 +113,25 @@ const BreedingCatalogView = ({ navigation }) => {
     );
   };
 
-
-  const handleTilePress = (item, palsUsed ) => {
-    navigation.navigate('BreedingDetailsView', { palData: item, palsUsed});
+  const handleTilePress = (item, palsUsed) => {
+    navigation.navigate('BreedingDetailsView', { palData: item, palsUsed });
   };
 
   const renderDotIndicators = () => {
-    const theme = useTheme(); // Assuming this hook returns the current theme object
-    const activeDotColor = theme.currentTheme.primaryColor; // Active dot color
-    const inactiveDotColor = theme.currentTheme.secondaryColor; // Inactive dot color
-    
     return (
       <View style={styles.dotIndicatorContainer}>
-        {PAGES.map((_, index) => (
-          <View
+        {PAGES.map(index => (
+          <Animated.View
             key={index}
             style={[
               styles.dot,
-              { backgroundColor: pageIndex === index ? activeDotColor : inactiveDotColor, width: pageIndex === index ? 24 : 8 },
+              {
+                backgroundColor: pageIndexAnimatedValue.interpolate({
+                  inputRange: PAGES,
+                  outputRange: PAGES.map(i => (i === index ? currentTheme.primaryColor : currentTheme.backgroundColor)),
+                }),
+
+              },
             ]}
           />
         ))}
@@ -144,24 +155,26 @@ const BreedingCatalogView = ({ navigation }) => {
       flexDirection: 'row',
       justifyContent: 'center',
       paddingVertical: 10,
-      backgroundColor: "transparent"
     },
     dot: {
       height: 8,
-      width: 8,
+      width: 24,
       borderRadius: 4,
       marginHorizontal: 5,
-    },
-    pageName: {
-      fontSize: 20,
-      fontWeight: 'bold',
-      textAlign: 'left',
-      marginBottom: 10,
-      color: currentTheme.textColor,
+      backgroundColor: currentTheme.backgroundColor,
     },
     listContainer: {
       flex: 1,
       alignItems: 'center',
+    },
+    tickerContainer: {
+      height: TICKER_HEIGHT, // Set a fixed height for the ticker container
+      overflow: 'hidden',
+    },
+    tickerText: {
+      fontSize: 20,
+      fontWeight: 'bold',
+      color: currentTheme.textColor,
     },
   });
 
@@ -171,14 +184,21 @@ const BreedingCatalogView = ({ navigation }) => {
       <SafeAreaView style={styles.container}>
         <View style={styles.appContainer}>
           <TopBar title="Breeding Catalog" navigation={navigation} />
-          <Pressable onLongPress={() => navigation.navigate('AdvancedBreedingsView')}>
-            <Text style={styles.pageName}>{currentPageName}</Text>
-          </Pressable>
-          <PagerView style={styles.pagerView} initialPage={0} onPageSelected={onPageSelected}>
-            <View key="1">
+          <PageNameTicker pageIndexAnimatedValue={pageIndexAnimatedValue} />
+          <PagerView
+            initialPage={0}
+            style={styles.pagerView}
+            onPageSelected={e => {
+              Animated.spring(pageIndexAnimatedValue, {
+                toValue: e.nativeEvent.position,
+                useNativeDriver: true,
+              }).start();
+            }}
+          >           
+            <View key="1" style={{flex: 1}}>
               {renderPotentialParents()}
             </View>
-            <View key="2">
+            <View key="2" style={{flex: 1}}>
               {renderAllPals()}
             </View>
           </PagerView>
@@ -188,6 +208,5 @@ const BreedingCatalogView = ({ navigation }) => {
     </GradientBackground>
   );
 };
-
 
 export default BreedingCatalogView;

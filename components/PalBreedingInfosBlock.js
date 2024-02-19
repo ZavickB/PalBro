@@ -35,34 +35,41 @@ const PalBreedingInfosBlock = ({ palData, navigation }) => {
       alignItems: 'center',
       justifyContent: 'center',
     },
+    parentsRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-around',
+      width: '100%',
+      marginTop: 20,
+    },
     palInfo: {
       alignItems: 'center',
+      marginHorizontal: 10, // Adjust spacing between the parents
     },
     palImage: {
-      width: 100,
-      height: 100,
+      width: 80, // Adjust size to fit in a row
+      height: 80,
       resizeMode: 'cover',
     },
-    palName: {
-      fontSize: 20,
+    plusSign: {
+      fontSize: 24,
+      color: currentTheme.textColor,
       fontWeight: 'bold',
-      marginTop: 10,
+    },
+    // Other styles remain unchanged
+    palName: {
+      fontSize: 16, // Adjusted for space
+      fontWeight: 'bold',
+      marginTop: 5,
       color: currentTheme.textColor,
     },
     palNumber: {
-      fontSize: 16,
-      marginTop: 5,
+      fontSize: 14,
       color: currentTheme.textColor,
     },
     breededBabyInfo: {
       alignItems: 'center',
       marginTop: 20,
-      color: currentTheme.textColor,
-    },
-    Parent2Label: {
-      fontSize: 18,
-      fontWeight: 'bold',
-      color: currentTheme.textColor,
     },
     breededBabyLabel: {
       fontSize: 18,
@@ -79,21 +86,25 @@ const PalBreedingInfosBlock = ({ palData, navigation }) => {
       marginTop: 5,
       color: currentTheme.textColor,
     },
-    
   });
 
   return (
-    <View style={[styles.container]}>
-      <TouchableOpacity onPress={() => setModalVisible(true)}>
-        <View style={styles.palInfo}>
-          <Text style={styles.Parent2Label}>Parent 2:</Text>
-          <Image source={selectedPalInfo.image} style={styles.palImage} />
-          <Text style={styles.palName}>#{selectedPalInfo.key} {selectedPalInfo.name}</Text>
-          <View style={styles.typesContainer}>
+    <View style={styles.container}>
+      <View style={styles.parentsRow}>
+          <View style={styles.palInfo}>
+            <Image source={palData.image} style={styles.palImage} />
+            <Text style={styles.palName}>#{palData.key} {palData.name}</Text>
+            <TypeBadge types={[palData.types]} />
+          </View>
+        <Text style={styles.plusSign}>+</Text>
+        <TouchableOpacity onPress={() => setModalVisible(true)}>
+          <View style={styles.palInfo}>
+            <Image source={selectedPalInfo.image} style={styles.palImage} />
+            <Text style={styles.palName}>#{selectedPalInfo.key} {selectedPalInfo.name}</Text>
             <TypeBadge types={[selectedPalInfo.types]} />
           </View>
-        </View>
-      </TouchableOpacity>
+        </TouchableOpacity>
+      </View>
 
       <PalSelectionModal
         isModalVisible={isModalVisible}
@@ -101,16 +112,14 @@ const PalBreedingInfosBlock = ({ palData, navigation }) => {
         PalsProfilesStatsAndBreedings={PalsProfilesStatsAndBreedings}
         handlePalSelection={handlePalSelection}
       />
-      
+
       {babyInfo && (
         <TouchableOpacity onPress={() => handleBabyPress(babyInfo)}>
           <View style={styles.breededBabyInfo}>
             <Text style={styles.breededBabyLabel}>Baby:</Text>
             <Image source={babyInfo.image} style={styles.breededBabyImage} />
             <Text style={styles.breededBabyLabel}>#{babyInfo.key} {babyInfo.name}</Text>
-            <View style={styles.typesContainer}>
-              <TypeBadge types={[babyInfo.types]} />
-            </View>
+            <TypeBadge types={[babyInfo.types]} />
           </View>
         </TouchableOpacity>
       )}
