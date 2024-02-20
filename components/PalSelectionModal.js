@@ -63,6 +63,11 @@ const MemoizedPalsList = React.memo(({ data, handlePalSelection }) => {
 const PalSelectionModal = ({ isModalVisible, setModalVisible, PalsProfilesStatsAndBreedings, handlePalSelection }) => {
   const { currentTheme } = useTheme(); // Use theme context
 
+  // Sort PalsProfilesStatsAndBreedings by name in ascending order (A to Z)
+  const sortedPalsProfiles = React.useMemo(() => {
+    return [...PalsProfilesStatsAndBreedings].sort((a, b) => a.name.localeCompare(b.name));
+  }, [PalsProfilesStatsAndBreedings]); // Depend on PalsProfilesStatsAndBreedings so it recalculates only if it changes
+
   const styles = StyleSheet.create({
     modalContainer: {
       flex: 1,
@@ -106,7 +111,8 @@ const PalSelectionModal = ({ isModalVisible, setModalVisible, PalsProfilesStatsA
       <View style={styles.modalContainer}>
         <View style={styles.modalContent}>
           <Text style={styles.modalTitle}>Select a pal</Text>
-          <MemoizedPalsList data={PalsProfilesStatsAndBreedings} handlePalSelection={handlePalSelection} />
+          {/* Pass the sorted data to MemoizedPalsList */}
+          <MemoizedPalsList data={sortedPalsProfiles} handlePalSelection={handlePalSelection} />
           <TouchableOpacity style={styles.closeButton} onPress={() => setModalVisible(false)}>
             <Text style={styles.closeButtonText}>Close</Text>
           </TouchableOpacity>

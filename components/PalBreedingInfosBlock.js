@@ -5,6 +5,7 @@ import { useTheme } from './contexts/ThemeContext'; // Import the useTheme hook
 import PalSelectionModal from './PalSelectionModal';
 import { findSpecificBreeding } from '../utils/BreedingsCalculator'; // Import the utility functions
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings'; // Import the PalsProfilesStatsAndBreedings data
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 // Define the new component
 const PalBreedingInfosBlock = ({ palData, navigation }) => {
@@ -37,28 +38,33 @@ const PalBreedingInfosBlock = ({ palData, navigation }) => {
     },
     parentsRow: {
       flexDirection: 'row',
-      alignItems: 'center',
+      alignItems: 'top',
       justifyContent: 'space-around',
       width: '100%',
       marginTop: 20,
     },
     palInfo: {
       alignItems: 'center',
-      marginHorizontal: 10, // Adjust spacing between the parents
+      marginHorizontal: 10,
+      padding: 5,
+      borderColor: currentTheme.primaryColor, // Highlight with theme color
+      borderWidth: selectedPalInfo === palData ? 0 : 2, // Highlight if selection is active
+      borderRadius: 5,
     },
     palImage: {
-      width: 80, // Adjust size to fit in a row
+      width: 80,
       height: 80,
       resizeMode: 'cover',
     },
     plusSign: {
       fontSize: 24,
+      position: 'relative',
+      top: 40,
       color: currentTheme.textColor,
       fontWeight: 'bold',
     },
-    // Other styles remain unchanged
     palName: {
-      fontSize: 16, // Adjusted for space
+      fontSize: 16,
       fontWeight: 'bold',
       marginTop: 5,
       color: currentTheme.textColor,
@@ -66,6 +72,9 @@ const PalBreedingInfosBlock = ({ palData, navigation }) => {
     palNumber: {
       fontSize: 14,
       color: currentTheme.textColor,
+    },
+    selectIcon: {
+      marginTop: 5,
     },
     breededBabyInfo: {
       alignItems: 'center',
@@ -86,23 +95,29 @@ const PalBreedingInfosBlock = ({ palData, navigation }) => {
       marginTop: 5,
       color: currentTheme.textColor,
     },
-  });
+    selectPalText: {
+      fontSize: 14,
+      color: currentTheme.primaryColor, // Use primaryColor for emphasis
+      marginTop: 5,
+      textAlign: 'center',
+    },
 
+  });
+  
   return (
     <View style={styles.container}>
       <View style={styles.parentsRow}>
-          <View style={styles.palInfo}>
-            <Image source={palData.image} style={styles.palImage} />
-            <Text style={styles.palName}>#{palData.key} {palData.name}</Text>
-            <TypeBadge types={[palData.types]} />
-          </View>
+        <View style={styles.palInfo}>
+          <Image source={palData.image} style={styles.palImage} />
+          <Text style={styles.palName}>#{palData.key} {palData.name}</Text>
+          <TypeBadge types={[palData.types]} />
+        </View>
         <Text style={styles.plusSign}>+</Text>
-        <TouchableOpacity onPress={() => setModalVisible(true)}>
-          <View style={styles.palInfo}>
-            <Image source={selectedPalInfo.image} style={styles.palImage} />
-            <Text style={styles.palName}>#{selectedPalInfo.key} {selectedPalInfo.name}</Text>
-            <TypeBadge types={[selectedPalInfo.types]} />
-          </View>
+        <TouchableOpacity onPress={() => setModalVisible(true)} style={[styles.palInfo, { borderStyle: selectedPalInfo === palData ? 'dashed' : 'solid' }]}>
+          <Image source={selectedPalInfo.image} style={styles.palImage} />
+          <Text style={styles.palName}>#{selectedPalInfo.key} {selectedPalInfo.name}</Text>
+          <TypeBadge types={[selectedPalInfo.types]} />
+          {selectedPalInfo === palData && <Ionicons name="swap-horizontal-outline" size={24} color={currentTheme.primaryColor} style={styles.selectIcon} />}
         </TouchableOpacity>
       </View>
 

@@ -53,7 +53,9 @@ const BreedingDetailsView = ({ route, navigation }) => {
 
 
   const toggleList = () => {
+    setIsLoading(true);
     setIsUsingCapturedPals(prev => !prev);
+    setPotentialParentsData([]); 
   };
   
   const ParentPair = React.memo(({ item }) => {

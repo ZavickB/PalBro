@@ -15,6 +15,8 @@ import { enableScreens } from 'react-native-screens';
 import { StatusBar } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 import AdvancedBreedingsView from './views/AdvancedBreedingsView';
+import BuyMeACoffeeModal from './components/BuyMeACoffeeModal';
+
 
 enableScreens();
 const Tab = createBottomTabNavigator();
@@ -51,12 +53,12 @@ function BreedingStack() {
 export default function App() {
 
   // Uncomment this block before building the app
-  useEffect(() => {
-    setTimeout(() => {
-      SplashScreen.hide();
-    }, 2000),
-  []});
-  
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     SplashScreen.hide();
+  //   }, 2000),
+  // []});
+
   return (
     <ThemeProvider>
       <CapturedPalsProvider>
@@ -94,6 +96,7 @@ export default function App() {
             <Tab.Screen name="Breedings" component={BreedingStack} />
             <Tab.Screen name="Drops" component={DropsView} />
           </Tab.Navigator>
+          <BuyMeACoffeeModal />
         </NavigationContainer>
       </CapturedPalsProvider>
     </ThemeProvider>
