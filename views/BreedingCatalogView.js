@@ -65,7 +65,7 @@ const BreedingCatalogView = ({ navigation }) => {
       <SearchableList
         searchBarPlaceholder={'Browse potential breedings...'}
         data={dataForSearchableList}
-        renderItem={({ item }) => (
+        renderItem={({ item, hideCompleted }) => (
           <View style={styles.listContainer}>
             <TouchableOpacity onPress={() => handleTilePress(item, "MyPals")}>
               <PalTile
@@ -76,6 +76,7 @@ const BreedingCatalogView = ({ navigation }) => {
                 captureCount={capturedPals[item.key] || 0} // Adjusted count for captured status
                 onCapturePress={() => toggleCapture(item.key)}
                 isCaptured={!!capturedPals[item.key]} // Adjusted check for captured status
+                hideCompleted={hideCompleted} // Now passing hideCompleted to each PalTile
               />
             </TouchableOpacity>
           </View>

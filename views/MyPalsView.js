@@ -61,7 +61,7 @@ const MyPalsView = ({ navigation }) => {
       <SearchableList
         searchBarPlaceholder={'Browse captured Pals...'}
         data={newlyCapturedPals}
-        renderItem={({ item }) => (
+        renderItem={({ item, hideCompleted }) => (
           <View style={styles.listContainer}>
             <TouchableOpacity onPress={() => handleTilePress(item)}>
               <PalTile
@@ -73,6 +73,7 @@ const MyPalsView = ({ navigation }) => {
                 onCapturePress={() => toggleCapture(item.key)}
                 isCaptured={!!capturedPals[item.key]}
                 capturedPals={capturedPals}
+                hideCompleted={hideCompleted}
               />
             </TouchableOpacity>
           </View>

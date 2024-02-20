@@ -4,21 +4,25 @@ import { useTheme } from './contexts/ThemeContext';
 import TypesList from '../assets/data/TypesList';
 import SuitabilitiesProfiles from '../assets/data/SuitabilitiesProfiles';
 import FiltersModal from './FiltersModal';
-import { FloatingAction } from "react-native-floating-action"; // Import the FloatingAction component
+import { FloatingAction } from "react-native-floating-action";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import SearchBar from './SearchBar';
-
+import { useCapturedPals } from '../components/contexts/CapturedPalsContext';
 import { Switch } from 'react-native';
+
 
 
 const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey, searchBarPlaceholder }) => {
   const { currentTheme } = useTheme();
+  const { capturedPals } = useCapturedPals();
 
   const [searchText, setSearchText] = useState('');
   const [filteredData, setFilteredData] = useState(data);
   const [isFilterModalVisible, setFilterModalVisible] = useState(false);
   const [selectedTypes, setSelectedTypes] = useState([]);
   const [selectedSuitabilities, setSelectedSuitabilities] = useState([]);
+  const [hideCompleted, setHideCompleted] = useState(false);
+
 
   // Define the actions for the FloatingAction button
   const actions = [
@@ -44,23 +48,30 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
       color: currentTheme.primaryColor,
     },
     {
+      text: !hideCompleted ? "Hide Completed Pals" : "Show Completed Pals",
+      icon: <Icon name={!hideCompleted ?"eye-slash" : "eye"} size={25} color="#fff" />,
+      name: "toggle_hide_completed",
+      position: 4,
+      color: currentTheme.primaryColor,
+    },
+    {
       text: "Reset Filters & Sort",
       icon: <Icon name="refresh" size={25} color="#fff" />,
       name: "reset_all",
-      position: 4,
+      position: 5,
       color: currentTheme.primaryColor,
     },
   ];
 
   useEffect(() => {
-    filterData(searchText, selectedTypes, selectedSuitabilities);
-  }, [searchText, selectedTypes, selectedSuitabilities]);
+    filterData(searchText, selectedTypes, selectedSuitabilities, hideCompleted);
+  }, [searchText, selectedTypes, selectedSuitabilities, hideCompleted, capturedPals]);
 
   useEffect(() => {
     setFilteredData(data);
   }, [data]);
 
-  const filterData = (text, types, suitabilities) => {
+  const filterData = (text, types, suitabilities, hideCompleted) => {
     const filtered = data.filter((item) => {
       const nameMatch = item.name.toLowerCase().includes(text.toLowerCase());
       
@@ -75,10 +86,24 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
         suitabilities.every((suitability) =>
           item.suitability.some((s) => s.type === suitability)
         );
-  
-      return nameMatch && typeMatch && suitabilityMatch;
+            
+      const hideCompletedMatch = !hideCompleted || capturedPals[item.key] < 10 || capturedPals[item.key] === undefined;
+
+      return nameMatch && typeMatch && suitabilityMatch && hideCompletedMatch;
     });
   
+    if (hideCompleted) {
+      // Sort by capture number decreasing, but only for those not completed
+      filtered.sort((a, b) => {
+        // Assuming capturedPals[item.key] holds the capture count, adjust if necessary
+        const captureCountA = capturedPals[a.key] || 0;
+        const captureCountB = capturedPals[b.key] || 0;
+  
+        // Sort by capture count decreasing
+        return captureCountB - captureCountA;
+      });
+    }
+
     // Sort filtered data by suitability level if a single suitability is selected
     if (suitabilities.length === 1) {
       const selectedSuitability = suitabilities[0];
@@ -109,6 +134,10 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
     setFilteredData(filtered);
   };
   
+  const toggleHideCompleted = () => {
+    setHideCompleted(!hideCompleted);
+  };
+
   const sortData = (sortOption) => {
     const sortedData = [...filteredData]; // Create a copy to avoid direct state mutation
   
@@ -236,6 +265,13 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
     },
   });
 
+  const renderItemWithHideCompleted = ({ item }) => {
+    return renderItem({
+      item,
+      hideCompleted, // Include hideCompleted in the props passed to renderItem
+    });
+  };
+
   return (
     <View style={[styles.container]}>
       <FiltersModal
@@ -298,7 +334,7 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
       <View style={[styles.container]}>
         <FlatList
           data={filteredData}
-          renderItem={renderItem}
+          renderItem={renderItemWithHideCompleted}
           keyExtractor={(item) => `${item.key}`}
           numColumns={numColumns}
         />
@@ -309,13 +345,16 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
         onPressItem={name => {
           if (name === "bt_filter") {
             setFilterModalVisible(true);
+          } else if (name === "toggle_hide_completed") {
+            toggleHideCompleted(); // Toggle the hideCaptured state
           } else if (name === "reset_all") {
-            setSearchText(''); // Reset search text
-            setSelectedTypes([]); // Reset selected types
-            setSelectedSuitabilities([]); // Reset selected suitabilities
-            sortData(''); // Reset sorting (you can pass an empty string or any default sorting option)
+            setSearchText('');
+            setSelectedTypes([]);
+            setSelectedSuitabilities([]);
+            setHideCompleted(false); // Reset hideCaptured to false
+            sortData('');
           } else {
-            sortData(name); // Call the sort function with the action name
+            sortData(name);
           }
         }}
         color={currentTheme.backgroundColor}

@@ -51,7 +51,7 @@ const MainView = ({ navigation }) => {
             searchBarPlaceholder={'Browse all Pals...'}
             data={PalsProfilesStatsAndBreedings}
             resetKey={resetKey+1}
-            renderItem={({ item }) => (
+            renderItem={({ item, hideCompleted }) => (
               <View style={styles.listContainer}>
                 <TouchableOpacity onPress={() => handleTilePress(item)}>
                   <PalTile
@@ -62,6 +62,7 @@ const MainView = ({ navigation }) => {
                     captureCount={capturedPals[item.key] || 0} // Adjusted count for captured status
                     onCapturePress={() => toggleCapture(item.key)} // Use the context function
                     isCaptured={!!capturedPals[item.key]} // Adjusted check for captured status
+                    hideCompleted={hideCompleted} // Now passing hideCompleted to each PalTile
                   />
                 </TouchableOpacity>
               </View>

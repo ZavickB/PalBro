@@ -55,29 +55,6 @@ export const CapturedPalsProvider = ({ children }) => {
     setRefreshKey(prevKey => prevKey + 1);
   };
 
-  const increaseCapture = (palKey) => {
-    setCapturedPals(prevPals => ({
-      ...prevPals,
-      [palKey]: (prevPals[palKey] || 0) + 1
-    }));
-    setRefreshKey(prevKey => prevKey + 1);
-  };
-
-  const decreaseCapture = (palKey) => {
-    if (capturedPals[palKey] > 1) {
-      setCapturedPals(prevPals => ({
-        ...prevPals,
-        [palKey]: prevPals[palKey] - 1
-      }));
-    } else {
-      // Effectively releases the pal if its count goes to 1 and then decremented
-      const updatedPals = { ...capturedPals };
-      delete updatedPals[palKey];
-      setCapturedPals(updatedPals);
-    }
-    setRefreshKey(prevKey => prevKey + 1);
-  };
-
  // Define setCaptureCount function
  const setCaptureCount = (palKey, count) => {
   if (count > 0) {
@@ -97,8 +74,6 @@ return (
     value={{
       capturedPals,
       toggleCapture,
-      increaseCapture,
-      decreaseCapture,
       setCaptureCount, // Include setCaptureCount in the context value
     }}
   >

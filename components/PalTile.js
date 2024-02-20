@@ -4,10 +4,10 @@ import { LinearGradient } from 'expo-linear-gradient';
 import TypePin from './TypePin'; // Make sure to adjust the import path as needed
 import { useTheme } from './contexts/ThemeContext'; // Adjust the import path as needed
 
-const PalTile = ({ pal, tileWidth, tileHeight, spacing, captureCount, onCapturePress }) => {
+const PalTile = ({ pal, tileWidth, tileHeight, spacing, captureCount, onCapturePress, hideCompleted = false }) => {
   const { currentTheme } = useTheme();
 
-  const isGold = captureCount >= 10; // Determine if the tile should be golden
+  const isCompleted = captureCount >= 10; // Determine if the tile should be golden
   
   const capitalize = (str) => {
     if (typeof str !== 'string' || str.length === 0) return ''; // Check if str is not a string or is an empty string
@@ -124,11 +124,18 @@ const PalTile = ({ pal, tileWidth, tileHeight, spacing, captureCount, onCaptureP
     <View style={styles.container}>
       <View style={[styles.contentContainer, { backgroundColor: getTypeColor(pal.types[0]) }]}>
         <Image style={styles.image} source={pal.image} />
-        {isGold && (
+        {isCompleted && (
           <View style={styles.completedBanner}>
             <Text style={styles.bannerText}>COMPLETED</Text>
           </View>
         )}
+        {
+          hideCompleted && (
+            <View style={styles.completedBanner}>
+              <Text style={styles.bannerText}>{captureCount} / 10 </Text>
+            </View>
+          )
+        }
         <View style={styles.typesContainer}>
           {pal.types.map((type, index) => (
             <TypePin key={index} type={type} tileWidth={tileWidth} />

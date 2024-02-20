@@ -38,7 +38,7 @@ const BuyMeACoffeeModal = () => {
         },
         modalView: {
             margin: 20,
-            backgroundColor: currentTheme.modalContentBackground,
+            backgroundColor: currentTheme.searchBarBackgroundColor,
             borderRadius: 20,
             padding: 35,
             alignItems: "center",
