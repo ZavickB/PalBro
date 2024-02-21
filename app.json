@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Palpedia-react",
-    "slug": "Palpedia-react",
+    "name": "PalBro",
+    "slug": "PalBro",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -9,7 +9,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#F0D4AE"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -18,16 +18,19 @@
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+      "package": "com.anonymous.Palpediareact",
+      "splash": {
+        "image": "./assets/splash.png",
+        "backgroundColor": "#F0D4AE"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      "expo-font"
-    ]
+    "extra": {
+      "eas": {
+        "projectId": "bae27df8-c4c9-48b5-a0d7-221b6cd60428"
+      }
+    }
   }
 }

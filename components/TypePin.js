@@ -1,25 +1,28 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, StyleSheet, Image } from 'react-native';
+import { responsiveScale } from '../utils/responsiveScale';
 
-const TypePin = ({ type }) => {
+const TypePin = ({ type, tileWidth }) => {
+    type = capitalize(type);
+    
     const styles = StyleSheet.create({
         container: {
             alignItems: 'center',
             justifyContent: 'center', // Center content vertically and horizontally
-            margin: 2,
+            margin: responsiveScale(2),
         },
         badge: {
             alignItems: 'center',
             justifyContent: 'center', // Center content vertically and horizontally
-            width: 36, // Adjust the size as needed
-            height: 36, // Adjust the size as needed
-            borderRadius: 18, // Make it round
+            width: responsiveScale(30, "width"), // Adjust the size as needed
+            height: responsiveScale(30, "height"), // Adjust the size as needed
+            borderRadius: responsiveScale(18), // Make it round
             backgroundColor: getTypeColor(type),
-            margin: 4,
+            margin: responsiveScale(4),
         },
         typeIcon: {
-            width: 20,
-            height: 20,
+            width: responsiveScale(20),
+            height: responsiveScale(20),
             alignItems: 'center', // Center the image inside the badge
             justifyContent: 'center', // Center the image inside the badge
         },
@@ -38,6 +41,11 @@ const TypePin = ({ type }) => {
     );
 };
 
+const capitalize = (str) => {
+    if (typeof str !== 'string' || str.length === 0) return ''; // Check if str is not a string or is an empty string
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 const getTypeColor = (type) => {
     const typeColors = {
         "Ground": '#E0C068',
@@ -55,17 +63,18 @@ const getTypeColor = (type) => {
     return typeColors[type] || 'gray';
 };
 
+
 const getTypeIcon = (type) => {
     const typeIcons = {
-        "Ground": require('../assets/images/types/Ground_icon_small.png'),
-        "Fire": require('../assets/images/types/Fire_icon_small.png'),
-        "Dragon": require('../assets/images/types/Dragon_icon_small.png'),
-        "Water": require('../assets/images/types/Water_icon_small.png'),
-        "Electric": require('../assets/images/types/Electric_icon_small.png'),
-        "Grass": require('../assets/images/types/Grass_icon_small.png'),
-        "Normal": require('../assets/images/types/Neutral_icon_small.png'),
-        "Dark": require('../assets/images/types/Dark_icon_small.png'),
-        "Ice": require('../assets/images/types/Ice_icon_small.png'),
+        "Ground": require('../assets/images/types/Ground_icon.png'),
+        "Fire": require('../assets/images/types/Fire_icon.png'),
+        "Dragon": require('../assets/images/types/Dragon_icon.png'),
+        "Water": require('../assets/images/types/Water_icon.png'),
+        "Electric": require('../assets/images/types/Electric_icon.png'),
+        "Grass": require('../assets/images/types/Grass_icon.png'),
+        "Normal": require('../assets/images/types/Normal_icon.png'),
+        "Dark": require('../assets/images/types/Dark_icon.png'),
+        "Ice": require('../assets/images/types/Ice_icon.png'),
     };
 
     return typeIcons[type];
