@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, Image, Text } from 'react-native';
 import { useTheme } from './contexts/ThemeContext'; // Import the useTheme hook
+import { scale } from 'react-native-size-matters';
 
 const SuitabilityBlock = ({ suitabilities }) => {
   const { currentTheme } = useTheme();
@@ -19,26 +20,26 @@ const SuitabilityBlock = ({ suitabilities }) => {
     container: {
       flexDirection: 'column',
       alignItems: 'flex-start',
-      paddingHorizontal: 10,
+      paddingHorizontal: scale(10),
     },
     suitabilityContainer: {
       flexDirection: 'column',
       alignItems: 'flex-start',
-      marginBottom: 10,
+      marginBottom: scale(10),
       width: "100%", // Fixed width for the rectangles
     },
     rectangle: {
       borderWidth: 1,
       borderColor: currentTheme.borderColor,
-      padding: 10,
-      borderRadius: 5,
+      padding: scale(10),
+      borderRadius: scale(5),
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between',
       width: '100%',
     },
     suitabilityName: {
-      marginLeft: 10,
+      marginLeft: scale(10),
       color: currentTheme.textColor,
       fontWeight: 'bold',
     },
@@ -48,8 +49,8 @@ const SuitabilityBlock = ({ suitabilities }) => {
       color: currentTheme.textColor,
     },
     icon: {
-      width: 30,
-      height: 30,
+      width: scale(30),
+      height: scale(30),
     },
   });
 

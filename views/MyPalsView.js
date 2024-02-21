@@ -8,28 +8,36 @@ import { useTheme } from '../components/contexts/ThemeContext';
 import GradientBackground from '../components/GradientBackground';
 import { useCapturedPals } from '../components/contexts/CapturedPalsContext';
 import PagerView from 'react-native-pager-view';
+import { scale, verticalScale } from 'react-native-size-matters';
 
 const MyPalsView = ({ navigation }) => {
   const { currentTheme } = useTheme();
   const { capturedPals, toggleCapture } = useCapturedPals();
+  
   const screenWidth = Dimensions.get('window').width;
   const screenHeight = Dimensions.get('window').height;
+
+  // Apply scaling functions to dimensions and spacing
   const tileWidthPercentage = 30;
-  const tileHeightPercentage = 25;
+  const tileHeightPercentage = 20;
   const spacing = 5;
-  const tileWidth = ((screenWidth * tileWidthPercentage) / 100) - spacing;
-  const tileHeight = ((screenHeight * tileHeightPercentage) / 100) - spacing;
+  const tileWidth = scale((screenWidth * tileWidthPercentage) / 100) - scale(4 * spacing);
+  const tileHeight = verticalScale((screenHeight * tileHeightPercentage) / 100) - scale(spacing);
+
+  const TICKER_HEIGHT = scale(30);
+
   const newlyCapturedPals = PalsProfilesStatsAndBreedings.filter(pal => !!capturedPals[pal.key]);
   const missingPals = PalsProfilesStatsAndBreedings.filter(pal => !capturedPals[pal.key]);
-  const pageIndexAnimatedValue = useRef(new Animated.Value(0)).current;
+
   const [pageIndex, setPageIndex] = useState(0);
+  const pageIndexAnimatedValue = useRef(new Animated.Value(0)).current;
 
   const PAGES = [0,1];
   const pageNames = [
     `Captured Pals (${newlyCapturedPals.length})`,
     `Missing Pals (${missingPals.length})`
   ];
-  const TICKER_HEIGHT = 30;
+
 
   useEffect(() => {
     pageIndexAnimatedValue.setValue(pageIndex); // Directly set to pageIndex for immediate response
@@ -38,7 +46,7 @@ const MyPalsView = ({ navigation }) => {
   const PageNameTicker = ({ pageIndex }) => {
     const translateY = pageIndexAnimatedValue.interpolate({
       inputRange: pageNames.map((_, index) => index),
-      outputRange: pageNames.map((_, index) => index * -TICKER_HEIGHT),
+      outputRange: pageNames.map((_, index) => index * - TICKER_HEIGHT),
     });
 
     return (
@@ -120,7 +128,6 @@ const MyPalsView = ({ navigation }) => {
             style={[
               styles.dot,
               {
-                // Interpolate the background color of each dot based on the pageIndexAnimatedValue
                 backgroundColor: pageIndexAnimatedValue.interpolate({
                   inputRange: PAGES,
                   outputRange: PAGES.map(i => (i === index ? currentTheme.primaryColor : currentTheme.backgroundColor)),
@@ -141,8 +148,7 @@ const MyPalsView = ({ navigation }) => {
     },
     appContainer: {
       flex: 1,
-      paddingTop: 20,
-      paddingHorizontal: 10,
+      paddingHorizontal: scale(10),
     },
     pagerView: {
       flex: 1,
@@ -150,16 +156,15 @@ const MyPalsView = ({ navigation }) => {
     dotIndicatorContainer: {
       flexDirection: 'row',
       justifyContent: 'center',
-      paddingVertical: 10,
+      paddingVertical: scale(10),
     },
     dot: {
-      height: 8,
-      width: 24,
-      borderRadius: 4,
-      marginHorizontal: 5,
+      height: scale(8),
+      width: scale(24),
+      borderRadius: scale(4),
+      marginHorizontal: scale(5),
       backgroundColor: currentTheme.backgroundColor,
     },
-
     listContainer: {
       flex: 1,
       alignItems: 'center',
@@ -169,7 +174,7 @@ const MyPalsView = ({ navigation }) => {
       overflow: 'hidden',
     },
     tickerText: {
-      fontSize: 20,
+      fontSize: scale(20),
       fontWeight: 'bold',
       color: currentTheme.textColor,
     },
@@ -189,8 +194,7 @@ const MyPalsView = ({ navigation }) => {
                 toValue: e.nativeEvent.position,
                 useNativeDriver: true,
               }).start();
-            }}
-          >
+            }}>
             <View key="1" style={{flex: 1}}>
               {renderCapturedPals()}
             </View>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { useTheme } from './contexts/ThemeContext';
+import { scale } from 'react-native-size-matters';
 
 const PalStatsBlock = ({ stats }) => {
   const { currentTheme } = useTheme();
@@ -36,7 +37,7 @@ const PalStatsBlock = ({ stats }) => {
 
   const styles = StyleSheet.create({
     container: {
-      marginBottom: 10,
+      marginBottom: scale(10),
     },
     columnsContainer: {
       flexDirection: 'row',
@@ -45,11 +46,11 @@ const PalStatsBlock = ({ stats }) => {
     },
     statColumn: {
       flexBasis: '49%',
-      padding: 5,
-      marginBottom: 5,
-      borderWidth: 1,
+      padding: scale(5),
+      marginBottom: scale(5),
+      borderWidth: scale(1),
       borderColor: currentTheme.borderColor,
-      borderRadius: 8,
+      borderRadius: scale(8),
     },
     columnWrapper: {
       flexDirection: 'row',
@@ -57,18 +58,18 @@ const PalStatsBlock = ({ stats }) => {
       alignItems: 'center',
     },
     emojiColumn: {
-      marginRight: 10,
+      marginRight: scale(10),
     },
     statEmoji: {
-      fontSize: 24,
+      fontSize: scale(24),
     },
     statValue: {
-      fontSize: 16,
+      fontSize: scale(16),
       fontWeight: 'bold',
       color: currentTheme.textColor,
     },
     statLabel: {
-      fontSize: 14,
+      fontSize: scale(14),
       color: currentTheme.textColor,
     },
   });

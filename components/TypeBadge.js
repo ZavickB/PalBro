@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { scale } from 'react-native-size-matters';
 
 const capitalize = (str) => {
   if (typeof str !== 'string' || str.length === 0) return ''; // Check if str is not a string or is an empty string
@@ -43,10 +44,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   badge: {
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderRadius: 8,
-    marginHorizontal: 4,
+    paddingHorizontal: scale(8),
+    paddingVertical: scale(4),
+    borderRadius: scale(8),
+    marginHorizontal:scale(4),
   },
   text: {
     color: 'white',

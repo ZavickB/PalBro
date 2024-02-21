@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
+import { scale } from 'react-native-size-matters';
 
 const TypePin = ({ type, tileWidth }) => {
     type = capitalize(type);
@@ -8,20 +9,20 @@ const TypePin = ({ type, tileWidth }) => {
         container: {
             alignItems: 'center',
             justifyContent: 'center', // Center content vertically and horizontally
-            margin: 2,
+            margin: scale(2),
         },
         badge: {
             alignItems: 'center',
             justifyContent: 'center', // Center content vertically and horizontally
-            width: tileWidth ? tileWidth / 4 : 30, // Adjust the size as needed
-            height: tileWidth ? tileWidth / 4 : 30, // Adjust the size as needed
-            borderRadius: 18, // Make it round
+            width: tileWidth ? tileWidth / 4 : scale(30), // Adjust the size as needed
+            height: tileWidth ? tileWidth / 4 : scale(30), // Adjust the size as needed
+            borderRadius: scale(18), // Make it round
             backgroundColor: getTypeColor(type),
-            margin: 4,
+            margin: scale(4),
         },
         typeIcon: {
-            width: 20,
-            height: 20,
+            width: scale(20),
+            height: scale(20),
             alignItems: 'center', // Center the image inside the badge
             justifyContent: 'center', // Center the image inside the badge
         },

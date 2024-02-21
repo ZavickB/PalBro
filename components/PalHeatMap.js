@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { View, Image, StyleSheet, ActivityIndicator, Switch, Text } from 'react-native'; // Import Text from react-native
+import { Dimensions, View, Image, StyleSheet, ActivityIndicator, Switch, Text } from 'react-native'; // Import Text from react-native
 import { useTheme } from './contexts/ThemeContext';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { scale, verticalScale } from 'react-native-size-matters';
+
 
 export const PalHeatMap = ({ palData }) => {
   const { currentTheme } = useTheme();
@@ -14,14 +16,16 @@ export const PalHeatMap = ({ palData }) => {
     }
   };
 
+  const screenWidth = Dimensions.get('window').width;
+
   const switchDisabled = !palData.maps.day;
   const mapImageSource = nightMode ? palData.maps.night : palData.maps.day;
 
   const styles = StyleSheet.create({
     mapContainer: {
       position: 'relative',
-      width: '100%',
-      height: 400,
+      width: 0.9 * screenWidth , // Use scale() for width-related dimensions
+      height: 0.9 * screenWidth,
     },
     mapImage: {
       width: '100%',
@@ -34,14 +38,14 @@ export const PalHeatMap = ({ palData }) => {
     },
     toggleContainer: {
       position: 'absolute',
-      top: 10,
-      right: 10,
+      top: scale(10),
+      right: scale(10),
       flexDirection: 'row',
       alignItems: 'center',
     },
     notAvailableText: { // New style for the not available text
       textAlign: 'center',
-      marginTop: 20,
+      marginTop: scale(20),
     },
   });
 
@@ -62,7 +66,7 @@ export const PalHeatMap = ({ palData }) => {
         <ActivityIndicator style={styles.activityIndicator} />
       )}
       <View style={styles.toggleContainer}>
-        <Icon name="sunny" size={24} color="white" />
+        <Icon name="sunny" size={scale(24)} color="white" />
         <Switch
           trackColor={{ false: "#767577", true: "#81b0ff" }}
           thumbColor={nightMode ? "#f5dd4b" : "#f4f3f4"}
@@ -71,7 +75,7 @@ export const PalHeatMap = ({ palData }) => {
           value={nightMode}
           disabled={switchDisabled}
         />
-        <Icon name="moon" size={24} color="white" />
+        <Icon name="moon" size={scale(24)} color="white" />
       </View>
     </View>
   );

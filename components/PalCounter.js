@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet, ActivityIndicator, Dimensions } from 'react-native';
 import { useCapturedPals } from '../components/contexts/CapturedPalsContext'; // Ensure correct import path
 import { useTheme } from '../components/contexts/ThemeContext'; // Ensure correct import path
+import { scale, verticalScale } from 'react-native-size-matters';
 
 const PalCounter = ({ palKey }) => {
   const { capturedPals, setCaptureCount } = useCapturedPals();
@@ -37,23 +38,23 @@ const PalCounter = ({ palKey }) => {
 
   const styles = StyleSheet.create({
     container: {
-      padding: 20,
-      paddingTop: 10,
+      padding: scale(20),
+      paddingTop: scale(10),
       alignItems: 'center',
       backgroundColor: currentTheme.progressBarBackgroundColor,
-      borderRadius: 10,
+      borderRadius: scale(10),
       shadowColor: '#000',
       shadowOffset: {
         width: 0,
-        height: 2,
+        height: scale(2),
       },
-      shadowOpacity: 0.25,
-      shadowRadius: 3.84,
+      shadowOpacity: 0.25, 
+      shadowRadius: scale(3.84),
       elevation: 5,
       width: '100%',
     },
     header: {
-      fontSize: 18,
+      fontSize: scale(18),
       fontWeight: 'bold',
       color: currentTheme.textColor,
       alignSelf: 'flex-start', // Align to the start of the flex container
@@ -68,17 +69,17 @@ const PalCounter = ({ palKey }) => {
       flex: 1, // Each icon wrapper will take equal space
       alignItems: 'center', // Center each icon horizontally
       justifyContent: 'center', // Center each icon vertically
-      marginHorizontal: 2, // Optional: add some space between icons
+      marginHorizontal: scale(2), // Optional: add some space between icons
     },
     icon: {
       // Adjust the size as required, you can remove width and height to let flex handle the sizing
       resizeMode: 'contain', // Ensure the entire icon is visible
     },
     countDisplay: {
-      fontSize: 18,
+      fontSize: scale(18),
       fontWeight: 'bold',
       color: currentTheme.textColor, // Assuming white text color as per the design
-      marginHorizontal: 10,
+      marginHorizontal: scale(10),
     },
     iconColored: {
       tintColor: currentTheme.primaryColor, // Color for selected icons
@@ -90,7 +91,7 @@ const PalCounter = ({ palKey }) => {
       flexDirection: 'row',
       alignItems: 'center',
       width: '100%', // Full width of the container
-      marginVertical: 10, // Space above and below the progress bar
+      marginVertical: scale(10), // Space above and below the progress bar
     },
   });
 

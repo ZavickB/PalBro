@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, TouchableOpacity, Linking, Image, StyleSheet } from 'react-native';
 import { useTheme } from './contexts/ThemeContext'; // Adjust the import path as needed
+import { scale, verticalScale } from 'react-native-size-matters';
 
 const BuyMeACoffeeButton = () => {
     const { currentTheme } = useTheme(); // Use the useTheme hook to access the current theme
@@ -33,11 +34,11 @@ const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         justifyContent: 'center',
-        padding: 10,
+        padding: scale(10),
     },
     buttonImage: {
-        width: 200, // Set the width as needed
-        height: 60, // Set the height as needed
+        width: scale(200), // Set the width as needed
+        height: scale(60), // Set the height as needed
     },
 });
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, FlatList } from 'react-native';
 import { useTheme } from './contexts/ThemeContext';
+import { scale } from 'react-native-size-matters';
 
 const PotentialCoupleCard = ({ couple }) => {
   const { Probability, parent1, parent2 } = couple;
@@ -10,45 +11,45 @@ const PotentialCoupleCard = ({ couple }) => {
 const styles = StyleSheet.create({
   card: {
     backgroundColor: currentTheme.palTileBackgroundColor,
-    borderRadius: 8,
-    padding: 16,
-    marginBottom: 10,
+    borderRadius: scale(8),
+    padding: scale(16),
+    marginBottom: scale(10),
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
+    shadowOffset: { width: 0, height: scale(2) },
     shadowOpacity: 0.23,
     shadowRadius: 2.62,
     elevation: 4,
   },
   probabilityText: {
-    fontSize: 18,
+    fontSize: scale(18),
     fontWeight: 'bold',
-    marginBottom: 10,
+    marginBottom: scale(10),
     color: currentTheme.textColor,
   },
   parentContainer: {
-    marginBottom: 8,
+    marginBottom: scale(8),
   },
   parentLabel: {
-    fontSize: 16,
+    fontSize: scale(16),
     fontWeight: 'bold',
     color: currentTheme.textColor,
   },
   detailText: {
-    fontSize: 14,
+    fontSize: scale(14),
     color: currentTheme.textColor,
   },
   passivesContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    marginTop: 4,
+    marginTop: scale(4),
   },
   passiveSkill: {
     backgroundColor: currentTheme.backgroundColor,
-    borderRadius: 15,
-    paddingVertical: 4,
-    paddingHorizontal: 8,
-    margin: 2,
-    fontSize: 12,
+    borderRadius: scale(15),
+    paddingVertical: scale(4),
+    paddingHorizontal: scale(8),
+    margin: scale(2),
+    fontSize: scale(12),
     color: currentTheme.textColor,
   },
 });

@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import TypePin from './TypePin';
 import { useTheme } from './contexts/ThemeContext';
 import Icon from 'react-native-vector-icons/Ionicons'; // Import icons
+import { scale } from 'react-native-size-matters';
 
 const PalSkillsBlock = ({ skills }) => {
   const { currentTheme } = useTheme();
@@ -11,41 +12,41 @@ const PalSkillsBlock = ({ skills }) => {
   const styles = StyleSheet.create({
     container: {
       flexDirection: 'column',
-      paddingHorizontal: 10,
-      borderRadius: 10,
-      marginVertical: 10,
+      paddingHorizontal: scale(10),
+      borderRadius: scale(10),
+      marginVertical: scale(10),
     },
     skillItem: {
       flexDirection: 'column',
       alignItems: 'flex-start',
-      marginBottom: 10,
-      borderWidth: 1,
+      marginBottom: scale(10),
+      borderWidth: scale(1),
       borderColor: currentTheme.borderColor,
-      borderRadius: 10,
-      padding: 10,
+      borderRadius: scale(10),
+      padding: scale(10),
     },
     skillName: {
       fontWeight: 'bold',
-      fontSize: 16,
+      fontSize: scale(16),
       color: currentTheme.textColor,
       textTransform: 'capitalize',
     },
     skillLevel: {
       fontWeight: 'bold',
-      fontSize: 16,
+      fontSize: scale(16),
       color: currentTheme.textColor,
     },
     skillCooldownPower: {
-      fontSize: 14,
+      fontSize: scale(14),
       color: currentTheme.textColor,
-      marginTop: 5,
+      marginTop: scale(5),
       flexDirection: 'row', // Align icons and text horizontally
     },
     cooldownIcon: {
-      marginRight: 5, // Add some space between icon and text
+      marginRight: scale(5), // Add some space between icon and text
     },
     skillDescription: {
-      marginTop: 5,
+      marginTop: scale(5),
       color: currentTheme.textColor,
     },
     skillRow: {
@@ -82,11 +83,11 @@ const PalSkillsBlock = ({ skills }) => {
               </View>
               <View style={styles.skillRow}>
                 <View style={styles.skillCooldownPower}>
-                  <Icon name="stopwatch-outline" size={16} color={currentTheme.textColor} style={styles.cooldownIcon} />
+                  <Icon name="stopwatch-outline" size={scale(16)} color={currentTheme.textColor} style={styles.cooldownIcon} />
                   <Text style={styles.skillData}>Cooldown: {skill.cooldown} seconds</Text>
                 </View>
                 <View style={styles.skillCooldownPower}>
-                  <Icon name="flash" size={16} color={currentTheme.textColor} style={styles.cooldownIcon} />
+                  <Icon name="flash" size={scale(16)} color={currentTheme.textColor} style={styles.cooldownIcon} />
                   <Text style={styles.skillData}>Power: {skill.power}</Text>
                 </View>
               </View>

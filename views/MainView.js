@@ -1,3 +1,4 @@
+import React from 'react';
 import { StyleSheet, TouchableOpacity, View, Dimensions } from 'react-native';
 import PalTile from '../components/PalTile';
 import TopBar from '../components/TopBar';
@@ -5,21 +6,27 @@ import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBr
 import SearchableList from '../components/SearchableList';
 import { useTheme } from '../components/contexts/ThemeContext';
 import GradientBackground from '../components/GradientBackground';
-import { useCapturedPals } from '../components/contexts/CapturedPalsContext'; // Import the context hook
+import { useCapturedPals } from '../components/contexts/CapturedPalsContext';
+import { scale, verticalScale } from 'react-native-size-matters';
 
 const MainView = ({ navigation }) => {
   const { currentTheme } = useTheme();
 
+  // Use scale() for width-related dimensions and verticalScale() for height-related dimensions
   const screenWidth = Dimensions.get('window').width;
   const screenHeight = Dimensions.get('window').height;
 
+  // Example percentages to scale tile sizes
   const tileWidthPercentage = 30;
-  const tileHeightPercentage = 25;
+  const tileHeightPercentage = 20;
+  // Use moderateScale to adjust spacing for different screen sizes
   const spacing = 5;
-  const tileWidth = ((screenWidth * tileWidthPercentage) / 100) - spacing;
-  const tileHeight = ((screenHeight * tileHeightPercentage) / 100) - spacing;
 
-  const { capturedPals, toggleCapture } = useCapturedPals(); // Use the context hook
+  // Calculate tile width and height using scale and verticalScale respectively
+  const tileWidth = scale((screenWidth * tileWidthPercentage) / 100) - scale(4 * spacing);
+  const tileHeight = verticalScale((screenHeight * tileHeightPercentage) / 100) - scale(spacing);
+
+  const { capturedPals, toggleCapture } = useCapturedPals();
  
   const handleTilePress = (item) => {
     navigation.navigate('PalsDetails', { palData: item });
@@ -41,6 +48,7 @@ const MainView = ({ navigation }) => {
     return aLetter.localeCompare(bLetter);
   });
 
+
   const resetKey = 0;
   return (
     <GradientBackground>
@@ -50,7 +58,7 @@ const MainView = ({ navigation }) => {
           <SearchableList
             searchBarPlaceholder={'Browse all Pals...'}
             data={PalsProfilesStatsAndBreedings}
-            resetKey={resetKey+1}
+            resetKey={resetKey + 1}
             renderItem={({ item, hideCompleted }) => (
               <View style={styles.listContainer}>
                 <TouchableOpacity onPress={() => handleTilePress(item)}>
@@ -59,10 +67,10 @@ const MainView = ({ navigation }) => {
                     tileWidth={tileWidth}
                     tileHeight={tileHeight}
                     spacing={spacing}
-                    captureCount={capturedPals[item.key] || 0} // Adjusted count for captured status
-                    onCapturePress={() => toggleCapture(item.key)} // Use the context function
-                    isCaptured={!!capturedPals[item.key]} // Adjusted check for captured status
-                    hideCompleted={hideCompleted} // Now passing hideCompleted to each PalTile
+                    captureCount={capturedPals[item.key] || 0}
+                    onCapturePress={() => toggleCapture(item.key)}
+                    isCaptured={!!capturedPals[item.key]}
+                    hideCompleted={hideCompleted}
                   />
                 </TouchableOpacity>
               </View>
@@ -82,8 +90,7 @@ const styles = StyleSheet.create({
   },
   appContainer: {
     flex: 1,
-    paddingTop: 20,
-    paddingHorizontal: 10,
+    paddingHorizontal: scale(10), // Apply moderateScale for horizontal padding
   },
   listContainer: {
     flex: 1,

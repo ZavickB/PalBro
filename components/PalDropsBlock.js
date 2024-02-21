@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, Image, FlatList } from 'react-native';
 import { useTheme } from './contexts/ThemeContext';
 import ItemsList from '../assets/data/ItemsList';
+import { scale, verticalScale } from 'react-native-size-matters';
 
 const PalDropsBlock = ({ drops }) => {
   const { currentTheme } = useTheme();
@@ -16,31 +17,31 @@ const PalDropsBlock = ({ drops }) => {
 
   const styles = StyleSheet.create({
     container: {
-      padding: 10,
-      borderRadius: 10,
-      marginVertical: 10,
+      padding: scale(10),
+      borderRadius: scale(10),
+      marginVertical: scale(10),
     },
     dropItem: {
       flexDirection: 'row',
       alignItems: 'center',
-      marginBottom: 10,
-      borderWidth: 1,
+      marginBottom: scale(10),
+      borderWidth: scale(1),
       borderColor: currentTheme.borderColor || 'black',
-      borderRadius: 5,
-      padding: 10,
+      borderRadius: scale(5),
+      padding: scale(10),
       justifyContent: 'space-between',
     },
     dropIcon: {
-      width: 30,
-      height: 30,
-      marginRight: 10,
+      width: scale(30),
+      height: scale(30),
+      marginRight: scale(10),
     },
     dropText: {
       color: currentTheme.textColor,
       flex: 1,
       fontWeight: 'bold',
-      fontSize: 16,
-      marginLeft: 10, // Space between icon and text
+      fontSize: scale(16),
+      marginLeft:scale(10), // Space between icon and text
     },
   });
 

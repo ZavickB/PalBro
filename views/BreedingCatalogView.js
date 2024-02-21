@@ -9,6 +9,7 @@ import PalTile from '../components/PalTile';
 import PagerView from 'react-native-pager-view';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import { findAllBreedingPossibilities } from '../utils/BreedingsCalculator';
+import { scale, verticalScale } from 'react-native-size-matters';
 
 const BreedingCatalogView = ({ navigation }) => {
   const { currentTheme } = useTheme();
@@ -17,12 +18,13 @@ const BreedingCatalogView = ({ navigation }) => {
   const screenWidth = Dimensions.get('window').width;
   const screenHeight = Dimensions.get('window').height;
 
+  // Apply scaling functions to dimensions and spacing
   const tileWidthPercentage = 30;
-  const tileHeightPercentage = 25;
+  const tileHeightPercentage = 20;
   const spacing = 5;
-  const tileWidth = ((screenWidth * tileWidthPercentage) / 100) - spacing;
-  const tileHeight = ((screenHeight * tileHeightPercentage) / 100) - spacing;
-  const TICKER_HEIGHT = 30;
+  const tileWidth = scale((screenWidth * tileWidthPercentage) / 100) - scale(4 * spacing);
+  const tileHeight = verticalScale((screenHeight * tileHeightPercentage) / 100) - scale(spacing);
+  const TICKER_HEIGHT = scale(30);
 
   const [pageIndex, setPageIndex] = useState(0);
   const pageIndexAnimatedValue = useRef(new Animated.Value(0)).current;
@@ -100,7 +102,7 @@ const BreedingCatalogView = ({ navigation }) => {
                 pal={item}
                 tileWidth={tileWidth}
                 tileHeight={tileHeight}
-                spacing={5}
+                spacing={scale(5)}
                 captureCount={capturedPals[item.key] || 0} // Adjusted count for captured status
                 onCapturePress={() => toggleCapture(item.key)}
                 isCaptured={!!capturedPals[item.key]} // Adjusted check for captured status
@@ -146,8 +148,7 @@ const BreedingCatalogView = ({ navigation }) => {
     },
     appContainer: {
       flex: 1,
-      paddingTop: 20,
-      paddingHorizontal: 10,
+      paddingHorizontal: scale(10),
     },
     pagerView: {
       flex: 1,
@@ -155,13 +156,13 @@ const BreedingCatalogView = ({ navigation }) => {
     dotIndicatorContainer: {
       flexDirection: 'row',
       justifyContent: 'center',
-      paddingVertical: 10,
+      paddingVertical: scale(10),
     },
     dot: {
-      height: 8,
-      width: 24,
-      borderRadius: 4,
-      marginHorizontal: 5,
+      height: scale(8),
+      width: scale(24),
+      borderRadius: scale(4),
+      marginHorizontal: scale(5),
       backgroundColor: currentTheme.backgroundColor,
     },
     listContainer: {
@@ -173,7 +174,7 @@ const BreedingCatalogView = ({ navigation }) => {
       overflow: 'hidden',
     },
     tickerText: {
-      fontSize: 20,
+      fontSize: scale(20),
       fontWeight: 'bold',
       color: currentTheme.textColor,
     },

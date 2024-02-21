@@ -9,7 +9,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import SearchBar from './SearchBar';
 import { useCapturedPals } from '../components/contexts/CapturedPalsContext';
 import { Switch } from 'react-native';
-
+import { scale } from 'react-native-size-matters';
 
 
 const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey, searchBarPlaceholder }) => {
@@ -28,35 +28,35 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
   const actions = [
     {
       text: "Filters",
-      icon: <Icon name="filter" size={25} color="#fff" />,
+      icon: <Icon name="filter" size={scale(25)} color="#fff" />,
       name: "bt_filter",
       position: 1,
       color: currentTheme.primaryColor,
     },
     {
       text: "Sort by Name A-Z",
-      icon: <Icon name="sort-alpha-asc" size={25} color="#fff" />,
+      icon: <Icon name="sort-alpha-asc" size={scale(25)} color="#fff" />,
       name: "sort_name_asc",
       position: 2,
       color: currentTheme.primaryColor,
     },
     {
       text: "Sort by Name Z-A",
-      icon: <Icon name="sort-alpha-desc" size={25} color="#fff" />,
+      icon: <Icon name="sort-alpha-desc" size={scale(25)} color="#fff" />,
       name: "sort_name_desc",
       position: 3,
       color: currentTheme.primaryColor,
     },
     {
       text: !hideCompleted ? "Hide Completed Pals" : "Show Completed Pals",
-      icon: <Icon name={!hideCompleted ?"eye-slash" : "eye"} size={25} color="#fff" />,
+      icon: <Icon name={!hideCompleted ?"eye-slash" : "eye"} size={scale(25)} color="#fff" />,
       name: "toggle_hide_completed",
       position: 4,
       color: currentTheme.primaryColor,
     },
     {
       text: "Reset Filters & Sort",
-      icon: <Icon name="refresh" size={25} color="#fff" />,
+      icon: <Icon name="refresh" size={scale(25)} color="#fff" />,
       name: "reset_all",
       position: 5,
       color: currentTheme.primaryColor,
@@ -194,52 +194,52 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between',
-      paddingHorizontal: 10,
-      marginBottom: 20,
+      paddingHorizontal: scale(10),
+      marginBottom: scale(20),
     },
     searchInput: {
       flex: 1,
-      height: 40,
-      borderWidth: 1,
-      borderRadius: 20,
-      paddingHorizontal: 15,
+      height: scale(40),
+      borderWidth: scale(1),
+      borderRadius: scale(20),
+      paddingHorizontal: scale(15),
       backgroundColor: '#fff', // Ensuring input is visibly distinct
       color: currentTheme.textColor, // Text color adapted to theme
     },
     emptyState: {
-      fontSize: 18,
+      fontSize: scale(18),
       textAlign: 'center',
-      marginTop: 20,
+      marginTop: scale(20),
       color: 'gray',
     },
     filterButton: {
-      paddingHorizontal: 10,
-      paddingVertical: 5,
-      marginHorizontal: 10,
-      marginBottom: 10,
-      borderWidth: 1,
+      paddingHorizontal: scale(10),
+      paddingVertical: scale(5),
+      marginHorizontal: scale(10),
+      marginBottom: scale(10),
+      borderWidth: scale(1),
       borderColor: 'gray',
-      borderRadius: 5,
+      borderRadius: scale(5),
       alignSelf: 'flex-end',
     },
     filterModal: {
-      padding: 20,
+      padding: scale(20),
       height: '80%',
       marginTop: '20%',
     },
     closeFilterButton: {
-      padding: 10,
+      padding: scale(10),
     },
     closeButtonText: {
       color: 'blue',
     },
     filterSection: {
-      marginBottom: 20,
+      marginBottom: scale(20),
     },
     sectionTitle: {
-      fontSize: 16,
+      fontSize: scale(16),
       fontWeight: 'bold',
-      marginBottom: 10,
+      marginBottom: scale(10),
       color: currentTheme.textColor,
     },
     filterOptionRow: {
@@ -250,18 +250,18 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
     filterOption: {
       flexDirection: 'row',
       alignItems: 'center',
-      marginBottom: 5,
-      marginRight: 5, // Adjust as needed to fit three items per row comfortably.
+      marginBottom: scale(5),
+      marginRight: scale(5), // Adjust as needed to fit three items per row comfortably.
       flex: 1, // Allows the option to flexibly expand but might need adjustment.
       minWidth: '30%', // Adjusted from 45% to fit 3 items per row.
     },
     icon: {
-      width: 35,
-      height: 35,
-      marginRight: 10,
+      width: scale(35),
+      height: scale(35),
+      marginRight: scale(10),
     },
     switchButton: {
-      marginRight: 5,
+      marginRight: scale(5),
     },
   });
 

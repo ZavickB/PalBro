@@ -16,6 +16,7 @@ import SwitchButton from '../components/SwitchButton';
 import { useCapturedPals } from '../components/contexts/CapturedPalsContext';
 import GradientBackground from '../components/GradientBackground';
 import { findPotentialParentsForPal } from '../utils/BreedingsCalculator';
+import { scale, verticalScale } from 'react-native-size-matters';
 
 const BreedingDetailsView = ({ route, navigation }) => {
   const { palData, palsUsed } = route.params;
@@ -25,7 +26,6 @@ const BreedingDetailsView = ({ route, navigation }) => {
   const [potentialParentsData, setPotentialParentsData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isComponentMounted, setIsComponentMounted] = useState(false);
-  const [potentialParentsCache, setPotentialParentsCache] = useState({ myPals: [], allPals: [] });
 
   // New useEffect to set isComponentMounted to true after mount
   useEffect(() => {
@@ -95,9 +95,11 @@ const BreedingDetailsView = ({ route, navigation }) => {
           <TypeBadge types={[palData.types]} />
         </View>
       </View>
-      <SwitchButton onPress={toggleList} isUsingCapturedPals={isUsingCapturedPals} />
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Potential Parent Couples:</Text>
+      <View style={styles.sectionContainer}>
+        <SwitchButton onPress={toggleList} isUsingCapturedPals={isUsingCapturedPals} />
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>Potential Parent Couples:</Text>
+        </View>
       </View>
     </>
   );
@@ -106,9 +108,15 @@ const BreedingDetailsView = ({ route, navigation }) => {
     container: {
       flex: 1,
     },
+    sectionContainer: {
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      marginBottom: scale(16),
+      paddingHorizontal: scale(16),
+    },
     imageContainer: {
       width: '100%',
-      height: 300,
+      height: verticalScale(300),
       position: 'relative',
     },
     loadingContainer: {
@@ -127,60 +135,60 @@ const BreedingDetailsView = ({ route, navigation }) => {
       left: 0,
       right: 0,
       backgroundColor: 'rgba(0, 0, 0, 0.5)',
-      paddingHorizontal: 16,
-      paddingBottom: 12,
-      paddingTop: 24,
+      paddingHorizontal: scale(16),
+      paddingBottom: scale(12),
+      paddingTop: scale(24),
     },
     sectionPalTitle: {
-      fontSize: 24,
+      fontSize: scale(24),
       fontWeight: 'bold',
       color: currentTheme.palDetailsName,
-      marginBottom: 4,
+      marginBottom: scale(4),
     },
     sectionTitle: {
-      fontSize: 18,
+      fontSize: scale(18),
       fontWeight: 'bold',
-      marginBottom: 8,
+      marginBottom: scale(8),
       color: currentTheme.textColor,
     },
     description: {
-      fontSize: 16,
+      fontSize: scale(16),
       textAlign: 'justify',
       color: currentTheme.textColor,
     },
     parentPairContainer: {
       flexDirection: 'row',
       alignItems: 'center',
-      marginBottom: 8,
-      padding: 8,
+      marginBottom: scale(8),
+      padding: scale(8),
       backgroundColor: currentTheme.palTileBackgroundColor,
-      borderRadius: 8,
+      borderRadius: scale(8),
       shadowColor: '#000',
       shadowOffset: { width: 0, height: 2 },
       shadowOpacity: 0.1,
-      shadowRadius: 4,
-      elevation: 4,
+      shadowRadius: scale(4),
+      elevation: scale(4),
       width: Dimensions.get('window').width - 32, // Subtracting total horizontal padding/margin
-      marginLeft: 16,
-      marginRight: 16,
+      marginLeft: scale(16),
+      marginRight: scale(16),
     },
     parentDetails: {
       flex: 1, // This ensures that the parent details take up equal space on both sides
       alignItems: 'center',
     },
     plusSign: {
-      fontSize: 24,
+      fontSize: scale(24),
       fontWeight: 'bold',
       color: currentTheme.textColor,
-      paddingHorizontal: 10, // Add some padding to ensure there's space around the plus sign
+      paddingHorizontal: scale(10), // Add some padding to ensure there's space around the plus sign
     },
     parentImage: {
-      width: 50,
-      height: 50,
-      borderRadius: 25,
+      width: scale(50),
+      height: scale(50),
+      borderRadius: scale(25),
     },
     parentName: {
-      marginTop: 4,
+      marginTop: scale(4),
       fontWeight: 'bold',
       color: currentTheme.textColor,
     },
@@ -188,21 +196,21 @@ const BreedingDetailsView = ({ route, navigation }) => {
 
   return (
     <GradientBackground>
-      {renderHeader()}
-      {isLoading ? (
-        <View style={styles.loadingContainer}>
-          <ActivityIndicator size="large" color={currentTheme.primaryColor} />
+      <View style={styles.container}>
+            <FlatList
+              data={potentialParentsData}
+              renderItem={renderParentPair}
+              keyExtractor={(_, index) => `parentPair-${index}`}
+              ListHeaderComponent={renderHeader}
+              contentContainerStyle={{ paddingBottom: scale(20)}}
+              ListEmptyComponent={
+                isLoading ? (
+                <View style={styles.loadingContainer}>
+                  <ActivityIndicator size="large" color={currentTheme.primaryColor} />
+                </View>
+              ) : (<Text style={styles.description}>No parent pairs found.</Text>)}
+            />
         </View>
-      ) : (
-        <FlatList
-          data={potentialParentsData}
-          renderItem={renderParentPair}
-          keyExtractor={(_, index) => `parentPair-${index}`}
-          ListHeaderComponentStyle={{ alignItems: 'center' }}
-          contentContainerStyle={{ paddingBottom: 20 }}
-          ListEmptyComponent={<Text style={styles.description}>No parent pairs found.</Text>}
-        />
-      )}
     </GradientBackground>
   );
 };

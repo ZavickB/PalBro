@@ -8,6 +8,7 @@ import { useMemo } from 'react';
 import GradientBackground from '../components/GradientBackground';
 import SearchBar from '../components/SearchBar';
 import PalDropsModal from '../components/PalDropsModal'; // Import the DropsModal component
+import { scale } from 'react-native-size-matters';
 
 const DropsView = ({ route, navigation }) => {
   const { currentTheme } = useTheme();
@@ -67,44 +68,43 @@ const DropsView = ({ route, navigation }) => {
     },
     appContainer: {
       flex: 1,
-      paddingTop: 20,
-      paddingHorizontal: 10,
+      paddingHorizontal: scale(10),
     },
     title: {
-      fontSize: 24,
+      fontSize: scale(24),
       fontWeight: 'bold',
-      marginBottom: 16,
+      marginBottom: scale(16),
       color: currentTheme.textColor,
     },
     dropItem: {
       flexDirection: 'row',
       alignItems: 'center',
-      marginBottom: 10,
+      marginBottom: scale(10),
       borderWidth: 1,
       borderColor: currentTheme.borderColor,
-      borderRadius: 10,
-      padding: 10,
+      borderRadius: scale(10),
+      padding: scale(10),
       backgroundColor: currentTheme.backgroundColor,
       shadowColor: "black",
       shadowOffset: {
-        width: 4,
-        height: 6,
+        width: scale(4),
+        height: scale(6),
       },
       shadowOpacity: 0.8,
-      shadowRadius: 8,
+      shadowRadius: scale(8),
     },
     dropText: {
-      fontSize: 20,
+      fontSize: scale(20),
       color: currentTheme.textColor,
     },
     emptyState: {
-      fontSize: 18,
+      fontSize: scale(18),
       textAlign: 'center',
-      marginTop: 20,
+      marginTop: scale(20),
       color: 'gray',
     },
     loadingIndicator: {
-      marginTop: 20,
+      marginTop: scale(20),
     },
   });
 
@@ -137,7 +137,7 @@ const DropsView = ({ route, navigation }) => {
                 <View style={styles.dropItem}>
                   <Image
                     source={ItemsList.find((itemObject) => itemObject.name === formatName(item))?.icon}
-                    style={{ width: 50, height: 50, marginRight: 10 }}
+                    style={{ width: scale(50), height: scale(50), marginRight: scale(10) }}
                   />
                   <Text style={styles.dropText}>{formatName(item)}</Text>
                 </View>

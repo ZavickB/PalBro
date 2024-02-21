@@ -3,6 +3,7 @@
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 import { useTheme } from './contexts/ThemeContext';
+import { scale } from 'react-native-size-matters';
 
 const SwitchButton = ({ onPress, isUsingCapturedPals }) => {
   const { currentTheme } = useTheme();
@@ -10,10 +11,10 @@ const SwitchButton = ({ onPress, isUsingCapturedPals }) => {
   const styles = StyleSheet.create({
     button: {
       backgroundColor: currentTheme.modalContentBackground, // You can change the color as needed
-      padding: 10,
-      borderRadius: 5,
+      padding: scale(10),
+      borderRadius: scale(5),
       alignItems: 'center',
-      marginVertical: 10,
+      marginVertical: scale(10),
     },
     buttonText: {
       color: currentTheme.textColor,

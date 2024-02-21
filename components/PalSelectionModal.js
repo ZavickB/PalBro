@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Modal, View, Text, FlatList, TouchableOpacity, Image, StyleSheet, Dimensions } from 'react-native';
 import { useTheme } from './contexts/ThemeContext'; // Import the useTheme hook
 import TypeBadge from './TypeBadge';
+import { scale } from 'react-native-size-matters';
 
 const screenHeight = Dimensions.get('window').height;
 
@@ -13,20 +14,20 @@ const MemoizedPalsList = React.memo(({ data, handlePalSelection }) => {
     pickerItem: {
       flexDirection: 'row',
       alignItems: 'center',
-      paddingHorizontal: 10,
-      paddingVertical: 10,
+      paddingHorizontal: scale(10),
+      paddingVertical: scale(10),
       backgroundColor: currentTheme.backgroundColor, // Example background color
     },
     pickerItemImage: {
-      width: 35,
-      height: 35,
+      width: scale(35),
+      height: scale(35),
       resizeMode: 'cover',
-      marginRight: 8,
+      marginRight: scale(8),
     },
     pickerItemText: {
       flex: 1, // Allow text to fill the available space but not overflow
-      fontSize: 16,
-      marginRight: 10, // Add some margin to the right if needed
+      fontSize: scale(16),
+      marginRight: scale(10), // Add some margin to the right if needed
       // Handling text overflow
       color: currentTheme.textColor, 
       flexDirection: 'row',
@@ -36,7 +37,7 @@ const MemoizedPalsList = React.memo(({ data, handlePalSelection }) => {
       flexDirection: 'row',
       flexWrap: 'wrap', // Allow badges to wrap to next line if needed
       justifyContent: 'flex-end', // Align badges to the right
-      marginLeft: 15, // Ensure there's space between text and badges
+      marginLeft: scale(15), // Ensure there's space between text and badges
       flex: 1, // Take up remaining space
     },
   });
@@ -77,23 +78,23 @@ const PalSelectionModal = ({ isModalVisible, setModalVisible, PalsProfilesStatsA
     },
     modalContent: {
       backgroundColor: currentTheme.backgroundColor, // Dynamic background color based on theme
-      padding: 20,
-      borderRadius: 10,
+      padding: scale(20),
+      borderRadius: scale(10),
       width: '80%',
       maxHeight: screenHeight / 2, // Limit height for scrollability
     },
     modalTitle: {
-      fontSize: 18,
+      fontSize: scale(18),
       fontWeight: 'bold',
-      marginBottom: 10,
+      marginBottom: scale(10),
       color: currentTheme.textColor, // Dynamic text color based on theme
     },
     closeButton: {
       backgroundColor: currentTheme.primaryColor, // Dynamic button color based on theme
-      borderRadius: 5,
-      padding: 10,
+      borderRadius: scale(5),
+      padding: scale(10),
       alignItems: 'center',
-      marginTop: 10,
+      marginTop: scale(10),
     },
     closeButtonText: {
       color: 'white',

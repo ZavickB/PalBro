@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, Image, StyleSheet, ActivityIndicator, Modal, TouchableOpacity, ScrollView, Dimensions } from 'react-native';
 import { useTheme } from './contexts/ThemeContext';
+import { scale, verticalScale } from 'react-native-size-matters';
 
 
 const PalDropsModal = ({ visible, onClose, item, pals, loading }) => {
@@ -34,31 +35,32 @@ const PalDropsModal = ({ visible, onClose, item, pals, loading }) => {
     },
     modalContent: {
       backgroundColor: currentTheme.backgroundColor,
-      padding: 20,
-      borderRadius: 10,
+      padding: scale(20),
+      borderRadius: scale(10),
       width: '80%',
+      maxHeight: screenHeight * 0.5,
     },
     modalTitle: {
-      fontSize: 18,
+      fontSize: scale(18),
       fontWeight: 'bold',
-      marginBottom: 10,
+      marginBottom: scale(10),
       color: currentTheme.textColor,
     },
     listContainer: {
-      maxHeight: screenHeight / 2,
-      marginBottom: 10,
+      maxHeight: screenHeight * 0.5,
+      marginBottom: scale(10),
     },
     modalText: {
-      fontSize: 16,
+      fontSize: scale(16),
       textAlign: 'justify',
       color: currentTheme.textColor, // Set text color based on the theme
     },
     closeButton: {
       backgroundColor: currentTheme.primaryColor,
-      borderRadius: 5,
-      padding: 10,
+      borderRadius: scale(5),
+      padding: scale(10),
       alignItems: 'center',
-      marginTop: 10,
+      marginTop: scale(10),
     },
     closeButtonText: {
       color: 'white',
@@ -67,13 +69,13 @@ const PalDropsModal = ({ visible, onClose, item, pals, loading }) => {
     palListItem: {
       flexDirection: 'row',
       alignItems: 'center',
-      paddingHorizontal: 10,
-      paddingVertical: 10,
+      paddingHorizontal: scale(10),
+      paddingVertical: scale(10),
     },
     palImage: {
-      width: 35,
-      height: 35,
-      marginRight: 8,
+      width: scale(35),
+      height: scale(35),
+      marginRight: scale(8),
     },
 
   });
