@@ -9,22 +9,19 @@ import PalTile from '../components/PalTile';
 import PagerView from 'react-native-pager-view';
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings';
 import { findAllBreedingPossibilities } from '../utils/BreedingsCalculator';
-import { scale, verticalScale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 const BreedingCatalogView = ({ navigation }) => {
   const { currentTheme } = useTheme();
   const { capturedPals, toggleCapture } = useCapturedPals();
 
-  const screenWidth = Dimensions.get('window').width;
-  const screenHeight = Dimensions.get('window').height;
+  const spacing = responsiveScale(5);
 
-  // Apply scaling functions to dimensions and spacing
-  const tileWidthPercentage = 30;
-  const tileHeightPercentage = 20;
-  const spacing = 5;
-  const tileWidth = scale((screenWidth * tileWidthPercentage) / 100) - scale(4 * spacing);
-  const tileHeight = verticalScale((screenHeight * tileHeightPercentage) / 100) - scale(spacing);
-  const TICKER_HEIGHT = scale(30);
+  // Calculate tile width and height using responsiveScale and verticalScale respectively
+  const tileWidth = responsiveScale(120, 'width') - spacing;
+  const tileHeight =  responsiveScale(221, 'height') - spacing;
+  
+  const TICKER_HEIGHT = responsiveScale(30, "height");
 
   const [pageIndex, setPageIndex] = useState(0);
   const pageIndexAnimatedValue = useRef(new Animated.Value(0)).current;
@@ -74,7 +71,7 @@ const BreedingCatalogView = ({ navigation }) => {
                 pal={item}
                 tileWidth={tileWidth}
                 tileHeight={tileHeight}
-                spacing={5}
+                spacing={spacing}
                 captureCount={capturedPals[item.key] || 0} // Adjusted count for captured status
                 onCapturePress={() => toggleCapture(item.key)}
                 isCaptured={!!capturedPals[item.key]} // Adjusted check for captured status
@@ -102,7 +99,7 @@ const BreedingCatalogView = ({ navigation }) => {
                 pal={item}
                 tileWidth={tileWidth}
                 tileHeight={tileHeight}
-                spacing={scale(5)}
+                spacing={spacing}
                 captureCount={capturedPals[item.key] || 0} // Adjusted count for captured status
                 onCapturePress={() => toggleCapture(item.key)}
                 isCaptured={!!capturedPals[item.key]} // Adjusted check for captured status
@@ -148,7 +145,7 @@ const BreedingCatalogView = ({ navigation }) => {
     },
     appContainer: {
       flex: 1,
-      paddingHorizontal: scale(10),
+      paddingHorizontal: responsiveScale(10, 'width'),
     },
     pagerView: {
       flex: 1,
@@ -156,13 +153,13 @@ const BreedingCatalogView = ({ navigation }) => {
     dotIndicatorContainer: {
       flexDirection: 'row',
       justifyContent: 'center',
-      paddingVertical: scale(10),
+      paddingVertical: responsiveScale(10, 'height'),
     },
     dot: {
-      height: scale(8),
-      width: scale(24),
-      borderRadius: scale(4),
-      marginHorizontal: scale(5),
+      height: responsiveScale(8, 'height'),
+      width: responsiveScale(24, 'width'),
+      borderRadius: responsiveScale(4),
+      marginHorizontal: responsiveScale(5, 'width'),
       backgroundColor: currentTheme.backgroundColor,
     },
     listContainer: {
@@ -174,7 +171,7 @@ const BreedingCatalogView = ({ navigation }) => {
       overflow: 'hidden',
     },
     tickerText: {
-      fontSize: scale(20),
+      fontSize: responsiveScale(20),
       fontWeight: 'bold',
       color: currentTheme.textColor,
     },

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, Image, Text } from 'react-native';
 import { useTheme } from './contexts/ThemeContext'; // Import the useTheme hook
-import { scale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 const SuitabilityBlock = ({ suitabilities }) => {
   const { currentTheme } = useTheme();
@@ -20,26 +20,26 @@ const SuitabilityBlock = ({ suitabilities }) => {
     container: {
       flexDirection: 'column',
       alignItems: 'flex-start',
-      paddingHorizontal: scale(10),
+      paddingHorizontal: responsiveScale(10, 'width'),
     },
     suitabilityContainer: {
       flexDirection: 'column',
       alignItems: 'flex-start',
-      marginBottom: scale(10),
+      marginBottom: responsiveScale(10, 'height'),
       width: "100%", // Fixed width for the rectangles
     },
     rectangle: {
       borderWidth: 1,
       borderColor: currentTheme.borderColor,
-      padding: scale(10),
-      borderRadius: scale(5),
+      padding: responsiveScale(10),
+      borderRadius: responsiveScale(5),
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between',
       width: '100%',
     },
     suitabilityName: {
-      marginLeft: scale(10),
+      marginLeft: responsiveScale(10, 'width'),
       color: currentTheme.textColor,
       fontWeight: 'bold',
     },
@@ -49,8 +49,8 @@ const SuitabilityBlock = ({ suitabilities }) => {
       color: currentTheme.textColor,
     },
     icon: {
-      width: scale(30),
-      height: scale(30),
+      width: responsiveScale(30),
+      height: responsiveScale(30),
     },
   });
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, FlatList } from 'react-native';
 import { useTheme } from './contexts/ThemeContext';
-import { scale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 const PotentialCoupleCard = ({ couple }) => {
   const { Probability, parent1, parent2 } = couple;
@@ -11,45 +11,45 @@ const PotentialCoupleCard = ({ couple }) => {
 const styles = StyleSheet.create({
   card: {
     backgroundColor: currentTheme.palTileBackgroundColor,
-    borderRadius: scale(8),
-    padding: scale(16),
-    marginBottom: scale(10),
+    borderRadius: responsiveScale(8),
+    padding: responsiveScale(16),
+    marginBottom: responsiveScale(10, 'height'),
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: scale(2) },
+    shadowOffset: { width: 0, height: responsiveScale(2, 'height') },
     shadowOpacity: 0.23,
     shadowRadius: 2.62,
     elevation: 4,
   },
   probabilityText: {
-    fontSize: scale(18),
+    fontSize: responsiveScale(18),
     fontWeight: 'bold',
-    marginBottom: scale(10),
+    marginBottom: responsiveScale(10, 'height'),
     color: currentTheme.textColor,
   },
   parentContainer: {
-    marginBottom: scale(8),
+    marginBottom: responsiveScale(8, 'height'),
   },
   parentLabel: {
-    fontSize: scale(16),
+    fontSize: responsiveScale(16),
     fontWeight: 'bold',
     color: currentTheme.textColor,
   },
   detailText: {
-    fontSize: scale(14),
+    fontSize: responsiveScale(14),
     color: currentTheme.textColor,
   },
   passivesContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    marginTop: scale(4),
+    marginTop: responsiveScale(4, 'height'),
   },
   passiveSkill: {
     backgroundColor: currentTheme.backgroundColor,
-    borderRadius: scale(15),
-    paddingVertical: scale(4),
-    paddingHorizontal: scale(8),
-    margin: scale(2),
-    fontSize: scale(12),
+    borderRadius: responsiveScale(15),
+    paddingVertical: responsiveScale(4, 'height'),
+    paddingHorizontal: responsiveScale(8, 'width'),
+    margin: responsiveScale(2),
+    fontSize: responsiveScale(12),
     color: currentTheme.textColor,
   },
 });

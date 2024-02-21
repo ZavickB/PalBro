@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, Image, FlatList } from 'react-native';
 import { useTheme } from './contexts/ThemeContext';
 import ItemsList from '../assets/data/ItemsList';
-import { scale, verticalScale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 const PalDropsBlock = ({ drops }) => {
   const { currentTheme } = useTheme();
@@ -17,31 +17,31 @@ const PalDropsBlock = ({ drops }) => {
 
   const styles = StyleSheet.create({
     container: {
-      padding: scale(10),
-      borderRadius: scale(10),
-      marginVertical: scale(10),
+      padding: responsiveScale(10),
+      borderRadius: responsiveScale(10),
+      marginVertical: responsiveScale(10, 'height'),
     },
     dropItem: {
       flexDirection: 'row',
       alignItems: 'center',
-      marginBottom: scale(10),
-      borderWidth: scale(1),
+      marginBottom: responsiveScale(10, 'height'),
+      borderWidth: responsiveScale(1),
       borderColor: currentTheme.borderColor || 'black',
-      borderRadius: scale(5),
-      padding: scale(10),
+      borderRadius: responsiveScale(5),
+      padding: responsiveScale(10),
       justifyContent: 'space-between',
     },
     dropIcon: {
-      width: scale(30),
-      height: scale(30),
-      marginRight: scale(10),
+      width: responsiveScale(30),
+      height: responsiveScale(30),
+      marginRight: responsiveScale(10, 'width'),
     },
     dropText: {
       color: currentTheme.textColor,
       flex: 1,
       fontWeight: 'bold',
-      fontSize: scale(16),
-      marginLeft:scale(10), // Space between icon and text
+      fontSize: responsiveScale(16),
+      marginLeft:responsiveScale(10, 'width'), // Space between icon and text
     },
   });
 

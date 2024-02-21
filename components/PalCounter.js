@@ -2,22 +2,15 @@ import React, { useContext, useState } from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet, ActivityIndicator, Dimensions } from 'react-native';
 import { useCapturedPals } from '../components/contexts/CapturedPalsContext'; // Ensure correct import path
 import { useTheme } from '../components/contexts/ThemeContext'; // Ensure correct import path
-import { scale, verticalScale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 const PalCounter = ({ palKey }) => {
   const { capturedPals, setCaptureCount } = useCapturedPals();
-  const [isLoading, setIsLoading] = useState(false);
   const { currentTheme } = useTheme();
   const count = capturedPals[palKey] || 0;
 
-  const handleIconClick = async (newCount) => {
-    setIsLoading(true);
-    try {
-      await setCaptureCount(palKey, newCount);
-    } catch (error) {
-      console.error('Failed to set capture count:', error);
-    }
-    setIsLoading(false);
+  const handleIconClick = (newCount) => {
+    setCaptureCount(palKey, newCount);
   };
 
   const renderIcons = () => {
@@ -25,7 +18,7 @@ const PalCounter = ({ palKey }) => {
     for (let i = 1; i <= 10; i++) {
       const isColored = i <= count;
       icons.push(
-        <TouchableOpacity key={i} onPress={() => handleIconClick(i)} disabled={isLoading} style={styles.iconWrapper}>
+        <TouchableOpacity key={i} onPress={() => handleIconClick(i)} style={styles.iconWrapper}>
           <Image
             source={require('../assets/capture_icon.png')}
             style={[styles.icon, isColored ? styles.iconColored : styles.iconGray]}
@@ -38,23 +31,23 @@ const PalCounter = ({ palKey }) => {
 
   const styles = StyleSheet.create({
     container: {
-      padding: scale(20),
-      paddingTop: scale(10),
+      padding: responsiveScale(20),
+      paddingTop: responsiveScale(10, 'height'),
       alignItems: 'center',
       backgroundColor: currentTheme.progressBarBackgroundColor,
-      borderRadius: scale(10),
+      borderRadius: responsiveScale(10),
       shadowColor: '#000',
       shadowOffset: {
         width: 0,
-        height: scale(2),
+        height: responsiveScale(2, 'height'),
       },
       shadowOpacity: 0.25, 
-      shadowRadius: scale(3.84),
+      shadowRadius: responsiveScale(3.84),
       elevation: 5,
       width: '100%',
     },
     header: {
-      fontSize: scale(18),
+      fontSize: responsiveScale(18),
       fontWeight: 'bold',
       color: currentTheme.textColor,
       alignSelf: 'flex-start', // Align to the start of the flex container
@@ -69,17 +62,17 @@ const PalCounter = ({ palKey }) => {
       flex: 1, // Each icon wrapper will take equal space
       alignItems: 'center', // Center each icon horizontally
       justifyContent: 'center', // Center each icon vertically
-      marginHorizontal: scale(2), // Optional: add some space between icons
+      marginHorizontal: responsiveScale(2, 'width'), // Optional: add some space between icons
     },
     icon: {
       // Adjust the size as required, you can remove width and height to let flex handle the sizing
       resizeMode: 'contain', // Ensure the entire icon is visible
     },
     countDisplay: {
-      fontSize: scale(18),
+      fontSize: responsiveScale(18),
       fontWeight: 'bold',
       color: currentTheme.textColor, // Assuming white text color as per the design
-      marginHorizontal: scale(10),
+      marginHorizontal: responsiveScale(10, 'width'),
     },
     iconColored: {
       tintColor: currentTheme.primaryColor, // Color for selected icons
@@ -91,7 +84,7 @@ const PalCounter = ({ palKey }) => {
       flexDirection: 'row',
       alignItems: 'center',
       width: '100%', // Full width of the container
-      marginVertical: scale(10), // Space above and below the progress bar
+      marginVertical: responsiveScale(10, 'height'), // Space above and below the progress bar
     },
   });
 
@@ -104,7 +97,6 @@ const PalCounter = ({ palKey }) => {
         </View>
         <Text style={styles.countDisplay}>{`${count}/10`}</Text>
       </View>
-      {isLoading && <ActivityIndicator size="small" color="#0000ff" />}
     </View>
   );
 };

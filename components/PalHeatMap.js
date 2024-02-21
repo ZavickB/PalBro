@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Dimensions, View, Image, StyleSheet, ActivityIndicator, Switch, Text } from 'react-native'; // Import Text from react-native
 import { useTheme } from './contexts/ThemeContext';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { scale, verticalScale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 
 export const PalHeatMap = ({ palData }) => {
@@ -24,7 +24,7 @@ export const PalHeatMap = ({ palData }) => {
   const styles = StyleSheet.create({
     mapContainer: {
       position: 'relative',
-      width: 0.9 * screenWidth , // Use scale() for width-related dimensions
+      width: 0.9 * screenWidth , // Use responsiveScale() for width-related dimensions
       height: 0.9 * screenWidth,
     },
     mapImage: {
@@ -38,14 +38,14 @@ export const PalHeatMap = ({ palData }) => {
     },
     toggleContainer: {
       position: 'absolute',
-      top: scale(10),
-      right: scale(10),
+      top: responsiveScale(10, 'height'),
+      right: responsiveScale(10, 'width'),
       flexDirection: 'row',
       alignItems: 'center',
     },
     notAvailableText: { // New style for the not available text
       textAlign: 'center',
-      marginTop: scale(20),
+      marginTop: responsiveScale(20, 'height'),
     },
   });
 
@@ -66,7 +66,7 @@ export const PalHeatMap = ({ palData }) => {
         <ActivityIndicator style={styles.activityIndicator} />
       )}
       <View style={styles.toggleContainer}>
-        <Icon name="sunny" size={scale(24)} color="white" />
+        <Icon name="sunny" size={responsiveScale(24)} color="white" />
         <Switch
           trackColor={{ false: "#767577", true: "#81b0ff" }}
           thumbColor={nightMode ? "#f5dd4b" : "#f4f3f4"}
@@ -75,7 +75,7 @@ export const PalHeatMap = ({ palData }) => {
           value={nightMode}
           disabled={switchDisabled}
         />
-        <Icon name="moon" size={scale(24)} color="white" />
+        <Icon name="moon" size={responsiveScale(24)} color="white" />
       </View>
     </View>
   );

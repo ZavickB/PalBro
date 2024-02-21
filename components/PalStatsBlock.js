@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { useTheme } from './contexts/ThemeContext';
-import { scale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 const PalStatsBlock = ({ stats }) => {
   const { currentTheme } = useTheme();
@@ -37,7 +37,7 @@ const PalStatsBlock = ({ stats }) => {
 
   const styles = StyleSheet.create({
     container: {
-      marginBottom: scale(10),
+      marginBottom: responsiveScale(10),
     },
     columnsContainer: {
       flexDirection: 'row',
@@ -46,11 +46,11 @@ const PalStatsBlock = ({ stats }) => {
     },
     statColumn: {
       flexBasis: '49%',
-      padding: scale(5),
-      marginBottom: scale(5),
-      borderWidth: scale(1),
+      padding: responsiveScale(5),
+      marginBottom: responsiveScale(5, 'height'),
+      borderWidth: responsiveScale(1),
       borderColor: currentTheme.borderColor,
-      borderRadius: scale(8),
+      borderRadius: responsiveScale(8),
     },
     columnWrapper: {
       flexDirection: 'row',
@@ -58,18 +58,18 @@ const PalStatsBlock = ({ stats }) => {
       alignItems: 'center',
     },
     emojiColumn: {
-      marginRight: scale(10),
+      marginRight: responsiveScale(10, 'width'),
     },
     statEmoji: {
-      fontSize: scale(24),
+      fontSize: responsiveScale(24),
     },
     statValue: {
-      fontSize: scale(16),
+      fontSize: responsiveScale(16),
       fontWeight: 'bold',
       color: currentTheme.textColor,
     },
     statLabel: {
-      fontSize: scale(14),
+      fontSize: responsiveScale(14),
       color: currentTheme.textColor,
     },
   });

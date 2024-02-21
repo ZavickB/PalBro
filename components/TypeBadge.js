@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { scale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 const capitalize = (str) => {
   if (typeof str !== 'string' || str.length === 0) return ''; // Check if str is not a string or is an empty string
@@ -44,14 +44,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   badge: {
-    paddingHorizontal: scale(8),
-    paddingVertical: scale(4),
-    borderRadius: scale(8),
-    marginHorizontal:scale(4),
+    paddingHorizontal: responsiveScale(8, "width"),
+    paddingVertical: responsiveScale(4, "height"),
+    borderRadius: responsiveScale(8),
+    marginHorizontal:responsiveScale(4, "width"),
   },
   text: {
     color: 'white',
     fontWeight: 'bold',
+    fontSize: responsiveScale(14),
   },
 });
 

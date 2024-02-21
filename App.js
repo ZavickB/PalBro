@@ -53,11 +53,11 @@ function BreedingStack() {
 export default function App() {
 
   // Uncomment this block before building the app
-  useEffect(() => {
-    setTimeout(() => {
-      SplashScreen.hide();
-    }, 2000),
-  []});
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     SplashScreen.hide();
+  //   }, 2000),
+  // []});
 
   return (
     <ThemeProvider>

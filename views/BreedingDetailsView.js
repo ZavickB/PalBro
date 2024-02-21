@@ -16,7 +16,7 @@ import SwitchButton from '../components/SwitchButton';
 import { useCapturedPals } from '../components/contexts/CapturedPalsContext';
 import GradientBackground from '../components/GradientBackground';
 import { findPotentialParentsForPal } from '../utils/BreedingsCalculator';
-import { scale, verticalScale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 const BreedingDetailsView = ({ route, navigation }) => {
   const { palData, palsUsed } = route.params;
@@ -111,12 +111,12 @@ const BreedingDetailsView = ({ route, navigation }) => {
     sectionContainer: {
       alignItems: 'center',
       justifyContent: 'space-between',
-      marginBottom: scale(16),
-      paddingHorizontal: scale(16),
+      marginBottom: responsiveScale(16, "height"),
+      paddingHorizontal: responsiveScale(16, "width"),
     },
     imageContainer: {
       width: '100%',
-      height: verticalScale(300),
+      height: responsiveScale(300, "height"),
       position: 'relative',
     },
     loadingContainer: {
@@ -135,60 +135,59 @@ const BreedingDetailsView = ({ route, navigation }) => {
       left: 0,
       right: 0,
       backgroundColor: 'rgba(0, 0, 0, 0.5)',
-      paddingHorizontal: scale(16),
-      paddingBottom: scale(12),
-      paddingTop: scale(24),
+      paddingHorizontal: responsiveScale(16, "width"),
+      paddingBottom: responsiveScale(12, "height"),
+      paddingTop: responsiveScale(24, "height"),
     },
     sectionPalTitle: {
-      fontSize: scale(24),
+      fontSize: responsiveScale(24),
       fontWeight: 'bold',
       color: currentTheme.palDetailsName,
-      marginBottom: scale(4),
+      marginBottom: responsiveScale(4, "height"),
     },
     sectionTitle: {
-      fontSize: scale(18),
+      fontSize: responsiveScale(18),
       fontWeight: 'bold',
-      marginBottom: scale(8),
+      marginBottom: responsiveScale(8, "height"),
       color: currentTheme.textColor,
     },
     description: {
-      fontSize: scale(16),
+      fontSize: responsiveScale(16),
       textAlign: 'justify',
       color: currentTheme.textColor,
     },
     parentPairContainer: {
       flexDirection: 'row',
       alignItems: 'center',
-      marginBottom: scale(8),
-      padding: scale(8),
+      marginBottom: responsiveScale(8, "height"),
+      padding: responsiveScale(8),
       backgroundColor: currentTheme.palTileBackgroundColor,
-      borderRadius: scale(8),
+      borderRadius: responsiveScale(8),
       shadowColor: '#000',
       shadowOffset: { width: 0, height: 2 },
       shadowOpacity: 0.1,
-      shadowRadius: scale(4),
-      elevation: scale(4),
+      shadowRadius: responsiveScale(4),
+      elevation: responsiveScale(4),
       width: Dimensions.get('window').width - 32, // Subtracting total horizontal padding/margin
-      marginLeft: scale(16),
-      marginRight: scale(16),
+      marginHorizontal: responsiveScale(16, "width"),
     },
     parentDetails: {
       flex: 1, // This ensures that the parent details take up equal space on both sides
       alignItems: 'center',
     },
     plusSign: {
-      fontSize: scale(24),
+      fontSize: responsiveScale(24),
       fontWeight: 'bold',
       color: currentTheme.textColor,
-      paddingHorizontal: scale(10), // Add some padding to ensure there's space around the plus sign
+      paddingHorizontal: responsiveScale(10, "width"), // Add some padding to ensure there's space around the plus sign
     },
     parentImage: {
-      width: scale(50),
-      height: scale(50),
-      borderRadius: scale(25),
+      width: responsiveScale(50),
+      height: responsiveScale(50),
+      borderRadius: responsiveScale(25),
     },
     parentName: {
-      marginTop: scale(4),
+      marginTop: responsiveScale(4, "height"),
       fontWeight: 'bold',
       color: currentTheme.textColor,
     },
@@ -202,7 +201,7 @@ const BreedingDetailsView = ({ route, navigation }) => {
               renderItem={renderParentPair}
               keyExtractor={(_, index) => `parentPair-${index}`}
               ListHeaderComponent={renderHeader}
-              contentContainerStyle={{ paddingBottom: scale(20)}}
+              contentContainerStyle={{ paddingBottom: responsiveScale(20)}}
               ListEmptyComponent={
                 isLoading ? (
                 <View style={styles.loadingContainer}>

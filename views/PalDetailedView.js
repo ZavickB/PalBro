@@ -13,7 +13,7 @@ import PalDropsBlock from '../components/PalDropsBlock';
 import GradientBackground from '../components/GradientBackground';
 import PalCounter from '../components/PalCounter';
 import PalHeatMap from '../components/PalHeatMap';
-import { scale, verticalScale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 const PalDetailedView = ({ route, navigation }) => {
   const { palData } = route.params;
@@ -120,7 +120,7 @@ const PalDetailedView = ({ route, navigation }) => {
     },
     imageContainer: {
       width: '100%',
-      height: verticalScale(300),
+      height: responsiveScale(300, "height"),
       position: 'relative',
     },
     image: {
@@ -129,8 +129,8 @@ const PalDetailedView = ({ route, navigation }) => {
       resizeMode: 'cover',
     },
     section: {
-      paddingHorizontal: scale(16),
-      paddingVertical: scale(12),
+      paddingHorizontal: responsiveScale(16, "width"),
+      paddingVertical: responsiveScale(12, "height"),
     },
     overlayText: {
       position: 'absolute',
@@ -138,24 +138,24 @@ const PalDetailedView = ({ route, navigation }) => {
       left: 0,
       right: 0,
       backgroundColor: 'rgba(0, 0, 0, 0.5)',
-      paddingHorizontal: scale(16),
-      paddingBottom: scale(12),
-      paddingTop: scale(24),
+      paddingHorizontal: responsiveScale(16, "width"),
+      paddingBottom: responsiveScale(12, "height"),
+      paddingTop: responsiveScale(24, "height"),
     },
     sectionPalTitle: {
-      fontSize: scale(24),
+      fontSize: responsiveScale(24),
       fontWeight: 'bold',
       color: currentTheme.palDetailsName,
-      marginBottom: scale(4),
+      marginBottom: responsiveScale(4, "height"),
     },
     sectionTitle: {
-      fontSize: scale(18),
+      fontSize: responsiveScale(18),
       fontWeight: 'bold',
-      marginBottom: scale(8),
+      marginBottom: responsiveScale(8, "height"),
       color: currentTheme.textColor,
     },
     description: {
-      fontSize: scale(16),
+      fontSize: responsiveScale(16),
       textAlign: 'justify',
       color: currentTheme.textColor,
     },
@@ -166,18 +166,18 @@ const PalDetailedView = ({ route, navigation }) => {
       color: currentTheme.primaryColor,
     },
     specialCapacitySection: {
-      paddingHorizontal: scale(16),
-      paddingVertical: scale(12),
-      marginBottom: scale(12),
+      paddingHorizontal: responsiveScale(16, "width"),
+      paddingVertical: responsiveScale(12, "height"),
+      marginBottom: responsiveScale(12, "height"),
       backgroundColor: "transparent", // Example background color
-      borderRadius: scale(8), // Rounded corners
-      borderWidth: scale(1),
+      borderRadius: responsiveScale(8), // Rounded corners
+      borderWidth: responsiveScale(1),
       borderColor: currentTheme.borderColor, // Light border for definition
     },
     specialCapacityTitle: {
-      fontSize: scale(18),
+      fontSize: responsiveScale(18),
       fontWeight: 'bold',
-      marginBottom: scale(8),
+      marginBottom: responsiveScale(8, "height"),
       color: '#333', // Example title color
     },
     specialCapacityContent: {
@@ -185,17 +185,17 @@ const PalDetailedView = ({ route, navigation }) => {
       alignItems: 'center',
     },
     specialCapacityIcon: {
-      width: scale(30),
-      height: verticalScale(30),
-      marginRight: scale(10),
+      width: responsiveScale(30, "width"),
+      height: responsiveScale(30, "height"),
+      marginRight: responsiveScale(10, "width"),
     },
     specialCapacityName: {
-      fontSize: scale(16),
+      fontSize: responsiveScale(16),
       fontWeight: 'bold',
       color: '#333',
     },
     specialCapacityDescription: {
-      fontSize: scale(14),
+      fontSize: responsiveScale(14),
       color: '#666', // Lighter text for the description
     },
     

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, Image, StyleSheet, ActivityIndicator, Modal, TouchableOpacity, ScrollView, Dimensions } from 'react-native';
 import { useTheme } from './contexts/ThemeContext';
-import { scale, verticalScale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 
 const PalDropsModal = ({ visible, onClose, item, pals, loading }) => {
@@ -35,32 +35,32 @@ const PalDropsModal = ({ visible, onClose, item, pals, loading }) => {
     },
     modalContent: {
       backgroundColor: currentTheme.backgroundColor,
-      padding: scale(20),
-      borderRadius: scale(10),
+      padding: responsiveScale(20),
+      borderRadius: responsiveScale(10),
       width: '80%',
       maxHeight: screenHeight * 0.5,
     },
     modalTitle: {
-      fontSize: scale(18),
+      fontSize: responsiveScale(18),
       fontWeight: 'bold',
-      marginBottom: scale(10),
+      marginBottom: responsiveScale(10, 'height'),
       color: currentTheme.textColor,
     },
     listContainer: {
       maxHeight: screenHeight * 0.5,
-      marginBottom: scale(10),
+      marginBottom: responsiveScale(10, 'height'),
     },
     modalText: {
-      fontSize: scale(16),
+      fontSize: responsiveScale(16),
       textAlign: 'justify',
       color: currentTheme.textColor, // Set text color based on the theme
     },
     closeButton: {
       backgroundColor: currentTheme.primaryColor,
-      borderRadius: scale(5),
-      padding: scale(10),
+      borderRadius: responsiveScale(5),
+      padding: responsiveScale(10),
       alignItems: 'center',
-      marginTop: scale(10),
+      marginTop: responsiveScale(10, 'height'),
     },
     closeButtonText: {
       color: 'white',
@@ -69,13 +69,13 @@ const PalDropsModal = ({ visible, onClose, item, pals, loading }) => {
     palListItem: {
       flexDirection: 'row',
       alignItems: 'center',
-      paddingHorizontal: scale(10),
-      paddingVertical: scale(10),
+      paddingHorizontal: responsiveScale(10, 'width'),
+      paddingVertical: responsiveScale(10, 'height'),
     },
     palImage: {
-      width: scale(35),
-      height: scale(35),
-      marginRight: scale(8),
+      width: responsiveScale(35),
+      height: responsiveScale(35),
+      marginRight: responsiveScale(8),
     },
 
   });

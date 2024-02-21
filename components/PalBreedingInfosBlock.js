@@ -6,7 +6,7 @@ import PalSelectionModal from './PalSelectionModal';
 import { findSpecificBreeding } from '../utils/BreedingsCalculator'; // Import the utility functions
 import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings'; // Import the PalsProfilesStatsAndBreedings data
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { scale, verticalScale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 // Define the new component
 const PalBreedingInfosBlock = ({ palData, navigation }) => {
@@ -42,61 +42,61 @@ const PalBreedingInfosBlock = ({ palData, navigation }) => {
       alignItems: 'top',
       justifyContent: 'space-around',
       width: '100%',
-      marginTop: scale(20),
+      marginTop: responsiveScale(20, 'height'),
     },
     palInfo: {
       alignItems: 'center',
-      marginHorizontal: scale(10),
-      padding: scale(5),
+      marginHorizontal: responsiveScale(10, 'width'),
+      padding: responsiveScale(5),
     },
     palImage: {
-      width: scale(80),
-      height: scale(80),
+      width: responsiveScale(80),
+      height: responsiveScale(80),
       resizeMode: 'cover',
     },
     plusSign: {
-      fontSize: scale(24),
+      fontSize: responsiveScale(24),
       position: 'relative',
-      top: scale(40),
+      top: responsiveScale(40, 'height'),
       color: currentTheme.textColor,
       fontWeight: 'bold',
     },
     palName: {
-      fontSize: scale(16),
+      fontSize: responsiveScale(16),
       fontWeight: 'bold',
-      marginTop: scale(5),
+      marginTop: responsiveScale(5, 'height'),
       color: currentTheme.textColor,
     },
     palNumber: {
-      fontSize: scale(14),
+      fontSize: responsiveScale(14),
       color: currentTheme.textColor,
     },
     selectIcon: {
-      marginTop: scale(5),
+      marginTop: responsiveScale(5, 'height'),
     },
     breededBabyInfo: {
       alignItems: 'center',
-      marginTop: scale(20),
+      marginTop: responsiveScale(20, 'height'),
     },
     breededBabyLabel: {
-      fontSize: scale(18),
+      fontSize: responsiveScale(18),
       fontWeight: 'bold',
       color: currentTheme.textColor,
     },
     breededBabyImage: {
-      width: scale(80),
-      height: scale(80),
+      width: responsiveScale(80),
+      height: responsiveScale(80),
       resizeMode: 'cover',
     },
     breededBabyNumber: {
-      fontSize: scale(14),
-      marginTop: scale(5),
+      fontSize: responsiveScale(14),
+      marginTop: responsiveScale(5, 'height'),
       color: currentTheme.textColor,
     },
     selectPalText: {
-      fontSize: scale(14),
+      fontSize: responsiveScale(14),
       color: currentTheme.primaryColor, // Use primaryColor for emphasis
-      marginTop: scale(5),
+      marginTop: responsiveScale(5, 'height'),
       textAlign: 'center',
     },
 

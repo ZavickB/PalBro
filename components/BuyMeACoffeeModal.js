@@ -4,7 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useTheme } from './contexts/ThemeContext';
 import BuyMeACoffeeButton from './BuyMeACoffeeButton';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { scale, verticalScale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 const BuyMeACoffeeModal = () => {
     const [modalVisible, setModalVisible] = useState(false);
@@ -32,16 +32,16 @@ const BuyMeACoffeeModal = () => {
             flex: 1,
             justifyContent: "center",
             alignItems: "center",
-            marginTop: scale(22),
+            marginTop: responsiveScale(22, 'height'),
             backgroundColor: 'rgba(0, 0, 0, 0.5)', // Ensuring this is applied correctly
             width: '100%',
             height: '100%',
         },
         modalView: {
-            margin: scale(20),
+            margin: responsiveScale(20),
             backgroundColor: currentTheme.searchBarBackgroundColor,
-            borderRadius: scale(20),
-            padding: scale(35),
+            borderRadius: responsiveScale(20),
+            padding: responsiveScale(35),
             alignItems: "center",
             shadowColor: "#000",
             shadowOffset: {
@@ -49,34 +49,34 @@ const BuyMeACoffeeModal = () => {
                 height: 2
             },
             shadowOpacity: 0.25,
-            shadowRadius: scale(4),
+            shadowRadius: responsiveScale(4),
             elevation: 5,
             borderColor: currentTheme.borderColor,
-            borderWidth: scale(1),
+            borderWidth: responsiveScale(1),
         },
         greetingText: {
-            marginBottom: scale(10),
-            fontSize: scale(20),
+            marginBottom: responsiveScale(10, 'height'),
+            fontSize: responsiveScale(20),
             textAlign: "center",
             color: currentTheme.textColor
         },
         messageText: {
-            marginBottom: scale(15),
-            fontSize: scale(16),
+            marginBottom: responsiveScale(15, 'height'),
+            fontSize: responsiveScale(16),
             textAlign: "center",
             color: currentTheme.textColor
         },
         thanksText: {
-            marginBottom: scale(20),
-            fontSize: scale(14),
+            marginBottom: responsiveScale(20, 'height'),
+            fontSize: responsiveScale(14),
             textAlign: "center",
             color: currentTheme.textColor,
             fontStyle: 'italic'
         },
         closeButton: {
             position: 'absolute',
-            right: scale(20),
-            top: scale(20),
+            right: responsiveScale(20, 'width'),
+            top: responsiveScale(20, 'height'),
             fontStyle:'bold'
         }
     });
@@ -91,7 +91,7 @@ const BuyMeACoffeeModal = () => {
             <View style={styles.centeredView}>
                 <View style={styles.modalView}>
                     <TouchableOpacity style={styles.closeButton} onPress={onClose}>
-                        <Icon name="close" size={scale(24)} color={currentTheme.primaryColor} />
+                        <Icon name="close" size={responsiveScale(24)} color={currentTheme.primaryColor} />
                     </TouchableOpacity>
                     <Text style={styles.greetingText}>Hey there! 👋</Text>
                     <Text style={styles.messageText}>

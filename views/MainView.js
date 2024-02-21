@@ -7,24 +7,16 @@ import SearchableList from '../components/SearchableList';
 import { useTheme } from '../components/contexts/ThemeContext';
 import GradientBackground from '../components/GradientBackground';
 import { useCapturedPals } from '../components/contexts/CapturedPalsContext';
-import { scale, verticalScale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 const MainView = ({ navigation }) => {
   const { currentTheme } = useTheme();
 
-  // Use scale() for width-related dimensions and verticalScale() for height-related dimensions
-  const screenWidth = Dimensions.get('window').width;
-  const screenHeight = Dimensions.get('window').height;
+  const spacing = responsiveScale(5);
 
-  // Example percentages to scale tile sizes
-  const tileWidthPercentage = 30;
-  const tileHeightPercentage = 20;
-  // Use moderateScale to adjust spacing for different screen sizes
-  const spacing = 5;
-
-  // Calculate tile width and height using scale and verticalScale respectively
-  const tileWidth = scale((screenWidth * tileWidthPercentage) / 100) - scale(4 * spacing);
-  const tileHeight = verticalScale((screenHeight * tileHeightPercentage) / 100) - scale(spacing);
+  // Calculate tile width and height using responsiveScale and verticalScale respectively
+  const tileWidth = responsiveScale(120, 'width') - spacing;
+  const tileHeight =  responsiveScale(221, 'height') - spacing;
 
   const { capturedPals, toggleCapture } = useCapturedPals();
  
@@ -90,7 +82,7 @@ const styles = StyleSheet.create({
   },
   appContainer: {
     flex: 1,
-    paddingHorizontal: scale(10), // Apply moderateScale for horizontal padding
+    paddingHorizontal: responsiveScale(10, "width"), // Apply moderateScale for horizontal padding
   },
   listContainer: {
     flex: 1,

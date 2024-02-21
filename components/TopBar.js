@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet, Image, ActivityIndicator } fr
 import { FontAwesome } from '@expo/vector-icons';
 import SolarEclipseImage from '../assets/full-solar-eclipse.png'; // Adjust the path as needed
 import { useTheme } from './contexts/ThemeContext';
-import { scale, verticalScale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 const TopBar = ({ title, navigation }) => {
   const { toggleTheme, currentTheme } = useTheme(); // Get current theme
@@ -51,25 +51,24 @@ const TopBar = ({ title, navigation }) => {
 
 const styles = StyleSheet.create({
   topBar: {
-    marginTop: scale(40), // Adjust the marginTop to account for the status bar
+    marginTop: responsiveScale(40, "height"), // Adjust the marginTop to account for the status bar
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between', // Use space-between to separate the icons
-    height: verticalScale(60), // Set a fixed height for the top bar
+    height: responsiveScale(60, 'height'), // Set a fixed height for the top bar
     width: '100%',
   },
   title: {
     alignContent: 'center',
-    fontSize: scale(30),
+    fontSize: responsiveScale(30),
     fontWeight: 'bold',
   },
   icon: {
-    marginLeft: scale(10),
-    marginRight: scale(10),
+    marginHorizontal: responsiveScale(10, "width"),
   },
   eclipseImage: {
-    width: scale(40), // Adjust the width as needed
-    height: scale(40), // Adjust the height as needed
+    width: responsiveScale(40), // Adjust the width as needed
+    height: responsiveScale(40), // Adjust the height as needed
   },
 });
 

@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import TypePin from './TypePin';
 import { useTheme } from './contexts/ThemeContext';
 import Icon from 'react-native-vector-icons/Ionicons'; // Import icons
-import { scale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 const PalSkillsBlock = ({ skills }) => {
   const { currentTheme } = useTheme();
@@ -12,42 +12,44 @@ const PalSkillsBlock = ({ skills }) => {
   const styles = StyleSheet.create({
     container: {
       flexDirection: 'column',
-      paddingHorizontal: scale(10),
-      borderRadius: scale(10),
-      marginVertical: scale(10),
+      paddingHorizontal: responsiveScale(10, 'width'),
+      borderRadius: responsiveScale(10),
+      marginVertical: responsiveScale(10, 'height'),
     },
     skillItem: {
       flexDirection: 'column',
       alignItems: 'flex-start',
-      marginBottom: scale(10),
-      borderWidth: scale(1),
+      marginBottom: responsiveScale(10, 'height'),
+      borderWidth: responsiveScale(1),
       borderColor: currentTheme.borderColor,
-      borderRadius: scale(10),
-      padding: scale(10),
+      borderRadius: responsiveScale(10),
+      padding: responsiveScale(10),
     },
     skillName: {
       fontWeight: 'bold',
-      fontSize: scale(16),
+      fontSize: responsiveScale(16),
       color: currentTheme.textColor,
       textTransform: 'capitalize',
     },
     skillLevel: {
       fontWeight: 'bold',
-      fontSize: scale(16),
+      fontSize: responsiveScale(16),
       color: currentTheme.textColor,
     },
     skillCooldownPower: {
-      fontSize: scale(14),
       color: currentTheme.textColor,
-      marginTop: scale(5),
+      marginTop: responsiveScale(5),
       flexDirection: 'row', // Align icons and text horizontally
+      alignContent: 'center',
+      alignItems: 'center',
     },
     cooldownIcon: {
-      marginRight: scale(5), // Add some space between icon and text
+      marginRight: responsiveScale(5, 'width'), // Add some space between icon and text
     },
     skillDescription: {
-      marginTop: scale(5),
+      marginTop: responsiveScale(5, 'height'),
       color: currentTheme.textColor,
+      fontSize: responsiveScale(14),
     },
     skillRow: {
       flexDirection: 'row',
@@ -57,6 +59,7 @@ const PalSkillsBlock = ({ skills }) => {
     },
     skillData: {
       color: currentTheme.textColor,
+      fontSize: responsiveScale(14),
     }
   });
 
@@ -83,11 +86,11 @@ const PalSkillsBlock = ({ skills }) => {
               </View>
               <View style={styles.skillRow}>
                 <View style={styles.skillCooldownPower}>
-                  <Icon name="stopwatch-outline" size={scale(16)} color={currentTheme.textColor} style={styles.cooldownIcon} />
+                  <Icon name="stopwatch-outline" size={responsiveScale(16)} color={currentTheme.textColor} style={styles.cooldownIcon} />
                   <Text style={styles.skillData}>Cooldown: {skill.cooldown} seconds</Text>
                 </View>
                 <View style={styles.skillCooldownPower}>
-                  <Icon name="flash" size={scale(16)} color={currentTheme.textColor} style={styles.cooldownIcon} />
+                  <Icon name="flash" size={responsiveScale(16)} color={currentTheme.textColor} style={styles.cooldownIcon} />
                   <Text style={styles.skillData}>Power: {skill.power}</Text>
                 </View>
               </View>

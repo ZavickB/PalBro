@@ -8,7 +8,7 @@ import { useMemo } from 'react';
 import GradientBackground from '../components/GradientBackground';
 import SearchBar from '../components/SearchBar';
 import PalDropsModal from '../components/PalDropsModal'; // Import the DropsModal component
-import { scale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 const DropsView = ({ route, navigation }) => {
   const { currentTheme } = useTheme();
@@ -68,43 +68,43 @@ const DropsView = ({ route, navigation }) => {
     },
     appContainer: {
       flex: 1,
-      paddingHorizontal: scale(10),
+      paddingHorizontal: responsiveScale(10, 'width'),
     },
     title: {
-      fontSize: scale(24),
+      fontSize: responsiveScale(24),
       fontWeight: 'bold',
-      marginBottom: scale(16),
+      marginBottom: responsiveScale(16, 'height'),
       color: currentTheme.textColor,
     },
     dropItem: {
       flexDirection: 'row',
       alignItems: 'center',
-      marginBottom: scale(10),
+      marginBottom: responsiveScale(10, 'height'),
       borderWidth: 1,
       borderColor: currentTheme.borderColor,
-      borderRadius: scale(10),
-      padding: scale(10),
+      borderRadius: responsiveScale(10),
+      padding: responsiveScale(10, 'width'),
       backgroundColor: currentTheme.backgroundColor,
       shadowColor: "black",
       shadowOffset: {
-        width: scale(4),
-        height: scale(6),
+        width: responsiveScale(4, 'width'),
+        height: responsiveScale(6, 'height'),
       },
       shadowOpacity: 0.8,
-      shadowRadius: scale(8),
+      shadowRadius: responsiveScale(8),
     },
     dropText: {
-      fontSize: scale(20),
+      fontSize: responsiveScale(20),
       color: currentTheme.textColor,
     },
     emptyState: {
-      fontSize: scale(18),
+      fontSize: responsiveScale(18),
       textAlign: 'center',
-      marginTop: scale(20),
+      marginTop: responsiveScale(20, 'height'),
       color: 'gray',
     },
     loadingIndicator: {
-      marginTop: scale(20),
+      marginTop: responsiveScale(20, 'height'),
     },
   });
 
@@ -137,7 +137,7 @@ const DropsView = ({ route, navigation }) => {
                 <View style={styles.dropItem}>
                   <Image
                     source={ItemsList.find((itemObject) => itemObject.name === formatName(item))?.icon}
-                    style={{ width: scale(50), height: scale(50), marginRight: scale(10) }}
+                    style={{ width: responsiveScale(50), height: responsiveScale(50), marginRight: responsiveScale(10) }}
                   />
                   <Text style={styles.dropText}>{formatName(item)}</Text>
                 </View>

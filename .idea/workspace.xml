@@ -9,6 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4ffa9648-3980-4032-a601-88a888755c8c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/BuyMeACoffeeButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/BuyMeACoffeeButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/BuyMeACoffeeModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/BuyMeACoffeeModal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/FiltersModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FiltersModal.js" afterDir="false" />
@@ -30,8 +31,6 @@
       <change beforePath="$PROJECT_DIR$/components/TopBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/TopBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/TypeBadge.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/TypeBadge.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/TypePin.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/TypePin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/BreedingCatalogView.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/BreedingCatalogView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/BreedingDetailsView.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/BreedingDetailsView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/DropsView.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/DropsView.js" afterDir="false" />

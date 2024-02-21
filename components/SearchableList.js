@@ -9,7 +9,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import SearchBar from './SearchBar';
 import { useCapturedPals } from '../components/contexts/CapturedPalsContext';
 import { Switch } from 'react-native';
-import { scale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 
 const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey, searchBarPlaceholder }) => {
@@ -28,37 +28,52 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
   const actions = [
     {
       text: "Filters",
-      icon: <Icon name="filter" size={scale(25)} color="#fff" />,
+      icon: <Icon name="filter" size={responsiveScale(25)} color="#fff" />,
       name: "bt_filter",
       position: 1,
+      buttonSize: responsiveScale(40),
+      margin: responsiveScale(8),
+      size: responsiveScale(40),
       color: currentTheme.primaryColor,
     },
     {
       text: "Sort by Name A-Z",
-      icon: <Icon name="sort-alpha-asc" size={scale(25)} color="#fff" />,
+      icon: <Icon name="sort-alpha-asc" size={responsiveScale(25)} color="#fff" />,
       name: "sort_name_asc",
       position: 2,
+      buttonSize: responsiveScale(40),
+      margin: responsiveScale(8),
+      size: responsiveScale(40),
       color: currentTheme.primaryColor,
     },
     {
       text: "Sort by Name Z-A",
-      icon: <Icon name="sort-alpha-desc" size={scale(25)} color="#fff" />,
+      icon: <Icon name="sort-alpha-desc" size={responsiveScale(25)} color="#fff" />,
       name: "sort_name_desc",
       position: 3,
+      buttonSize: responsiveScale(40),
+      margin: responsiveScale(8),
+      size: responsiveScale(40),
       color: currentTheme.primaryColor,
     },
     {
       text: !hideCompleted ? "Hide Completed Pals" : "Show Completed Pals",
-      icon: <Icon name={!hideCompleted ?"eye-slash" : "eye"} size={scale(25)} color="#fff" />,
+      icon: <Icon name={!hideCompleted ?"eye-slash" : "eye"} size={responsiveScale(25)} color="#fff" />,
       name: "toggle_hide_completed",
       position: 4,
+      buttonSize: responsiveScale(40),
+      margin: responsiveScale(8),
+      size: responsiveScale(40),
       color: currentTheme.primaryColor,
     },
     {
       text: "Reset Filters & Sort",
-      icon: <Icon name="refresh" size={scale(25)} color="#fff" />,
+      icon: <Icon name="refresh" size={responsiveScale(25)} color="#fff" />,
       name: "reset_all",
       position: 5,
+      buttonSize: responsiveScale(40),
+      margin: responsiveScale(8),
+      size: responsiveScale(40),
       color: currentTheme.primaryColor,
     },
   ];
@@ -194,52 +209,50 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between',
-      paddingHorizontal: scale(10),
-      marginBottom: scale(20),
+      paddingHorizontal: responsiveScale(10, "width"),
+      marginBottom: responsiveScale(20, "height"),
     },
     searchInput: {
       flex: 1,
-      height: scale(40),
-      borderWidth: scale(1),
-      borderRadius: scale(20),
-      paddingHorizontal: scale(15),
+      height: responsiveScale(40, "height"),
+      borderWidth: responsiveScale(1, "width"),
+      borderRadius: responsiveScale(20),
+      paddingHorizontal: responsiveScale(15, "width"),
       backgroundColor: '#fff', // Ensuring input is visibly distinct
       color: currentTheme.textColor, // Text color adapted to theme
     },
     emptyState: {
-      fontSize: scale(18),
+      fontSize: responsiveScale(18),
       textAlign: 'center',
-      marginTop: scale(20),
+      marginTop: responsiveScale(20, "height"),
       color: 'gray',
     },
     filterButton: {
-      paddingHorizontal: scale(10),
-      paddingVertical: scale(5),
-      marginHorizontal: scale(10),
-      marginBottom: scale(10),
-      borderWidth: scale(1),
+      paddingHorizontal: responsiveScale(10, "width"),
+      marginHorizontal: responsiveScale(10, "width"),
+      borderWidth: responsiveScale(1),
       borderColor: 'gray',
-      borderRadius: scale(5),
+      borderRadius: responsiveScale(5),
       alignSelf: 'flex-end',
     },
     filterModal: {
-      padding: scale(20),
+      padding: responsiveScale(20),
       height: '80%',
       marginTop: '20%',
     },
     closeFilterButton: {
-      padding: scale(10),
+      padding: responsiveScale(10),
     },
     closeButtonText: {
       color: 'blue',
     },
     filterSection: {
-      marginBottom: scale(20),
+      marginBottom: responsiveScale(20, "height"),
     },
     sectionTitle: {
-      fontSize: scale(16),
+      fontSize: responsiveScale(16),
       fontWeight: 'bold',
-      marginBottom: scale(10),
+      marginBottom: responsiveScale(10, "height"),
       color: currentTheme.textColor,
     },
     filterOptionRow: {
@@ -250,20 +263,20 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
     filterOption: {
       flexDirection: 'row',
       alignItems: 'center',
-      marginBottom: scale(5),
-      marginRight: scale(5), // Adjust as needed to fit three items per row comfortably.
+      marginBottom: responsiveScale(5, "height"),
+      marginRight: responsiveScale(5, "width"), // Adjust as needed to fit three items per row comfortably.
       flex: 1, // Allows the option to flexibly expand but might need adjustment.
       minWidth: '30%', // Adjusted from 45% to fit 3 items per row.
     },
     icon: {
-      width: scale(35),
-      height: scale(35),
-      marginRight: scale(10),
+      width: responsiveScale(35),
+      height: responsiveScale(35),
+      marginRight: responsiveScale(10),
     },
     switchButton: {
-      marginRight: scale(5),
+      marginRight: responsiveScale(5, "width"),
     },
-  });
+});
 
   const renderItemWithHideCompleted = ({ item }) => {
     return renderItem({
@@ -342,6 +355,10 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
 
       <FloatingAction
         actions={actions}
+        style={styles.actionButtonContainer}
+        buttonSize={responsiveScale(56)}
+        actionsPaddingTopBottom={responsiveScale(8)}
+        distanceToEdge={responsiveScale(30)}
         onPressItem={name => {
           if (name === "bt_filter") {
             setFilterModalVisible(true);

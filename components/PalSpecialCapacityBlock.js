@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons'; // Import icons
 import { useTheme } from './contexts/ThemeContext';
-import { scale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale';
 
 // Rename `specialCapacity` prop to `aura`
 const PalSpecialCapacityBlock = ({ aura }) => {
@@ -25,10 +25,10 @@ const PalSpecialCapacityBlock = ({ aura }) => {
   const styles = StyleSheet.create({
     container: {
       flexDirection: 'column',
-      paddingHorizontal: scale(10),
-      borderRadius: scale(10),
-      marginVertical: scale(10),
-      borderWidth: scale(1),
+      paddingHorizontal: responsiveScale(10, 'width'),
+      borderRadius: responsiveScale(10),
+      marginVertical: responsiveScale(10, 'height'),
+      borderWidth: responsiveScale(1),
       borderColor: currentTheme.borderColor,
       backgroundColor: currentTheme.backgroundVariant,
     },
@@ -36,21 +36,21 @@ const PalSpecialCapacityBlock = ({ aura }) => {
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between',
-      padding: scale(10),
+      padding: responsiveScale(10),
     },
     titleText: {
       fontWeight: 'bold',
-      fontSize: scale(16),
+      fontSize: responsiveScale(16),
       color: currentTheme.textColor,
     },
     description: {
-      fontSize: scale(14),
+      fontSize: responsiveScale(14),
       color: currentTheme.textColor,
-      paddingHorizontal: scale(10),
-      paddingBottom: scale(10),
+      paddingHorizontal: responsiveScale(10, 'width'),
+      paddingBottom: responsiveScale(10, 'height'),
     },
     icon: {
-      marginRight: scale(5),
+      marginRight: responsiveScale(5, 'width'),
     },
   });
 
@@ -59,7 +59,7 @@ const PalSpecialCapacityBlock = ({ aura }) => {
       <View style={styles.container}>
         <View style={styles.titleRow}>
           <Text style={styles.titleText}>{formatName(aura.name)}</Text>
-          <Icon name={expanded ? "chevron-up-outline" : "chevron-down-outline"} size={scale(20)} color={currentTheme.textColor} />
+          <Icon name={expanded ? "chevron-up-outline" : "chevron-down-outline"} size={responsiveScale(20)} color={currentTheme.textColor} />
         </View>
         {expanded && (
           <Text style={styles.description}>{aura.description}</Text>

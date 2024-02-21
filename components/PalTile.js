@@ -3,7 +3,7 @@ import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import TypePin from './TypePin'; // Make sure to adjust the import path as needed
 import { useTheme } from './contexts/ThemeContext'; // Adjust the import path as needed
-import { scale } from 'react-native-size-matters';
+import { responsiveScale } from '../utils/responsiveScale'; // Adjust the import path as needed
 
 const PalTile = ({ pal, tileWidth, tileHeight, spacing, captureCount, onCapturePress, hideCompleted = false }) => {
   const { currentTheme } = useTheme();
@@ -48,12 +48,12 @@ const PalTile = ({ pal, tileWidth, tileHeight, spacing, captureCount, onCaptureP
     container: {
       alignItems: 'center',
       justifyContent: 'space-between',
-      borderRadius: scale(10),
+      borderRadius: responsiveScale(10),
       margin: spacing,
-      shadowOffset: { width: scale(4), height: scale(6) },
+      shadowOffset: { width: responsiveScale(4, "width"), height: responsiveScale(6, "height") },
       shadowOpacity: 0.8,
-      shadowRadius: scale(8),
-      elevation: scale(10),
+      shadowRadius: responsiveScale(8),
+      elevation: responsiveScale(10),
       width: tileWidth,
       height: tileHeight,
       position: 'relative',
@@ -62,10 +62,10 @@ const PalTile = ({ pal, tileWidth, tileHeight, spacing, captureCount, onCaptureP
       position: 'absolute',
       top: '50%',
       left: 0,
-      transform: [{ translateY: scale(10) }],
+      transform: [{ translateY: responsiveScale(10) }],
       width: tileWidth,
       backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent black
-      height: scale(30),
+      height: responsiveScale(30, "height"),
       alignItems: 'center',
       justifyContent: 'center',
       zIndex: 1,
@@ -73,22 +73,22 @@ const PalTile = ({ pal, tileWidth, tileHeight, spacing, captureCount, onCaptureP
     bannerText: {
       color: '#FFFFFF',
       fontWeight: 'bold',
-      fontSize: scale(14),
+      fontSize: responsiveScale(14),
     },
     contentContainer: {
-      padding: scale(10),
+      padding: responsiveScale(10),
       width: '100%',
       height: '100%',
-      borderRadius: scale(10), // Ensure this matches the gradient's borderRadius if applicable
+      borderRadius: responsiveScale(10), // Ensure this matches the gradient's borderRadius if applicable
     },
     image: {
       width: '100%',
       height: '60%',
-      borderRadius: scale(10),
-      marginBottom: scale(5),
+      borderRadius: responsiveScale(10),
+      marginBottom: responsiveScale(5, "height"),
     },
     text: {
-      fontSize: scale(14),
+      fontSize: responsiveScale(14),
       fontWeight: 'bold',
       textAlign: 'center',
       color: currentTheme.goldenPalTileTextColor,
@@ -101,23 +101,23 @@ const PalTile = ({ pal, tileWidth, tileHeight, spacing, captureCount, onCaptureP
     },
     rarityBadge: {
       position: 'absolute',
-      top: scale(10),
-      right: scale(10),
-      padding: scale(5),
-      borderRadius: scale(5),
+      top: responsiveScale(10, "height"),
+      right: responsiveScale(10, "width"),
+      padding: responsiveScale(5),
+      borderRadius: responsiveScale(5),
       backgroundColor: '#fff', // You might want to adjust this based on your theme
     },
     rarityText: {
       color: 'white',
       fontWeight: 'bold',
-      fontSize: scale(12),
+      fontSize: responsiveScale(12),
     },
     captureButton: {
       position: 'absolute',
-      top: scale(5),
-      left: scale(5),
-      width: scale(30),
-      height: scale(30),
+      top: responsiveScale(5, "height"),
+      left: responsiveScale(5, "width"),
+      width: responsiveScale(30, "width"),
+      height: responsiveScale(30, "height"),
     },
   });
 
