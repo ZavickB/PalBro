@@ -138,6 +138,13 @@ const PalDetailedView = ({ route, navigation }) => {
     },
     description: {
       fontSize: responsiveScale(16),
+      paddingHorizontal: responsiveScale(16, "width"),
+      paddingVertical: responsiveScale(12, "height"),
+      marginBottom: responsiveScale(12, "height"),
+      backgroundColor: "transparent", // Example background color
+      borderRadius: responsiveScale(8), // Rounded corners
+      borderWidth: responsiveScale(1),
+      borderColor: currentTheme.borderColor, 
       textAlign: 'justify',
       color: currentTheme.textColor,
     },

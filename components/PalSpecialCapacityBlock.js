@@ -44,7 +44,7 @@ const PalSpecialCapacityBlock = ({ aura }) => {
       color: currentTheme.textColor,
     },
     description: {
-      fontSize: responsiveScale(14),
+      fontSize: responsiveScale(16),
       color: currentTheme.textColor,
       paddingHorizontal: responsiveScale(10, 'width'),
       paddingBottom: responsiveScale(10, 'height'),

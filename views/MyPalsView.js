@@ -85,6 +85,7 @@ const MyPalsView = ({ navigation }) => {
         )}
         numColumns={3}
         emptyStateText="No captured Pals found."
+        initialNumToRender={15}
       />
     );
   };
@@ -111,6 +112,7 @@ const MyPalsView = ({ navigation }) => {
           </View>
         )}
         numColumns={3}
+        initialNumToRender={15}
         emptyStateText="No matching Pals found."
       />
     );
