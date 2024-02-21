@@ -9,7 +9,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4ffa9648-3980-4032-a601-88a888755c8c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/PalDetailedView.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/PalDetailedView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -151,9 +151,15 @@ const BreedingDetailsView = ({ route, navigation }) => {
       marginBottom: responsiveScale(8, "height"),
       color: currentTheme.textColor,
     },
+    centeredMessage: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100%', // Ensure it takes the full height of the container
+    },
     description: {
       fontSize: responsiveScale(16),
-      textAlign: 'justify',
+      textAlign: 'center', // Ensure text is centered if it wraps
       color: currentTheme.textColor,
     },
     parentPairContainer: {
@@ -204,10 +210,15 @@ const BreedingDetailsView = ({ route, navigation }) => {
               contentContainerStyle={{ paddingBottom: responsiveScale(20)}}
               ListEmptyComponent={
                 isLoading ? (
-                <View style={styles.loadingContainer}>
-                  <ActivityIndicator size="large" color={currentTheme.primaryColor} />
-                </View>
-              ) : (<Text style={styles.description}>No parent pairs found.</Text>)}
+                  <View style={styles.loadingContainer}>
+                    <ActivityIndicator size="large" color={currentTheme.primaryColor} />
+                  </View>
+                ) : (
+                  <View style={styles.centeredMessage}>
+                    <Text style={styles.description}>No parent pairs found.</Text>
+                  </View>
+                )
+              }
             />
         </View>
     </GradientBackground>
