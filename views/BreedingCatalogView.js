@@ -82,6 +82,7 @@ const BreedingCatalogView = ({ navigation }) => {
         )}
         numColumns={3}
         emptyStateText="No possible breeding found."
+        initialNumToRender={15}
       />
     );
   };
@@ -109,6 +110,7 @@ const BreedingCatalogView = ({ navigation }) => {
         )}
         numColumns={3}
         emptyStateText="No possible breeding found."
+        initialNumToRender={15}
       />
     );
   };

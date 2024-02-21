@@ -18,29 +18,11 @@ import { responsiveScale } from '../utils/responsiveScale';
 const PalDetailedView = ({ route, navigation }) => {
   const { palData } = route.params;
   const { currentTheme } = useTheme();
-  const [loading, setLoading] = useState(true);
 
   const palIsNightOnly = palData.maps.night && palData.maps.night.length > 0 && palData.maps.day.length === 0;
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-    return () => clearTimeout(timer);
-  }, []);
-
   const renderItem = ({ item }) => {
     switch (item.type) {
-      case 'header':
-        return (
-          <View style={styles.imageContainer}>
-            <Image source={ palData.image } style={styles.image} />
-            <View style={styles.overlayText}>
-              <Text style={styles.sectionPalTitle}>#{palData.key} {palData.name}</Text>
-              <TypeBadge types={[palData.types]} />
-            </View>
-          </View>
-        );
       case 'progress':
         return (
           <View style={styles.section}>
@@ -160,10 +142,10 @@ const PalDetailedView = ({ route, navigation }) => {
       color: currentTheme.textColor,
     },
     loadingIndicator: {
-      position: 'absolute',
-      alignSelf: 'center',
-      top: '50%',
-      color: currentTheme.primaryColor,
+      flex: 1, // This will make sure it takes up all available space in its container
+      paddingHorizontal: responsiveScale(50, "width"),
+      justifyContent: 'center',
+      alignItems: 'center',
     },
     specialCapacitySection: {
       paddingHorizontal: responsiveScale(16, "width"),
@@ -206,14 +188,25 @@ const PalDetailedView = ({ route, navigation }) => {
       <View style={styles.container}>
         <TopBar title="" navigation={navigation} />
         <FlatList
-          data={sections}
+          data={sections} 
           renderItem={renderItem}
           keyExtractor={(item, index) => item.type + index}
           showsVerticalScrollIndicator={true}
+          ListHeaderComponent={
+            <View style={styles.imageContainer}>
+              <Image source={ palData.image } style={styles.image} />
+              <View style={styles.overlayText}>
+                <Text style={styles.sectionPalTitle}>#{palData.key} {palData.name}</Text>
+                <TypeBadge types={[palData.types]} />
+              </View>
+            </View>
+          }
+          initialNumToRender={5}
         />
       </View>
     </GradientBackground>
   );
 };
+
 
 export default PalDetailedView;

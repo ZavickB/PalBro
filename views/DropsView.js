@@ -143,6 +143,7 @@ const DropsView = ({ route, navigation }) => {
                 </View>
               </TouchableOpacity>
             )}
+            initialNumToRender={15}
           />
           <PalDropsModal
             visible={modalVisible}
