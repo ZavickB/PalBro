@@ -112,8 +112,14 @@ import PalsProfilesStatsAndBreedings from "../assets/data/PalsProfilesStatsAndBr
     // return nearestPals[0];
   };
   
-  
+  const breedingResultsCache = new Map();
+
   const findSpecificBreeding = (parent1, parent2) => {
+    const cacheKey = `${parent1.key}-${parent2.key}`;
+    if (breedingResultsCache.has(cacheKey)) {
+      return breedingResultsCache.get(cacheKey);
+    }
+
     let possibleBreedings = [];
     
     if (parent1.key === parent2.key) {
@@ -142,7 +148,7 @@ import PalsProfilesStatsAndBreedings from "../assets/data/PalsProfilesStatsAndBr
         console.log(`No eligible baby found by power.`);
       }
     }
-  
+    breedingResultsCache.set(cacheKey, possibleBreedings);
     return possibleBreedings;
   };
   

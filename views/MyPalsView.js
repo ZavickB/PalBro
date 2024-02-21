@@ -13,7 +13,7 @@ import { responsiveScale } from '../utils/responsiveScale';
 const MyPalsView = ({ navigation }) => {
   const { currentTheme } = useTheme();
   const { capturedPals, toggleCapture } = useCapturedPals();
-
+  
   // Use moderateScale to adjust spacing for different screen sizes
   const spacing = responsiveScale(5);
 
