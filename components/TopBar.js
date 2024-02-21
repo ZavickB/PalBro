@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image, ActivityIndicator } from 'react-native';
-import { FontAwesome } from '@expo/vector-icons';
+import { FontAwesome, FontAwesome5 } from '@expo/vector-icons';
 import SolarEclipseImage from '../assets/full-solar-eclipse.png'; // Adjust the path as needed
 import { useTheme } from './contexts/ThemeContext';
 import { responsiveScale } from '../utils/responsiveScale';
@@ -27,8 +27,8 @@ const TopBar = ({ title, navigation }) => {
             {loading ? (
               <ActivityIndicator color={currentTheme.textColor} />
             ) : (
-              <Image source={SolarEclipseImage} style={[styles.eclipseImage, { tintColor: currentTheme.textColor }]} />
-            )}
+              <FontAwesome5 name="adjust" size={responsiveScale(30)} color={currentTheme.textColor} />
+              )}
           </TouchableOpacity>
         </>
       ) : (
@@ -40,8 +40,8 @@ const TopBar = ({ title, navigation }) => {
             {loading ? (
               <ActivityIndicator color={currentTheme.textColor} />
             ) : (
-              <Image source={SolarEclipseImage} style={[styles.eclipseImage, { tintColor: currentTheme.textColor }]} />
-            )}
+              <FontAwesome5 name="adjust" size={responsiveScale(30)} color={currentTheme.textColor} />
+              )}
           </TouchableOpacity>
         </>
       )}
@@ -65,10 +65,6 @@ const styles = StyleSheet.create({
   },
   icon: {
     marginHorizontal: responsiveScale(10, "width"),
-  },
-  eclipseImage: {
-    width: responsiveScale(40), // Adjust the width as needed
-    height: responsiveScale(40), // Adjust the height as needed
   },
 });
 
