@@ -8,35 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ffa9648-3980-4032-a601-88a888755c8c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/BuyMeACoffeeButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/BuyMeACoffeeButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/BuyMeACoffeeModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/BuyMeACoffeeModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FiltersModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FiltersModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PalBreedingInfosBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/PalBreedingInfosBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PalCounter.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/PalCounter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PalDropsBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/PalDropsBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PalDropsModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/PalDropsModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PalHeatMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/PalHeatMap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PalSelectionModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/PalSelectionModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PalSkillsBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/PalSkillsBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PalSpecialCapacityBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/PalSpecialCapacityBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PalStatsBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/PalStatsBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PalTile.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/PalTile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PotentialCoupleCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/PotentialCoupleCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SearchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SearchableList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SearchableList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SuitabilityBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SuitabilityBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SwitchButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SwitchButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TopBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/TopBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TypeBadge.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/TypeBadge.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TypePin.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/TypePin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/BreedingCatalogView.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/BreedingCatalogView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/BreedingDetailsView.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/BreedingDetailsView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/DropsView.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/DropsView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/MainView.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/MainView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/MyPalsView.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/MyPalsView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/PalDetailedView.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/PalDetailedView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
