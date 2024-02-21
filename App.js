@@ -5,8 +5,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import MainView from './views/MainView';
 import PalDetailedView from './views/PalDetailedView';
 import MyPalsView from './views/MyPalsView';
-import MyPossibleBreedingsView from './views/MyPossibleBreedingsView';
-import BreedingOptionsView from './views/BreedingOptionsView';
+import BreedingCatalogView from './views/BreedingCatalogView';
+import BreedingDetailsView from './views/BreedingDetailsView';
 import DropsView from './views/DropsView';
 import { ThemeProvider } from './components/contexts/ThemeContext';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -14,6 +14,9 @@ import { CapturedPalsProvider } from './components/contexts/CapturedPalsContext'
 import { enableScreens } from 'react-native-screens';
 import { StatusBar } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
+import AdvancedBreedingsView from './views/AdvancedBreedingsView';
+import BuyMeACoffeeModal from './components/BuyMeACoffeeModal';
+
 
 enableScreens();
 const Tab = createBottomTabNavigator();
@@ -40,8 +43,9 @@ function MyPalsStack() {
 function BreedingStack() {
   return (
     <Stack.Navigator initialRouteName="BreedingCatalog" screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="BreedingCatalog" component={MyPossibleBreedingsView} />
-      <Stack.Screen name="BreedingOptionsView" component={BreedingOptionsView} />
+      <Stack.Screen name="BreedingCatalog" component={BreedingCatalogView} />
+      <Stack.Screen name="BreedingDetailsView" component={BreedingDetailsView} />
+      <Stack.Screen name="AdvancedBreedingsView" component={AdvancedBreedingsView} />
     </Stack.Navigator>
   );
 }
@@ -49,10 +53,12 @@ function BreedingStack() {
 export default function App() {
 
   // Uncomment this block before building the app
-  //useEffect(() => {
-  //  SplashScreen.hide();
-  //}, []);
-  
+  useEffect(() => {
+    setTimeout(() => {
+      SplashScreen.hide();
+    }, 2000),
+  []});
+
   return (
     <ThemeProvider>
       <CapturedPalsProvider>
@@ -90,6 +96,7 @@ export default function App() {
             <Tab.Screen name="Breedings" component={BreedingStack} />
             <Tab.Screen name="Drops" component={DropsView} />
           </Tab.Navigator>
+          <BuyMeACoffeeModal />
         </NavigationContainer>
       </CapturedPalsProvider>
     </ThemeProvider>

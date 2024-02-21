@@ -1,39 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, Text, Image, TouchableOpacity } from 'react-native';
-import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings'; // Import the pal data
 import TypeBadge from './TypeBadge'; // Import the TypeBadge component
 import { useTheme } from './contexts/ThemeContext'; // Import the useTheme hook
 import PalSelectionModal from './PalSelectionModal';
-
-// Function to find the baby based on the selected pal's breedings
-const findBaby = (palData, selectedPalName) => {
-  const breedings = palData.breedings;
-  if (breedings && selectedPalName in breedings) {
-    const babyName = breedings[selectedPalName];
-    return PalsProfilesStatsAndBreedings.find((pal) => pal.name === babyName);
-  }
-  return null; // Aucun bébé trouvé
-};
+import { findSpecificBreeding } from '../utils/BreedingsCalculator'; // Import the utility functions
+import PalsProfilesStatsAndBreedings from '../assets/data/PalsProfilesStatsAndBreedings'; // Import the PalsProfilesStatsAndBreedings data
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import { responsiveScale } from '../utils/responsiveScale';
 
 // Define the new component
 const PalBreedingInfosBlock = ({ palData, navigation }) => {
   const { currentTheme } = useTheme();
 
   const [selectedPalInfo, setSelectedPalInfo] = useState(palData); // Initialize with palData
-  const [babyInfo, setBabyInfo] = useState(null); // Initial state for babyInfo
+  const [babyInfo, setBabyInfo] = useState(palData); // Initial state for babyInfo
   const [isModalVisible, setModalVisible] = useState(false);
 
-  // Use useEffect to update selectedPalInfo when palData changes
-  useEffect(() => {
-    setSelectedPalInfo(palData);
-    setBabyInfo(palData);
-  }, [palData]);
-
   // Function to handle pal selection
-  const handlePalSelection = (pal) => {
-    setSelectedPalInfo(pal);
-    const babyInfo = findBaby(palData, pal.name);
-    setBabyInfo(babyInfo);
+  const handlePalSelection = (parent2) => {
+    setSelectedPalInfo(parent2);
+    const possibleBreedings = findSpecificBreeding(palData, parent2);
+    if (possibleBreedings.length > 0) {
+      const baby = possibleBreedings[0]; // For simplicity, assuming only one baby is possible
+      setBabyInfo(baby);
+    }
     setModalVisible(false);
   };
 
@@ -47,65 +37,87 @@ const PalBreedingInfosBlock = ({ palData, navigation }) => {
       alignItems: 'center',
       justifyContent: 'center',
     },
+    parentsRow: {
+      flexDirection: 'row',
+      alignItems: 'top',
+      justifyContent: 'space-around',
+      width: '100%',
+      marginTop: responsiveScale(20, 'height'),
+    },
     palInfo: {
       alignItems: 'center',
+      marginHorizontal: responsiveScale(10, 'width'),
+      padding: responsiveScale(5),
     },
     palImage: {
-      width: 100,
-      height: 100,
+      width: responsiveScale(80),
+      height: responsiveScale(80),
       resizeMode: 'cover',
     },
-    palName: {
-      fontSize: 20,
+    plusSign: {
+      fontSize: responsiveScale(24),
+      position: 'relative',
+      top: responsiveScale(40, 'height'),
+      color: currentTheme.textColor,
       fontWeight: 'bold',
-      marginTop: 10,
+    },
+    palName: {
+      fontSize: responsiveScale(16),
+      fontWeight: 'bold',
+      marginTop: responsiveScale(5, 'height'),
       color: currentTheme.textColor,
     },
     palNumber: {
-      fontSize: 16,
-      marginTop: 5,
+      fontSize: responsiveScale(14),
       color: currentTheme.textColor,
+    },
+    selectIcon: {
+      marginTop: responsiveScale(5, 'height'),
     },
     breededBabyInfo: {
       alignItems: 'center',
-      marginTop: 20,
-      color: currentTheme.textColor,
-    },
-    Parent2Label: {
-      fontSize: 18,
-      fontWeight: 'bold',
-      color: currentTheme.textColor,
+      marginTop: responsiveScale(20, 'height'),
     },
     breededBabyLabel: {
-      fontSize: 18,
+      fontSize: responsiveScale(18),
       fontWeight: 'bold',
       color: currentTheme.textColor,
     },
     breededBabyImage: {
-      width: 80,
-      height: 80,
+      width: responsiveScale(80),
+      height: responsiveScale(80),
       resizeMode: 'cover',
     },
     breededBabyNumber: {
-      fontSize: 14,
-      marginTop: 5,
+      fontSize: responsiveScale(14),
+      marginTop: responsiveScale(5, 'height'),
       color: currentTheme.textColor,
     },
-    
-  });
+    selectPalText: {
+      fontSize: responsiveScale(14),
+      color: currentTheme.primaryColor, // Use primaryColor for emphasis
+      marginTop: responsiveScale(5, 'height'),
+      textAlign: 'center',
+    },
 
+  });
+  
   return (
-    <View style={[styles.container]}>
-      <TouchableOpacity onPress={() => setModalVisible(true)}>
+    <View style={styles.container}>
+      <View style={styles.parentsRow}>
         <View style={styles.palInfo}>
-          <Text style={styles.Parent2Label}>Parent 2:</Text>
+          <Image source={palData.image} style={styles.palImage} />
+          <Text style={styles.palName}>#{palData.key} {palData.name}</Text>
+          <TypeBadge types={[palData.types]} />
+        </View>
+        <Text style={styles.plusSign}>+</Text>
+        <TouchableOpacity onPress={() => setModalVisible(true)} style={styles.palInfo}>
           <Image source={selectedPalInfo.image} style={styles.palImage} />
           <Text style={styles.palName}>#{selectedPalInfo.key} {selectedPalInfo.name}</Text>
-          <View style={styles.typesContainer}>
-            <TypeBadge types={selectedPalInfo.types} />
-          </View>
-        </View>
-      </TouchableOpacity>
+          <TypeBadge types={[selectedPalInfo.types]} />
+          <Ionicons name="swap-horizontal-outline" size={24} color={currentTheme.primaryColor} style={styles.selectIcon} />
+        </TouchableOpacity>
+      </View>
 
       <PalSelectionModal
         isModalVisible={isModalVisible}
@@ -113,23 +125,19 @@ const PalBreedingInfosBlock = ({ palData, navigation }) => {
         PalsProfilesStatsAndBreedings={PalsProfilesStatsAndBreedings}
         handlePalSelection={handlePalSelection}
       />
-      
+
       {babyInfo && (
         <TouchableOpacity onPress={() => handleBabyPress(babyInfo)}>
           <View style={styles.breededBabyInfo}>
             <Text style={styles.breededBabyLabel}>Baby:</Text>
             <Image source={babyInfo.image} style={styles.breededBabyImage} />
             <Text style={styles.breededBabyLabel}>#{babyInfo.key} {babyInfo.name}</Text>
-            <View style={styles.typesContainer}>
-              <TypeBadge types={babyInfo.types} />
-            </View>
+            <TypeBadge types={[babyInfo.types]} />
           </View>
         </TouchableOpacity>
       )}
     </View>
   );
 };
-
-
 
 export default PalBreedingInfosBlock;

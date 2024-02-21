@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons'; // Import icons
 import { useTheme } from './contexts/ThemeContext';
+import { responsiveScale } from '../utils/responsiveScale';
 
-const PalSpecialCapacityBlock = ({ specialCapacity }) => {
+// Rename `specialCapacity` prop to `aura`
+const PalSpecialCapacityBlock = ({ aura }) => {
   const { currentTheme } = useTheme();
   const [expanded, setExpanded] = useState(false);
 
@@ -11,13 +13,22 @@ const PalSpecialCapacityBlock = ({ specialCapacity }) => {
     setExpanded(!expanded);
   };
 
+  // Utility function to format drop names for display and matching
+  const formatName = (dropName) => {
+    return dropName
+      .split('_')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  };
+
+    
   const styles = StyleSheet.create({
     container: {
       flexDirection: 'column',
-      paddingHorizontal: 10,
-      borderRadius: 10,
-      marginVertical: 10,
-      borderWidth: 1,
+      paddingHorizontal: responsiveScale(10, 'width'),
+      borderRadius: responsiveScale(10),
+      marginVertical: responsiveScale(10, 'height'),
+      borderWidth: responsiveScale(1),
       borderColor: currentTheme.borderColor,
       backgroundColor: currentTheme.backgroundVariant,
     },
@@ -25,21 +36,21 @@ const PalSpecialCapacityBlock = ({ specialCapacity }) => {
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between',
-      padding: 10,
+      padding: responsiveScale(10),
     },
     titleText: {
       fontWeight: 'bold',
-      fontSize: 16,
+      fontSize: responsiveScale(16),
       color: currentTheme.textColor,
     },
     description: {
-      fontSize: 14,
+      fontSize: responsiveScale(16),
       color: currentTheme.textColor,
-      paddingHorizontal: 10,
-      paddingBottom: 10,
+      paddingHorizontal: responsiveScale(10, 'width'),
+      paddingBottom: responsiveScale(10, 'height'),
     },
     icon: {
-      marginRight: 5,
+      marginRight: responsiveScale(5, 'width'),
     },
   });
 
@@ -47,11 +58,11 @@ const PalSpecialCapacityBlock = ({ specialCapacity }) => {
     <TouchableOpacity onPress={toggleExpand} activeOpacity={0.7}>
       <View style={styles.container}>
         <View style={styles.titleRow}>
-          <Text style={styles.titleText}>{specialCapacity.name}</Text>
-          <Icon name={expanded ? "chevron-up-outline" : "chevron-down-outline"} size={20} color={currentTheme.textColor} />
+          <Text style={styles.titleText}>{formatName(aura.name)}</Text>
+          <Icon name={expanded ? "chevron-up-outline" : "chevron-down-outline"} size={responsiveScale(20)} color={currentTheme.textColor} />
         </View>
         {expanded && (
-          <Text style={styles.description}>{specialCapacity.description}</Text>
+          <Text style={styles.description}>{aura.description}</Text>
         )}
       </View>
     </TouchableOpacity>

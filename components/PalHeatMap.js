@@ -1,36 +1,31 @@
-import React, { useEffect, useState } from 'react';
-import { View, Image, StyleSheet, ActivityIndicator, Switch } from 'react-native';
+import React, { useState } from 'react';
+import { Dimensions, View, Image, StyleSheet, ActivityIndicator, Switch, Text } from 'react-native'; // Import Text from react-native
 import { useTheme } from './contexts/ThemeContext';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { PalsLocation } from '../assets/data/PalsLocation';
+import { responsiveScale } from '../utils/responsiveScale';
 
-export const PalHeatMap = ({ palName, loading, isNightOnly }) => {
+
+export const PalHeatMap = ({ palData }) => {
   const { currentTheme } = useTheme();
-  const [imageSource, setImageSource] = useState(null);
+  const [nightMode, setNightMode] = useState(!palData.maps.day);
 
-  // Set initial nightMode based on isNightOnly prop
-  const [nightMode, setNightMode] = useState(isNightOnly === "true");
-
-  useEffect(() => {
-    const formattedPalName = palName.replace(/\s/g, '_');
-    const source = PalsLocation(formattedPalName, nightMode);
-    if (source) {
-      setImageSource(source);
-    }
-  }, [palName, nightMode]);
-
-  // Disable toggle function if isNightOnly is true
   const toggleNightMode = () => {
-    if (isNightOnly !== "true") {
+    if (palData.maps.day) {
       setNightMode(prevMode => !prevMode);
+      // Reload pal data to update with appropriate mode (night or day)
     }
   };
+
+  const screenWidth = Dimensions.get('window').width;
+
+  const switchDisabled = !palData.maps.day;
+  const mapImageSource = nightMode ? palData.maps.night : palData.maps.day;
 
   const styles = StyleSheet.create({
     mapContainer: {
       position: 'relative',
-      width: '100%',
-      height: 400,
+      width: 0.9 * screenWidth , // Use responsiveScale() for width-related dimensions
+      height: 0.9 * screenWidth,
     },
     mapImage: {
       width: '100%',
@@ -43,40 +38,45 @@ export const PalHeatMap = ({ palName, loading, isNightOnly }) => {
     },
     toggleContainer: {
       position: 'absolute',
-      top: 10,
-      right: 10,
+      top: responsiveScale(10, 'height'),
+      right: responsiveScale(10, 'width'),
       flexDirection: 'row',
       alignItems: 'center',
     },
+    notAvailableText: { // New style for the not available text
+      textAlign: 'center',
+      marginTop: responsiveScale(20, 'height'),
+    },
   });
+
+  // Check if both maps are not defined and display a message accordingly
+  if (!palData.maps.day && !palData.maps.night) {
+    return (
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <Text style={styles.notAvailableText}>This pal is not widely available.</Text>
+      </View>
+    );
+  }
 
   return (
     <View style={styles.mapContainer}>
-      {loading ? (
-        <ActivityIndicator style={styles.activityIndicator} size="large" color={currentTheme.primaryColor} />
+      {mapImageSource ? (
+        <Image source={mapImageSource} style={styles.mapImage} resizeMode="cover" />
       ) : (
-        <>
-          {imageSource ? (
-            <Image source={imageSource} style={styles.mapImage} resizeMode="cover" />
-          ) : (
-            <View style={styles.activityIndicator}>
-              <ActivityIndicator size="small" color={currentTheme.primaryColor} />
-            </View>
-          )}
-          <View style={styles.toggleContainer}>
-            <Icon name="sunny" size={24} color="white" />
-            <Switch
-              trackColor="#767577"
-              thumbColor={nightMode ? "#f5dd4b" : "#f4f3f4"}
-              ios_backgroundColor="#3e3e3e"
-              onValueChange={toggleNightMode}
-              value={nightMode}
-              disabled={isNightOnly === "true"} // Disable switch if isNightOnly is true
-            />
-            <Icon name="moon" size={24} color="white" />
-          </View>
-        </>
+        <ActivityIndicator style={styles.activityIndicator} />
       )}
+      <View style={styles.toggleContainer}>
+        <Icon name="sunny" size={responsiveScale(24)} color="white" />
+        <Switch
+          trackColor={{ false: "#767577", true: "#81b0ff" }}
+          thumbColor={nightMode ? "#f5dd4b" : "#f4f3f4"}
+          ios_backgroundColor="#3e3e3e"
+          onValueChange={toggleNightMode}
+          value={nightMode}
+          disabled={switchDisabled}
+        />
+        <Icon name="moon" size={responsiveScale(24)} color="white" />
+      </View>
     </View>
   );
 };

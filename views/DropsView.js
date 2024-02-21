@@ -8,6 +8,7 @@ import { useMemo } from 'react';
 import GradientBackground from '../components/GradientBackground';
 import SearchBar from '../components/SearchBar';
 import PalDropsModal from '../components/PalDropsModal'; // Import the DropsModal component
+import { responsiveScale } from '../utils/responsiveScale';
 
 const DropsView = ({ route, navigation }) => {
   const { currentTheme } = useTheme();
@@ -53,50 +54,57 @@ const DropsView = ({ route, navigation }) => {
     setModalVisible(true);
   };
 
+    // Utility function to format drop names for display and matching
+    const formatName = (dropName) => {
+      return dropName
+        .split('_')
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+    };
+
   const styles = StyleSheet.create({
     container: {
       flex: 1,
     },
     appContainer: {
       flex: 1,
-      paddingTop: 20,
-      paddingHorizontal: 10,
+      paddingHorizontal: responsiveScale(10, 'width'),
     },
     title: {
-      fontSize: 24,
+      fontSize: responsiveScale(24),
       fontWeight: 'bold',
-      marginBottom: 16,
+      marginBottom: responsiveScale(16, 'height'),
       color: currentTheme.textColor,
     },
     dropItem: {
       flexDirection: 'row',
       alignItems: 'center',
-      marginBottom: 10,
+      marginBottom: responsiveScale(10, 'height'),
       borderWidth: 1,
       borderColor: currentTheme.borderColor,
-      borderRadius: 10,
-      padding: 10,
+      borderRadius: responsiveScale(10),
+      padding: responsiveScale(10, 'width'),
       backgroundColor: currentTheme.backgroundColor,
       shadowColor: "black",
       shadowOffset: {
-        width: 4,
-        height: 6,
+        width: responsiveScale(4, 'width'),
+        height: responsiveScale(6, 'height'),
       },
       shadowOpacity: 0.8,
-      shadowRadius: 8,
+      shadowRadius: responsiveScale(8),
     },
     dropText: {
-      fontSize: 20,
+      fontSize: responsiveScale(20),
       color: currentTheme.textColor,
     },
     emptyState: {
-      fontSize: 18,
+      fontSize: responsiveScale(18),
       textAlign: 'center',
-      marginTop: 20,
+      marginTop: responsiveScale(20, 'height'),
       color: 'gray',
     },
     loadingIndicator: {
-      marginTop: 20,
+      marginTop: responsiveScale(20, 'height'),
     },
   });
 
@@ -128,13 +136,14 @@ const DropsView = ({ route, navigation }) => {
               <TouchableOpacity onPress={() => handleItemPress(item)}>
                 <View style={styles.dropItem}>
                   <Image
-                    source={ItemsList.find((itemObject) => itemObject.name === item)?.icon}
-                    style={{ width: 50, height: 50, marginRight: 10 }}
+                    source={ItemsList.find((itemObject) => itemObject.name === formatName(item))?.icon}
+                    style={{ width: responsiveScale(50), height: responsiveScale(50), marginRight: responsiveScale(10) }}
                   />
-                  <Text style={styles.dropText}>{item}</Text>
+                  <Text style={styles.dropText}>{formatName(item)}</Text>
                 </View>
               </TouchableOpacity>
             )}
+            initialNumToRender={15}
           />
           <PalDropsModal
             visible={modalVisible}

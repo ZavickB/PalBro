@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const CapturedPalsContext = createContext();
@@ -12,11 +12,10 @@ export const useCapturedPals = () => {
 };
 
 export const CapturedPalsProvider = ({ children }) => {
-  const [capturedPals, setCapturedPals] = useState({});
-  const [refreshKey, setRefreshKey] = useState(0);
-
   const STORAGE_KEY = 'capturedPals';
+  const [capturedPals, setCapturedPals] = useState({}); // Initialize to an empty object
 
+  // Load captured pals from AsyncStorage on component mount
   useEffect(() => {
     const loadCapturedPals = async () => {
       try {
@@ -32,6 +31,7 @@ export const CapturedPalsProvider = ({ children }) => {
     loadCapturedPals();
   }, []);
 
+  // Debounce AsyncStorage writes to improve performance
   useEffect(() => {
     const saveCapturedPals = async () => {
       try {
@@ -41,53 +41,44 @@ export const CapturedPalsProvider = ({ children }) => {
       }
     };
 
-    saveCapturedPals();
+    const handler = setTimeout(saveCapturedPals, 500); // Debounce time of 500ms
+    return () => clearTimeout(handler);
   }, [capturedPals]);
 
   const toggleCapture = (palKey) => {
-    if (capturedPals.hasOwnProperty(palKey)) {
-      const updatedPals = { ...capturedPals };
-      delete updatedPals[palKey];
-      setCapturedPals(updatedPals);
-    } else {
-      setCapturedPals(prevPals => ({ ...prevPals, [palKey]: 1 }));
-    }
-    setRefreshKey(prevKey => prevKey + 1);
+    setCapturedPals(prevPals => {
+      const updatedPals = { ...prevPals };
+      if (updatedPals.hasOwnProperty(palKey)) {
+        delete updatedPals[palKey];
+      } else {
+        updatedPals[palKey] = 1;
+      }
+      return updatedPals;
+    });
   };
 
-  const increaseCapture = (palKey) => {
-    setCapturedPals(prevPals => ({
-      ...prevPals,
-      [palKey]: (prevPals[palKey] || 0) + 1
-    }));
-    setRefreshKey(prevKey => prevKey + 1);
+  const setCaptureCount = (palKey, count) => {
+    setCapturedPals(prevPals => {
+      if (count > 0) {
+        return {
+          ...prevPals,
+          [palKey]: count,
+        };
+      } else {
+        const { [palKey]: _, ...rest } = prevPals;
+        return rest;
+      }
+    });
   };
 
-  const decreaseCapture = (palKey) => {
-    if (capturedPals[palKey] > 1) {
-      setCapturedPals(prevPals => ({
-        ...prevPals,
-        [palKey]: prevPals[palKey] - 1
-      }));
-    } else {
-      // Effectively releases the pal if its count goes to 1 and then decremented
-      const updatedPals = { ...capturedPals };
-      delete updatedPals[palKey];
-      setCapturedPals(updatedPals);
-    }
-    setRefreshKey(prevKey => prevKey + 1);
-  };
+  const value = useMemo(() => ({
+    capturedPals,
+    toggleCapture,
+    setCaptureCount,
+  }), [capturedPals, toggleCapture, setCaptureCount]);
 
   return (
-    <CapturedPalsContext.Provider
-      value={{
-        capturedPals,
-        toggleCapture,
-        increaseCapture,
-        decreaseCapture,
-        refreshKey,
-      }}
-    >
+    <CapturedPalsContext.Provider value={value}>
       {children}
     </CapturedPalsContext.Provider>
   );

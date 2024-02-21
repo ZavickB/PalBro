@@ -2,6 +2,7 @@ import React from 'react';
 import { View, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { useTheme } from './contexts/ThemeContext';
+import { responsiveScale } from '../utils/responsiveScale';
 
 const SearchBar = ({ searchText, onSearchChange, placeholder, resetFilters }) => {
   
@@ -12,17 +13,17 @@ const SearchBar = ({ searchText, onSearchChange, placeholder, resetFilters }) =>
       flexDirection: 'row',
       alignItems: 'center',
       backgroundColor: currentTheme.searchBarBackgroundColor,
-      borderRadius: 30,
-      paddingHorizontal: 15,
+      borderRadius: responsiveScale(30),
+      paddingHorizontal: responsiveScale(15, 'width'),
       elevation: 3, // Add elevation for a card-like effect
       shadowColor: '#000',
       shadowOffset: {
         width: 0,
-        height: 2,
+        height: responsiveScale(2, 'height'),
       },
       shadowOpacity: 0.2,
-      shadowRadius: 3.84,
-      marginVertical: 10,
+      shadowRadius: responsiveScale(3.84),
+      marginVertical: responsiveScale(10, 'height'),
     },
     inputContainer: {
       flex: 1,
@@ -30,23 +31,23 @@ const SearchBar = ({ searchText, onSearchChange, placeholder, resetFilters }) =>
       alignItems: 'center',
     },
     searchIcon: {
-      marginRight: 10,
+      marginRight: responsiveScale(10, 'width'),
     },
     searchInput: {
       flex: 1,
-      fontSize: 16,
-      paddingVertical: 10,
+      fontSize: responsiveScale(16),
+      paddingVertical: responsiveScale(10, 'height'),
       color: currentTheme.textColor,
     },
     emptyButton: {
-      padding: 10,
+      padding: responsiveScale(10),
     },
   });
   
   return (
     <View style={styles.searchContainer}>
       <View style={styles.inputContainer}>
-        <Icon name="search" size={20} style={styles.searchIcon} color={currentTheme.primaryColor} />
+        <Icon name="search" size={responsiveScale(20)} style={styles.searchIcon} color={currentTheme.primaryColor} />
         <TextInput
           placeholder={placeholder}
           placeholderTextColor={currentTheme.textColor}
@@ -61,7 +62,7 @@ const SearchBar = ({ searchText, onSearchChange, placeholder, resetFilters }) =>
           onSearchChange(''); // Set the searchText state to an empty string
         }}
         style={styles.emptyButton}>
-        <Icon name="close" size={20} color={currentTheme.primaryColor} />
+        <Icon name="close" size={responsiveScale(20)} color={currentTheme.primaryColor} />
       </TouchableOpacity>
     </View>
   );

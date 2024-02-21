@@ -1,8 +1,9 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const ThemeContext = createContext();
 
-// Define your theme variables with additional properties
+const lastTheme = AsyncStorage.getItem('theme');
 const themes = {
   light: {
     backgroundColor: "#F0D4AE", // Peach as the base background color for dark theme
@@ -57,18 +58,30 @@ const themes = {
 };
 
 
-
-
 export const ThemeProvider = ({ children }) => {
-  const [currentTheme, setCurrentTheme] = useState(themes.light);
+  const [currentTheme, setCurrentTheme] = useState(themes.light); // Default to light theme initially
+  const [isThemeLoaded, setIsThemeLoaded] = useState(false); // State to track if the theme has been loaded
 
-  const toggleTheme = () => {
-    setCurrentTheme(currentTheme === themes.light ? themes.dark : themes.light);
+  useEffect(() => {
+    const loadTheme = async () => {
+      const storedThemeName = await AsyncStorage.getItem('theme');
+      const themeToUse = storedThemeName === 'dark' ? themes.dark : themes.light;
+      setCurrentTheme(themeToUse);
+      setIsThemeLoaded(true); // Set the flag to true once the theme is loaded
+    };
+
+    loadTheme();
+  }, []);
+
+  const toggleTheme = async () => {
+    const newTheme = currentTheme === themes.light ? themes.dark : themes.light;
+    setCurrentTheme(newTheme);
+    await AsyncStorage.setItem('theme', newTheme === themes.light ? 'light' : 'dark');
   };
 
   return (
     <ThemeContext.Provider value={{ currentTheme, toggleTheme, themes }}>
-      {children}
+      {isThemeLoaded ? children : null}
     </ThemeContext.Provider>
   );
 };

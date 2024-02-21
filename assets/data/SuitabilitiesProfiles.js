@@ -1,51 +1,51 @@
 const SuitabilitiesProfiles = [
     {
       workName: "Kindling",
-      iconFileName: require("../images/suitability/Kindling_Icon.png"),
+      iconFileName: require("../images/works/kindling.png"),
     },
     {
       workName: "Planting",
-      iconFileName: require("../images/suitability/Planting_Icon.png"),
+      iconFileName: require("../images/works/planting.png"),
     },
     {
       workName: "Handiwork",
-      iconFileName: require("../images/suitability/Handiwork_Icon.png"),
+      iconFileName: require("../images/works/handiwork.png"),
     },
     {
       workName: "Lumbering",
-      iconFileName: require("../images/suitability/Lumbering_Icon.png"),
+      iconFileName: require("../images/works/lumbering.png"),
     },
     {
       workName: "Medicine Production",
-      iconFileName: require("../images/suitability/Medicine_Production_Icon.png"),
+      iconFileName: require("../images/works/medicine_production.png"),
     },
     {
       workName: "Transporting",
-      iconFileName: require("../images/suitability/Transporting_Icon.png"),
+      iconFileName: require("../images/works/transporting.png"),
     },
     {
       workName: "Watering",
-      iconFileName: require("../images/suitability/Watering_Icon.png"),
+      iconFileName: require("../images/works/watering.png"),
     },
     {
       workName: "Generating Electricity",
-      iconFileName: require("../images/suitability/Generating_Electricity_Icon.png"),
+      iconFileName: require("../images/works/generating_electricity.png"),
     },
     {
       workName: "Gathering",
-      iconFileName: require("../images/suitability/Gathering_Icon.png"),
+      iconFileName: require("../images/works/gathering.png"),
     },
     {
       workName: "Mining",
-      iconFileName: require("../images/suitability/Mining_Icon.png"),
+      iconFileName: require("../images/works/mining.png"),
     },
     {
       workName: "Cooling",
-      iconFileName: require("../images/suitability/Cooling_Icon.png"),
+      iconFileName: require("../images/works/cooling.png"),
     },
     {
       workName: "Farming",
-      iconFileName: require("../images/suitability/Farming_Icon.png"),
+      iconFileName: require("../images/works/farming.png"),
     },
   ];
   

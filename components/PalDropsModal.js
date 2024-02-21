@@ -1,12 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, Image, StyleSheet, ActivityIndicator, Modal, TouchableOpacity, ScrollView, Dimensions } from 'react-native';
 import { useTheme } from './contexts/ThemeContext';
+import { responsiveScale } from '../utils/responsiveScale';
 
 
 const PalDropsModal = ({ visible, onClose, item, pals, loading }) => {
   const [displayedPals, setDisplayedPals] = useState([]);
   const { currentTheme } = useTheme();
   const screenHeight = Dimensions.get('window').height;
+
+  // Utility function to format drop names for display and matching
+  const formatName = (dropName) => {
+    if (!dropName) return ''; // Return empty string if dropName is null or undefined
+    return dropName
+      .split('_')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  };
+  
 
   useEffect(() => {
     if (item && !loading) {
@@ -24,31 +35,32 @@ const PalDropsModal = ({ visible, onClose, item, pals, loading }) => {
     },
     modalContent: {
       backgroundColor: currentTheme.backgroundColor,
-      padding: 20,
-      borderRadius: 10,
+      padding: responsiveScale(20),
+      borderRadius: responsiveScale(10),
       width: '80%',
+      maxHeight: screenHeight * 0.5,
     },
     modalTitle: {
-      fontSize: 18,
+      fontSize: responsiveScale(18),
       fontWeight: 'bold',
-      marginBottom: 10,
+      marginBottom: responsiveScale(10, 'height'),
       color: currentTheme.textColor,
     },
     listContainer: {
-      maxHeight: screenHeight / 2,
-      marginBottom: 10,
+      maxHeight: screenHeight * 0.5,
+      marginBottom: responsiveScale(10, 'height'),
     },
     modalText: {
-      fontSize: 16,
+      fontSize: responsiveScale(16),
       textAlign: 'justify',
       color: currentTheme.textColor, // Set text color based on the theme
     },
     closeButton: {
       backgroundColor: currentTheme.primaryColor,
-      borderRadius: 5,
-      padding: 10,
+      borderRadius: responsiveScale(5),
+      padding: responsiveScale(10),
       alignItems: 'center',
-      marginTop: 10,
+      marginTop: responsiveScale(10, 'height'),
     },
     closeButtonText: {
       color: 'white',
@@ -57,13 +69,13 @@ const PalDropsModal = ({ visible, onClose, item, pals, loading }) => {
     palListItem: {
       flexDirection: 'row',
       alignItems: 'center',
-      paddingHorizontal: 10,
-      paddingVertical: 10,
+      paddingHorizontal: responsiveScale(10, 'width'),
+      paddingVertical: responsiveScale(10, 'height'),
     },
     palImage: {
-      width: 35,
-      height: 35,
-      marginRight: 8,
+      width: responsiveScale(35),
+      height: responsiveScale(35),
+      marginRight: responsiveScale(8),
     },
 
   });
@@ -77,7 +89,7 @@ const PalDropsModal = ({ visible, onClose, item, pals, loading }) => {
     >
       <View style={styles.modalContainer}>
       <View style={styles.modalContent}>
-      <Text style={styles.modalTitle}>Pals who can drop {item}:</Text>
+      <Text style={styles.modalTitle}>Pals who can drop {formatName(item)} :</Text>
           {loading ? (
             <ActivityIndicator size="large" color={currentTheme.textColor} />
           ) : (

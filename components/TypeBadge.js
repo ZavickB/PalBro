@@ -1,12 +1,19 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { responsiveScale } from '../utils/responsiveScale';
+
+const capitalize = (str) => {
+  if (typeof str !== 'string' || str.length === 0) return ''; // Check if str is not a string or is an empty string
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 
 const TypeBadge = ({ types }) => {
   return (
     <View style={styles.container}>
-      {types.map((type, index) => (
-        <View key={index} style={[styles.badge, { backgroundColor: getTypeColor(type) }]}>
-          <Text style={styles.text}>{type}</Text>
+      {types[0].map((type, index) => (
+        <View key={index} style={[styles.badge, { backgroundColor: getTypeColor(capitalize(type)) }]}>
+          <Text style={styles.text}>{capitalize(type)}</Text>
         </View>
       ))}
     </View>
@@ -37,14 +44,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   badge: {
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderRadius: 8,
-    marginHorizontal: 4,
+    paddingHorizontal: responsiveScale(8, "width"),
+    paddingVertical: responsiveScale(4, "height"),
+    borderRadius: responsiveScale(8),
+    marginHorizontal:responsiveScale(4, "width"),
   },
   text: {
     color: 'white',
     fontWeight: 'bold',
+    fontSize: responsiveScale(14),
   },
 });
 

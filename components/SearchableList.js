@@ -4,63 +4,89 @@ import { useTheme } from './contexts/ThemeContext';
 import TypesList from '../assets/data/TypesList';
 import SuitabilitiesProfiles from '../assets/data/SuitabilitiesProfiles';
 import FiltersModal from './FiltersModal';
-import { FloatingAction } from "react-native-floating-action"; // Import the FloatingAction component
+import { FloatingAction } from "react-native-floating-action";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import SearchBar from './SearchBar';
-
+import { useCapturedPals } from '../components/contexts/CapturedPalsContext';
 import { Switch } from 'react-native';
+import { responsiveScale } from '../utils/responsiveScale';
 
 
 const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey, searchBarPlaceholder }) => {
   const { currentTheme } = useTheme();
+  const { capturedPals } = useCapturedPals();
 
   const [searchText, setSearchText] = useState('');
   const [filteredData, setFilteredData] = useState(data);
   const [isFilterModalVisible, setFilterModalVisible] = useState(false);
   const [selectedTypes, setSelectedTypes] = useState([]);
   const [selectedSuitabilities, setSelectedSuitabilities] = useState([]);
+  const [hideCompleted, setHideCompleted] = useState(false);
+
 
   // Define the actions for the FloatingAction button
   const actions = [
     {
       text: "Filters",
-      icon: <Icon name="filter" size={25} color="#fff" />,
+      icon: <Icon name="filter" size={responsiveScale(25)} color="#fff" />,
       name: "bt_filter",
       position: 1,
+      buttonSize: responsiveScale(40),
+      margin: responsiveScale(8),
+      size: responsiveScale(40),
       color: currentTheme.primaryColor,
     },
     {
       text: "Sort by Name A-Z",
-      icon: <Icon name="sort-alpha-asc" size={25} color="#fff" />,
+      icon: <Icon name="sort-alpha-asc" size={responsiveScale(25)} color="#fff" />,
       name: "sort_name_asc",
       position: 2,
+      buttonSize: responsiveScale(40),
+      margin: responsiveScale(8),
+      size: responsiveScale(40),
       color: currentTheme.primaryColor,
     },
     {
       text: "Sort by Name Z-A",
-      icon: <Icon name="sort-alpha-desc" size={25} color="#fff" />,
+      icon: <Icon name="sort-alpha-desc" size={responsiveScale(25)} color="#fff" />,
       name: "sort_name_desc",
       position: 3,
+      buttonSize: responsiveScale(40),
+      margin: responsiveScale(8),
+      size: responsiveScale(40),
+      color: currentTheme.primaryColor,
+    },
+    {
+      text: !hideCompleted ? "Hide Completed Pals" : "Show Completed Pals",
+      icon: <Icon name={!hideCompleted ?"eye-slash" : "eye"} size={responsiveScale(25)} color="#fff" />,
+      name: "toggle_hide_completed",
+      position: 4,
+      buttonSize: responsiveScale(40),
+      margin: responsiveScale(8),
+      size: responsiveScale(40),
       color: currentTheme.primaryColor,
     },
     {
       text: "Reset Filters & Sort",
-      icon: <Icon name="refresh" size={25} color="#fff" />,
+      icon: <Icon name="refresh" size={responsiveScale(25)} color="#fff" />,
       name: "reset_all",
-      position: 4,
+      position: 5,
+      buttonSize: responsiveScale(40),
+      margin: responsiveScale(8),
+      size: responsiveScale(40),
       color: currentTheme.primaryColor,
     },
   ];
 
   useEffect(() => {
-    filterData(searchText, selectedTypes, selectedSuitabilities);
-  }, [searchText, selectedTypes, selectedSuitabilities]);
+    filterData(searchText, selectedTypes, selectedSuitabilities, hideCompleted);
+  }, [searchText, selectedTypes, selectedSuitabilities, hideCompleted, capturedPals]);
 
   useEffect(() => {
     setFilteredData(data);
   }, [data]);
 
-  const filterData = (text, types, suitabilities) => {
+  const filterData = (text, types, suitabilities, hideCompleted) => {
     const filtered = data.filter((item) => {
       const nameMatch = item.name.toLowerCase().includes(text.toLowerCase());
       
@@ -75,10 +101,24 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
         suitabilities.every((suitability) =>
           item.suitability.some((s) => s.type === suitability)
         );
-  
-      return nameMatch && typeMatch && suitabilityMatch;
+            
+      const hideCompletedMatch = !hideCompleted || capturedPals[item.key] < 10 || capturedPals[item.key] === undefined;
+
+      return nameMatch && typeMatch && suitabilityMatch && hideCompletedMatch;
     });
   
+    if (hideCompleted) {
+      // Sort by capture number decreasing, but only for those not completed
+      filtered.sort((a, b) => {
+        // Assuming capturedPals[item.key] holds the capture count, adjust if necessary
+        const captureCountA = capturedPals[a.key] || 0;
+        const captureCountB = capturedPals[b.key] || 0;
+  
+        // Sort by capture count decreasing
+        return captureCountB - captureCountA;
+      });
+    }
+
     // Sort filtered data by suitability level if a single suitability is selected
     if (suitabilities.length === 1) {
       const selectedSuitability = suitabilities[0];
@@ -109,6 +149,10 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
     setFilteredData(filtered);
   };
   
+  const toggleHideCompleted = () => {
+    setHideCompleted(!hideCompleted);
+  };
+
   const sortData = (sortOption) => {
     const sortedData = [...filteredData]; // Create a copy to avoid direct state mutation
   
@@ -165,52 +209,50 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between',
-      paddingHorizontal: 10,
-      marginBottom: 20,
+      paddingHorizontal: responsiveScale(10, "width"),
+      marginBottom: responsiveScale(20, "height"),
     },
     searchInput: {
       flex: 1,
-      height: 40,
-      borderWidth: 1,
-      borderRadius: 20,
-      paddingHorizontal: 15,
+      height: responsiveScale(40, "height"),
+      borderWidth: responsiveScale(1, "width"),
+      borderRadius: responsiveScale(20),
+      paddingHorizontal: responsiveScale(15, "width"),
       backgroundColor: '#fff', // Ensuring input is visibly distinct
       color: currentTheme.textColor, // Text color adapted to theme
     },
     emptyState: {
-      fontSize: 18,
+      fontSize: responsiveScale(18),
       textAlign: 'center',
-      marginTop: 20,
+      marginTop: responsiveScale(20, "height"),
       color: 'gray',
     },
     filterButton: {
-      paddingHorizontal: 10,
-      paddingVertical: 5,
-      marginHorizontal: 10,
-      marginBottom: 10,
-      borderWidth: 1,
+      paddingHorizontal: responsiveScale(10, "width"),
+      marginHorizontal: responsiveScale(10, "width"),
+      borderWidth: responsiveScale(1),
       borderColor: 'gray',
-      borderRadius: 5,
+      borderRadius: responsiveScale(5),
       alignSelf: 'flex-end',
     },
     filterModal: {
-      padding: 20,
+      padding: responsiveScale(20),
       height: '80%',
       marginTop: '20%',
     },
     closeFilterButton: {
-      padding: 10,
+      padding: responsiveScale(10),
     },
     closeButtonText: {
       color: 'blue',
     },
     filterSection: {
-      marginBottom: 20,
+      marginBottom: responsiveScale(20, "height"),
     },
     sectionTitle: {
-      fontSize: 16,
+      fontSize: responsiveScale(16),
       fontWeight: 'bold',
-      marginBottom: 10,
+      marginBottom: responsiveScale(10, "height"),
       color: currentTheme.textColor,
     },
     filterOptionRow: {
@@ -221,20 +263,27 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
     filterOption: {
       flexDirection: 'row',
       alignItems: 'center',
-      marginBottom: 5,
-      marginRight: 5, // Adjust as needed to fit three items per row comfortably.
+      marginBottom: responsiveScale(5, "height"),
+      marginRight: responsiveScale(5, "width"), // Adjust as needed to fit three items per row comfortably.
       flex: 1, // Allows the option to flexibly expand but might need adjustment.
       minWidth: '30%', // Adjusted from 45% to fit 3 items per row.
     },
     icon: {
-      width: 35,
-      height: 35,
-      marginRight: 10,
+      width: responsiveScale(35),
+      height: responsiveScale(35),
+      marginRight: responsiveScale(10),
     },
     switchButton: {
-      marginRight: 5,
+      marginRight: responsiveScale(5, "width"),
     },
-  });
+});
+
+  const renderItemWithHideCompleted = ({ item }) => {
+    return renderItem({
+      item,
+      hideCompleted, // Include hideCompleted in the props passed to renderItem
+    });
+  };
 
   return (
     <View style={[styles.container]}>
@@ -248,8 +297,8 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
             {TypesList.map((type) => (
               <View key={type.type} style={styles.filterOption}>
                 <Switch
-                  value={selectedTypes.includes(type.type)}
-                  onValueChange={() => toggleTypeFilter(type.type)}
+                  value={selectedTypes.includes(type.type.toLowerCase())}
+                  onValueChange={() => toggleTypeFilter(type.type.toLowerCase())}
                   thumbColor={currentTheme.switchThumbColor} // Using the new theme prop for thumb color
                   trackColor={{ false: currentTheme.switchTrackColorOff, true: currentTheme.switchTrackColorOn }} // Using the new theme props for track color
                   style={styles.switchButton}
@@ -266,8 +315,9 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
             {SuitabilitiesProfiles.map((suitability) => (
               <View key={suitability.workName} style={styles.filterOption}>
                 <Switch
-                  value={selectedSuitabilities.includes(suitability.workName)}
-                  onValueChange={() => toggleSuitabilityFilter(suitability.workName)}
+                
+                  value={selectedSuitabilities.includes(suitability.workName.toLowerCase().replace(" ", "_"))}
+                  onValueChange={() => toggleSuitabilityFilter(suitability.workName.toLowerCase().replace(" ", "_"))}
                   thumbColor={currentTheme.switchThumbColor} // Using the new theme prop for thumb color
                   trackColor={{ false: currentTheme.switchTrackColorOff, true: currentTheme.switchTrackColorOn }} // Using the new theme props for track color
                   style={styles.switchButton}
@@ -297,7 +347,7 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
       <View style={[styles.container]}>
         <FlatList
           data={filteredData}
-          renderItem={renderItem}
+          renderItem={renderItemWithHideCompleted}
           keyExtractor={(item) => `${item.key}`}
           numColumns={numColumns}
         />
@@ -305,16 +355,23 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
 
       <FloatingAction
         actions={actions}
+        style={styles.actionButtonContainer}
+        buttonSize={responsiveScale(56)}
+        actionsPaddingTopBottom={responsiveScale(8)}
+        distanceToEdge={responsiveScale(30)}
         onPressItem={name => {
           if (name === "bt_filter") {
             setFilterModalVisible(true);
+          } else if (name === "toggle_hide_completed") {
+            toggleHideCompleted(); // Toggle the hideCaptured state
           } else if (name === "reset_all") {
-            setSearchText(''); // Reset search text
-            setSelectedTypes([]); // Reset selected types
-            setSelectedSuitabilities([]); // Reset selected suitabilities
-            sortData(''); // Reset sorting (you can pass an empty string or any default sorting option)
+            setSearchText('');
+            setSelectedTypes([]);
+            setSelectedSuitabilities([]);
+            setHideCompleted(false); // Reset hideCaptured to false
+            sortData('');
           } else {
-            sortData(name); // Call the sort function with the action name
+            sortData(name);
           }
         }}
         color={currentTheme.backgroundColor}

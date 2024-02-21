@@ -1,25 +1,28 @@
 import React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
+import { responsiveScale } from '../utils/responsiveScale';
 
 const TypePin = ({ type, tileWidth }) => {
+    type = capitalize(type);
+    
     const styles = StyleSheet.create({
         container: {
             alignItems: 'center',
             justifyContent: 'center', // Center content vertically and horizontally
-            margin: 2,
+            margin: responsiveScale(2),
         },
         badge: {
             alignItems: 'center',
             justifyContent: 'center', // Center content vertically and horizontally
-            width: tileWidth ? tileWidth / 4 : 30, // Adjust the size as needed
-            height: tileWidth ? tileWidth / 4 : 30, // Adjust the size as needed
-            borderRadius: 18, // Make it round
+            width: responsiveScale(30, "width"), // Adjust the size as needed
+            height: responsiveScale(30, "height"), // Adjust the size as needed
+            borderRadius: responsiveScale(18), // Make it round
             backgroundColor: getTypeColor(type),
-            margin: 4,
+            margin: responsiveScale(4),
         },
         typeIcon: {
-            width: 20,
-            height: 20,
+            width: responsiveScale(20),
+            height: responsiveScale(20),
             alignItems: 'center', // Center the image inside the badge
             justifyContent: 'center', // Center the image inside the badge
         },
@@ -38,6 +41,11 @@ const TypePin = ({ type, tileWidth }) => {
     );
 };
 
+const capitalize = (str) => {
+    if (typeof str !== 'string' || str.length === 0) return ''; // Check if str is not a string or is an empty string
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 const getTypeColor = (type) => {
     const typeColors = {
         "Ground": '#E0C068',
@@ -54,6 +62,7 @@ const getTypeColor = (type) => {
 
     return typeColors[type] || 'gray';
 };
+
 
 const getTypeIcon = (type) => {
     const typeIcons = {

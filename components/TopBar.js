@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image, ActivityIndicator } from 'react-native';
-import { FontAwesome } from '@expo/vector-icons';
-import SolarEclipseImage from '../assets/full-solar-eclipse.png'; // Adjust the path as needed
+import { FontAwesome, FontAwesome5 } from '@expo/vector-icons';
 import { useTheme } from './contexts/ThemeContext';
+import { responsiveScale } from '../utils/responsiveScale';
 
 const TopBar = ({ title, navigation }) => {
   const { toggleTheme, currentTheme } = useTheme(); // Get current theme
@@ -26,8 +26,8 @@ const TopBar = ({ title, navigation }) => {
             {loading ? (
               <ActivityIndicator color={currentTheme.textColor} />
             ) : (
-              <Image source={SolarEclipseImage} style={[styles.eclipseImage, { tintColor: currentTheme.textColor }]} />
-            )}
+              <FontAwesome5 name="adjust" size={responsiveScale(30)} color={currentTheme.textColor} />
+              )}
           </TouchableOpacity>
         </>
       ) : (
@@ -39,8 +39,8 @@ const TopBar = ({ title, navigation }) => {
             {loading ? (
               <ActivityIndicator color={currentTheme.textColor} />
             ) : (
-              <Image source={SolarEclipseImage} style={[styles.eclipseImage, { tintColor: currentTheme.textColor }]} />
-            )}
+              <FontAwesome5 name="adjust" size={responsiveScale(30)} color={currentTheme.textColor} />
+              )}
           </TouchableOpacity>
         </>
       )}
@@ -50,25 +50,20 @@ const TopBar = ({ title, navigation }) => {
 
 const styles = StyleSheet.create({
   topBar: {
-    marginTop: 40, // Adjust the marginTop to account for the status bar
+    marginTop: responsiveScale(40, "height"), // Adjust the marginTop to account for the status bar
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between', // Use space-between to separate the icons
-    height: 60, // Set a fixed height for the top bar
+    height: responsiveScale(60, 'height'), // Set a fixed height for the top bar
     width: '100%',
   },
   title: {
     alignContent: 'center',
-    fontSize: 40,
+    fontSize: responsiveScale(30),
     fontWeight: 'bold',
   },
   icon: {
-    marginLeft: 10,
-    marginRight: 10,
-  },
-  eclipseImage: {
-    width: 40, // Adjust the width as needed
-    height: 40, // Adjust the height as needed
+    marginHorizontal: responsiveScale(10, "width"),
   },
 });
 

@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Modal, View, Text, FlatList, TouchableOpacity, Image, StyleSheet, Dimensions } from 'react-native';
 import { useTheme } from './contexts/ThemeContext'; // Import the useTheme hook
 import TypeBadge from './TypeBadge';
+import { responsiveScale } from '../utils/responsiveScale';
 
 const screenHeight = Dimensions.get('window').height;
 
@@ -13,20 +14,20 @@ const MemoizedPalsList = React.memo(({ data, handlePalSelection }) => {
     pickerItem: {
       flexDirection: 'row',
       alignItems: 'center',
-      paddingHorizontal: 10,
-      paddingVertical: 10,
+      paddingHorizontal: responsiveScale(10, 'width'),
+      paddingVertical: responsiveScale(10, 'height'),
       backgroundColor: currentTheme.backgroundColor, // Example background color
     },
     pickerItemImage: {
-      width: 35,
-      height: 35,
+      width: responsiveScale(35),
+      height: responsiveScale(35),
       resizeMode: 'cover',
-      marginRight: 8,
+      marginRight: responsiveScale(8, 'width'),
     },
     pickerItemText: {
       flex: 1, // Allow text to fill the available space but not overflow
-      fontSize: 16,
-      marginRight: 10, // Add some margin to the right if needed
+      fontSize: responsiveScale(16),
+      marginRight: responsiveScale(10, 'width'), // Add some margin to the right if needed
       // Handling text overflow
       color: currentTheme.textColor, 
       flexDirection: 'row',
@@ -36,7 +37,7 @@ const MemoizedPalsList = React.memo(({ data, handlePalSelection }) => {
       flexDirection: 'row',
       flexWrap: 'wrap', // Allow badges to wrap to next line if needed
       justifyContent: 'flex-end', // Align badges to the right
-      marginLeft: 15, // Ensure there's space between text and badges
+      marginLeft: responsiveScale(15, 'width'), // Ensure there's space between text and badges
       flex: 1, // Take up remaining space
     },
   });
@@ -51,7 +52,7 @@ const MemoizedPalsList = React.memo(({ data, handlePalSelection }) => {
             <Image source={item.image} style={styles.pickerItemImage} />
             <Text style={styles.pickerItemText}>{item.name}</Text>
             <View style={styles.typesContainer}>
-              <TypeBadge types={item.types} />
+              <TypeBadge types={[item.types]} />
             </View>
           </View>
         </TouchableOpacity>
@@ -63,6 +64,11 @@ const MemoizedPalsList = React.memo(({ data, handlePalSelection }) => {
 const PalSelectionModal = ({ isModalVisible, setModalVisible, PalsProfilesStatsAndBreedings, handlePalSelection }) => {
   const { currentTheme } = useTheme(); // Use theme context
 
+  // Sort PalsProfilesStatsAndBreedings by name in ascending order (A to Z)
+  const sortedPalsProfiles = React.useMemo(() => {
+    return [...PalsProfilesStatsAndBreedings].sort((a, b) => a.name.localeCompare(b.name));
+  }, [PalsProfilesStatsAndBreedings]); // Depend on PalsProfilesStatsAndBreedings so it recalculates only if it changes
+
   const styles = StyleSheet.create({
     modalContainer: {
       flex: 1,
@@ -72,23 +78,23 @@ const PalSelectionModal = ({ isModalVisible, setModalVisible, PalsProfilesStatsA
     },
     modalContent: {
       backgroundColor: currentTheme.backgroundColor, // Dynamic background color based on theme
-      padding: 20,
-      borderRadius: 10,
-      width: '80%',
-      maxHeight: screenHeight / 2, // Limit height for scrollability
+      padding: responsiveScale(20),
+      borderRadius: responsiveScale(10),
+      width: responsiveScale(340, "width"),
+      maxHeight: responsiveScale(440, "height"), // Limit height for scrollability
     },
     modalTitle: {
-      fontSize: 18,
+      fontSize: responsiveScale(18),
       fontWeight: 'bold',
-      marginBottom: 10,
+      marginBottom: responsiveScale(10),
       color: currentTheme.textColor, // Dynamic text color based on theme
     },
     closeButton: {
       backgroundColor: currentTheme.primaryColor, // Dynamic button color based on theme
-      borderRadius: 5,
-      padding: 10,
+      borderRadius: responsiveScale(5),
+      padding: responsiveScale(10),
       alignItems: 'center',
-      marginTop: 10,
+      marginTop: responsiveScale(10),
     },
     closeButtonText: {
       color: 'white',
@@ -106,7 +112,7 @@ const PalSelectionModal = ({ isModalVisible, setModalVisible, PalsProfilesStatsA
       <View style={styles.modalContainer}>
         <View style={styles.modalContent}>
           <Text style={styles.modalTitle}>Select a pal</Text>
-          <MemoizedPalsList data={PalsProfilesStatsAndBreedings} handlePalSelection={handlePalSelection} />
+          <MemoizedPalsList data={sortedPalsProfiles} handlePalSelection={handlePalSelection} />
           <TouchableOpacity style={styles.closeButton} onPress={() => setModalVisible(false)}>
             <Text style={styles.closeButtonText}>Close</Text>
           </TouchableOpacity>
