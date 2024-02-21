@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image, ActivityIndicator } from 'react-native';
 import { FontAwesome, FontAwesome5 } from '@expo/vector-icons';
-import SolarEclipseImage from '../assets/full-solar-eclipse.png'; // Adjust the path as needed
 import { useTheme } from './contexts/ThemeContext';
 import { responsiveScale } from '../utils/responsiveScale';
 
