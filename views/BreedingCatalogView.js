@@ -42,7 +42,9 @@ const BreedingCatalogView = ({ navigation }) => {
       <View style={styles.tickerContainer}>
         <Animated.View style={{ transform: [{ translateY }] }}>
           {pageNames.map((name, index) => (
-            <Text key={index} style={styles.tickerText}>{name}</Text>
+            // <TouchableOpacity key={index} onLongPress={() => navigation.navigate("AdvancedBreedingsView")}>
+              <Text key={index} style={styles.tickerText} >{name}</Text>
+            // </TouchableOpacity> 
           ))}
         </Animated.View>
       </View>
@@ -185,7 +187,7 @@ const BreedingCatalogView = ({ navigation }) => {
       <SafeAreaView style={styles.container}>
         <View style={styles.appContainer}>
           <TopBar title="Breeding Catalog" navigation={navigation} />
-          <PageNameTicker pageIndexAnimatedValue={pageIndexAnimatedValue} />
+          <PageNameTicker pageIndexAnimatedValue={pageIndexAnimatedValue}/>
           <PagerView
             initialPage={0}
             style={styles.pagerView}

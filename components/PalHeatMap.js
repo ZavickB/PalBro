@@ -46,6 +46,7 @@ export const PalHeatMap = ({ palData }) => {
     notAvailableText: { // New style for the not available text
       textAlign: 'center',
       marginTop: responsiveScale(20, 'height'),
+      color: currentTheme.textColor,
     },
   });
 

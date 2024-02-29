@@ -50,6 +50,13 @@ const PalDetailedView = ({ route, navigation }) => {
             <SuitabilityBlock suitabilities={palData.suitability} />
           </View>
         );
+      case 'stats':
+        return (
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}>Stats:</Text>
+            <PalStatsBlock pal={palData} statsOrder={statsOrder} />
+          </View>
+        );
       case 'skills':
         return (
           <View style={styles.section}>
@@ -89,6 +96,7 @@ const PalDetailedView = ({ route, navigation }) => {
     { type: 'aura' },
     { type: 'description' },
     { type: 'suitabilities' },
+    { type: 'stats' },
     { type: 'skills' },
     { type: 'drops' },
     { type: 'map' },
