@@ -42,9 +42,9 @@ const BreedingCatalogView = ({ navigation }) => {
       <View style={styles.tickerContainer}>
         <Animated.View style={{ transform: [{ translateY }] }}>
           {pageNames.map((name, index) => (
-            // <TouchableOpacity key={index} onLongPress={() => navigation.navigate("AdvancedBreedingsView")}>
+            <TouchableOpacity key={index} onLongPress={() => navigation.navigate("AdvancedBreedingsView")}>
               <Text key={index} style={styles.tickerText} >{name}</Text>
-            // </TouchableOpacity> 
+            </TouchableOpacity> 
           ))}
         </Animated.View>
       </View>

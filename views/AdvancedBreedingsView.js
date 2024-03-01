@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Dimensions, StyleSheet, View, Text, TextInput, TouchableOpacity, ScrollView, Modal } from 'react-native';
+import { ActivityIndicator, Dimensions, StyleSheet, View, Text, TextInput, TouchableOpacity, ScrollView, Modal } from 'react-native';
 import TopBar from '../components/TopBar';
 import GradientBackground from '../components/GradientBackground';
 import { useTheme } from '../components/contexts/ThemeContext';
@@ -16,11 +16,14 @@ const AdvancedBreedingsView = ({ navigation }) => {
     const [desiredSkills, setDesiredSkills] = useState(['', '', '', '']);
     const [result, setResult] = useState(null);
     const [potentialCouples, setPotentialCouples] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
 
     const width = Dimensions.get('window').width;
     const fieldWidth = 0.5 * width - 20;
     const buttonWidth = 0.9 * width;
+
     const handleCalculate = async () => {
+        setIsLoading(true);
         if (!result || !result.uri) {
             console.error('Please select a file');
             return;
@@ -32,6 +35,7 @@ const AdvancedBreedingsView = ({ navigation }) => {
         } catch (error) {
             console.error('Error fetching potential couples:', error);
         }
+        setIsLoading(false);
     };
 
     const styles = StyleSheet.create({
@@ -81,7 +85,8 @@ const AdvancedBreedingsView = ({ navigation }) => {
           },
     });
 
-    const pals = PalsProfilesStatsAndBreedings.map(profile => profile);
+    const pals = PalsProfilesStatsAndBreedings.map(profile => profile).sort((a, b) => a.name.localeCompare(b.name));
+
 
     return (
         <GradientBackground>
@@ -158,12 +163,21 @@ const AdvancedBreedingsView = ({ navigation }) => {
                             <Text style={styles.buttonText}>Calculate Potential Couples</Text>
                         </TouchableOpacity>
                     <View style={styles.resultContainer}>
-                        {potentialCouples.length > 0 && (
+                        {isLoading ? (
+                            // Display loading indicator when isLoading is true
+                            <ActivityIndicator size="large" color={currentTheme.primaryColor} />
+                        ) : potentialCouples.length > 0 ? (
+                            // Display potential couples if any
                             <ScrollView>
                                 {potentialCouples.map((couple, index) => (
                                     <PotentialCoupleCard key={index} couple={couple} />
                                 ))}
                             </ScrollView>
+                        ) : (
+                            // Display no results message
+                            <Text style={{ color: currentTheme.textColor, textAlign: 'center' }}>
+                                No potential couple found for selected Passives
+                            </Text>
                         )}
                     </View>
                 </View>
