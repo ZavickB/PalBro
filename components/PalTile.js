@@ -144,7 +144,6 @@ const PalTile = ({ pal, tileWidth, tileHeight, spacing, captureCount, onCaptureP
         </View>
         <Text style={styles.text}>{pal.name}</Text>
       </View>
-      <TouchableOpacity onPress={onCapturePress} style={styles.captureButton}>
         <Image
           source={require('../assets/images/Sphere_icon.png')} // Update the path to your actual capture icon
           style={[
@@ -152,7 +151,6 @@ const PalTile = ({ pal, tileWidth, tileHeight, spacing, captureCount, onCaptureP
             captureCount != 0 ? {} : { tintColor: 'gray' }
           ]}
         />
-      </TouchableOpacity>
       <View style={[styles.rarityBadge, { backgroundColor: getRarityColor(pal.rarity) }]}>
         <Text style={styles.rarityText}>{pal.rarity}</Text>
       </View>

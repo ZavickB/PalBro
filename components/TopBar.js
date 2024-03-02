@@ -3,12 +3,13 @@ import { View, Text, TouchableOpacity, StyleSheet, Image, ActivityIndicator } fr
 import { FontAwesome, FontAwesome5 } from '@expo/vector-icons';
 import { useTheme } from './contexts/ThemeContext';
 import { responsiveScale } from '../utils/responsiveScale';
+import { GameSelectionModal } from './GameSelectionModal';
 
 const TopBar = ({ title, navigation }) => {
   const { toggleTheme, currentTheme } = useTheme(); // Get current theme
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   const [loading, setLoading] = useState(false); // State to track loading
-
   const handleThemeToggle = () => {
     if (!loading) {
       setLoading(true); // Set loading state to true
@@ -22,12 +23,11 @@ const TopBar = ({ title, navigation }) => {
       {title ? (
         <>
           <Text style={[styles.title, { color: currentTheme.textColor }]}>{title}</Text>
+          <TouchableOpacity style={styles.icon} onPress={() => setIsModalVisible(true)}>
+            <FontAwesome5 name="gamepad" size={responsiveScale(30)} color={currentTheme.textColor} />
+          </TouchableOpacity>
           <TouchableOpacity style={styles.icon} onPress={handleThemeToggle}>
-            {loading ? (
-              <ActivityIndicator color={currentTheme.textColor} />
-            ) : (
-              <FontAwesome5 name="adjust" size={responsiveScale(30)} color={currentTheme.textColor} />
-              )}
+            <FontAwesome5 name="adjust" size={responsiveScale(30)} color={currentTheme.textColor} />
           </TouchableOpacity>
         </>
       ) : (
@@ -35,15 +35,15 @@ const TopBar = ({ title, navigation }) => {
           <TouchableOpacity style={styles.icon} onPress={() => navigation.goBack()}>
             <FontAwesome name="arrow-left" size={24} color={currentTheme.textColor} />
           </TouchableOpacity>
+          <TouchableOpacity style={styles.icon} onPress={() => setIsModalVisible(true)}>
+            <FontAwesome5 name="gamepad" size={responsiveScale(30)} color={currentTheme.textColor} />
+          </TouchableOpacity>
           <TouchableOpacity style={styles.icon} onPress={handleThemeToggle}>
-            {loading ? (
-              <ActivityIndicator color={currentTheme.textColor} />
-            ) : (
-              <FontAwesome5 name="adjust" size={responsiveScale(30)} color={currentTheme.textColor} />
-              )}
+            <FontAwesome5 name="adjust" size={responsiveScale(30)} color={currentTheme.textColor} />
           </TouchableOpacity>
         </>
       )}
+      <GameSelectionModal visible={isModalVisible} onClose={() => setIsModalVisible(false)} />
     </View>
   );
 };

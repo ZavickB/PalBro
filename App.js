@@ -9,10 +9,11 @@ import BreedingCatalogView from './views/BreedingCatalogView';
 import BreedingDetailsView from './views/BreedingDetailsView';
 import DropsView from './views/DropsView';
 import { ThemeProvider } from './components/contexts/ThemeContext';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import { GameProvider } from './components/contexts/GameContext';
 import { CapturedPalsProvider } from './components/contexts/CapturedPalsContext';
 import { enableScreens } from 'react-native-screens';
 import { StatusBar } from 'react-native';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import SplashScreen from 'react-native-splash-screen';
 import AdvancedBreedingsView from './views/AdvancedBreedingsView';
 import BuyMeACoffeeModal from './components/BuyMeACoffeeModal';
@@ -61,44 +62,46 @@ export default function App() {
 
   return (
     <ThemeProvider>
-      <CapturedPalsProvider>
-          <NavigationContainer>
-          <StatusBar translucent backgroundColor="transparent" style="auto"  />
-            <Tab.Navigator initialRouteName="Home" screenOptions={({ route }) => ({
-              headerShown: false,
-              tabBarActiveTintColor: "darkgray",
-              tabBarInactiveTintColor: "gray",
-              tabBarStyle: [
-                {
-                  "display": "flex"
-                },
-                null
-              ],
-              tabBarIcon: ({ focused, color, size }) => {
-                let iconName;
+      <GameProvider>
+        <CapturedPalsProvider>
+            <NavigationContainer>
+            <StatusBar translucent backgroundColor="transparent" style="auto"  />
+              <Tab.Navigator initialRouteName="Home" screenOptions={({ route }) => ({
+                headerShown: false,
+                tabBarActiveTintColor: "darkgray",
+                tabBarInactiveTintColor: "gray",
+                tabBarStyle: [
+                  {
+                    "display": "flex"
+                  },
+                  null
+                ],
+                tabBarIcon: ({ focused, color, size }) => {
+                  let iconName;
 
-                if (route.name === 'Home') {
-                  iconName = focused ? 'home' : 'home-outline';
-                } else if (route.name === 'My Pals') {
-                  iconName = focused ? 'paw' : 'paw-outline';
-                } else if (route.name === 'Breedings') {
-                  iconName = focused ? 'egg' : 'egg-outline';
-                } else if (route.name === 'Drops') {
-                  iconName = focused ? 'cube' : 'cube-outline';
-                } 
-                // Return the appropriate icon component
-                return <Ionicons name={iconName} size={size} color={color} />;
-              },
-            })}
-          >
-            <Tab.Screen name="Home" component={MainStack} />
-            <Tab.Screen name="My Pals" component={MyPalsStack} />
-            <Tab.Screen name="Breedings" component={BreedingStack} />
-            <Tab.Screen name="Drops" component={DropsView} />
-          </Tab.Navigator>
-          <BuyMeACoffeeModal />
-        </NavigationContainer>
-      </CapturedPalsProvider>
+                  if (route.name === 'Home') {
+                    iconName = focused ? 'home' : 'home-outline';
+                  } else if (route.name === 'My Pals') {
+                    iconName = focused ? 'paw' : 'paw-outline';
+                  } else if (route.name === 'Breedings') {
+                    iconName = focused ? 'egg' : 'egg-outline';
+                  } else if (route.name === 'Drops') {
+                    iconName = focused ? 'cube' : 'cube-outline';
+                  } 
+                  // Return the appropriate icon component
+                  return <Ionicons name={iconName} size={size} color={color} />;
+                },
+              })}
+            >
+              <Tab.Screen name="Home" component={MainStack} />
+              <Tab.Screen name="My Pals" component={MyPalsStack} />
+              <Tab.Screen name="Breedings" component={BreedingStack} />
+              <Tab.Screen name="Drops" component={DropsView} />
+            </Tab.Navigator>
+            <BuyMeACoffeeModal />
+          </NavigationContainer>
+        </CapturedPalsProvider>
+      </GameProvider>
     </ThemeProvider>
   );
 }
