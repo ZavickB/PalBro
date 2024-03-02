@@ -173,6 +173,7 @@ const BreedingCatalogView = ({ navigation }) => {
     tickerContainer: {
       height: TICKER_HEIGHT, // Set a fixed height for the ticker container
       overflow: 'hidden',
+      paddingHorizontal: responsiveScale(10),
     },
     tickerText: {
       fontSize: responsiveScale(20),

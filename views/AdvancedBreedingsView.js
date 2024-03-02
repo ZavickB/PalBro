@@ -99,7 +99,7 @@ const AdvancedBreedingsView = ({ navigation }) => {
                                 placeholderTextColor={currentTheme.secondaryColor}
                                 placeholder={`Player name`}
                                 value={playerName}
-                                onChangeText={(name) => setPlayerName(name)}
+                                onChangeText={(name) => setPlayerName(name.trim())}
                             />
                             <Picker
                                 style={[styles.input, {padding: 0, justifyContent: 'center'}]} // Adjust style for Picker
@@ -117,20 +117,22 @@ const AdvancedBreedingsView = ({ navigation }) => {
                                 <TextInput
                                     style={styles.input}
                                     placeholder={`Desired Skill ${index * 2 + 1}`}
+                                    placeholderTextColor={currentTheme.secondaryColor}
                                     value={desiredSkills[index * 2]}
                                     onChangeText={(text) => {
                                         const newSkills = [...desiredSkills];
-                                        newSkills[index * 2] = text;
+                                        newSkills[index * 2] = text.trim();
                                         setDesiredSkills(newSkills);
                                     }}
                                 />
                                 <TextInput
                                     style={styles.input}
                                     placeholder={`Desired Skill ${index * 2 + 2}`}
+                                    placeholderTextColor={currentTheme.secondaryColor}
                                     value={desiredSkills[index * 2 + 1]}
                                     onChangeText={(text) => {
                                         const newSkills = [...desiredSkills];
-                                        newSkills[index * 2 + 1] = text;
+                                        newSkills[index * 2 + 1] = text.trim();
                                         setDesiredSkills(newSkills);
                                     }}
                                 />
