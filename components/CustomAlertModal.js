@@ -3,7 +3,7 @@ import { Modal, View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { useTheme } from './contexts/ThemeContext'; // Assuming this is your theme context
 import { responsiveScale } from '../utils/responsiveScale';
 
-const CustomAlertModal = ({ visible, title, message, onConfirm, onCancel }) => {
+const CustomAlertModal = ({ visible, title, message, onConfirm, onCancel, confirmButtonText }) => {
   const { currentTheme } = useTheme();
 
   return (
@@ -13,12 +13,20 @@ const CustomAlertModal = ({ visible, title, message, onConfirm, onCancel }) => {
           <Text style={[styles.modalTitle, { color: currentTheme.textColor }]}>{title}</Text>
           <Text style={[styles.modalMessage, { color: currentTheme.textColor }]}>{message}</Text>
           <View style={styles.buttonContainer}>
-            <TouchableOpacity onPress={onCancel} style={[styles.button, { borderColor: currentTheme.secondaryColor }]}>
-              <Text style={[styles.buttonText, { color: currentTheme.secondaryColor }]}>Cancel</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={onConfirm} style={[styles.button, { backgroundColor: currentTheme.primaryColor,  borderColor: currentTheme.secondaryColor }]}>
-              <Text style={[styles.buttonText, { color: '#FFFFFF' }]}>Confirm</Text>
-            </TouchableOpacity>
+            {
+              onCancel && (
+                <TouchableOpacity onPress={onCancel} style={[styles.button, { borderColor: currentTheme.secondaryColor }]}>
+                  <Text style={[styles.buttonText, { color: currentTheme.secondaryColor }]}>Cancel</Text>
+                </TouchableOpacity>
+              )
+            }
+            {
+              onConfirm && (
+                <TouchableOpacity onPress={onConfirm} style={[styles.button, { backgroundColor: currentTheme.palTileBackgroundColor,  borderColor: currentTheme.secondaryColor }]}>
+                  <Text style={[styles.buttonText, { color: currentTheme.textColor}]}>{confirmButtonText ? confirmButtonText : "Confirm"}</Text>
+                </TouchableOpacity>
+              )
+            }
           </View>
         </View>
       </View>

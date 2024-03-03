@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { useTheme } from './contexts/ThemeContext';

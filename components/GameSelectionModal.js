@@ -1,23 +1,57 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Modal, View, Text, TouchableOpacity, StyleSheet, TextInput, ScrollView, Dimensions } from 'react-native';
 import { useTheme } from './contexts/ThemeContext';
 import { responsiveScale } from '../utils/responsiveScale';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { GameContext } from './contexts/GameContext';
-import CustomAlertModal from './CustomAlertModal'; // Assuming CustomAlertModal is correctly imported
+import CustomAlertModal from './CustomAlertModal';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const { width, height } = Dimensions.get('window');
 
-export const GameSelectionModal = ({ visible, onClose }) => {
+export const GameSelectionModal = ({ visible, onClose = () => setHasToBeVisible(false) }) => {
+
     const { currentTheme } = useTheme();
     const { games, currentGame, setCurrentGame, addGame, removeGame } = useContext(GameContext);
     const [newGame, setNewGame] = useState('');
-
-    // Additional state for managing CustomAlertModal
     const [alertVisible, setAlertVisible] = useState(false);
     const [alertTitle, setAlertTitle] = useState('');
     const [alertMessage, setAlertMessage] = useState('');
     const [gameToDelete, setGameToDelete] = useState('');
+    const [firstLaunch, setFirstLaunch] = useState('');
+    const [hasToBeVisible, setHasToBeVisible] = useState(visible);
+
+    useEffect(() => {
+        const checkFirstLaunch = async () => {
+            const alreadyLaunched = await AsyncStorage.getItem('alreadyLaunched');
+            if (alreadyLaunched === null) {
+                setFirstLaunch(true);
+                // Do not automatically set hasToBeVisible here; let firstLaunch logic handle it
+            } else {
+                setFirstLaunch(false);
+                // Assuming you want the modal to be controllable via props after the first launch
+            }
+        };
+    
+        checkFirstLaunch();
+    }, []);
+
+    useEffect(() => {
+        if (!firstLaunch) { // Only automatically sync with visible prop if not first launching
+            setHasToBeVisible(visible);
+        }
+    }, [visible, firstLaunch]);
+
+    const handleClose = () => {
+        setHasToBeVisible(false); // Update internal state to close the modal
+        onClose(); // Call the onClose prop function, if it does anything additional
+    };
+        
+    const handleFirstLaunchConfirm = async () => {
+        await AsyncStorage.setItem('alreadyLaunched', 'true');
+        setFirstLaunch(false);
+        setHasToBeVisible(true); // Or set based on some condition or prop
+    };
 
     const handleGameSelection = (game) => {
         setCurrentGame(game);
@@ -31,87 +65,91 @@ export const GameSelectionModal = ({ visible, onClose }) => {
     };
 
     const handleDeleteGame = (game) => {
-        setGameToDelete(game);
         if (game === currentGame) {
             setAlertTitle("Cannot Delete Current Game");
             setAlertMessage("Please select or add another game before deleting this one.");
-            setAlertVisible(true);
         } else {
             setAlertTitle("Delete Game?");
             setAlertMessage(`Are you sure you want to delete "${game}"? This action cannot be undone.`);
-            setAlertVisible(true);
+            setGameToDelete(game);
         }
+        setAlertVisible(true);
     };
 
     const confirmDelete = () => {
-        if (gameToDelete && gameToDelete !== currentGame) {
+        if (gameToDelete) {
             removeGame(gameToDelete);
-            setGameToDelete('');
         }
         setAlertVisible(false);
     };
 
-
     return (
-        <Modal visible={visible} animationType="slide" transparent={true}>
-            <View style={styles.centeredView}>
-                <View style={[styles.modalView, { backgroundColor: currentTheme.backgroundColor }]}>
-                    <View style={styles.header}>
-                        <Text style={[styles.title, { color: currentTheme.textColor }]}>Select a game</Text>
-                        <TouchableOpacity style={styles.closeButton} onPress={onClose}>
-                        <FontAwesome5 name="times" size={responsiveScale(20)} color={currentTheme.textColor} />
-                        </TouchableOpacity>
-                    </View>
-                    <ScrollView style={styles.gamesList}>
-                        {Object.keys(games).map((gameName, index) => (
-                            <View key={index} style={styles.gameContainer}>
-                            <TouchableOpacity
-                                style={[
-                                styles.game,
-                                { backgroundColor: gameName === currentGame ? currentTheme.palTileBackgroundColor : null},
-                                ]}
-                                onPress={() => handleGameSelection(gameName)}
-                            >
-                                <Text style={[styles.gameName, { color: currentTheme.textColor }]}>{gameName}</Text>
+        <>
+            {firstLaunch ? (
+                <CustomAlertModal
+                    visible={true}
+                    title="Welcome to PalBro! 🎉"
+                    message="Let's get started! To track your game progress, tap the 🎮 icon in the top bar. There, you can add your first game and begin your journey. Have fun!"
+                    confirmButtonText="Start Now" // If your CustomAlertModal supports custom button text
+                    onConfirm={handleFirstLaunchConfirm}
+                />
+            ) : (
+            <Modal visible={hasToBeVisible} animationType="slide" transparent={true}>
+                <View style={styles.centeredView}>
+                    <View style={[styles.modalView, { backgroundColor: currentTheme.backgroundColor }]}>
+                        <View style={styles.header}>
+                            <Text style={[styles.title, { color: currentTheme.textColor }]}>Select a game</Text>
+                            <TouchableOpacity style={styles.closeButton} onPress={handleClose}>
+                                <FontAwesome5 name="times" size={responsiveScale(20)} color={currentTheme.textColor} />
                             </TouchableOpacity>
-                            <TouchableOpacity
-                                style={styles.deleteButton}
-                                onPress={() => handleDeleteGame(gameName)}
-                            >
-                                <FontAwesome5 name="trash" size={responsiveScale(15)} color={currentTheme.textColor} />
-                            </TouchableOpacity>
-                            </View>
-                        ))}
+                        </View>
+                        <ScrollView style={styles.gamesList}>
+                            {Object.keys(games).map((gameName, index) => (
+                                <View key={index} style={styles.gameContainer}>
+                                    <TouchableOpacity
+                                        style={[
+                                            styles.game,
+                                            { backgroundColor: gameName === currentGame ? currentTheme.palTileBackgroundColor : 'transparent' },
+                                        ]}
+                                        onPress={() => handleGameSelection(gameName)}
+                                    >
+                                        <Text style={[styles.gameName, { color: currentTheme.textColor }]}>{gameName}</Text>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity
+                                        style={styles.deleteButton}
+                                        onPress={() => handleDeleteGame(gameName)}
+                                    >
+                                        <FontAwesome5 name="trash" size={responsiveScale(15)} color={currentTheme.textColor} />
+                                    </TouchableOpacity>
+                                </View>
+                            ))}
                         </ScrollView>
-                    <View style={styles.addGame}>
-                        <TextInput
-                        style={[styles.input, { color: currentTheme.textColor, backgroundColor: currentTheme.searchBarBackgroundColor }]}
-                        value={newGame}
-                        onChangeText={(text) => setNewGame(text)}
-                        placeholder="Add a new game"
-                        placeholderTextColor={currentTheme.textColor}
-                        />
-                        <TouchableOpacity style={styles.addButton} onPress={handleAddGame}>
-                            <FontAwesome5 name="plus" size={responsiveScale(20)} color={currentTheme.textColor} />
-                        </TouchableOpacity>
+                        <View style={styles.addGame}>
+                            <TextInput
+                                style={[styles.input, { color: currentTheme.textColor, backgroundColor: currentTheme.searchBarBackgroundColor }]}
+                                value={newGame}
+                                onChangeText={setNewGame}
+                                placeholder="Add a new game"
+                                placeholderTextColor={currentTheme.placeholderColor}
+                            />
+                            <TouchableOpacity style={styles.addButton} onPress={handleAddGame}>
+                                <FontAwesome5 name="plus" size={responsiveScale(20)} color={currentTheme.textColor} />
+                            </TouchableOpacity>
+                        </View>
                     </View>
                 </View>
-            </View>
-            {alertVisible && (
-                <CustomAlertModal
-                    visible={alertVisible}
-                    title={alertTitle}
-                    message={alertMessage}
-                    onConfirm={() => {
-                        confirmDelete();
-                    }}
-                    onCancel={() => {
-                        setAlertVisible(false);
-                        setGameToDelete('');
-                    }}
-                />
-            )}
-        </Modal>
+                {alertVisible && (
+                    <CustomAlertModal
+                        visible={alertVisible}
+                        title={alertTitle}
+                        message={alertMessage}
+                        onConfirm={confirmDelete}
+                        onCancel={() => setAlertVisible(false)}
+                    />
+                )}
+            </Modal>
+        )}
+        </>
     );
 };
 

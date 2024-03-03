@@ -11,9 +11,7 @@ const BuyMeACoffeeModal = () => {
     const { currentTheme } = useTheme();
 
     useEffect(() => {
-        setTimeout(() => {
-            displayModal();
-        }, 2000);
+        displayModal();
     }, []);
 
     const displayModal = async () => {
@@ -39,7 +37,7 @@ const BuyMeACoffeeModal = () => {
         },
         modalView: {
             margin: responsiveScale(20),
-            backgroundColor: currentTheme.searchBarBackgroundColor,
+            backgroundColor: currentTheme.backgroundColor,
             borderRadius: responsiveScale(20),
             padding: responsiveScale(35),
             alignItems: "center",

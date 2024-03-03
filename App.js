@@ -17,6 +17,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import SplashScreen from 'react-native-splash-screen';
 import AdvancedBreedingsView from './views/AdvancedBreedingsView';
 import BuyMeACoffeeModal from './components/BuyMeACoffeeModal';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 enableScreens();
@@ -54,11 +55,17 @@ function BreedingStack() {
 export default function App() {
 
   // Uncomment this block before building the app
-  useEffect(() => {
-    setTimeout(() => {
-      SplashScreen.hide();
-    }, 2000),
-  []});
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     SplashScreen.hide();
+  //   }, 2000),
+  // []});
+
+  const clearStorage = async () => {
+    await AsyncStorage.clear();
+  }
+  
+  clearStorage();
 
   return (
     <ThemeProvider>
