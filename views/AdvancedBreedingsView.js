@@ -8,6 +8,7 @@ import getPotentialsCouplesForBabyWithPassives from '../utils/couplesLogic';
 import { Picker } from '@react-native-picker/picker';
 import * as DocumentPicker from 'expo-document-picker';
 import PotentialCoupleCard from '../components/PotentialCoupleCard'; // A new component to display each couple
+import PassiveSkillsList from '../assets/data/PassiveSkillsList';
 
 const AdvancedBreedingsView = ({ navigation }) => {
     const { currentTheme } = useTheme();
@@ -61,7 +62,6 @@ const AdvancedBreedingsView = ({ navigation }) => {
             marginBottom: 15, // Ensure space between rows
         },
         input: {
-            backgroundColor: currentTheme.backgroundColor,
             color: currentTheme.textColor,
             borderColor: currentTheme.borderColor,
             borderWidth: 1,
@@ -86,7 +86,7 @@ const AdvancedBreedingsView = ({ navigation }) => {
     });
 
     const pals = PalsProfilesStatsAndBreedings.map(profile => profile).sort((a, b) => a.name.localeCompare(b.name));
-
+    const globalPassives = PassiveSkillsList.map(passive => passive).sort((a, b) => a.skill_name.localeCompare(b.skill_name));
 
     return (
         <GradientBackground>
@@ -114,28 +114,32 @@ const AdvancedBreedingsView = ({ navigation }) => {
                         </View>
                         {desiredSkills.slice(0, 2).map((skill, index) => (
                             <View key={index} style={styles.inputRow}>
-                                <TextInput
-                                    style={styles.input}
-                                    placeholder={`Desired Skill ${index * 2 + 1}`}
-                                    placeholderTextColor={currentTheme.secondaryColor}
-                                    value={desiredSkills[index * 2]}
-                                    onChangeText={(text) => {
-                                        const newSkills = [...desiredSkills];
-                                        newSkills[index * 2] = text.trim();
-                                        setDesiredSkills(newSkills);
-                                    }}
-                                />
-                                <TextInput
-                                    style={styles.input}
-                                    placeholder={`Desired Skill ${index * 2 + 2}`}
-                                    placeholderTextColor={currentTheme.secondaryColor}
-                                    value={desiredSkills[index * 2 + 1]}
-                                    onChangeText={(text) => {
-                                        const newSkills = [...desiredSkills];
-                                        newSkills[index * 2 + 1] = text.trim();
-                                        setDesiredSkills(newSkills);
-                                    }}
-                                />
+                                <Picker
+                                    style={[styles.input, {padding: 0, justifyContent: 'center'}]} // Adjust style for Picker
+                                    selectedValue={desiredSkills[index * 2 + 1]}
+                                    onValueChange={(itemValue) => {
+                                        const newDesiredSkills = [...desiredSkills];
+                                        newDesiredSkills[index * 2 + 1] = itemValue;
+                                        setDesiredSkills(newDesiredSkills);
+                                }}>
+                                    <Picker.Item label={`Desired Skill ${index * 2 + 1}`} value="" />
+                                        {globalPassives.map((passive, index) => (
+                                    <Picker.Item key={index} label={passive.skill_name} value={passive.skill_dev_name} />
+                                ))}
+                                </Picker>
+                                <Picker
+                                    style={[styles.input, {padding: 0, justifyContent: 'center'}]} // Adjust style for Picker
+                                    selectedValue={desiredSkills[index * 2 + 2]}
+                                    onValueChange={(itemValue) => {
+                                        const newDesiredSkills = [...desiredSkills];
+                                        newDesiredSkills[index * 2 + 2] = itemValue;
+                                        setDesiredSkills(newDesiredSkills);
+                                }}>
+                                    <Picker.Item label={`Desired Skill ${index * 2 + 2}`} value="" />
+                                        {globalPassives.map((passive, index) => (
+                                    <Picker.Item key={index} label={passive.skill_name} value={passive.skill_dev_name} />
+                                ))}
+                                </Picker>
                             </View>
                         ))}
                         <TouchableOpacity

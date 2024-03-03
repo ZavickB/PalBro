@@ -2,66 +2,73 @@ import React from 'react';
 import { View, Text, StyleSheet, FlatList } from 'react-native';
 import { useTheme } from './contexts/ThemeContext';
 import { responsiveScale } from '../utils/responsiveScale';
+import PassiveSkillsList from '../assets/data/PassiveSkillsList';
 
 const PotentialCoupleCard = ({ couple }) => {
   const { Probability, parent1, parent2 } = couple;
   const { currentTheme } = useTheme();
 
-  
-const styles = StyleSheet.create({
-  card: {
-    backgroundColor: currentTheme.palTileBackgroundColor,
-    borderRadius: responsiveScale(8),
-    padding: responsiveScale(16),
-    marginBottom: responsiveScale(10, 'height'),
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: responsiveScale(2, 'height') },
-    shadowOpacity: 0.23,
-    shadowRadius: 2.62,
-    elevation: 4,
-  },
-  probabilityText: {
-    fontSize: responsiveScale(18),
-    fontWeight: 'bold',
-    marginBottom: responsiveScale(10, 'height'),
-    color: currentTheme.textColor,
-  },
-  parentContainer: {
-    marginBottom: responsiveScale(8, 'height'),
-  },
-  parentLabel: {
-    fontSize: responsiveScale(16),
-    fontWeight: 'bold',
-    color: currentTheme.textColor,
-  },
-  detailText: {
-    fontSize: responsiveScale(14),
-    color: currentTheme.textColor,
-  },
-  passivesContainer: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    marginTop: responsiveScale(4, 'height'),
-  },
-  passiveSkill: {
-    backgroundColor: currentTheme.backgroundColor,
-    borderRadius: responsiveScale(15),
-    paddingVertical: responsiveScale(4, 'height'),
-    paddingHorizontal: responsiveScale(8, 'width'),
-    margin: responsiveScale(2),
-    fontSize: responsiveScale(12),
-    color: currentTheme.textColor,
-  },
-});
+  const globalPassives = PassiveSkillsList.map(passive => passive).sort((a, b) => a.skill_dev_name.localeCompare(b.skill_dev_name));
+
+    
+  const styles = StyleSheet.create({
+    card: {
+      backgroundColor: currentTheme.palTileBackgroundColor,
+      borderRadius: responsiveScale(8),
+      padding: responsiveScale(16),
+      marginBottom: responsiveScale(10, 'height'),
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: responsiveScale(2, 'height') },
+      shadowOpacity: 0.23,
+      shadowRadius: 2.62,
+      elevation: 4,
+    },
+    probabilityText: {
+      fontSize: responsiveScale(18),
+      fontWeight: 'bold',
+      marginBottom: responsiveScale(10, 'height'),
+      color: currentTheme.textColor,
+    },
+    parentContainer: {
+      marginBottom: responsiveScale(8, 'height'),
+    },
+    parentLabel: {
+      fontSize: responsiveScale(16),
+      fontWeight: 'bold',
+      color: currentTheme.textColor,
+    },
+    detailText: {
+      fontSize: responsiveScale(14),
+      color: currentTheme.textColor,
+    },
+    passivesContainer: {
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      marginTop: responsiveScale(4, 'height'),
+    },
+    passiveSkill: {
+      backgroundColor: currentTheme.backgroundColor,
+      borderRadius: responsiveScale(15),
+      paddingVertical: responsiveScale(4, 'height'),
+      paddingHorizontal: responsiveScale(8, 'width'),
+      margin: responsiveScale(2),
+      fontSize: responsiveScale(12),
+      color: currentTheme.textColor,
+    },
+  });
+
+  const findRealPassiveName = (skillName) => {
+    const passive = globalPassives.find(passive => passive.skill_dev_name === skillName);
+    return passive.skill_name;
+  }
 
   const renderPassiveSkills = (passives) => {
-    // Check if 'values' exists and is an array before mapping
     if (Array.isArray(passives?.values)) {
       return (
         <View style={styles.passivesContainer}>
           {passives.values.map((skill, index) => (
             <Text key={index} style={styles.passiveSkill}>
-              {skill}
+              {findRealPassiveName(skill)}
             </Text>
           ))}
         </View>
