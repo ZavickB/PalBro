@@ -55,15 +55,16 @@ function BreedingStack() {
 export default function App() {
 
   // Uncomment this block before building the app
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     SplashScreen.hide();
-  //   }, 2000),
-  // []});
+  useEffect(() => {
+    setTimeout(() => {
+      SplashScreen.hide();
+    }, 2000),
+  []});
 
-  const clearStorage = async () => {
-    await AsyncStorage.clear();
-  }
+  // Uncomment this block before building the app
+  // const clearStorage = async () => {
+  //   await AsyncStorage.clear();
+  // }
   
   clearStorage();
 

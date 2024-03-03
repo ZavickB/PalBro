@@ -105,7 +105,7 @@ const PalDetailedView = ({ route, navigation }) => {
   // Navigation functions
   const goPrevious = () => {
     if (currentIndex > 0) {
-      navigation.replace('PalsDetails', {
+      navigation.navigate('PalsDetails', {
         palData: allData[currentIndex - 1],
         currentIndex: currentIndex - 1,
         allData: allData
@@ -115,7 +115,7 @@ const PalDetailedView = ({ route, navigation }) => {
 
   const goNext = () => {
     if (currentIndex < allData.length - 1) {
-      navigation.replace('PalsDetails', {
+      navigation.navigate('PalsDetails', {
         palData: allData[currentIndex + 1],
         currentIndex: currentIndex + 1,
         allData: allData

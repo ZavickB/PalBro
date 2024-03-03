@@ -21,9 +21,6 @@ const MainView = ({ navigation }) => {
   const { capturedPals, toggleCapture } = useCapturedPals();
  
   const handleTilePress = (item, index, data) => {
-    console.log('item', item);
-    console.log('index', index);
-    
     navigation.navigate('PalsDetails', { palData: item, currentIndex: index , allData: data  });
   };
 
