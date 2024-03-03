@@ -20,8 +20,11 @@ const MainView = ({ navigation }) => {
 
   const { capturedPals, toggleCapture } = useCapturedPals();
  
-  const handleTilePress = (item) => {
-    navigation.navigate('PalsDetails', { palData: item });
+  const handleTilePress = (item, index, data) => {
+    console.log('item', item);
+    console.log('index', index);
+    
+    navigation.navigate('PalsDetails', { palData: item, currentIndex: index , allData: data  });
   };
 
   PalsProfilesStatsAndBreedings.sort((a, b) => {
@@ -51,9 +54,9 @@ const MainView = ({ navigation }) => {
             searchBarPlaceholder={'Browse all Pals...'}
             data={PalsProfilesStatsAndBreedings}
             resetKey={resetKey + 1}
-            renderItem={({ item, hideCompleted }) => (
+            renderItem={({ item, index, hideCompleted }) => (
               <View style={styles.listContainer}>
-                <TouchableOpacity onPress={() => handleTilePress(item)}>
+                <TouchableOpacity onPress={() => handleTilePress(item, index, PalsProfilesStatsAndBreedings)}>
                   <PalTile
                     pal={item}
                     tileWidth={tileWidth}

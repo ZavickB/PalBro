@@ -57,8 +57,8 @@ const MyPalsView = ({ navigation }) => {
     );
   };
 
-  const handleTilePress = (item) => {
-    navigation.navigate('MyPalsDetails', { palData: item });
+  const handleTilePress = (item, index, data) => {
+    navigation.navigate('PalsDetails', { palData: item, currentIndex: index , allData: data  });
   };
 
   const renderCapturedPals = () => {
@@ -66,9 +66,9 @@ const MyPalsView = ({ navigation }) => {
       <SearchableList
         searchBarPlaceholder={'Browse captured Pals...'}
         data={newlyCapturedPals}
-        renderItem={({ item, hideCompleted }) => (
+        renderItem={({ item, index, hideCompleted }) => (
           <View style={styles.listContainer}>
-            <TouchableOpacity onPress={() => handleTilePress(item)}>
+            <TouchableOpacity onPress={() => handleTilePress(item, index, newlyCapturedPals)}>
               <PalTile
                 pal={item}
                 tileWidth={tileWidth}
@@ -95,9 +95,9 @@ const MyPalsView = ({ navigation }) => {
       <SearchableList
         searchBarPlaceholder={'Browse missing Pals...'}
         data={missingPals}
-        renderItem={({ item }) => (
+        renderItem={({ item, index }) => (
           <View style={styles.listContainer}>
-            <TouchableOpacity onPress={() => handleTilePress(item)}>
+            <TouchableOpacity onPress={() => handleTilePress(item, index, missingPals)}>
               <PalTile
                 pal={item}
                 tileWidth={tileWidth}

@@ -33,6 +33,7 @@
     "react-native-screens": "^3.29.0",
     "react-native-size-matters": "^0.4.2",
     "react-native-splash-screen": "^3.3.0",
+    "react-native-swipe-gestures": "^1.0.5",
     "react-native-vector-icons": "^10.0.3",
     "react-native-web": "~0.19.6",
     "react-use": "^17.5.0"

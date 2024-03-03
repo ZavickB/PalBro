@@ -278,9 +278,10 @@ const SearchableList = ({ data, renderItem, emptyStateText, numColumns, resetKey
     },
 });
 
-  const renderItemWithHideCompleted = ({ item }) => {
+  const renderItemWithHideCompleted = ({ item, index }) => {
     return renderItem({
       item,
+      index,
       hideCompleted, // Include hideCompleted in the props passed to renderItem
     });
   };

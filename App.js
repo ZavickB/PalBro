@@ -37,7 +37,7 @@ function MyPalsStack() {
   return (
     <Stack.Navigator initialRouteName="MyPalsContainer" screenOptions={{ headerShown: false }} >
       <Stack.Screen name="MyPalsContainer" component={MyPalsView} screenOptions={{ headerShown: false }}/>
-      <Stack.Screen name="MyPalsDetails" component={PalDetailedView} />
+      <Stack.Screen name="PalsDetails" component={PalDetailedView} />
     </Stack.Navigator>
   );
 }
