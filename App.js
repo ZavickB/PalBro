@@ -61,13 +61,6 @@ export default function App() {
     }, 2000),
   []});
 
-  // Uncomment this block before building the app
-  // const clearStorage = async () => {
-  //   await AsyncStorage.clear();
-  // }
-  
-  clearStorage();
-
   return (
     <ThemeProvider>
       <GameProvider>
