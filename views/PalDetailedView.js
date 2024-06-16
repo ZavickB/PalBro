@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { View, Text, Image, FlatList, StyleSheet, ActivityIndicator, TouchableOpacity } from 'react-native';
+import React from 'react';
+import { View, Text, Image, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
 import SuitabilityBlock from '../components/SuitabilityBlock';
 import PalBreedingInfosBlock from '../components/PalBreedingInfosBlock';
 import PalSpecialCapacityBlock from '../components/PalSpecialCapacityBlock';
@@ -123,10 +123,10 @@ const PalDetailedView = ({ route, navigation }) => {
     }
   };
 
-
   const styles = StyleSheet.create({
     container: {
       flex: 1,
+      maxWidth:'100%',
     },
     imageContainer: {
       width: '100%',
@@ -226,7 +226,6 @@ const PalDetailedView = ({ route, navigation }) => {
       flexDirection: 'row', // Align arrows horizontally
       justifyContent: 'center', // Center children horizontally
       alignItems: 'center', // Center children vertically
-      position: 'relative', // To absolutely position the arrows
       height: responsiveScale(50), // Adjust based on your design
     },
     typesContainer: {
@@ -234,53 +233,55 @@ const PalDetailedView = ({ route, navigation }) => {
       flexDirection: 'row', // Align arrows horizontally
       justifyContent: 'center', // Center children horizontally
       alignItems: 'center', // Center children vertically
-      position: 'relative', // To absolutely position the arrows
     },
-
+    listContainer: {
+      flex: 1,
+    },
   });
 
   return (
     <GradientBackground>
       <View style={styles.container}>
-        <TopBar title="" navigation={navigation} />
-        <FlatList
-          data={sections}
-          renderItem={renderItem}
-          keyExtractor={(item, index) => item.type + index}
-          showsVerticalScrollIndicator={true}
-          ListHeaderComponent={
-            <View>
-              <View style={styles.imageContainer}>
-                <Image source={palData.image} style={styles.image} />
-                <View style={styles.overlayText}>
-                  <View style={styles.titleContainer}>
-                    {
-                      currentIndex > 0 &&
-                      <TouchableOpacity style={styles.arrow} onPress={goPrevious}>
-                        <FontAwesome5 name="arrow-left" size={20} color={currentTheme.palDetailsName} />
-                      </TouchableOpacity>
-                    }
-                    <Text style={styles.sectionPalTitle}>{`#${palData.key} ${palData.name}`}</Text>
-                    {
-                      currentIndex < allData.length - 1 &&
-                      <TouchableOpacity style={styles.arrow} onPress={goNext}>
-                        <FontAwesome5 name="arrow-right" size={20} color={currentTheme.palDetailsName} />
-                      </TouchableOpacity>
-                    }
-                  </View>
-                  <View style={styles.typesContainer}>
-                    <TypeBadge types={[palData.types]} />
+          <TopBar title="" navigation={navigation} />
+          <View style={styles.listContainer}>
+            <FlatList
+              data={sections}
+              renderItem={renderItem}
+              keyExtractor={(item, index) => item.type + index}
+              showsVerticalScrollIndicator={true}
+              ListHeaderComponent={
+                <View>
+                  <View style={styles.imageContainer}>
+                    <Image source={palData.image} style={styles.image} />
+                    <View style={styles.overlayText}>
+                      <View style={styles.titleContainer}>
+                        {
+                          currentIndex > 0 &&
+                          <TouchableOpacity style={styles.arrow} onPress={goPrevious}>
+                            <FontAwesome5 name="arrow-left" size={20} color={currentTheme.palDetailsName} />
+                          </TouchableOpacity>
+                        }
+                        <Text style={styles.sectionPalTitle}>{`#${palData.key} ${palData.name}`}</Text>
+                        {
+                          currentIndex < allData.length - 1 &&
+                          <TouchableOpacity style={styles.arrow} onPress={goNext}>
+                            <FontAwesome5 name="arrow-right" size={20} color={currentTheme.palDetailsName} />
+                          </TouchableOpacity>
+                        }
+                      </View>
+                      <View style={styles.typesContainer}>
+                        <TypeBadge types={[palData.types]} />
+                      </View>
+                    </View>
                   </View>
                 </View>
-              </View>
-            </View>
-          }
-          initialNumToRender={5}
-        />
+              }
+              initialNumToRender={5}
+            />
+          </View>
       </View>
     </GradientBackground>
   );
 };
-
 
 export default PalDetailedView;
