@@ -16,7 +16,6 @@ import { StatusBar } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import SplashScreen from 'react-native-splash-screen';
 import AdvancedBreedingsView from './views/AdvancedBreedingsView';
-import BuyMeACoffeeModal from './components/BuyMeACoffeeModal';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
@@ -53,14 +52,6 @@ function BreedingStack() {
 }
 
 export default function App() {
-
-  // Uncomment this block before building the app
-  useEffect(() => {
-    setTimeout(() => {
-      SplashScreen.hide();
-    }, 2000),
-  []});
-
   return (
     <ThemeProvider>
       <GameProvider>
@@ -99,7 +90,6 @@ export default function App() {
               <Tab.Screen name="Breedings" component={BreedingStack} />
               <Tab.Screen name="Drops" component={DropsView} />
             </Tab.Navigator>
-            <BuyMeACoffeeModal />
           </NavigationContainer>
         </CapturedPalsProvider>
       </GameProvider>

@@ -14,7 +14,6 @@ const MainView = ({ navigation }) => {
 
   const spacing = responsiveScale(5);
 
-  // Calculate tile width and height using responsiveScale and verticalScale respectively
   const tileWidth = responsiveScale(120, 'width') - spacing;
   const tileHeight =  responsiveScale(221, 'height') - spacing;
 
@@ -82,7 +81,7 @@ const styles = StyleSheet.create({
   },
   appContainer: {
     flex: 1,
-    paddingHorizontal: responsiveScale(10, "width"), // Apply moderateScale for horizontal padding
+    paddingHorizontal: responsiveScale(10, "width"),
   },
   listContainer: {
     flex: 1,
