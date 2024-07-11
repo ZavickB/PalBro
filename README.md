@@ -27,7 +27,7 @@ A live demo is available at: [palbro.virgilebaisnee.fr](https://palbro.virgileba
 
 ### Other Technologies
 
-- **Modern UI/UX Design**: Ensuring a seamless and engaging user experience.
+- **Expo**: For building and deploying the mobile application.
 
 ## Project Setup
 
@@ -36,7 +36,7 @@ To set up and run the project locally, follow these steps:
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/your-username/palbro.git
+    git clone https://github.com/ZavickB/PalBro.git
     cd palbro
     ```
 
