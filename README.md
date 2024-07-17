@@ -36,7 +36,7 @@ To set up and run the project locally, follow these steps:
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/ZavickB/PalBro.git
+    git clone https://github.com/KcivazB/PalBro.git
     cd palbro
     ```
 
